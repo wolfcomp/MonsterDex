@@ -11,7 +11,7 @@ namespace DeepDungeonDex
     public class Plugin : IDalamudPlugin
     {
         private DalamudPluginInterface pluginInterface;
-        private PluginCommandManager<Plugin> commandManager;
+        //private PluginCommandManager<Plugin> commandManager;
         private Configuration config;
         private PluginUI ui;
         private Actor previousTarget;
@@ -28,7 +28,8 @@ namespace DeepDungeonDex
             this.ui = new PluginUI();
             this.pluginInterface.UiBuilder.OnBuildUi += this.ui.Draw;
 
-            this.commandManager = new PluginCommandManager<Plugin>(this, this.pluginInterface);
+
+            //this.commandManager = new PluginCommandManager<Plugin>(this, this.pluginInterface);
 
             this.pluginInterface.Framework.OnUpdateEvent += this.GetData;
         }
@@ -36,14 +37,22 @@ namespace DeepDungeonDex
         public void GetData(Framework framework)
         {
             //var chat = this.pluginInterface.Framework.Gui.Chat;
-            //if (!this.pluginInterface.ClientState.Condition.Equals("InDeepDungeon")) return;
+            //if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon]) return;
             var target = pluginInterface.ClientState.Targets.CurrentTarget;
-            if (target == null) return;
-            if (target == previousTarget) return;
+            if (target == null || target == previousTarget) 
+            {
+                ui.IsVisible = false;
+                return;
+            }
             TargetData t = new TargetData();
-            t.fetchTarget(target);
-            ui.IsVisible = true;
+            t.FetchTarget(target);
+            if (TargetData.nameID == null)
+            {
+                ui.IsVisible = false;
+                return;
+            }
             previousTarget = target;
+            ui.IsVisible = true;
         }
 
         #region IDisposable Support

@@ -10,13 +10,12 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
-            if (TargetData.name == null) return;
             ImGui.Begin("cool strati window");
             ImGui.Text("Name: "+ TargetData.name);
             ImGui.NewLine();
             ImGui.Text("NameID: "+ TargetData.nameID);
             ImGui.NewLine();
-            ImGui.Text("DataID: " + TargetData.dataID);
+            ImGui.TextWrapped("");
             if (ImGui.Button("Close")) { this.IsVisible = false; }
             ImGui.End();
         }
