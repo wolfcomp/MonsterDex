@@ -12,7 +12,7 @@ namespace DeepDungeonDex
     public class Plugin : IDalamudPlugin
     {
         private DalamudPluginInterface pluginInterface;
-        //private PluginCommandManager<Plugin> commandManager;
+        private PluginCommandManager<Plugin> commandManager;
         private Configuration config;
         private PluginUI ui;
         private Actor previousTarget;
@@ -63,7 +63,7 @@ namespace DeepDungeonDex
         {
             if (!disposing) return;
 
-            //this.commandManager.Dispose();
+            this.commandManager.Dispose();
 
             this.pluginInterface.SavePluginConfig(this.config);
 

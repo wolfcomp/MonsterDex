@@ -1,4 +1,5 @@
 ﻿using ImGuiNET;
+using System.Numerics;
 
 namespace DeepDungeonDex
 {
@@ -12,7 +13,10 @@ namespace DeepDungeonDex
                 return;
             var mobData = DataHandler.Mobs(TargetData.NameID);
             if (mobData == null) return;
-            ImGui.Begin("cool strati window");
+            var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.NoInputs;
+            ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
+            ImGui.SetNextWindowBgAlpha(0.5f);
+            ImGui.Begin("cool strati window", flags);
             ImGui.Text("Name:\n"+ TargetData.Name);
             ImGui.NewLine();
             ImGui.Columns(3, null, false);
@@ -46,7 +50,7 @@ namespace DeepDungeonDex
                     break;
             }
             ImGui.NextColumn();
-            ImGui.Text("Stunnable:\n");
+            ImGui.Text("Can stun:\n");
             switch (mobData.IsStunnable)
             {
                 case true:
@@ -64,7 +68,7 @@ namespace DeepDungeonDex
             ImGui.Columns(1);
             ImGui.NewLine();
             ImGui.TextWrapped(mobData.MobNotes);
-            if (ImGui.Button("Close")) { this.IsVisible = false; }
+            //if (ImGui.Button("Close")) { this.IsVisible = false; }
             ImGui.End();
         }
     }
