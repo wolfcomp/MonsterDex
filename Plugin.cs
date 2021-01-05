@@ -38,7 +38,7 @@ namespace DeepDungeonDex
         public void GetData(Framework framework)
         {
             //var chat = this.pluginInterface.Framework.Gui.Chat;
-            //if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon]) return;
+            if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon]) return;
             var target = pluginInterface.ClientState.Targets.CurrentTarget;
             if (target == null || target == previousTarget) 
             {
@@ -46,14 +46,16 @@ namespace DeepDungeonDex
                 return;
             }
             TargetData t = new TargetData();
-            t.FetchTarget(target);
-            if (TargetData.nameID == null)
+            if (!t.IsValidTarget(target))
             {
                 ui.IsVisible = false;
                 return;
             }
-            previousTarget = target;
-            ui.IsVisible = true;
+            else
+            { 
+                previousTarget = target;
+                ui.IsVisible = true;
+            }
         }
 
         #region IDisposable Support

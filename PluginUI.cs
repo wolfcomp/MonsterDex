@@ -10,12 +10,60 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
+            var mobData = DataHandler.Mobs(TargetData.NameID);
+            if (mobData == null) return;
             ImGui.Begin("cool strati window");
-            ImGui.Text("Name: "+ TargetData.name);
+            ImGui.Text("Name:\n"+ TargetData.Name);
             ImGui.NewLine();
-            ImGui.Text("NameID: "+ TargetData.nameID);
+            ImGui.Columns(3, null, false);
+            ImGui.Text("Aggro Type:\n" + mobData.Aggro);
+            ImGui.NextColumn();
+            ImGui.Text("Threat:\n");
+            switch (mobData.Threat)
+            {
+                case DataHandler.MobData.ThreatLevel.Easy:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
+                    ImGui.Text("Easy");
+                    ImGui.PopStyleColor();
+                    break;
+                case DataHandler.MobData.ThreatLevel.Caution:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFFFFFF00);
+                    ImGui.Text("Caution");
+                    ImGui.PopStyleColor();
+                    break;
+                case DataHandler.MobData.ThreatLevel.Danger:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
+                    ImGui.Text("Danger");
+                    ImGui.PopStyleColor();
+                    break;
+                case DataHandler.MobData.ThreatLevel.DoNotEngage:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFFFF00FF);
+                    ImGui.Text("DO NOT ENGAGE");
+                    ImGui.PopStyleColor();
+                    break;
+                default:
+                    ImGui.Text("Undefined");
+                    break;
+            }
+            ImGui.NextColumn();
+            ImGui.Text("Stunnable:\n");
+            switch (mobData.IsStunnable)
+            {
+                case true:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
+                    ImGui.Text("Yes");
+                    ImGui.PopStyleColor();
+                    break;
+                case false:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
+                    ImGui.Text("No");
+                    ImGui.PopStyleColor();
+                    break;
+            }
+            ImGui.NextColumn();
+            ImGui.Columns(1);
             ImGui.NewLine();
-            ImGui.TextWrapped("");
+            ImGui.TextWrapped(mobData.MobNotes);
             if (ImGui.Button("Close")) { this.IsVisible = false; }
             ImGui.End();
         }

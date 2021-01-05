@@ -7,19 +7,21 @@ namespace DeepDungeonDex
 {
 	public class TargetData
 	{
-		public static int? nameID { get; set; }
-		public static int dataID { get; set; }
-		public static string name { get; set; }
+		public static int NameID { get; set; }
+		public static string Name { get; set; }
 
-		public void FetchTarget(Actor target)
+		public bool IsValidTarget(Actor target)
 		{
 			if (target is BattleNpc bnpc)
 			{
-				nameID = bnpc.NameId;
-				dataID = bnpc.DataId;
-				name = bnpc.Name;
+				Name = bnpc.Name;
+				NameID = bnpc.NameId;
+				return true;
 			}
-			else nameID = null;
+			else
+			{
+				return false;
+			}
 		}
 	}
 }

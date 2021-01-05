@@ -6,9 +6,9 @@ using System.Collections.Generic;
 
 namespace DeepDungeonDex
 {
-	public class DataHandler
+	 public class DataHandler
 	{
-		class MobData
+		public class MobData
 		{
 			public bool IsStunnable { get; set; }
 			public string MobNotes { get; set; }
@@ -34,9 +34,13 @@ namespace DeepDungeonDex
 			public AggroType Aggro { get; set; }
 		}
 
-		public static void Mobs()
+		public static MobData Mobs(int nameID)
         {
-			var mobs = new Dictionary<int, MobData>()
+			if (mobs.TryGetValue(nameID, out MobData value)) return value;
+			else return null;
+        }
+
+		private static readonly Dictionary<int, MobData> mobs = new Dictionary<int, MobData>()
 			{
 				{ 7262, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Auto inflicts Heavy debuff" } },
 				{ 7263, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Auto applies Physical Vuln Up every 10s" } },
@@ -52,6 +56,5 @@ namespace DeepDungeonDex
 				{ 7273, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Untelegraphed buster inflicts Bleed and knockback" } },
 				{ 7274, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } }
 			};
-        }
 	}
 }
