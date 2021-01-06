@@ -6,15 +6,16 @@ using DeepDungeonDex.Attributes;
 using Dalamud.Game.Internal;
 using Dalamud.Game.ClientState.Actors.Types;
 using Dalamud.Game.ClientState.Actors.Types.NonPlayer;
+using Dalamud.Game.Command;
 
 namespace DeepDungeonDex
 {
     public class Plugin : IDalamudPlugin
     {
         private DalamudPluginInterface pluginInterface;
-        private PluginCommandManager<Plugin> commandManager;
         private Configuration config;
         private PluginUI ui;
+        private ConfigUI cui;
         private Actor previousTarget;
 
         public string Name => "DeepDungeonDex";
@@ -27,12 +28,21 @@ namespace DeepDungeonDex
             this.config.Initialize(this.pluginInterface);
 
             this.ui = new PluginUI();
+            this.cui = new ConfigUI();
             this.pluginInterface.UiBuilder.OnBuildUi += this.ui.Draw;
+            this.pluginInterface.UiBuilder.OnBuildUi += this.cui.Draw;
 
-
-            //this.commandManager = new PluginCommandManager<Plugin>(this, this.pluginInterface);
+            this.pluginInterface.CommandManager.AddHandler("/pddd", new CommandInfo(OpenConfig)
+            {
+                HelpMessage = "DeepDungeonDex config"
+            });
 
             this.pluginInterface.Framework.OnUpdateEvent += this.GetData;
+        }
+
+        public void OpenConfig(string command, string args)
+        {
+            cui.IsVisible = true;
         }
 
         public void GetData(Framework framework)
@@ -63,7 +73,7 @@ namespace DeepDungeonDex
         {
             if (!disposing) return;
 
-            this.commandManager.Dispose();
+            this.pluginInterface.CommandManager.RemoveHandler("/pddd");
 
             this.pluginInterface.SavePluginConfig(this.config);
 

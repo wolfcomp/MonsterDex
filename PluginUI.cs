@@ -6,6 +6,7 @@ namespace DeepDungeonDex
     public class PluginUI
     {
         public bool IsVisible { get; set; }
+        private Configuration config = new Configuration();
 
         public void Draw()
         {
@@ -13,9 +14,9 @@ namespace DeepDungeonDex
                 return;
             var mobData = DataHandler.Mobs(TargetData.NameID);
             if (mobData == null) return;
-            var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.NoInputs;
+            var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
-            ImGui.SetNextWindowBgAlpha(0.5f);
+            ImGui.SetNextWindowBgAlpha(config.Opacity);
             ImGui.Begin("cool strati window", flags);
             ImGui.Text("Name:\n"+ TargetData.Name);
             ImGui.NewLine();

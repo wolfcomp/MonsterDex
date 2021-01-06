@@ -7,6 +7,8 @@ namespace DeepDungeonDex
     public class Configuration : IPluginConfiguration
     {
         public int Version { get; set; }
+        public bool IsClickthrough = false;
+        public float Opacity = 1.0f;
 
         // Add any other properties or methods here.
         [JsonIgnore] private DalamudPluginInterface pluginInterface;
