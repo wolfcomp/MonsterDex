@@ -24,8 +24,8 @@ namespace DeepDungeonDex
 
             this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
             this.config.Initialize(this.pluginInterface);
-            this.ui = new PluginUI(config.Opacity, config.IsClickthrough);
-            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, pluginInterface);
+            this.ui = new PluginUI(config);
+            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config);
             this.pluginInterface.UiBuilder.OnBuildUi += this.ui.Draw;
             this.pluginInterface.UiBuilder.OnBuildUi += this.cui.Draw;
 

@@ -7,14 +7,16 @@ namespace DeepDungeonDex
     public class PluginUI
     {
         public bool IsVisible { get; set; }
-        private float opacity;
-        private bool isClickthrough;
+        private Configuration config;
+        //public float opacity { get; set; }
+        //public bool isClickthrough { get; set; }
 
-        public PluginUI(float opacity, bool isClickthrough)
+        public PluginUI(Configuration config)
         {
-            this.opacity = opacity;
-            this.isClickthrough = isClickthrough;
+            this.config = config;
         }
+
+        public PluginUI() { }
 
         public void Draw()
         {
@@ -23,12 +25,12 @@ namespace DeepDungeonDex
             var mobData = DataHandler.Mobs(TargetData.NameID);
             if (mobData == null) return;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
-            if (isClickthrough)
+            if (config.IsClickthrough)
             {
                 flags |= ImGuiWindowFlags.NoInputs;
             }
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
-            ImGui.SetNextWindowBgAlpha(opacity);
+            ImGui.SetNextWindowBgAlpha(config.Opacity);
             ImGui.Begin("cool strati window", flags);
             ImGui.Text("Name:\n"+ TargetData.Name);
             ImGui.NewLine();
