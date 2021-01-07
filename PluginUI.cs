@@ -6,6 +6,7 @@ namespace DeepDungeonDex
 {
     public class PluginUI
     {
+        public bool IsVisible { get; set; }
         private float opacity;
         private bool isClickthrough;
 
@@ -14,8 +15,6 @@ namespace DeepDungeonDex
             this.opacity = opacity;
             this.isClickthrough = isClickthrough;
         }
-
-        public bool IsVisible { get; set; }
 
         public void Draw()
         {
