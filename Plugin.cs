@@ -16,6 +16,8 @@ namespace DeepDungeonDex
         private Configuration config;
         private PluginUI ui;
         private ConfigUI cui;
+        public float Opacity { get; set; }
+        public bool IsClickthrough { get; set; }
         private Actor previousTarget;
 
         public string Name => "DeepDungeonDex";
@@ -25,7 +27,10 @@ namespace DeepDungeonDex
             this.pluginInterface = pluginInterface;
 
             this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
+            Opacity = config.Opacity;
+            IsClickthrough = config.IsClickthrough;
             this.config.Initialize(this.pluginInterface);
+
 
             this.ui = new PluginUI();
             this.cui = new ConfigUI();
@@ -42,6 +47,7 @@ namespace DeepDungeonDex
 
         public void OpenConfig(string command, string args)
         {
+            cui.Initialize(this.pluginInterface);
             cui.IsVisible = true;
         }
 

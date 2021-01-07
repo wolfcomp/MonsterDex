@@ -1,4 +1,5 @@
-﻿using ImGuiNET;
+﻿
+using ImGuiNET;
 using System.Numerics;
 
 namespace DeepDungeonDex
@@ -6,7 +7,6 @@ namespace DeepDungeonDex
     public class PluginUI
     {
         public bool IsVisible { get; set; }
-        private Configuration config = new Configuration();
 
         public void Draw()
         {
@@ -16,7 +16,7 @@ namespace DeepDungeonDex
             if (mobData == null) return;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
-            ImGui.SetNextWindowBgAlpha(config.Opacity);
+            ImGui.SetNextWindowBgAlpha(ConfigUI.opacity);
             ImGui.Begin("cool strati window", flags);
             ImGui.Text("Name:\n"+ TargetData.Name);
             ImGui.NewLine();
