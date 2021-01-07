@@ -8,12 +8,14 @@ namespace DeepDungeonDex
     {
 
         public bool IsVisible { get; set; }
-        private Configuration config;
-        private DalamudPluginInterface pluginInterface;
+        private float opacity;
+        private bool isClickthrough;
+        private Plugin plugin = new Plugin();
 
-        public void Initialize(DalamudPluginInterface pluginInterface)
+        public ConfigUI(float opacity, bool isClickthrough)
         {
-            this.config.Initialize(this.pluginInterface);
+            this.opacity = opacity;
+            this.isClickthrough = isClickthrough;
         }
 
         public void Draw()
@@ -25,16 +27,15 @@ namespace DeepDungeonDex
             ImGui.Begin("config", flags);
             if (ImGui.SliderFloat("Opacity", ref opacity, 0.0f, 1.0f))
             {
-                config.Opacity = opacity;
+                plugin.Opacity = opacity;
             }
-            if (ImGui.Checkbox("Enable clickthrough", ref isclickthrough))
+            if (ImGui.Checkbox("Enable clickthrough", ref isClickthrough))
             {
-                config.IsClickthrough = isclickthrough;
+                plugin.IsClickthrough = isClickthrough;
             }
             if (ImGui.Button("Close"))
             {
                 IsVisible = false;
-                config.Save();
             }
         }
     }

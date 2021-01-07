@@ -1,11 +1,9 @@
 ﻿using System;
-using ImGuiNET;
 
 using Dalamud.Plugin;
 using DeepDungeonDex.Attributes;
 using Dalamud.Game.Internal;
 using Dalamud.Game.ClientState.Actors.Types;
-using Dalamud.Game.ClientState.Actors.Types.NonPlayer;
 using Dalamud.Game.Command;
 
 namespace DeepDungeonDex
@@ -16,9 +14,9 @@ namespace DeepDungeonDex
         private Configuration config;
         private PluginUI ui;
         private ConfigUI cui;
-        public float Opacity { get; set; }
-        public bool IsClickthrough { get; set; }
         private Actor previousTarget;
+        public float Opacity;
+        public bool IsClickthrough;
 
         public string Name => "DeepDungeonDex";
 
@@ -27,13 +25,12 @@ namespace DeepDungeonDex
             this.pluginInterface = pluginInterface;
 
             this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
-            Opacity = config.Opacity;
-            IsClickthrough = config.IsClickthrough;
             this.config.Initialize(this.pluginInterface);
-
-
-            this.ui = new PluginUI();
-            this.cui = new ConfigUI();
+            
+            this.Opacity = config.Opacity;
+            this.IsClickthrough = config.IsClickthrough;
+            this.ui = new PluginUI(this.Opacity, this.IsClickthrough);
+            this.cui = new ConfigUI(this.Opacity, this.IsClickthrough);
             this.pluginInterface.UiBuilder.OnBuildUi += this.ui.Draw;
             this.pluginInterface.UiBuilder.OnBuildUi += this.cui.Draw;
 
@@ -47,7 +44,6 @@ namespace DeepDungeonDex
 
         public void OpenConfig(string command, string args)
         {
-            cui.Initialize(this.pluginInterface);
             cui.IsVisible = true;
         }
 
@@ -81,9 +77,12 @@ namespace DeepDungeonDex
 
             this.pluginInterface.CommandManager.RemoveHandler("/pddd");
 
+            config.Opacity = this.Opacity;
+            config.IsClickthrough = this.IsClickthrough;
             this.pluginInterface.SavePluginConfig(this.config);
 
             this.pluginInterface.UiBuilder.OnBuildUi -= this.ui.Draw;
+            this.pluginInterface.UiBuilder.OnBuildUi -= this.cui.Draw;
 
             this.pluginInterface.Dispose();
         }
