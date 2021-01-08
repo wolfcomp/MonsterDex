@@ -43,7 +43,7 @@ namespace DeepDungeonDex
                     ImGui.PopStyleColor();
                     break;
                 case DataHandler.MobData.ThreatLevel.Caution:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFFFFFF00);
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FFFF);
                     ImGui.Text("Caution");
                     ImGui.PopStyleColor();
                     break;
