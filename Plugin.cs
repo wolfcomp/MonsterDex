@@ -43,7 +43,6 @@ namespace DeepDungeonDex
 
         public void GetData(Framework framework)
         {
-            //var chat = this.pluginInterface.Framework.Gui.Chat;
             if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon]) return;
             var target = pluginInterface.ClientState.Targets.CurrentTarget;
             if (target == null || target == previousTarget) 
@@ -76,6 +75,8 @@ namespace DeepDungeonDex
             this.pluginInterface.UiBuilder.OnBuildUi -= this.ui.Draw;
             this.pluginInterface.UiBuilder.OnBuildUi -= this.cui.Draw;
 
+            this.pluginInterface.Framework.OnUpdateEvent -= this.GetData;
+
             this.pluginInterface.Dispose();
         }
 
@@ -84,6 +85,7 @@ namespace DeepDungeonDex
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
         #endregion
     }
 }

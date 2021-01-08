@@ -8,15 +8,11 @@ namespace DeepDungeonDex
     {
         public bool IsVisible { get; set; }
         private Configuration config;
-        //public float opacity { get; set; }
-        //public bool isClickthrough { get; set; }
 
         public PluginUI(Configuration config)
         {
             this.config = config;
         }
-
-        public PluginUI() { }
 
         public void Draw()
         {
@@ -32,10 +28,11 @@ namespace DeepDungeonDex
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
             ImGui.SetNextWindowBgAlpha(config.Opacity);
             ImGui.Begin("cool strati window", flags);
-            ImGui.Text("Name:\n"+ TargetData.Name);
+            ImGui.Text("Name:\n"+TargetData.Name);
             ImGui.NewLine();
             ImGui.Columns(3, null, false);
-            ImGui.Text("Aggro Type:\n" + mobData.Aggro);
+            ImGui.Text("Aggro Type:\n");
+            ImGui.Text(mobData.Aggro.ToString());
             ImGui.NextColumn();
             ImGui.Text("Threat:\n");
             switch (mobData.Threat)
@@ -83,7 +80,6 @@ namespace DeepDungeonDex
             ImGui.Columns(1);
             ImGui.NewLine();
             ImGui.TextWrapped(mobData.MobNotes);
-            //if (ImGui.Button("Close")) { this.IsVisible = false; }
             ImGui.End();
         }
     }
