@@ -1,5 +1,5 @@
-﻿using Dalamud.Plugin;
-using ImGuiNET;
+﻿using ImGuiNET;
+using System.Diagnostics;
 using System.Numerics;
 
 namespace DeepDungeonDex
@@ -39,6 +39,17 @@ namespace DeepDungeonDex
                 IsVisible = false;
                 config.Save();
             }
+            ImGui.PushStyleColor(ImGuiCol.Button, 0xFF5E5BFF);
+            ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
+            ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
+            var c = ImGui.GetCursorPos();
+            ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("Support on Ko-fi").X);
+            if (ImGui.SmallButton("Support on Ko-fi"))
+            {
+                Process.Start("https://ko-fi.com/strati");
+            }
+            ImGui.SetCursorPos(c);
+            ImGui.PopStyleColor(3);
         }
     }
 }

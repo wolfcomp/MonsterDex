@@ -1,7 +1,6 @@
 ﻿using System;
 
 using Dalamud.Plugin;
-using DeepDungeonDex.Attributes;
 using Dalamud.Game.Internal;
 using Dalamud.Game.ClientState.Actors.Types;
 using Dalamud.Game.Command;
