@@ -53,13 +53,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Plugin.json">
+    <None Update="DeepDungeonDex.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DalamudPackager" Version="1.1.0" />
     <PackageReference Include="ImGui.NET" Version="1.78.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Update="System.Numerics">
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 
 </Project>
