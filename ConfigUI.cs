@@ -1,6 +1,7 @@
 ﻿using ImGuiNET;
 using System.Diagnostics;
 using System.Numerics;
+using Dalamud.Plugin;
 
 namespace DeepDungeonDex
 {
@@ -34,15 +35,30 @@ namespace DeepDungeonDex
             {
                 config.IsClickthrough = isClickthrough;
             }
+            ImGui.NewLine();
             if (ImGui.Button("Save"))
             {
                 IsVisible = false;
                 config.Save();
             }
+            ImGui.SameLine();
+            var c = ImGui.GetCursorPos();
+            ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("<3    Support on Ko-fi").X);
+            ImGui.SmallButton("<3");
+            ImGui.SetCursorPos(c);
+            if (ImGui.IsItemHovered())
+            {
+                ImGui.BeginTooltip();
+                ImGui.PushTextWrapPos(400f);
+                ImGui.TextWrapped("Thanks to the Deep Dungeons Discord server for a lot of clarification and information. Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!");
+                ImGui.PopTextWrapPos();
+                ImGui.EndTooltip();
+            };
+            ImGui.SameLine();
             ImGui.PushStyleColor(ImGuiCol.Button, 0xFF5E5BFF);
             ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
             ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
-            var c = ImGui.GetCursorPos();
+            c = ImGui.GetCursorPos();
             ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("Support on Ko-fi").X);
             if (ImGui.SmallButton("Support on Ko-fi"))
             {
@@ -50,6 +66,7 @@ namespace DeepDungeonDex
             }
             ImGui.SetCursorPos(c);
             ImGui.PopStyleColor(3);
+            ImGui.End();
         }
     }
 }
