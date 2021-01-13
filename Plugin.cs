@@ -43,7 +43,11 @@ namespace DeepDungeonDex
 
         public void GetData(Framework framework)
         {
-            if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon]) return;
+            if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon])
+            {
+                ui.IsVisible = false;
+                return;
+            }
             var target = pluginInterface.ClientState.Targets.CurrentTarget;
             if (target == null || target == previousTarget) 
             {
