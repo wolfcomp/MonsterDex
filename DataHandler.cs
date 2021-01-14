@@ -164,9 +164,9 @@ namespace DeepDungeonDex
 				{ 7376, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Charges, buffs own damage, double autos, electricity Bleed" } },
 				{ 7377, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Charges, buffs own damage, untelegraphed buster \"Ripper Claw\"" } },
 				// HoH floors 91-99
-                { 7378, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="WHM: double autos\n\"Stone\" can be line of sighted" } },
+                { 7378, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback" } },
 				{ 7379, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="MNK: Haste buff, short invuln" } },
-				{ 7380, new MobData { Threat=MobData.ThreatLevel.DoNotEngage, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback" } },
+				{ 7380, new MobData { Threat=MobData.ThreatLevel.DoNotEngage, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="WHM: double autos\n\"Stone\" can be line of sighted" } },
 				{ 7381, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Proximity, IsStunnable=false, MobNotes="Cleave\nLarge line AoE that can be line of sighted" } },
 				{ 7382, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="\"Charybdis\" AoE that leaves tornadoes on random players" } },
 				{ 7383, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
@@ -178,6 +178,7 @@ namespace DeepDungeonDex
 				{ 7389, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Sight, IsStunnable=false, MobNotes="Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE \"Black Nebula\"" } },
 				{ 7390, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Rapid double autos and untelegraphed line AoE \"Quasar\"" } },
 				{ 7391, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Double autos, cone AoE inflicts Sleep" } },
+				{ 7584, new MobData { Threat=MobData.ThreatLevel.Danger, Aggro=MobData.AggroType.Sight, IsStunnable=false, MobNotes="Permanent stacking damage buff\nMassive enrage on random player\"Allagan Meteor\"\nGaze attack" } },
 				// HoH bosses and misc.
 				{ 7392, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n\"Malice\" can be interrupted with silence/stun/knockback/witching/\ninterject" } },
 				{ 7393, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n\"Malice\" can be interrupted with silence/stun/interject" } },
