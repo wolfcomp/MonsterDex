@@ -75,6 +75,9 @@ namespace DeepDungeonDex
                     ImGui.Text("No");
                     ImGui.PopStyleColor();
                     break;
+                default:
+                    ImGui.Text("Untested");
+                    break;
             }
             ImGui.NextColumn();
             ImGui.Columns(1);
