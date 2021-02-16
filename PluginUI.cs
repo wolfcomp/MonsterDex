@@ -47,14 +47,14 @@ namespace DeepDungeonDex
                     ImGui.Text("Caution");
                     ImGui.PopStyleColor();
                     break;
-                case DataHandler.MobData.ThreatLevel.Danger:
+                case DataHandler.MobData.ThreatLevel.Dangerous:
                     ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
-                    ImGui.Text("Danger");
+                    ImGui.Text("Dangerous");
                     ImGui.PopStyleColor();
                     break;
-                case DataHandler.MobData.ThreatLevel.DoNotEngage:
+                case DataHandler.MobData.ThreatLevel.Vicious:
                     ImGui.PushStyleColor(ImGuiCol.Text, 0xFFFF00FF);
-                    ImGui.Text("DO NOT ENGAGE");
+                    ImGui.Text("Vicious");
                     ImGui.PopStyleColor();
                     break;
                 default:
