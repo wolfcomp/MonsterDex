@@ -79,7 +79,7 @@ namespace DeepDungeonDex
                 { 7297, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Line AoE inflicts Bleed" } },
                 { 7298, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Cross AoE inflicts Suppuration" } },
                 { 7299, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Large AoE inflicts Paralysis" } },
-                { 7300, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Circle AoE inflicts Suppuration" } },
+                { 7300, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Circle AoE inflicts Suppuration" } }, 
                 //HoH floors 31-39
                 { 7301, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
                 { 7302, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Casts AoEs unaggroed" } },
@@ -178,9 +178,9 @@ namespace DeepDungeonDex
                 { 7389, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, IsStunnable=false, MobNotes="Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE \"Black Nebula\"" } },
                 { 7390, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Rapid double autos and untelegraphed line AoE \"Quasar\"" } },
                 { 7391, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="Double autos, cone AoE inflicts Sleep" } },
-                { 7584, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, IsStunnable=false, MobNotes="Permanent stacking damage buff\nMassive enrage on random player\"Allagan Meteor\"\nGaze attack" } },
-				// HoH bosses and misc.
-				{ 7392, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n\"Malice\" can be interrupted with silence/stun/knockback/witching/\ninterject" } },
+                { 7584, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, IsStunnable=false, MobNotes="Permanent stacking damage buff\nMassive enrage on random player\"Allagan Meteor\"\nGaze attack" } }, 
+                // HoH bosses and misc.
+                { 7392, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n\"Malice\" can be interrupted with silence/stun/knockback/witching/\ninterject" } },
                 { 7393, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n\"Malice\" can be interrupted with silence/stun/interject" } },
                 { 7394, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=false, MobNotes="Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n\"Malice\" can only be interrupted with interject\nCANNOT STUN" } },
                 { 7478, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Boss, IsStunnable=false, MobNotes="Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-roomwide AoE" } },
