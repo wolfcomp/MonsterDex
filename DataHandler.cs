@@ -109,10 +109,10 @@ namespace DeepDungeonDex
                 { 7325, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
                 { 7326, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sound, IsStunnable=true, MobNotes="Eventual ENRAGE" } },
 				//HoH floors 51-59
-                { 7327, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Autos inflict stacking vuln up" } },
-                { 7328, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Buster inflicts Bleed" } },
+                { 7327, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sound, IsStunnable=true, MobNotes="Autos inflict stacking vuln up" } },
+                { 7328, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sound, IsStunnable=true, MobNotes="Buster inflicts Bleed" } },
                 { 7329, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Buffs own damage" } },
-                { 7330, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Eventual instant ENRAGE" } },
+                { 7330, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Eventual instant ENRAGE" } },
                 { 7331, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Cone AoE inflicts Bleed" } },
                 { 7332, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Exclusively fatal line AoEs" } },
                 { 7333, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
