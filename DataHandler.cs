@@ -457,7 +457,7 @@ namespace DeepDungeonDex
                 { 5475, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=null, MobNotes="Double auto" } },
                 { 5479, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, IsStunnable=null, MobNotes="" } },
                 { 5480, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
-                { 2566, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=false, MobNotes="High damage autos and instant kill AoE\n\"Malice\" can only be interrupted with interject" } },
+                { 2566, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=false, MobNotes="High damage autos and instant kill AoE\n\"Infatuation\" can only be interrupted with interject" } },
 
             };
     }
