@@ -9,17 +9,6 @@ namespace DeepDungeonDex
             public bool? IsStunnable { get; set; }
             public string MobNotes { get; set; }
 
-            [Flags]
-            public enum VulnType
-            {
-                None     = 0,
-                Stun  = 1 << 0,
-                Sleep = 1 << 1,
-                Bind    = 1 << 2,
-                Heavy    = 1 << 3,
-                Undead   = 1 << 4,
-            }
-
             public enum ThreatLevel
             {
                 Unspecified,
