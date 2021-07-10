@@ -9,6 +9,17 @@ namespace DeepDungeonDex
             public bool? IsStunnable { get; set; }
             public string MobNotes { get; set; }
 
+            [Flags]
+            public enum VulnType
+            {
+                None     = 0,
+                Stun  = 1 << 0,
+                Sleep = 1 << 1,
+                Bind    = 1 << 2,
+                Heavy    = 1 << 3,
+                Undead   = 1 << 4,
+            }
+
             public enum ThreatLevel
             {
                 Unspecified,
@@ -374,7 +385,7 @@ namespace DeepDungeonDex
                 { 5388, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
                 { 5389, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Double autos" } },
                 { 5390, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
-                { 5391, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="" } },
+                { 5391, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, IsStunnable=null, MobNotes="" } },
                 { 5392, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=false, MobNotes="" } },
                 { 5393, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="" } },
                 { 5394, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, IsStunnable=true, MobNotes="" } },
@@ -398,7 +409,7 @@ namespace DeepDungeonDex
                 { 5412, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="" } },
                 { 5413, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="\"Charybdis\" - semi-enrage that drops party health to 1%%" } },
                 { 5414, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="Very high damage, inflicts Poison" } },
-                { 5415, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large donut AoE \"Death Spiral\" that deals heavy damage\nHas soft enrage of a strong damage buff" } },
+                { 5415, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Proximity, IsStunnable=null, MobNotes="Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large donut AoE \"Death Spiral\" that deals heavy damage\nHas soft enrage of a strong damage buff" } },
                 { 5416, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="" } },
                 { 5417, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="" } },
                 { 5418, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, IsStunnable=null, MobNotes="" } },
