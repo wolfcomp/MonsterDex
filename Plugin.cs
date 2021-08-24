@@ -1,9 +1,11 @@
 ﻿using System;
-
+using Dalamud.Game.ClientState;
 using Dalamud.Plugin;
-using Dalamud.Game.Internal;
-using Dalamud.Game.ClientState.Actors.Types;
+using Dalamud.Game.ClientState.Conditions;
+using Dalamud.Game.ClientState.Objects;
+using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
+using Dalamud.Game;
 
 namespace DeepDungeonDex
 {
@@ -13,27 +15,44 @@ namespace DeepDungeonDex
         private Configuration config;
         private PluginUI ui;
         private ConfigUI cui;
-        private Actor previousTarget;
+        private GameObject previousTarget;
+        private ClientState _clientState;
+        private Condition _condition;
+        private TargetManager _targetManager;
+        private Framework _framework;
+        private CommandManager _commands;
 
         public string Name => "DeepDungeonDex";
 
-        public void Initialize(DalamudPluginInterface pluginInterface)
+        public Plugin(
+            DalamudPluginInterface pluginInterface,
+            ClientState clientState,
+            CommandManager commands,
+            Condition condition,
+            Framework framework,
+            //SeStringManager seStringManager,
+            TargetManager targets)
         {
             this.pluginInterface = pluginInterface;
+            this._clientState = clientState;
+            this._condition = condition;
+            this._framework = framework;
+            this._commands = commands;
+            this._targetManager = targets;
 
             this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
             this.config.Initialize(this.pluginInterface);
             this.ui = new PluginUI(config);
             this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config);
-            this.pluginInterface.UiBuilder.OnBuildUi += this.ui.Draw;
-            this.pluginInterface.UiBuilder.OnBuildUi += this.cui.Draw;
+            this.pluginInterface.UiBuilder.Draw += this.ui.Draw;
+            this.pluginInterface.UiBuilder.Draw += this.cui.Draw;
 
-            this.pluginInterface.CommandManager.AddHandler("/pddd", new CommandInfo(OpenConfig)
+            this._commands.AddHandler("/pddd", new CommandInfo(OpenConfig)
             {
                 HelpMessage = "DeepDungeonDex config"
             });
 
-            this.pluginInterface.Framework.OnUpdateEvent += this.GetData;
+            this._framework.OnUpdateEvent += this.GetData;
         }
 
         public void OpenConfig(string command, string args)
@@ -43,12 +62,12 @@ namespace DeepDungeonDex
 
         public void GetData(Framework framework)
         {
-            if (!this.pluginInterface.ClientState.Condition[Dalamud.Game.ClientState.ConditionFlag.InDeepDungeon])
+            if (!this._condition[ConditionFlag.InDeepDungeon])
             {
                 ui.IsVisible = false;
                 return;
             }
-            var target = pluginInterface.ClientState.Targets.CurrentTarget;
+            var target = _targetManager.Target;
             if (target == null || target == previousTarget) 
             {
                 ui.IsVisible = false;
@@ -72,14 +91,14 @@ namespace DeepDungeonDex
         {
             if (!disposing) return;
 
-            this.pluginInterface.CommandManager.RemoveHandler("/pddd");
+            this._commands.RemoveHandler("/pddd");
 
             this.pluginInterface.SavePluginConfig(this.config);
 
-            this.pluginInterface.UiBuilder.OnBuildUi -= this.ui.Draw;
-            this.pluginInterface.UiBuilder.OnBuildUi -= this.cui.Draw;
+            this.pluginInterface.UiBuilder.Draw -= this.ui.Draw;
+            this.pluginInterface.UiBuilder.Draw -= this.cui.Draw;
 
-            this.pluginInterface.Framework.OnUpdateEvent -= this.GetData;
+            this._framework.OnUpdateEvent -= this.GetData;
 
             this.pluginInterface.Dispose();
         }

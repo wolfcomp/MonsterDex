@@ -1,21 +1,21 @@
 ﻿using System;
 using Dalamud.Plugin;
-using Dalamud.Game.ClientState.Actors.Types;
-using Dalamud.Game.ClientState.Actors.Types.NonPlayer;
+using Dalamud.Game.ClientState.Objects.Types;
+using Dalamud.Game.Text.SeStringHandling;
 
 namespace DeepDungeonDex
 {
 	public class TargetData
 	{
 		public static int NameID { get; set; }
-		public static string Name { get; set; }
+		public static SeString Name { get; set; }
 
-		public bool IsValidTarget(Actor target)
+		public bool IsValidTarget(GameObject target)
 		{
 			if (target is BattleNpc bnpc)
 			{
 				Name = bnpc.Name;
-				NameID = bnpc.NameId;
+				NameID = (int)bnpc.NameId;
 				return true;
 			}
 			else

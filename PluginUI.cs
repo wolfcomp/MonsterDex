@@ -14,6 +14,26 @@ namespace DeepDungeonDex
             this.config = config;
         }
 
+        private void PrintSingleVuln(bool? isVulnerable, string message)
+        {
+            ImGui.Text(message);
+            switch (isVulnerable)
+            {
+                case true:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
+                    ImGui.Text("Yes");
+                    ImGui.PopStyleColor();
+                    break;
+                case false:
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
+                    ImGui.Text("No");
+                    ImGui.PopStyleColor();
+                    break;
+                default:
+                    ImGui.Text("Untested");
+                    break;
+            }
+        }
         public void Draw()
         {
             if (!IsVisible)
@@ -62,6 +82,7 @@ namespace DeepDungeonDex
                     break;
             }
             ImGui.NextColumn();
+            //PrintSingleVuln(mobData.Vuln.CanStun, "Can Stun");
             ImGui.Text("Can stun:\n");
             switch (mobData.IsStunnable)
             {

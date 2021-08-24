@@ -7,6 +7,17 @@ namespace DeepDungeonDex
         public class MobData
         {
             public bool? IsStunnable { get; set; }
+
+            public class Vulnerabilities
+            {
+                public bool? CanStun { get; set; }
+                public bool? CanHeavy { get; set; }
+                public bool? CanSleep { get; set; }
+                public bool? CanBind { get; set; }
+                public bool? IsUndead { get; set; }
+            }
+            public Vulnerabilities Vuln { get; set; }
+            
             public string MobNotes { get; set; }
 
             public enum ThreatLevel
@@ -28,6 +39,7 @@ namespace DeepDungeonDex
                 Boss
             }
             public AggroType Aggro { get; set; }
+            
         }
 
         public static MobData Mobs(int nameID)
@@ -39,6 +51,7 @@ namespace DeepDungeonDex
         private static readonly Dictionary<int, MobData> mobs = new Dictionary<int, MobData>()
             {
 				// HoH floors 1-9
+                //{ 7262, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Auto inflicts Heavy debuff" } },
                 { 7262, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Auto inflicts Heavy debuff" } },
                 { 7263, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="Auto applies Physical Vuln Up every 10s" } },
                 { 7264, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="AoE applies Paralysis" } },
