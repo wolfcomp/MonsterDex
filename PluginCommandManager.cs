@@ -1,4 +1,5 @@
-﻿using Dalamud.Game.Command;
+﻿#pragma warning disable CA1416
+using Dalamud.Game.Command;
 using Dalamud.Plugin;
 using DeepDungeonDex.Attributes;
 using System;
@@ -88,3 +89,4 @@ namespace DeepDungeonDex
         }
     }
 }
+#pragma warning restore CA1416

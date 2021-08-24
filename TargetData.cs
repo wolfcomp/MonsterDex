@@ -1,5 +1,4 @@
-﻿using System;
-using Dalamud.Plugin;
+﻿#pragma warning disable CA1416
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Text.SeStringHandling;
 
@@ -25,3 +24,4 @@ namespace DeepDungeonDex
 		}
 	}
 }
+#pragma warning restore CA1416

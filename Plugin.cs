@@ -1,4 +1,5 @@
-﻿using System;
+﻿#pragma warning disable CA1416
+using System;
 using Dalamud.Game.ClientState;
 using Dalamud.Plugin;
 using Dalamud.Game.ClientState.Conditions;
@@ -52,7 +53,7 @@ namespace DeepDungeonDex
                 HelpMessage = "DeepDungeonDex config"
             });
 
-            this._framework.OnUpdateEvent += this.GetData;
+            this._framework.Update += this.GetData;
         }
 
         public void OpenConfig(string command, string args)
@@ -98,7 +99,7 @@ namespace DeepDungeonDex
             this.pluginInterface.UiBuilder.Draw -= this.ui.Draw;
             this.pluginInterface.UiBuilder.Draw -= this.cui.Draw;
 
-            this._framework.OnUpdateEvent -= this.GetData;
+            this._framework.Update -= this.GetData;
 
             this.pluginInterface.Dispose();
         }
@@ -112,3 +113,4 @@ namespace DeepDungeonDex
         #endregion
     }
 }
+#pragma warning restore CA1416
