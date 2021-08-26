@@ -1,12 +1,11 @@
-﻿#pragma warning disable CA1416
-using Dalamud.Game.ClientState.Objects.Types;
+﻿using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Text.SeStringHandling;
 
 namespace DeepDungeonDex
 {
 	public class TargetData
 	{
-		public static int NameID { get; set; }
+		public static uint NameID { get; set; }
 		public static SeString Name { get; set; }
 
 		public bool IsValidTarget(GameObject target)
@@ -14,7 +13,7 @@ namespace DeepDungeonDex
 			if (target is BattleNpc bnpc)
 			{
 				Name = bnpc.Name;
-				NameID = (int)bnpc.NameId;
+				NameID = bnpc.NameId;
 				return true;
 			}
 			else
@@ -24,4 +23,3 @@ namespace DeepDungeonDex
 		}
 	}
 }
-#pragma warning restore CA1416

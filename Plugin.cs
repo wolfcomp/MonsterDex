@@ -1,5 +1,4 @@
-﻿#pragma warning disable CA1416
-using System;
+﻿using System;
 using Dalamud.Game.ClientState;
 using Dalamud.Plugin;
 using Dalamud.Game.ClientState.Conditions;
@@ -68,12 +67,12 @@ namespace DeepDungeonDex
                 ui.IsVisible = false;
                 return;
             }
-            var target = _targetManager.Target;
-            if (target == null || target == previousTarget) 
+            GameObject target = _targetManager.Target;
+/*            if (target == null || target == previousTarget) 
             {
                 ui.IsVisible = false;
                 return;
-            }
+            } */
             TargetData t = new TargetData();
             if (!t.IsValidTarget(target))
             {
@@ -113,4 +112,3 @@ namespace DeepDungeonDex
         #endregion
     }
 }
-#pragma warning restore CA1416

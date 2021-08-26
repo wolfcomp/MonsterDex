@@ -42,13 +42,13 @@ namespace DeepDungeonDex
             
         }
 
-        public static MobData Mobs(int nameID)
+        public static MobData Mobs(uint nameID)
         {
             if (mobs.TryGetValue(nameID, out MobData value)) return value;
             else return null;
         }
 
-        private static readonly Dictionary<int, MobData> mobs = new Dictionary<int, MobData>()
+        private static readonly Dictionary<uint, MobData> mobs = new Dictionary<uint, MobData>()
             {
 				// HoH floors 1-9
                 //{ 7262, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Auto inflicts Heavy debuff" } },
