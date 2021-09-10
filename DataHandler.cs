@@ -360,7 +360,7 @@ namespace DeepDungeonDex
                 { 5374, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="\"Sticky Tongue\" draw-in and stun attack if not facing, followed by \"Labored Leap\" AoE centered on enemy" } },
                 { 5375, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Eventual ENRAGE" } },
                 { 5376, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=true, MobNotes="" } },
-                { 5377, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, IsStunnable=null, MobNotes="Casts invuln buff on itself" } },
+                { 5377, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, IsStunnable=null, MobNotes="Casts invuln buff on itself" } },
                 { 5378, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="" } },
                 { 5379, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, IsStunnable=true, MobNotes="" } },
                 { 5380, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, IsStunnable=true, MobNotes="Will inflict Sleep before casting \"Bad Breath\"" } },
