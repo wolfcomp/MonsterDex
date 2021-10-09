@@ -53,7 +53,7 @@ namespace DeepDungeonDex
                 ImGui.TextWrapped("Thanks to the Deep Dungeons Discord server for a lot of clarification and information. Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!");
                 ImGui.PopTextWrapPos();
                 ImGui.EndTooltip();
-            };
+            }; 
             ImGui.SameLine();
             ImGui.PushStyleColor(ImGuiCol.Button, 0xFF5E5BFF);
             ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
@@ -62,7 +62,11 @@ namespace DeepDungeonDex
             ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("Support on Ko-fi").X);
             if (ImGui.SmallButton("Support on Ko-fi"))
             {
-                Process.Start("https://ko-fi.com/strati");
+                Process.Start(new ProcessStartInfo()
+                {
+                    FileName = "https://www.ko-fi.com/strati",
+                    UseShellExecute = true
+                });
             }
             ImGui.SetCursorPos(c);
             ImGui.PopStyleColor(3);

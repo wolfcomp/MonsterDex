@@ -1,4 +1,5 @@
-﻿using Dalamud.Game.Command;
+﻿#pragma warning disable CA1416
+using Dalamud.Game.Command;
 using Dalamud.Plugin;
 using DeepDungeonDex.Attributes;
 using System;
@@ -15,11 +16,13 @@ namespace DeepDungeonDex
         private readonly DalamudPluginInterface pluginInterface;
         private readonly (string, CommandInfo)[] pluginCommands;
         private readonly THost host;
+        private readonly CommandManager _commands;
 
-        public PluginCommandManager(THost host, DalamudPluginInterface pluginInterface)
+        public PluginCommandManager(THost host, DalamudPluginInterface pluginInterface, CommandManager commands)
         {
             this.pluginInterface = pluginInterface;
             this.host = host;
+            this._commands = commands;
 
             this.pluginCommands = host.GetType().GetMethods(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static | BindingFlags.Instance)
                 .Where(method => method.GetCustomAttribute<CommandAttribute>() != null)
@@ -38,7 +41,7 @@ namespace DeepDungeonDex
             for (var i = 0; i < this.pluginCommands.Length; i++)
             {
                 var (command, commandInfo) = this.pluginCommands[i];
-                this.pluginInterface.CommandManager.AddHandler(command, commandInfo);
+                this._commands.AddHandler(command, commandInfo);
             }
         }
 
@@ -47,7 +50,7 @@ namespace DeepDungeonDex
             for (var i = 0; i < this.pluginCommands.Length; i++)
             {
                 var (command, _) = this.pluginCommands[i];
-                this.pluginInterface.CommandManager.RemoveHandler(command);
+                this._commands.RemoveHandler(command);
             }
         }
 
@@ -86,3 +89,4 @@ namespace DeepDungeonDex
         }
     }
 }
+#pragma warning restore CA1416

@@ -20,7 +20,9 @@ namespace DeepDungeonDex
 
         public void Save()
         {
+#pragma warning disable CA1416
             this.pluginInterface.SavePluginConfig(this);
+#pragma warning restore CA1416
         }
     }
 }

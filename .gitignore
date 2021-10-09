@@ -340,3 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 DalamudPackager.targets
+global.json
