@@ -84,7 +84,7 @@ namespace DeepDungeonDex
             ImGui.NextColumn();
             //PrintSingleVuln(mobData.Vuln.CanStun, "Can Stun");
             ImGui.Text("Can stun:\n");
-            switch (mobData.IsStunnable)
+            switch (mobData.Vuln.CanStun)
             {
                 case true:
                     ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
