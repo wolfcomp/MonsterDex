@@ -15,22 +15,23 @@ namespace DeepDungeonDex
         }
 
         private void PrintSingleVuln(bool? isVulnerable, string message)
-        {
-            ImGui.Text(message);
+        { 
             switch (isVulnerable)
             {
                 case true:
                     ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
-                    ImGui.Text("Yes");
+                    ImGui.Text(message);
                     ImGui.PopStyleColor();
                     break;
                 case false:
                     ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
-                    ImGui.Text("No");
+                    ImGui.Text(message);
                     ImGui.PopStyleColor();
                     break;
                 default:
-                    ImGui.Text("Untested");
+                    ImGui.PushStyleColor(ImGuiCol.Text, 0x50FFFFFF);
+                    ImGui.Text(message);
+                    ImGui.PopStyleColor();
                     break;
             }
         }
@@ -82,24 +83,15 @@ namespace DeepDungeonDex
                     break;
             }
             ImGui.NextColumn();
-            //PrintSingleVuln(mobData.Vuln.CanStun, "Can Stun");
-            ImGui.Text("Can stun:\n");
-            switch (mobData.Vuln.CanStun)
+            PrintSingleVuln(mobData.Vuln.CanStun, "Stun");
+            PrintSingleVuln(mobData.Vuln.CanSleep, "Sleep");
+            PrintSingleVuln(mobData.Vuln.CanBind, "Bind");
+            PrintSingleVuln(mobData.Vuln.CanHeavy, "Heavy");
+            if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
             {
-                case true:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
-                    ImGui.Text("Yes");
-                    ImGui.PopStyleColor();
-                    break;
-                case false:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
-                    ImGui.Text("No");
-                    ImGui.PopStyleColor();
-                    break;
-                default:
-                    ImGui.Text("Untested");
-                    break;
+                PrintSingleVuln(mobData.Vuln.IsUndead, "Undead");
             }
+
             ImGui.NextColumn();
             ImGui.Columns(1);
             ImGui.NewLine();

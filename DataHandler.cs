@@ -51,7 +51,6 @@ namespace DeepDungeonDex
         private static readonly Dictionary<uint, MobData> mobs = new Dictionary<uint, MobData>()
             {
 				// HoH floors 1-9
-                { 7262, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Auto inflicts Heavy debuff" } },
                 { 7262, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Auto inflicts Heavy debuff" } },
                 { 7263, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Auto applies Physical Vuln Up every 10s" } },
                 { 7264, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="AoE applies Paralysis" } },
@@ -80,8 +79,8 @@ namespace DeepDungeonDex
                 { 7286, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Roomwide ENRAGE" } },
                 { 7287, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="" } },
 				// HoH floors 21-29
-                { 7288, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Gaze inflicts Blind" } },
-                { 7289, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Cures self and allies" } },
+                { 7288, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun=true,CanHeavy=true,CanBind=false}, MobNotes="Gaze inflicts Blind" } },
+                { 7289, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true,CanHeavy=true}, MobNotes="Cures self and allies" } },
                 { 7290, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed" } },
                 { 7291, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Buffs own damage" } },
                 { 7292, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Untelegraphed conal AoE with knockback, buster" } },
@@ -90,7 +89,7 @@ namespace DeepDungeonDex
                 { 7295, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Draw-in followed by cleave" } },
                 { 7296, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Gaze" } },
                 { 7297, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Line AoE inflicts Bleed" } },
-                { 7298, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Cross AoE inflicts Suppuration" } },
+                { 7298, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true,CanHeavy=true}, MobNotes="Cross AoE inflicts Suppuration" } },
                 { 7299, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Large AoE inflicts Paralysis" } },
                 { 7300, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun=true}, MobNotes="Circle AoE inflicts Suppuration" } }, 
                 //HoH floors 31-39
