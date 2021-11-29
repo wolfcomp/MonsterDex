@@ -85,13 +85,13 @@ namespace DeepDungeonDex
             ImGui.NextColumn();
             PrintSingleVuln(mobData.Vuln.CanStun, "Stun");
             PrintSingleVuln(mobData.Vuln.CanSleep, "Sleep");
+            PrintSingleVuln(mobData.Vuln.CanSlow, "Slow");
             PrintSingleVuln(mobData.Vuln.CanBind, "Bind");
             PrintSingleVuln(mobData.Vuln.CanHeavy, "Heavy");
             if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
             {
                 PrintSingleVuln(mobData.Vuln.IsUndead, "Undead");
             }
-
             ImGui.NextColumn();
             ImGui.Columns(1);
             ImGui.NewLine();
