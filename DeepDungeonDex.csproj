@@ -7,6 +7,7 @@
     <FileVersion>1.1.8.0</FileVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
   </PropertyGroup>
   
   
@@ -45,6 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DalamudPackager" Version="2.1.4" />
     <PackageReference Include="ImGui.NET" Version="1.78.0" />
   </ItemGroup>
 
@@ -52,6 +54,10 @@
     <Reference Update="System.Numerics">
       <Private>false</Private>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include=".github\workflows\BuildAndPR.yaml" />
   </ItemGroup>
 
 </Project>
