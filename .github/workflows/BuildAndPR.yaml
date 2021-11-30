@@ -9,7 +9,7 @@ env:
   PUBLIC_NAME: DeepDungeonDex
   SOLUTION_NAME: DeepDungeonDex
   INTERNAL_NAME: DeepDungeonDex
-  RELEASE_DIR: DeepDungeonDex\bin\Release\net5.0\DeepDungeonDex
+  RELEASE_DIR: D:\a\DeepDungeonDex\DeepDungeonDex\bin\Release\net5.0\DeepDungeonDex
 jobs:
   build:
     runs-on: windows-latest
