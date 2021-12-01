@@ -25,7 +25,7 @@ namespace DeepDungeonDex
             if (!IsVisible)
                 return;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize;
-            ImGui.SetNextWindowSizeConstraints(new Vector2(250, 100), new Vector2(1000, 1000));
+            ImGui.SetNextWindowSizeConstraints(new Vector2(250, 100), new Vector2(400, 200));
             ImGui.Begin("config", flags);
             if (ImGui.SliderFloat("Opacity", ref opacity, 0.0f, 1.0f))
             {
@@ -43,14 +43,14 @@ namespace DeepDungeonDex
             }
             ImGui.SameLine();
             var c = ImGui.GetCursorPos();
-            ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("<3    Support on Ko-fi").X);
+            ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("<3    Sponsor on GitHub").X);
             ImGui.SmallButton("<3");
             ImGui.SetCursorPos(c);
             if (ImGui.IsItemHovered())
             {
                 ImGui.BeginTooltip();
                 ImGui.PushTextWrapPos(400f);
-                ImGui.TextWrapped("Thanks to the Deep Dungeons Discord server for a lot of clarification and information. Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!");
+                ImGui.TextWrapped("Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!");
                 ImGui.PopTextWrapPos();
                 ImGui.EndTooltip();
             }; 
@@ -59,12 +59,12 @@ namespace DeepDungeonDex
             ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
             ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
             c = ImGui.GetCursorPos();
-            ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("Support on Ko-fi").X);
-            if (ImGui.SmallButton("Support on Ko-fi"))
+            ImGui.SetCursorPosX(ImGui.GetWindowContentRegionWidth() - ImGui.CalcTextSize("Sponsor on GitHub").X);
+            if (ImGui.SmallButton("Sponsor on GitHub"))
             {
                 Process.Start(new ProcessStartInfo()
                 {
-                    FileName = "https://www.ko-fi.com/strati",
+                    FileName = "https://github.com/sponsors/Strati",
                     UseShellExecute = true
                 });
             }
