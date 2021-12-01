@@ -1,6 +1,7 @@
 ﻿
 using ImGuiNET;
 using System.Numerics;
+using Dalamud.Game.ClientState;
 
 namespace DeepDungeonDex
 {
@@ -96,6 +97,8 @@ namespace DeepDungeonDex
             ImGui.Columns(1);
             ImGui.NewLine();
             ImGui.TextWrapped(mobData.MobNotes);
+            ImGui.NewLine();
+            ImGui.Text(TargetData.CClass);
             ImGui.End();
         }
     }

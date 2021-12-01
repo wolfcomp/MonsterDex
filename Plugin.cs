@@ -62,6 +62,7 @@ namespace DeepDungeonDex
 
         public void GetData(Framework framework)
         {
+            var currentclass = _clientState.LocalPlayer.ClassJob;
             if (!this._condition[ConditionFlag.InDeepDungeon])
             {
                 ui.IsVisible = false;

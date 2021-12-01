@@ -1,5 +1,10 @@
-﻿using Dalamud.Game.ClientState.Objects.Types;
+﻿using System;
+using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Text.SeStringHandling;
+using Dalamud.Game.ClientState;
+using Dalamud.Game.ClientState.Objects.SubKinds;
+using Dalamud.Game.ClientState.Resolvers;
+using Lumina.Excel.GeneratedSheets;
 
 namespace DeepDungeonDex
 {
@@ -7,11 +12,15 @@ namespace DeepDungeonDex
 	{
 		public static uint NameID { get; set; }
 		public static SeString Name { get; set; }
+		public PlayerCharacter LocalPlayer { get; }
+
+		public static string CClass;
 
 		public bool IsValidTarget(GameObject target)
 		{
 			if (target is BattleNpc bnpc)
 			{
+				CClass = LocalPlayer.ClassJob.GameData.ToString();
 				Name = bnpc.Name;
 				NameID = bnpc.NameId;
 				return true;
