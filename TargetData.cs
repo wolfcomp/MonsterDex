@@ -12,15 +12,14 @@ namespace DeepDungeonDex
 	{
 		public static uint NameID { get; set; }
 		public static SeString Name { get; set; }
-		public PlayerCharacter LocalPlayer { get; }
 
-		public static string CClass;
+		public static string CClass { get; set; }
 
-		public bool IsValidTarget(GameObject target)
+		public bool IsValidTarget(GameObject target, String currentclass)
 		{
 			if (target is BattleNpc bnpc)
 			{
-				CClass = LocalPlayer.ClassJob.GameData.ToString();
+				CClass = currentclass;
 				Name = bnpc.Name;
 				NameID = bnpc.NameId;
 				return true;

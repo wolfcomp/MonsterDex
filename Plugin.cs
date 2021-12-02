@@ -6,6 +6,7 @@ using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
 using Dalamud.Game;
+using Lumina.Text;
 
 namespace DeepDungeonDex
 {
@@ -62,20 +63,21 @@ namespace DeepDungeonDex
 
         public void GetData(Framework framework)
         {
-            var currentclass = _clientState.LocalPlayer.ClassJob;
+
+            String currentclass;
+            if (_clientState.LocalPlayer != null)
+            {
+                currentclass = _clientState.LocalPlayer.ClassJob.GameData.Abbreviation.ToString();
+            }
             if (!this._condition[ConditionFlag.InDeepDungeon])
             {
                 ui.IsVisible = false;
                 return;
             }
             GameObject target = _targetManager.Target;
-/*            if (target == null || target == previousTarget) 
-            {
-                ui.IsVisible = false;
-                return;
-            } */
+
             TargetData t = new TargetData();
-            if (!t.IsValidTarget(target))
+            if (!t.IsValidTarget(target, currentclass))
             {
                 ui.IsVisible = false;
                 return;
