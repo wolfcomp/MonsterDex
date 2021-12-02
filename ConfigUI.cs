@@ -1,7 +1,6 @@
 ﻿using ImGuiNET;
 using System.Diagnostics;
 using System.Numerics;
-using Dalamud.Plugin;
 
 namespace DeepDungeonDex
 {

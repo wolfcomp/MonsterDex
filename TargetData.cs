@@ -1,10 +1,5 @@
-﻿using System;
-using Dalamud.Game.ClientState.Objects.Types;
+﻿using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Text.SeStringHandling;
-using Dalamud.Game.ClientState;
-using Dalamud.Game.ClientState.Objects.SubKinds;
-using Dalamud.Game.ClientState.Resolvers;
-using Lumina.Excel.GeneratedSheets;
 
 namespace DeepDungeonDex
 {

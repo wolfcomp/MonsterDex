@@ -1,7 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using ImGuiNET;
+﻿using ImGuiNET;
 using System.Numerics;
 using Dalamud.Game.ClientState;
 

@@ -6,7 +6,6 @@ using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
 using Dalamud.Game;
-using Lumina.Text;
 
 namespace DeepDungeonDex
 {
