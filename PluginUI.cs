@@ -19,25 +19,24 @@ namespace DeepDungeonDex
             this.clientState = clientState;
         }
 
-        private readonly bool[] cjstun = {
-            false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false,
-            false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false,
-            true, false, true, false, true, true, false, false, true
+        private readonly bool[] cjstun = 
+        {
+            false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false, true, false, true, false, true, true, false, false, true
         };
 
         private readonly bool[] cjsleep =
         {
-            false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, false, false, false, false, false, false, false, true, true, false, false, false, false 
+            false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, true, false, true, true, false, false, true, false
         };
         
         private readonly bool[] cjbind =
         {
-            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, true, false, false
+            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
         };
         
         private readonly bool[] cjheavy =
         {
-            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, true, false, false
+            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
         };
         
         private readonly bool[] cjslow =
