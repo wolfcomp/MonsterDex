@@ -1,4 +1,6 @@
 ﻿
+using System;
+using System.Collections.Generic;
 using ImGuiNET;
 using System.Numerics;
 using Dalamud.Game.ClientState;
@@ -16,6 +18,32 @@ namespace DeepDungeonDex
             this.config = config;
             this.clientState = clientState;
         }
+
+        private readonly bool[] cjstun = {
+            false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false,
+            false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false,
+            true, false, true, false, true, true, false, false, true
+        };
+
+        private readonly bool[] cjsleep =
+        {
+            false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, false, false, false, false, false, false, false, true, true, false, false, false, false 
+        };
+        
+        private readonly bool[] cjbind =
+        {
+            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, true, false, false
+        };
+        
+        private readonly bool[] cjheavy =
+        {
+            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, true, false, false
+        };
+        
+        private readonly bool[] cjslow =
+        {
+            false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, true, true, true, true, false, true, false, true, true, true, false, true
+        };
 
         private void PrintSingleVuln(bool? isVulnerable, string message)
         { 
@@ -45,6 +73,8 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
+            uint cjid;
+            cjid = clientState.LocalPlayer != null ? (uint)0 : clientState.LocalPlayer.ClassJob.GameData.RowId;
             var mobData = DataHandler.Mobs(TargetData.NameID);
             if (mobData == null) return;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
@@ -89,11 +119,26 @@ namespace DeepDungeonDex
                     break;
             }
             ImGui.NextColumn();
-            PrintSingleVuln(mobData.Vuln.CanStun, "Stun");
-            PrintSingleVuln(mobData.Vuln.CanSleep, "Sleep");
-            PrintSingleVuln(mobData.Vuln.CanSlow, "Slow");
-            PrintSingleVuln(mobData.Vuln.CanBind, "Bind");
-            PrintSingleVuln(mobData.Vuln.CanHeavy, "Heavy");
+            if (!config.HideBasedOnJob || cjstun[cjid])
+            {
+                PrintSingleVuln(mobData.Vuln.CanStun, "Stun");    
+            }
+            if (!config.HideBasedOnJob || cjsleep[cjid])
+            {
+                PrintSingleVuln(mobData.Vuln.CanSleep, "Sleep");    
+            }
+            if (!config.HideBasedOnJob || cjbind[cjid])
+            {
+                PrintSingleVuln(mobData.Vuln.CanBind, "Bind");
+            }
+            if (!config.HideBasedOnJob || cjheavy[cjid])
+            {
+                PrintSingleVuln(mobData.Vuln.CanHeavy, "Heavy");   
+            }
+            if (!config.HideBasedOnJob || cjslow[cjid])
+            {
+                PrintSingleVuln(mobData.Vuln.CanSlow, "Slow");   
+            }
             if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
             {
                 PrintSingleVuln(mobData.Vuln.IsUndead, "Undead");
