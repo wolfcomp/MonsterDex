@@ -25,9 +25,12 @@ namespace DeepDungeonDex
                     ImGui.PopStyleColor();
                     break;
                 case false:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
-                    ImGui.Text(message);
-                    ImGui.PopStyleColor();
+                    if (!config.HideRedVulns)
+                    {
+                        ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
+                        ImGui.Text(message);
+                        ImGui.PopStyleColor();
+                    }
                     break;
                 default:
                     ImGui.PushStyleColor(ImGuiCol.Text, 0x50FFFFFF);
@@ -98,7 +101,7 @@ namespace DeepDungeonDex
             ImGui.NewLine();
             ImGui.TextWrapped(mobData.MobNotes);
             ImGui.NewLine();
-            ImGui.Text(TargetData.CClass);
+            ImGui.Text(TargetData.CClass.ToString());
             ImGui.End();
         }
     }

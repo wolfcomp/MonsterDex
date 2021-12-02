@@ -12,10 +12,8 @@ namespace DeepDungeonDex
 	{
 		public static uint NameID { get; set; }
 		public static SeString Name { get; set; }
-
-		public static string CClass { get; set; }
-
-		public bool IsValidTarget(GameObject target, String currentclass)
+		public static uint CClass { get; set; }
+		public bool IsValidTarget(GameObject target, uint currentclass)
 		{
 			if (target is BattleNpc bnpc)
 			{

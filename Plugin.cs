@@ -64,10 +64,10 @@ namespace DeepDungeonDex
         public void GetData(Framework framework)
         {
 
-            String currentclass = null;
+            uint currentclass = 0;
             if (_clientState.LocalPlayer != null)
             {
-                currentclass = _clientState.LocalPlayer.ClassJob.GameData.Abbreviation.ToString();
+                currentclass = _clientState.LocalPlayer.ClassJob.GameData.RowId;
             }
             if (!this._condition[ConditionFlag.InDeepDungeon])
             {
