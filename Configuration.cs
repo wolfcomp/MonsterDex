@@ -9,6 +9,8 @@ namespace DeepDungeonDex
         public int Version { get; set; }
         public bool IsClickthrough { get; set; } = false;
         public float Opacity { get; set; } = 1.0f;
+        public bool HideRedVulns { get; set; } = false;
+        public bool HideBasedOnJob { get; set; } = false;
 
         // Add any other properties or methods here.
         [JsonIgnore] private DalamudPluginInterface pluginInterface;
@@ -20,9 +22,7 @@ namespace DeepDungeonDex
 
         public void Save()
         {
-#pragma warning disable CA1416
             this.pluginInterface.SavePluginConfig(this);
-#pragma warning restore CA1416
         }
     }
 }
