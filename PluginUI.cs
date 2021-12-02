@@ -9,10 +9,12 @@ namespace DeepDungeonDex
     {
         public bool IsVisible { get; set; }
         private Configuration config;
+        private ClientState clientState;
 
-        public PluginUI(Configuration config)
+        public PluginUI(Configuration config, ClientState clientState)
         {
             this.config = config;
+            this.clientState = clientState;
         }
 
         private void PrintSingleVuln(bool? isVulnerable, string message)
@@ -101,7 +103,10 @@ namespace DeepDungeonDex
             ImGui.NewLine();
             ImGui.TextWrapped(mobData.MobNotes);
             ImGui.NewLine();
-            ImGui.Text(TargetData.CClass.ToString());
+            if (clientState.LocalPlayer != null)
+            {
+                ImGui.Text(clientState.LocalPlayer.ClassJob.GameData.RowId.ToString());
+            }
             ImGui.End();
         }
     }
