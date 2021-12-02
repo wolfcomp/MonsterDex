@@ -74,7 +74,7 @@ namespace DeepDungeonDex
             if (!IsVisible)
                 return;
             uint cjid;
-            cjid = clientState.LocalPlayer != null ? (uint)0 : clientState.LocalPlayer.ClassJob.GameData.RowId;
+            cjid = clientState.LocalPlayer == null ? 0 : clientState.LocalPlayer.ClassJob.GameData.RowId;
             var mobData = DataHandler.Mobs(TargetData.NameID);
             if (mobData == null) return;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
@@ -147,11 +147,6 @@ namespace DeepDungeonDex
             ImGui.Columns(1);
             ImGui.NewLine();
             ImGui.TextWrapped(mobData.MobNotes);
-            ImGui.NewLine();
-            if (clientState.LocalPlayer != null)
-            {
-                ImGui.Text(clientState.LocalPlayer.ClassJob.GameData.RowId.ToString());
-            }
             ImGui.End();
         }
     }
