@@ -44,7 +44,7 @@ namespace DeepDungeonDex
             this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
             this.config.Initialize(this.pluginInterface);
             this.ui = new PluginUI(config);
-            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config);
+            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config.HideRedVulns, config.HideBasedOnJob, config);
             this.pluginInterface.UiBuilder.Draw += this.ui.Draw;
             this.pluginInterface.UiBuilder.Draw += this.cui.Draw;
 
@@ -64,7 +64,7 @@ namespace DeepDungeonDex
         public void GetData(Framework framework)
         {
 
-            String currentclass;
+            String currentclass = null;
             if (_clientState.LocalPlayer != null)
             {
                 currentclass = _clientState.LocalPlayer.ClassJob.GameData.Abbreviation.ToString();
