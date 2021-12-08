@@ -69,8 +69,7 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
-            uint cjid;
-            cjid = clientState.LocalPlayer == null ? 0 : clientState.LocalPlayer.ClassJob.GameData.RowId;
+            var cjid = clientState.LocalPlayer == null ? 0 : clientState.LocalPlayer.ClassJob.GameData.RowId;
             var mobData = DataHandler.Mobs(TargetData.NameID);
             if (mobData == null) return;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
