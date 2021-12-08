@@ -18,27 +18,27 @@ namespace DeepDungeonDex
 
         private readonly bool[] cjstun = 
         {
-            false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false, true, false, true, false, true, true, false, true, false
+            true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false, true, false, true, false, true, true, false, true, false
         };
 
         private readonly bool[] cjsleep =
         {
-            false, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, true, false, true, true, false, false, false, true
+            true, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, true, false, true, true, false, false, false, true
         };
         
         private readonly bool[] cjbind =
         {
-            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
+            true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
         };
         
         private readonly bool[] cjheavy =
         {
-            false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
+            true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
         };
         
         private readonly bool[] cjslow =
         {
-            false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, true, true, true, true, false, true, false, true, true, true, true, false
+            true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, true, true, true, true, false, true, false, true, true, true, true, false
         };
 
         private void PrintSingleVuln(bool? isVulnerable, string message)
