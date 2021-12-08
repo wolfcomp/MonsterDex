@@ -38,7 +38,7 @@ namespace DeepDungeonDex
             {
                 config.IsClickthrough = isClickthrough;
             }
-            if (ImGui.Checkbox("Hide red (invulnerable) vulnerabilities", ref HideRedVulns))
+            if (ImGui.Checkbox("Hide vulnerabilities that can't be inflicted", ref HideRedVulns))
             {
                 config.HideRedVulns = HideRedVulns;
             }
