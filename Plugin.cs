@@ -42,8 +42,8 @@ namespace DeepDungeonDex
 
             this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
             this.config.Initialize(this.pluginInterface);
-            this.ui = new PluginUI(config);
-            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config);
+            this.ui = new PluginUI(config, clientState);
+            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config.HideRedVulns, config.HideBasedOnJob, config);
             this.pluginInterface.UiBuilder.Draw += this.ui.Draw;
             this.pluginInterface.UiBuilder.Draw += this.cui.Draw;
 
@@ -68,11 +68,7 @@ namespace DeepDungeonDex
                 return;
             }
             GameObject target = _targetManager.Target;
-/*            if (target == null || target == previousTarget) 
-            {
-                ui.IsVisible = false;
-                return;
-            } */
+
             TargetData t = new TargetData();
             if (!t.IsValidTarget(target))
             {
