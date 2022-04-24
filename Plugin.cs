@@ -95,8 +95,6 @@ namespace DeepDungeonDex
             this.pluginInterface.UiBuilder.Draw -= this.cui.Draw;
 
             this._framework.Update -= this.GetData;
-
-            this.pluginInterface.Dispose();
         }
 
         public void Dispose()
