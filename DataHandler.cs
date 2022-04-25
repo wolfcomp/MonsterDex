@@ -134,7 +134,7 @@ namespace DeepDungeonDex
                 { 7338, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = false}, MobNotes="" } },
                 { 7339, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = false}, MobNotes="" } },
 				// HoH floors 61-69
-                { 7340, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Inflicts stacking Poison that lasts 30s" } },
+                { 7340, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Inflicts stacking Poison that lasts 30s" } },
                 { 7341, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Inflicts stacking vuln up" } },
                 { 7342, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
                 { 7343, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Fast alternating line AoEs that inflict Paralysis" } },
@@ -383,7 +383,7 @@ namespace DeepDungeonDex
                 { 5373, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, IsUndead = false}, MobNotes="" } },
                 { 5374, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true, IsUndead = false}, MobNotes="\"Sticky Tongue\" draw-in and stun attack if not facing, followed by \"Labored Leap\" AoE centered on enemy" } },
                 { 5375, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = false, IsUndead = false}, MobNotes="Eventual ENRAGE" } },
-                { 5376, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true, IsUndead = false}, MobNotes="" } },
+                { 5376, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true, IsUndead = false}, MobNotes="" } },
                 { 5377, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanSleep = true, IsUndead = false}, MobNotes="Casts invuln buff on itself" } },
                 { 5378, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = false, IsUndead = false}, MobNotes="Area of effect Slow" } },
                 { 5379, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true, IsUndead = false}, MobNotes="" } },
@@ -488,8 +488,8 @@ namespace DeepDungeonDex
                 { 5474, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = false, CanBind = false, CanHeavy = true, CanSleep = false, IsUndead = false}, MobNotes="" } },
                 { 5475, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanBind = false, CanHeavy = false, CanSleep = false, IsUndead = true}, MobNotes="Double auto" } },
                 // PotD misc.
-                { 5479, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true, CanBind = false, CanHeavy = false, CanSleep = false, IsUndead = false}, MobNotes="" } },
-                { 5480, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true, CanBind = false, CanHeavy = false, CanSleep = false, IsUndead = false}, MobNotes="" } },
+                { 5479, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanBind = false, CanHeavy = false, CanSleep = false, IsUndead = false}, MobNotes="" } },
+                { 5480, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanBind = false, CanHeavy = false, CanSleep = false, IsUndead = false}, MobNotes="" } },
                 { 2566, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = false}, MobNotes="High damage autos and instant kill AoE\n\"Infatuation\" can only be interrupted with interject" } },
 
             };
