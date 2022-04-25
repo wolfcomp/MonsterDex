@@ -8,6 +8,6 @@
   "AssemblyVersion": "1.2.0.0",
   "RepoUrl": "https://github.com/Strati/DeepDungeonDex",
   "ApplicableVersion": "any",
-  "DalamudApiLevel": 5,
+  "DalamudApiLevel": 6,
   "LoadPriority": 0
 }

@@ -49,7 +49,6 @@
 
   <ItemGroup>
     <PackageReference Include="DalamudPackager" Version="2.1.5" />
-    <PackageReference Include="ImGui.NET" Version="1.78.0" />
   </ItemGroup>
 
   <ItemGroup>
