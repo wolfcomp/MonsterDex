@@ -1,6 +1,7 @@
 ﻿using ImGuiNET;
 using System.Numerics;
 using Dalamud.Game.ClientState;
+using Dalamud.Logging;
 
 namespace DeepDungeonDex
 {
@@ -71,7 +72,11 @@ namespace DeepDungeonDex
                 return;
             var classJobId = _clientState.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
             var data = DataHandler.Mobs(TargetData.NameID);
-            if (!data.HasValue) return;
+            if (!data.HasValue)
+            {
+                PluginLog.Log("No data found for " + TargetData.NameID);
+                return;
+            }
             var mobData = data.Value;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
             if (_config.IsClickThrough)
