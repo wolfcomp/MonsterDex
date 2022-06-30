@@ -8,17 +8,12 @@ namespace DeepDungeonDex
 		public static uint NameID { get; set; }
 		public static SeString Name { get; set; }
 		public bool IsValidTarget(GameObject target)
-		{
-			if (target is BattleNpc bnpc)
-			{
-				Name = bnpc.Name;
-				NameID = bnpc.NameId;
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
+        {
+            if (!(target is BattleNpc bnpc)) return false;
+            Name = bnpc.Name;
+            NameID = bnpc.NameId;
+            return true;
+
+        }
 	}
 }

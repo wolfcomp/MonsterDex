@@ -36,7 +36,7 @@ namespace DeepDungeonDex
             }
             if (ImGui.Checkbox("Enable clickthrough", ref isClickthrough))
             {
-                config.IsClickthrough = isClickthrough;
+                config.IsClickThrough = isClickthrough;
             }
             if (ImGui.Checkbox("Hide vulnerabilities that can't be inflicted", ref HideRedVulns))
             {
