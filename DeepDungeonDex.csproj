@@ -58,7 +58,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include=".github\FUNDING.yml" />
     <Content Include=".github\workflows\BuildAndPR.yaml" />
   </ItemGroup>
 
