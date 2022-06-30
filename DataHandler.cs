@@ -134,33 +134,33 @@ namespace DeepDungeonDex
             { 7273, new MobData(ThreatLevel.Caution, AggroType.Sight, true, "Untelegraphed buster inflicts Bleed and knockback")},
             { 7274, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
 			// HoH floors 11-19
-            //{ 7275, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7276, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7277, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7278, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7279, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Lite buster \"Scissor Run\" followed by AoE" } },
-            //{ 7280, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7281, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Gaze inflicts Seduce, followed by large AoE that inflicts Minimum" } },
-            //{ 7282, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7283, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
-            //{ 7284, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = false}, MobNotes="" } },
-            //{ 7285, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Buster and triple auto" } },
-            //{ 7286, new MobData { Threat=MobData.ThreatLevel.Dangerous, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Room wide ENRAGE" } },
-            //{ 7287, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
+            { 7275, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
+            { 7276, new MobData(ThreatLevel.Easy, AggroType.Proximity, true)},
+            { 7277, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
+            { 7278, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
+            { 7279, new MobData(ThreatLevel.Caution, AggroType.Sight, true, "Lite buster \"Scissor Run\" followed by AoE")},
+            { 7280, new MobData(ThreatLevel.Easy, AggroType.Proximity, true)},
+            { 7281, new MobData(ThreatLevel.Caution, AggroType.Sight, true, "Gaze inflicts Seduce, followed by large AoE that inflicts Minimum")},
+            { 7282, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
+            { 7283, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
+            { 7284, new MobData(ThreatLevel.Easy, AggroType.Sight)},
+            { 7285, new MobData(ThreatLevel.Caution, AggroType.Sight, true, "Buster and triple auto")},
+            { 7286, new MobData(ThreatLevel.Dangerous, AggroType.Sight, true, "Room wide ENRAGE")},
+            { 7287, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
 			// HoH floors 21-29
-            //{ 7288, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanHeavy = true, CanBind = false}, MobNotes="Gaze inflicts Blind" } },
-            //{ 7289, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, CanHeavy = true, CanSleep = true}, MobNotes="Cures self and allies" } },
-            //{ 7290, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = false}, MobNotes="Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed" } },
-            //{ 7291, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true}, MobNotes="Buffs own damage" } },
-            //{ 7292, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = false}, MobNotes="Untelegraphed conal AoE with knockback, buster" } },
-            //{ 7293, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = false}, MobNotes="" } },
-            //{ 7294, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true}, MobNotes="" } },
-            //{ 7295, new MobData { Threat=MobData.ThreatLevel.Caution, Aggro=MobData.AggroType.Proximity, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Draw-in followed by cleave" } },
-            //{ 7296, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Gaze" } },
-            //{ 7297, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sound, Vuln = new MobData.Vulnerabilities{CanStun = true, CanSleep = true}, MobNotes="Line AoE inflicts Bleed" } },
-            //{ 7298, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true, CanHeavy = true}, MobNotes="Cross AoE inflicts Suppuration" } },
-            //{ 7299, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Large AoE inflicts Paralysis" } },
-            //{ 7300, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Circle AoE inflicts Suppuration" } }, 
+            { 7288, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true), "Gaze inflicts Blind")},
+            { 7289, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, true), "Cures self and allies")},
+            { 7290, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed")},
+            { 7291, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true), "Buffs own damage")},
+            { 7292, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "Untelegraphed conal AoE with knockback, buster")},
+            { 7293, new MobData(ThreatLevel.Easy, AggroType.Sight)},
+            { 7294, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true))},
+            { 7295, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "Draw-in followed by cleave")},
+            { 7296, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Gaze")},
+            { 7297, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, true), "Line AoE inflicts Bleed")},
+            { 7298, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true), "Cross AoE inflicts Suppuration")},
+            { 7299, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Large AoE inflicts Paralysis")},
+            { 7300, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Circle AoE inflicts Suppuration")},
             //HoH floors 31-39
             //{ 7301, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="" } },
             //{ 7302, new MobData { Threat=MobData.ThreatLevel.Easy, Aggro=MobData.AggroType.Sight, Vuln = new MobData.Vulnerabilities{CanStun = true}, MobNotes="Casts AoEs unaggroed" } },
@@ -566,16 +566,6 @@ namespace DeepDungeonDex
 
     public static class Extensions
     {
-        //public enum Vulnerabilities
-        //{
-        //    None = 0x00,
-        //    Stun = 0x01,
-        //    Heavy = 0x02,
-        //    Slow = 0x04,
-        //    Sleep = 0x08,
-        //    Bind = 0x10,
-        //    Undead = 0x20
-        //}
         public static Vulnerabilities Get(this ITuple vulnTuple)
         {
             unsafe
