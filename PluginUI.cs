@@ -74,7 +74,7 @@ namespace DeepDungeonDex
             var data = DataHandler.Mobs(TargetData.NameID);
             if (!data.HasValue)
             {
-                PluginLog.Log("No data found for " + TargetData.NameID);
+                PluginLog.Log("No data found for " + TargetData.Name + " (" + TargetData.NameID + ")");
                 return;
             }
             var mobData = data.Value;
