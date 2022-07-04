@@ -1,67 +1,68 @@
 ﻿using ImGuiNET;
 using System.Numerics;
 using Dalamud.Game.ClientState;
+using Dalamud.Logging;
 
 namespace DeepDungeonDex
 {
     public class PluginUI
     {
         public bool IsVisible { get; set; }
-        private Configuration config;
-        private ClientState clientState;
+        private readonly Configuration _config;
+        private readonly ClientState _clientState;
 
         public PluginUI(Configuration config, ClientState clientState)
         {
-            this.config = config;
-            this.clientState = clientState;
+            this._config = config;
+            this._clientState = clientState;
         }
 
-        private readonly bool[] cjstun = 
+        private readonly bool[] _classJobStun =
         {
             true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false, true, false, true, false, true, true, false, true, false
         };
 
-        private readonly bool[] cjsleep =
+        private readonly bool[] _classJobSleep =
         {
             true, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, true, false, true, true, false, false, false, true
         };
-        
-        private readonly bool[] cjbind =
+
+        private readonly bool[] _classJobBind =
         {
             true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
         };
-        
-        private readonly bool[] cjheavy =
+
+        private readonly bool[] _classJobHeavy =
         {
             true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
         };
-        
-        private readonly bool[] cjslow =
+
+        private readonly bool[] _classJobSlow =
         {
             true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, true, true, true, true, false, true, false, true, true, true, true, false
         };
 
-        private void PrintSingleVuln(bool? isVulnerable, string message)
-        { 
-            switch (isVulnerable)
+        private static void PrintTextWithColor(string text, uint color)
+        {
+            ImGui.PushStyleColor(ImGuiCol.Text, color);
+            ImGui.Text(text);
+            ImGui.PopStyleColor();
+        }
+        private void PrintSingleVuln(bool? flag, string message)
+        {
+            switch (flag)
             {
                 case true:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
-                    ImGui.Text(message);
-                    ImGui.PopStyleColor();
+                    PrintTextWithColor(message, 0xFF00FF00);
                     break;
                 case false:
-                    if (!config.HideRedVulns)
+                    if (!_config.HideRedVulns)
                     {
-                        ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
-                        ImGui.Text(message);
-                        ImGui.PopStyleColor();
+                        PrintTextWithColor(message, 0xFF0000FF);
                     }
                     break;
                 default:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0x50FFFFFF);
-                    ImGui.Text(message);
-                    ImGui.PopStyleColor();
+                    PrintTextWithColor(message, 0x50FFFFFF);
                     break;
             }
         }
@@ -69,18 +70,23 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
-            var cjid = clientState.LocalPlayer == null ? 0 : clientState.LocalPlayer.ClassJob.GameData.RowId;
-            var mobData = DataHandler.Mobs(TargetData.NameID);
-            if (mobData == null) return;
+            var classJobId = _clientState.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
+            var data = DataHandler.Mobs(TargetData.NameID);
+            if (!data.HasValue)
+            {
+                PluginLog.Log("No data found for " + TargetData.Name + " (" + TargetData.NameID + ")");
+                return;
+            }
+            var mobData = data.Value;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
-            if (config.IsClickthrough)
+            if (_config.IsClickThrough)
             {
                 flags |= ImGuiWindowFlags.NoInputs;
             }
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
-            ImGui.SetNextWindowBgAlpha(config.Opacity);
+            ImGui.SetNextWindowBgAlpha(_config.Opacity);
             ImGui.Begin("cool strati window", flags);
-            ImGui.Text("Name:\n"+TargetData.Name);
+            ImGui.Text("Name:\n" + TargetData.Name);
             ImGui.NewLine();
             ImGui.Columns(3, null, false);
             ImGui.Text("Aggro Type:\n");
@@ -89,54 +95,46 @@ namespace DeepDungeonDex
             ImGui.Text("Threat:\n");
             switch (mobData.Threat)
             {
-                case DataHandler.MobData.ThreatLevel.Easy:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FF00);
-                    ImGui.Text("Easy");
-                    ImGui.PopStyleColor();
+                case ThreatLevel.Easy:
+                    PrintTextWithColor("Easy", 0xFF00FF00);
                     break;
-                case DataHandler.MobData.ThreatLevel.Caution:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF00FFFF);
-                    ImGui.Text("Caution");
-                    ImGui.PopStyleColor();
+                case ThreatLevel.Caution:
+                    PrintTextWithColor("Caution", 0xFF00FFFF);
                     break;
-                case DataHandler.MobData.ThreatLevel.Dangerous:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFF0000FF);
-                    ImGui.Text("Dangerous");
-                    ImGui.PopStyleColor();
+                case ThreatLevel.Dangerous:
+                    PrintTextWithColor("Dangerous", 0xFF0000FF);
                     break;
-                case DataHandler.MobData.ThreatLevel.Vicious:
-                    ImGui.PushStyleColor(ImGuiCol.Text, 0xFFFF00FF);
-                    ImGui.Text("Vicious");
-                    ImGui.PopStyleColor();
+                case ThreatLevel.Vicious:
+                    PrintTextWithColor("Vicious", 0xFFFF00FF);
                     break;
                 default:
                     ImGui.Text("Undefined");
                     break;
             }
             ImGui.NextColumn();
-            if (!config.HideBasedOnJob || cjstun[cjid])
+            if (!_config.HideBasedOnJob || _classJobStun[classJobId])
             {
-                PrintSingleVuln(mobData.Vuln.CanStun, "Stun");    
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Stun), "Stun");
             }
-            if (!config.HideBasedOnJob || cjsleep[cjid])
+            if (!_config.HideBasedOnJob || _classJobSleep[classJobId])
             {
-                PrintSingleVuln(mobData.Vuln.CanSleep, "Sleep");    
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Sleep), "Sleep");
             }
-            if (!config.HideBasedOnJob || cjbind[cjid])
+            if (!_config.HideBasedOnJob || _classJobBind[classJobId])
             {
-                PrintSingleVuln(mobData.Vuln.CanBind, "Bind");
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Bind), "Bind");
             }
-            if (!config.HideBasedOnJob || cjheavy[cjid])
+            if (!_config.HideBasedOnJob || _classJobHeavy[classJobId])
             {
-                PrintSingleVuln(mobData.Vuln.CanHeavy, "Heavy");   
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Heavy), "Heavy");
             }
-            if (!config.HideBasedOnJob || cjslow[cjid])
+            if (!_config.HideBasedOnJob || _classJobSlow[classJobId])
             {
-                PrintSingleVuln(mobData.Vuln.CanSlow, "Slow");   
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Slow), "Slow");
             }
             if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
             {
-                PrintSingleVuln(mobData.Vuln.IsUndead, "Undead");
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Undead), "Undead");
             }
             ImGui.NextColumn();
             ImGui.Columns(1);

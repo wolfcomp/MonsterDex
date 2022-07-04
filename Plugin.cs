@@ -11,16 +11,16 @@ namespace DeepDungeonDex
 {
     public class Plugin : IDalamudPlugin
     {
-        private DalamudPluginInterface pluginInterface;
-        private Configuration config;
-        private PluginUI ui;
-        private ConfigUI cui;
-        private GameObject previousTarget;
+        private readonly DalamudPluginInterface _pluginInterface;
+        private readonly Configuration _config;
+        private readonly PluginUI _ui;
+        private readonly ConfigUI _cui;
+        private GameObject _previousTarget;
         private ClientState _clientState;
-        private Condition _condition;
-        private TargetManager _targetManager;
-        private Framework _framework;
-        private CommandManager _commands;
+        private readonly Condition _condition;
+        private readonly TargetManager _targetManager;
+        private readonly Framework _framework;
+        private readonly CommandManager _commands;
 
         public string Name => "DeepDungeonDex";
 
@@ -33,19 +33,19 @@ namespace DeepDungeonDex
             //SeStringManager seStringManager,
             TargetManager targets)
         {
-            this.pluginInterface = pluginInterface;
+            this._pluginInterface = pluginInterface;
             this._clientState = clientState;
             this._condition = condition;
             this._framework = framework;
             this._commands = commands;
             this._targetManager = targets;
 
-            this.config = (Configuration)this.pluginInterface.GetPluginConfig() ?? new Configuration();
-            this.config.Initialize(this.pluginInterface);
-            this.ui = new PluginUI(config, clientState);
-            this.cui = new ConfigUI(config.Opacity, config.IsClickthrough, config.HideRedVulns, config.HideBasedOnJob, config);
-            this.pluginInterface.UiBuilder.Draw += this.ui.Draw;
-            this.pluginInterface.UiBuilder.Draw += this.cui.Draw;
+            this._config = (Configuration)this._pluginInterface.GetPluginConfig() ?? new Configuration();
+            this._config.Initialize(this._pluginInterface);
+            this._ui = new PluginUI(_config, clientState);
+            this._cui = new ConfigUI(_config.Opacity, _config.IsClickThrough, _config.HideRedVulns, _config.HideBasedOnJob, _config);
+            this._pluginInterface.UiBuilder.Draw += this._ui.Draw;
+            this._pluginInterface.UiBuilder.Draw += this._cui.Draw;
 
             this._commands.AddHandler("/pddd", new CommandInfo(OpenConfig)
             {
@@ -57,28 +57,27 @@ namespace DeepDungeonDex
 
         public void OpenConfig(string command, string args)
         {
-            cui.IsVisible = true;
+            _cui.IsVisible = true;
         }
 
         public void GetData(Framework framework)
         {
             if (!this._condition[ConditionFlag.InDeepDungeon])
             {
-                ui.IsVisible = false;
+                _ui.IsVisible = false;
                 return;
             }
-            GameObject target = _targetManager.Target;
+            var target = _targetManager.Target;
 
-            TargetData t = new TargetData();
-            if (!t.IsValidTarget(target))
+            var targetData = new TargetData();
+            if (!targetData.IsValidTarget(target))
             {
-                ui.IsVisible = false;
-                return;
+                _ui.IsVisible = false;
             }
             else
             { 
-                previousTarget = target;
-                ui.IsVisible = true;
+                _previousTarget = target;
+                _ui.IsVisible = true;
             }
         }
 
@@ -89,10 +88,10 @@ namespace DeepDungeonDex
 
             this._commands.RemoveHandler("/pddd");
 
-            this.pluginInterface.SavePluginConfig(this.config);
+            this._pluginInterface.SavePluginConfig(this._config);
 
-            this.pluginInterface.UiBuilder.Draw -= this.ui.Draw;
-            this.pluginInterface.UiBuilder.Draw -= this.cui.Draw;
+            this._pluginInterface.UiBuilder.Draw -= this._ui.Draw;
+            this._pluginInterface.UiBuilder.Draw -= this._cui.Draw;
 
             this._framework.Update -= this.GetData;
         }
