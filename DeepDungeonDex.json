@@ -8,8 +8,6 @@
     "achievements",
     "battle"
   ],
-  "InternalName": "DeepDungeonDex",
-  "AssemblyVersion": "1.2.1.0",
   "RepoUrl": "https://github.com/wolfcomp/DeepDungeonDex",
   "ApplicableVersion": "any",
   "DalamudApiLevel": 6,
