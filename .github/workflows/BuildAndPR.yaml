@@ -29,7 +29,12 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Update project json
-        run: echo "`jq '.Changelog="${{ steps.version.outputs.changelog }}"' DeepDungeonDex.json`" > DeepDungeonDex.json
+        run: |
+          $a = Get-Content .\DeepDungeonDex.json -raw | ConvertFrom-Json
+          $a.Changelog="${{ steps.version.outputs.changelog }}"
+          $a | ConvertTo-Json | Set-Content .\DeepDungeonDex.json
+      - name: Output project json
+        run: cat DeepDungeonDex.json
       - name: Download Dalamud
         run: |
           Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest.zip
