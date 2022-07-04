@@ -23,6 +23,13 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: '5.0.x'
+      - name: Bump version and push tag
+        id: version
+        uses: mathieudutour/github-tag-action@v6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update project json
+        run: echo "`jq '.Changelog="${{ steps.version.outputs.changelog }}"' DeepDungeonDex.json`" > DeepDungeonDex.json
       - name: Download Dalamud
         run: |
           Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest.zip
@@ -30,7 +37,7 @@ jobs:
       - name: Build
         run: |
           dotnet restore -r win ${{ env.SOLUTION_NAME }}.sln
-          dotnet build --configuration Release
+          dotnet build --configuration Release /p:Version=${{ steps.version.outputs.new_version }}
         env:
           DOTNET_CLI_TELEMETRY_OPTOUT: true
       - uses: actions/upload-artifact@v2
