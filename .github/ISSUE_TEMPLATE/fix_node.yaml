@@ -24,8 +24,6 @@ body:
         - Sound
         - Proximity
         - Boss
-    validation:
-      required: true
   - type: checkboxes
     id: vulnerabilities
     attributes:
