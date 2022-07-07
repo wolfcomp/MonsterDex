@@ -65,6 +65,7 @@ namespace DeepDungeonDex
                     PrintTextWithColor(message, 0x50FFFFFF);
                     break;
             }
+            ImGui.NextColumn();
         }
         public void Draw()
         {
@@ -88,7 +89,7 @@ namespace DeepDungeonDex
             ImGui.Begin("cool strati window", flags);
             ImGui.Text("Name:\n" + TargetData.Name);
             ImGui.NewLine();
-            ImGui.Columns(3, null, false);
+            ImGui.Columns(2, null, false);
             ImGui.Text("Aggro Type:\n");
             ImGui.Text(mobData.Aggro.ToString());
             ImGui.NextColumn();
@@ -112,6 +113,9 @@ namespace DeepDungeonDex
                     break;
             }
             ImGui.NextColumn();
+            ImGui.NewLine();
+            ImGui.Text("Vulns:\n");
+            ImGui.Columns(4, null, false);
             if (!_config.HideBasedOnJob || _classJobStun[classJobId])
             {
                 PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Stun), "Stun");
@@ -139,6 +143,7 @@ namespace DeepDungeonDex
             ImGui.NextColumn();
             ImGui.Columns(1);
             ImGui.NewLine();
+            ImGui.Text("Notes:\n");
             ImGui.TextWrapped(mobData.MobNotes);
             ImGui.End();
         }
