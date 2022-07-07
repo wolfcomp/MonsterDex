@@ -16,6 +16,15 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: threatlevel
+    attributes:
+      label: What threat level sould the mob have
+      options:
+        - Easy
+        - Caution
+        - Dangerous
+        - Vicious
+  - type: dropdown
     id: agrotype
     attributes:
       label: What agro type does the mob have
