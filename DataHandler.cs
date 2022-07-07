@@ -97,7 +97,7 @@ namespace DeepDungeonDex
         /// <param name="aggro">The aggro type</param>
         /// <param name="mobNotes">Notes for the mob</param>
         /// <param name="stun">Can the mob be stunned</param>
-        public MobData(ThreatLevel level, AggroType aggro, bool stun, string mobNotes) : this(level, aggro, Tuple.Create(stun, false), mobNotes) { }
+        public MobData(ThreatLevel level, AggroType aggro, bool stun, string mobNotes) : this(level, aggro, Tuple.Create(stun), mobNotes) { }
         /// <summary>
         /// Mob data struct init
         /// </summary>
@@ -572,6 +572,9 @@ namespace DeepDungeonDex
                 bool stun, heavy, slow, sleep, bind;
                 switch (vulnTuple)
                 {
+                    case Tuple<bool> tuple when tuple.GetType() == typeof(Tuple<bool>):
+                        stun = tuple.Item1;
+                        return (Vulnerabilities)(*(byte*)&stun);
                     case Tuple<bool, bool> tuple when tuple.GetType() == typeof(Tuple<bool, bool>):
                         (stun, heavy) = tuple;
                         return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1));
