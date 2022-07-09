@@ -17,37 +17,13 @@ namespace DeepDungeonDex
             this._clientState = clientState;
         }
 
-        private readonly bool[] _classJobStun =
-        {
-            true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, true, true, false, true, false, true, false, true, true, false, true, false
-        };
-
-        private readonly bool[] _classJobSleep =
-        {
-            true, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, true, false, true, true, false, false, false, true
-        };
-
-        private readonly bool[] _classJobBind =
-        {
-            true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
-        };
-
-        private readonly bool[] _classJobHeavy =
-        {
-            true, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, true, true, false, false, false, false, true, false, true, false, false
-        };
-
-        private readonly bool[] _classJobSlow =
-        {
-            true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, true, true, true, true, false, true, false, true, true, true, true, false
-        };
-
         private static void PrintTextWithColor(string text, uint color)
         {
             ImGui.PushStyleColor(ImGuiCol.Text, color);
             ImGui.Text(text);
             ImGui.PopStyleColor();
         }
+
         private void PrintSingleVuln(bool? flag, string message)
         {
             switch (flag)
@@ -67,11 +43,27 @@ namespace DeepDungeonDex
             }
             ImGui.NextColumn();
         }
+
+        private void DrawVulns(MobData mobData)
+        {
+            var classJobId = _clientState.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
+            foreach (var vulnerabilities in new []{ Vulnerabilities.Stun, Vulnerabilities.Sleep, Vulnerabilities.Bind, Vulnerabilities.Heavy, Vulnerabilities.Slow })
+            {
+                if (!_config.HideBasedOnJob || DataHandler.ShouldRender(classJobId, vulnerabilities))
+                {
+                    PrintSingleVuln(mobData.Vuln.HasFlag(vulnerabilities), vulnerabilities.ToString());
+                }
+            }
+            if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
+            {
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Undead), "Undead");
+            }
+        }
+
         public void Draw()
         {
             if (!IsVisible)
                 return;
-            var classJobId = _clientState.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
             var data = DataHandler.Mobs(TargetData.NameID);
             if (!data.HasValue)
             {
@@ -116,30 +108,7 @@ namespace DeepDungeonDex
             ImGui.NewLine();
             ImGui.Text("Vulns:\n");
             ImGui.Columns(4, null, false);
-            if (!_config.HideBasedOnJob || _classJobStun[classJobId])
-            {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Stun), "Stun");
-            }
-            if (!_config.HideBasedOnJob || _classJobSleep[classJobId])
-            {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Sleep), "Sleep");
-            }
-            if (!_config.HideBasedOnJob || _classJobBind[classJobId])
-            {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Bind), "Bind");
-            }
-            if (!_config.HideBasedOnJob || _classJobHeavy[classJobId])
-            {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Heavy), "Heavy");
-            }
-            if (!_config.HideBasedOnJob || _classJobSlow[classJobId])
-            {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Slow), "Slow");
-            }
-            if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
-            {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Undead), "Undead");
-            }
+            DrawVulns(mobData);
             ImGui.NextColumn();
             ImGui.Columns(1);
             ImGui.NewLine();
