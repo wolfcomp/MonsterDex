@@ -109,12 +109,59 @@ namespace DeepDungeonDex
         #endregion
     }
 
+    public struct ClassData
+    {
+        public bool Stun;
+        public bool Heavy;
+        public bool Slow;
+        public bool Sleep;
+        public bool Bind;
+
+        #region Constructors
+        /// <summary>
+        /// Class data struct init
+        /// </summary>
+        /// <param name="stun">Can job stun</param>
+        /// <param name="heavy">Can job heavy</param>
+        /// <param name="slow">Can job slow</param>
+        /// <param name="sleep">Can job sleep</param>
+        /// <param name="bind">Can job bind</param>
+        public ClassData(bool stun, bool heavy, bool slow, bool sleep, bool bind)
+        {
+            Stun = stun;
+            Heavy = heavy;
+            Slow = slow;
+            Sleep = sleep;
+            Bind = bind;
+        }
+
+        public ClassData(byte data) : this((data & 0x01) == 1, (data & 0x02) == 2, (data & 0x04) == 4, (data & 0x08) == 8, (data & 0x10) == 16) { }
+        #endregion
+
+        public bool CheckFromVuln(Vulnerabilities vuln) => vuln switch
+        {
+            Vulnerabilities.Stun => Stun,
+            Vulnerabilities.Heavy => Heavy,
+            Vulnerabilities.Slow => Slow,
+            Vulnerabilities.Sleep => Sleep,
+            Vulnerabilities.Bind => Bind,
+            _ => false
+        };
+    }
+
     public class DataHandler
     {
         public static MobData? Mobs(uint nameId)
         {
             if (_mobs.TryGetValue(nameId, out var value)) return value;
             return null;
+        }
+
+        public static bool ShouldRender(uint jobId, Vulnerabilities vuln)
+        {
+            var ret = false;
+            if (_jobs.TryGetValue(jobId, out var value)) ret = value.CheckFromVuln(vuln);
+            return ret;
         }
 
         private static readonly Dictionary<uint, MobData> _mobs = new Dictionary<uint, MobData>
@@ -148,17 +195,17 @@ namespace DeepDungeonDex
             { 7286, new MobData(ThreatLevel.Dangerous, AggroType.Sight, true, "Room wide ENRAGE")},
             { 7287, new MobData(ThreatLevel.Easy, AggroType.Sight, true)},
 			// HoH floors 21-29
-            { 7288, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true), "Gaze inflicts Blind")},
-            { 7289, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true), "Cures self and allies")},
+            { 7288, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true), "Gaze inflicts Blind")},
+            { 7289, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true), "Cures self and allies")},
             { 7290, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed")},
-            { 7291, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true), "Buffs own damage")},
+            { 7291, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true), "Buffs own damage")},
             { 7292, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "Untelegraphed conal AoE with knockback, buster")},
             { 7293, new MobData(ThreatLevel.Easy, AggroType.Sight)},
-            { 7294, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true))},
+            { 7294, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true))},
             { 7295, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "Draw-in followed by cleave")},
             { 7296, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Gaze")},
-            { 7297, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, true), "Line AoE inflicts Bleed")},
-            { 7298, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true), "Cross AoE inflicts Suppuration")},
+            { 7297, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, true), "Line AoE inflicts Bleed")},
+            { 7298, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true), "Cross AoE inflicts Suppuration")},
             { 7299, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Large AoE inflicts Paralysis")},
             { 7300, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Circle AoE inflicts Suppuration")},
             //HoH floors 31-39
@@ -277,73 +324,73 @@ namespace DeepDungeonDex
 
             //PotD data
             //PotD 1-10
-            { 4975, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true), "Casts Haste on itself") },
-            { 4976, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
+            { 4975, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true), "Casts Haste on itself") },
+            { 4976, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
             { 4977, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
-            { 4978, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, false, true)) },
-            { 4979, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, true, true)) },
-            { 4980, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, false, true), "Inflicts Poison") },
+            { 4978, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, false, true)) },
+            { 4979, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, true, true)) },
+            { 4980, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, false, true), "Inflicts Poison") },
             { 4981, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "High damage \"Final Sting\"") },
-            { 4982, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, false, false, true), "Inflicts vulnerability up") },
-            { 4983, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, false, true)) },
-            { 4984, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 4985, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, false, true), "Mini buster \"Rhino Charge\"") },
+            { 4982, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, false, false, true), "Inflicts vulnerability up") },
+            { 4983, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, false, true)) },
+            { 4984, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 4985, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, false, true), "Mini buster \"Rhino Charge\"") },
             { 4986, new MobData(ThreatLevel.Caution, AggroType.Boss, "1) \"Whipcrack\" - light tankbuster\n2) \"Stormwind\" - conal AOE\n3) \"Bombination\" - circular AOE on boss inflicts Slow\n4) \"Lumisphere\" - targeted AOE on random player\n5) \"Aeroblast\" - room wide AOE inflicts Bleed") },
             //PotD 11-20
-            { 4987, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, false, true)) },
+            { 4987, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, false, true)) },
             { 4988, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Inflicts poison") },
-            { 4989, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true), "\"Sticky Tongue\" does not stun if facing towards") },
+            { 4989, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true), "\"Sticky Tongue\" does not stun if facing towards") },
             { 4990, new MobData(ThreatLevel.Caution, AggroType.Sound, true, "Eventual ENRAGE") },
-            { 4991, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, true, false, true, true)) },
-            { 4992, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, true, false, true, true)) },
-            { 4993, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, false, true), "Area of effect Slow") },
-            { 4994, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, true, true)) },
-            { 4995, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true)) },
+            { 4991, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, true, false, true, true)) },
+            { 4992, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, true, false, true, true)) },
+            { 4993, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, false, true), "Area of effect Slow") },
+            { 4994, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, true, true)) },
+            { 4995, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true)) },
             { 4996, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Buffs own damage") },
-            { 4997, new MobData(ThreatLevel.Dangerous, AggroType.Sight, (true, false, false, true), "Gaze attack inflicts Petrify, \"Devour\" instantly kills players inflicted with Toad") },
-            { 4998, new MobData(ThreatLevel.Easy, AggroType.Sight, (false, true, false, false, true)) },
+            { 4997, new MobData(ThreatLevel.Dangerous, AggroType.Sight, Tuple.Create(true, false, false, true), "Gaze attack inflicts Petrify, \"Devour\" instantly kills players inflicted with Toad") },
+            { 4998, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(false, true, false, false, true)) },
             { 4999, new MobData(ThreatLevel.Caution, AggroType.Boss, "1) \"Bloody Caress\" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they \"Final Sting\"\n4) \"Rotten Stench\" - high damage line AOE") },
             //PotD 21-30
-            { 5000, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5001, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5002, new MobData(ThreatLevel.Easy, AggroType.Sight, (false, true, false, true, true)) },
-            { 5003, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true)) },
-            { 5004, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, true)) },
-            { 5005, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5006, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, true, true)) },
-            { 5007, new MobData(ThreatLevel.Easy, AggroType.Sight, (false, true)) },
+            { 5000, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5001, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5002, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(false, true, false, true, true)) },
+            { 5003, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true)) },
+            { 5004, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, true)) },
+            { 5005, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5006, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, true, true)) },
+            { 5007, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(false, true)) },
             { 5008, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5009, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, true, false, false, true)) },
-            { 5010, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, true, false, true), "Untelegraphed AOE does moderate damage and knockback") },
-            { 5011, new MobData(ThreatLevel.Caution, AggroType.Sound, (true, true, false, true, true), "\"Chirp\" inflicts Sleep for 15s") },
+            { 5009, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, true, false, false, true)) },
+            { 5010, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, true, false, true), "Untelegraphed AOE does moderate damage and knockback") },
+            { 5011, new MobData(ThreatLevel.Caution, AggroType.Sound, Tuple.Create(true, true, false, true, true), "\"Chirp\" inflicts Sleep for 15s") },
             { 5012, new MobData(ThreatLevel.Caution, AggroType.Boss, "1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for \"Fear Itself\" - will inflict high damage and Terror if not avoided") },
             //PotD 31-40
             { 5013, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5014, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
-            { 5015, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5016, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, false, false, false, false, true)) },
+            { 5015, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5016, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, false, false, false, false, true)) },
             { 5017, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5018, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5018, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5019, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5020, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true)) },
-            { 5021, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5020, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true)) },
+            { 5021, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5022, new MobData(ThreatLevel.Caution, AggroType.Sight, true, "\"Dark Mist\" inflicts Terror") },
             { 5023, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5024, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true, false, true)) },
-            { 5025, new MobData(ThreatLevel.Easy, AggroType.Boss, (false, false, false, false, false, true), "1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts \"Scream\", adds will target player with high damage AoEs if not dead") },
+            { 5024, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true, false, true)) },
+            { 5025, new MobData(ThreatLevel.Easy, AggroType.Boss, Tuple.Create(false, false, false, false, false, true), "1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts \"Scream\", adds will target player with high damage AoEs if not dead") },
             // PotD 41-50
             { 5026, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5027, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5028, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5029, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5030, new MobData(ThreatLevel.Caution, AggroType.Sound, (true, false, false, true), "Inflicts Paralysis") },
+            { 5030, new MobData(ThreatLevel.Caution, AggroType.Sound, Tuple.Create(true, false, false, true), "Inflicts Paralysis") },
             { 5031, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5032, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "Inflicts Paralysis") },
             { 5033, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5034, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5035, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5036, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5037, new MobData(ThreatLevel.Easy, AggroType.Sound, (false, false, false, false, false, true)) },
+            { 5037, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(false, false, false, false, false, true)) },
             { 5038, new MobData(ThreatLevel.Caution, AggroType.Boss, "FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) \"In Health\" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) \"Cold Feet\" -- Gaze") },
             // PotD special NPCs and misc.
             { 5039, new MobData(ThreatLevel.Easy, AggroType.Sight) },
@@ -374,73 +421,73 @@ namespace DeepDungeonDex
             { 5297, new MobData(ThreatLevel.Caution, AggroType.Sight, "Immune to Pomander of Witching") },
             { 5298, new MobData(ThreatLevel.Caution, AggroType.Sight, "Immune to Pomander of Witching") },
             // PotD 51-60
-            { 5299, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true), "Gaze inflicts Paralysis") },
+            { 5299, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true), "Gaze inflicts Paralysis") },
             { 5300, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5301, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true, false, true)) },
+            { 5301, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true, false, true)) },
             { 5302, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5303, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5304, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5304, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5305, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5306, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5307, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5308, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Gaze inflicts Blind and does high damage") },
             { 5309, new MobData(ThreatLevel.Caution, AggroType.Boss, "Drops large puddle AoEs that inflict Bleed if stood in\n\"Valfodr\" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge") },
             // PotD 61-70
-            { 5311, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5312, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5311, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5312, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5313, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5314, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true)) },
-            { 5315, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5314, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true)) },
+            { 5315, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5316, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5317, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5318, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5318, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5319, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5320, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true)) },
+            { 5320, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true)) },
             { 5321, new MobData(ThreatLevel.Caution, AggroType.Boss, "\"Douse\" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs") },
             // PotD 71-80
-            { 5322, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5323, new MobData(ThreatLevel.Easy, AggroType.Sight, (false, false, false, true)) },
+            { 5322, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5323, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(false, false, false, true)) },
             { 5324, new MobData(ThreatLevel.Easy, AggroType.Proximity) },
-            { 5325, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5326, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true)) },
-            { 5327, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5328, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5329, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true)) },
-            { 5330, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5325, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5326, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true)) },
+            { 5327, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5328, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5329, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true)) },
+            { 5330, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5331, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5332, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5332, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5333, new MobData(ThreatLevel.Caution, AggroType.Boss, "\"Charybdis\" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast \"Trounce\" - wide conal AoE\nAt 17% casts \"Ecliptic Meteor\" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage") },
             // PotD 81-90
-            { 5334, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, false, false, true), "Casts wide \"Self Destruct\" if not killed in time") },
+            { 5334, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, false, false, true), "Casts wide \"Self Destruct\" if not killed in time") },
             { 5335, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
-            { 5336, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5336, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5337, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5338, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
             { 5339, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5340, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
-            { 5341, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5342, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, false, false, true)) },
+            { 5341, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5342, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, false, false, true)) },
             { 5343, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5344, new MobData(ThreatLevel.Easy, AggroType.Proximity) },
             { 5345, new MobData(ThreatLevel.Caution, AggroType.Boss, "Casts large AoEs\nSummons \"Grey Bomb\" - must be killed before it does high room wide damage\nBegins long cast \"Massive Burst\" and summons \"Giddy Bomb\" that must be knocked towards the boss to interrupt cast") },
             // PotD 91-100
-            { 5346, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, false, false, true)) },
-            { 5347, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, false, false, false, false, true)) },
+            { 5346, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, false, false, true)) },
+            { 5347, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, false, false, false, false, true)) },
             { 5348, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5349, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5350, new MobData(ThreatLevel.Easy, AggroType.Sound) },
             { 5351, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
-            { 5352, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, false, false, false, false, true)) },
-            { 5353, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, false, false, false, false, true)) },
+            { 5352, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, false, false, false, false, true)) },
+            { 5353, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, false, false, false, false, true)) },
             { 5354, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5355, new MobData(ThreatLevel.Easy, AggroType.Sound, (false, false, false, false, false, true)) },
+            { 5355, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(false, false, false, false, false, true)) },
             { 5356, new MobData(ThreatLevel.Caution, AggroType.Boss, "Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks") },
             // PotD 101-110
-            { 5360, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5361, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5360, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5361, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5362, new MobData(ThreatLevel.Easy, AggroType.Sight) },
-            { 5363, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5364, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, false, false, true), "Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos") },
+            { 5363, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5364, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, false, false, true), "Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos") },
             { 5365, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Inflicts Poison") },
             { 5366, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "High damage \"Final Sting\"") },
             { 5367, new MobData(ThreatLevel.Easy, AggroType.Sound, true, "Inflicts vulnerability up") },
@@ -451,45 +498,45 @@ namespace DeepDungeonDex
             // PotD 111-120
             { 5372, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5373, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5374, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, false, false, true), "\"Sticky Tongue\" draw-in and stun attack if not facing, followed by \"Labored Leap\" AoE centered on enemy") },
+            { 5374, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, false, false, true), "\"Sticky Tongue\" draw-in and stun attack if not facing, followed by \"Labored Leap\" AoE centered on enemy") },
             { 5375, new MobData(ThreatLevel.Caution, AggroType.Sound, true, "Eventual ENRAGE") },
-            { 5376, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, false, false, true)) },
-            { 5377, new MobData(ThreatLevel.Easy, AggroType.Sound, (false, false, false, true), "Casts invuln buff on itself") },
+            { 5376, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, false, false, true)) },
+            { 5377, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(false, false, false, true), "Casts invuln buff on itself") },
             { 5378, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Area of effect Slow") },
-            { 5379, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, false, false, true)) },
+            { 5379, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, false, false, true)) },
             { 5380, new MobData(ThreatLevel.Caution, AggroType.Proximity, true, "Will inflict Sleep before casting \"Bad Breath\"") },
             { 5381, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Buffs own damage") },
             { 5382, new MobData(ThreatLevel.Dangerous, AggroType.Sight, true, "Gaze attack inflicts Petrify, \"Regorge\" inflicts Poison\nWill one-shot kill anyone inflicted with Toad") },
             { 5383, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5384, new MobData(ThreatLevel.Caution, AggroType.Boss, "1) \"Bloody Caress\" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they \"Final Sting\"\n4) \"Rotten Stench\" - high damage line AOE") },
             // PotD 121-130
-            { 5385, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5386, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5387, new MobData(ThreatLevel.Easy, AggroType.Sight, (false, false, false, true)) },
+            { 5385, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5386, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5387, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(false, false, false, true)) },
             { 5388, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5389, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, false, false, true), "Double autos") },
-            { 5390, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
-            { 5391, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, false, false, true)) },
+            { 5389, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, false, false, true), "Double autos") },
+            { 5390, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
+            { 5391, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, false, false, true)) },
             { 5392, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5393, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5394, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
-            { 5395, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, false, false, true), "\"11-Tonze Swing\" - point-blank untelegraphed AoE that does high damage and knockback") },
+            { 5395, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, false, false, true), "\"11-Tonze Swing\" - point-blank untelegraphed AoE that does high damage and knockback") },
             { 5396, new MobData(ThreatLevel.Caution, AggroType.Sound, true, "\"Chirp\" inflicts Sleep for 15s") },
             { 5397, new MobData(ThreatLevel.Caution, AggroType.Boss, "1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast \"Fear Itself\" - will inflict high damage and Terror if not avoided") },
             // PotD 131-140
             { 5398, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
             { 5399, new MobData(ThreatLevel.Easy, AggroType.Sound, true) },
             { 5400, new MobData(ThreatLevel.Easy, AggroType.Sight) },
-            { 5401, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, false, false, true)) },
+            { 5401, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, false, false, true)) },
             { 5402, new MobData(ThreatLevel.Caution, AggroType.Sight, true, "Untelegraphed conal AoE \"Level 5 Petrify\" inflicts Petrify") },
-            { 5403, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true)) },
+            { 5403, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true)) },
             { 5404, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
-            { 5405, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, false, false, true)) },
-            { 5406, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, false, false, true), "Casts targeted AoE that inflicts Bleed") },
+            { 5405, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, false, false, true)) },
+            { 5406, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, false, false, true), "Casts targeted AoE that inflicts Bleed") },
             { 5407, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5408, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5409, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, false, false, true, false, true), "Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos") },
-            { 5410, new MobData(ThreatLevel.Caution, AggroType.Boss, (false, false, false, false, false, true), "1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts \"Scream\", adds will target player with high damage AoEs if not dead") },
+            { 5409, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, false, false, true, false, true), "Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos") },
+            { 5410, new MobData(ThreatLevel.Caution, AggroType.Boss, Tuple.Create(false, false, false, false, false, true), "1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts \"Scream\", adds will target player with high damage AoEs if not dead") },
             // PotD 141-150
             { 5411, new MobData(ThreatLevel.Easy, AggroType.Sight) },
             { 5412, new MobData(ThreatLevel.Easy, AggroType.Sight) },
@@ -502,64 +549,109 @@ namespace DeepDungeonDex
             { 5419, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5420, new MobData(ThreatLevel.Easy, AggroType.Proximity, "Casts Gaze \"Evil Eye\"") },
             { 5421, new MobData(ThreatLevel.Easy, AggroType.Sight, "Buffs own damage, untelegraphed high damage \"Ripper Claw\" - can be avoided by walking behind") },
-            { 5422, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, false, false, false, false, true), "High health and very large AoE \"Scream\"") },
-            { 5423, new MobData(ThreatLevel.Dangerous, AggroType.Sound, (false, false, false, false, false, true), "Very high damage for the floors it appears on") },
+            { 5422, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, false, false, false, false, true), "High health and very large AoE \"Scream\"") },
+            { 5423, new MobData(ThreatLevel.Dangerous, AggroType.Sound, Tuple.Create(false, false, false, false, false, true), "Very high damage for the floors it appears on") },
             { 5424, new MobData(ThreatLevel.Caution, AggroType.Boss, "Summons adds\n\"Fanatic Zombie\" will grab player and root in place until killed\n\"Fanatic Succubus\" will heal boss if it reaches it") },
             // PotD 151-160
-            { 5429, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, true, false, true, true), "Double autos\nGaze inflicts Paralysis") },
+            { 5429, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, true, false, true, true), "Double autos\nGaze inflicts Paralysis") },
             { 5430, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "Inflicts Vuln Up debuff") },
             { 5431, new MobData(ThreatLevel.Easy, AggroType.Sight, true, "\"Ice Spikes\" reflects damage\n\"Void Blizzard\" inflicts Slow") },
             { 5432, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5433, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, false, true), "Double autos that lifesteal") },
+            { 5433, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, false, true), "Double autos that lifesteal") },
             { 5434, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5435, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5436, new MobData(ThreatLevel.Easy, AggroType.Proximity, true, "Double autos") },
-            { 5437, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, true, false, false, true), "Double autos\nGaze inflicts heavy damage and Blind") },
+            { 5437, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, true, false, false, true), "Double autos\nGaze inflicts heavy damage and Blind") },
             { 5438, new MobData(ThreatLevel.Caution, AggroType.Boss, "Drops lingering AoEs that cause heavy Bleed if stood in\n\"Valfodr\" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge") },
             // PotD 161-170
-            { 5439, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5440, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true)) },
-            { 5441, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, true, false, true, true)) },
-            { 5442, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, true, false, true), "Double autos") },
-            { 5443, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, true, false, true, true), "Double autos") },
+            { 5439, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5440, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true)) },
+            { 5441, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, true, false, true, true)) },
+            { 5442, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, true, false, true), "Double autos") },
+            { 5443, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, true, false, true, true), "Double autos") },
             { 5444, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
             { 5445, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5446, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
+            { 5446, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
             { 5447, new MobData(ThreatLevel.Easy, AggroType.Sight, true) },
-            { 5448, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, true, false, true, true)) },
+            { 5448, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, true, false, true, true)) },
             { 5449, new MobData(ThreatLevel.Easy, AggroType.Boss, "\"Douse\" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs ") },
             // PotD 171-180
-            { 5450, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, true, false, true, true), "Double autos") },
-            { 5451, new MobData(ThreatLevel.Caution, AggroType.Sight, (false, false, false, true), "Has semi-enrage around 30s in combat") },
+            { 5450, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, true, false, true, true), "Double autos") },
+            { 5451, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(false, false, false, true), "Has semi-enrage around 30s in combat") },
             { 5452, new MobData(ThreatLevel.Easy, AggroType.Proximity, "\"Revelation\" inflicts Confusion\n\"Tropical Wind\" gives enemy a large Haste and damage buff") },
-            { 5453, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, true, false, true), "\"Glower\" - untelegraphed line AoE\n\"100-Tonze Swing\" - untelegraphed point-blank AoE") },
-            { 5454, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, true, false, true), "Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat") },
-            { 5455, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5456, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5457, new MobData(ThreatLevel.Easy, AggroType.Proximity, (true, true, false, true, true)) },
-            { 5458, new MobData(ThreatLevel.Caution, AggroType.Sight, (true, true, false, true, true), "Double autos") },
+            { 5453, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, true, false, true), "\"Glower\" - untelegraphed line AoE\n\"100-Tonze Swing\" - untelegraphed point-blank AoE") },
+            { 5454, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, true, false, true), "Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat") },
+            { 5455, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5456, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5457, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(true, true, false, true, true)) },
+            { 5458, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(true, true, false, true, true), "Double autos") },
             { 5459, new MobData(ThreatLevel.Vicious, AggroType.Sight, true, "Cleave inflicts Bleed\n\"Flying Frenzy\" targets a player and does heavy damage, Vuln Down, and stuns") },
-            { 5460, new MobData(ThreatLevel.Dangerous, AggroType.Sight, (true, true, false, true, true), "Cleave does heavy damage and inflicts potent Bleed") },
+            { 5460, new MobData(ThreatLevel.Dangerous, AggroType.Sight, Tuple.Create(true, true, false, true, true), "Cleave does heavy damage and inflicts potent Bleed") },
             { 5461, new MobData(ThreatLevel.Dangerous, AggroType.Boss, "\"Charybdis\" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast \"Trounce\" - wide conal AoE\nAt 15% casts FAST CAST \"Ecliptic Meteor\" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds") },
             // PotD 181-190
-            { 5462, new MobData(ThreatLevel.Easy, AggroType.Sight, (true, true, false, true, true)) },
-            { 5463, new MobData(ThreatLevel.Caution, AggroType.Sound, (true, true, false, false, true), "Double autos") },
-            { 5464, new MobData(ThreatLevel.Vicious, AggroType.Sight, (false, true, false, false, true), "Instant AoE that inflicts heavy Bleed") },
-            { 5465, new MobData(ThreatLevel.Dangerous, AggroType.Sound, (false, true, false, false, true), "Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage") },
-            { 5466, new MobData(ThreatLevel.Caution, AggroType.Sight, (false, true, false, false, true), "Sucks in player and does heavy damage\n\"Tail Screw\" does damage and inflicts Slow") },
-            { 5467, new MobData(ThreatLevel.Dangerous, AggroType.Sound, (true, true, false, false, true), "Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison") },
-            { 5468, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, true, false, false, true)) },
-            { 5469, new MobData(ThreatLevel.Easy, AggroType.Sound, (true, true, false, false, true)) },
-            { 5470, new MobData(ThreatLevel.Vicious, AggroType.Proximity, (false, true, false, true, true), "If familiar with chimera mechanics can be engaged\n\"The Dragon's Voice\" - be inside hit box\n\"The Ram's Voice\" - be outside of melee range") },
+            { 5462, new MobData(ThreatLevel.Easy, AggroType.Sight, Tuple.Create(true, true, false, true, true)) },
+            { 5463, new MobData(ThreatLevel.Caution, AggroType.Sound, Tuple.Create(true, true, false, false, true), "Double autos") },
+            { 5464, new MobData(ThreatLevel.Vicious, AggroType.Sight, Tuple.Create(false, true, false, false, true), "Instant AoE that inflicts heavy Bleed") },
+            { 5465, new MobData(ThreatLevel.Dangerous, AggroType.Sound, Tuple.Create(false, true, false, false, true), "Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage") },
+            { 5466, new MobData(ThreatLevel.Caution, AggroType.Sight, Tuple.Create(false, true, false, false, true), "Sucks in player and does heavy damage\n\"Tail Screw\" does damage and inflicts Slow") },
+            { 5467, new MobData(ThreatLevel.Dangerous, AggroType.Sound, Tuple.Create(true, true, false, false, true), "Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison") },
+            { 5468, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, true, false, false, true)) },
+            { 5469, new MobData(ThreatLevel.Easy, AggroType.Sound, Tuple.Create(true, true, false, false, true)) },
+            { 5470, new MobData(ThreatLevel.Vicious, AggroType.Proximity, Tuple.Create(false, true, false, true, true), "If familiar with chimera mechanics can be engaged\n\"The Dragon's Voice\" - be inside hit box\n\"The Ram's Voice\" - be outside of melee range") },
             { 5471, new MobData(ThreatLevel.Dangerous, AggroType.Boss, "Kill blue bomb when it appears\nPush red bomb into boss during \"Massive Burst\" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage") },
             // PotD 191-200
             { 5472, new MobData(ThreatLevel.Easy, AggroType.Sound) },
             { 5473, new MobData(ThreatLevel.Dangerous, AggroType.Sight, "Casts untelegraphed cone \"Level 5 Death\"") },
-            { 5474, new MobData(ThreatLevel.Easy, AggroType.Proximity, (false, true)) },
-            { 5475, new MobData(ThreatLevel.Caution, AggroType.Proximity, (true, false, false, false, false, true), "Double auto") },
+            { 5474, new MobData(ThreatLevel.Easy, AggroType.Proximity, Tuple.Create(false, true)) },
+            { 5475, new MobData(ThreatLevel.Caution, AggroType.Proximity, Tuple.Create(true, false, false, false, false, true), "Double auto") },
             { 5479, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 5480, new MobData(ThreatLevel.Easy, AggroType.Proximity, true) },
             { 2566, new MobData(ThreatLevel.Caution, AggroType.Proximity, "High damage autos and instant kill AoE\n\"Infatuation\" can only be interrupted with interject") },
+        };
+
+        private static readonly Dictionary<uint, ClassData> _jobs = new Dictionary<uint, ClassData>
+        {
+            {1, new ClassData(31)},
+            {2, new ClassData(5)},
+            {3, new ClassData(5)},
+            {4, new ClassData(5)},
+            {5, new ClassData(5)},
+            {6, new ClassData(22)},
+            {7, new ClassData(8)},
+            {8, new ClassData(8)},
+            {9, new ClassData(0)},
+            {10, new ClassData(0)},
+            {11, new ClassData(0)},
+            {12, new ClassData(0)},
+            {13, new ClassData(0)},
+            {14, new ClassData(0)},
+            {15, new ClassData(0)},
+            {16, new ClassData(0)},
+            {17, new ClassData(0)},
+            {18, new ClassData(0)},
+            {19, new ClassData(0)},
+            {20, new ClassData(5)},
+            {21, new ClassData(5)},
+            {22, new ClassData(5)},
+            {23, new ClassData(5)},
+            {24, new ClassData(22)},
+            {25, new ClassData(9)},
+            {26, new ClassData(8)},
+            {27, new ClassData(8)},
+            {28, new ClassData(8)},
+            {29, new ClassData(8)},
+            {30, new ClassData(5)},
+            {31, new ClassData(23)},
+            {32, new ClassData(22)},
+            {33, new ClassData(5)},
+            {34, new ClassData(8)},
+            {35, new ClassData(5)},
+            {36, new ClassData(8)},
+            {37, new ClassData(31)},
+            {38, new ClassData(5)},
+            {39, new ClassData(22)},
+            {40, new ClassData(5)},
+            {41, new ClassData(8)}
         };
     }
 
@@ -569,32 +661,30 @@ namespace DeepDungeonDex
         {
             unsafe
             {
-                bool stun, heavy, slow, sleep, bind;
+                bool stun, heavy, slow, sleep, bind, undead;
                 switch (vulnTuple)
                 {
                     case Tuple<bool> tuple when tuple.GetType() == typeof(Tuple<bool>):
                         stun = tuple.Item1;
-                        return (Vulnerabilities)(*(byte*)&stun);
+                        break;
                     case Tuple<bool, bool> tuple when tuple.GetType() == typeof(Tuple<bool, bool>):
                         (stun, heavy) = tuple;
-                        return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1));
+                        break;
                     case Tuple<bool, bool, bool> tuple when tuple.GetType() == typeof(Tuple<bool, bool, bool>):
                         (stun, heavy, slow) = tuple;
-                        return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1) + (*(byte*)&slow << 2));
+                        break;
                     case Tuple<bool, bool, bool, bool> tuple when tuple.GetType() == typeof(Tuple<bool, bool, bool, bool>):
                         (stun, heavy, slow, sleep) = tuple;
-                        return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1) + (*(byte*)&slow << 2) + (*(byte*)&sleep << 3));
+                        break;
                     case Tuple<bool, bool, bool, bool, bool> tuple when tuple.GetType() == typeof(Tuple<bool, bool, bool, bool, bool>):
                         (stun, heavy, slow, sleep, bind) = tuple;
-                        return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1) + (*(byte*)&slow << 2) + (*(byte*)&sleep << 3) + (*(byte*)&bind << 4));
+                        break;
                     case Tuple<bool, bool, bool, bool, bool, bool> tuple when tuple.GetType() == typeof(Tuple<bool, bool, bool, bool, bool, bool>):
-                        bool undead;
                         (stun, heavy, slow, sleep, bind, undead) = tuple;
-                        return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1) + (*(byte*)&slow << 2) + (*(byte*)&sleep << 3) + (*(byte*)&bind << 4) + (*(byte*)&undead << 5));
+                        break;
                 }
+                return (Vulnerabilities)(*(byte*)&stun + (*(byte*)&heavy << 1) + (*(byte*)&slow << 2) + (*(byte*)&sleep << 3) + (*(byte*)&bind << 4) + (*(byte*)&undead << 5));
             }
-
-            return Vulnerabilities.None;
         }
     }
 }
