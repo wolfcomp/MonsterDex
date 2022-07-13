@@ -18,7 +18,7 @@ namespace DeepDungeonDex
 
     public enum ThreatLevel
     {
-        Unspecified,
+        Undefined,
         Easy,
         Caution,
         Dangerous,
@@ -27,7 +27,7 @@ namespace DeepDungeonDex
 
     public enum AggroType
     {
-        Unspecified,
+        Undefined,
         Sight,
         Sound,
         Proximity,
