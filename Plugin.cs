@@ -6,6 +6,7 @@ using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
 using Dalamud.Game;
+using DeepDungeonDex.Localization;
 
 namespace DeepDungeonDex
 {
@@ -21,38 +22,33 @@ namespace DeepDungeonDex
         private readonly TargetManager _targetManager;
         private readonly Framework _framework;
         private readonly CommandManager _commands;
+        private readonly Locale _locale;
 
         public string Name => "DeepDungeonDex";
 
-        public Plugin(
-            DalamudPluginInterface pluginInterface,
-            ClientState clientState,
-            CommandManager commands,
-            Condition condition,
-            Framework framework,
-            //SeStringManager seStringManager,
-            TargetManager targets)
+        public Plugin(DalamudPluginInterface pluginInterface, ClientState clientState, CommandManager commands, Condition condition, Framework framework, TargetManager targets)
         {
-            this._pluginInterface = pluginInterface;
-            this._clientState = clientState;
-            this._condition = condition;
-            this._framework = framework;
-            this._commands = commands;
-            this._targetManager = targets;
+            _pluginInterface = pluginInterface;
+            _clientState = clientState;
+            _condition = condition;
+            _framework = framework;
+            _commands = commands;
+            _targetManager = targets;
 
-            this._config = (Configuration)this._pluginInterface.GetPluginConfig() ?? new Configuration();
-            this._config.Initialize(this._pluginInterface);
-            this._ui = new PluginUI(_config, clientState);
-            this._cui = new ConfigUI(_config.Opacity, _config.IsClickThrough, _config.HideRedVulns, _config.HideBasedOnJob, _config);
-            this._pluginInterface.UiBuilder.Draw += this._ui.Draw;
-            this._pluginInterface.UiBuilder.Draw += this._cui.Draw;
+            _locale = new Locale();
+            _config = (Configuration)_pluginInterface.GetPluginConfig() ?? new Configuration();
+            _config.Initialize(_pluginInterface);
+            _ui = new PluginUI(_config, clientState, _locale);
+            _cui = new ConfigUI(_config.Opacity, _config.IsClickthrough, _config.HideRedVulns, _config.HideBasedOnJob, _config.Locale, _config, _locale);
+            _pluginInterface.UiBuilder.Draw += _ui.Draw;
+            _pluginInterface.UiBuilder.Draw += _cui.Draw;
 
-            this._commands.AddHandler("/pddd", new CommandInfo(OpenConfig)
+            _commands.AddHandler("/pddd", new CommandInfo(OpenConfig)
             {
                 HelpMessage = "DeepDungeonDex config"
             });
 
-            this._framework.Update += this.GetData;
+            _framework.Update += GetData;
         }
 
         public void OpenConfig(string command, string args)
@@ -62,7 +58,7 @@ namespace DeepDungeonDex
 
         public void GetData(Framework framework)
         {
-            if (!this._condition[ConditionFlag.InDeepDungeon])
+            if (!_condition[ConditionFlag.InDeepDungeon])
             {
                 _ui.IsVisible = false;
                 return;
@@ -86,14 +82,14 @@ namespace DeepDungeonDex
         {
             if (!disposing) return;
 
-            this._commands.RemoveHandler("/pddd");
+            _commands.RemoveHandler("/pddd");
 
-            this._pluginInterface.SavePluginConfig(this._config);
+            _pluginInterface.SavePluginConfig(_config);
 
-            this._pluginInterface.UiBuilder.Draw -= this._ui.Draw;
-            this._pluginInterface.UiBuilder.Draw -= this._cui.Draw;
+            _pluginInterface.UiBuilder.Draw -= _ui.Draw;
+            _pluginInterface.UiBuilder.Draw -= _cui.Draw;
 
-            this._framework.Update -= this.GetData;
+            _framework.Update -= GetData;
         }
 
         public void Dispose()
