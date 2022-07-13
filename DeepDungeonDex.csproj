@@ -7,6 +7,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <DalamudPluginPath>$(appdata)\XIVLauncher\devPlugins\DeepDungeonDex</DalamudPluginPath>
   </PropertyGroup>
   
   
@@ -57,5 +58,15 @@
   <ItemGroup>
     <Content Include=".github\workflows\BuildAndPR.yaml" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Localization\*.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="CopyFilesTarget" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <Copy SourceFiles="$(OutDir)\DeepDungeonDex.dll;$(OutDir)\DeepDungeonDex.json;" DestinationFolder="$(DalamudPluginPath)"></Copy>
+  </Target>
 
 </Project>
