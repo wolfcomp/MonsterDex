@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AggroType" xml:space="preserve">
-    <value>Aggro Type</value>
+    <value>Bedrohungs Typ</value>
   </data>
   <data name="Bind" xml:space="preserve">
     <value>Bind</value>
@@ -127,16 +127,16 @@
     <value>Boss</value>
   </data>
   <data name="Caution" xml:space="preserve">
-    <value>Caution</value>
+    <value>Vorsicht</value>
   </data>
   <data name="Dangerous" xml:space="preserve">
-    <value>Dangerous</value>
+    <value>Gefährlich</value>
   </data>
   <data name="Easy" xml:space="preserve">
-    <value>Easy</value>
+    <value>Einfach</value>
   </data>
   <data name="Heavy" xml:space="preserve">
-    <value>Heavy</value>
+    <value>Schwer</value>
   </data>
   <data name="HideBasedOnJob" xml:space="preserve">
     <value>Hide vulnerabilities based on current class/job</value>
@@ -151,46 +151,46 @@
     <value>Name</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
+    <value>Keine Daten gefunden für {0} ({1})</value>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>Notizen</value>
   </data>
   <data name="Opacity" xml:space="preserve">
-    <value>Opacity</value>
+    <value>Sichtbarkeit</value>
   </data>
   <data name="Proximity" xml:space="preserve">
     <value>Proximity</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Speichern</value>
   </data>
   <data name="Sight" xml:space="preserve">
-    <value>Sight</value>
+    <value>Sicht</value>
   </data>
   <data name="Sleep" xml:space="preserve">
     <value>Sleep</value>
   </data>
   <data name="Slow" xml:space="preserve">
-    <value>Slow</value>
+    <value>Langsam</value>
   </data>
   <data name="Sound" xml:space="preserve">
     <value>Sound</value>
   </data>
   <data name="Stun" xml:space="preserve">
-    <value>Stun</value>
+    <value>Betäubung</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
+    <value>Vielen Dank an den Deep Dungeons Discord Server für die große Anzahl an Community Ressourcen. Danke an Alle die ihre Zeit aufbrachten und fehlerhafte oder fehlende Daten zu melden. Besondere Erwähung an Maygi für das verfassen des besten Deep Dungeon Guides der verfügbar ist!</value>
   </data>
   <data name="Threat" xml:space="preserve">
-    <value>Threat</value>
+    <value>Bedrohung</value>
   </data>
   <data name="Undead" xml:space="preserve">
-    <value>Undead</value>
+    <value>Untot</value>
   </data>
   <data name="Undefined" xml:space="preserve">
-    <value>Undefined</value>
+    <value>Undefiniert</value>
   </data>
   <data name="Vicious" xml:space="preserve">
     <value>Vicious</value>
@@ -205,7 +205,7 @@
     <value>Auto applies Physical Vuln Up every 10s</value>
   </data>
   <data name="7264" xml:space="preserve">
-    <value>AoE applies Paralysis</value>
+    <value>AoE fügen Paralyse zu</value>
   </data>
   <data name="7265" xml:space="preserve">
     <value>Triple auto inflicts Bleed</value>
@@ -214,19 +214,19 @@
     <value>Untelegraphed Sleep followed by AoE</value>
   </data>
   <data name="7267" xml:space="preserve">
-    <value>AoE applies Bleed</value>
+    <value>AoE bewirken Blutung</value>
   </data>
   <data name="7268" xml:space="preserve">
     <value>Gaze</value>
   </data>
   <data name="7270" xml:space="preserve">
-    <value>AoE inflicts knockback</value>
+    <value>AoE verursacht Rückstoß</value>
   </data>
   <data name="7271" xml:space="preserve">
     <value>Conal AoE inflicts Bleed\nCircle AoE inflicts knockback</value>
   </data>
   <data name="7272" xml:space="preserve">
-    <value>Unavoidable tankbuster-like "Jaws"</value>
+    <value>Unvermeidbarer Tankbuster wie "Kiefer"</value>
   </data>
   <data name="7273" xml:space="preserve">
     <value>Untelegraphed buster inflicts Bleed and knockback</value>
@@ -871,7 +871,7 @@
     <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
   </data>
   <data name="5473" xml:space="preserve">
-    <value>Casts untelegraphed cone "Level 5 Death"</value>
+    <value>Wirkt nicht angezeigten Kegel "Stufe 5 Tod"</value>
   </data>
   <data name="5475" xml:space="preserve">
     <value>Double auto</value>
