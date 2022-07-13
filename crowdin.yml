@@ -1,0 +1,3 @@
+files:
+  - source: /Localization/en.resx
+    translation: /Localization/%locale%.resx

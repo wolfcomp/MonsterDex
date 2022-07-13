@@ -2,6 +2,7 @@
 using System.Numerics;
 using Dalamud.Game.ClientState;
 using Dalamud.Logging;
+using DeepDungeonDex.Localization;
 
 namespace DeepDungeonDex
 {
@@ -10,11 +11,13 @@ namespace DeepDungeonDex
         public bool IsVisible { get; set; }
         private readonly Configuration _config;
         private readonly ClientState _clientState;
+        private readonly Locale _locale;
 
-        public PluginUI(Configuration config, ClientState clientState)
+        public PluginUI(Configuration config, ClientState clientState, Locale locale)
         {
-            this._config = config;
-            this._clientState = clientState;
+            _config = config;
+            _clientState = clientState;
+            _locale = locale;
         }
 
         private static void PrintTextWithColor(string text, uint color)
@@ -51,12 +54,12 @@ namespace DeepDungeonDex
             {
                 if (!_config.HideBasedOnJob || DataHandler.ShouldRender(classJobId, vulnerabilities))
                 {
-                    PrintSingleVuln(mobData.Vuln.HasFlag(vulnerabilities), vulnerabilities.ToString());
+                    PrintSingleVuln(mobData.Vuln.HasFlag(vulnerabilities), _locale.GetString(vulnerabilities.ToString()));
                 }
             }
             if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
             {
-                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Undead), "Undead");
+                PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Undead), _locale.Undead);
             }
         }
 
@@ -67,52 +70,52 @@ namespace DeepDungeonDex
             var data = DataHandler.Mobs(TargetData.NameID);
             if (!data.HasValue)
             {
-                PluginLog.Log("No data found for " + TargetData.Name + " (" + TargetData.NameID + ")");
+                PluginLog.Log(string.Format(_locale.NoDataFound, TargetData.Name, TargetData.NameID));
                 return;
             }
             var mobData = data.Value;
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
-            if (_config.IsClickThrough)
+            if (_config.IsClickthrough)
             {
                 flags |= ImGuiWindowFlags.NoInputs;
             }
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
             ImGui.SetNextWindowBgAlpha(_config.Opacity);
             ImGui.Begin("cool strati window", flags);
-            ImGui.Text("Name:\n" + TargetData.Name);
+            ImGui.Text(_locale.Name+":\n" + TargetData.Name);
             ImGui.NewLine();
             ImGui.Columns(2, null, false);
-            ImGui.Text("Aggro Type:\n");
-            ImGui.Text(mobData.Aggro.ToString());
+            ImGui.Text(_locale.AggroType + ":\n");
+            ImGui.Text(_locale.GetString(mobData.Aggro.ToString()));
             ImGui.NextColumn();
-            ImGui.Text("Threat:\n");
+            ImGui.Text(_locale.Threat+":\n");
             switch (mobData.Threat)
             {
                 case ThreatLevel.Easy:
-                    PrintTextWithColor("Easy", 0xFF00FF00);
+                    PrintTextWithColor(_locale.Easy, 0xFF00FF00);
                     break;
                 case ThreatLevel.Caution:
-                    PrintTextWithColor("Caution", 0xFF00FFFF);
+                    PrintTextWithColor(_locale.Caution, 0xFF00FFFF);
                     break;
                 case ThreatLevel.Dangerous:
-                    PrintTextWithColor("Dangerous", 0xFF0000FF);
+                    PrintTextWithColor(_locale.Dangerous, 0xFF0000FF);
                     break;
                 case ThreatLevel.Vicious:
-                    PrintTextWithColor("Vicious", 0xFFFF00FF);
+                    PrintTextWithColor(_locale.Vicious, 0xFFFF00FF);
                     break;
                 default:
-                    ImGui.Text("Undefined");
+                    ImGui.Text(_locale.Undefined);
                     break;
             }
             ImGui.NextColumn();
             ImGui.NewLine();
-            ImGui.Text("Vulns:\n");
+            ImGui.Text(_locale.Vulns + ":\n");
             ImGui.Columns(4, null, false);
             DrawVulns(mobData);
             ImGui.NextColumn();
             ImGui.Columns(1);
             ImGui.NewLine();
-            ImGui.Text("Notes:\n");
+            ImGui.Text(_locale.Notes + ":\n");
             ImGui.TextWrapped(mobData.MobNotes);
             ImGui.End();
         }
