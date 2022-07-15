@@ -232,22 +232,22 @@
     <value>보이지 않는 강공격, 타박상 및 넉백 됨</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
+    <value>조금 아픈 3연격 이후 장판 공격이 있음</value>
   </data>
   <data name="7281" xml:space="preserve">
-    <value>Gaze inflicts Seduce, followed by large AoE that inflicts Minimum</value>
+    <value>유혹 디버프를 부여하는 마안 공격을 하고, 잇달아 미니멈 디버프를 부여하는 큰 장판 공격을 시전합니다.</value>
   </data>
   <data name="7285" xml:space="preserve">
-    <value>Buster and triple auto</value>
+    <value>평타 중 3연타 하는 강공격이 있음</value>
   </data>
   <data name="7286" xml:space="preserve">
     <value>Room wide ENRAGE</value>
   </data>
   <data name="7288" xml:space="preserve">
-    <value>Gaze inflicts Blind</value>
+    <value>실명 디버프를 부여하는 시선 공격을 함</value>
   </data>
   <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
+    <value>자신을 포함한 주변을 치료함</value>
   </data>
   <data name="7290" xml:space="preserve">
     <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
@@ -304,7 +304,7 @@
     <value>Frontal cleave without cast or telegraph</value>
   </data>
   <data name="7313" xml:space="preserve">
-    <value>Gaze inflicts Otter</value>
+    <value>달달이로 만드는 시선 공격을 함</value>
   </data>
   <data name="7314" xml:space="preserve">
     <value>Casts AoEs unaggroed</value>
@@ -502,19 +502,19 @@
     <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
   </data>
   <data name="7392" xml:space="preserve">
-    <value>Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/knockback/witching/\ninterject</value>
+    <value>1-30층: 청동 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/넉백/적변형/\n말참견으로 중단시킬 수 있습니다</value>
   </data>
   <data name="7393" xml:space="preserve">
-    <value>Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/interject</value>
+    <value>31-60층: 은 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/말참견으로 중단시킬 수 있습니다</value>
   </data>
   <data name="7394" xml:space="preserve">
-    <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
+    <value>61층~: 금 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 오직 말참견으로만 중단시킬 수 있습니다\n기절시킬 수 없습니다</value>
   </data>
   <data name="7478" xml:space="preserve">
     <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
+    <value>필드 중앙으로 이동하여 벽 쪽으로 넉백 시킴(무조건 넉백)\n넉백 후 바로 맵 절반 범위의 장판을 시전하므로 보스 뒤로 이동</value>
   </data>
   <data name="7481" xml:space="preserve">
     <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
