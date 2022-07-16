@@ -879,4 +879,7 @@
   <data name="2566" xml:space="preserve">
     <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
   </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>Font Size</value>
+  </data>
 </root>

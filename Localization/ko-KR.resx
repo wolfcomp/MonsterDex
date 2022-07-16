@@ -118,136 +118,136 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AggroType" xml:space="preserve">
-    <value>Aggro Type</value>
+    <value>적개심 유형</value>
   </data>
   <data name="Bind" xml:space="preserve">
-    <value>Bind</value>
+    <value>속박</value>
   </data>
   <data name="Boss" xml:space="preserve">
-    <value>Boss</value>
+    <value>보스</value>
   </data>
   <data name="Caution" xml:space="preserve">
-    <value>Caution</value>
+    <value>주의</value>
   </data>
   <data name="Dangerous" xml:space="preserve">
-    <value>Dangerous</value>
+    <value>위험</value>
   </data>
   <data name="Easy" xml:space="preserve">
-    <value>Easy</value>
+    <value>쉬움</value>
   </data>
   <data name="Heavy" xml:space="preserve">
-    <value>Heavy</value>
+    <value>과중력</value>
   </data>
   <data name="HideBasedOnJob" xml:space="preserve">
-    <value>Hide vulnerabilities based on current class/job</value>
+    <value>현재 클래스/직업을 기준으로 약점 숨기기</value>
   </data>
   <data name="HideRedVulns" xml:space="preserve">
-    <value>Hide vulnerabilities that can't be inflicted</value>
+    <value>통하지 않는 약점 숨기기</value>
   </data>
   <data name="IsClickthrough" xml:space="preserve">
-    <value>Enable clickthrough</value>
+    <value>마우스 클릭통과</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>이름</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
     <value>No data found for {0} ({1})</value>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>참고 사항</value>
   </data>
   <data name="Opacity" xml:space="preserve">
-    <value>Opacity</value>
+    <value>불투명도</value>
   </data>
   <data name="Proximity" xml:space="preserve">
-    <value>Proximity</value>
+    <value>근접</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>저장</value>
   </data>
   <data name="Sight" xml:space="preserve">
-    <value>Sight</value>
+    <value>시각</value>
   </data>
   <data name="Sleep" xml:space="preserve">
-    <value>Sleep</value>
+    <value>수면</value>
   </data>
   <data name="Slow" xml:space="preserve">
-    <value>Slow</value>
+    <value>둔화</value>
   </data>
   <data name="Sound" xml:space="preserve">
-    <value>Sound</value>
+    <value>소리</value>
   </data>
   <data name="Stun" xml:space="preserve">
-    <value>Stun</value>
+    <value>기절</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
+    <value>Deep Dungeons 디스코드 서버 덕분에 많은 자료가 확보되었습니다. 시간을 내어 정확하지 않거나 누락된 데이터를 보고해 주신 모든 분들께 감사드립니다! 또한 최고의 딥 던전 가이드를 쓴 Maygi에게 진심으로 감사드립니다!</value>
   </data>
   <data name="Threat" xml:space="preserve">
-    <value>Threat</value>
+    <value>위협 수준</value>
   </data>
   <data name="Undead" xml:space="preserve">
-    <value>Undead</value>
+    <value>언데드</value>
   </data>
   <data name="Undefined" xml:space="preserve">
-    <value>Undefined</value>
+    <value>알 수 없음</value>
   </data>
   <data name="Vicious" xml:space="preserve">
     <value>Vicious</value>
   </data>
   <data name="Vulns" xml:space="preserve">
-    <value>Vulns</value>
+    <value>약점</value>
   </data>
   <data name="7262" xml:space="preserve">
-    <value>Auto inflicts Heavy debuff</value>
+    <value>피격 시 과중력 디버프를 부여함</value>
   </data>
   <data name="7263" xml:space="preserve">
-    <value>Auto applies Physical Vuln Up every 10s</value>
+    <value>10초마다 받는 물리 피해 증가 디버프를 부여함</value>
   </data>
   <data name="7264" xml:space="preserve">
-    <value>AoE applies Paralysis</value>
+    <value>장판 공격은 마비 디버프를 부여함</value>
   </data>
   <data name="7265" xml:space="preserve">
     <value>Triple auto inflicts Bleed</value>
   </data>
   <data name="7266" xml:space="preserve">
-    <value>Untelegraphed Sleep followed by AoE</value>
+    <value>보이지 않는 전방 부채꼴 장판, 수면 디버프를 부여함</value>
   </data>
   <data name="7267" xml:space="preserve">
-    <value>AoE applies Bleed</value>
+    <value>장판 공격은 출혈 디버프를 부여함</value>
   </data>
   <data name="7268" xml:space="preserve">
-    <value>Gaze</value>
+    <value>마안</value>
   </data>
   <data name="7270" xml:space="preserve">
-    <value>AoE inflicts knockback</value>
+    <value>장판 피격 시 넉백 됨</value>
   </data>
   <data name="7271" xml:space="preserve">
-    <value>Conal AoE inflicts Bleed\nCircle AoE inflicts knockback</value>
+    <value>부채꼴 장판은 출혈 디버프 부여\n원형 장판은 넉백 됨</value>
   </data>
   <data name="7272" xml:space="preserve">
-    <value>Unavoidable tankbuster-like "Jaws"</value>
+    <value>피할 수 없는 탱크 버스터를 시전함</value>
   </data>
   <data name="7273" xml:space="preserve">
-    <value>Untelegraphed buster inflicts Bleed and knockback</value>
+    <value>보이지 않는 강공격, 타박상 및 넉백 됨</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
+    <value>조금 아픈 3연격 이후 장판 공격이 있음</value>
   </data>
   <data name="7281" xml:space="preserve">
-    <value>Gaze inflicts Seduce, followed by large AoE that inflicts Minimum</value>
+    <value>유혹 디버프를 부여하는 마안 공격을 하고, 잇달아 미니멈 디버프를 부여하는 큰 장판 공격을 시전합니다.</value>
   </data>
   <data name="7285" xml:space="preserve">
-    <value>Buster and triple auto</value>
+    <value>평타 중 3연타 하는 강공격이 있음</value>
   </data>
   <data name="7286" xml:space="preserve">
     <value>Room wide ENRAGE</value>
   </data>
   <data name="7288" xml:space="preserve">
-    <value>Gaze inflicts Blind</value>
+    <value>실명 디버프를 부여하는 시선 공격을 함</value>
   </data>
   <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
+    <value>자신을 포함한 주변을 치료함</value>
   </data>
   <data name="7290" xml:space="preserve">
     <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
@@ -262,7 +262,7 @@
     <value>Draw-in followed by cleave</value>
   </data>
   <data name="7296" xml:space="preserve">
-    <value>Gaze</value>
+    <value>마안</value>
   </data>
   <data name="7297" xml:space="preserve">
     <value>Line AoE inflicts Bleed</value>
@@ -304,7 +304,7 @@
     <value>Frontal cleave without cast or telegraph</value>
   </data>
   <data name="7313" xml:space="preserve">
-    <value>Gaze inflicts Otter</value>
+    <value>달달이로 만드는 시선 공격을 함</value>
   </data>
   <data name="7314" xml:space="preserve">
     <value>Casts AoEs unaggroed</value>
@@ -502,19 +502,19 @@
     <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
   </data>
   <data name="7392" xml:space="preserve">
-    <value>Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/knockback/witching/\ninterject</value>
+    <value>1-30층: 청동 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/넉백/적변형/\n말참견으로 중단시킬 수 있습니다</value>
   </data>
   <data name="7393" xml:space="preserve">
-    <value>Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/interject</value>
+    <value>31-60층: 은 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/말참견으로 중단시킬 수 있습니다</value>
   </data>
   <data name="7394" xml:space="preserve">
-    <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
+    <value>61층~: 금 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 오직 말참견으로만 중단시킬 수 있습니다\n기절시킬 수 없습니다</value>
   </data>
   <data name="7478" xml:space="preserve">
     <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
+    <value>필드 중앙으로 이동하여 벽 쪽으로 넉백 시킴(무조건 넉백)\n넉백 후 바로 맵 절반 범위의 장판을 시전하므로 보스 뒤로 이동</value>
   </data>
   <data name="7481" xml:space="preserve">
     <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
