@@ -241,7 +241,7 @@
     <value>평타 중 3연타 하는 강공격이 있음</value>
   </data>
   <data name="7286" xml:space="preserve">
-    <value>Room wide ENRAGE</value>
+    <value>어그로 대상 방면으로 광역공격</value>
   </data>
   <data name="7288" xml:space="preserve">
     <value>실명 디버프를 부여하는 시선 공격을 함</value>
@@ -448,7 +448,7 @@
     <value>Draw-in attack, tons of bleed, and a stacking poison</value>
   </data>
   <data name="7374" xml:space="preserve">
-    <value>Large doughnut AoE</value>
+    <value>도넛 모양의 큰 장판</value>
   </data>
   <data name="7375" xml:space="preserve">
     <value>Cone AoE, circle AoE, party wide damage</value>
