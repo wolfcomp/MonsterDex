@@ -67,6 +67,7 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
+            ImGui.PushFont(Plugin.RegularFont);
             var data = DataHandler.Mobs(TargetData.NameID);
             if (!data.HasValue)
             {
@@ -118,6 +119,7 @@ namespace DeepDungeonDex
             ImGui.Text(_locale.Notes + ":\n");
             ImGui.TextWrapped(mobData.MobNotes);
             ImGui.End();
+            ImGui.PopFont();
         }
     }
 }

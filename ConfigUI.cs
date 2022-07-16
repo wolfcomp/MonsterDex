@@ -1,4 +1,5 @@
-﻿using ImGuiNET;
+﻿using System;
+using ImGuiNET;
 using System.Diagnostics;
 using System.Numerics;
 using DeepDungeonDex.Localization;
@@ -16,14 +17,16 @@ namespace DeepDungeonDex
         private int _localeInt;
         private readonly Configuration _config;
         private readonly Locale _locale;
+        private float _fontSize;
 
-        public ConfigUI(float opacity, bool isClickthrough, bool hideRedVulns, bool hideBasedOnJob, int localeInt, Configuration config, Locale locale)
+        public ConfigUI(float opacity, bool isClickthrough, bool hideRedVulns, bool hideBasedOnJob, int localeInt, float fontSize, Configuration config, Locale locale)
         {
             _config = config;
             _opacity = opacity;
             _isClickthrough = isClickthrough;
             _hideRedVulns = hideRedVulns;
             _hideBasedOnJob = hideBasedOnJob;
+            _fontSize = fontSize;
             _localeInt = localeInt;
             _locale = locale;
         }
@@ -32,12 +35,24 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
+            ImGui.PushFont(Plugin.RegularFont);
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 100), new Vector2(400, 300));
             ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
             if (ImGui.SliderFloat(_locale.Opacity, ref _opacity, 0.0f, 1.0f))
             {
                 _config.Opacity = _opacity;
             }
+            ImGui.Columns(4,null, false);
+            ImGui.Text(_locale.FontSize);
+            foreach (var f in new float[] { 12, 14, 16, 18, 24, 32, 64 })
+            {
+                ImGui.NextColumn();
+                if (ImGui.RadioButton($"{f}px", Math.Abs(_config.FontSize - f) < float.Epsilon))
+                {
+                    _config.FontSize = f;
+                }
+            }
+            ImGui.Columns(1);
             if (ImGui.Checkbox(_locale.IsClickthrough, ref _isClickthrough))
             {
                 _config.IsClickthrough = _isClickthrough;
@@ -50,7 +65,7 @@ namespace DeepDungeonDex
             {
                 _config.HideBasedOnJob = _hideBasedOnJob;
             }
-            if (ImGui.Combo("Locale", ref _localeInt, new [] { "English", "日本語", "Français", "Deutsch", "Chinese (simpl)", "Chinese (full)" }, 6))
+            if (ImGui.Combo("Locale", ref _localeInt, new [] { "English", "日本語", "Français", "Deutsch", "汉语", "漢語", "한국어" }, 7))
             {
                 _config.Locale = _localeInt;
                 _locale.ChangeLocale(_config.LocaleString);
@@ -76,6 +91,7 @@ namespace DeepDungeonDex
             ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
             ImGui.PopStyleColor(3);
             ImGui.End();
+            ImGui.PopFont();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace DeepDungeonDex
         public bool HideRedVulns { get; set; } = false;
         public bool HideBasedOnJob { get; set; } = false;
         public int Locale { get; set; } = 0;
+        public float FontSize { get; set; } = 16f;
 
         // Add any other properties or methods here.
         [JsonIgnore] private DalamudPluginInterface _pluginInterface;
@@ -24,17 +25,20 @@ namespace DeepDungeonDex
             3 => "de-DE",
             4 => "zh-CN",
             5 => "zh-TW",
+            6 => "ko-KR",
             _ => "en"
         };
 
+
         public void Initialize(DalamudPluginInterface pluginInterface)
         {
-            this._pluginInterface = pluginInterface;
+            _pluginInterface = pluginInterface;
         }
 
         public void Save()
         {
-            this._pluginInterface.SavePluginConfig(this);
+            _pluginInterface.SavePluginConfig(this);
+            _pluginInterface.UiBuilder.RebuildFonts();
         }
     }
 }

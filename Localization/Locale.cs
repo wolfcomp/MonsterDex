@@ -82,5 +82,6 @@ namespace DeepDungeonDex.Localization
         public string Undefined => GetString("Undefined");
         public string Vulns => GetString("Vulns");
         public string Notes => GetString("Notes");
+        public string FontSize => GetString("FontSize");
     }
 }
