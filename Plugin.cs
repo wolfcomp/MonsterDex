@@ -4,34 +4,33 @@ using System.IO;
 using System.Net.Http;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks;
+using Dalamud.Data;
 using Dalamud.Game.ClientState;
 using Dalamud.Plugin;
 using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
-using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
 using Dalamud.Game;
 using Dalamud.Interface;
 using Dalamud.Logging;
 using DeepDungeonDex.Localization;
 using ImGuiNET;
+using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex
 {
     public class Plugin : IDalamudPlugin
     {
+        #region Dalamud fields
         private readonly DalamudPluginInterface _pluginInterface;
-        private readonly Configuration _config;
-        private readonly PluginUI _ui;
-        private readonly ConfigUI _cui;
-        private GameObject _previousTarget;
-        private ClientState _clientState;
         private readonly Condition _condition;
         private readonly TargetManager _targetManager;
         private readonly Framework _framework;
         private readonly CommandManager _commands;
-        private readonly Locale _locale;
+        private readonly DataManager _gameData;
+        #endregion
+
+        #region Font fields
         private ImFontConfigPtr _fontCfg;
         private ImFontConfigPtr _fontCfgMerge;
         private (GCHandle, int) _gameSymFont;
@@ -53,23 +52,37 @@ namespace DeepDungeonDex
             },
             GCHandleType.Pinned
         );
-        
         internal static ImFontPtr RegularFont;
+        #endregion
+
+        private readonly Configuration _config;
+        private readonly PluginUI _ui;
+        private readonly ConfigUI _cui;
+        private readonly Locale _locale;
+        private bool _debug;
+        internal static readonly Deserializer Deserializer = new();
 
         public string Name => "DeepDungeonDex";
 
-        public unsafe Plugin(DalamudPluginInterface pluginInterface, ClientState clientState, CommandManager commands, Condition condition, Framework framework, TargetManager targets)
+        public unsafe Plugin(DalamudPluginInterface pluginInterface, ClientState clientState, CommandManager commands, Condition condition, Framework framework, TargetManager targets, DataManager gameData)
         {
+            #region Initialize
             _pluginInterface = pluginInterface;
-            _clientState = clientState;
             _condition = condition;
             _framework = framework;
             _commands = commands;
             _targetManager = targets;
+            _gameData = gameData;
+            #endregion
 
+            #region Load Config
             _locale = new Locale();
             _config = (Configuration)_pluginInterface.GetPluginConfig() ?? new Configuration();
             _config.Initialize(_pluginInterface);
+            #endregion
+
+            #region Load UI Data
+            DataHandler.SetupData();
             SetUpRanges();
             SetUpFonts();
             _fontCfg = new ImFontConfigPtr(ImGuiNative.ImFontConfig_ImFontConfig()) { FontDataOwnedByAtlas = false };
@@ -83,28 +96,41 @@ namespace DeepDungeonDex
                 GCHandle.Alloc(gameSym, GCHandleType.Pinned),
                 gameSym.Length
             );
+            #endregion
+
+            #region Initialize UI
             _ui = new PluginUI(_config, clientState, _locale);
             _cui = new ConfigUI(_config.Opacity, _config.IsClickthrough, _config.HideRedVulns, _config.HideBasedOnJob, _config.Locale, _config.FontSize, _config, _locale);
+
             _pluginInterface.UiBuilder.Draw += _ui.Draw;
             _pluginInterface.UiBuilder.Draw += _cui.Draw;
             _pluginInterface.UiBuilder.BuildFonts += BuildFonts;
             _pluginInterface.UiBuilder.RebuildFonts();
+            #endregion
 
+            #region Initialize Commands
             _commands.AddHandler("/pddd", new CommandInfo(OpenConfig)
             {
                 HelpMessage = "DeepDungeonDex config"
             });
 
-            _framework.Update += GetData;
-        }
+            _commands.AddHandler("/pdddbug", new CommandInfo(OpenUIDebug)
+            {
+                ShowInHelp = false
+            });
 
-        public void OpenConfig(string command, string args)
-        {
-            _cui.IsVisible = true;
+            _commands.AddHandler("/pdddrefresh", new CommandInfo(Refresh)
+            {
+                HelpMessage = "DeepDungeonDex refresh mob data"
+            });
+            #endregion
+
+            _framework.Update += GetData;
         }
 
         public void GetData(Framework framework)
         {
+            if (_debug) return;
             if (!_condition[ConditionFlag.InDeepDungeon])
             {
                 _ui.IsVisible = false;
@@ -113,17 +139,37 @@ namespace DeepDungeonDex
             var target = _targetManager.Target;
 
             var targetData = new TargetData();
-            if (!targetData.IsValidTarget(target))
-            {
-                _ui.IsVisible = false;
-            }
-            else
-            {
-                _previousTarget = target;
-                _ui.IsVisible = true;
-            }
+            _ui.IsVisible = targetData.IsValidTarget(target);
         }
 
+        #region Commands
+        private void Refresh(string command, string args)
+        {
+            DataHandler.SetupData();
+        }
+
+        private void OpenUIDebug(string command, string args)
+        {
+            PluginLog.Information($"Debug triggered with {args}");
+            if (string.IsNullOrWhiteSpace(args))
+            {
+                _debug = false;
+                _ui.IsVisible = false;
+                return;
+            }
+            _debug = true;
+            TargetData.NameID = Convert.ToUInt32(args.Split(' ')[0]);
+            TargetData.Name = _gameData.GetExcelSheet<Lumina.Excel.GeneratedSheets.BNpcName>()?.GetRow(TargetData.NameID)?.Singular.ToString() ?? "";
+            _ui.IsVisible = true;
+        }
+
+        public void OpenConfig(string command, string args)
+        {
+            _cui.IsVisible = true;
+        }
+        #endregion
+
+        #region Fonts
         public byte[] GetResource(string path)
         {
             using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path)!;
@@ -225,6 +271,7 @@ namespace DeepDungeonDex
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, _config.FontSize, _fontCfgMerge, _scRanges.Data);
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, _config.FontSize, _fontCfgMerge, _symRange.AddrOfPinnedObject());
         }
+        #endregion
 
         #region IDisposable Support
         protected virtual void Dispose(bool disposing)
@@ -232,6 +279,7 @@ namespace DeepDungeonDex
             if (!disposing) return;
 
             _commands.RemoveHandler("/pddd");
+            _commands.RemoveHandler("/pdddbug");
 
             _pluginInterface.SavePluginConfig(_config);
 

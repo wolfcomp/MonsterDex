@@ -44,7 +44,7 @@ namespace DeepDungeonDex
             }
             ImGui.Columns(4,null, false);
             ImGui.Text(_locale.FontSize);
-            foreach (var f in new float[] { 12, 14, 16, 18, 24, 32, 64 })
+            foreach (var f in new float[] { 12, 14, 16, 18, 24, 32 })
             {
                 ImGui.NextColumn();
                 if (ImGui.RadioButton($"{f}px", Math.Abs(_config.FontSize - f) < float.Epsilon))

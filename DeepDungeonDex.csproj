@@ -1,13 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <LangVersion>8.0</LangVersion>
-
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Platforms>x64</Platforms>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-    <DalamudPluginPath>$(appdata)\XIVLauncher\devPlugins\DeepDungeonDex</DalamudPluginPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DalamudPluginPath>$(AppData)\XIVLauncher\devPlugins\DeepDungeonDex</DalamudPluginPath>
+    <OutputType>Library</OutputType>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,9 +21,20 @@
     <None Remove="fonts\NotoSansSC-Regular.otf" />
     <None Remove="fonts\NotoSansTC-Regular.otf" />
   </ItemGroup>
-  
-  
 
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  
   <ItemGroup>
     <Reference Include="Dalamud">
       <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
@@ -46,6 +60,9 @@
       <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Newtonsoft.Json.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Update="System.Numerics">
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
@@ -55,13 +72,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DalamudPackager" Version="2.1.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Update="System.Numerics">
+    <PackageReference Include="YamlDotNet" Version="11.2.1" >
       <Private>false</Private>
-    </Reference>
+    </PackageReference>
+    <PackageReference Include="DalamudPackager" Version="2.1.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -83,8 +97,20 @@
     </EmbeddedResource>
   </ItemGroup>
 
-  <Target Name="CopyFilesTarget" AfterTargets="DefaultDalamudPackager" Condition="'$(Configuration)' == 'Release'">
-    <Copy SourceFiles="$(OutDir)\DeepDungeonDex.dll;$(OutDir)\DeepDungeonDex.json;" DestinationFolder="$(DalamudPluginPath)"></Copy>
+  <Target Name="CopyFilesTarget" AfterTargets="DefaultDalamudPackagerDebug" Condition="'$(Configuration)' == 'Debug'">
+    <Message Text="Copying files to devPlugins folder" Importance="High" />
+    <ItemGroup>
+      <_CopyItems Include="$(OutDir)*.*"/>
+    </ItemGroup>
+    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(DalamudPluginPath)"></Copy>
+  </Target>
+
+  <Target Name="CopyFilesTarget" AfterTargets="DefaultDalamudPackagerRelease" Condition="'$(Configuration)' == 'Release'">
+    <Message Text="Copying files to devPlugins folder" Importance="High" />
+    <ItemGroup>
+      <_CopyItems Include="$(OutDir)*.*"/>
+    </ItemGroup>
+    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(DalamudPluginPath)"></Copy>
   </Target>
 
 </Project>
