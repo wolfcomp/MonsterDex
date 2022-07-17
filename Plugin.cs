@@ -4,13 +4,11 @@ using System.IO;
 using System.Net.Http;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using Dalamud.Data;
 using Dalamud.Game.ClientState;
 using Dalamud.Plugin;
 using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
-using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Game.Command;
 using Dalamud.Game;
 using Dalamud.Interface;
@@ -84,6 +82,7 @@ namespace DeepDungeonDex
             #endregion
 
             #region Load UI Data
+            DataHandler.SetupData();
             SetUpRanges();
             SetUpFonts();
             _fontCfg = new ImFontConfigPtr(ImGuiNative.ImFontConfig_ImFontConfig()) { FontDataOwnedByAtlas = false };
