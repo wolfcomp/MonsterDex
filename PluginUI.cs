@@ -117,7 +117,7 @@ namespace DeepDungeonDex
             ImGui.Columns(1);
             ImGui.NewLine();
             ImGui.Text(_locale.Notes + ":\n");
-            ImGui.TextWrapped(_locale.GetString(TargetData.NameID.ToString()));
+            ImGui.TextWrapped(_locale.GetString(TargetData.NameID.ToString()).Replace("\\n", "\n"));
             ImGui.End();
             ImGui.PopFont();
         }
