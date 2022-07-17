@@ -6,6 +6,6 @@
                 OutputPath="$(OutputPath)"
                 AssemblyName="$(AssemblyName)"
                 MakeZip="true"
-                Include="DeepDungeonDex.dll;DeepDungeonDex.json"/>
+                Include="DeepDungeonDex.dll;DeepDungeonDex.json;YamlDotNet.dll"/>
     </Target>
 </Project>
