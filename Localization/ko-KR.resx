@@ -277,7 +277,7 @@
     <value>Circle AoE inflicts Suppuration</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7303" xml:space="preserve">
     <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
@@ -295,7 +295,7 @@
     <value>Weak stack attack</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
+    <value>엄청 큰 장판 공격을 함</value>
   </data>
   <data name="7311" xml:space="preserve">
     <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
@@ -307,19 +307,19 @@
     <value>달달이로 만드는 시선 공격을 함</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7318" xml:space="preserve">
     <value>Large line AoE\nEventual ENRAGE</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7320" xml:space="preserve">
     <value>Purple: double auto</value>
   </data>
   <data name="7321" xml:space="preserve">
-    <value>Large cone AoE</value>
+    <value>큰 원뿔형 장판공격을 함</value>
   </data>
   <data name="7323" xml:space="preserve">
     <value>Green: Casts AoEs unaggroed</value>
@@ -343,7 +343,7 @@
     <value>Eventual instant ENRAGE</value>
   </data>
   <data name="7331" xml:space="preserve">
-    <value>Cone AoE inflicts Bleed</value>
+    <value>출혈 디버프를 부여하는 원뿔형 장판공격을 함</value>
   </data>
   <data name="7332" xml:space="preserve">
     <value>Exclusively fatal line AoEs</value>
@@ -433,7 +433,7 @@
     <value>Untelegraphed conal AoE on random player, gaze attack</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7370" xml:space="preserve">
     <value>Double autos, very strong rear cleave if behind</value>
