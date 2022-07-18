@@ -151,7 +151,7 @@
     <value>이름</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
+    <value>{0}({1}) 에 대한 데이터를 찾을 수 없습니다.</value>
   </data>
   <data name="Notes" xml:space="preserve">
     <value>참고 사항</value>
