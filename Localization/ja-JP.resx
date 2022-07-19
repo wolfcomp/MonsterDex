@@ -118,76 +118,76 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AggroType" xml:space="preserve">
-    <value>Aggro Type</value>
+    <value>感知タイプ</value>
   </data>
   <data name="Bind" xml:space="preserve">
-    <value>Bind</value>
+    <value>バインド</value>
   </data>
   <data name="Boss" xml:space="preserve">
-    <value>Boss</value>
+    <value>ボス</value>
   </data>
   <data name="Caution" xml:space="preserve">
-    <value>Caution</value>
+    <value>注意</value>
   </data>
   <data name="Dangerous" xml:space="preserve">
-    <value>Dangerous</value>
+    <value>危険</value>
   </data>
   <data name="Easy" xml:space="preserve">
-    <value>Easy</value>
+    <value>簡単</value>
   </data>
   <data name="Heavy" xml:space="preserve">
-    <value>Heavy</value>
+    <value>ヘヴィ</value>
   </data>
   <data name="HideBasedOnJob" xml:space="preserve">
-    <value>Hide vulnerabilities based on current class/job</value>
+    <value>現在のクラス/ジョブに基づいて与えられないデバフを非表示</value>
   </data>
   <data name="HideRedVulns" xml:space="preserve">
-    <value>Hide vulnerabilities that can't be inflicted</value>
+    <value>与えられないデバフを非表示にする</value>
   </data>
   <data name="IsClickthrough" xml:space="preserve">
-    <value>Enable clickthrough</value>
+    <value>クリックスルーを有効にする</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>名前</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
     <value>No data found for {0} ({1})</value>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>備考</value>
   </data>
   <data name="Opacity" xml:space="preserve">
-    <value>Opacity</value>
+    <value>不透明度</value>
   </data>
   <data name="Proximity" xml:space="preserve">
-    <value>Proximity</value>
+    <value>接近</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>保存</value>
   </data>
   <data name="Sight" xml:space="preserve">
-    <value>Sight</value>
+    <value>視覚</value>
   </data>
   <data name="Sleep" xml:space="preserve">
-    <value>Sleep</value>
+    <value>睡眠</value>
   </data>
   <data name="Slow" xml:space="preserve">
-    <value>Slow</value>
+    <value>スロウ</value>
   </data>
   <data name="Sound" xml:space="preserve">
-    <value>Sound</value>
+    <value>聴覚</value>
   </data>
   <data name="Stun" xml:space="preserve">
-    <value>Stun</value>
+    <value>スタン</value>
   </data>
   <data name="Thanks" xml:space="preserve">
     <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
   </data>
   <data name="Threat" xml:space="preserve">
-    <value>Threat</value>
+    <value>危険度</value>
   </data>
   <data name="Undead" xml:space="preserve">
-    <value>Undead</value>
+    <value>アンデッド</value>
   </data>
   <data name="Undefined" xml:space="preserve">
     <value>Undefined</value>
@@ -199,13 +199,13 @@
     <value>Vulns</value>
   </data>
   <data name="7262" xml:space="preserve">
-    <value>Auto inflicts Heavy debuff</value>
+    <value>ヘビィデバフを自動で負わせます</value>
   </data>
   <data name="7263" xml:space="preserve">
-    <value>Auto applies Physical Vuln Up every 10s</value>
+    <value>10秒ごとに物理被ダメージ上昇させる</value>
   </data>
   <data name="7264" xml:space="preserve">
-    <value>AoE applies Paralysis</value>
+    <value>AoEは麻痺を起こします</value>
   </data>
   <data name="7265" xml:space="preserve">
     <value>Triple auto inflicts Bleed</value>
@@ -778,13 +778,13 @@
     <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
   </data>
   <data name="5420" xml:space="preserve">
-    <value>Casts Gaze "Evil Eye"</value>
+    <value>詠唱のある視線攻撃「イビルアイ」</value>
   </data>
   <data name="5421" xml:space="preserve">
-    <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
+    <value>自身のダメージ上昇、前方不可視攻撃「リッパークロウ」背面を歩くと回避できます。</value>
   </data>
   <data name="5422" xml:space="preserve">
-    <value>High health and very large AoE "Scream"</value>
+    <value>高いHPと非常に大きなAoE「スクリーム」</value>
   </data>
   <data name="5423" xml:space="preserve">
     <value>Very high damage for the floors it appears on</value>
@@ -799,7 +799,7 @@
     <value>Inflicts Vuln Up debuff</value>
   </data>
   <data name="5431" xml:space="preserve">
-    <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
+    <value>「アイススパイク」が物理ダメージ反射バフを付与\n「ヴォイド・ブリザド」がスロウを与える</value>
   </data>
   <data name="5433" xml:space="preserve">
     <value>Double autos that lifesteal</value>
@@ -847,7 +847,7 @@
     <value>Cleave does heavy damage and inflicts potent Bleed</value>
   </data>
   <data name="5461" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
+    <value>「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。\nボスはフィールドの北か南に走り「トラウンス(扇形広範囲AoE))」を放つ\nAt 15% 早い詠唱「エクリプスメテオ」 - 9秒ごとに総HPの80%のダメージを全体に与えつづける</value>
   </data>
   <data name="5463" xml:space="preserve">
     <value>Double autos</value>
@@ -871,7 +871,7 @@
     <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
   </data>
   <data name="5473" xml:space="preserve">
-    <value>Casts untelegraphed cone "Level 5 Death"</value>
+    <value>予兆なしの前方扇範囲「レベル５デス」を詠唱</value>
   </data>
   <data name="5475" xml:space="preserve">
     <value>Double auto</value>
@@ -880,6 +880,6 @@
     <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
   </data>
   <data name="FontSize" xml:space="preserve">
-    <value>Font Size</value>
+    <value>フォントサイズ</value>
   </data>
 </root>
