@@ -115,9 +115,13 @@ namespace DeepDungeonDex
             DrawVulns(mobData);
             ImGui.NextColumn();
             ImGui.Columns(1);
-            ImGui.NewLine();
-            ImGui.Text(_locale.Notes + ":\n");
-            ImGui.TextWrapped(_locale.GetString(TargetData.NameID.ToString()).Replace("\\n", "\n"));
+            var note = _locale.GetString(TargetData.NameID.ToString()).Replace("\\n", "\n");
+            if (note != TargetData.NameID.ToString())
+            {
+                ImGui.NewLine();
+                ImGui.Text(_locale.Notes + ":\n");
+                ImGui.TextWrapped(note);
+            }
             ImGui.End();
             ImGui.PopFont();
         }

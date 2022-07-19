@@ -151,7 +151,7 @@
     <value>이름</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
+    <value>{0}({1}) 에 대한 데이터를 찾을 수 없습니다.</value>
   </data>
   <data name="Notes" xml:space="preserve">
     <value>참고 사항</value>
@@ -271,13 +271,13 @@
     <value>Cross AoE inflicts Suppuration</value>
   </data>
   <data name="7299" xml:space="preserve">
-    <value>Large AoE inflicts Paralysis</value>
+    <value>마비 디버프를 부여하는 큰 장판공격을 함</value>
   </data>
   <data name="7300" xml:space="preserve">
     <value>Circle AoE inflicts Suppuration</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7303" xml:space="preserve">
     <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
@@ -295,7 +295,7 @@
     <value>Weak stack attack</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
+    <value>엄청 큰 장판 공격을 함</value>
   </data>
   <data name="7311" xml:space="preserve">
     <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
@@ -307,19 +307,19 @@
     <value>달달이로 만드는 시선 공격을 함</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7318" xml:space="preserve">
     <value>Large line AoE\nEventual ENRAGE</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7320" xml:space="preserve">
     <value>Purple: double auto</value>
   </data>
   <data name="7321" xml:space="preserve">
-    <value>Large cone AoE</value>
+    <value>큰 원뿔형 장판공격을 함</value>
   </data>
   <data name="7323" xml:space="preserve">
     <value>Green: Casts AoEs unaggroed</value>
@@ -334,7 +334,7 @@
     <value>Autos inflict stacking vuln up</value>
   </data>
   <data name="7328" xml:space="preserve">
-    <value>Buster inflicts Bleed</value>
+    <value>출혈 디버프를 부여하는 강공격을 함</value>
   </data>
   <data name="7329" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
@@ -343,7 +343,7 @@
     <value>Eventual instant ENRAGE</value>
   </data>
   <data name="7331" xml:space="preserve">
-    <value>Cone AoE inflicts Bleed</value>
+    <value>출혈 디버프를 부여하는 원뿔형 장판공격을 함</value>
   </data>
   <data name="7332" xml:space="preserve">
     <value>Exclusively fatal line AoEs</value>
@@ -352,7 +352,7 @@
     <value>Draw-in attack</value>
   </data>
   <data name="7336" xml:space="preserve">
-    <value>Instant AoEs on targeted player unaggroed</value>
+    <value>어그로가 끌려있지 않아도 무작위 플레이어에게 장판공격을 함</value>
   </data>
   <data name="7337" xml:space="preserve">
     <value>Conal gaze, very quick low health ENRAGE</value>
@@ -370,19 +370,19 @@
     <value>Caster, double auto</value>
   </data>
   <data name="7345" xml:space="preserve">
-    <value>Conal AoE inflicts Paralysis</value>
+    <value>마비 디버프를 부여하는 부채꼴모양의 장판공격을 함</value>
   </data>
   <data name="7346" xml:space="preserve">
     <value>Cleave and potent Poison</value>
   </data>
   <data name="7347" xml:space="preserve">
-    <value>Large doughnut AoE, gaze attack inflicts Fear</value>
+    <value>큰 도넛형태의 장판공격과 공포 디버프를 부여하는 마안공격을 함</value>
   </data>
   <data name="7348" xml:space="preserve">
     <value>Large circular AoE inflicts Bleed</value>
   </data>
   <data name="7349" xml:space="preserve">
-    <value>Buffs own or ally's defense</value>
+    <value>자신과 파티원에게 방어력 증가 버프를 부여함</value>
   </data>
   <data name="7350" xml:space="preserve">
     <value>AoE inflicts numerous debuffs at once</value>
@@ -409,13 +409,13 @@
     <value>Haste, eventual ENRAGE</value>
   </data>
   <data name="7360" xml:space="preserve">
-    <value>Very large AoEs</value>
+    <value>매우 큰 장판공격을 함</value>
   </data>
   <data name="7361" xml:space="preserve">
     <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
   </data>
   <data name="7362" xml:space="preserve">
-    <value>Extremely large conal AoE, gaze inflicts Fear</value>
+    <value>매우 큰 부채꼴모양의 장판과 공포를 부여하는 마안공격을 함</value>
   </data>
   <data name="7364" xml:space="preserve">
     <value>Double auto and very large AoE</value>
@@ -433,7 +433,7 @@
     <value>Untelegraphed conal AoE on random player, gaze attack</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
   </data>
   <data name="7370" xml:space="preserve">
     <value>Double autos, very strong rear cleave if behind</value>
