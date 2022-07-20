@@ -280,6 +280,7 @@ namespace DeepDungeonDex
 
             _commands.RemoveHandler("/pddd");
             _commands.RemoveHandler("/pdddbug");
+            _commands.RemoveHandler("/pdddrefresh");
 
             _pluginInterface.SavePluginConfig(_config);
 
