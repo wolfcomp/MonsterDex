@@ -118,115 +118,115 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AggroType" xml:space="preserve">
-    <value>Aggro Type</value>
+    <value>Type d'aggro</value>
   </data>
   <data name="Bind" xml:space="preserve">
-    <value>Bind</value>
+    <value>Lier</value>
   </data>
   <data name="Boss" xml:space="preserve">
     <value>Boss</value>
   </data>
   <data name="Caution" xml:space="preserve">
-    <value>Caution</value>
+    <value>Attention</value>
   </data>
   <data name="Dangerous" xml:space="preserve">
-    <value>Dangerous</value>
+    <value>Dangereux</value>
   </data>
   <data name="Easy" xml:space="preserve">
-    <value>Easy</value>
+    <value>Facile</value>
   </data>
   <data name="Heavy" xml:space="preserve">
-    <value>Heavy</value>
+    <value>Lourd</value>
   </data>
   <data name="HideBasedOnJob" xml:space="preserve">
-    <value>Hide vulnerabilities based on current class/job</value>
+    <value>Masquer les vulnérabilités basées sur la classe ou le job actuel</value>
   </data>
   <data name="HideRedVulns" xml:space="preserve">
-    <value>Hide vulnerabilities that can't be inflicted</value>
+    <value>Cacher les vulnérabilités qui ne peuvent être infligées</value>
   </data>
   <data name="IsClickthrough" xml:space="preserve">
-    <value>Enable clickthrough</value>
+    <value>Activer le clique à travers</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nom</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
+    <value>Aucune donnée trouvée pour {0} ({1})</value>
   </data>
   <data name="Notes" xml:space="preserve">
     <value>Notes</value>
   </data>
   <data name="Opacity" xml:space="preserve">
-    <value>Opacity</value>
+    <value>Opacité</value>
   </data>
   <data name="Proximity" xml:space="preserve">
-    <value>Proximity</value>
+    <value>Proximité</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Sauvegarder</value>
   </data>
   <data name="Sight" xml:space="preserve">
-    <value>Sight</value>
+    <value>Vue</value>
   </data>
   <data name="Sleep" xml:space="preserve">
-    <value>Sleep</value>
+    <value>Dormir</value>
   </data>
   <data name="Slow" xml:space="preserve">
-    <value>Slow</value>
+    <value>Lent</value>
   </data>
   <data name="Sound" xml:space="preserve">
-    <value>Sound</value>
+    <value>Son</value>
   </data>
   <data name="Stun" xml:space="preserve">
-    <value>Stun</value>
+    <value>Étourdi</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
+    <value>Merci au serveur Discord : "Deep Dungeons" pour beaucoup de ressources communautaires. Merci à tous ceux qui ont pris le temps de rapporter des données incorrectes ou manquantes ! Des applaudissements à Maygi pour écrire les meilleurs guides du Donjon sans fond !</value>
   </data>
   <data name="Threat" xml:space="preserve">
-    <value>Threat</value>
+    <value>Menace</value>
   </data>
   <data name="Undead" xml:space="preserve">
-    <value>Undead</value>
+    <value>Mort-vivant</value>
   </data>
   <data name="Undefined" xml:space="preserve">
-    <value>Undefined</value>
+    <value>Non défini</value>
   </data>
   <data name="Vicious" xml:space="preserve">
-    <value>Vicious</value>
+    <value>Vicieuse</value>
   </data>
   <data name="Vulns" xml:space="preserve">
-    <value>Vulns</value>
+    <value>Vulnérabilité</value>
   </data>
   <data name="7262" xml:space="preserve">
-    <value>Auto inflicts Heavy debuff</value>
+    <value>Inflige automatiquement des dégâts lourds</value>
   </data>
   <data name="7263" xml:space="preserve">
-    <value>Auto applies Physical Vuln Up every 10s</value>
+    <value>Applique automatiquement une vulerabilté élevée physique toutes les 10 secondes</value>
   </data>
   <data name="7264" xml:space="preserve">
-    <value>AoE applies Paralysis</value>
+    <value>Zone d'effets appliquant la paralysie</value>
   </data>
   <data name="7265" xml:space="preserve">
-    <value>Triple auto inflicts Bleed</value>
+    <value>Inflige automatiquement des saignements triples</value>
   </data>
   <data name="7266" xml:space="preserve">
-    <value>Untelegraphed Sleep followed by AoE</value>
+    <value>Sommeil non télégraphié suivi de la zone d'effets</value>
   </data>
   <data name="7267" xml:space="preserve">
-    <value>AoE applies Bleed</value>
+    <value>Zone d'effets appliquant un saignement</value>
   </data>
   <data name="7268" xml:space="preserve">
-    <value>Gaze</value>
+    <value>Regard</value>
   </data>
   <data name="7270" xml:space="preserve">
-    <value>AoE inflicts knockback</value>
+    <value>La zone d'effet inflige un recul</value>
   </data>
   <data name="7271" xml:space="preserve">
-    <value>Conal AoE inflicts Bleed\nCircle AoE inflicts knockback</value>
+    <value>La zone d'effets Canal inflige un saignement de \n cercle de zone d'effets infligeant un retour en arrière</value>
   </data>
   <data name="7272" xml:space="preserve">
-    <value>Unavoidable tankbuster-like "Jaws"</value>
+    <value>Incontournables "Jaws" de type tankbuster</value>
   </data>
   <data name="7273" xml:space="preserve">
     <value>Untelegraphed buster inflicts Bleed and knockback</value>
@@ -244,7 +244,7 @@
     <value>Room wide ENRAGE</value>
   </data>
   <data name="7288" xml:space="preserve">
-    <value>Gaze inflicts Blind</value>
+    <value>Regard inflige aveugles</value>
   </data>
   <data name="7289" xml:space="preserve">
     <value>Cures self and allies</value>
@@ -253,7 +253,7 @@
     <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
   </data>
   <data name="7291" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>Dégâts des buffs</value>
   </data>
   <data name="7292" xml:space="preserve">
     <value>Untelegraphed conal AoE with knockback, buster</value>
@@ -262,7 +262,7 @@
     <value>Draw-in followed by cleave</value>
   </data>
   <data name="7296" xml:space="preserve">
-    <value>Gaze</value>
+    <value>Regard</value>
   </data>
   <data name="7297" xml:space="preserve">
     <value>Line AoE inflicts Bleed</value>
@@ -337,7 +337,7 @@
     <value>Buster inflicts Bleed</value>
   </data>
   <data name="7329" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>Dégâts des buffs</value>
   </data>
   <data name="7330" xml:space="preserve">
     <value>Eventual instant ENRAGE</value>
@@ -403,7 +403,7 @@
     <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
   </data>
   <data name="7358" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>Dégâts des buffs</value>
   </data>
   <data name="7359" xml:space="preserve">
     <value>Haste, eventual ENRAGE</value>
@@ -571,7 +571,7 @@
     <value>Area of effect Slow</value>
   </data>
   <data name="4996" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>Dégâts des buffs</value>
   </data>
   <data name="4997" xml:space="preserve">
     <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
@@ -736,7 +736,7 @@
     <value>Will inflict Sleep before casting "Bad Breath"</value>
   </data>
   <data name="5381" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>Dégâts des buffs</value>
   </data>
   <data name="5382" xml:space="preserve">
     <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
