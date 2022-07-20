@@ -763,7 +763,7 @@
     <value>Casts targeted AoE that inflicts Bleed</value>
   </data>
   <data name="5409" xml:space="preserve">
-    <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
+    <value>131-140F: \n特になし (脅威レベルを無視する)\nFloors 191-200: \n２連続AA</value>
   </data>
   <data name="5410" xml:space="preserve">
     <value>1) 長引くAoEを4つ召喚する。\n2) 2体の雑魚を追加召喚 -- ボスが「スクリーム」を使う前に殺さなければならず、死んでいない場合は高ダメージのAoEでプレイヤーを狙う</value>
