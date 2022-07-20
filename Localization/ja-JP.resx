@@ -775,7 +775,7 @@
     <value>非常に高いダメージと毒デバフ付与</value>
   </data>
   <data name="5415" xml:space="preserve">
-    <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
+    <value>Floors 141-150: \n何も注目に値しない（脅威レベルを無視する）\nFloors 191-200: \n大きなドーナツAoE「デススパイラル」をキャストして重いダメージを与える\n時間経過で耐えきれない強力なダメージバフがつく</value>
   </data>
   <data name="5420" xml:space="preserve">
     <value>詠唱のある視線攻撃「イビルアイ」</value>
@@ -790,7 +790,7 @@
     <value>非常にダメージの高い可視攻撃</value>
   </data>
   <data name="5424" xml:space="preserve">
-    <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
+    <value>追加召喚\n「ファナティック・ゾンビー」はプレイヤーを掴み、殺すまでその場に根を張る。\n「ファナティック・サキュバス」はボスに到達すると回復する。</value>
   </data>
   <data name="5429" xml:space="preserve">
     <value>二連続AA\n麻痺を付与する視線攻撃</value>
@@ -811,7 +811,7 @@
     <value>二連続AA\n大ダメージと暗闇を付与する視線攻撃</value>
   </data>
   <data name="5438" xml:space="preserve">
-    <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>大きな沼を発生させ、中に入るとペインが付与される。\n「ヴァルファズル」ターゲットに回避不可のノックバック直線範囲攻撃。沼を避けて吹き飛ぶようにする</value>
   </data>
   <data name="5442" xml:space="preserve">
     <value>二連続AA</value>
@@ -868,7 +868,7 @@
     <value>キメラのギミックをよく知っているのであれば、\n「雷電の咆哮」はターゲットサークル内に入る\n「氷結の咆哮」は近接攻撃の範囲外に離れる</value>
   </data>
   <data name="5471" xml:space="preserve">
-    <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
+    <value>青いボムが出現したら倒す\n大爆発詠唱中に赤いボムをボスに当ててスタンさせないとパーティが壊滅\nフレイムペンペンが特大ダメージ</value>
   </data>
   <data name="5473" xml:space="preserve">
     <value>予兆なしの前方扇範囲「レベル５デス」を詠唱</value>
