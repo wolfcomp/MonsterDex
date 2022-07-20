@@ -151,7 +151,7 @@
     <value>名前</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
+    <value>{0} のデータが見つかりません({1})</value>
   </data>
   <data name="Notes" xml:space="preserve">
     <value>備考</value>
@@ -190,13 +190,13 @@
     <value>アンデッド</value>
   </data>
   <data name="Undefined" xml:space="preserve">
-    <value>Undefined</value>
+    <value>未設定</value>
   </data>
   <data name="Vicious" xml:space="preserve">
-    <value>Vicious</value>
+    <value>要注意</value>
   </data>
   <data name="Vulns" xml:space="preserve">
-    <value>Vulns</value>
+    <value>デバフ</value>
   </data>
   <data name="7262" xml:space="preserve">
     <value>ヘビィデバフを自動で負わせます</value>
@@ -208,25 +208,25 @@
     <value>AoEは麻痺を起こします</value>
   </data>
   <data name="7265" xml:space="preserve">
-    <value>Triple auto inflicts Bleed</value>
+    <value>ペインを付与する三連続AA</value>
   </data>
   <data name="7266" xml:space="preserve">
     <value>Untelegraphed Sleep followed by AoE</value>
   </data>
   <data name="7267" xml:space="preserve">
-    <value>AoE applies Bleed</value>
+    <value>ペインを付与する範囲攻撃</value>
   </data>
   <data name="7268" xml:space="preserve">
     <value>視線攻撃</value>
   </data>
   <data name="7270" xml:space="preserve">
-    <value>AoE inflicts knockback</value>
+    <value>ノックバックの範囲攻撃</value>
   </data>
   <data name="7271" xml:space="preserve">
     <value>Conal AoE inflicts Bleed\nCircle AoE inflicts knockback</value>
   </data>
   <data name="7272" xml:space="preserve">
-    <value>Unavoidable tankbuster-like "Jaws"</value>
+    <value>避けられない強攻撃</value>
   </data>
   <data name="7273" xml:space="preserve">
     <value>Untelegraphed buster inflicts Bleed and knockback</value>
@@ -235,10 +235,10 @@
     <value>Lite buster "Scissor Run" followed by AoE</value>
   </data>
   <data name="7281" xml:space="preserve">
-    <value>Gaze inflicts Seduce, followed by large AoE that inflicts Minimum</value>
+    <value>誘惑を付与する視線攻撃のあと、ミニマムを付与する大きな範囲攻撃</value>
   </data>
   <data name="7285" xml:space="preserve">
-    <value>Buster and triple auto</value>
+    <value>強攻撃と3連続AA</value>
   </data>
   <data name="7286" xml:space="preserve">
     <value>Room wide ENRAGE</value>
@@ -247,10 +247,10 @@
     <value>暗闇を付与する視線攻撃</value>
   </data>
   <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
+    <value>自身と味方を回復する</value>
   </data>
   <data name="7290" xml:space="preserve">
-    <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
+    <value>ランダム対象のノックバック範囲攻撃 \n ペイン付与の直線範囲攻撃</value>
   </data>
   <data name="7291" xml:space="preserve">
     <value>与ダメージ上昇のバフ</value>
@@ -265,40 +265,40 @@
     <value>視線攻撃</value>
   </data>
   <data name="7297" xml:space="preserve">
-    <value>Line AoE inflicts Bleed</value>
+    <value>ペイン付与の直線範囲攻撃</value>
   </data>
   <data name="7298" xml:space="preserve">
-    <value>Cross AoE inflicts Suppuration</value>
+    <value>熱傷を付与する十字範囲攻撃</value>
   </data>
   <data name="7299" xml:space="preserve">
     <value>麻痺を付与する大きなAoE</value>
   </data>
   <data name="7300" xml:space="preserve">
-    <value>Circle AoE inflicts Suppuration</value>
+    <value>熱傷を付与する円範囲攻撃</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>ランダム対象の範囲攻撃</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
+    <value>ペインを付与する二連続AA\n残体力が少なくなると時間切れ攻撃</value>
   </data>
   <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
+    <value>残体力が少なくなると時間切れ攻撃</value>
   </data>
   <data name="7305" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>ペインを付与する直線範囲攻撃\n残体力が少なくなると時間切れ攻撃</value>
   </data>
   <data name="7306" xml:space="preserve">
     <value>Cleaves every other auto</value>
   </data>
   <data name="7308" xml:space="preserve">
-    <value>Weak stack attack</value>
+    <value>スタックする被ダメージ上昇デバフ</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
+    <value>特大範囲攻撃</value>
   </data>
   <data name="7311" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>ペインを付与する直線範囲攻撃\n残体力が少なくなると時間切れ攻撃</value>
   </data>
   <data name="7312" xml:space="preserve">
     <value>Frontal cleave without cast or telegraph</value>
@@ -307,34 +307,34 @@
     <value>ウソウソに変化させる視線攻撃</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>ランダム対象の範囲攻撃</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
+    <value>大きな直線範囲攻撃\n最後に時間切れ攻撃</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>ランダム対象の範囲攻撃</value>
   </data>
   <data name="7320" xml:space="preserve">
-    <value>Purple: double auto</value>
+    <value>紫: 二連続AA</value>
   </data>
   <data name="7321" xml:space="preserve">
     <value>Large cone AoE</value>
   </data>
   <data name="7323" xml:space="preserve">
-    <value>Green: Casts AoEs unaggroed</value>
+    <value>緑: ランダム範囲攻撃</value>
   </data>
   <data name="7324" xml:space="preserve">
     <value>非常に幅が広い直線範囲攻撃</value>
   </data>
   <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>最後に時間切れ攻撃</value>
   </data>
   <data name="7327" xml:space="preserve">
-    <value>Autos inflict stacking vuln up</value>
+    <value>被ダメージ上昇デバフをスタックするAA</value>
   </data>
   <data name="7328" xml:space="preserve">
-    <value>Buster inflicts Bleed</value>
+    <value>ペイン付与の強攻撃</value>
   </data>
   <data name="7329" xml:space="preserve">
     <value>与ダメージ上昇のバフ</value>
@@ -433,7 +433,7 @@
     <value>Untelegraphed conal AoE on random player, gaze attack</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>ランダム対象の範囲攻撃</value>
   </data>
   <data name="7370" xml:space="preserve">
     <value>Double autos, very strong rear cleave if behind</value>
@@ -463,10 +463,10 @@
     <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
   </data>
   <data name="7379" xml:space="preserve">
-    <value>MNK: Haste buff, short invuln</value>
+    <value>モンク: ヘイストと回避率アップのバフ</value>
   </data>
   <data name="7380" xml:space="preserve">
-    <value>WHM: double autos\n"Stone" can be line of sighted</value>
+    <value>白魔道士: 二連続AA\n「ストンガ」は視線切り可能</value>
   </data>
   <data name="7381" xml:space="preserve">
     <value>Cleave\nLarge line AoE that can be line of sighted</value>
@@ -565,7 +565,7 @@
     <value>"Sticky Tongue" does not stun if facing towards</value>
   </data>
   <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>最後に時間切れ攻撃</value>
   </data>
   <data name="4993" xml:space="preserve">
     <value>Area of effect Slow</value>
@@ -721,10 +721,10 @@
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
   </data>
   <data name="5374" xml:space="preserve">
-    <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
+    <value>「スティッキータン」は引き寄せと、離れているとスタンを付与する。そのあとの「レイバードリープ」は敵中心の範囲攻撃</value>
   </data>
   <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>最後に時間切れ攻撃</value>
   </data>
   <data name="5377" xml:space="preserve">
     <value>Casts invuln buff on itself</value>
@@ -745,7 +745,7 @@
     <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
   </data>
   <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5395" xml:space="preserve">
     <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
@@ -769,7 +769,7 @@
     <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
   </data>
   <data name="5413" xml:space="preserve">
-    <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
+    <value>「ミールストーム」パーティメンバーの体力を1%にする攻撃</value>
   </data>
   <data name="5414" xml:space="preserve">
     <value>Very high damage, inflicts Poison</value>
@@ -787,43 +787,43 @@
     <value>高いHPと非常に大きなAoE「スクリーム」</value>
   </data>
   <data name="5423" xml:space="preserve">
-    <value>Very high damage for the floors it appears on</value>
+    <value>非常にダメージの高い可視攻撃</value>
   </data>
   <data name="5424" xml:space="preserve">
     <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
   </data>
   <data name="5429" xml:space="preserve">
-    <value>Double autos\nGaze inflicts Paralysis</value>
+    <value>二連続AA\n麻痺を付与する視線攻撃</value>
   </data>
   <data name="5430" xml:space="preserve">
-    <value>Inflicts Vuln Up debuff</value>
+    <value>被ダメージ上昇デバフ</value>
   </data>
   <data name="5431" xml:space="preserve">
     <value>「アイススパイク」が物理ダメージ反射バフを付与\n「ヴォイド・ブリザド」がスロウを与える</value>
   </data>
   <data name="5433" xml:space="preserve">
-    <value>Double autos that lifesteal</value>
+    <value>吸血付きの二連続AA</value>
   </data>
   <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5437" xml:space="preserve">
-    <value>Double autos\nGaze inflicts heavy damage and Blind</value>
+    <value>二連続AA\n大ダメージと暗闇を付与する視線攻撃</value>
   </data>
   <data name="5438" xml:space="preserve">
     <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
   </data>
   <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5449" xml:space="preserve">
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
   </data>
   <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5451" xml:space="preserve">
     <value>Has semi-enrage around 30s in combat</value>
@@ -838,7 +838,7 @@
     <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
   </data>
   <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5459" xml:space="preserve">
     <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
@@ -850,7 +850,7 @@
     <value>「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。\nボスはフィールドの北か南に走り「トラウンス(扇形広範囲AoE))」を放つ\nAt 15% 早い詠唱「エクリプスメテオ」 - 9秒ごとに総HPの80%のダメージを全体に与えつづける</value>
   </data>
   <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
+    <value>二連続AA</value>
   </data>
   <data name="5464" xml:space="preserve">
     <value>Instant AoE that inflicts heavy Bleed</value>
@@ -874,7 +874,7 @@
     <value>予兆なしの前方扇範囲「レベル５デス」を詠唱</value>
   </data>
   <data name="5475" xml:space="preserve">
-    <value>Double auto</value>
+    <value>二連続AA</value>
   </data>
   <data name="2566" xml:space="preserve">
     <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
