@@ -871,7 +871,7 @@
     <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
   </data>
   <data name="5473" xml:space="preserve">
-    <value>Casts untelegraphed cone "Level 5 Death"</value>
+    <value>전방 부채꼴 장판 "레벨 5데스" 스킬을 시전함</value>
   </data>
   <data name="5475" xml:space="preserve">
     <value>Double auto</value>
