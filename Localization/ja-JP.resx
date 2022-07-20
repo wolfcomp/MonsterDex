@@ -493,13 +493,13 @@
     <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
   </data>
   <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
+    <value>高速な二連続AAと予兆無しの前方直線範囲攻撃「クェーサー」</value>
   </data>
   <data name="7391" xml:space="preserve">
-    <value>Double autos, cone AoE inflicts Sleep</value>
+    <value>二連続AA、睡眠デバフを付与する円範囲攻撃</value>
   </data>
   <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
+    <value>スタックする与ダメ上昇バフ\nランダム対象の即死攻撃「アラガンメテオ」\n視線攻撃</value>
   </data>
   <data name="7392" xml:space="preserve">
     <value>1-30階: 銅箱のみ\n高ダメージのAAと即死範囲攻撃\n「怨念」は沈黙、スタン、ノックバック、形態変化、\nインタージェクトで中断できる</value>
@@ -511,7 +511,7 @@
     <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
   </data>
   <data name="7478" xml:space="preserve">
-    <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
+    <value>爆発時に被ダメージ上昇デバフをスタックする雷雲を召喚する\nプレイヤーを空中に打ち上げる範囲攻撃\n打ち上げられたときに雲に当たって消し去ることでデバフを回避することができ、\n全体範囲攻撃を回避できる</value>
   </data>
   <data name="7480" xml:space="preserve">
     <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
@@ -544,7 +544,7 @@
     <value>Casts Haste on itself</value>
   </data>
   <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>毒デバフ付与</value>
   </data>
   <data name="4981" xml:space="preserve">
     <value>High damage "Final Sting"</value>
@@ -574,7 +574,7 @@
     <value>与ダメージ上昇のバフ</value>
   </data>
   <data name="4997" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
+    <value>石化デバフを付与する視線攻撃。「捕食」はトード状態のプレイヤーを即死させる。</value>
   </data>
   <data name="4999" xml:space="preserve">
     <value>1)「ブラッディカレス」高ダメージの前方扇範囲攻撃\n2) 2回の予兆無し範囲攻撃と全体範囲攻撃\n3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す\n4)「ロトンステンチ」高ダメージの直線範囲攻撃</value>
@@ -583,22 +583,22 @@
     <value>Untelegraphed AOE does moderate damage and knockback</value>
   </data>
   <data name="5011" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>「チャープ」15秒間睡眠デバフを付与する</value>
   </data>
   <data name="5012" xml:space="preserve">
     <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
   </data>
   <data name="5022" xml:space="preserve">
-    <value>"Dark Mist" inflicts Terror</value>
+    <value>「ダークミスト」恐慌デバフを付与する</value>
   </data>
   <data name="5025" xml:space="preserve">
     <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
   </data>
   <data name="5030" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>麻痺デバフ付与</value>
   </data>
   <data name="5032" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>麻痺デバフ付与</value>
   </data>
   <data name="5038" xml:space="preserve">
     <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
@@ -679,10 +679,10 @@
     <value>Immune to Pomander of Witching</value>
   </data>
   <data name="5299" xml:space="preserve">
-    <value>Gaze inflicts Paralysis</value>
+    <value>麻痺デバフを付与する視線攻撃</value>
   </data>
   <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
+    <value>暗闇デバフと高ダメージを与える視線攻撃</value>
   </data>
   <data name="5309" xml:space="preserve">
     <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
@@ -706,7 +706,7 @@
     <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
   </data>
   <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>毒デバフ付与</value>
   </data>
   <data name="5366" xml:space="preserve">
     <value>High damage "Final Sting"</value>
@@ -751,7 +751,7 @@
     <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
   </data>
   <data name="5396" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>「チャープ」15秒間睡眠デバフを付与する</value>
   </data>
   <data name="5397" xml:space="preserve">
     <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
@@ -772,7 +772,7 @@
     <value>「ミールストーム」パーティメンバーの体力を1%にする攻撃</value>
   </data>
   <data name="5414" xml:space="preserve">
-    <value>Very high damage, inflicts Poison</value>
+    <value>非常に高いダメージと毒デバフ付与</value>
   </data>
   <data name="5415" xml:space="preserve">
     <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
