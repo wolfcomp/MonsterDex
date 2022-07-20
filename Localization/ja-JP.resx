@@ -592,7 +592,7 @@
     <value>「ダークミスト」恐慌デバフを付与する</value>
   </data>
   <data name="5025" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+    <value>1) 長引くAoEを4つ召喚する。\n2) 2体の雑魚を追加召喚 -- ボスが「スクリーム」を使う前に殺さなければならず、死んでいない場合は高ダメージのAoEでプレイヤーを狙う</value>
   </data>
   <data name="5030" xml:space="preserve">
     <value>麻痺デバフ付与</value>
@@ -754,7 +754,7 @@
     <value>「チャープ」15秒間睡眠デバフを付与する</value>
   </data>
   <data name="5397" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
+    <value>1) 火と氷のAOEを広げて、中央に落とさないようにする。\n2) 「フィアーミスト」早い詠唱、ボスのヒットボックス内に入ると回避できる。回避しないと高ダメージと恐怖を与える。</value>
   </data>
   <data name="5402" xml:space="preserve">
     <value>予兆無しの前方扇範囲攻撃「レベル5石化」で石化デバフを付与</value>
@@ -766,7 +766,7 @@
     <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
   </data>
   <data name="5410" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+    <value>1) 長引くAoEを4つ召喚する。\n2) 2体の雑魚を追加召喚 -- ボスが「スクリーム」を使う前に殺さなければならず、死んでいない場合は高ダメージのAoEでプレイヤーを狙う</value>
   </data>
   <data name="5413" xml:space="preserve">
     <value>「ミールストーム」パーティメンバーの体力を1%にする攻撃</value>
