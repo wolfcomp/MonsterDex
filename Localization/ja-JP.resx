@@ -322,7 +322,7 @@
     <value>大きな範囲攻撃</value>
   </data>
   <data name="7323" xml:space="preserve">
-    <value>緑: ランダム範囲攻撃</value>
+    <value>緑: 非戦闘時にランダム範囲攻撃</value>
   </data>
   <data name="7324" xml:space="preserve">
     <value>非常に幅が広い直線範囲攻撃</value>
@@ -415,7 +415,7 @@
     <value>引き寄せ攻撃、特大範囲攻撃、時間切れ攻撃</value>
   </data>
   <data name="7362" xml:space="preserve">
-    <value>特大炎範囲攻撃、恐慌デバフを付与する視線攻撃</value>
+    <value>特大円範囲攻撃、恐慌デバフを付与する視線攻撃</value>
   </data>
   <data name="7364" xml:space="preserve">
     <value>二連続AAと非常に大きな範囲攻撃</value>
@@ -424,7 +424,7 @@
     <value>「氷結の咆哮」離れる\n「雷電の咆哮」近づく\n予兆ありの扇範囲攻撃</value>
   </data>
   <data name="7366" xml:space="preserve">
-    <value>Buffs own damage unaggroed\nLarge AoE unaggroed that inflicts vuln up and stacks</value>
+    <value>非戦闘時に自身に与ダメージ上昇バフを付与する\n非戦闘時にスタックする被ダメージ上昇デバフを付与する範囲攻撃</value>
   </data>
   <data name="7367" xml:space="preserve">
     <value>戦闘状態になった際にチャージ攻撃</value>
@@ -436,10 +436,10 @@
     <value>ランダム対象の範囲攻撃</value>
   </data>
   <data name="7370" xml:space="preserve">
-    <value>Double autos, very strong rear cleave if behind</value>
+    <value>二連続AA、背面に立つと非常に強い扇範囲攻撃をする</value>
   </data>
   <data name="7371" xml:space="preserve">
-    <value>Alternates line and circle AoEs untelegraphed</value>
+    <value>予兆無しの十字範囲攻撃と円範囲攻撃</value>
   </data>
   <data name="7372" xml:space="preserve">
     <value>与ダメージ上昇バフと二連続AA</value>
@@ -451,7 +451,7 @@
     <value>大きなドーナツ範囲攻撃</value>
   </data>
   <data name="7375" xml:space="preserve">
-    <value>Cone AoE, circle AoE, party wide damage</value>
+    <value>扇範囲攻撃、円範囲攻撃、全体攻撃</value>
   </data>
   <data name="7376" xml:space="preserve">
     <value>チャージ攻撃、自身に与ダメージ上昇バフ付与、二連続AA、感電デバフ付与</value>
@@ -475,7 +475,7 @@
     <value>「ミールストーム」ランダム対象で竜巻を発生させる範囲攻撃</value>
   </data>
   <data name="7384" xml:space="preserve">
-    <value>Casts targeted AoEs unaggroed, buffs own defense</value>
+    <value>非戦闘時にターゲットに範囲攻撃をキャスト、自身に防御力上昇バフを付与</value>
   </data>
   <data name="7385" xml:space="preserve">
     <value>ターゲットへの範囲攻撃、扇範囲攻撃</value>
@@ -490,7 +490,7 @@
     <value>チャージ攻撃\n「スワイプ」予兆無しの直線範囲攻撃\n「スイング」予兆無しの大きな円範囲攻撃</value>
   </data>
   <data name="7389" xml:space="preserve">
-    <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
+    <value>大ダメージの扇範囲攻撃、HP吸収攻撃、自身に与ダメージ上昇バフ付与を繰り返し、バフのスタックが3になると時間切れ攻撃の「ブラックネビュラ」を詠唱する</value>
   </data>
   <data name="7390" xml:space="preserve">
     <value>高速な二連続AAと予兆無しの前方直線範囲攻撃「クェーサー」</value>
@@ -523,16 +523,16 @@
     <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
   </data>
   <data name="7485" xml:space="preserve">
-    <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
+    <value>1) 予兆無しの前方扇範囲攻撃\n2) ランダムターゲットに予兆無しの直線範囲攻撃\n3) 恐慌を付与する視線攻撃\n4) フィールドに雷球を出現させ、雷球中心の円範囲攻撃\n5) 雷球が爆発後くりかえし</value>
   </data>
   <data name="7487" xml:space="preserve">
     <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
   </data>
   <data name="7489" xml:space="preserve">
-    <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
+    <value>1) 予兆無しの前方扇範囲攻撃\n2) ランダムターゲットに「ミニマムバブル」。沼に入るとミニマムデバフが付与される。\n3) ランダムターゲットに「ヘルチャージ」\n4) ターゲットのプレイヤーは「ヘルチャージ」と「捕食」時には沼に入らなければならない。(入らないと即死、ボスに与ダメージ上昇バフがスタック)\n5) 繰り返し</value>
   </data>
   <data name="7490" xml:space="preserve">
-    <value>1) Summons balls of ice\n2) Summons icicle that pierces through room, detonating any ice balls it hits\n3) "Lunar Cry" detonates remaining ice balls\n4) Exploding ice balls inflict Deep Freeze if they hit a player\n5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)</value>
+    <value>1) 氷塊が出現\n2) 氷柱が出現し直線範囲攻撃。範囲に当たった氷塊が爆発する\n3)「ルナークライ」残った氷塊が爆発する\n4) 氷塊の爆発に当たると凍結(強) が付与される\n5) ランダムターゲットにジャンプし、ターゲットが凍結状態の場合は即死（それ以外は少ダメージ）。</value>
   </data>
   <data name="7493" xml:space="preserve">
     <value>1) 大ダメージの全体範囲攻撃「エンシェントクエイガ」\n2) 砂球がフィールド内に出現し、範囲攻撃に当たると中ダメージとヘヴィをプレイヤーに付与する\n3)「メテオインパクト」ボスの現在位置からの距離減衰攻撃\n4)「オーラキャノン」直線範囲攻撃\n5)「バーニングレイヴ」対象中心の円範囲攻撃\n6)「ナックルプレス」ボス中心の円範囲攻撃\n7) 繰り返し</value>
@@ -541,7 +541,7 @@
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
+    <value>自身にヘイストを付与する</value>
   </data>
   <data name="4980" xml:space="preserve">
     <value>毒デバフ付与</value>
@@ -568,7 +568,7 @@
     <value>最後に時間切れ攻撃</value>
   </data>
   <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>スロウがかかる範囲</value>
   </data>
   <data name="4996" xml:space="preserve">
     <value>与ダメージ上昇のバフ</value>
@@ -577,10 +577,10 @@
     <value>石化デバフを付与する視線攻撃。「捕食」はトード状態のプレイヤーを即死させる。</value>
   </data>
   <data name="4999" xml:space="preserve">
-    <value>1)「ブラッディカレス」高ダメージの前方扇範囲攻撃\n2) 2回の予兆無し範囲攻撃と全体範囲攻撃\n3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す\n4)「ロトンステンチ」高ダメージの直線範囲攻撃</value>
+    <value>1)「ブラッディカレス」高ダメージの前方扇範囲攻撃\n2) 2回の予兆あり範囲攻撃と全体範囲攻撃\n3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す\n4)「ロトンステンチ」高ダメージの直線範囲攻撃</value>
   </data>
   <data name="5010" xml:space="preserve">
-    <value>Untelegraphed AOE does moderate damage and knockback</value>
+    <value>中ダメージの予兆無しノックバック範囲攻撃</value>
   </data>
   <data name="5011" xml:space="preserve">
     <value>「チャープ」15秒間睡眠デバフを付与する</value>
@@ -601,82 +601,82 @@
     <value>麻痺デバフ付与</value>
   </data>
   <data name="5038" xml:space="preserve">
-    <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
+    <value>ギミック解説: ギミックを失敗すると全体範囲攻撃が強化される。\nボスは時々病気を付与する\n1)「インヘルス」ボスの足元以外の全体範囲攻撃か、ボス中心の円範囲攻撃\n2)「狂気のまなざし」視線攻撃</value>
   </data>
   <data name="5041" xml:space="preserve">
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>形態変化に耐性がある</value>
   </data>
   <data name="5299" xml:space="preserve">
     <value>麻痺デバフを付与する視線攻撃</value>
@@ -685,7 +685,7 @@
     <value>暗闇デバフと高ダメージを与える視線攻撃</value>
   </data>
   <data name="5309" xml:space="preserve">
-    <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>大きな沼を発生させ、中に入るとペインが付与される。\n「ヴァルファズル」ターゲットに回避不可のノックバック直線範囲攻撃。沼を避けて吹き飛ぶようにする</value>
   </data>
   <data name="5321" xml:space="preserve">
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
@@ -727,28 +727,28 @@
     <value>最後に時間切れ攻撃</value>
   </data>
   <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
+    <value>自身に与ダメージ上昇バフを付与する</value>
   </data>
   <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>スロウがかかる範囲</value>
   </data>
   <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
+    <value>「臭い息」を詠唱する前に睡眠を与える</value>
   </data>
   <data name="5381" xml:space="preserve">
     <value>与ダメージ上昇のバフ</value>
   </data>
   <data name="5382" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
+    <value>石化を付与する視線攻撃、「リゴージ」は毒を付与する\nトード状態だと即死する</value>
   </data>
   <data name="5384" xml:space="preserve">
-    <value>1)「ブラッディカレス」高ダメージの前方扇範囲攻撃\n2) 2回の予兆無し範囲攻撃と全体範囲攻撃\n3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す\n4)「ロトンステンチ」高ダメージの直線範囲攻撃</value>
+    <value>1)「ブラッディカレス」高ダメージの前方扇範囲攻撃\n2) 2回の予兆あり範囲攻撃と全体範囲攻撃\n3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す\n4)「ロトンステンチ」高ダメージの直線範囲攻撃</value>
   </data>
   <data name="5389" xml:space="preserve">
     <value>二連続AA</value>
   </data>
   <data name="5395" xml:space="preserve">
-    <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
+    <value>「111トンズ・スイング」ボス中心の大ダメージノックバック円範囲攻撃</value>
   </data>
   <data name="5396" xml:space="preserve">
     <value>「チャープ」15秒間睡眠デバフを付与する</value>
@@ -826,7 +826,7 @@
     <value>二連続AA</value>
   </data>
   <data name="5451" xml:space="preserve">
-    <value>Has semi-enrage around 30s in combat</value>
+    <value>戦闘開始から30秒前後で大ダメージ</value>
   </data>
   <data name="5452" xml:space="preserve">
     <value>「リヴァレーション」混乱を付与\n「極楽の風」ヘイスト(強) と与ダメージ上昇(強) を敵に付与</value>
@@ -835,7 +835,7 @@
     <value>「グラワー」予兆なしの直線範囲攻撃\n「100トンズ・スイング」予兆なしの敵中心円範囲攻撃</value>
   </data>
   <data name="5454" xml:space="preserve">
-    <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
+    <value>自身に与ダメージ上昇バフを付与し、非戦闘時に被物理ダメージ上昇デバフを付与する範囲攻撃</value>
   </data>
   <data name="5458" xml:space="preserve">
     <value>二連続AA</value>
@@ -844,7 +844,7 @@
     <value>ペイン付与の範囲攻撃\n「狂乱」ランダム対象に大ダメージ、被ダメージ上昇、スタンを付与する</value>
   </data>
   <data name="5460" xml:space="preserve">
-    <value>Cleave does heavy damage and inflicts potent Bleed</value>
+    <value>大ダメージとペインを付与する扇範囲攻撃</value>
   </data>
   <data name="5461" xml:space="preserve">
     <value>「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。\nボスはフィールドの北か南に走り「トラウンス(扇形広範囲AoE))」を放つ\nAt 15% 早い詠唱「エクリプスメテオ」 - 9秒ごとに総HPの80%のダメージを全体に与えつづける</value>
@@ -859,13 +859,13 @@
     <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
   </data>
   <data name="5466" xml:space="preserve">
-    <value>Sucks in player and does heavy damage\n"Tail Screw" does damage and inflicts Slow</value>
+    <value>吸引攻撃と大ダメージ\n「テールスクリュー」はダメージとスロウを付与する。</value>
   </data>
   <data name="5467" xml:space="preserve">
-    <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
+    <value>大ダメージとスロウを与えるインスタント範囲攻撃\n毒を付与するインスタント扇範囲攻撃</value>
   </data>
   <data name="5470" xml:space="preserve">
-    <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
+    <value>キメラのギミックをよく知っているのであれば、\n「雷電の咆哮」はターゲットサークル内に入る\n「氷結の咆哮」は近接攻撃の範囲外に離れる</value>
   </data>
   <data name="5471" xml:space="preserve">
     <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
@@ -877,7 +877,7 @@
     <value>二連続AA</value>
   </data>
   <data name="2566" xml:space="preserve">
-    <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
+    <value>高ダメージのAAと即死攻撃\n「怨念」はインタージェクトでのみ中断できる</value>
   </data>
   <data name="FontSize" xml:space="preserve">
     <value>フォントサイズ</value>
