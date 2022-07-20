@@ -241,7 +241,7 @@
     <value>強攻撃と3連続AA</value>
   </data>
   <data name="7286" xml:space="preserve">
-    <value>Room wide ENRAGE</value>
+    <value>時間切れの全体攻撃</value>
   </data>
   <data name="7288" xml:space="preserve">
     <value>暗闇を付与する視線攻撃</value>
@@ -256,10 +256,10 @@
     <value>与ダメージ上昇のバフ</value>
   </data>
   <data name="7292" xml:space="preserve">
-    <value>Untelegraphed conal AoE with knockback, buster</value>
+    <value>予兆無しのノックバック前方範囲強攻撃</value>
   </data>
   <data name="7295" xml:space="preserve">
-    <value>Draw-in followed by cleave</value>
+    <value>引き寄せたあと前方範囲攻撃</value>
   </data>
   <data name="7296" xml:space="preserve">
     <value>視線攻撃</value>
@@ -373,7 +373,7 @@
     <value>麻痺を付与する範囲攻撃</value>
   </data>
   <data name="7346" xml:space="preserve">
-    <value>範囲攻撃と猛毒デバフ</value>
+    <value>前方扇範囲攻撃と猛毒デバフ</value>
   </data>
   <data name="7347" xml:space="preserve">
     <value>大きなドーナツ範囲攻撃と恐慌を付与する視線攻撃</value>
@@ -412,13 +412,13 @@
     <value>特大範囲攻撃</value>
   </data>
   <data name="7361" xml:space="preserve">
-    <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
+    <value>引き寄せ攻撃、特大範囲攻撃、時間切れ攻撃</value>
   </data>
   <data name="7362" xml:space="preserve">
-    <value>Extremely large conal AoE, gaze inflicts Fear</value>
+    <value>特大炎範囲攻撃、恐慌デバフを付与する視線攻撃</value>
   </data>
   <data name="7364" xml:space="preserve">
-    <value>Double auto and very large AoE</value>
+    <value>二連続AAと非常に大きな範囲攻撃</value>
   </data>
   <data name="7365" xml:space="preserve">
     <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
@@ -460,7 +460,7 @@
     <value>Charges, buffs own damage, untelegraphed buster "Ripper Claw"</value>
   </data>
   <data name="7378" xml:space="preserve">
-    <value>戦士: 大ダメージの三連続ノックバック攻撃\n自身の与ダメージ上昇バフ\n極めてダメージが高いノックバック範囲攻撃</value>
+    <value>戦士: 大ダメージの三連続ノックバック攻撃\n自身の与ダメージ上昇バフ\n極めてダメージが高いノックバック前方扇範囲攻撃</value>
   </data>
   <data name="7379" xml:space="preserve">
     <value>モンク: ヘイストと回避率アップのバフ</value>
@@ -472,7 +472,7 @@
     <value>Cleave\nLarge line AoE that can be line of sighted</value>
   </data>
   <data name="7382" xml:space="preserve">
-    <value>"Charybdis" AoE that leaves tornadoes on random players</value>
+    <value>「ミールストーム」ランダム対象で竜巻を発生させる範囲攻撃</value>
   </data>
   <data name="7384" xml:space="preserve">
     <value>Casts targeted AoEs unaggroed, buffs own defense</value>
@@ -829,7 +829,7 @@
     <value>Has semi-enrage around 30s in combat</value>
   </data>
   <data name="5452" xml:space="preserve">
-    <value>「リアヴァレーション」混乱を付与\n「極楽の風」ヘイスト(強) と与ダメージ上昇(強) を敵に付与</value>
+    <value>「リヴァレーション」混乱を付与\n「極楽の風」ヘイスト(強) と与ダメージ上昇(強) を敵に付与</value>
   </data>
   <data name="5453" xml:space="preserve">
     <value>「グラワー」予兆なしの直線範囲攻撃\n「100トンズ・スイング」予兆なしの敵中心円範囲攻撃</value>
