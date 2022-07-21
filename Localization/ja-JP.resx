@@ -514,7 +514,8 @@
     <value>爆発時に被ダメージ上昇デバフをスタックする雷雲を召喚する\nプレイヤーを空中に打ち上げる範囲攻撃\n打ち上げられたときに雲に当たって消し去ることでデバフを回避することができ、\n全体範囲攻撃を回避できる</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
+    <value>フィールド中央に移動し外周へノックバックを行う。(ノックバック無効は不可）\n直後にフィールド半分の広範囲AoEで追撃
+</value>
   </data>
   <data name="7481" xml:space="preserve">
     <value>外周に蝶が出現\n恐慌デバフを付与する視線ギミック\n蝶が予兆無しで爆発</value>
@@ -526,7 +527,7 @@
     <value>1) 予兆無しの前方扇範囲攻撃\n2) ランダムターゲットに予兆無しの直線範囲攻撃\n3) 恐慌を付与する視線攻撃\n4) フィールドに雷球を出現させ、雷球中心の円範囲攻撃\n5) 雷球が爆発後くりかえし</value>
   </data>
   <data name="7487" xml:space="preserve">
-    <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
+    <value>様々なAoEを行う杖を召喚する。\n杖がプレイヤーをターゲットにした直線AoEを行う\n全体攻撃</value>
   </data>
   <data name="7489" xml:space="preserve">
     <value>1) 予兆無しの前方扇範囲攻撃\n2) ランダムターゲットに「ミニマムバブル」。沼に入るとミニマムデバフが付与される。\n3) ランダムターゲットに「ヘルチャージ」\n4) ターゲットのプレイヤーは「ヘルチャージ」と「捕食」時には沼に入らなければならない。(入らないと即死、ボスに与ダメージ上昇バフがスタック)\n5) 繰り返し</value>
@@ -562,7 +563,7 @@
     <value>毒デバフ付与</value>
   </data>
   <data name="4989" xml:space="preserve">
-    <value>"Sticky Tongue" does not stun if facing towards</value>
+    <value>「スティッキータン」正面を向いているとスタンされません</value>
   </data>
   <data name="4990" xml:space="preserve">
     <value>最後に時間切れ攻撃</value>
@@ -694,7 +695,7 @@
     <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
   </data>
   <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
+    <value>時間内に倒されていない場合、全体攻撃の「自爆」をキャストします</value>
   </data>
   <data name="5345" xml:space="preserve">
     <value>大きなAoEを放つ。\n「ペイニー・ボム」を召喚する。全体に大ダメージを与える前に殺さなければならない。\n長い詠唱「特大爆発」を開始し「ギディ・ボム」を召喚する。「ギディ・ボム」をボスの方へはじくと詠唱中断できる。</value>
@@ -775,7 +776,7 @@
     <value>非常に高いダメージと毒デバフ付与</value>
   </data>
   <data name="5415" xml:space="preserve">
-    <value>Floors 141-150: \n何も注目に値しない（脅威レベルを無視する）\nFloors 191-200: \n大きなドーナツAoE「デススパイラル」をキャストして重いダメージを与える\n時間経過で耐えきれない強力なダメージバフがつく</value>
+    <value>Floors 141-150: \n何も注目に値しない（脅威レベルを無視する）\nFloors 191-200: \n大きなドーナツAoE「デススパイラル」をキャストして重いダメージを与える\n時間経過で強力なダメージバフがつく</value>
   </data>
   <data name="5420" xml:space="preserve">
     <value>詠唱のある視線攻撃「イビルアイ」</value>
