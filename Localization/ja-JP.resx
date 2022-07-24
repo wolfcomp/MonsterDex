@@ -181,7 +181,7 @@
     <value>スタン</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
+    <value>Deep Dungeons Discord サーバーに多くのコミュニティリソースを提供していただき、ありがとうございました。間違ったデータや不足しているデータを報告するために時間を割いてくれた皆さんに感謝します！最高のディープダンジョンガイドを書いたMaygiに特別な賞賛を送ります！</value>
   </data>
   <data name="Threat" xml:space="preserve">
     <value>危険度</value>
@@ -521,7 +521,7 @@
     <value>外周に蝶が出現\n恐慌デバフを付与する視線ギミック\n蝶が予兆無しで爆発</value>
   </data>
   <data name="7483" xml:space="preserve">
-    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
+    <value>フィールドの端に雲を召喚する\nノックバック無効を無視する攻撃、壁際で打ち上げられる(雲の中の安全な場所を探せ！)\n直後に大きな直線AoE</value>
   </data>
   <data name="7485" xml:space="preserve">
     <value>1) 予兆無しの前方扇範囲攻撃\n2) ランダムターゲットに予兆無しの直線範囲攻撃\n3) 恐慌を付与する視線攻撃\n4) フィールドに雷球を出現させ、雷球中心の円範囲攻撃\n5) 雷球が爆発後くりかえし</value>
