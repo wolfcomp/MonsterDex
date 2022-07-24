@@ -232,7 +232,7 @@
     <value>ペイン付与の予兆無しノックバック強攻撃</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
+    <value>軽い強攻撃「鋏連撃」の後にAoEが続く</value>
   </data>
   <data name="7281" xml:space="preserve">
     <value>誘惑を付与する視線攻撃のあと、ミニマムを付与する大きな範囲攻撃</value>
@@ -692,7 +692,7 @@
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
   </data>
   <data name="5333" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
+    <value>「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。\nボスはフィールドの端に走り「トラウンス(扇形広範囲AoE))」を放つ\nAt 17% 長い詠唱「エクリプスメテオ」 総HPの80%のダメージを全体に与えつづける</value>
   </data>
   <data name="5334" xml:space="preserve">
     <value>時間内に倒されていない場合、全体攻撃の「自爆」をキャストします</value>
@@ -701,7 +701,7 @@
     <value>大きなAoEを放つ。\n「ペイニー・ボム」を召喚する。全体に大ダメージを与える前に殺さなければならない。\n長い詠唱「特大爆発」を開始し「ギディ・ボム」を召喚する。「ギディ・ボム」をボスの方へはじくと詠唱中断できる。</value>
   </data>
   <data name="5356" xml:space="preserve">
-    <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
+    <value>雑魚を召喚し、大きなAoEを放つ。雑魚はクリブ化の攻撃が有効</value>
   </data>
   <data name="5364" xml:space="preserve">
     <value>101-110F: \n特になし (脅威レベルを無視する)\nFloors 191-200: \n２連続AA</value>
