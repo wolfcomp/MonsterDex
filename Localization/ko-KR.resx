@@ -757,7 +757,7 @@
     <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
   </data>
   <data name="5402" xml:space="preserve">
-    <value>Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify</value>
+    <value>전방 부채꼴 범위 공격 「レベル5石化/Level 5 Petrify」 로 석화 디버프를 부여함</value>
   </data>
   <data name="5406" xml:space="preserve">
     <value>출혈 디버프를 부여하는 원형 범위 공격을 함</value>
@@ -793,10 +793,10 @@
     <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
   </data>
   <data name="5429" xml:space="preserve">
-    <value>Double autos\nGaze inflicts Paralysis</value>
+    <value>연속 2번 공격\n마비 디버프를 부여하는 마안 공격</value>
   </data>
   <data name="5430" xml:space="preserve">
-    <value>Inflicts Vuln Up debuff</value>
+    <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="5431" xml:space="preserve">
     <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
