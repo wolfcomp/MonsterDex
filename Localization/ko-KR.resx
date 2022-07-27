@@ -541,10 +541,10 @@
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
+    <value>자신에게 헤이스트를 부여함</value>
   </data>
   <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>독 디버프를 부여함</value>
   </data>
   <data name="4981" xml:space="preserve">
     <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
@@ -559,7 +559,7 @@
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
   </data>
   <data name="4988" xml:space="preserve">
-    <value>Inflicts poison</value>
+    <value>독 디버프를 부여함</value>
   </data>
   <data name="4989" xml:space="preserve">
     <value>"Sticky Tongue" does not stun if facing towards</value>
@@ -568,7 +568,7 @@
     <value>Eventual ENRAGE</value>
   </data>
   <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>둔화가 걸리는 구역</value>
   </data>
   <data name="4996" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
@@ -607,82 +607,82 @@
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5299" xml:space="preserve">
     <value>마비 디버프를 부여하는 마안 공격을 함</value>
   </data>
   <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
+    <value>실명 디버프와 높은 데미지를 주는 마안 공격을 함</value>
   </data>
   <data name="5309" xml:space="preserve">
     <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
@@ -694,7 +694,7 @@
     <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
   </data>
   <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
+    <value>일정 시간내로 죽이지 못하면 전체 공격인 「自爆/Self Destruct」을 시전함</value>
   </data>
   <data name="5345" xml:space="preserve">
     <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
@@ -706,7 +706,7 @@
     <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
   </data>
   <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>독 디버프를 부여함</value>
   </data>
   <data name="5366" xml:space="preserve">
     <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
@@ -727,13 +727,13 @@
     <value>Eventual ENRAGE</value>
   </data>
   <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
+    <value>자신에게 주는 피해량 상승 버프를 부여함</value>
   </data>
   <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>둔화가 걸리는 구역</value>
   </data>
   <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
+    <value>「臭い息/Bad Breath」 스킬을 시전하면 피하거나 끊어준다</value>
   </data>
   <data name="5381" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
@@ -745,10 +745,10 @@
     <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
   </data>
   <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5395" xml:space="preserve">
-    <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
+    <value>「111トンズ・スイング/11-Tonze Swing」 - 높은 데미지와 넉백 시키는 원형 범위 공격</value>
   </data>
   <data name="5396" xml:space="preserve">
     <value>「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함</value>
@@ -760,7 +760,7 @@
     <value>Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify</value>
   </data>
   <data name="5406" xml:space="preserve">
-    <value>Casts targeted AoE that inflicts Bleed</value>
+    <value>출혈 디버프를 부여하는 원형 범위 공격을 함</value>
   </data>
   <data name="5409" xml:space="preserve">
     <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
@@ -769,22 +769,22 @@
     <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
   </data>
   <data name="5413" xml:space="preserve">
-    <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
+    <value>「ミールストーム/Charybdis」 - 파티 멤버의 체력을 1%로 만드는 공격</value>
   </data>
   <data name="5414" xml:space="preserve">
-    <value>Very high damage, inflicts Poison</value>
+    <value>매우 높은 데미지와 독 디버프를 부여함</value>
   </data>
   <data name="5415" xml:space="preserve">
     <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
   </data>
   <data name="5420" xml:space="preserve">
-    <value>Casts Gaze "Evil Eye"</value>
+    <value>「イビルアイ/Evil Eye」 - 마안 공격</value>
   </data>
   <data name="5421" xml:space="preserve">
     <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
   </data>
   <data name="5422" xml:space="preserve">
-    <value>High health and very large AoE "Scream"</value>
+    <value>높은 Hp를 가지고 있고 「スクリーム/Scream」 스킬로 매우 큰 범위 공격을 함</value>
   </data>
   <data name="5423" xml:space="preserve">
     <value>Very high damage for the floors it appears on</value>
@@ -805,7 +805,7 @@
     <value>Double autos that lifesteal</value>
   </data>
   <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5437" xml:space="preserve">
     <value>Double autos\nGaze inflicts heavy damage and Blind</value>
@@ -814,16 +814,16 @@
     <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
   </data>
   <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5449" xml:space="preserve">
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
   </data>
   <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5451" xml:space="preserve">
     <value>Has semi-enrage around 30s in combat</value>
@@ -838,7 +838,7 @@
     <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
   </data>
   <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5459" xml:space="preserve">
     <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
@@ -850,7 +850,7 @@
     <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
   </data>
   <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5464" xml:space="preserve">
     <value>Instant AoE that inflicts heavy Bleed</value>
@@ -859,7 +859,7 @@
     <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
   </data>
   <data name="5466" xml:space="preserve">
-    <value>Sucks in player and does heavy damage\n"Tail Screw" does damage and inflicts Slow</value>
+    <value>플레이어를 끌어 당겨 데미지를 입힘\n「テールスクリュー/Tail Screw」스킬은 데미지와 둔화 디버프를 부여함</value>
   </data>
   <data name="5467" xml:space="preserve">
     <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
@@ -868,7 +868,7 @@
     <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
   </data>
   <data name="5471" xml:space="preserve">
-    <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
+    <value>파란봄이 나타나면 우선해서 처치한다\n「大爆発/Massive Burst」 빨간봄을 보스에게 밀어 기절시키지 않으면 전멸한다\n보스는 전방으로 강한 공격을 한다</value>
   </data>
   <data name="5473" xml:space="preserve">
     <value>전방 부채꼴 범위 공격 "레벨 5데스" 스킬을 시전함</value>
