@@ -539,7 +539,7 @@
     <value>1) 大ダメージの全体範囲攻撃「エンシェントクエイガ」\n2) 砂球がフィールド内に出現し、範囲攻撃に当たると中ダメージとヘヴィをプレイヤーに付与する\n3)「メテオインパクト」ボスの現在位置からの距離減衰攻撃\n4)「オーラキャノン」直線範囲攻撃\n5)「バーニングレイヴ」対象中心の円範囲攻撃\n6)「ナックルプレス」ボス中心の円範囲攻撃\n7) 繰り返し</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>攻撃をあてると範囲スタンを発生させてすぐに死ぬ。</value>
   </data>
   <data name="4975" xml:space="preserve">
     <value>自身にヘイストを付与する</value>
@@ -605,7 +605,7 @@
     <value>ギミック解説: ギミックを失敗すると全体範囲攻撃が強化される。\nボスは時々病気を付与する\n1)「インヘルス」ボスの足元以外の全体範囲攻撃か、ボス中心の円範囲攻撃\n2)「狂気のまなざし」視線攻撃</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>攻撃をあてると範囲スタンを発生させてすぐに死ぬ。</value>
   </data>
   <data name="5046" xml:space="preserve">
     <value>形態変化に耐性がある</value>
