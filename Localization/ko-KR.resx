@@ -442,10 +442,10 @@
     <value>Alternates line and circle AoEs untelegraphed</value>
   </data>
   <data name="7372" xml:space="preserve">
-    <value>Buffs own damage and double autos</value>
+    <value>주는 피해 상승 버프를 자신에게 사용하고 연속 2회 공격</value>
   </data>
   <data name="7373" xml:space="preserve">
-    <value>Draw-in attack, tons of bleed, and a stacking poison</value>
+    <value>흡인 공격 후 고통 디버프 부여, 중첩되는 독 디버프를 부여함</value>
   </data>
   <data name="7374" xml:space="preserve">
     <value>도넛 모양의 큰 범위 공격</value>
@@ -493,7 +493,7 @@
     <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
   </data>
   <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
+    <value>빠르게 연속으로 2회 공격하고 전방 직선 범위 공격 「クェーサー/Quasar」</value>
   </data>
   <data name="7391" xml:space="preserve">
     <value>연속으로 2번 공격하고, 수면 디버프를 부여하는 원형 범위 공격을 함</value>
@@ -802,7 +802,7 @@
     <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
   </data>
   <data name="5433" xml:space="preserve">
-    <value>Double autos that lifesteal</value>
+    <value>연속으로 2회 공격하고 데미지 비례 Hp를 흡수함</value>
   </data>
   <data name="5436" xml:space="preserve">
     <value>연속으로 2번 공격함</value>
@@ -874,7 +874,7 @@
     <value>전방 부채꼴 범위 공격 "레벨 5데스" 스킬을 시전함</value>
   </data>
   <data name="5475" xml:space="preserve">
-    <value>Double auto</value>
+    <value>연속으로 2회 공격</value>
   </data>
   <data name="2566" xml:space="preserve">
     <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
