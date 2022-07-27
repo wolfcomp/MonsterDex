@@ -349,7 +349,7 @@
     <value>Exclusively fatal line AoEs</value>
   </data>
   <data name="7335" xml:space="preserve">
-    <value>Draw-in attack</value>
+    <value>주변으로 끌어당겨 공격함</value>
   </data>
   <data name="7336" xml:space="preserve">
     <value>어그로가 끌려있지 않아도 랜덤 대상에게 범위 공격을 함</value>
@@ -418,7 +418,7 @@
     <value>매우 큰 범위 공격과 공포를 부여하는 마안을 시전</value>
   </data>
   <data name="7364" xml:space="preserve">
-    <value>Double auto and very large AoE</value>
+    <value>연속으로 2번 공격하고 넓은 범위 공격을 함</value>
   </data>
   <data name="7365" xml:space="preserve">
     <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
@@ -484,7 +484,7 @@
     <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
   </data>
   <data name="7387" xml:space="preserve">
-    <value>Deals heavy damage to random players</value>
+    <value>무작위 대상에게 큰 데미지를 줌</value>
   </data>
   <data name="7388" xml:space="preserve">
     <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
@@ -547,13 +547,13 @@
     <value>Inflicts Poison</value>
   </data>
   <data name="4981" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="4982" xml:space="preserve">
     <value>Inflicts vulnerability up</value>
   </data>
   <data name="4985" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
   </data>
   <data name="4986" xml:space="preserve">
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
@@ -709,13 +709,13 @@
     <value>Inflicts Poison</value>
   </data>
   <data name="5366" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="5367" xml:space="preserve">
     <value>Inflicts vulnerability up</value>
   </data>
   <data name="5370" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
   </data>
   <data name="5371" xml:space="preserve">
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
