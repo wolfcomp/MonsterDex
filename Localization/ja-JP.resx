@@ -289,7 +289,7 @@
     <value>ペインを付与する直線範囲攻撃\n残体力が少なくなると時間切れ攻撃</value>
   </data>
   <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
+    <value>AAと扇範囲攻撃が交互にくる</value>
   </data>
   <data name="7308" xml:space="preserve">
     <value>スタックする被ダメージ上昇デバフ</value>
@@ -689,7 +689,7 @@
     <value>大きな沼を発生させ、中に入るとペインが付与される。\n「ヴァルファズル」ターゲットに回避不可のノックバック直線範囲攻撃。沼を避けて吹き飛ぶようにする</value>
   </data>
   <data name="5321" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
+    <value>「ハイドレーション」 - 地面に残るAoE、その上にボスを乗せているとボスにヘイストがつく\n時折フィールドにAoEをキャストする</value>
   </data>
   <data name="5333" xml:space="preserve">
     <value>「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。\nボスはフィールドの端に走り「トラウンス(扇形広範囲AoE))」を放つ\nAt 17% 長い詠唱「エクリプスメテオ」 総HPの80%のダメージを全体に与えつづける</value>
@@ -821,7 +821,7 @@
     <value>二連続AA</value>
   </data>
   <data name="5449" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
+    <value>「ハイドレーション」－地面に残るAoE、その上にボスを乗せているとボスにヘイストと与ダメージ上昇がつく\n時折ヘヴィを与え、フィールドにAoEをキャストする </value>
   </data>
   <data name="5450" xml:space="preserve">
     <value>二連続AA</value>
@@ -857,7 +857,7 @@
     <value>ペイン(強) を付与する即時発動の範囲攻撃</value>
   </data>
   <data name="5465" xml:space="preserve">
-    <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
+    <value>無詠唱AoE、二連続AA\n戦闘開始から30秒ほどで引き寄せ、特大ダメージ</value>
   </data>
   <data name="5466" xml:space="preserve">
     <value>吸引攻撃と大ダメージ\n「テールスクリュー」はダメージとスロウを付与する。</value>
