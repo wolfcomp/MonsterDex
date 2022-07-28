@@ -5,15 +5,21 @@ namespace DeepDungeonDex
 {
 	public class TargetData
 	{
-		public static uint NameID { get; set; }
-		public static SeString Name { get; set; }
-		public bool IsValidTarget(GameObject target)
+		public uint NameID { get; set; }
+		public SeString Name { get; set; }
+		public TargetData IsValidTarget(GameObject target)
         {
-            if (!(target is BattleNpc bnpc)) return false;
+            if (!(target is BattleNpc bnpc)) return null;
             Name = bnpc.Name;
             NameID = bnpc.NameId;
-            return true;
+            return this;
+        }
 
+        public TargetData SetName(uint id)
+        {
+            NameID = id;
+            Name = Plugin.GameData.GetExcelSheet<Lumina.Excel.GeneratedSheets.BNpcName>()?.GetRow(id)?.Singular.ToString() ?? "";
+            return this;
         }
 	}
 }

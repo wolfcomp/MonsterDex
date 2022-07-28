@@ -18,16 +18,7 @@ namespace DeepDungeonDex
         [JsonIgnore] private DalamudPluginInterface _pluginInterface;
 
         [JsonIgnore]
-        public string LocaleString => Locale switch
-        {
-            1 => "ja-JP",
-            2 => "fr-FR",
-            3 => "de-DE",
-            4 => "zh-CN",
-            5 => "zh-TW",
-            6 => "ko-KR",
-            _ => "en"
-        };
+        public string LocaleString => Localization.Locale.GetLocales()[Locale];
 
 
         public void Initialize(DalamudPluginInterface pluginInterface)

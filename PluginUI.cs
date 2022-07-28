@@ -9,6 +9,7 @@ namespace DeepDungeonDex
     public class PluginUI
     {
         public bool IsVisible { get; set; }
+        private TargetData Data { get; set; }
         private readonly Configuration _config;
         private readonly ClientState _clientState;
         private readonly Locale _locale;
@@ -47,6 +48,12 @@ namespace DeepDungeonDex
             ImGui.NextColumn();
         }
 
+        public void SetData(TargetData data)
+        {
+            Data = data;
+            IsVisible = data != null;
+        }
+
         private void DrawVulns(MobData mobData)
         {
             var classJobId = _clientState.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
@@ -57,7 +64,7 @@ namespace DeepDungeonDex
                     PrintSingleVuln(mobData.Vuln.HasFlag(vulnerabilities), _locale.GetString(vulnerabilities.ToString()));
                 }
             }
-            if (!(TargetData.NameID >= 7262 && TargetData.NameID <= 7610))
+            if (!(Data.NameID is >= 7262 and <= 7610))
             {
                 PrintSingleVuln(mobData.Vuln.HasFlag(Vulnerabilities.Undead), _locale.Undead);
             }
@@ -67,11 +74,11 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
-            ImGui.PushFont(Plugin.RegularFont);
-            var data = DataHandler.Mobs(TargetData.NameID);
+            ImGui.PushFont(Font.RegularFont);
+            var data = DataHandler.Mobs(Data.NameID);
             if (!data.HasValue)
             {
-                PluginLog.Log(string.Format(_locale.NoDataFound, TargetData.Name, TargetData.NameID));
+                PluginLog.Log(string.Format(_locale.NoDataFound, Data.Name, Data.NameID));
                 return;
             }
             var mobData = data.Value;
@@ -83,7 +90,7 @@ namespace DeepDungeonDex
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
             ImGui.SetNextWindowBgAlpha(_config.Opacity);
             ImGui.Begin("cool strati window", flags);
-            ImGui.Text(_locale.Name+":\n" + TargetData.Name);
+            ImGui.Text(_locale.Name+":\n" + Data.Name);
             ImGui.NewLine();
             ImGui.Columns(2, null, false);
             ImGui.Text(_locale.AggroType + ":\n");
@@ -115,8 +122,8 @@ namespace DeepDungeonDex
             DrawVulns(mobData);
             ImGui.NextColumn();
             ImGui.Columns(1);
-            var note = _locale.GetString(TargetData.NameID.ToString()).Replace("\\n", "\n");
-            if (note != TargetData.NameID.ToString())
+            var note = _locale.GetString(Data.NameID.ToString()).Replace("\\n", "\n");
+            if (note != Data.NameID.ToString())
             {
                 ImGui.NewLine();
                 ImGui.Text(_locale.Notes + ":\n");
