@@ -19,15 +19,15 @@ namespace DeepDungeonDex
         private readonly Locale _locale;
         private float _fontSize;
 
-        public ConfigUI(float opacity, bool isClickthrough, bool hideRedVulns, bool hideBasedOnJob, int localeInt, float fontSize, Configuration config, Locale locale)
+        public ConfigUI(Configuration config, Locale locale)
         {
             _config = config;
-            _opacity = opacity;
-            _isClickthrough = isClickthrough;
-            _hideRedVulns = hideRedVulns;
-            _hideBasedOnJob = hideBasedOnJob;
-            _fontSize = fontSize;
-            _localeInt = localeInt;
+            _opacity = config.Opacity;
+            _isClickthrough = config.IsClickthrough;
+            _hideRedVulns = config.HideRedVulns;
+            _hideBasedOnJob = config.HideBasedOnJob;
+            _fontSize = config.FontSize;
+            _localeInt = config.Locale;
             _locale = locale;
         }
         
@@ -35,7 +35,7 @@ namespace DeepDungeonDex
         {
             if (!IsVisible)
                 return;
-            ImGui.PushFont(Plugin.RegularFont);
+            ImGui.PushFont(Font.RegularFont);
             ImGui.SetNextWindowSizeConstraints(new Vector2(250, 100), new Vector2(400, 300));
             ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
             if (ImGui.SliderFloat(_locale.Opacity, ref _opacity, 0.0f, 1.0f))
@@ -65,10 +65,12 @@ namespace DeepDungeonDex
             {
                 _config.HideBasedOnJob = _hideBasedOnJob;
             }
-            if (ImGui.Combo("Locale", ref _localeInt, new [] { "English", "日本語", "Français", "Deutsch", "汉语", "漢語", "한국어" }, 7))
+
+            var locales = Locale.GetLocaleNames();
+            if (ImGui.Combo("Locale", ref _localeInt, locales, locales.Length))
             {
                 _config.Locale = _localeInt;
-                _locale.ChangeLocale(_config.LocaleString);
+                _locale.ChangeLocale(_localeInt);
             }
             ImGui.NewLine();
             if (ImGui.Button(_locale.Save))

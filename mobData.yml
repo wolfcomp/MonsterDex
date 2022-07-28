@@ -417,6 +417,7 @@
   aggro: Sight
   vulns:
     - Stun
+    - Heavy
 7347:
   threat: Caution
   aggro: Sight

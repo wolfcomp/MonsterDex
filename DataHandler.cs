@@ -122,7 +122,7 @@ namespace DeepDungeonDex
         }
     }
 
-    public class DataHandler
+    public static class DataHandler
     {
         public static MobData? Mobs(uint nameId)
         {

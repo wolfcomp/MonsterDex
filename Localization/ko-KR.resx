@@ -193,7 +193,7 @@
     <value>알 수 없음</value>
   </data>
   <data name="Vicious" xml:space="preserve">
-    <value>Vicious</value>
+    <value>요주의</value>
   </data>
   <data name="Vulns" xml:space="preserve">
     <value>약점</value>
@@ -205,25 +205,25 @@
     <value>10초마다 받는 물리 피해 증가 디버프를 부여함</value>
   </data>
   <data name="7264" xml:space="preserve">
-    <value>장판 공격은 마비 디버프를 부여함</value>
+    <value>범위 공격은 마비 디버프를 부여함</value>
   </data>
   <data name="7265" xml:space="preserve">
-    <value>Triple auto inflicts Bleed</value>
+    <value>연속으로 3번 공격하고 고통 디버프를 부여함</value>
   </data>
   <data name="7266" xml:space="preserve">
-    <value>보이지 않는 전방 부채꼴 장판, 수면 디버프를 부여함</value>
+    <value>보이지 않는 전방 부채꼴 범위 공격, 수면 디버프를 부여함</value>
   </data>
   <data name="7267" xml:space="preserve">
-    <value>장판 공격은 출혈 디버프를 부여함</value>
+    <value>범위 공격은 출혈 디버프를 부여함</value>
   </data>
   <data name="7268" xml:space="preserve">
     <value>마안</value>
   </data>
   <data name="7270" xml:space="preserve">
-    <value>장판 피격 시 넉백 됨</value>
+    <value>범위 공격 피격 시 넉백 됨</value>
   </data>
   <data name="7271" xml:space="preserve">
-    <value>부채꼴 장판은 출혈 디버프 부여\n원형 장판은 넉백 됨</value>
+    <value>부채꼴 범위 공격은 출혈 디버프 부여\n원형 범위 공격은 넉백 됨</value>
   </data>
   <data name="7272" xml:space="preserve">
     <value>피할 수 없는 탱크 버스터를 시전함</value>
@@ -232,10 +232,10 @@
     <value>보이지 않는 강공격, 타박상 및 넉백 됨</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>조금 아픈 3연격 이후 장판 공격이 있음</value>
+    <value>조금 아픈 삼연격 이후 범위 공격이 있음</value>
   </data>
   <data name="7281" xml:space="preserve">
-    <value>유혹 디버프를 부여하는 마안 공격을 하고, 잇달아 미니멈 디버프를 부여하는 큰 장판 공격을 시전합니다.</value>
+    <value>유혹 디버프를 부여하는 마안 공격을 하고, 잇달아 미니멈 디버프를 부여하는 큰 범위 공격을 시전함</value>
   </data>
   <data name="7285" xml:space="preserve">
     <value>평타 중 3연타 하는 강공격이 있음</value>
@@ -250,34 +250,34 @@
     <value>자신을 포함한 주변을 치료함</value>
   </data>
   <data name="7290" xml:space="preserve">
-    <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
+    <value>랜덤 대상에게 넉백 범위 공격\n고통을 부여하는 직선 범위 공격을 함</value>
   </data>
   <data name="7291" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
   </data>
   <data name="7292" xml:space="preserve">
-    <value>Untelegraphed conal AoE with knockback, buster</value>
+    <value>캐스팅 없이 넉백시키는 전방 범위 강공격을 함</value>
   </data>
   <data name="7295" xml:space="preserve">
-    <value>Draw-in followed by cleave</value>
+    <value>주변을 끌어당긴 후 전방 범위 공격을 함</value>
   </data>
   <data name="7296" xml:space="preserve">
     <value>마안</value>
   </data>
   <data name="7297" xml:space="preserve">
-    <value>Line AoE inflicts Bleed</value>
+    <value>고통 디버프를 부여하는 직선 범위 공격을 함</value>
   </data>
   <data name="7298" xml:space="preserve">
-    <value>Cross AoE inflicts Suppuration</value>
+    <value>화상 디버프를 부여하는 십자 범위 공격을 함</value>
   </data>
   <data name="7299" xml:space="preserve">
-    <value>마비 디버프를 부여하는 큰 장판공격을 함</value>
+    <value>마비 디버프를 부여하는 큰 범위 공격을 함</value>
   </data>
   <data name="7300" xml:space="preserve">
-    <value>Circle AoE inflicts Suppuration</value>
+    <value>화상 디버프를 부여하는 원형 범위 공격을 함</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7303" xml:space="preserve">
     <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
@@ -292,40 +292,40 @@
     <value>Cleaves every other auto</value>
   </data>
   <data name="7308" xml:space="preserve">
-    <value>Weak stack attack</value>
+    <value>받는 데미지 증가 디버프를 중첩시키는 공격을 함</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>엄청 큰 장판 공격을 함</value>
+    <value>매우 큰 범위 공격을 함</value>
   </data>
   <data name="7311" xml:space="preserve">
     <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
   </data>
   <data name="7312" xml:space="preserve">
-    <value>Frontal cleave without cast or telegraph</value>
+    <value>캐스팅 없이 전방 범위 공격을 함</value>
   </data>
   <data name="7313" xml:space="preserve">
     <value>달달이로 만드는 시선 공격을 함</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7318" xml:space="preserve">
     <value>Large line AoE\nEventual ENRAGE</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7320" xml:space="preserve">
-    <value>Purple: double auto</value>
+    <value>보라색: 연속 2회 공격</value>
   </data>
   <data name="7321" xml:space="preserve">
-    <value>큰 원뿔형 장판공격을 함</value>
+    <value>큰 범위 공격을 함</value>
   </data>
   <data name="7323" xml:space="preserve">
-    <value>Green: Casts AoEs unaggroed</value>
+    <value>초록: 어그로가 끌려있지 않더라도 범위 공격을 함</value>
   </data>
   <data name="7324" xml:space="preserve">
-    <value>Very wide line AoE</value>
+    <value>매우 넓은 폭의 직선 범위 공격을 함</value>
   </data>
   <data name="7326" xml:space="preserve">
     <value>Eventual ENRAGE</value>
@@ -343,16 +343,16 @@
     <value>Eventual instant ENRAGE</value>
   </data>
   <data name="7331" xml:space="preserve">
-    <value>출혈 디버프를 부여하는 원뿔형 장판공격을 함</value>
+    <value>출혈 디버프를 부여하는 범위 공격을 함</value>
   </data>
   <data name="7332" xml:space="preserve">
     <value>Exclusively fatal line AoEs</value>
   </data>
   <data name="7335" xml:space="preserve">
-    <value>Draw-in attack</value>
+    <value>주변으로 끌어당겨 공격함</value>
   </data>
   <data name="7336" xml:space="preserve">
-    <value>어그로가 끌려있지 않아도 무작위 플레이어에게 장판공격을 함</value>
+    <value>어그로가 끌려있지 않아도 랜덤 대상에게 범위 공격을 함</value>
   </data>
   <data name="7337" xml:space="preserve">
     <value>Conal gaze, very quick low health ENRAGE</value>
@@ -370,16 +370,16 @@
     <value>Caster, double auto</value>
   </data>
   <data name="7345" xml:space="preserve">
-    <value>마비 디버프를 부여하는 부채꼴모양의 장판공격을 함</value>
+    <value>마비 디버프를 부여하는 범위 공격을 함</value>
   </data>
   <data name="7346" xml:space="preserve">
-    <value>Cleave and potent Poison</value>
+    <value>전방 범위 공격과 맹독 디버프 부여함</value>
   </data>
   <data name="7347" xml:space="preserve">
-    <value>큰 도넛형태의 장판공격과 공포 디버프를 부여하는 마안공격을 함</value>
+    <value>큰 도넛형태의 범위 공격과 공포 디버프를 부여하는 마안을 시전함</value>
   </data>
   <data name="7348" xml:space="preserve">
-    <value>Large circular AoE inflicts Bleed</value>
+    <value>고통 디버프를 부여하는 큰 원형 범위 공격</value>
   </data>
   <data name="7349" xml:space="preserve">
     <value>자신과 파티원에게 방어력 증가 버프를 부여함</value>
@@ -391,10 +391,10 @@
     <value>Casts large AoE unaggroed\nExtremely large circular AoE</value>
   </data>
   <data name="7354" xml:space="preserve">
-    <value>Untelegraphed knockback on rear</value>
+    <value>후방에 전조 없는 넉백 공격을 함</value>
   </data>
   <data name="7355" xml:space="preserve">
-    <value>Double auto inflicts Bleed</value>
+    <value>연속으로 2번 공격하고 고통 디버프를 부여함</value>
   </data>
   <data name="7356" xml:space="preserve">
     <value>Casts AoEs unaggroed that inflict Deep Freeze</value>
@@ -409,16 +409,16 @@
     <value>Haste, eventual ENRAGE</value>
   </data>
   <data name="7360" xml:space="preserve">
-    <value>매우 큰 장판공격을 함</value>
+    <value>매우 큰 범위 공격을 함</value>
   </data>
   <data name="7361" xml:space="preserve">
     <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
   </data>
   <data name="7362" xml:space="preserve">
-    <value>매우 큰 부채꼴모양의 장판과 공포를 부여하는 마안공격을 함</value>
+    <value>매우 큰 범위 공격과 공포를 부여하는 마안을 시전</value>
   </data>
   <data name="7364" xml:space="preserve">
-    <value>Double auto and very large AoE</value>
+    <value>연속으로 2번 공격하고 넓은 범위 공격을 함</value>
   </data>
   <data name="7365" xml:space="preserve">
     <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
@@ -433,7 +433,7 @@
     <value>Untelegraphed conal AoE on random player, gaze attack</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>어그로가 끌리지 않더라도 장판공격을 함</value>
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7370" xml:space="preserve">
     <value>Double autos, very strong rear cleave if behind</value>
@@ -442,16 +442,16 @@
     <value>Alternates line and circle AoEs untelegraphed</value>
   </data>
   <data name="7372" xml:space="preserve">
-    <value>Buffs own damage and double autos</value>
+    <value>주는 피해 상승 버프를 자신에게 사용하고 연속 2회 공격</value>
   </data>
   <data name="7373" xml:space="preserve">
-    <value>Draw-in attack, tons of bleed, and a stacking poison</value>
+    <value>흡인 공격 후 고통 디버프 부여, 중첩되는 독 디버프를 부여함</value>
   </data>
   <data name="7374" xml:space="preserve">
-    <value>도넛 모양의 큰 장판</value>
+    <value>도넛 모양의 큰 범위 공격</value>
   </data>
   <data name="7375" xml:space="preserve">
-    <value>Cone AoE, circle AoE, party wide damage</value>
+    <value>부채꼴 범위 공격, 원형 범위 공격, 전체 공격</value>
   </data>
   <data name="7376" xml:space="preserve">
     <value>Charges, buffs own damage, double autos, electricity Bleed</value>
@@ -463,7 +463,7 @@
     <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
   </data>
   <data name="7379" xml:space="preserve">
-    <value>MNK: Haste buff, short invuln</value>
+    <value>몽크: 헤이스트와 회피율 상승의 버프</value>
   </data>
   <data name="7380" xml:space="preserve">
     <value>WHM: double autos\n"Stone" can be line of sighted</value>
@@ -484,7 +484,7 @@
     <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
   </data>
   <data name="7387" xml:space="preserve">
-    <value>Deals heavy damage to random players</value>
+    <value>무작위 대상에게 큰 데미지를 줌</value>
   </data>
   <data name="7388" xml:space="preserve">
     <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
@@ -493,10 +493,10 @@
     <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
   </data>
   <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
+    <value>빠르게 연속으로 2회 공격하고 전방 직선 범위 공격 「クェーサー/Quasar」</value>
   </data>
   <data name="7391" xml:space="preserve">
-    <value>Double autos, cone AoE inflicts Sleep</value>
+    <value>연속으로 2번 공격하고, 수면 디버프를 부여하는 원형 범위 공격을 함</value>
   </data>
   <data name="7584" xml:space="preserve">
     <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
@@ -514,7 +514,7 @@
     <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>필드 중앙으로 이동하여 벽 쪽으로 넉백 시킴(무조건 넉백)\n넉백 후 바로 맵 절반 범위의 장판을 시전하므로 보스 뒤로 이동</value>
+    <value>필드 중앙으로 이동하여 벽 쪽으로 넉백 시킴(무조건 넉백)\n넉백 후 바로 맵 절반 범위 공격을 시전하므로 보스 뒤로 이동</value>
   </data>
   <data name="7481" xml:space="preserve">
     <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
@@ -541,25 +541,25 @@
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
+    <value>자신에게 헤이스트를 부여함</value>
   </data>
   <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>독 디버프를 부여함</value>
   </data>
   <data name="4981" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="4982" xml:space="preserve">
     <value>Inflicts vulnerability up</value>
   </data>
   <data name="4985" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
   </data>
   <data name="4986" xml:space="preserve">
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
   </data>
   <data name="4988" xml:space="preserve">
-    <value>Inflicts poison</value>
+    <value>독 디버프를 부여함</value>
   </data>
   <data name="4989" xml:space="preserve">
     <value>"Sticky Tongue" does not stun if facing towards</value>
@@ -568,7 +568,7 @@
     <value>Eventual ENRAGE</value>
   </data>
   <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>둔화가 걸리는 구역</value>
   </data>
   <data name="4996" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
@@ -583,22 +583,22 @@
     <value>Untelegraphed AOE does moderate damage and knockback</value>
   </data>
   <data name="5011" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함</value>
   </data>
   <data name="5012" xml:space="preserve">
     <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
   </data>
   <data name="5022" xml:space="preserve">
-    <value>"Dark Mist" inflicts Terror</value>
+    <value>「ダークミスト/Dark Mist」 스킬은 공황 디버프를 부여함</value>
   </data>
   <data name="5025" xml:space="preserve">
     <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
   </data>
   <data name="5030" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>마비 디버프를 부여함</value>
   </data>
   <data name="5032" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>마비 디버프를 부여함</value>
   </data>
   <data name="5038" xml:space="preserve">
     <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
@@ -607,82 +607,82 @@
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>적 변형 마석에 내성이 있음</value>
   </data>
   <data name="5299" xml:space="preserve">
-    <value>Gaze inflicts Paralysis</value>
+    <value>마비 디버프를 부여하는 마안 공격을 함</value>
   </data>
   <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
+    <value>실명 디버프와 높은 데미지를 주는 마안 공격을 함</value>
   </data>
   <data name="5309" xml:space="preserve">
     <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
@@ -694,7 +694,7 @@
     <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
   </data>
   <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
+    <value>일정 시간내로 죽이지 못하면 전체 공격인 「自爆/Self Destruct」을 시전함</value>
   </data>
   <data name="5345" xml:space="preserve">
     <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
@@ -706,16 +706,16 @@
     <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
   </data>
   <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>독 디버프를 부여함</value>
   </data>
   <data name="5366" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="5367" xml:space="preserve">
     <value>Inflicts vulnerability up</value>
   </data>
   <data name="5370" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
   </data>
   <data name="5371" xml:space="preserve">
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
@@ -727,13 +727,13 @@
     <value>Eventual ENRAGE</value>
   </data>
   <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
+    <value>자신에게 주는 피해량 상승 버프를 부여함</value>
   </data>
   <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>둔화가 걸리는 구역</value>
   </data>
   <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
+    <value>「臭い息/Bad Breath」 스킬을 시전하면 피하거나 끊어준다</value>
   </data>
   <data name="5381" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
@@ -745,22 +745,22 @@
     <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
   </data>
   <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5395" xml:space="preserve">
-    <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
+    <value>「111トンズ・スイング/11-Tonze Swing」 - 높은 데미지와 넉백 시키는 원형 범위 공격</value>
   </data>
   <data name="5396" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함</value>
   </data>
   <data name="5397" xml:space="preserve">
     <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
   </data>
   <data name="5402" xml:space="preserve">
-    <value>Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify</value>
+    <value>전방 부채꼴 범위 공격 「レベル5石化/Level 5 Petrify」 로 석화 디버프를 부여함</value>
   </data>
   <data name="5406" xml:space="preserve">
-    <value>Casts targeted AoE that inflicts Bleed</value>
+    <value>출혈 디버프를 부여하는 원형 범위 공격을 함</value>
   </data>
   <data name="5409" xml:space="preserve">
     <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
@@ -769,22 +769,22 @@
     <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
   </data>
   <data name="5413" xml:space="preserve">
-    <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
+    <value>「ミールストーム/Charybdis」 - 파티 멤버의 체력을 1%로 만드는 공격</value>
   </data>
   <data name="5414" xml:space="preserve">
-    <value>Very high damage, inflicts Poison</value>
+    <value>매우 높은 데미지와 독 디버프를 부여함</value>
   </data>
   <data name="5415" xml:space="preserve">
     <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
   </data>
   <data name="5420" xml:space="preserve">
-    <value>Casts Gaze "Evil Eye"</value>
+    <value>「イビルアイ/Evil Eye」 - 마안 공격</value>
   </data>
   <data name="5421" xml:space="preserve">
     <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
   </data>
   <data name="5422" xml:space="preserve">
-    <value>High health and very large AoE "Scream"</value>
+    <value>높은 Hp를 가지고 있고 「スクリーム/Scream」 스킬로 매우 큰 범위 공격을 함</value>
   </data>
   <data name="5423" xml:space="preserve">
     <value>Very high damage for the floors it appears on</value>
@@ -793,19 +793,19 @@
     <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
   </data>
   <data name="5429" xml:space="preserve">
-    <value>Double autos\nGaze inflicts Paralysis</value>
+    <value>연속 2번 공격\n마비 디버프를 부여하는 마안 공격</value>
   </data>
   <data name="5430" xml:space="preserve">
-    <value>Inflicts Vuln Up debuff</value>
+    <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="5431" xml:space="preserve">
     <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
   </data>
   <data name="5433" xml:space="preserve">
-    <value>Double autos that lifesteal</value>
+    <value>연속으로 2회 공격하고 데미지 비례 Hp를 흡수함</value>
   </data>
   <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5437" xml:space="preserve">
     <value>Double autos\nGaze inflicts heavy damage and Blind</value>
@@ -814,16 +814,16 @@
     <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
   </data>
   <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5449" xml:space="preserve">
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
   </data>
   <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5451" xml:space="preserve">
     <value>Has semi-enrage around 30s in combat</value>
@@ -838,7 +838,7 @@
     <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
   </data>
   <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5459" xml:space="preserve">
     <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
@@ -850,7 +850,7 @@
     <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
   </data>
   <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
+    <value>연속으로 2번 공격함</value>
   </data>
   <data name="5464" xml:space="preserve">
     <value>Instant AoE that inflicts heavy Bleed</value>
@@ -859,7 +859,7 @@
     <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
   </data>
   <data name="5466" xml:space="preserve">
-    <value>Sucks in player and does heavy damage\n"Tail Screw" does damage and inflicts Slow</value>
+    <value>플레이어를 끌어 당겨 데미지를 입힘\n「テールスクリュー/Tail Screw」스킬은 데미지와 둔화 디버프를 부여함</value>
   </data>
   <data name="5467" xml:space="preserve">
     <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
@@ -868,13 +868,13 @@
     <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
   </data>
   <data name="5471" xml:space="preserve">
-    <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
+    <value>파란봄이 나타나면 우선해서 처치한다\n「大爆発/Massive Burst」 빨간봄을 보스에게 밀어 기절시키지 않으면 전멸한다\n보스는 전방으로 강한 공격을 한다</value>
   </data>
   <data name="5473" xml:space="preserve">
-    <value>전방 부채꼴 장판 "레벨 5데스" 스킬을 시전함</value>
+    <value>전방 부채꼴 범위 공격 "레벨 5데스" 스킬을 시전함</value>
   </data>
   <data name="5475" xml:space="preserve">
-    <value>Double auto</value>
+    <value>연속으로 2회 공격</value>
   </data>
   <data name="2566" xml:space="preserve">
     <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
