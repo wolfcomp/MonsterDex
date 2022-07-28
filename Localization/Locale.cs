@@ -1,44 +1,82 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
 using Dalamud.Logging;
+using Newtonsoft.Json;
 
 namespace DeepDungeonDex.Localization
 {
     public class Locale
     {
-        private ResourceManager _manager;
-        private ResourceManager _fallback;
+        private ResxReader _manager;
         private string _locale = "en";
-        private List<string> _errorList = new List<string>();
+        private static Dictionary<string, string> _resourcesPaths = new();
+        private static string[] _langs;
+        private static string[] _langNames;
+        private readonly Dictionary<string, ResxReader> _resources = new();
+        private readonly List<string> _errorList = new();
+        private readonly ResxReader _fallback;
 
-        public Locale()
+        public static void LoadResources()
         {
-            _manager = new ResourceManager("DeepDungeonDex.Localization.en", typeof(Locale).Assembly);
-            _fallback = new ResourceManager("DeepDungeonDex.Localization.en", typeof(Locale).Assembly);
+            var httpClient = new HttpClient();
+            var dictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(httpClient.GetStringAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/dev/Localization/locales.json").GetAwaiter().GetResult());
+            _langs = dictionary != null ? dictionary.Keys.ToArray() : new[] { "en" };
+            _langNames = dictionary != null ? dictionary.Values.ToArray() : new[] { "English" };
+            foreach (var t1 in _langs)
+            {
+                var path = $"https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/dev/Localization/{t1}.resx";
+                var res = httpClient.GetAsync(path).GetAwaiter().GetResult();
+                if(res.IsSuccessStatusCode)
+                    _resourcesPaths.Add(t1, path);
+            }
         }
 
-        public void ChangeLocale(string locale)
+        private ResxReader LoadResourceSet(string locale)
         {
-            _manager.ReleaseAllResources();
-            _locale = locale;
+            if (_resources.TryGetValue(locale, out var reader)) return reader;
+            if (!_resourcesPaths.TryGetValue(locale, out var path)) return null;
+            var resource = new ResxReader(path);
+            _resources.Add(locale, resource);
+            return resource;
+
+        }
+
+        public Locale(string locale)
+        {
+            _manager = LoadResourceSet(locale);
+            _fallback = LoadResourceSet("en");
+        }
+
+        public static string[] GetLocales() => _langs;
+        
+        public static string[] GetLocaleNames() => _langNames;
+
+        public void Refresh() 
+        {
+            _resources.Clear();
+            _resourcesPaths.Clear();
+            LoadResources();
+        }
+
+        public void ChangeLocale(int locale)
+        {
+            _locale = _langs[locale];
             try
             {
-                _manager = new ResourceManager("DeepDungeonDex.Localization." + locale, typeof(Locale).Assembly);
+                _manager = LoadResourceSet(_locale);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 PluginLog.Error(e, "Failed to load locale falling back.");
-                _manager = new ResourceManager("DeepDungeonDex.Localization.en", typeof(Locale).Assembly);
+                _manager = _fallback;
             }
-            _fallback = new ResourceManager("DeepDungeonDex.Localization.en", typeof(Locale).Assembly);
         }
 
         public string GetString(string name)
         {
+            if (_manager == null && _fallback == null) return name;
             string ret = null;
             try
             {
