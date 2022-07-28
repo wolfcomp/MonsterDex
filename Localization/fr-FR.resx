@@ -229,7 +229,7 @@
     <value>Incontournables "Mâchoires" de type tankbuster</value>
   </data>
   <data name="7273" xml:space="preserve">
-    <value>Untelegraphed buster inflicts Bleed and knockback</value>
+    <value>Buster non télégraphié qui inflige Saignement et vous repousse</value>
   </data>
   <data name="7279" xml:space="preserve">
     <value>Lite buster "Scissor Run" followed by AoE</value>
@@ -241,13 +241,13 @@
     <value>Buster and triple auto</value>
   </data>
   <data name="7286" xml:space="preserve">
-    <value>Room wide ENRAGE</value>
+    <value>ENRAGE de la taille de la salle</value>
   </data>
   <data name="7288" xml:space="preserve">
     <value>Regard inflige aveugles</value>
   </data>
   <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
+    <value>Soigne soi-même et ses alliés</value>
   </data>
   <data name="7290" xml:space="preserve">
     <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
@@ -259,31 +259,31 @@
     <value>Untelegraphed conal AoE with knockback, buster</value>
   </data>
   <data name="7295" xml:space="preserve">
-    <value>Draw-in followed by cleave</value>
+    <value>Attraction suivie d'une attaque en cône</value>
   </data>
   <data name="7296" xml:space="preserve">
     <value>Regard</value>
   </data>
   <data name="7297" xml:space="preserve">
-    <value>Line AoE inflicts Bleed</value>
+    <value>AoE en ligne infligeant Saignement</value>
   </data>
   <data name="7298" xml:space="preserve">
     <value>Cross AoE inflicts Suppuration</value>
   </data>
   <data name="7299" xml:space="preserve">
-    <value>Large AoE inflicts Paralysis</value>
+    <value>Grosse AoE infligeant Paralysie</value>
   </data>
   <data name="7300" xml:space="preserve">
     <value>Circle AoE inflicts Suppuration</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
+    <value>Double auto infligeant Saignement / vie faible = ENRAGE</value>
   </data>
   <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
+    <value>Vie faible = ENRAGE</value>
   </data>
   <data name="7305" xml:space="preserve">
     <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
@@ -292,43 +292,43 @@
     <value>Cleaves every other auto</value>
   </data>
   <data name="7308" xml:space="preserve">
-    <value>Weak stack attack</value>
+    <value>Stack petits dégâts</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
+    <value>AoE extrêmement grande</value>
   </data>
   <data name="7311" xml:space="preserve">
     <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
   </data>
   <data name="7312" xml:space="preserve">
-    <value>Frontal cleave without cast or telegraph</value>
+    <value>Attaque en cône frontale sans cast ni animation</value>
   </data>
   <data name="7313" xml:space="preserve">
-    <value>Gaze inflicts Otter</value>
+    <value>Regard transforme en Loutre</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
+    <value>Large AoE linéaire / éventuel ENRAGE</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7320" xml:space="preserve">
-    <value>Purple: double auto</value>
+    <value>Violet : double auto</value>
   </data>
   <data name="7321" xml:space="preserve">
-    <value>Large cone AoE</value>
+    <value>Large AoE en cône</value>
   </data>
   <data name="7323" xml:space="preserve">
-    <value>Green: Casts AoEs unaggroed</value>
+    <value>Vert : Casts des AoE sans être aggro</value>
   </data>
   <data name="7324" xml:space="preserve">
-    <value>Very wide line AoE</value>
+    <value>Très large AoE linéaire</value>
   </data>
   <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>ENRAGE éventuel</value>
   </data>
   <data name="7327" xml:space="preserve">
     <value>Autos inflict stacking vuln up</value>
@@ -346,10 +346,10 @@
     <value>Cone AoE inflicts Bleed</value>
   </data>
   <data name="7332" xml:space="preserve">
-    <value>Exclusively fatal line AoEs</value>
+    <value>AoE linéaires mortelles</value>
   </data>
   <data name="7335" xml:space="preserve">
-    <value>Draw-in attack</value>
+    <value>Attaque attirante/Pull</value>
   </data>
   <data name="7336" xml:space="preserve">
     <value>Instant AoEs on targeted player unaggroed</value>
@@ -358,31 +358,31 @@
     <value>Conal gaze, very quick low health ENRAGE</value>
   </data>
   <data name="7340" xml:space="preserve">
-    <value>Inflicts stacking Poison that lasts 30s</value>
+    <value>Inflige un stack de Poison pendant 30 s</value>
   </data>
   <data name="7341" xml:space="preserve">
-    <value>Inflicts stacking vuln up</value>
+    <value>Inflige un stack de Vulnérabilité augmentée</value>
   </data>
   <data name="7343" xml:space="preserve">
-    <value>Fast alternating line AoEs that inflict Paralysis</value>
+    <value>AoE linéaires rapides infligeant Paralysie</value>
   </data>
   <data name="7344" xml:space="preserve">
     <value>Caster, double auto</value>
   </data>
   <data name="7345" xml:space="preserve">
-    <value>Conal AoE inflicts Paralysis</value>
+    <value>AoE en cône infligeant Paralysie</value>
   </data>
   <data name="7346" xml:space="preserve">
-    <value>Cleave and potent Poison</value>
+    <value>Attaque en cône et Poison important</value>
   </data>
   <data name="7347" xml:space="preserve">
-    <value>Large doughnut AoE, gaze attack inflicts Fear</value>
+    <value>Large AoE donut, son regard inflige Peur</value>
   </data>
   <data name="7348" xml:space="preserve">
-    <value>Large circular AoE inflicts Bleed</value>
+    <value>Grande AoE circulaire infligeant Saignement</value>
   </data>
   <data name="7349" xml:space="preserve">
-    <value>Buffs own or ally's defense</value>
+    <value>Buff sa propre défense ou celle d'un allié</value>
   </data>
   <data name="7350" xml:space="preserve">
     <value>AoE inflicts numerous debuffs at once</value>
@@ -391,7 +391,7 @@
     <value>Casts large AoE unaggroed\nExtremely large circular AoE</value>
   </data>
   <data name="7354" xml:space="preserve">
-    <value>Untelegraphed knockback on rear</value>
+    <value>Repoussement non télégraphié à l'arrière</value>
   </data>
   <data name="7355" xml:space="preserve">
     <value>Double auto inflicts Bleed</value>
@@ -433,7 +433,7 @@
     <value>Untelegraphed conal AoE on random player, gaze attack</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7370" xml:space="preserve">
     <value>Double autos, very strong rear cleave if behind</value>
@@ -565,7 +565,7 @@
     <value>"Sticky Tongue" does not stun if facing towards</value>
   </data>
   <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>ENRAGE éventuel</value>
   </data>
   <data name="4993" xml:space="preserve">
     <value>Area of effect Slow</value>
@@ -724,7 +724,7 @@
     <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
   </data>
   <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>ENRAGE éventuel</value>
   </data>
   <data name="5377" xml:space="preserve">
     <value>Casts invuln buff on itself</value>
