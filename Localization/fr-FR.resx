@@ -502,13 +502,13 @@
     <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
   </data>
   <data name="7392" xml:space="preserve">
-    <value>Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/knockback/witching/\ninterject</value>
+    <value>Étages 1-30: Coffre en Bronze seulement. // Autos gros dégâts et AoE mortelle // "Malédiction" peut être interrompu par Silence/Étourdissement/Knockback/Poterie de Mutation/Interjection</value>
   </data>
   <data name="7393" xml:space="preserve">
-    <value>Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/interject</value>
+    <value>Étages 31-60: Coffres en Argent seulement // Autos gros dégâts et AoE mortelle // "Malédiction" peut être interrompu par Silence/Étourdissement/Interjection</value>
   </data>
   <data name="7394" xml:space="preserve">
-    <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
+    <value>Étages 61+ : Coffres en Or seulement // Autos gros dégâts et AoE mortelle // "Malédiction" ne peut être interrompu QUE par Interjection / NE PEUT ÊTRE ÉTOURDI</value>
   </data>
   <data name="7478" xml:space="preserve">
     <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
@@ -568,7 +568,7 @@
     <value>ENRAGE éventuel</value>
   </data>
   <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>Lenteur en AoE</value>
   </data>
   <data name="4996" xml:space="preserve">
     <value>Dégâts des buffs</value>
@@ -679,10 +679,10 @@
     <value>Immune to Pomander of Witching</value>
   </data>
   <data name="5299" xml:space="preserve">
-    <value>Gaze inflicts Paralysis</value>
+    <value>Regard inflige Paralysie</value>
   </data>
   <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
+    <value>Regard inflige Cécité et fait de gros dégâts</value>
   </data>
   <data name="5309" xml:space="preserve">
     <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
@@ -694,7 +694,7 @@
     <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
   </data>
   <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
+    <value>Cast une grande "Auto-destruction" si non tué à temps</value>
   </data>
   <data name="5345" xml:space="preserve">
     <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
@@ -703,7 +703,7 @@
     <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
   </data>
   <data name="5364" xml:space="preserve">
-    <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
+    <value>Étages 101-101 : Rien de particulier (ignorez l'indice de dangerosité) // Étages 191-200 : Double autos</value>
   </data>
   <data name="5365" xml:space="preserve">
     <value>Inflige Poison</value>
@@ -727,13 +727,13 @@
     <value>ENRAGE éventuel</value>
   </data>
   <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
+    <value>Cast "Invulnérabilité" sur soi-même</value>
   </data>
   <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>Lenteur en AoE</value>
   </data>
   <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
+    <value>Infligera "Sommeil" avant de caster "Mauvaise Haleine"</value>
   </data>
   <data name="5381" xml:space="preserve">
     <value>Dégâts des buffs</value>
@@ -745,7 +745,7 @@
     <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
   </data>
   <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5395" xml:space="preserve">
     <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
@@ -805,7 +805,7 @@
     <value>Double autos that lifesteal</value>
   </data>
   <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5437" xml:space="preserve">
     <value>Double autos\nGaze inflicts heavy damage and Blind</value>
@@ -814,16 +814,16 @@
     <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
   </data>
   <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5449" xml:space="preserve">
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
   </data>
   <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5451" xml:space="preserve">
     <value>Has semi-enrage around 30s in combat</value>
@@ -838,7 +838,7 @@
     <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
   </data>
   <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5459" xml:space="preserve">
     <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
@@ -850,7 +850,7 @@
     <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
   </data>
   <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5464" xml:space="preserve">
     <value>Instant AoE that inflicts heavy Bleed</value>
