@@ -541,16 +541,16 @@
     <value>Does not interact, wide stun and immediately dies when attacked</value>
   </data>
   <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
+    <value>Lance Hâte sur lui-même</value>
   </data>
   <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>Inflige Poison</value>
   </data>
   <data name="4981" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>"Dard Final" dégâts importants</value>
   </data>
   <data name="4982" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>Inflige Vulnérabilité augmentée</value>
   </data>
   <data name="4985" xml:space="preserve">
     <value>Mini buster "Rhino Charge"</value>
@@ -559,7 +559,7 @@
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
   </data>
   <data name="4988" xml:space="preserve">
-    <value>Inflicts poison</value>
+    <value>Inflige Poison</value>
   </data>
   <data name="4989" xml:space="preserve">
     <value>"Sticky Tongue" does not stun if facing towards</value>
@@ -595,10 +595,10 @@
     <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
   </data>
   <data name="5030" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>Inflige Paralysie</value>
   </data>
   <data name="5032" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>Inflige Paralysie</value>
   </data>
   <data name="5038" xml:space="preserve">
     <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
@@ -706,13 +706,13 @@
     <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
   </data>
   <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>Inflige Poison</value>
   </data>
   <data name="5366" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>"Dard Final" dégâts importants</value>
   </data>
   <data name="5367" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>Inflige Vulnérabilité augmentée</value>
   </data>
   <data name="5370" xml:space="preserve">
     <value>Mini buster "Rhino Charge"</value>
