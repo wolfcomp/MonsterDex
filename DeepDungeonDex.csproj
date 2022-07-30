@@ -10,7 +10,14 @@
     <DalamudPluginPath>$(AppData)\XIVLauncher\devPlugins\DeepDungeonDex</DalamudPluginPath>
     <OutputType>Library</OutputType>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".github\**" />
+    <EmbeddedResource Remove=".github\**" />
+    <None Remove=".github\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Localization\de-DE.resx" />
@@ -23,13 +30,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="crowdin.yml" />
+    <None Remove="DalamudPackager.targets" />
+    <None Remove="DeepDungeonDex.json" />
     <None Remove="fonts\NotoSans-Italic.ttf" />
     <None Remove="fonts\NotoSans-Regular.ttf" />
     <None Remove="fonts\NotoSansJP-Regular.otf" />
     <None Remove="fonts\NotoSansKR-Regular.otf" />
     <None Remove="fonts\NotoSansSC-Regular.otf" />
     <None Remove="fonts\NotoSansTC-Regular.otf" />
+    <None Remove="global.json" />
+    <None Remove="LICENSE" />
     <None Remove="Localization\locales.json" />
+    <None Remove="mobData.yml" />
+    <None Remove="packages.lock.json" />
+    <None Remove="README.md" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -76,20 +93,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DeepDungeonDex.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="YamlDotNet" Version="11.2.1">
       <Private>false</Private>
     </PackageReference>
     <PackageReference Include="DalamudPackager" Version="2.1.7" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include=".github\workflows\BuildAndPR.yaml" />
   </ItemGroup>
 
   <ItemGroup>
