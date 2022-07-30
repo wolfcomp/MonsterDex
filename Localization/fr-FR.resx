@@ -250,7 +250,7 @@
     <value>Soigne soi-même et ses alliés</value>
   </data>
   <data name="7290" xml:space="preserve">
-    <value>Cast des AoE repoussantes sans être aggro / AoE linéaire infligeant Saignement</value>
+    <value>Cast des AoE repoussantes sans être aggro\nAoE linéaire infligeant Saignement</value>
   </data>
   <data name="7291" xml:space="preserve">
     <value>Dégâts des buffs</value>
@@ -280,13 +280,13 @@
     <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto infligeant Saignement / vie faible = ENRAGE</value>
+    <value>Double auto infligeant Saignement\nENRAGE quand vie faible</value>
   </data>
   <data name="7304" xml:space="preserve">
     <value>Vie faible = ENRAGE</value>
   </data>
   <data name="7305" xml:space="preserve">
-    <value>AoE linéaire inflige Saignement / ENRAGE quand vie faible</value>
+    <value>AoE linéaire inflige Saignement\nENRAGE quand vie faible</value>
   </data>
   <data name="7306" xml:space="preserve">
     <value>Cleaves every other auto</value>
@@ -298,7 +298,7 @@
     <value>AoE extrêmement grande</value>
   </data>
   <data name="7311" xml:space="preserve">
-    <value>AoE linéaire inflige Saignement / ENRAGE quand vie faible</value>
+    <value>AoE linéaire inflige Saignement\nENRAGE quand vie faible</value>
   </data>
   <data name="7312" xml:space="preserve">
     <value>Attaque en cône frontale sans cast ni animation</value>
@@ -310,7 +310,7 @@
     <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large AoE linéaire / éventuel ENRAGE</value>
+    <value>Large AoE linéaire\néventuel ENRAGE</value>
   </data>
   <data name="7319" xml:space="preserve">
     <value>Cast des AoE sans être aggro</value>
@@ -388,7 +388,7 @@
     <value>AoE infligeant de nombreux malus d'un coup</value>
   </data>
   <data name="7353" xml:space="preserve">
-    <value>Cast une large AoE sans être aggro / AoE circulaire extrêmement large</value>
+    <value>Cast une large AoE sans être aggro\nAoE circulaire extrêmement large</value>
   </data>
   <data name="7354" xml:space="preserve">
     <value>Repoussement non télégraphié à l'arrière</value>
@@ -400,7 +400,7 @@
     <value>Cast des AoE sans être aggro, infligeant Congélation</value>
   </data>
   <data name="7357" xml:space="preserve">
-    <value>Cast des AoE de la taille de la pièce sans être aggro / Large attaque en cône qui attire suivie de lourds dégâts</value>
+    <value>Cast des AoE de la taille de la pièce sans être aggro\nLarge attaque en cône qui attire suivie de lourds dégâts</value>
   </data>
   <data name="7358" xml:space="preserve">
     <value>Dégâts des buffs</value>
@@ -421,10 +421,10 @@
     <value>Double auto et très grande AoE</value>
   </data>
   <data name="7365" xml:space="preserve">
-    <value>Voix du Bélier : s'éloigner / Voix du Dragon : se rapprocher / Coup de patte télégraphié</value>
+    <value>Voix du Bélier : s'éloigner\nVoix du Dragon : se rapprocher\nCoup de patte télégraphié</value>
   </data>
   <data name="7366" xml:space="preserve">
-    <value>Buff ses propres dégâts sans être aggro / Large AoE sans être aggro qui inflige un stack de vulnérabilité augmentée</value>
+    <value>Buff ses propres dégâts sans être aggro\nLarge AoE sans être aggro qui inflige un stack de vulnérabilité augmentée</value>
   </data>
   <data name="7367" xml:space="preserve">
     <value>Charge quand aggro</value>
@@ -460,55 +460,55 @@
     <value>Charge, buff ses propres dégâts, buster non télégraphie "Griffe Éventreuse"</value>
   </data>
   <data name="7378" xml:space="preserve">
-    <value>GUE (WAR) : Triple knockback avec de gros dégâts / Buff ses propres attaques / Coup de hache qui repousse + fait de gros dégâts</value>
+    <value>GUE (WAR) : Triple knockback avec de gros dégâts\nBuff ses propres attaques\nCoup de hache qui repousse + fait de gros dégâts</value>
   </data>
   <data name="7379" xml:space="preserve">
     <value>MOI (MNK) : Buff Hâte, courte invulnérabilité</value>
   </data>
   <data name="7380" xml:space="preserve">
-    <value>MBL (WHM) : double autos / Se cacher derrière un mur peut interrompre son sort " Terre "</value>
+    <value>MBL (WHM) : double autos\nSe cacher derrière un mur peut interrompre son sort " Terre "</value>
   </data>
   <data name="7381" xml:space="preserve">
-    <value>Cleave\nLarge line AoE that can be line of sighted</value>
+    <value>Cleave\nLarge AoE linéaire qui peut être LoS (vous pouvez vous cacher derrière un mur, un poteau...)</value>
   </data>
   <data name="7382" xml:space="preserve">
-    <value>"Charybdis" AoE that leaves tornadoes on random players</value>
+    <value>AoE "Charybde" laissant des tornades sous un joueur aléatoire</value>
   </data>
   <data name="7384" xml:space="preserve">
-    <value>Casts targeted AoEs unaggroed, buffs own defense</value>
+    <value>Cast des AoE ciblées sans être aggro, buff sa propre défense</value>
   </data>
   <data name="7385" xml:space="preserve">
-    <value>Targeted AoEs, cleaves</value>
+    <value>AoE ciblées, cleaves</value>
   </data>
   <data name="7386" xml:space="preserve">
-    <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
+    <value>AoE linéaire extrêmement rapide "Portes de la mort" qui tue instantanément</value>
   </data>
   <data name="7387" xml:space="preserve">
-    <value>Deals heavy damage to random players</value>
+    <value>Inflige de lourds dégâts à des joueurs aléatoires</value>
   </data>
   <data name="7388" xml:space="preserve">
     <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
   </data>
   <data name="7389" xml:space="preserve">
-    <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
+    <value>Cleaves répétitifs causant de gros dégâts, vol de vie, buff ses propres dégâts, à trois stacks de dégâts augmentés cast ENRAGE "Nébuleuse noire"</value>
   </data>
   <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
+    <value>Double autos rapides et AoE linéaire non télégraphiée "Quasar"</value>
   </data>
   <data name="7391" xml:space="preserve">
-    <value>Double autos, cone AoE inflicts Sleep</value>
+    <value>Double autos, AoE en cône infligeant Sommeil</value>
   </data>
   <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
+    <value>Stack de dégâts augmentés permanents\nEnrage important sur un joueur aléatoire "Météore Allagois"\nAttaque type "Regard"</value>
   </data>
   <data name="7392" xml:space="preserve">
-    <value>Étages 1-30: Coffre en Bronze seulement. // Autos gros dégâts et AoE mortelle // "Malédiction" peut être interrompu par Silence/Étourdissement/Knockback/Poterie de Mutation/Interjection</value>
+    <value>Étages 1-30: Coffres en Bronze seulement\nAutos gros dégâts et AoE mortelle\n "Malédiction" peut être interrompu par Silence/Étourdissement/Knockback/Poterie de Mutation\nInterjection</value>
   </data>
   <data name="7393" xml:space="preserve">
-    <value>Étages 31-60: Coffres en Argent seulement // Autos gros dégâts et AoE mortelle // "Malédiction" peut être interrompu par Silence/Étourdissement/Interjection</value>
+    <value>Étages 31-60: Coffres en Argent seulement\nAutos gros dégâts et AoE mortelle\n"Malédiction" peut être interrompu par Silence/Étourdissement/Interjection</value>
   </data>
   <data name="7394" xml:space="preserve">
-    <value>Étages 61+ : Coffres en Or seulement // Autos gros dégâts et AoE mortelle // "Malédiction" ne peut être interrompu QUE par Interjection / NE PEUT ÊTRE ÉTOURDI</value>
+    <value>Étages 61+ : Coffres en Or seulement\nAutos gros dégâts et AoE mortelle\n"Malédiction" ne peut être interrompu QUE par Interjection\nNE PEUT ÊTRE ÉTOURDI</value>
   </data>
   <data name="7478" xml:space="preserve">
     <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
@@ -703,7 +703,7 @@
     <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
   </data>
   <data name="5364" xml:space="preserve">
-    <value>Étages 101-101 : Rien de particulier (ignorez l'indice de dangerosité) // Étages 191-200 : Double autos</value>
+    <value>Étages 101-101 : \nRien de particulier (ignorez l'indice de dangerosité) \nÉtages 191-200 : \nDouble autos</value>
   </data>
   <data name="5365" xml:space="preserve">
     <value>Inflige Poison</value>
@@ -880,6 +880,6 @@
     <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
   </data>
   <data name="FontSize" xml:space="preserve">
-    <value>Font Size</value>
+    <value>Taille de la police</value>
   </data>
 </root>
