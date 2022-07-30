@@ -511,34 +511,34 @@
     <value>Étages 61+ : Coffres en Or seulement\nAutos gros dégâts et AoE mortelle\n"Malédiction" ne peut être interrompu QUE par Interjection\nNE PEUT ÊTRE ÉTOURDI</value>
   </data>
   <data name="7478" xml:space="preserve">
-    <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
+    <value>Invoque des nuages de foudre infligeant des stack de vulnérabilité augmentée lorsqu'ils explosent\nLe boss fait des AoE de proximité sous lui-même qui font les joueurs s'envoler\nEnvolez vous dans un nuage pour le dissiper et éviter une vulnérabilité\nAoE faisant la moitié de la pièce</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
+    <value>Va au centre de l'arène et cast une attaque repoussant jusqu'au mur (ignore vos résistances au repoussement)\nEnchaine immédiatement avec une AoE faisant la moitié de la pièce</value>
   </data>
   <data name="7481" xml:space="preserve">
-    <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
+    <value>Invoque des papillons aux bords de l'arène\nEffectue une mécanique type "Regard" infligeant Peur\nExplosion des papillons non-télégraphiée</value>
   </data>
   <data name="7483" xml:space="preserve">
-    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
+    <value>Invoque des nuages aux bords de l'arène\nVous repousse jusqu'au mur, ignorant vos résistances au repoussement (Regardez la zone safe dans les nuages!)\nEnchaine immédiatement par une AoE linéaire ciblée</value>
   </data>
   <data name="7485" xml:space="preserve">
-    <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
+    <value>1)Fauchage non télégraphié\n2) AoE linéaire non télégraphiée sous un joueur aléatoire\n3)Mécanique type "Regard" infligeant Peur\n4) Invoque des bombes pulsantes sur l'arène et effectue une AoE de proximité\n5)Répète tout ça après que les bombes explosent pour la dernière fois</value>
   </data>
   <data name="7487" xml:space="preserve">
-    <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
+    <value>Invoque des bâtons effectuant diverses AoEs\nLes bâtons effectuent ensuite des AoEs linéaires ciblant les joueurs\nAoE de la taille de la pièce</value>
   </data>
   <data name="7489" xml:space="preserve">
-    <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
+    <value>1)Cleave frontal non télégraphié\n2)Cible un joueur aléatoire avec une flaque "Mini-bulles" (Rester dans la flaque inflige Mini)\n3)Cible un joueur aléatoire avec "Charge infernale"\n4) Le joueur ciblé doit rester dans la flaque pour esquiver "Charge infernale" et "Dévoration" (Mort instantanée si hors de la flaque, donnant un stack de dégâts augmentés au boss)\n5)Répétez</value>
   </data>
   <data name="7490" xml:space="preserve">
-    <value>1) Summons balls of ice\n2) Summons icicle that pierces through room, detonating any ice balls it hits\n3) "Lunar Cry" detonates remaining ice balls\n4) Exploding ice balls inflict Deep Freeze if they hit a player\n5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)</value>
+    <value>1) Invoque des boules de glace\n2)Invoque des stalactites qui perceront la pièce, faisant détonner les boules de glace sur leur passage\n3) "Cri lunaire" fait détonner les boules restantes\n4) Les boules glaces infligent Congélation si elles touchent un joueur lorsqu'elles explosent\n5)Le boss saute sur un joueur aléatoire, le tuant instantanément s'il est congelé (dégâts légers autrement)</value>
   </data>
   <data name="7493" xml:space="preserve">
-    <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
+    <value>1)Gros dégâts sur toute la pièce "Méga séisme ancien"\n2) Des rochers pulsants apparaissent sur l'arène, causant des dégâts moyens et Pesanteur s'ils touchent un joueur\n3) "Impact de météore" invoque une AoE de proximité sous la position actuelle du boss\n4)AoE linéaire "Rayon d'aura"\n5) AoE circulaires ciblées "Fahrenheit"\n6) AoE circulaire à bout portant "Pression impitoyable"\n7) Répétez</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>N'intéragit pas, large Etourdissement et meurt immédiatement lorsque attaqué</value>
   </data>
   <data name="4975" xml:space="preserve">
     <value>Lance Hâte sur lui-même</value>
@@ -553,16 +553,16 @@
     <value>Inflige Vulnérabilité augmentée</value>
   </data>
   <data name="4985" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>Mini buster "Attaque Rhino"</value>
   </data>
   <data name="4986" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
+    <value>1) "Claquement de fouet" - léger tankbuster\n2)"Vent orageux" - AoE en cône\n3)"Vrombissement" - AoE circulaire sur le boss infligeant Lenteur\n4)"Lumisphère" - AoE ciblée sur un joueur aléatoire\n5)"Souffle Éthéréen" - AoE de la taille de la pièce infligeant Saignement</value>
   </data>
   <data name="4988" xml:space="preserve">
     <value>Inflige Poison</value>
   </data>
   <data name="4989" xml:space="preserve">
-    <value>"Sticky Tongue" does not stun if facing towards</value>
+    <value>"Langue poisseuse" n'étoudit pas si vous lui faites face</value>
   </data>
   <data name="4990" xml:space="preserve">
     <value>ENRAGE éventuel</value>
@@ -574,25 +574,25 @@
     <value>Dégâts des buffs</value>
   </data>
   <data name="4997" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
+    <value>Attaque type "Regard" infligeant Pétrification, "Dévoration" tue immédiatement si un joueur a l'état "Crapaud"</value>
   </data>
   <data name="4999" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
+    <value>1)"Caresse sanglante" - Cleave infligeant de gros dégâts\n2) Deux AoE télégraphiées et une AoE de la taille de la pièce\n3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent "Dard Final"\n4)"Pestillence nauséabonde" - AoE linéaire infligeant de gros dégâts</value>
   </data>
   <data name="5010" xml:space="preserve">
-    <value>Untelegraphed AOE does moderate damage and knockback</value>
+    <value>AoE non télégraphiée infligeant des dégâts modérés et vous repoussant</value>
   </data>
   <data name="5011" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>"Gazouillement" inflige Sommeil pendant 15s</value>
   </data>
   <data name="5012" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
+    <value>1) Séparez les AoEs de feu et de glace et ne les amenez pas au centre car :\n2) Allez au centre de la hitbox du boss lors de "Peur personnifiée" - infligera de lourds dégâts et Terreur si vous ne l'esquivez pas</value>
   </data>
   <data name="5022" xml:space="preserve">
-    <value>"Dark Mist" inflicts Terror</value>
+    <value>"Brume funèbre" inflige Terreur</value>
   </data>
   <data name="5025" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+    <value>1) Invoque quatre AoE persistantes\n2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts</value>
   </data>
   <data name="5030" xml:space="preserve">
     <value>Inflige Paralysie</value>
@@ -601,82 +601,82 @@
     <value>Inflige Paralysie</value>
   </data>
   <data name="5038" xml:space="preserve">
-    <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
+    <value>EFFECTUEZ LES MÉCANIQUES -- les mécaniques râtées augmenteront les dégâts d'une AoE inévitable de la taille de la pièce\nLe boss infligera occasionellement Maladie qui vous ralentit\n1) "Dnas la santé" -- peut être soit une AoE safe sous le boss, soit une AoE à bout portant\n2) "Regard Affolant" -- attaque type "Regard"</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>N'intéragit pas, large Etourdissement et meurt immédiatement lorsque attaqué</value>
   </data>
   <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5299" xml:space="preserve">
     <value>Regard inflige Paralysie</value>
@@ -685,13 +685,13 @@
     <value>Regard inflige Cécité et fait de gros dégâts</value>
   </data>
   <data name="5309" xml:space="preserve">
-    <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>Laisse de large flaque AoE infligeant Saignement si vous restez dedans\n"Valfodr" -- AoE linéaire ciblée non esquivable focalisée sur un joueur, le repoussant : évitez les AoEs encerclant le bord extérieur</value>
   </data>
   <data name="5321" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
+    <value>"Hydratation" -- AoE persistante au sol infligeant Saignement si vous restez dedans et buffant le boss avec Hâte s'il reste dedans\nCast occasionnellement des Aoe ciblées au sol</value>
   </data>
   <data name="5333" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
+    <value>"Charybde" -- tornade au sol persistante qui cause de lourds dégâts si elle vous aspire\nLe boss ira au bord de l'arène pour cast "Écrabouillement" - large AoE en cône\n A 17% cast "Météore écliptique" - GROS DÉGÂTS qui inflige 80% de votre vie totale sur la pièce avec un long cast</value>
   </data>
   <data name="5334" xml:space="preserve">
     <value>Cast une grande "Auto-destruction" si non tué à temps</value>
@@ -715,10 +715,10 @@
     <value>Inflige Vulnérabilité augmentée</value>
   </data>
   <data name="5370" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>Mini buster "Attaque Rhino"</value>
   </data>
   <data name="5371" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
+    <value>1) "Claquement de fouet" - léger tankbuster\n2)"Vent orageux" - AoE en cône\n3)"Vrombissement" - AoE circulaire sur le boss infligeant Lenteur\n4)"Lumisphère" - AoE ciblée sur un joueur aléatoire\n5)"Souffle Éthéréen" - AoE de la taille de la pièce infligeant Saignement</value>
   </data>
   <data name="5374" xml:space="preserve">
     <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
@@ -742,7 +742,7 @@
     <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
   </data>
   <data name="5384" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
+    <value>1)"Caresse sanglante" - Cleave infligeant de gros dégâts\n2) Deux AoE télégraphiées et une AoE de la taille de la pièce\n3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent "Dard Final"\n4)"Pestillence nauséabonde" - AoE linéaire infligeant de gros dégâts</value>
   </data>
   <data name="5389" xml:space="preserve">
     <value>Doubles autos</value>
@@ -751,7 +751,7 @@
     <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
   </data>
   <data name="5396" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>"Gazouillement" inflige Sommeil pendant 15s</value>
   </data>
   <data name="5397" xml:space="preserve">
     <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
@@ -766,7 +766,7 @@
     <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
   </data>
   <data name="5410" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+    <value>1) Invoque quatre AoE persistantes\n2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts</value>
   </data>
   <data name="5413" xml:space="preserve">
     <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
