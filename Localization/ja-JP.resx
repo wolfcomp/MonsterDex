@@ -181,7 +181,7 @@
     <value>スタン</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
+    <value>Deep Dungeons Discord サーバーに多くのコミュニティリソースを提供していただき、ありがとうございました。間違ったデータや不足しているデータを報告するために時間を割いてくれた皆さんに感謝します！最高のディープダンジョンガイドを書いたMaygiに特別な賞賛を送ります！</value>
   </data>
   <data name="Threat" xml:space="preserve">
     <value>危険度</value>
@@ -226,13 +226,13 @@
     <value>ペインを付与する扇範囲攻撃\nノックバック円範囲攻撃</value>
   </data>
   <data name="7272" xml:space="preserve">
-    <value>避けられない強攻撃</value>
+    <value>「ジョーズ」避けられない強攻撃</value>
   </data>
   <data name="7273" xml:space="preserve">
     <value>ペイン付与の予兆無しノックバック強攻撃</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
+    <value>軽い強攻撃「鋏連撃」の後にAoEが続く</value>
   </data>
   <data name="7281" xml:space="preserve">
     <value>誘惑を付与する視線攻撃のあと、ミニマムを付与する大きな範囲攻撃</value>
@@ -289,7 +289,7 @@
     <value>ペインを付与する直線範囲攻撃\n残体力が少なくなると時間切れ攻撃</value>
   </data>
   <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
+    <value>AAと扇範囲攻撃が交互にくる</value>
   </data>
   <data name="7308" xml:space="preserve">
     <value>スタックする被ダメージ上昇デバフ</value>
@@ -521,7 +521,7 @@
     <value>外周に蝶が出現\n恐慌デバフを付与する視線ギミック\n蝶が予兆無しで爆発</value>
   </data>
   <data name="7483" xml:space="preserve">
-    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
+    <value>フィールドの端に雲を召喚する\nノックバック無効を無視する攻撃、壁際で打ち上げられる(雲の中の安全な場所を探せ！)\n直後に大きな直線AoE</value>
   </data>
   <data name="7485" xml:space="preserve">
     <value>1) 予兆無しの前方扇範囲攻撃\n2) ランダムターゲットに予兆無しの直線範囲攻撃\n3) 恐慌を付与する視線攻撃\n4) フィールドに雷球を出現させ、雷球中心の円範囲攻撃\n5) 雷球が爆発後くりかえし</value>
@@ -539,7 +539,7 @@
     <value>1) 大ダメージの全体範囲攻撃「エンシェントクエイガ」\n2) 砂球がフィールド内に出現し、範囲攻撃に当たると中ダメージとヘヴィをプレイヤーに付与する\n3)「メテオインパクト」ボスの現在位置からの距離減衰攻撃\n4)「オーラキャノン」直線範囲攻撃\n5)「バーニングレイヴ」対象中心の円範囲攻撃\n6)「ナックルプレス」ボス中心の円範囲攻撃\n7) 繰り返し</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>攻撃をあてると範囲スタンを発生させてすぐに死ぬ。</value>
   </data>
   <data name="4975" xml:space="preserve">
     <value>自身にヘイストを付与する</value>
@@ -605,7 +605,7 @@
     <value>ギミック解説: ギミックを失敗すると全体範囲攻撃が強化される。\nボスは時々病気を付与する\n1)「インヘルス」ボスの足元以外の全体範囲攻撃か、ボス中心の円範囲攻撃\n2)「狂気のまなざし」視線攻撃</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>攻撃をあてると範囲スタンを発生させてすぐに死ぬ。</value>
   </data>
   <data name="5046" xml:space="preserve">
     <value>形態変化に耐性がある</value>
@@ -689,10 +689,10 @@
     <value>大きな沼を発生させ、中に入るとペインが付与される。\n「ヴァルファズル」ターゲットに回避不可のノックバック直線範囲攻撃。沼を避けて吹き飛ぶようにする</value>
   </data>
   <data name="5321" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
+    <value>「ハイドレーション」 - 地面に残るAoE、その上にボスを乗せているとボスにヘイストがつく\n時折フィールドにAoEをキャストする</value>
   </data>
   <data name="5333" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
+    <value>「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。\nボスはフィールドの端に走り「トラウンス(扇形広範囲AoE))」を放つ\nAt 17% 長い詠唱「エクリプスメテオ」 総HPの80%のダメージを全体に与えつづける</value>
   </data>
   <data name="5334" xml:space="preserve">
     <value>時間内に倒されていない場合、全体攻撃の「自爆」をキャストします</value>
@@ -701,7 +701,7 @@
     <value>大きなAoEを放つ。\n「ペイニー・ボム」を召喚する。全体に大ダメージを与える前に殺さなければならない。\n長い詠唱「特大爆発」を開始し「ギディ・ボム」を召喚する。「ギディ・ボム」をボスの方へはじくと詠唱中断できる。</value>
   </data>
   <data name="5356" xml:space="preserve">
-    <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
+    <value>雑魚を召喚し、大きなAoEを放つ。雑魚はクリブ化の攻撃が有効</value>
   </data>
   <data name="5364" xml:space="preserve">
     <value>101-110F: \n特になし (脅威レベルを無視する)\nFloors 191-200: \n２連続AA</value>
@@ -821,7 +821,7 @@
     <value>二連続AA</value>
   </data>
   <data name="5449" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
+    <value>「ハイドレーション」－地面に残るAoE、その上にボスを乗せているとボスにヘイストと与ダメージ上昇がつく\n時折ヘヴィを与え、フィールドにAoEをキャストする </value>
   </data>
   <data name="5450" xml:space="preserve">
     <value>二連続AA</value>
@@ -857,7 +857,7 @@
     <value>ペイン(強) を付与する即時発動の範囲攻撃</value>
   </data>
   <data name="5465" xml:space="preserve">
-    <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
+    <value>無詠唱AoE、二連続AA\n戦闘開始から30秒ほどで引き寄せ、特大ダメージ</value>
   </data>
   <data name="5466" xml:space="preserve">
     <value>吸引攻撃と大ダメージ\n「テールスクリュー」はダメージとスロウを付与する。</value>
