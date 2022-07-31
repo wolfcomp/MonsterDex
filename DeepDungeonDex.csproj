@@ -47,6 +47,7 @@
     <None Remove="mobData.yml" />
     <None Remove="packages.lock.json" />
     <None Remove="README.md" />
+    <None Remove="test.toml" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -112,21 +113,4 @@
       <Generator></Generator>
     </EmbeddedResource>
   </ItemGroup>
-
-  <Target Name="CopyFilesTarget" AfterTargets="DefaultDalamudPackagerDebug" Condition="'$(Configuration)' == 'Debug'">
-    <Message Text="Copying files to devPlugins folder" Importance="High" />
-    <ItemGroup>
-      <_CopyItems Include="$(OutDir)*.*" />
-    </ItemGroup>
-    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(DalamudPluginPath)"></Copy>
-  </Target>
-
-  <Target Name="CopyFilesTarget" AfterTargets="DefaultDalamudPackagerRelease" Condition="'$(Configuration)' == 'Release'">
-    <Message Text="Copying files to devPlugins folder" Importance="High" />
-    <ItemGroup>
-      <_CopyItems Include="$(OutDir)*.*" />
-    </ItemGroup>
-    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(DalamudPluginPath)"></Copy>
-  </Target>
-
 </Project>
