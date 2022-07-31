@@ -68,6 +68,7 @@ jobs:
         cat manifest.toml
     - name: Commit and push
       run: |
+        cd repo
         echo "> Adding and committing"
         git add --all
         git commit --all -m "Updating ${{ env.PUBLIC_NAME }}"
