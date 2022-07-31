@@ -12,14 +12,14 @@ jobs:
     steps:
     - name: Setup
       run: |
-        apt-get clean
-        apt-get update
-        apt install -y -q curl gpg apt-transport-https jq
-        curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
-        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" > /etc/apt/sources.list.d/github-cli.list
-        apt-get update
-        apt-get install -y -q gh
-        rm -rf /var/lib/{apt,dpkg,cache,log}/
+        sudo apt-get clean
+        sudo apt-get update
+        sudo apt install -y -q curl gpg apt-transport-https jq
+        sudo curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+        sudo echo "sudo deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" > /etc/apt/sources.list.d/github-cli.list
+        sudo apt-get update
+        sudo apt-get install -y -q gh
+        sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
     - name: Setup git user
       run: |
         echo "> Logging into GitHub"
