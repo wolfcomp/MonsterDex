@@ -45,6 +45,10 @@ jobs:
           git push --set-upstream origin --force "${branch}"
         fi
         cd ..
+    - name: Delete Old
+      run: |
+        rm -rf repo/testing/${{ env.INTERNAL_NAME }}
+        rm -rf repo/stable/${{ env.INTERNAL_NAME }}
     - name: Create Toml Testing
       if: contains(github.event.head_commit.message, '[TEST]')
       run: |
