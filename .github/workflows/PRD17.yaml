@@ -54,7 +54,7 @@ jobs:
         fi
         cd ..
     - name: Create Toml Testing
-      if: contains(github.event.head_commit.message, '[TEST]'))
+      if: contains(github.event.head_commit.message, '[TEST]')
       run: |
         mkdir repo/testing/${{ env.INTERNAL_NAME }}
         cd repo/testing/${{ env.INTERNAL_NAME }}
