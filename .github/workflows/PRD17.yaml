@@ -8,6 +8,7 @@ env:
 jobs:
   pr:
     runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[PR]') || contains(github.event.head_commit.message, '[TEST]')
     steps:
     - name: Setup
       run: |
@@ -65,7 +66,7 @@ jobs:
         echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
         cat manifest.toml
     - name: Create Toml Release
-      if: contains(github.event.head_commit.message, '[PR]'))
+      if: contains(github.event.head_commit.message, '[PR]')
       run: |
         mkdir repo/stable/${{ env.INTERNAL_NAME }}
         cd repo/stable/${{ env.INTERNAL_NAME }}
@@ -83,7 +84,7 @@ jobs:
         echo "> Pushing to origin"
         git push --force --set-upstream origin "${{ env.PUBLIC_NAME }}"
     - name: PR Testing
-      if: contains(github.event.head_commit.message, '[TEST]'))
+      if: contains(github.event.head_commit.message, '[TEST]')
       run: |
         prRepo="goatcorp/DalamudPluginsD17"
         prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${{ env.INTERNAL_NAME }}\") | .number")
@@ -97,7 +98,7 @@ jobs:
           gh pr create --repo "${prRepo}" --head "${{ env.GITHUB_REPOSITORY_OWNER }}:${{ env.INTERNAL_NAME }}" --base "main" --title "${prTitle}" --body "${prBody}"
         fi
     - name: PR Release
-      if: contains(github.event.head_commit.message, '[PR]'))
+      if: contains(github.event.head_commit.message, '[PR]')
       run: |
         prRepo="goatcorp/DalamudPluginsD17"
         prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${{ env.INTERNAL_NAME }}\") | .number")
