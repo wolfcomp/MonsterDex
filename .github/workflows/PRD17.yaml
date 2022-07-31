@@ -1,0 +1,112 @@
+name: PRD17
+
+on: [push]
+
+env:
+  PUBLIC_NAME: DeepDungeonDex
+  INTERNAL_NAME: DeepDungeonDex
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup
+      run: |
+        apt-get clea
+        apt-get update
+        apt install -y -q curl gpg apt-transport-https jq
+        curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" > /etc/apt/sources.list.d/github-cli.list
+        apt-get update
+        apt-get install -y -q gh
+        rm -rf /var/lib/{apt,dpkg,cache,log}/
+    - name: Setup git user
+      run: |
+        echo "> Logging into GitHub"
+        echo "${{ secrets.PAT }}" | gh auth login --with-token
+        echo "> Configuring git user"
+        authorName=$(jq -r '.commits[0].author.name' "${GITHUB_EVENT_PATH}")
+        authorEmail=$(jq -r '.commits[0].author.email' "${GITHUB_EVENT_PATH}")
+        git config --global user.name "${authorName}"
+        git config --global user.email "${authorEmail}"
+    - name: Get Dalamud Plugins Repo
+      run: |
+        echo "> Setting up ${{ github.repository_owner }}/DalamudPluginsD17"
+        gh repo clone "${{ github.repository_owner }}/DalamudPluginsD17" repo
+        cd repo
+        git remote add pr_repo "https://github.com/goatcorp/DalamudPluginsD17.git"
+        git fetch pr_repo
+        git fetch origin
+        echo "> Adding token to origin push url"
+        originUrl=$(git config --get remote.origin.url | cut -d '/' -f 3-)
+        originUrl="https://${{ secrets.PAT }}@${originUrl}"
+        git config remote.origin.url "${originUrl}"
+        branch="${{ env.PUBLIC_NAME }}"
+        if git show-ref --quiet "refs/heads/${branch}"; then
+          echo "> Branch ${branch} already exists, reseting to master"
+          git checkout "${branch}"
+          git reset --hard "pr_repo/main"
+        else
+          echo "> Creating new branch ${branch}"
+          git reset --hard "pr_repo/main"
+          git branch "${branch}"
+          git checkout "${branch}"
+          git push --set-upstream origin --force "${branch}"
+        fi
+        cd ..
+      - name: Create Toml Testing
+        if: contains(github.event.head_commit.message, '[TEST]'))
+        run: |
+          mkdir repo/testing/${{ env.INTERNAL_NAME }}
+          cd repo/testing/${{ env.INTERNAL_NAME }}
+          echo "[plugin]" >> manifest.toml
+          echo "repository = \"${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}.git\"" >> manifest.toml
+          echo "owners = [ \"${{ env.GITHUB_REPOSITORY_OWNER }}\" ]" >> manifest.toml
+          echo "project_path = \"\"" >> manifest.toml
+          echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
+          cat manifest.toml
+      - name: Create Toml Release
+        if: contains(github.event.head_commit.message, '[PR]'))
+        run: |
+          mkdir repo/stable/${{ env.INTERNAL_NAME }}
+          cd repo/stable/${{ env.INTERNAL_NAME }}
+          echo "[plugin]" >> manifest.toml
+          echo "repository = \"${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}.git\"" >> manifest.toml
+          echo "owners = [ \"${{ env.GITHUB_REPOSITORY_OWNER }}\" ]" >> manifest.toml
+          echo "project_path = \"\"" >> manifest.toml
+          echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
+          cat manifest.toml
+      - name: Commit and push
+        run: |
+          echo "> Adding and committing"
+          git add --all
+          git commit --all -m "Updating ${{ env.PUBLIC_NAME }}"
+          echo "> Pushing to origin"
+          git push --force --set-upstream origin "${{ env.PUBLIC_NAME }}"
+      - name: PR Testing
+        if: contains(github.event.head_commit.message, '[TEST]'))
+        run: |
+          prRepo="goatcorp/DalamudPluginsD17"
+          prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${{ env.INTERNAL_NAME }}\") | .number")
+          prTitle="[Testing] ${{ env.PUBLIC_NAME }} version_number"
+          prBody="will be replaces with output from the action mathieudutour/github-tag-action"
+          if [ "${prNumber}" ]; then
+            echo "> Editing existing PR"
+            gh api "repos/${prRepo}/pulls/${prNumber}" --silent --method PATCH -f "title=${prTitle}" -f "body=${prBody}" -f "state=open"
+          else
+            echo "> Creating PR"
+            gh pr create --repo "${prRepo}" --head "${{ env.GITHUB_REPOSITORY_OWNER }}:${{ env.INTERNAL_NAME }}" --base "main" --title "${prTitle}" --body "${prBody}"
+          fi
+      - name: PR Release
+        if: contains(github.event.head_commit.message, '[PR]'))
+        run: |
+          prRepo="goatcorp/DalamudPluginsD17"
+          prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${{ env.INTERNAL_NAME }}\") | .number")
+          prTitle="${{ env.PUBLIC_NAME }} version_number"
+          prBody="will be replaces with output from the action mathieudutour/github-tag-action"
+          if [ "${prNumber}" ]; then
+            echo "> Editing existing PR"
+            gh api "repos/${prRepo}/pulls/${prNumber}" --silent --method PATCH -f "title=${prTitle}" -f "body=${prBody}" -f "state=open"
+          else
+            echo "> Creating PR"
+            gh pr create --repo "${prRepo}" --head "${{ env.GITHUB_REPOSITORY_OWNER }}:${{ env.INTERNAL_NAME }}" --base "main" --title "${prTitle}" --body "${prBody}"
+          fi
