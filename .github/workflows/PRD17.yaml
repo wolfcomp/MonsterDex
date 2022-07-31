@@ -5,6 +5,7 @@ on: [push]
 env:
   PUBLIC_NAME: DeepDungeonDex
   INTERNAL_NAME: DeepDungeonDex
+  GITHUB_REPOSITORY_OWNER: $GITHUB_REPOSITORY_OWNER
 jobs:
   pr:
     runs-on: ubuntu-latest
