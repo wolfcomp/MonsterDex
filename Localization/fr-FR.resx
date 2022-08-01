@@ -865,7 +865,7 @@
     <value>AoE instantanée explosant infligeant de lourds dégâts ainsi que Lenteur\nCône instantanée infligeant Poison</value>
   </data>
   <data name="5470" xml:space="preserve">
-    <value>Peut être engagé si familier avec les mécaniques de la chimère\n"Voix du Dragon" - être dans la hitbox \n"Voix du Bélier" - être hors de portée de mélée</value>
+    <value>Peut être engagé si vous connaissez les mécaniques de la chimère\n"Voix du Dragon" - être dans la hitbox \n"Voix du Bélier" - être hors de portée de mêlée</value>
   </data>
   <data name="5471" xml:space="preserve">
     <value>Tuez le bombo bleu lorsqu'elle apparait\nPoussez le bombo rouge sur le boss lors de son cast "Énorme Explosion", qui wipera l'équipe si non interrompu\nLe boss a un cleave qui inflige de lourds dégâts</value>
