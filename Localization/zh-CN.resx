@@ -127,13 +127,13 @@
     <value>Boss</value>
   </data>
   <data name="Caution" xml:space="preserve">
-    <value>Caution</value>
+    <value>注意</value>
   </data>
   <data name="Dangerous" xml:space="preserve">
-    <value>Dangerous</value>
+    <value>危险</value>
   </data>
   <data name="Easy" xml:space="preserve">
-    <value>Easy</value>
+    <value>简单</value>
   </data>
   <data name="Heavy" xml:space="preserve">
     <value>Heavy</value>
@@ -145,28 +145,28 @@
     <value>Hide vulnerabilities that can't be inflicted</value>
   </data>
   <data name="IsClickthrough" xml:space="preserve">
-    <value>Enable clickthrough</value>
+    <value>启用鼠标穿透</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>名称</value>
   </data>
   <data name="NoDataFound" xml:space="preserve">
     <value>No data found for {0} ({1})</value>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>说明</value>
   </data>
   <data name="Opacity" xml:space="preserve">
-    <value>Opacity</value>
+    <value>不透明度</value>
   </data>
   <data name="Proximity" xml:space="preserve">
-    <value>Proximity</value>
+    <value>范围感知</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>保存</value>
   </data>
   <data name="Sight" xml:space="preserve">
-    <value>Sight</value>
+    <value>视野感知</value>
   </data>
   <data name="Sleep" xml:space="preserve">
     <value>Sleep</value>
@@ -181,7 +181,7 @@
     <value>Stun</value>
   </data>
   <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
+    <value>感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！</value>
   </data>
   <data name="Threat" xml:space="preserve">
     <value>Threat</value>
@@ -199,127 +199,127 @@
     <value>Vulns</value>
   </data>
   <data name="7262" xml:space="preserve">
-    <value>Auto inflicts Heavy debuff</value>
+    <value>给一仇附加可驱散的加重Debuff</value>
   </data>
   <data name="7263" xml:space="preserve">
-    <value>Auto applies Physical Vuln Up every 10s</value>
+    <value>给一仇附加物理易伤10秒</value>
   </data>
   <data name="7264" xml:space="preserve">
-    <value>AoE applies Paralysis</value>
+    <value>读条圆形可见范围AoE</value>
   </data>
   <data name="7265" xml:space="preserve">
-    <value>Triple auto inflicts Bleed</value>
+    <value>给一仇附加可驱散的中毒Dot</value>
   </data>
   <data name="7266" xml:space="preserve">
-    <value>Untelegraphed Sleep followed by AoE</value>
+    <value>读条扇形不可见睡眠AoE\n读条可见扇形AoE</value>
   </data>
   <data name="7267" xml:space="preserve">
-    <value>AoE applies Bleed</value>
+    <value>读条扇形可见AoE</value>
   </data>
   <data name="7268" xml:space="preserve">
-    <value>Gaze</value>
+    <value>石化背对</value>
   </data>
   <data name="7270" xml:space="preserve">
-    <value>AoE inflicts knockback</value>
+    <value>读条可见击退AoE</value>
   </data>
   <data name="7271" xml:space="preserve">
-    <value>Conal AoE inflicts Bleed\nCircle AoE inflicts knockback</value>
+    <value>读条扇形\n/圆形可见AoE</value>
   </data>
   <data name="7272" xml:space="preserve">
-    <value>Unavoidable tankbuster-like "Jaws"</value>
+    <value>读条对随机一人释放单体大伤害攻击</value>
   </data>
   <data name="7273" xml:space="preserve">
-    <value>Untelegraphed buster inflicts Bleed and knockback</value>
+    <value>读条对随机一人释放单体大伤害攻击</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
+    <value>无读条对一仇释放三连伤害\n读条可见圆形AoE</value>
   </data>
   <data name="7281" xml:space="preserve">
-    <value>Gaze inflicts Seduce, followed by large AoE that inflicts Minimum</value>
+    <value>读条背对\n读条圆形可见范围AoE</value>
   </data>
   <data name="7285" xml:space="preserve">
-    <value>Buster and triple auto</value>
+    <value>读条圆形可见范围AoE</value>
   </data>
   <data name="7286" xml:space="preserve">
-    <value>Room wide ENRAGE</value>
+    <value>无读条对一仇释放大扇形Aoe</value>
   </data>
   <data name="7288" xml:space="preserve">
-    <value>Gaze inflicts Blind</value>
+    <value>读条对一仇单体伤害+背对</value>
   </data>
   <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
+    <value>读条回血技能，可打断</value>
   </data>
   <data name="7290" xml:space="preserve">
-    <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
+    <value>读条释放直线/圆形AoE</value>
   </data>
   <data name="7291" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
   </data>
   <data name="7292" xml:space="preserve">
-    <value>Untelegraphed conal AoE with knockback, buster</value>
+    <value>读条对前方释放不可见范围的击退扇形Aoe\n读条点名一人释放单体大伤害攻击</value>
   </data>
   <data name="7295" xml:space="preserve">
-    <value>Draw-in followed by cleave</value>
+    <value>读条点名随机1人释放吸引攻击将其吸引到自己脚下，然后对其释放扇形Aoe（可通过卡墙回避）</value>
   </data>
   <data name="7296" xml:space="preserve">
-    <value>Gaze</value>
+    <value>石化背对</value>
   </data>
   <data name="7297" xml:space="preserve">
-    <value>Line AoE inflicts Bleed</value>
+    <value>读条释放可见范围的直线Aoe</value>
   </data>
   <data name="7298" xml:space="preserve">
-    <value>Cross AoE inflicts Suppuration</value>
+    <value>读条释放可见范围的十字Aoe（附加生命最大值下降Debuff）\n读条释放可见范围的圆形Aoe</value>
   </data>
   <data name="7299" xml:space="preserve">
-    <value>Large AoE inflicts Paralysis</value>
+    <value>读条释放超大范围的强麻痹（可打断）</value>
   </data>
   <data name="7300" xml:space="preserve">
-    <value>Circle AoE inflicts Suppuration</value>
+    <value>读条释放可见范围的圆形Aoe</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
+    <value>无读条对一仇释放单体伤害并附加可驱散的流血DoT\n读条可见扇形AoE</value>
   </data>
   <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
+    <value>低血量时，读条全屏范围的超高伤害的自爆技能“切腹”</value>
   </data>
   <data name="7305" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>读条可见直线AoE\n全屏范围的超高伤害的自爆技能“切腹”</value>
   </data>
   <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
+    <value>对一仇无读条释放单体伤害</value>
   </data>
   <data name="7308" xml:space="preserve">
-    <value>Weak stack attack</value>
+    <value>读条释放需要分摊的中等伤害Aoe</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
+    <value>读条可见范围的超大范围圆形Aoe</value>
   </data>
   <data name="7311" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>读条可见直线AoE\n全屏范围的超高伤害的自爆技能“切腹”</value>
   </data>
   <data name="7312" xml:space="preserve">
-    <value>Frontal cleave without cast or telegraph</value>
+    <value>无读条对前方发动不可见范围的连续扇形Aoe（看到抬起爪子远离正面）</value>
   </data>
   <data name="7313" xml:space="preserve">
-    <value>Gaze inflicts Otter</value>
+    <value>形变背对\n平A为扇形攻击</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
+    <value>读条可见范围的直线Aoe</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
   </data>
   <data name="7320" xml:space="preserve">
-    <value>Purple: double auto</value>
+    <value>读条一仇单体伤害\n读条释放可见范围的圆形Aoe</value>
   </data>
   <data name="7321" xml:space="preserve">
-    <value>Large cone AoE</value>
+    <value>读条释放可见范围的扇形Aoe</value>
   </data>
   <data name="7323" xml:space="preserve">
     <value>Green: Casts AoEs unaggroed</value>
@@ -337,7 +337,7 @@
     <value>Buster inflicts Bleed</value>
   </data>
   <data name="7329" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
   </data>
   <data name="7330" xml:space="preserve">
     <value>Eventual instant ENRAGE</value>
@@ -403,7 +403,7 @@
     <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
   </data>
   <data name="7358" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
   </data>
   <data name="7359" xml:space="preserve">
     <value>Haste, eventual ENRAGE</value>
@@ -433,7 +433,7 @@
     <value>Untelegraphed conal AoE on random player, gaze attack</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
   </data>
   <data name="7370" xml:space="preserve">
     <value>Double autos, very strong rear cleave if behind</value>
@@ -442,103 +442,103 @@
     <value>Alternates line and circle AoEs untelegraphed</value>
   </data>
   <data name="7372" xml:space="preserve">
-    <value>Buffs own damage and double autos</value>
+    <value>读条释放可见范围的圆形Aoe“平地捶打”\n不断对一仇瞬发高伤害平A</value>
   </data>
   <data name="7373" xml:space="preserve">
-    <value>Draw-in attack, tons of bleed, and a stacking poison</value>
+    <value>每隔几秒就会读条释放一次附加可叠加流血Dot的全屏Aoe“古菩的悲伤”，Dot很疼，可驱散\n读条可见圆形AoE\n无读条随机向一人方向释放扇形吸引，并马上释放可见范围扇形Aoe</value>
   </data>
   <data name="7374" xml:space="preserve">
-    <value>Large doughnut AoE</value>
+    <value>无读条释放全屏附加易伤的AoE“鲜血之月”\n读条释放可见范围环形/扇形Aoe，建议靠近打</value>
   </data>
   <data name="7375" xml:space="preserve">
-    <value>Cone AoE, circle AoE, party wide damage</value>
+    <value>对建立仇恨者瞬发冲锋技能\n读条可见扇形Aoe“掀地”\n读条超大范围圆形Aoe“吼叫”\n软狂暴：十连全屏大伤害Aoe“遁地</value>
   </data>
   <data name="7376" xml:space="preserve">
-    <value>Charges, buffs own damage, double autos, electricity Bleed</value>
+    <value>建立仇恨立刻释放单体伤害‘躯体冲撞'，附加15秒可驱散流血Dot\n读条释放有范围提示的扇形Aoe“缺氧吐息”\n读条点名一人释放非常疼的4连圆形Aoe“震雷”，带感电Dot</value>
   </data>
   <data name="7377" xml:space="preserve">
-    <value>Charges, buffs own damage, untelegraphed buster "Ripper Claw"</value>
+    <value>无读条对开怪者释放直线攻击“狂野冲锋”\n读条对前方释放无范围提示扇形Aoe“撕裂利爪”\n读条释放可见范围的圆形Aoe</value>
   </data>
   <data name="7378" xml:space="preserve">
-    <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
+    <value>无读条对一仇释放单体高伤害技能”寒风斧“/'裂石暴环'\n无读条对一仇连续连续使用3次附加击退效果的冲锋技能”猛突进“，MT建议靠墙打</value>
   </data>
   <data name="7379" xml:space="preserve">
-    <value>MNK: Haste buff, short invuln</value>
+    <value>读条'步法'给自身附加加速buff，可打断\n读条“飘羽步”强化自身回避率6s，可被打断\n无读条对一仇附加流血Dot并释放三连攻击</value>
   </data>
   <data name="7380" xml:space="preserve">
-    <value>WHM: double autos\n"Stone" can be line of sighted</value>
+    <value>读条对一仇释放单体攻击“飞石”\n读条“救疗”为其他敌人恢复体力并增强防御，可打断</value>
   </data>
   <data name="7381" xml:space="preserve">
-    <value>Cleave\nLarge line AoE that can be line of sighted</value>
+    <value>平A为正面扇形范围，请注意面向\n读条点名随机一人释放可见范围直线冲锋Aoe</value>
   </data>
   <data name="7382" xml:space="preserve">
-    <value>"Charybdis" AoE that leaves tornadoes on random players</value>
+    <value>无读条对随机1人位置释放没有范围提示的圆形Aoe\n读条对随机1人释放可见范围的圆形Aoe'大漩涡'</value>
   </data>
   <data name="7384" xml:space="preserve">
-    <value>Casts targeted AoEs unaggroed, buffs own defense</value>
+    <value>无论是否有仇恨，读条可见范围的附带割伤DoT的圆形Aoe狂风Gust\n读条对自身附加强化防御Debuff</value>
   </data>
   <data name="7385" xml:space="preserve">
-    <value>Targeted AoEs, cleaves</value>
+    <value>读条释放可见范围的圆形AOE“虚无陷阱”\n 无读条对一仇释放没有范围提示的扇形Aoe虚无斩</value>
   </data>
   <data name="7386" xml:space="preserve">
-    <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
+    <value>读条释放非常快的直线Aoe“葬送击”，必须提前躲避</value>
   </data>
   <data name="7387" xml:space="preserve">
-    <value>Deals heavy damage to random players</value>
+    <value>读条释放可见范围的扇形Aoe”深渊回转“\n无读条随机对一人释放单体大伤害攻击</value>
   </data>
   <data name="7388" xml:space="preserve">
-    <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
+    <value>无读条对建立仇恨者瞬发高伤害直线冲锋\n无读条对一仇方向释放无范围提示扇形Aoe“十六吨横扫”\n读条释放无范围提示超大扇形Aoe“三十二吨横扫”\n读条释放没有范围提示的以自身为圆心的圆形Aoe“百二十八吨回转”</value>
   </data>
   <data name="7389" xml:space="preserve">
-    <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
+    <value>无读条对一仇释放没有范围提示的扇形Aoe\n读条释放有范围提示的圆形Aoe'浓云密布'\n注意：会不断对自己使用无读条的“巨大化”强化自身伤害，请务必尽快击杀。</value>
   </data>
   <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
+    <value>背对恐惧\n无读条对一仇释放单体攻击\n会不断强化自身伤害\n读条释放可见范围的大范围圆形超高威力Aoe'亚拉戈陨石'</value>
   </data>
   <data name="7391" xml:space="preserve">
-    <value>Double autos, cone AoE inflicts Sleep</value>
+    <value>二连顺劈，带睡眠buff的锥形Aoe</value>
   </data>
   <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
+    <value>背对恐惧\n无读条对一仇造成单体伤害\n读条释放可见范围的大范围圆形超高威力Aoe“亚拉戈陨石”\n注意：怪物会不断提高自身攻击力，请尽快击杀。</value>
   </data>
   <data name="7392" xml:space="preserve">
-    <value>Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/knockback/witching/\ninterject</value>
+    <value>1-30层: 仅限铜箱子\n会释放高伤害单体攻击以及小范围即死AoE\n诅咒可被打断</value>
   </data>
   <data name="7393" xml:space="preserve">
-    <value>Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/interject</value>
+    <value>31-60层: 仅限银箱子\n会释放高伤害单体攻击以及小范围即死AoE\n诅咒可被打断</value>
   </data>
   <data name="7394" xml:space="preserve">
-    <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
+    <value>61+层: 仅限金箱子\n会释放高伤害单体攻击以及小范围即死AoE\n诅咒只能被'插言'打断</value>
   </data>
   <data name="7478" xml:space="preserve">
-    <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
+    <value>出啥躲啥, 当读条全屏AoE“踏脚”时，去场边雷云底下处理机制，亦可在读条时直接砸魔石处理（仅限21-30练级用）</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
+    <value>出啥躲啥</value>
   </data>
   <data name="7481" xml:space="preserve">
-    <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
+    <value>出啥躲啥，注意背对，boss会在场外召唤若干小怪并引爆，站在中间处理</value>
   </data>
   <data name="7483" xml:space="preserve">
-    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
+    <value>出啥躲啥，风团出现后提前观察风团位置，读条全屏击退攻击”古代暴风“时注意不要被击退到风团区域</value>
   </data>
   <data name="7485" xml:space="preserve">
-    <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
+    <value>1. 无读条对前方释放无范围扇形AoE，看见Boss举起手就离开前方\n2. 无读条对随机角色放出直线Aoe，看见Boss举起手就离开前方\n3. 注意背对恐惧\n4. 当Boss放置黑球时，观察黑球位置，往没有黑球的区域远离boss即可</value>
   </data>
   <data name="7487" xml:space="preserve">
-    <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
+    <value>走位回避各种Aoe，奶妈注意在读条”古代核爆“时抬血"</value>
   </data>
   <data name="7489" xml:space="preserve">
-    <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
+    <value>1. 读条释放前方的不可见范围扇形Aoe”猎食爪“\n2. 读条释放圆形Aoe'唾液飞溅'\n3. 点名随机1人读条释放'缩小球'并形成一个圆形区域。\n4. 读条全屏Aoe'狂吠'\n5. 读条点名随机1人释放可见范围的直线冲锋攻击'地狱冲', 请被点名者立刻进入圆形区域中缩小回避，回避后也要迅速离开圆形区域。</value>
   </data>
   <data name="7490" xml:space="preserve">
-    <value>1) Summons balls of ice\n2) Summons icicle that pierces through room, detonating any ice balls it hits\n3) "Lunar Cry" detonates remaining ice balls\n4) Exploding ice balls inflict Deep Freeze if they hit a player\n5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)</value>
+    <value>出啥躲啥，当冰块出现时走位回避直线aoe并始终远离冰块</value>
   </data>
   <data name="7493" xml:space="preserve">
-    <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
+    <value>出啥躲啥，读条全屏大伤害AoE“古代爆震”时请务必注意恢复\n沙球出现后会不断释放不可见范围的圆形Aoe，附带加重，一旦沙球出现立刻远离，如果坦克吃到了加重debuff请务必驱散"</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>白给</value>
   </data>
   <data name="4975" xml:space="preserve">
     <value>Casts Haste on itself</value>
@@ -571,7 +571,7 @@
     <value>Area of effect Slow</value>
   </data>
   <data name="4996" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
   </data>
   <data name="4997" xml:space="preserve">
     <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
@@ -604,7 +604,7 @@
     <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>白给</value>
   </data>
   <data name="5046" xml:space="preserve">
     <value>Immune to Pomander of Witching</value>
@@ -736,7 +736,7 @@
     <value>Will inflict Sleep before casting "Bad Breath"</value>
   </data>
   <data name="5381" xml:space="preserve">
-    <value>Buffs own damage</value>
+    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
   </data>
   <data name="5382" xml:space="preserve">
     <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
