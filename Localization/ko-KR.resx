@@ -331,7 +331,7 @@
     <value>Eventual ENRAGE</value>
   </data>
   <data name="7327" xml:space="preserve">
-    <value>Autos inflict stacking vuln up</value>
+    <value>받는 피해 상승 디버프를 중첩시키는 공격을 함</value>
   </data>
   <data name="7328" xml:space="preserve">
     <value>출혈 디버프를 부여하는 강공격을 함</value>
