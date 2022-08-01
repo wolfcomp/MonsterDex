@@ -430,7 +430,7 @@
     <value>Charge quand aggro</value>
   </data>
   <data name="7368" xml:space="preserve">
-    <value>AoE en cône non télégraphiée sur un joueur aléatoire, attaque type "regard"</value>
+    <value>AoE en cône non télégraphiée sur un joueur aléatoire, attaque type "Regard"</value>
   </data>
   <data name="7369" xml:space="preserve">
     <value>Cast des AoE sans être aggro</value>
@@ -487,7 +487,7 @@
     <value>Inflige de lourds dégâts à des joueurs aléatoires</value>
   </data>
   <data name="7388" xml:space="preserve">
-    <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
+    <value>Charge\nAoE linéaire non télégraphiée "Fauche"\nLarge AoE circulaire non télégraphiée "Swing"</value>
   </data>
   <data name="7389" xml:space="preserve">
     <value>Cleaves répétitifs causant de gros dégâts, vol de vie, buff ses propres dégâts, à trois stacks de dégâts augmentés cast ENRAGE "Nébuleuse noire"</value>
