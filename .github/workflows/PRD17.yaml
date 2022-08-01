@@ -64,18 +64,20 @@ jobs:
         echo "project_path = \"\"" >> manifest.toml
         echo "commit = \"${{ env.GITHUB_SHA }}\"" >> manifest.toml
         echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
+        echo "version = \"1.7.0\"" >> manifest.toml
         cat manifest.toml
     - name: Create Toml Release
       if: contains(github.event.head_commit.message, '[PR]')
       run: |
-        mkdir repo/stable/live/${{ env.INTERNAL_NAME }}
-        cd repo/stable/live/${{ env.INTERNAL_NAME }}
+        mkdir repo/stable/${{ env.INTERNAL_NAME }}
+        cd repo/stable/${{ env.INTERNAL_NAME }}
         echo "[plugin]" >> manifest.toml
         echo "repository = \"${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}.git\"" >> manifest.toml
         echo "owners = [ \"${{ env.GITHUB_REPOSITORY_OWNER }}\" ]" >> manifest.toml
         echo "project_path = \"\"" >> manifest.toml
         echo "commit = \"${{ env.GITHUB_SHA }}\"" >> manifest.toml
         echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
+        echo "version = \"1.7.0\"" >> manifest.toml
         cat manifest.toml
     - name: Commit and push
       run: |
