@@ -289,7 +289,7 @@
     <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
   </data>
   <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
+    <value>평타와 부채꼴 범위 공격을 번갈아서 함</value>
   </data>
   <data name="7308" xml:space="preserve">
     <value>받는 데미지 증가 디버프를 중첩시키는 공격을 함</value>
