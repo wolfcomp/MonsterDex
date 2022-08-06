@@ -3,7 +3,7 @@ rm -rf repo/stable/${INTERNAL_NAME}
 rm -rf repo/testing/live/${INTERNAL_NAME}
 rm -rf repo/testing/net6/${INTERNAL_NAME}
 echo "> Making new"
-if [ ${MESSAGE} =~ .*"[TEST]".* ]; then
+if [[ ${MESSAGE} =~ .*"[TEST]".* ]]; then
     mkdir repo/testing/net6/${INTERNAL_NAME}
     cd repo/testing/net6/${INTERNAL_NAME}
 else
@@ -12,7 +12,7 @@ else
 fi
 echo "[plugin]" >>manifest.toml
 echo "repository = \"${URL}.git\"" >>manifest.toml
-echo "owners = [ \"${GITHUB_REPOSITORY_OWNER}\" ]" >>manifest.toml
+echo "owners = [ \"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}\" ]" >>manifest.toml
 echo "project_path = \"\"" >>manifest.toml
 echo "commit = \"${GITHUB_SHA}\"" >>manifest.toml
 echo "changelog = \"${CHANGELOG}\"" >>manifest.toml
