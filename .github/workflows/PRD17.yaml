@@ -48,4 +48,4 @@ jobs:
         env: 
           VERSION: ${{ steps.version.outputs.new_version }}
           MESSAGE: "${{ github.event.head_commit.message }}"
-          CHANGELOG: "${{ steps.clean.clean.replaced }}"
+          CHANGELOG: "${{ steps.clean.outputs.replaced }}"
