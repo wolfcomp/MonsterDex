@@ -1,21 +1,21 @@
 echo "> Deleting old"
-rm -rf repo/stable/${ env.INTERNAL_NAME }
-rm -rf repo/testing/live/${ env.INTERNAL_NAME }
-rm -rf repo/testing/net6/${ env.INTERNAL_NAME }
+rm -rf repo/stable/$1
+rm -rf repo/testing/live/$1
+rm -rf repo/testing/net6/$1
 echo "> Making new"
-if [ ${ github.event.head_commit.message } == *[TEST]*]; then
-    mkdir repo/testing/net6/${ env.INTERNAL_NAME }
-    cd repo/testing/net6/${ env.INTERNAL_NAME }
+if [ $2 == *[TEST]*]; then
+    mkdir repo/testing/net6/$1
+    cd repo/testing/net6/$1
 else
-    mkdir repo/stable/${ env.INTERNAL_NAME }
-    cd repo/stable/${ env.INTERNAL_NAME }
+    mkdir repo/stable/$1
+    cd repo/stable/$1
 fi
-echo "[plugin]" >> manifest.toml
-echo "repository = \"${ env.GITHUB_SERVER_URL }/${ env.GITHUB_REPOSITORY }.git\"" >> manifest.toml
-echo "owners = [ \"${ env.GITHUB_REPOSITORY_OWNER }\" ]" >> manifest.toml
-echo "project_path = \"\"" >> manifest.toml
-echo "commit = \"${ env.GITHUB_SHA }\"" >> manifest.toml
-echo "changelog = \"${ steps.version.clean.replaced }\"" >> manifest.toml
-echo "version = \"${ steps.version.outputs.new_version }\"" >> manifest.toml
+echo "[plugin]" >>manifest.toml
+echo "repository = \"$3.git\"" >>manifest.toml
+echo "owners = [ \"$4\" ]" >>manifest.toml
+echo "project_path = \"\"" >>manifest.toml
+echo "commit = \"$5\"" >>manifest.toml
+echo "changelog = \"$6\"" >>manifest.toml
+echo "version = \"$7\"" >>manifest.toml
 echo "> Done"
 cat manifest.toml
