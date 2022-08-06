@@ -42,7 +42,7 @@ jobs:
         run: scripts/setupToml.sh
         env:
           MESSAGE: ${{ github.event.head_commit.message }}
-          CHANGELOG: ${{ steps.clean.outputs.replaced }}
+          CHANGELOG: toJSON(${{ steps.clean.outputs.replaced }})
           VERSION: ${{ steps.version.outputs.new_version }}
       - name: Commit, push, and PR
         run: scripts/gitPushPr.sh 
