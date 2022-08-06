@@ -15,7 +15,7 @@ echo "repository = \"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git\"" >>manifest
 echo "owners = [ \"${GITHUB_REPOSITORY_OWNER}\" ]" >>manifest.toml
 echo "project_path = \"\"" >>manifest.toml
 echo "commit = \"${GITHUB_SHA}\"" >>manifest.toml
-echo "changelog = \"${CHANGELOG}\"" >>manifest.toml
+echo "changelog = ${CHANGELOG}" >>manifest.toml
 echo "version = \"${VERSION}\"" >>manifest.toml
 echo "> Done"
 cat manifest.toml
