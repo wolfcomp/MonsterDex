@@ -38,6 +38,15 @@ jobs:
       - name: Get Dalamud Plugins Repo
         run: scripts/dalamudRepo.sh ${{ secrets.PAT }} ${{ github.repository_owner }} ${{ env.PUBLIC_NAME }}
       - name: Create Toml
-        run: scripts/setupToml.sh ${{ env.INTERNAL_NAME }} "${{ github.event.head_commit.message }}" "${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}" ${{ env.GITHUB_REPOSITORY_OWNER }} ${{ env.GITHUB_SHA }} ${{ steps.version.clean.replaced }} ${{ steps.version.outputs.new_version }}
+        run: scripts/setupToml.sh
+        env:
+          MESSAGE: ${{ github.event.head_commit.message }}
+          URL: "${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}"
+          CHANGELOG: ${{ steps.version.clean.replaced }}
+          VERSION: ${{ steps.version.outputs.new_version }}
       - name: Commit, push, and PR
-        run: scripts/gitPushPr.sh ${{ env.PUBLIC_NAME }} ${{ env.INTERNAL_NAME }} ${{ steps.version.outputs.new_version }} "${{ github.event.head_commit.message }}" ${{ env.GITHUB_REPOSITORY_OWNER }} "${{ steps.version.clean.replaced }}"
+        run: scripts/gitPushPr.sh 
+        env: 
+          VERSION: ${{ steps.version.outputs.new_version }}
+          MESSAGE: "${{ github.event.head_commit.message }}"
+          CHANGELOG: "${{ steps.clean.clean.replaced }}"
