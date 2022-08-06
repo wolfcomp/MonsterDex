@@ -1,6 +1,9 @@
 name: PRD17
 
-on: [push]
+on: 
+  push:
+    branches:
+      - master
 
 env:
   PUBLIC_NAME: DeepDungeonDex
@@ -14,106 +17,23 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, '[PR]') || contains(github.event.head_commit.message, '[TEST]')
     steps:
+    - name: Bump version and push tag
+      id: version
+      uses: mathieudutour/github-tag-action@v6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Clean string
+      id: clean
+      uses: frabert/replace-string-action@v2.0
+      with:
+        pattern: '(\[)|(\][\w\d.\]\(:\/]+\))'
+        string: ${{ steps.version.outputs.changelog }}
+        replace-with: ''
     - name: Setup git user
-      run: |
-        echo "> Logging into GitHub"
-        echo "${{ secrets.PAT }}" | gh auth login --with-token
-        echo "> Configuring git user"
-        authorName=$(jq -r '.commits[0].author.name' "${GITHUB_EVENT_PATH}")
-        authorEmail=$(jq -r '.commits[0].author.email' "${GITHUB_EVENT_PATH}")
-        git config --global user.name "${authorName}"
-        git config --global user.email "${authorEmail}"
+      run: scripts/setup.sh
     - name: Get Dalamud Plugins Repo
-      run: |
-        echo "> Setting up ${{ github.repository_owner }}/DalamudPluginsD17"
-        gh repo clone "${{ github.repository_owner }}/DalamudPluginsD17" repo
-        cd repo
-        git remote add pr_repo "https://github.com/goatcorp/DalamudPluginsD17.git"
-        git fetch pr_repo
-        git fetch origin
-        echo "> Adding token to origin push url"
-        originUrl=$(git config --get remote.origin.url | cut -d '/' -f 3-)
-        originUrl="https://${{ secrets.PAT }}@${originUrl}"
-        git config remote.origin.url "${originUrl}"
-        branch="${{ env.PUBLIC_NAME }}"
-        if git show-ref --quiet "refs/heads/${branch}"; then
-          echo "> Branch ${branch} already exists, reseting to master"
-          git checkout "${branch}"
-          git reset --hard "pr_repo/main"
-        else
-          echo "> Creating new branch ${branch}"
-          git reset --hard "pr_repo/main"
-          git branch "${branch}"
-          git checkout "${branch}"
-          git push --set-upstream origin --force "${branch}"
-        fi
-        cd ..
-    - name: Delete Old
-      run: |
-        rm -rf repo/testing/${{ env.INTERNAL_NAME }}
-        rm -rf repo/stable/${{ env.INTERNAL_NAME }}
-        rm -rf repo/testing/live/${{ env.INTERNAL_NAME }}
-    - name: Create Toml Testing
-      if: contains(github.event.head_commit.message, '[TEST]')
-      run: |
-        mkdir repo/testing/live/${{ env.INTERNAL_NAME }}
-        cd repo/testing/live/${{ env.INTERNAL_NAME }}
-        echo "[plugin]" >> manifest.toml
-        echo "repository = \"${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}.git\"" >> manifest.toml
-        echo "owners = [ \"${{ env.GITHUB_REPOSITORY_OWNER }}\" ]" >> manifest.toml
-        echo "project_path = \"\"" >> manifest.toml
-        echo "commit = \"${{ env.GITHUB_SHA }}\"" >> manifest.toml
-        echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
-        echo "version = \"1.7.0\"" >> manifest.toml
-        cat manifest.toml
-    - name: Create Toml Release
-      if: contains(github.event.head_commit.message, '[PR]')
-      run: |
-        mkdir repo/stable/${{ env.INTERNAL_NAME }}
-        cd repo/stable/${{ env.INTERNAL_NAME }}
-        echo "[plugin]" >> manifest.toml
-        echo "repository = \"${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}.git\"" >> manifest.toml
-        echo "owners = [ \"${{ env.GITHUB_REPOSITORY_OWNER }}\" ]" >> manifest.toml
-        echo "project_path = \"\"" >> manifest.toml
-        echo "commit = \"${{ env.GITHUB_SHA }}\"" >> manifest.toml
-        echo "changelog = \"just a test for now will be replaced with output from the action mathieudutour/github-tag-action\"" >> manifest.toml
-        echo "version = \"1.7.0\"" >> manifest.toml
-        cat manifest.toml
-    - name: Commit and push
-      run: |
-        cd repo
-        echo "> Adding and committing"
-        git add --all
-        git commit --all -m "Updating ${{ env.PUBLIC_NAME }}"
-        echo "> Pushing to origin"
-        git push --force --set-upstream origin "${{ env.PUBLIC_NAME }}"
-    - name: PR Testing
-      if: contains(github.event.head_commit.message, '[TEST]')
-      run: |
-        cd repo
-        prRepo="goatcorp/DalamudPluginsD17"
-        prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${{ env.INTERNAL_NAME }}\") | .number")
-        prTitle="[Testing] ${{ env.PUBLIC_NAME }} version_number"
-        prBody="will be replaces with output from the action mathieudutour/github-tag-action"
-        if [ "${prNumber}" ]; then
-          echo "> Editing existing PR"
-          gh api "repos/${prRepo}/pulls/${prNumber}" --silent --method PATCH -f "title=${prTitle}" -f "body=${prBody}" -f "state=open"
-        else
-          echo "> Creating PR"
-          gh pr create --repo "${prRepo}" --head "${{ env.GITHUB_REPOSITORY_OWNER }}:${{ env.INTERNAL_NAME }}" --base "main" --title "${prTitle}" --body "${prBody}"
-        fi
-    - name: PR Release
-      if: contains(github.event.head_commit.message, '[PR]')
-      run: |
-        cd repo
-        prRepo="goatcorp/DalamudPluginsD17"
-        prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${{ env.INTERNAL_NAME }}\") | .number")
-        prTitle="${{ env.PUBLIC_NAME }} version_number"
-        prBody="will be replaces with output from the action mathieudutour/github-tag-action"
-        if [ "${prNumber}" ]; then
-          echo "> Editing existing PR"
-          gh api "repos/${prRepo}/pulls/${prNumber}" --silent --method PATCH -f "title=${prTitle}" -f "body=${prBody}" -f "state=open"
-        else
-          echo "> Creating PR"
-          gh pr create --repo "${prRepo}" --head "${{ env.GITHUB_REPOSITORY_OWNER }}:${{ env.INTERNAL_NAME }}" --base "main" --title "${prTitle}" --body "${prBody}"
-        fi
+      run: scripts/dalamudRepo.sh
+    - name: Create Toml
+      run: scripts/setupToml.sh
+    - name: Commit, push, and PR
+      run: scripts/gitPushPr.sh
