@@ -3,7 +3,7 @@ rm -rf repo/stable/$1
 rm -rf repo/testing/live/$1
 rm -rf repo/testing/net6/$1
 echo "> Making new"
-if [ $2 == *[TEST]*]; then
+if [ $2 =~ .*"[TEST]".* ]; then
     mkdir repo/testing/net6/$1
     cd repo/testing/net6/$1
 else

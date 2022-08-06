@@ -6,7 +6,7 @@ echo "> Pushing to origin"
 git push --force --set-upstream origin "$1"
 prRepo="goatcorp/DalamudPluginsD17"
 prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"$2\") | .number")
-if [ $4 == *[TEST]*]; then
+if [[ $4 =~ .*"[TEST]".* ]]; then
     prTitle="[Testing] $1 $3"
 else
     prTitle="$1 $3"
