@@ -33,6 +33,7 @@ jobs:
           pattern: '(\[)|(\][\w\d.\]\(:\/]+\))'
           string: ${{ steps.version.outputs.changelog }}
           replace-with: ''
+          flags: 'g'
       - name: Setup git user
         run: scripts/setup.sh ${{ secrets.PAT }}
       - name: Get Dalamud Plugins Repo
@@ -41,7 +42,6 @@ jobs:
         run: scripts/setupToml.sh
         env:
           MESSAGE: ${{ github.event.head_commit.message }}
-          URL: "${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}"
           CHANGELOG: ${{ steps.version.clean.replaced }}
           VERSION: ${{ steps.version.outputs.new_version }}
       - name: Commit, push, and PR
@@ -49,4 +49,4 @@ jobs:
         env: 
           VERSION: ${{ steps.version.outputs.new_version }}
           MESSAGE: "${{ github.event.head_commit.message }}"
-          CHANGELOG: "${{ steps.clean.clean.replaced }}"
+          CHANGELOG: "${{ steps.clean.outputs.replaced }}"
