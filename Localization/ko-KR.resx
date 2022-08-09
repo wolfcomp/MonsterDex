@@ -280,13 +280,13 @@
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
+    <value>고통 디버프를 부여하는 공격을 함\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
   </data>
   <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
+    <value>남은 Hp가 적어지면 자폭을 시전함</value>
   </data>
   <data name="7305" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>고통 디버프를 부여하는 직선 범위 공격\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
   </data>
   <data name="7306" xml:space="preserve">
     <value>평타와 부채꼴 범위 공격을 번갈아서 함</value>
@@ -298,7 +298,7 @@
     <value>매우 큰 범위 공격을 함</value>
   </data>
   <data name="7311" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>고통 디버프를 부여하는 직선 범위 공격\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
   </data>
   <data name="7312" xml:space="preserve">
     <value>캐스팅 없이 전방 범위 공격을 함</value>
@@ -310,7 +310,7 @@
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
+    <value>넓은 직선 범위 공격을 함\n마지막에는 즉사급 공격을 시전함</value>
   </data>
   <data name="7319" xml:space="preserve">
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
@@ -328,7 +328,7 @@
     <value>매우 넓은 폭의 직선 범위 공격을 함</value>
   </data>
   <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>즉사급 공격을 시전함</value>
   </data>
   <data name="7327" xml:space="preserve">
     <value>받는 피해 상승 디버프를 중첩시키는 공격을 함</value>
@@ -340,13 +340,13 @@
     <value>자신에게 피해량 증가 버프를 시전함</value>
   </data>
   <data name="7330" xml:space="preserve">
-    <value>Eventual instant ENRAGE</value>
+    <value>즉사급 공격을 함</value>
   </data>
   <data name="7331" xml:space="preserve">
     <value>출혈 디버프를 부여하는 범위 공격을 함</value>
   </data>
   <data name="7332" xml:space="preserve">
-    <value>Exclusively fatal line AoEs</value>
+    <value>매우 강력한 직선 범위 공격을 시전함</value>
   </data>
   <data name="7335" xml:space="preserve">
     <value>주변으로 끌어당겨 공격함</value>
@@ -478,7 +478,7 @@
     <value>Casts targeted AoEs unaggroed, buffs own defense</value>
   </data>
   <data name="7385" xml:space="preserve">
-    <value>Targeted AoEs, cleaves</value>
+    <value>부채꼴 범위 공격을 함</value>
   </data>
   <data name="7386" xml:space="preserve">
     <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
@@ -538,7 +538,7 @@
     <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
   </data>
   <data name="4975" xml:space="preserve">
     <value>자신에게 헤이스트를 부여함</value>
@@ -550,7 +550,7 @@
     <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="4982" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="4985" xml:space="preserve">
     <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
@@ -565,7 +565,7 @@
     <value>"Sticky Tongue" does not stun if facing towards</value>
   </data>
   <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>즉사급 공격을 시전함</value>
   </data>
   <data name="4993" xml:space="preserve">
     <value>둔화가 걸리는 구역</value>
@@ -604,7 +604,7 @@
     <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
   </data>
   <data name="5046" xml:space="preserve">
     <value>적 변형 마석에 내성이 있음</value>
@@ -712,7 +712,7 @@
     <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="5367" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="5370" xml:space="preserve">
     <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
@@ -724,7 +724,7 @@
     <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
   </data>
   <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>즉사급 공격을 시전함</value>
   </data>
   <data name="5377" xml:space="preserve">
     <value>자신에게 주는 피해량 상승 버프를 부여함</value>
