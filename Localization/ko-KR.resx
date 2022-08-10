@@ -280,16 +280,16 @@
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
+    <value>고통 디버프를 부여하는 공격을 함\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
   </data>
   <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
+    <value>남은 Hp가 적어지면 자폭을 시전함</value>
   </data>
   <data name="7305" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>고통 디버프를 부여하는 직선 범위 공격\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
   </data>
   <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
+    <value>평타와 부채꼴 범위 공격을 번갈아서 함</value>
   </data>
   <data name="7308" xml:space="preserve">
     <value>받는 데미지 증가 디버프를 중첩시키는 공격을 함</value>
@@ -298,7 +298,7 @@
     <value>매우 큰 범위 공격을 함</value>
   </data>
   <data name="7311" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>고통 디버프를 부여하는 직선 범위 공격\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
   </data>
   <data name="7312" xml:space="preserve">
     <value>캐스팅 없이 전방 범위 공격을 함</value>
@@ -310,7 +310,7 @@
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
+    <value>넓은 직선 범위 공격을 함\n마지막에는 즉사급 공격을 시전함</value>
   </data>
   <data name="7319" xml:space="preserve">
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
@@ -328,10 +328,10 @@
     <value>매우 넓은 폭의 직선 범위 공격을 함</value>
   </data>
   <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>즉사급 공격을 시전함</value>
   </data>
   <data name="7327" xml:space="preserve">
-    <value>Autos inflict stacking vuln up</value>
+    <value>받는 피해 상승 디버프를 중첩시키는 공격을 함</value>
   </data>
   <data name="7328" xml:space="preserve">
     <value>출혈 디버프를 부여하는 강공격을 함</value>
@@ -340,13 +340,13 @@
     <value>자신에게 피해량 증가 버프를 시전함</value>
   </data>
   <data name="7330" xml:space="preserve">
-    <value>Eventual instant ENRAGE</value>
+    <value>즉사급 공격을 함</value>
   </data>
   <data name="7331" xml:space="preserve">
     <value>출혈 디버프를 부여하는 범위 공격을 함</value>
   </data>
   <data name="7332" xml:space="preserve">
-    <value>Exclusively fatal line AoEs</value>
+    <value>매우 강력한 직선 범위 공격을 시전함</value>
   </data>
   <data name="7335" xml:space="preserve">
     <value>주변으로 끌어당겨 공격함</value>
@@ -355,19 +355,19 @@
     <value>어그로가 끌려있지 않아도 랜덤 대상에게 범위 공격을 함</value>
   </data>
   <data name="7337" xml:space="preserve">
-    <value>Conal gaze, very quick low health ENRAGE</value>
+    <value>부채꼴 범위의 마안 공격을 하고 남은Hp가 적어지면 즉사급 공격을 함</value>
   </data>
   <data name="7340" xml:space="preserve">
-    <value>Inflicts stacking Poison that lasts 30s</value>
+    <value>30초의 중첩 가능한 독 디버프를 부여함</value>
   </data>
   <data name="7341" xml:space="preserve">
-    <value>Inflicts stacking vuln up</value>
+    <value>받는 피해 상승 디버프를 중첩시키는 공격을 함</value>
   </data>
   <data name="7343" xml:space="preserve">
-    <value>Fast alternating line AoEs that inflict Paralysis</value>
+    <value>마비 디버프를 부여하는 직선 범위 공격을 빠르게 시전함</value>
   </data>
   <data name="7344" xml:space="preserve">
-    <value>Caster, double auto</value>
+    <value>캐스터, 연속 공격을 함</value>
   </data>
   <data name="7345" xml:space="preserve">
     <value>마비 디버프를 부여하는 범위 공격을 함</value>
@@ -385,10 +385,10 @@
     <value>자신과 파티원에게 방어력 증가 버프를 부여함</value>
   </data>
   <data name="7350" xml:space="preserve">
-    <value>AoE inflicts numerous debuffs at once</value>
+    <value>한번에 여러 개의 디버프를 부여하는 범위 공격을 함</value>
   </data>
   <data name="7353" xml:space="preserve">
-    <value>Casts large AoE unaggroed\nExtremely large circular AoE</value>
+    <value>전투 상태가 아닐 시 큰 범위 공격을 시전함\n매우 큰 원형의 범위 공격을 함</value>
   </data>
   <data name="7354" xml:space="preserve">
     <value>후방에 전조 없는 넉백 공격을 함</value>
@@ -397,7 +397,7 @@
     <value>연속으로 2번 공격하고 고통 디버프를 부여함</value>
   </data>
   <data name="7356" xml:space="preserve">
-    <value>Casts AoEs unaggroed that inflict Deep Freeze</value>
+    <value>전투 상태가 아닐 시 빙결 디버프를 부여하는 범위 공격을 시전함</value>
   </data>
   <data name="7357" xml:space="preserve">
     <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
@@ -406,7 +406,7 @@
     <value>자신에게 피해량 증가 버프를 시전함</value>
   </data>
   <data name="7359" xml:space="preserve">
-    <value>Haste, eventual ENRAGE</value>
+    <value>헤이스트 상태, 즉사급 공격을 시전함</value>
   </data>
   <data name="7360" xml:space="preserve">
     <value>매우 큰 범위 공격을 함</value>
@@ -436,10 +436,10 @@
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
   </data>
   <data name="7370" xml:space="preserve">
-    <value>Double autos, very strong rear cleave if behind</value>
+    <value>연속 공격을 하고, 후면에 매우 강한 부채꼴 범위 공격을 함</value>
   </data>
   <data name="7371" xml:space="preserve">
-    <value>Alternates line and circle AoEs untelegraphed</value>
+    <value>범위가 보이지 않음, 십자 범위 공격과 원 범위 공격을 함</value>
   </data>
   <data name="7372" xml:space="preserve">
     <value>주는 피해 상승 버프를 자신에게 사용하고 연속 2회 공격</value>
@@ -454,13 +454,13 @@
     <value>부채꼴 범위 공격, 원형 범위 공격, 전체 공격</value>
   </data>
   <data name="7376" xml:space="preserve">
-    <value>Charges, buffs own damage, double autos, electricity Bleed</value>
+    <value>차지 공격, 자신에게 데미지 상승 버프 부여, 연속으로 공격, 감전 디버프 부여</value>
   </data>
   <data name="7377" xml:space="preserve">
-    <value>Charges, buffs own damage, untelegraphed buster "Ripper Claw"</value>
+    <value>차지 공격, 자신에게 데미지 상승 버프 부여, 범위를 보여주지 않는 강공격 「Ripper Claw/リッパークロウ」</value>
   </data>
   <data name="7378" xml:space="preserve">
-    <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
+    <value>전사: 강한 데미지의 3연속 넉백 공격\n자신에게 데미지 상승 버프\n매우 데미지가 강한 넉백 전방 부채꼴 범위 공격</value>
   </data>
   <data name="7379" xml:space="preserve">
     <value>몽크: 헤이스트와 회피율 상승의 버프</value>
@@ -478,7 +478,7 @@
     <value>Casts targeted AoEs unaggroed, buffs own defense</value>
   </data>
   <data name="7385" xml:space="preserve">
-    <value>Targeted AoEs, cleaves</value>
+    <value>부채꼴 범위 공격을 함</value>
   </data>
   <data name="7386" xml:space="preserve">
     <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
@@ -499,7 +499,7 @@
     <value>연속으로 2번 공격하고, 수면 디버프를 부여하는 원형 범위 공격을 함</value>
   </data>
   <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
+    <value>중첩되는 데미지 상승 버프를 사용함\n랜덤 대상에게 즉사 공격 「알라간 메테오」시전\n마안 공격을 시전함</value>
   </data>
   <data name="7392" xml:space="preserve">
     <value>1-30층: 청동 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/넉백/적변형/\n말참견으로 중단시킬 수 있습니다</value>
@@ -538,7 +538,7 @@
     <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
   </data>
   <data name="4975" xml:space="preserve">
     <value>자신에게 헤이스트를 부여함</value>
@@ -550,7 +550,7 @@
     <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="4982" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="4985" xml:space="preserve">
     <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
@@ -565,7 +565,7 @@
     <value>"Sticky Tongue" does not stun if facing towards</value>
   </data>
   <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>즉사급 공격을 시전함</value>
   </data>
   <data name="4993" xml:space="preserve">
     <value>둔화가 걸리는 구역</value>
@@ -604,7 +604,7 @@
     <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
   </data>
   <data name="5046" xml:space="preserve">
     <value>적 변형 마석에 내성이 있음</value>
@@ -712,7 +712,7 @@
     <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
   </data>
   <data name="5367" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="5370" xml:space="preserve">
     <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
@@ -724,7 +724,7 @@
     <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
   </data>
   <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>즉사급 공격을 시전함</value>
   </data>
   <data name="5377" xml:space="preserve">
     <value>자신에게 주는 피해량 상승 버프를 부여함</value>
