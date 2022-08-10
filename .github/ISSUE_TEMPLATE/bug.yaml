@@ -1,0 +1,44 @@
+name: Bug form
+description: Bug report for not related to mob data
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        To get the log use either /xllog or navigate to %appdata%/xivlauncher and find dalamud.log
+  - type: textarea
+    attributes:
+      label: Dalamud log
+      description: The last error segment in the log noted with [ERR]
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reprduce
+      description: Steps to reproduce the behaviour.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        example:
+          - **OS**: Windows 11
+          - **Dalamud**: d9ab1db
+      value: |
+        - **OS**:
+        - **Dalamud**:
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: |
+        Links? References? Anything that will give us more context about the issue you are encountering!
+
+        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
+    
