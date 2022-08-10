@@ -454,13 +454,13 @@
     <value>부채꼴 범위 공격, 원형 범위 공격, 전체 공격</value>
   </data>
   <data name="7376" xml:space="preserve">
-    <value>Charges, buffs own damage, double autos, electricity Bleed</value>
+    <value>차지 공격, 자신에게 데미지 상승 버프 부여, 연속으로 공격, 감전 디버프 부여</value>
   </data>
   <data name="7377" xml:space="preserve">
-    <value>Charges, buffs own damage, untelegraphed buster "Ripper Claw"</value>
+    <value>차지 공격, 자신에게 데미지 상승 버프 부여, 범위를 보여주지 않는 강공격 「Ripper Claw/リッパークロウ」</value>
   </data>
   <data name="7378" xml:space="preserve">
-    <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
+    <value>전사: 강한 데미지의 3연속 넉백 공격\n자신에게 데미지 상승 버프\n매우 데미지가 강한 넉백 전방 부채꼴 범위 공격</value>
   </data>
   <data name="7379" xml:space="preserve">
     <value>몽크: 헤이스트와 회피율 상승의 버프</value>
@@ -499,7 +499,7 @@
     <value>연속으로 2번 공격하고, 수면 디버프를 부여하는 원형 범위 공격을 함</value>
   </data>
   <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
+    <value>중첩되는 데미지 상승 버프를 사용함\n랜덤 대상에게 즉사 공격 「알라간 메테오」시전\n마안 공격을 시전함</value>
   </data>
   <data name="7392" xml:space="preserve">
     <value>1-30층: 청동 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/넉백/적변형/\n말참견으로 중단시킬 수 있습니다</value>
