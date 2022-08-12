@@ -400,7 +400,7 @@
     <value>전투 상태가 아닐 시 빙결 디버프를 부여하는 범위 공격을 시전함</value>
   </data>
   <data name="7357" xml:space="preserve">
-    <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
+    <value>전투 상태가 아닐 시 전체 범위 공격을 시전함\n큰 부채꼴 범위 공격으로 끌어당긴 후 강한 데미지를 입힘</value>
   </data>
   <data name="7358" xml:space="preserve">
     <value>자신에게 피해량 증가 버프를 시전함</value>
@@ -421,10 +421,10 @@
     <value>연속으로 2번 공격하고 넓은 범위 공격을 함</value>
   </data>
   <data name="7365" xml:space="preserve">
-    <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
+    <value>「氷結の咆哮/Ram's Voice」 멀리 떨어지기\n「雷電の咆哮/Dragon's Voice」 가까이 붙기\n부채꼴 범위공격을 시전</value>
   </data>
   <data name="7366" xml:space="preserve">
-    <value>Buffs own damage unaggroed\nLarge AoE unaggroed that inflicts vuln up and stacks</value>
+    <value>전투 상태가 아닐 시 자신에게 주는 피해량 상승 버프를 부여함\n전투 상태가 아닐 시 받는 피해량 상승 디버프 스택형으로 부여하는 범위 공격을 함</value>
   </data>
   <data name="7367" xml:space="preserve">
     <value>Charges on aggro</value>
@@ -490,7 +490,7 @@
     <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
   </data>
   <data name="7389" xml:space="preserve">
-    <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
+    <value>강한 데미지의 부채꼴 범위 공격, HP 흡수 공격, 자신에게 피해량 상승 버프 부여를 반복하고 버프 스택이 3이 되면 즉사 공격의 「ブラックネビュラ/Black Nebula」를 시전함</value>
   </data>
   <data name="7390" xml:space="preserve">
     <value>빠르게 연속으로 2회 공격하고 전방 직선 범위 공격 「クェーサー/Quasar」</value>
@@ -526,7 +526,7 @@
     <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
   </data>
   <data name="7487" xml:space="preserve">
-    <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
+    <value>여러 범위 공격을 하는 지팡이를 소환\n지팡이가 타겟에게 직선 범위 공격을 하기도 함\n층 전체 범위 공격을 함</value>
   </data>
   <data name="7489" xml:space="preserve">
     <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
@@ -601,7 +601,7 @@
     <value>마비 디버프를 부여함</value>
   </data>
   <data name="5038" xml:space="preserve">
-    <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
+    <value>기믹 해설: 기믹을 실패하면 전체 범위 공격이 강화됨\n보스는 전체 공격을 종종 시전함\n1) 「インヘルス/In Health」스킬은 보스의 발밑 이외의 전체 범위 공격 또는 보스 중심의 원형 범위 공격\n2) 「狂気のまなざし/Cold Feet」 마안 공격</value>
   </data>
   <data name="5041" xml:space="preserve">
     <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
@@ -685,7 +685,7 @@
     <value>실명 디버프와 높은 데미지를 주는 마안 공격을 함</value>
   </data>
   <data name="5309" xml:space="preserve">
-    <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>큰 장판이 생기고 안으로 들어가면 고통 디버프가 부여된다.\n「ヴァルファズル/Valfodr」 스킬은 타겟에게 회피 불가의 넉백 직선 범위 공격, 장판 쪽으로 밀리지 않게 이동해야함</value>
   </data>
   <data name="5321" xml:space="preserve">
     <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
@@ -700,7 +700,7 @@
     <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
   </data>
   <data name="5356" xml:space="preserve">
-    <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
+    <value>다수의 부하를 소환하고 큰 범위 공격을 시전함, 부하들은 적변형 마토기로 변형시킬 수 있음</value>
   </data>
   <data name="5364" xml:space="preserve">
     <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
@@ -721,7 +721,7 @@
     <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
   </data>
   <data name="5374" xml:space="preserve">
-    <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
+    <value>「スティッキータン/Sticky Tongue」스킬은 타겟을 끌어당기고, 마주 보고 있지 않으면 기절 디버프를 부여함, 이후 「レイバードリープ」은 타겟 중심의 범위 공격</value>
   </data>
   <data name="5375" xml:space="preserve">
     <value>즉사급 공격을 시전함</value>
@@ -739,7 +739,7 @@
     <value>자신에게 피해량 증가 버프를 시전함</value>
   </data>
   <data name="5382" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
+    <value>석화를 부여하는 마안 공격을 시전함, 「リゴージ/Regorge」 스킬은 독을 부여하며\n개구리로 변한 상태라면 즉사함</value>
   </data>
   <data name="5384" xml:space="preserve">
     <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
@@ -799,7 +799,7 @@
     <value>받는 피해 상승 디버프를 부여함</value>
   </data>
   <data name="5431" xml:space="preserve">
-    <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
+    <value>「アイススパイク/Ice Spikes」스킬은 물리 데미지 반사 버프\n「ヴォイド・ブリザド/Void Blizzard」스킬은 둔화 디버프를 부여함</value>
   </data>
   <data name="5433" xml:space="preserve">
     <value>연속으로 2회 공격하고 데미지 비례 Hp를 흡수함</value>
@@ -808,10 +808,10 @@
     <value>연속으로 2번 공격함</value>
   </data>
   <data name="5437" xml:space="preserve">
-    <value>Double autos\nGaze inflicts heavy damage and Blind</value>
+    <value>연속으로 공격\n실명 디버프와 강한 데미지를 입히는 마안 공격을 시전함</value>
   </data>
   <data name="5438" xml:space="preserve">
-    <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>큰 장판이 생기고 안으로 들어가면 고통 디버프가 부여된다.\n「ヴァルファズル/Valfodr」 스킬은 타겟에게 회피 불가의 넉백 직선 범위 공격, 장판 쪽으로 밀리지 않게 이동해야함</value>
   </data>
   <data name="5442" xml:space="preserve">
     <value>연속으로 2번 공격함</value>
@@ -832,19 +832,19 @@
     <value>"Revelation" inflicts Confusion\n"Tropical Wind" gives enemy a large Haste and damage buff</value>
   </data>
   <data name="5453" xml:space="preserve">
-    <value>"Glower" - untelegraphed line AoE\n"100-Tonze Swing" - untelegraphed point-blank AoE</value>
+    <value>「グラワー/Glower」 스킬은 범위를 보여주지 않는 직선 범위 공격\n「100トンズ・スイング/100-Tonze Swing」 스킬은 범위를 보여주지 않는 보스 중심 원형 범위 공격</value>
   </data>
   <data name="5454" xml:space="preserve">
-    <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
+    <value>자신에게 주는 피해 상승 버프를 부여하고, 전투 상태가 아닐 시 받는 물리 피해 상승 디버프를 부여하는 범위 공격을 함</value>
   </data>
   <data name="5458" xml:space="preserve">
     <value>연속으로 2번 공격함</value>
   </data>
   <data name="5459" xml:space="preserve">
-    <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
+    <value>고통 디버프를 부여 범위 공격을 시전함\n「狂乱/Flying Frenzy」랜덤 타겟에게 데미지, 받는 피해량 상승 디버프를 부여, 기절 상태로 만듬</value>
   </data>
   <data name="5460" xml:space="preserve">
-    <value>Cleave does heavy damage and inflicts potent Bleed</value>
+    <value>강한 데미지와 고통 디버프를 부여하는 부채꼴 범위 공격을 시전함</value>
   </data>
   <data name="5461" xml:space="preserve">
     <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
@@ -862,7 +862,7 @@
     <value>플레이어를 끌어 당겨 데미지를 입힘\n「テールスクリュー/Tail Screw」스킬은 데미지와 둔화 디버프를 부여함</value>
   </data>
   <data name="5467" xml:space="preserve">
-    <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
+    <value>강한 데미지와 둔화 디버프를 부여하는 즉발 범위 공격\n독 디버프를 부여하는 즉발 부채꼴 범위 공격을 시전함</value>
   </data>
   <data name="5470" xml:space="preserve">
     <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
@@ -877,7 +877,7 @@
     <value>연속으로 2회 공격</value>
   </data>
   <data name="2566" xml:space="preserve">
-    <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
+    <value>강한 데미지의 공격을 하고 즉사급 공격을 시전함\n「怨念/Infatuation」 스킬은 침묵으로만 끊을 수 있음</value>
   </data>
   <data name="FontSize" xml:space="preserve">
     <value>글자 크기</value>
