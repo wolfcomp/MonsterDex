@@ -412,7 +412,7 @@
     <value>매우 큰 범위 공격을 함</value>
   </data>
   <data name="7361" xml:space="preserve">
-    <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
+    <value>타겟을 끌고와서 공격하고, 매우 큰 범위공격을 시전함. 마지막으로는 즉사급 공격을 시전</value>
   </data>
   <data name="7362" xml:space="preserve">
     <value>매우 큰 범위 공격과 공포를 부여하는 마안을 시전</value>
@@ -430,7 +430,7 @@
     <value>Charges on aggro</value>
   </data>
   <data name="7368" xml:space="preserve">
-    <value>Untelegraphed conal AoE on random player, gaze attack</value>
+    <value>무작위 타겟에게 보이지 않는 범위 공격을 하고, 마안 공격을 시전함</value>
   </data>
   <data name="7369" xml:space="preserve">
     <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
@@ -472,16 +472,16 @@
     <value>Cleave\nLarge line AoE that can be line of sighted</value>
   </data>
   <data name="7382" xml:space="preserve">
-    <value>"Charybdis" AoE that leaves tornadoes on random players</value>
+    <value>「ミールストーム/Charybdis」 스킬으로 랜덤 타겟의 위치에 회오리를 발생시키는 범위 공격을 함</value>
   </data>
   <data name="7384" xml:space="preserve">
-    <value>Casts targeted AoEs unaggroed, buffs own defense</value>
+    <value>전투 상태가 아닐 시 타겟에게 범위 공격을 시전하고 자신에게 방어력 상승 버프를 부여함</value>
   </data>
   <data name="7385" xml:space="preserve">
     <value>부채꼴 범위 공격을 함</value>
   </data>
   <data name="7386" xml:space="preserve">
-    <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
+    <value>매우 빠른 즉사급 범위 공격 「葬送撃/Death's Door」을 시전함</value>
   </data>
   <data name="7387" xml:space="preserve">
     <value>무작위 대상에게 큰 데미지를 줌</value>
@@ -562,7 +562,7 @@
     <value>독 디버프를 부여함</value>
   </data>
   <data name="4989" xml:space="preserve">
-    <value>"Sticky Tongue" does not stun if facing towards</value>
+    <value>「スティッキータン/Sticky Tongue」 스킬은 마주보고 있으면 기절 상태에 빠지지 않음</value>
   </data>
   <data name="4990" xml:space="preserve">
     <value>즉사급 공격을 시전함</value>
@@ -574,13 +574,13 @@
     <value>자신에게 피해량 증가 버프를 시전함</value>
   </data>
   <data name="4997" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
+    <value>석화 디버프를 부여하는 마안 공격을 시전함. 「捕食/Devour」 스킬은 개구리 상태로 변한 플레이어를 즉사시킴</value>
   </data>
   <data name="4999" xml:space="preserve">
     <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
   </data>
   <data name="5010" xml:space="preserve">
-    <value>Untelegraphed AOE does moderate damage and knockback</value>
+    <value>조금 강한 보이지 않는 범위공격을 시전함</value>
   </data>
   <data name="5011" xml:space="preserve">
     <value>「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함</value>
@@ -826,7 +826,7 @@
     <value>연속으로 2번 공격함</value>
   </data>
   <data name="5451" xml:space="preserve">
-    <value>Has semi-enrage around 30s in combat</value>
+    <value>전투 개시 후 30초 전후로 강공격 시전함</value>
   </data>
   <data name="5452" xml:space="preserve">
     <value>"Revelation" inflicts Confusion\n"Tropical Wind" gives enemy a large Haste and damage buff</value>
@@ -853,7 +853,7 @@
     <value>연속으로 2번 공격함</value>
   </data>
   <data name="5464" xml:space="preserve">
-    <value>Instant AoE that inflicts heavy Bleed</value>
+    <value>고통 디버프를 부여하는 즉발 범위 공격을 시전함.</value>
   </data>
   <data name="5465" xml:space="preserve">
     <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
