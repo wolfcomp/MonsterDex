@@ -703,7 +703,7 @@
     <value>다수의 부하를 소환하고 큰 범위 공격을 시전함, 부하들은 적변형 마토기로 변형시킬 수 있음</value>
   </data>
   <data name="5364" xml:space="preserve">
-    <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
+    <value>101-110층:\n 위협 수준의 몬스터들은 무시하기\n191-200층:\n연속 공격</value>
   </data>
   <data name="5365" xml:space="preserve">
     <value>독 디버프를 부여함</value>
