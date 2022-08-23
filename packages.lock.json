@@ -4,15 +4,15 @@
     "net6.0": {
       "DalamudPackager": {
         "type": "Direct",
-        "requested": "[2.1.7, )",
-        "resolved": "2.1.7",
-        "contentHash": "jnZ/sdInyn07ycuWI+pPOtP/xE3v+c4+jYJfDt36FWnBF9NKqkpzfviJtPl/jGLgbaCmFIXu+Yid0N8GvdKefg=="
+        "requested": "[2.1.8, )",
+        "resolved": "2.1.8",
+        "contentHash": "YqagNXs9InxmqkXzq7kLveImxnodkBEicAhydMXVp7dFjC7xb76U6zGgAax4/BWIWfZeWzr5DJyQSev31kj81A=="
       },
       "YamlDotNet": {
         "type": "Direct",
-        "requested": "[11.2.1, )",
-        "resolved": "11.2.1",
-        "contentHash": "tBt8K+korVfrjH9wyDEhiLKxbs8qoLCLIFwvYgkSUuMC9//w3z0cFQ8LQAI/5MCKq+BMil0cfRTRvPeE7eXhQw=="
+        "requested": "[12.0.0, )",
+        "resolved": "12.0.0",
+        "contentHash": "sMp20zI63j7xVoor98vGeDxteLeyuAlM330L7XbXxMMPjLdP1mwoK/5Nn/8Vldc9hUMN5otkg88bVLEtQnPdaw=="
       }
     }
   }
