@@ -229,657 +229,657 @@
     <value>Incontournables "Mâchoires" de type tankbuster</value>
   </data>
   <data name="7273" xml:space="preserve">
-    <value>Untelegraphed buster inflicts Bleed and knockback</value>
+    <value>Buster non télégraphié qui inflige Saignement et vous repousse</value>
   </data>
   <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
+    <value>Petit buster "Course Pince" suivi d'une AoE</value>
   </data>
   <data name="7281" xml:space="preserve">
-    <value>Gaze inflicts Seduce, followed by large AoE that inflicts Minimum</value>
+    <value>Regard inflige Séduction, suivi d'une large AoE infligeant Mini</value>
   </data>
   <data name="7285" xml:space="preserve">
-    <value>Buster and triple auto</value>
+    <value>Buster et triple auto</value>
   </data>
   <data name="7286" xml:space="preserve">
-    <value>Room wide ENRAGE</value>
+    <value>ENRAGE de la taille de la salle</value>
   </data>
   <data name="7288" xml:space="preserve">
     <value>Regard inflige aveugles</value>
   </data>
   <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
+    <value>Soigne soi-même et ses alliés</value>
   </data>
   <data name="7290" xml:space="preserve">
-    <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
+    <value>Cast des AoE repoussantes sans être aggro\nAoE linéaire infligeant Saignement</value>
   </data>
   <data name="7291" xml:space="preserve">
     <value>Dégâts des buffs</value>
   </data>
   <data name="7292" xml:space="preserve">
-    <value>Untelegraphed conal AoE with knockback, buster</value>
+    <value>AoE en cône non télégraphiée qui repousse, Buster</value>
   </data>
   <data name="7295" xml:space="preserve">
-    <value>Draw-in followed by cleave</value>
+    <value>Attraction suivie d'une attaque en cône</value>
   </data>
   <data name="7296" xml:space="preserve">
     <value>Regard</value>
   </data>
   <data name="7297" xml:space="preserve">
-    <value>Line AoE inflicts Bleed</value>
+    <value>AoE en ligne infligeant Saignement</value>
   </data>
   <data name="7298" xml:space="preserve">
-    <value>Cross AoE inflicts Suppuration</value>
+    <value>AoE en croix infligeant Moursure du Feu</value>
   </data>
   <data name="7299" xml:space="preserve">
-    <value>Large AoE inflicts Paralysis</value>
+    <value>Grosse AoE infligeant Paralysie</value>
   </data>
   <data name="7300" xml:space="preserve">
-    <value>Circle AoE inflicts Suppuration</value>
+    <value>AoE circulaire infligeant Morsure du Feu</value>
   </data>
   <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
+    <value>Double auto infligeant Saignement\nENRAGE quand vie faible</value>
   </data>
   <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
+    <value>Vie faible = ENRAGE</value>
   </data>
   <data name="7305" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>AoE linéaire inflige Saignement\nENRAGE quand vie faible</value>
   </data>
   <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
+    <value>Cleave une auto sur deux</value>
   </data>
   <data name="7308" xml:space="preserve">
-    <value>Weak stack attack</value>
+    <value>Stack petits dégâts</value>
   </data>
   <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
+    <value>AoE extrêmement grande</value>
   </data>
   <data name="7311" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
+    <value>AoE linéaire inflige Saignement\nENRAGE quand vie faible</value>
   </data>
   <data name="7312" xml:space="preserve">
-    <value>Frontal cleave without cast or telegraph</value>
+    <value>Attaque en cône frontale sans cast ni animation</value>
   </data>
   <data name="7313" xml:space="preserve">
-    <value>Gaze inflicts Otter</value>
+    <value>Regard transforme en Loutre</value>
   </data>
   <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
+    <value>Large AoE linéaire\néventuel ENRAGE</value>
   </data>
   <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7320" xml:space="preserve">
-    <value>Purple: double auto</value>
+    <value>Violet : double auto</value>
   </data>
   <data name="7321" xml:space="preserve">
-    <value>Large cone AoE</value>
+    <value>Large AoE en cône</value>
   </data>
   <data name="7323" xml:space="preserve">
-    <value>Green: Casts AoEs unaggroed</value>
+    <value>Vert : Casts des AoE sans être aggro</value>
   </data>
   <data name="7324" xml:space="preserve">
-    <value>Very wide line AoE</value>
+    <value>Très large AoE linéaire</value>
   </data>
   <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>ENRAGE éventuel</value>
   </data>
   <data name="7327" xml:space="preserve">
-    <value>Autos inflict stacking vuln up</value>
+    <value>Inflige un stack de Vulnérabilité augmentée</value>
   </data>
   <data name="7328" xml:space="preserve">
-    <value>Buster inflicts Bleed</value>
+    <value>Buster infligeant Saignement</value>
   </data>
   <data name="7329" xml:space="preserve">
     <value>Dégâts des buffs</value>
   </data>
   <data name="7330" xml:space="preserve">
-    <value>Eventual instant ENRAGE</value>
+    <value>ENRAGE instanté éventuel</value>
   </data>
   <data name="7331" xml:space="preserve">
-    <value>Cone AoE inflicts Bleed</value>
+    <value>AoE cônale infligeant Saignement</value>
   </data>
   <data name="7332" xml:space="preserve">
-    <value>Exclusively fatal line AoEs</value>
+    <value>AoE linéaires mortelles</value>
   </data>
   <data name="7335" xml:space="preserve">
-    <value>Draw-in attack</value>
+    <value>Attaque attirante/Pull</value>
   </data>
   <data name="7336" xml:space="preserve">
-    <value>Instant AoEs on targeted player unaggroed</value>
+    <value>AoEs instantanées sur le joueur ciblé sans être aggro</value>
   </data>
   <data name="7337" xml:space="preserve">
-    <value>Conal gaze, very quick low health ENRAGE</value>
+    <value>Regard en cône, ENRAGE très rapide quand sa vie est faible</value>
   </data>
   <data name="7340" xml:space="preserve">
-    <value>Inflicts stacking Poison that lasts 30s</value>
+    <value>Inflige un stack de Poison pendant 30 s</value>
   </data>
   <data name="7341" xml:space="preserve">
-    <value>Inflicts stacking vuln up</value>
+    <value>Inflige un stack de Vulnérabilité augmentée</value>
   </data>
   <data name="7343" xml:space="preserve">
-    <value>Fast alternating line AoEs that inflict Paralysis</value>
+    <value>AoE linéaires rapides infligeant Paralysie</value>
   </data>
   <data name="7344" xml:space="preserve">
     <value>Caster, double auto</value>
   </data>
   <data name="7345" xml:space="preserve">
-    <value>Conal AoE inflicts Paralysis</value>
+    <value>AoE en cône infligeant Paralysie</value>
   </data>
   <data name="7346" xml:space="preserve">
-    <value>Cleave and potent Poison</value>
+    <value>Attaque en cône et Poison important</value>
   </data>
   <data name="7347" xml:space="preserve">
-    <value>Large doughnut AoE, gaze attack inflicts Fear</value>
+    <value>Large AoE donut, son regard inflige Peur</value>
   </data>
   <data name="7348" xml:space="preserve">
-    <value>Large circular AoE inflicts Bleed</value>
+    <value>Grande AoE circulaire infligeant Saignement</value>
   </data>
   <data name="7349" xml:space="preserve">
-    <value>Buffs own or ally's defense</value>
+    <value>Buff sa propre défense ou celle d'un allié</value>
   </data>
   <data name="7350" xml:space="preserve">
-    <value>AoE inflicts numerous debuffs at once</value>
+    <value>AoE infligeant de nombreux malus d'un coup</value>
   </data>
   <data name="7353" xml:space="preserve">
-    <value>Casts large AoE unaggroed\nExtremely large circular AoE</value>
+    <value>Cast une large AoE sans être aggro\nAoE circulaire extrêmement large</value>
   </data>
   <data name="7354" xml:space="preserve">
-    <value>Untelegraphed knockback on rear</value>
+    <value>Repoussement non télégraphié à l'arrière</value>
   </data>
   <data name="7355" xml:space="preserve">
-    <value>Double auto inflicts Bleed</value>
+    <value>Double auto infligeant Saignement</value>
   </data>
   <data name="7356" xml:space="preserve">
-    <value>Casts AoEs unaggroed that inflict Deep Freeze</value>
+    <value>Cast des AoE sans être aggro, infligeant Congélation</value>
   </data>
   <data name="7357" xml:space="preserve">
-    <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
+    <value>Cast des AoE de la taille de la pièce sans être aggro\nLarge attaque en cône qui attire suivie de lourds dégâts</value>
   </data>
   <data name="7358" xml:space="preserve">
     <value>Dégâts des buffs</value>
   </data>
   <data name="7359" xml:space="preserve">
-    <value>Haste, eventual ENRAGE</value>
+    <value>Hâte, ENRAGE éventuel</value>
   </data>
   <data name="7360" xml:space="preserve">
-    <value>Very large AoEs</value>
+    <value>Très larges AoEs</value>
   </data>
   <data name="7361" xml:space="preserve">
-    <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
+    <value>Attaque attirante, AoE extrêmement large, ENRAGE éventuel</value>
   </data>
   <data name="7362" xml:space="preserve">
-    <value>Extremely large conal AoE, gaze inflicts Fear</value>
+    <value>AoE en cône extrêmement large, regard inflige Peur</value>
   </data>
   <data name="7364" xml:space="preserve">
-    <value>Double auto and very large AoE</value>
+    <value>Double auto et très grande AoE</value>
   </data>
   <data name="7365" xml:space="preserve">
-    <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
+    <value>Voix du Bélier : s'éloigner\nVoix du Dragon : se rapprocher\nCoup de patte télégraphié</value>
   </data>
   <data name="7366" xml:space="preserve">
-    <value>Buffs own damage unaggroed\nLarge AoE unaggroed that inflicts vuln up and stacks</value>
+    <value>Buff ses propres dégâts sans être aggro\nLarge AoE sans être aggro qui inflige un stack de vulnérabilité augmentée</value>
   </data>
   <data name="7367" xml:space="preserve">
-    <value>Charges on aggro</value>
+    <value>Charge quand aggro</value>
   </data>
   <data name="7368" xml:space="preserve">
-    <value>Untelegraphed conal AoE on random player, gaze attack</value>
+    <value>AoE en cône non télégraphiée sur un joueur aléatoire, attaque type "Regard"</value>
   </data>
   <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
+    <value>Cast des AoE sans être aggro</value>
   </data>
   <data name="7370" xml:space="preserve">
-    <value>Double autos, very strong rear cleave if behind</value>
+    <value>Double autos, gros coup de queue si derrière</value>
   </data>
   <data name="7371" xml:space="preserve">
-    <value>Alternates line and circle AoEs untelegraphed</value>
+    <value>Alterne entre des AoEs linéaires et circulaires, non télégraphiées</value>
   </data>
   <data name="7372" xml:space="preserve">
-    <value>Buffs own damage and double autos</value>
+    <value>Buff ses propres dégâts et double autos</value>
   </data>
   <data name="7373" xml:space="preserve">
-    <value>Draw-in attack, tons of bleed, and a stacking poison</value>
+    <value>Attaque qui attire, des tonnes de Saignement, et un Poison qui stack</value>
   </data>
   <data name="7374" xml:space="preserve">
-    <value>Large doughnut AoE</value>
+    <value>Large AoE donut</value>
   </data>
   <data name="7375" xml:space="preserve">
-    <value>Cone AoE, circle AoE, party wide damage</value>
+    <value>AoE en cône, AoE circulaire, dégâts de groupe</value>
   </data>
   <data name="7376" xml:space="preserve">
-    <value>Charges, buffs own damage, double autos, electricity Bleed</value>
+    <value>Charge, buff ses propres dégâts, double auto, Saignement électrique</value>
   </data>
   <data name="7377" xml:space="preserve">
-    <value>Charges, buffs own damage, untelegraphed buster "Ripper Claw"</value>
+    <value>Charge, buff ses propres dégâts, buster non télégraphie "Griffe Éventreuse"</value>
   </data>
   <data name="7378" xml:space="preserve">
-    <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
+    <value>GUE (WAR) : Triple knockback avec de gros dégâts\nBuff ses propres attaques\nCoup de hache qui repousse + fait de gros dégâts</value>
   </data>
   <data name="7379" xml:space="preserve">
-    <value>MNK: Haste buff, short invuln</value>
+    <value>MOI (MNK) : Buff Hâte, courte invulnérabilité</value>
   </data>
   <data name="7380" xml:space="preserve">
-    <value>WHM: double autos\n"Stone" can be line of sighted</value>
+    <value>MBL (WHM) : double autos\nSe cacher derrière un mur peut interrompre son sort " Terre "</value>
   </data>
   <data name="7381" xml:space="preserve">
-    <value>Cleave\nLarge line AoE that can be line of sighted</value>
+    <value>Cleave\nLarge AoE linéaire qui peut être LoS (vous pouvez vous cacher derrière un mur, un poteau...)</value>
   </data>
   <data name="7382" xml:space="preserve">
-    <value>"Charybdis" AoE that leaves tornadoes on random players</value>
+    <value>AoE "Charybde" laissant des tornades sous un joueur aléatoire</value>
   </data>
   <data name="7384" xml:space="preserve">
-    <value>Casts targeted AoEs unaggroed, buffs own defense</value>
+    <value>Cast des AoE ciblées sans être aggro, buff sa propre défense</value>
   </data>
   <data name="7385" xml:space="preserve">
-    <value>Targeted AoEs, cleaves</value>
+    <value>AoE ciblées, cleaves</value>
   </data>
   <data name="7386" xml:space="preserve">
-    <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
+    <value>AoE linéaire extrêmement rapide "Portes de la mort" qui tue instantanément</value>
   </data>
   <data name="7387" xml:space="preserve">
-    <value>Deals heavy damage to random players</value>
+    <value>Inflige de lourds dégâts à des joueurs aléatoires</value>
   </data>
   <data name="7388" xml:space="preserve">
-    <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
+    <value>Charge\nAoE linéaire non télégraphiée "Fauche"\nLarge AoE circulaire non télégraphiée "Swing"</value>
   </data>
   <data name="7389" xml:space="preserve">
-    <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
+    <value>Cleaves répétitifs causant de gros dégâts, vol de vie, buff ses propres dégâts, à trois stacks de dégâts augmentés cast ENRAGE "Nébuleuse noire"</value>
   </data>
   <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
+    <value>Double autos rapides et AoE linéaire non télégraphiée "Quasar"</value>
   </data>
   <data name="7391" xml:space="preserve">
-    <value>Double autos, cone AoE inflicts Sleep</value>
+    <value>Double autos, AoE en cône infligeant Sommeil</value>
   </data>
   <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
+    <value>Stack de dégâts augmentés permanents\nEnrage important sur un joueur aléatoire "Météore Allagois"\nAttaque type "Regard"</value>
   </data>
   <data name="7392" xml:space="preserve">
-    <value>Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/knockback/witching/\ninterject</value>
+    <value>Étages 1-30: Coffres en Bronze seulement\nAutos gros dégâts et AoE mortelle\n "Malédiction" peut être interrompu par Silence/Étourdissement/Knockback/Poterie de Mutation\nInterjection</value>
   </data>
   <data name="7393" xml:space="preserve">
-    <value>Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/interject</value>
+    <value>Étages 31-60: Coffres en Argent seulement\nAutos gros dégâts et AoE mortelle\n"Malédiction" peut être interrompu par Silence/Étourdissement/Interjection</value>
   </data>
   <data name="7394" xml:space="preserve">
-    <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
+    <value>Étages 61+ : Coffres en Or seulement\nAutos gros dégâts et AoE mortelle\n"Malédiction" ne peut être interrompu QUE par Interjection\nNE PEUT ÊTRE ÉTOURDI</value>
   </data>
   <data name="7478" xml:space="preserve">
-    <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
+    <value>Invoque des nuages de foudre infligeant des stack de vulnérabilité augmentée lorsqu'ils explosent\nLe boss fait des AoE de proximité sous lui-même qui font les joueurs s'envoler\nEnvolez vous dans un nuage pour le dissiper et éviter une vulnérabilité\nAoE faisant la moitié de la pièce</value>
   </data>
   <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
+    <value>Va au centre de l'arène et cast une attaque repoussant jusqu'au mur (ignore vos résistances au repoussement)\nEnchaine immédiatement avec une AoE faisant la moitié de la pièce</value>
   </data>
   <data name="7481" xml:space="preserve">
-    <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
+    <value>Invoque des papillons aux bords de l'arène\nEffectue une mécanique type "Regard" infligeant Peur\nExplosion des papillons non-télégraphiée</value>
   </data>
   <data name="7483" xml:space="preserve">
-    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
+    <value>Invoque des nuages aux bords de l'arène\nVous repousse jusqu'au mur, ignorant vos résistances au repoussement (Regardez la zone safe dans les nuages!)\nEnchaine immédiatement par une AoE linéaire ciblée</value>
   </data>
   <data name="7485" xml:space="preserve">
-    <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
+    <value>1)Fauchage non télégraphié\n2) AoE linéaire non télégraphiée sous un joueur aléatoire\n3)Mécanique type "Regard" infligeant Peur\n4) Invoque des bombes pulsantes sur l'arène et effectue une AoE de proximité\n5)Répète tout ça après que les bombes explosent pour la dernière fois</value>
   </data>
   <data name="7487" xml:space="preserve">
-    <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
+    <value>Invoque des bâtons effectuant diverses AoEs\nLes bâtons effectuent ensuite des AoEs linéaires ciblant les joueurs\nAoE de la taille de la pièce</value>
   </data>
   <data name="7489" xml:space="preserve">
-    <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
+    <value>1)Cleave frontal non télégraphié\n2)Cible un joueur aléatoire avec une flaque "Mini-bulles" (Rester dans la flaque inflige Mini)\n3)Cible un joueur aléatoire avec "Charge infernale"\n4) Le joueur ciblé doit rester dans la flaque pour esquiver "Charge infernale" et "Dévoration" (Mort instantanée si hors de la flaque, donnant un stack de dégâts augmentés au boss)\n5)Répétez</value>
   </data>
   <data name="7490" xml:space="preserve">
-    <value>1) Summons balls of ice\n2) Summons icicle that pierces through room, detonating any ice balls it hits\n3) "Lunar Cry" detonates remaining ice balls\n4) Exploding ice balls inflict Deep Freeze if they hit a player\n5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)</value>
+    <value>1) Invoque des boules de glace\n2)Invoque des stalactites qui perceront la pièce, faisant détonner les boules de glace sur leur passage\n3) "Cri lunaire" fait détonner les boules restantes\n4) Les boules glaces infligent Congélation si elles touchent un joueur lorsqu'elles explosent\n5)Le boss saute sur un joueur aléatoire, le tuant instantanément s'il est congelé (dégâts légers autrement)</value>
   </data>
   <data name="7493" xml:space="preserve">
-    <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
+    <value>1)Gros dégâts sur toute la pièce "Méga séisme ancien"\n2) Des rochers pulsants apparaissent sur l'arène, causant des dégâts moyens et Pesanteur s'ils touchent un joueur\n3) "Impact de météore" invoque une AoE de proximité sous la position actuelle du boss\n4)AoE linéaire "Rayon d'aura"\n5) AoE circulaires ciblées "Fahrenheit"\n6) AoE circulaire à bout portant "Pression impitoyable"\n7) Répétez</value>
   </data>
   <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>N'intéragit pas, large Etourdissement et meurt immédiatement lorsque attaqué</value>
   </data>
   <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
+    <value>Lance Hâte sur lui-même</value>
   </data>
   <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>Inflige Poison</value>
   </data>
   <data name="4981" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>"Dard Final" dégâts importants</value>
   </data>
   <data name="4982" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>Inflige Vulnérabilité augmentée</value>
   </data>
   <data name="4985" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>Mini buster "Attaque Rhino"</value>
   </data>
   <data name="4986" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
+    <value>1) "Claquement de fouet" - léger tankbuster\n2)"Vent orageux" - AoE en cône\n3)"Vrombissement" - AoE circulaire sur le boss infligeant Lenteur\n4)"Lumisphère" - AoE ciblée sur un joueur aléatoire\n5)"Souffle Éthéréen" - AoE de la taille de la pièce infligeant Saignement</value>
   </data>
   <data name="4988" xml:space="preserve">
-    <value>Inflicts poison</value>
+    <value>Inflige Poison</value>
   </data>
   <data name="4989" xml:space="preserve">
-    <value>"Sticky Tongue" does not stun if facing towards</value>
+    <value>"Langue poisseuse" n'étoudit pas si vous lui faites face</value>
   </data>
   <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>ENRAGE éventuel</value>
   </data>
   <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>Lenteur en AoE</value>
   </data>
   <data name="4996" xml:space="preserve">
     <value>Dégâts des buffs</value>
   </data>
   <data name="4997" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
+    <value>Attaque type "Regard" infligeant Pétrification, "Dévoration" tue immédiatement si un joueur a l'état "Crapaud"</value>
   </data>
   <data name="4999" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
+    <value>1)"Caresse sanglante" - Cleave infligeant de gros dégâts\n2) Deux AoE télégraphiées et une AoE de la taille de la pièce\n3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent "Dard Final"\n4)"Pestillence nauséabonde" - AoE linéaire infligeant de gros dégâts</value>
   </data>
   <data name="5010" xml:space="preserve">
-    <value>Untelegraphed AOE does moderate damage and knockback</value>
+    <value>AoE non télégraphiée infligeant des dégâts modérés et vous repoussant</value>
   </data>
   <data name="5011" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>"Gazouillement" inflige Sommeil pendant 15s</value>
   </data>
   <data name="5012" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
+    <value>1) Séparez les AoEs de feu et de glace et ne les amenez pas au centre car :\n2) Allez au centre de la hitbox du boss lors de "Peur personnifiée" - infligera de lourds dégâts et Terreur si vous ne l'esquivez pas</value>
   </data>
   <data name="5022" xml:space="preserve">
-    <value>"Dark Mist" inflicts Terror</value>
+    <value>"Brume funèbre" inflige Terreur</value>
   </data>
   <data name="5025" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+    <value>1) Invoque quatre AoE persistantes\n2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts</value>
   </data>
   <data name="5030" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>Inflige Paralysie</value>
   </data>
   <data name="5032" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
+    <value>Inflige Paralysie</value>
   </data>
   <data name="5038" xml:space="preserve">
-    <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
+    <value>EFFECTUEZ LES MÉCANIQUES -- les mécaniques râtées augmenteront les dégâts d'une AoE inévitable de la taille de la pièce\nLe boss infligera occasionellement Maladie qui vous ralentit\n1) "Dnas la santé" -- peut être soit une AoE safe sous le boss, soit une AoE à bout portant\n2) "Regard Affolant" -- attaque type "Regard"</value>
   </data>
   <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
+    <value>N'intéragit pas, large Etourdissement et meurt immédiatement lorsque attaqué</value>
   </data>
   <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
+    <value>Immunité contre la Poterie de Mutation</value>
   </data>
   <data name="5299" xml:space="preserve">
-    <value>Gaze inflicts Paralysis</value>
+    <value>Regard inflige Paralysie</value>
   </data>
   <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
+    <value>Regard inflige Cécité et fait de gros dégâts</value>
   </data>
   <data name="5309" xml:space="preserve">
-    <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>Laisse de large flaque AoE infligeant Saignement si vous restez dedans\n"Valfodr" -- AoE linéaire ciblée non esquivable focalisée sur un joueur, le repoussant : évitez les AoEs encerclant le bord extérieur</value>
   </data>
   <data name="5321" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
+    <value>"Hydratation" -- AoE persistante au sol infligeant Saignement si vous restez dedans et buffant le boss avec Hâte s'il reste dedans\nCast occasionnellement des Aoe ciblées au sol</value>
   </data>
   <data name="5333" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
+    <value>"Charybde" -- tornade au sol persistante qui cause de lourds dégâts si elle vous aspire\nLe boss ira au bord de l'arène pour cast "Écrabouillement" - large AoE en cône\n A 17% cast "Météore écliptique" - GROS DÉGÂTS qui inflige 80% de votre vie totale sur la pièce avec un long cast</value>
   </data>
   <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
+    <value>Cast une grande "Auto-destruction" si non tué à temps</value>
   </data>
   <data name="5345" xml:space="preserve">
-    <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
+    <value>Cast de larges AoE\nInvoque "Bombo irascible" - doit être tué avant qu'il n'effectue de gros dégâts sur toute la pièce\nCommence à caster "Énorme Explosion" et invoque un bombo bleu qui doit être repoussé vers le boss pour interrompre son cast</value>
   </data>
   <data name="5356" xml:space="preserve">
-    <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
+    <value>Invoque des adds et fait de grosses AoE ciblées -- les adds sont sensibles aux attaques de la Poterie de Kuribu</value>
   </data>
   <data name="5364" xml:space="preserve">
-    <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
+    <value>Étages 101-101 : \nRien de particulier (ignorez l'indice de dangerosité) \nÉtages 191-200 : \nDouble autos</value>
   </data>
   <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
+    <value>Inflige Poison</value>
   </data>
   <data name="5366" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
+    <value>"Dard Final" dégâts importants</value>
   </data>
   <data name="5367" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
+    <value>Inflige Vulnérabilité augmentée</value>
   </data>
   <data name="5370" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
+    <value>Mini buster "Attaque Rhino"</value>
   </data>
   <data name="5371" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
+    <value>1) "Claquement de fouet" - léger tankbuster\n2)"Vent orageux" - AoE en cône\n3)"Vrombissement" - AoE circulaire sur le boss infligeant Lenteur\n4)"Lumisphère" - AoE ciblée sur un joueur aléatoire\n5)"Souffle Éthéréen" - AoE de la taille de la pièce infligeant Saignement</value>
   </data>
   <data name="5374" xml:space="preserve">
-    <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
+    <value>"Langue poisseuse" vous attire et vous étourdit si vous ne lui faites pas face, suivi d'une AoE "Bond laborieux" à bout portant de l'ennemi</value>
   </data>
   <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
+    <value>ENRAGE éventuel</value>
   </data>
   <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
+    <value>Cast "Invulnérabilité" sur soi-même</value>
   </data>
   <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
+    <value>Lenteur en AoE</value>
   </data>
   <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
+    <value>Infligera "Sommeil" avant de caster "Mauvaise Haleine"</value>
   </data>
   <data name="5381" xml:space="preserve">
     <value>Dégâts des buffs</value>
   </data>
   <data name="5382" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
+    <value>Attaque type "Regard" infligeant Pétrification, "Vomissure" inflige Poison\n Tuera instantanément si vous avec l'état "Crapaud"</value>
   </data>
   <data name="5384" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
+    <value>1)"Caresse sanglante" - Cleave infligeant de gros dégâts\n2) Deux AoE télégraphiées et une AoE de la taille de la pièce\n3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent "Dard Final"\n4)"Pestillence nauséabonde" - AoE linéaire infligeant de gros dégâts</value>
   </data>
   <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5395" xml:space="preserve">
-    <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
+    <value>"Fauche de 11 tonz" - AoE à bout portant non télégraphiée qui inflige de lourds dégâts et vous repousse</value>
   </data>
   <data name="5396" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
+    <value>"Gazouillement" inflige Sommeil pendant 15s</value>
   </data>
   <data name="5397" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
+    <value>1) Séparez les AoEs de feu et de glace et ne les amenez pas au centre car :\n2) Allez au centre de la hitbox du boss lors de "Peur personnifiée" - infligera de lourds dégâts et Terreur si vous ne l'esquivez pas</value>
   </data>
   <data name="5402" xml:space="preserve">
-    <value>Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify</value>
+    <value>AoE en cône non télégraphiée "Pétrification niveau 5" inflige Pétrification</value>
   </data>
   <data name="5406" xml:space="preserve">
-    <value>Casts targeted AoE that inflicts Bleed</value>
+    <value>Cast des AoE ciblées infligeant Saignement</value>
   </data>
   <data name="5409" xml:space="preserve">
-    <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
+    <value>Étages 131-140 :\n Rien de particulier (ignorez l'indice de dangerosité)\nÉtages 191-200 :\nDouble autos</value>
   </data>
   <data name="5410" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+    <value>1) Invoque quatre AoE persistantes\n2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts</value>
   </data>
   <data name="5413" xml:space="preserve">
-    <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
+    <value>"Charybde" - Demi-enrage qui fait tomber la vide de toute l'équipe à 1%</value>
   </data>
   <data name="5414" xml:space="preserve">
-    <value>Very high damage, inflicts Poison</value>
+    <value>Très gros dégâts, inflige Poison</value>
   </data>
   <data name="5415" xml:space="preserve">
-    <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
+    <value>Étages 141-150 :\n Rien de particulier (ignorez l'indice de dangerosité)\nÉtages 191-200 :\n Cast de larges AoE donut "Spirale de la mort" infligeant de lourds dégâts\nA un soft enrage avec son gros buff de dégâts augmentés</value>
   </data>
   <data name="5420" xml:space="preserve">
-    <value>Casts Gaze "Evil Eye"</value>
+    <value>Cast une attaque type Regard appelée "Oeil maléfique"</value>
   </data>
   <data name="5421" xml:space="preserve">
-    <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
+    <value>Buff ses propres dégâts, gros dégâts non télégraphies "Griffe éventreuse" - peut être évité en marchant derrière</value>
   </data>
   <data name="5422" xml:space="preserve">
-    <value>High health and very large AoE "Scream"</value>
+    <value>Beaucoup de vie et très grosse AoE "Cri"</value>
   </data>
   <data name="5423" xml:space="preserve">
-    <value>Very high damage for the floors it appears on</value>
+    <value>Très gros dégâts pour l'étage où il apparait</value>
   </data>
   <data name="5424" xml:space="preserve">
-    <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
+    <value>Invoque des adds\n"Zombies fanatiques" attraperont les joueurs et les entraveront tant que les adds sont vivantes\n"Succube fanatique" soignera le boss s'il l'atteint.</value>
   </data>
   <data name="5429" xml:space="preserve">
-    <value>Double autos\nGaze inflicts Paralysis</value>
+    <value>Double autos\n Regard inflige Paralysie</value>
   </data>
   <data name="5430" xml:space="preserve">
-    <value>Inflicts Vuln Up debuff</value>
+    <value>Inflige un débuff de vulnérabilité augmentée</value>
   </data>
   <data name="5431" xml:space="preserve">
-    <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
+    <value>"Pointes de glace" reflète les dégâts\n"Glace du néant" inflige Lenteur</value>
   </data>
   <data name="5433" xml:space="preserve">
-    <value>Double autos that lifesteal</value>
+    <value>Double auto qui volent de la vie</value>
   </data>
   <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5437" xml:space="preserve">
-    <value>Double autos\nGaze inflicts heavy damage and Blind</value>
+    <value>Double autos\nRegard infligeant de gros dégâts et Cécité</value>
   </data>
   <data name="5438" xml:space="preserve">
-    <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
+    <value>Laisse de large flaque AoE infligeant Saignement si vous restez dedans\n"Valfodr" -- AoE linéaire ciblée non esquivable focalisée sur un joueur, le repoussant : évitez les AoEs encerclant le bord extérieur</value>
   </data>
   <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5449" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
+    <value>"Hydratation" -- AoE persistante au sol infligeant Saignement si vous restez dedans et buffant le boss avec Hâte s'il reste dedans\nCast occasionnellement des Aoe ciblées au sol </value>
   </data>
   <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5451" xml:space="preserve">
-    <value>Has semi-enrage around 30s in combat</value>
+    <value>A un demi-enrage environ 30s après le début du combat</value>
   </data>
   <data name="5452" xml:space="preserve">
-    <value>"Revelation" inflicts Confusion\n"Tropical Wind" gives enemy a large Haste and damage buff</value>
+    <value>"Révélation" inflige Confusion\n"Vent tropical" donne à l'ennemi un gros buff de Hâte et de dégâts augmentés</value>
   </data>
   <data name="5453" xml:space="preserve">
-    <value>"Glower" - untelegraphed line AoE\n"100-Tonze Swing" - untelegraphed point-blank AoE</value>
+    <value>"Regard noir" - AoE linéaire non télégraphiée\n"Swing de 100 tonz" - AoE à bout portant non télégraphiée</value>
   </data>
   <data name="5454" xml:space="preserve">
-    <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
+    <value>Buff ses propres dégâts et inflige Vulnérabilité Physique augmentée hors combat</value>
   </data>
   <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5459" xml:space="preserve">
-    <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
+    <value>Cleave infligeant Saignement\n"Démence" cible un joueur et lui inflige de gros dégâts, une vulnérabilité augmentée, et l'étourdit</value>
   </data>
   <data name="5460" xml:space="preserve">
-    <value>Cleave does heavy damage and inflicts potent Bleed</value>
+    <value>Cleave infligeant de gros dégâts ainsi qu'un puissant Saignement</value>
   </data>
   <data name="5461" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
+    <value>"Charybde" -- tornade au sol persistante qui cause de lourds dégâts si elle vous aspire\nLe boss ira au bord de l'arène pour cast "Écrabouillement" - large AoE en cône\n A 15% cast "Météore écliptique" - GROS DÉGÂTS qui inflige 80% de votre vie totale sur la pièce avec un long cast toutes les 9 secondes</value>
   </data>
   <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
+    <value>Doubles autos</value>
   </data>
   <data name="5464" xml:space="preserve">
-    <value>Instant AoE that inflicts heavy Bleed</value>
+    <value>AoE instantanée infligeant un puissant Saignement</value>
   </data>
   <data name="5465" xml:space="preserve">
-    <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
+    <value>AoE instantanée quand pull, double autos\nCastera un semi-enrage 30 secondes après le début du combat</value>
   </data>
   <data name="5466" xml:space="preserve">
-    <value>Sucks in player and does heavy damage\n"Tail Screw" does damage and inflicts Slow</value>
+    <value>Aspire les joueurs et inflige de gros dégâts\n"Queue forante" inflige des dégâts ainsi que Lenteur</value>
   </data>
   <data name="5467" xml:space="preserve">
-    <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
+    <value>AoE instantanée explosant infligeant de lourds dégâts ainsi que Lenteur\nCône instantanée infligeant Poison</value>
   </data>
   <data name="5470" xml:space="preserve">
-    <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
+    <value>Peut être engagé si vous connaissez les mécaniques de la chimère\n"Voix du Dragon" - être dans la hitbox \n"Voix du Bélier" - être hors de portée de mêlée</value>
   </data>
   <data name="5471" xml:space="preserve">
-    <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
+    <value>Tuez le bombo bleu lorsqu'elle apparait\nPoussez le bombo rouge sur le boss lors de son cast "Énorme Explosion", qui wipera l'équipe si non interrompu\nLe boss a un cleave qui inflige de lourds dégâts</value>
   </data>
   <data name="5473" xml:space="preserve">
-    <value>Casts untelegraphed cone "Level 5 Death"</value>
+    <value>Cast un cône non télégraphie "Mort niveau 5"</value>
   </data>
   <data name="5475" xml:space="preserve">
-    <value>Double auto</value>
+    <value>Doubles autos</value>
   </data>
   <data name="2566" xml:space="preserve">
-    <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
+    <value>Les autos font de gros dégâts et son AoE tue instantanément\n"Infatuation" ne peut être interrompue que par Interjection</value>
   </data>
   <data name="FontSize" xml:space="preserve">
-    <value>Font Size</value>
+    <value>Taille de la police</value>
   </data>
 </root>
