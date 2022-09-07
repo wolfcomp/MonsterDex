@@ -1,4 +1,5 @@
-﻿using Dalamud.Configuration;
+﻿using System;
+using Dalamud.Configuration;
 using Dalamud.Plugin;
 using ImGuiNET;
 using Newtonsoft.Json;
@@ -23,15 +24,19 @@ namespace DeepDungeonDex
 
         [JsonIgnore]
         public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
+        [JsonIgnore]
+        public float WindowSizeScaled { get; set; }
 
 
         public void Initialize(DalamudPluginInterface pluginInterface)
         {
             _pluginInterface = pluginInterface;
+            WindowSizeScaled = Math.Max(FontSize / 16, 1f);
         }
 
         public void Save()
         {
+            WindowSizeScaled = Math.Max(FontSize / 16, 1f);
             _pluginInterface.SavePluginConfig(this);
             _pluginInterface.UiBuilder.RebuildFonts();
         }

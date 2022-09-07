@@ -36,7 +36,7 @@ namespace DeepDungeonDex
             if (!IsVisible)
                 return;
             ImGui.PushFont(Font.RegularFont);
-            ImGui.SetNextWindowSizeConstraints(new Vector2(250, 100), new Vector2(400, 300));
+            ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
             ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
             if (ImGui.SliderFloat(_locale.Opacity, ref _opacity, 0.0f, 1.0f))
             {
