@@ -1,4 +1,5 @@
-﻿using ImGuiNET;
+﻿using System;
+using ImGuiNET;
 using System.Numerics;
 using Dalamud.Game.ClientState;
 using Dalamud.Logging;
@@ -87,7 +88,7 @@ namespace DeepDungeonDex
             {
                 flags |= ImGuiWindowFlags.NoInputs;
             }
-            ImGui.SetNextWindowSizeConstraints(new Vector2(250, 0), new Vector2(9001, 9001));
+            ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 0), new Vector2(9001, 9001));
             ImGui.SetNextWindowBgAlpha(_config.Opacity);
             ImGui.Begin("cool strati window", flags);
             ImGui.Text(_locale.Name+":\n" + Data.Name);
