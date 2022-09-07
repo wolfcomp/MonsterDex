@@ -1,5 +1,6 @@
 ﻿using Dalamud.Configuration;
 using Dalamud.Plugin;
+using ImGuiNET;
 using Newtonsoft.Json;
 
 namespace DeepDungeonDex
@@ -19,6 +20,9 @@ namespace DeepDungeonDex
 
         [JsonIgnore]
         public string LocaleString => Localization.Locale.GetLocales()[Locale];
+
+        [JsonIgnore]
+        public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
 
 
         public void Initialize(DalamudPluginInterface pluginInterface)
