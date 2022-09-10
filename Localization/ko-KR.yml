@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AggroType" xml:space="preserve">
+    <value>적개심 유형</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>속박</value>
+  </data>
+  <data name="Boss" xml:space="preserve">
+    <value>보스</value>
+  </data>
+  <data name="Caution" xml:space="preserve">
+    <value>주의</value>
+  </data>
+  <data name="Dangerous" xml:space="preserve">
+    <value>위험</value>
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>쉬움</value>
+  </data>
+  <data name="Heavy" xml:space="preserve">
+    <value>과중력</value>
+  </data>
+  <data name="HideBasedOnJob" xml:space="preserve">
+    <value>현재 클래스/직업을 기준으로 약점 숨기기</value>
+  </data>
+  <data name="HideRedVulns" xml:space="preserve">
+    <value>통하지 않는 약점 숨기기</value>
+  </data>
+  <data name="IsClickthrough" xml:space="preserve">
+    <value>마우스 클릭통과</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="NoDataFound" xml:space="preserve">
+    <value>{0}({1}) 에 대한 데이터를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>참고 사항</value>
+  </data>
+  <data name="Opacity" xml:space="preserve">
+    <value>불투명도</value>
+  </data>
+  <data name="Proximity" xml:space="preserve">
+    <value>근접</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Sight" xml:space="preserve">
+    <value>시각</value>
+  </data>
+  <data name="Sleep" xml:space="preserve">
+    <value>수면</value>
+  </data>
+  <data name="Slow" xml:space="preserve">
+    <value>둔화</value>
+  </data>
+  <data name="Sound" xml:space="preserve">
+    <value>소리</value>
+  </data>
+  <data name="Stun" xml:space="preserve">
+    <value>기절</value>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Deep Dungeons 디스코드 서버 덕분에 많은 자료가 확보되었습니다. 시간을 내어 정확하지 않거나 누락된 데이터를 보고해 주신 모든 분들께 감사드립니다! 또한 최고의 딥 던전 가이드를 쓴 Maygi에게 진심으로 감사드립니다!</value>
+  </data>
+  <data name="Threat" xml:space="preserve">
+    <value>위협 수준</value>
+  </data>
+  <data name="Undead" xml:space="preserve">
+    <value>언데드</value>
+  </data>
+  <data name="Undefined" xml:space="preserve">
+    <value>알 수 없음</value>
+  </data>
+  <data name="Vicious" xml:space="preserve">
+    <value>요주의</value>
+  </data>
+  <data name="Vulns" xml:space="preserve">
+    <value>약점</value>
+  </data>
+  <data name="7262" xml:space="preserve">
+    <value>피격 시 과중력 디버프를 부여함</value>
+  </data>
+  <data name="7263" xml:space="preserve">
+    <value>10초마다 받는 물리 피해 증가 디버프를 부여함</value>
+  </data>
+  <data name="7264" xml:space="preserve">
+    <value>범위 공격은 마비 디버프를 부여함</value>
+  </data>
+  <data name="7265" xml:space="preserve">
+    <value>연속으로 3번 공격하고 고통 디버프를 부여함</value>
+  </data>
+  <data name="7266" xml:space="preserve">
+    <value>보이지 않는 전방 부채꼴 범위 공격, 수면 디버프를 부여함</value>
+  </data>
+  <data name="7267" xml:space="preserve">
+    <value>범위 공격은 출혈 디버프를 부여함</value>
+  </data>
+  <data name="7268" xml:space="preserve">
+    <value>마안</value>
+  </data>
+  <data name="7270" xml:space="preserve">
+    <value>범위 공격 피격 시 넉백 됨</value>
+  </data>
+  <data name="7271" xml:space="preserve">
+    <value>부채꼴 범위 공격은 출혈 디버프 부여\n원형 범위 공격은 넉백 됨</value>
+  </data>
+  <data name="7272" xml:space="preserve">
+    <value>피할 수 없는 탱크 버스터를 시전함</value>
+  </data>
+  <data name="7273" xml:space="preserve">
+    <value>보이지 않는 강공격, 타박상 및 넉백 됨</value>
+  </data>
+  <data name="7279" xml:space="preserve">
+    <value>조금 아픈 삼연격 이후 범위 공격이 있음</value>
+  </data>
+  <data name="7281" xml:space="preserve">
+    <value>유혹 디버프를 부여하는 마안 공격을 하고, 잇달아 미니멈 디버프를 부여하는 큰 범위 공격을 시전함</value>
+  </data>
+  <data name="7285" xml:space="preserve">
+    <value>평타 중 3연타 하는 강공격이 있음</value>
+  </data>
+  <data name="7286" xml:space="preserve">
+    <value>어그로 대상 방면으로 광역공격</value>
+  </data>
+  <data name="7288" xml:space="preserve">
+    <value>실명 디버프를 부여하는 시선 공격을 함</value>
+  </data>
+  <data name="7289" xml:space="preserve">
+    <value>자신을 포함한 주변을 치료함</value>
+  </data>
+  <data name="7290" xml:space="preserve">
+    <value>랜덤 대상에게 넉백 범위 공격\n고통을 부여하는 직선 범위 공격을 함</value>
+  </data>
+  <data name="7291" xml:space="preserve">
+    <value>자신에게 피해량 증가 버프를 시전함</value>
+  </data>
+  <data name="7292" xml:space="preserve">
+    <value>캐스팅 없이 넉백시키는 전방 범위 강공격을 함</value>
+  </data>
+  <data name="7295" xml:space="preserve">
+    <value>주변을 끌어당긴 후 전방 범위 공격을 함</value>
+  </data>
+  <data name="7296" xml:space="preserve">
+    <value>마안</value>
+  </data>
+  <data name="7297" xml:space="preserve">
+    <value>고통 디버프를 부여하는 직선 범위 공격을 함</value>
+  </data>
+  <data name="7298" xml:space="preserve">
+    <value>화상 디버프를 부여하는 십자 범위 공격을 함</value>
+  </data>
+  <data name="7299" xml:space="preserve">
+    <value>마비 디버프를 부여하는 큰 범위 공격을 함</value>
+  </data>
+  <data name="7300" xml:space="preserve">
+    <value>화상 디버프를 부여하는 원형 범위 공격을 함</value>
+  </data>
+  <data name="7302" xml:space="preserve">
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
+  </data>
+  <data name="7303" xml:space="preserve">
+    <value>고통 디버프를 부여하는 공격을 함\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
+  </data>
+  <data name="7304" xml:space="preserve">
+    <value>남은 Hp가 적어지면 자폭을 시전함</value>
+  </data>
+  <data name="7305" xml:space="preserve">
+    <value>고통 디버프를 부여하는 직선 범위 공격\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
+  </data>
+  <data name="7306" xml:space="preserve">
+    <value>평타와 부채꼴 범위 공격을 번갈아서 함</value>
+  </data>
+  <data name="7308" xml:space="preserve">
+    <value>받는 데미지 증가 디버프를 중첩시키는 공격을 함</value>
+  </data>
+  <data name="7310" xml:space="preserve">
+    <value>매우 큰 범위 공격을 함</value>
+  </data>
+  <data name="7311" xml:space="preserve">
+    <value>고통 디버프를 부여하는 직선 범위 공격\n남은Hp가 적어지면 즉사급 공격을 시전함</value>
+  </data>
+  <data name="7312" xml:space="preserve">
+    <value>캐스팅 없이 전방 범위 공격을 함</value>
+  </data>
+  <data name="7313" xml:space="preserve">
+    <value>달달이로 만드는 시선 공격을 함</value>
+  </data>
+  <data name="7314" xml:space="preserve">
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
+  </data>
+  <data name="7318" xml:space="preserve">
+    <value>넓은 직선 범위 공격을 함\n마지막에는 즉사급 공격을 시전함</value>
+  </data>
+  <data name="7319" xml:space="preserve">
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
+  </data>
+  <data name="7320" xml:space="preserve">
+    <value>보라색: 연속 2회 공격</value>
+  </data>
+  <data name="7321" xml:space="preserve">
+    <value>큰 범위 공격을 함</value>
+  </data>
+  <data name="7323" xml:space="preserve">
+    <value>초록: 어그로가 끌려있지 않더라도 범위 공격을 함</value>
+  </data>
+  <data name="7324" xml:space="preserve">
+    <value>매우 넓은 폭의 직선 범위 공격을 함</value>
+  </data>
+  <data name="7326" xml:space="preserve">
+    <value>즉사급 공격을 시전함</value>
+  </data>
+  <data name="7327" xml:space="preserve">
+    <value>받는 피해 상승 디버프를 중첩시키는 공격을 함</value>
+  </data>
+  <data name="7328" xml:space="preserve">
+    <value>출혈 디버프를 부여하는 강공격을 함</value>
+  </data>
+  <data name="7329" xml:space="preserve">
+    <value>자신에게 피해량 증가 버프를 시전함</value>
+  </data>
+  <data name="7330" xml:space="preserve">
+    <value>즉사급 공격을 함</value>
+  </data>
+  <data name="7331" xml:space="preserve">
+    <value>출혈 디버프를 부여하는 범위 공격을 함</value>
+  </data>
+  <data name="7332" xml:space="preserve">
+    <value>매우 강력한 직선 범위 공격을 시전함</value>
+  </data>
+  <data name="7335" xml:space="preserve">
+    <value>주변으로 끌어당겨 공격함</value>
+  </data>
+  <data name="7336" xml:space="preserve">
+    <value>어그로가 끌려있지 않아도 랜덤 대상에게 범위 공격을 함</value>
+  </data>
+  <data name="7337" xml:space="preserve">
+    <value>부채꼴 범위의 마안 공격을 하고 남은Hp가 적어지면 즉사급 공격을 함</value>
+  </data>
+  <data name="7340" xml:space="preserve">
+    <value>30초의 중첩 가능한 독 디버프를 부여함</value>
+  </data>
+  <data name="7341" xml:space="preserve">
+    <value>받는 피해 상승 디버프를 중첩시키는 공격을 함</value>
+  </data>
+  <data name="7343" xml:space="preserve">
+    <value>마비 디버프를 부여하는 직선 범위 공격을 빠르게 시전함</value>
+  </data>
+  <data name="7344" xml:space="preserve">
+    <value>캐스터, 연속 공격을 함</value>
+  </data>
+  <data name="7345" xml:space="preserve">
+    <value>마비 디버프를 부여하는 범위 공격을 함</value>
+  </data>
+  <data name="7346" xml:space="preserve">
+    <value>전방 범위 공격과 맹독 디버프 부여함</value>
+  </data>
+  <data name="7347" xml:space="preserve">
+    <value>큰 도넛형태의 범위 공격과 공포 디버프를 부여하는 마안을 시전함</value>
+  </data>
+  <data name="7348" xml:space="preserve">
+    <value>고통 디버프를 부여하는 큰 원형 범위 공격</value>
+  </data>
+  <data name="7349" xml:space="preserve">
+    <value>자신과 파티원에게 방어력 증가 버프를 부여함</value>
+  </data>
+  <data name="7350" xml:space="preserve">
+    <value>한번에 여러 개의 디버프를 부여하는 범위 공격을 함</value>
+  </data>
+  <data name="7353" xml:space="preserve">
+    <value>전투 상태가 아닐 시 큰 범위 공격을 시전함\n매우 큰 원형의 범위 공격을 함</value>
+  </data>
+  <data name="7354" xml:space="preserve">
+    <value>후방에 전조 없는 넉백 공격을 함</value>
+  </data>
+  <data name="7355" xml:space="preserve">
+    <value>연속으로 2번 공격하고 고통 디버프를 부여함</value>
+  </data>
+  <data name="7356" xml:space="preserve">
+    <value>전투 상태가 아닐 시 빙결 디버프를 부여하는 범위 공격을 시전함</value>
+  </data>
+  <data name="7357" xml:space="preserve">
+    <value>전투 상태가 아닐 시 전체 범위 공격을 시전함\n큰 부채꼴 범위 공격으로 끌어당긴 후 강한 데미지를 입힘</value>
+  </data>
+  <data name="7358" xml:space="preserve">
+    <value>자신에게 피해량 증가 버프를 시전함</value>
+  </data>
+  <data name="7359" xml:space="preserve">
+    <value>헤이스트 상태, 즉사급 공격을 시전함</value>
+  </data>
+  <data name="7360" xml:space="preserve">
+    <value>매우 큰 범위 공격을 함</value>
+  </data>
+  <data name="7361" xml:space="preserve">
+    <value>타겟을 끌고와서 공격하고, 매우 큰 범위공격을 시전함. 마지막으로는 즉사급 공격을 시전</value>
+  </data>
+  <data name="7362" xml:space="preserve">
+    <value>매우 큰 범위 공격과 공포를 부여하는 마안을 시전</value>
+  </data>
+  <data name="7364" xml:space="preserve">
+    <value>연속으로 2번 공격하고 넓은 범위 공격을 함</value>
+  </data>
+  <data name="7365" xml:space="preserve">
+    <value>「氷結の咆哮/Ram's Voice」 멀리 떨어지기\n「雷電の咆哮/Dragon's Voice」 가까이 붙기\n부채꼴 범위공격을 시전</value>
+  </data>
+  <data name="7366" xml:space="preserve">
+    <value>전투 상태가 아닐 시 자신에게 주는 피해량 상승 버프를 부여함\n전투 상태가 아닐 시 받는 피해량 상승 디버프 스택형으로 부여하는 범위 공격을 함</value>
+  </data>
+  <data name="7367" xml:space="preserve">
+    <value>Charges on aggro</value>
+  </data>
+  <data name="7368" xml:space="preserve">
+    <value>무작위 타겟에게 보이지 않는 범위 공격을 하고, 마안 공격을 시전함</value>
+  </data>
+  <data name="7369" xml:space="preserve">
+    <value>어그로가 끌려있지 않더라도 랜덤 범위 공격을 함</value>
+  </data>
+  <data name="7370" xml:space="preserve">
+    <value>연속 공격을 하고, 후면에 매우 강한 부채꼴 범위 공격을 함</value>
+  </data>
+  <data name="7371" xml:space="preserve">
+    <value>범위가 보이지 않음, 십자 범위 공격과 원 범위 공격을 함</value>
+  </data>
+  <data name="7372" xml:space="preserve">
+    <value>주는 피해 상승 버프를 자신에게 사용하고 연속 2회 공격</value>
+  </data>
+  <data name="7373" xml:space="preserve">
+    <value>흡인 공격 후 고통 디버프 부여, 중첩되는 독 디버프를 부여함</value>
+  </data>
+  <data name="7374" xml:space="preserve">
+    <value>도넛 모양의 큰 범위 공격</value>
+  </data>
+  <data name="7375" xml:space="preserve">
+    <value>부채꼴 범위 공격, 원형 범위 공격, 전체 공격</value>
+  </data>
+  <data name="7376" xml:space="preserve">
+    <value>차지 공격, 자신에게 데미지 상승 버프 부여, 연속으로 공격, 감전 디버프 부여</value>
+  </data>
+  <data name="7377" xml:space="preserve">
+    <value>차지 공격, 자신에게 데미지 상승 버프 부여, 범위를 보여주지 않는 강공격 「Ripper Claw/リッパークロウ」</value>
+  </data>
+  <data name="7378" xml:space="preserve">
+    <value>전사: 강한 데미지의 3연속 넉백 공격\n자신에게 데미지 상승 버프\n매우 데미지가 강한 넉백 전방 부채꼴 범위 공격</value>
+  </data>
+  <data name="7379" xml:space="preserve">
+    <value>몽크: 헤이스트와 회피율 상승의 버프</value>
+  </data>
+  <data name="7380" xml:space="preserve">
+    <value>WHM: double autos\n"Stone" can be line of sighted</value>
+  </data>
+  <data name="7381" xml:space="preserve">
+    <value>Cleave\nLarge line AoE that can be line of sighted</value>
+  </data>
+  <data name="7382" xml:space="preserve">
+    <value>「ミールストーム/Charybdis」 스킬으로 랜덤 타겟의 위치에 회오리를 발생시키는 범위 공격을 함</value>
+  </data>
+  <data name="7384" xml:space="preserve">
+    <value>전투 상태가 아닐 시 타겟에게 범위 공격을 시전하고 자신에게 방어력 상승 버프를 부여함</value>
+  </data>
+  <data name="7385" xml:space="preserve">
+    <value>부채꼴 범위 공격을 함</value>
+  </data>
+  <data name="7386" xml:space="preserve">
+    <value>매우 빠른 즉사급 범위 공격 「葬送撃/Death's Door」을 시전함</value>
+  </data>
+  <data name="7387" xml:space="preserve">
+    <value>무작위 대상에게 큰 데미지를 줌</value>
+  </data>
+  <data name="7388" xml:space="preserve">
+    <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
+  </data>
+  <data name="7389" xml:space="preserve">
+    <value>강한 데미지의 부채꼴 범위 공격, HP 흡수 공격, 자신에게 피해량 상승 버프 부여를 반복하고 버프 스택이 3이 되면 즉사 공격의 「ブラックネビュラ/Black Nebula」를 시전함</value>
+  </data>
+  <data name="7390" xml:space="preserve">
+    <value>빠르게 연속으로 2회 공격하고 전방 직선 범위 공격 「クェーサー/Quasar」</value>
+  </data>
+  <data name="7391" xml:space="preserve">
+    <value>연속으로 2번 공격하고, 수면 디버프를 부여하는 원형 범위 공격을 함</value>
+  </data>
+  <data name="7584" xml:space="preserve">
+    <value>중첩되는 데미지 상승 버프를 사용함\n랜덤 대상에게 즉사 공격 「알라간 메테오」시전\n마안 공격을 시전함</value>
+  </data>
+  <data name="7392" xml:space="preserve">
+    <value>1-30층: 청동 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/넉백/적변형/\n말참견으로 중단시킬 수 있습니다</value>
+  </data>
+  <data name="7393" xml:space="preserve">
+    <value>31-60층: 은 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 침묵/기절/말참견으로 중단시킬 수 있습니다</value>
+  </data>
+  <data name="7394" xml:space="preserve">
+    <value>61층~: 금 상자에서만 나타나며\n빠르게 죽일 것\n미믹이 시전하는 스킬은 오직 말참견으로만 중단시킬 수 있습니다\n기절시킬 수 없습니다</value>
+  </data>
+  <data name="7478" xml:space="preserve">
+    <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
+  </data>
+  <data name="7480" xml:space="preserve">
+    <value>필드 중앙으로 이동하여 벽 쪽으로 넉백 시킴(무조건 넉백)\n넉백 후 바로 맵 절반 범위 공격을 시전하므로 보스 뒤로 이동</value>
+  </data>
+  <data name="7481" xml:space="preserve">
+    <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
+  </data>
+  <data name="7483" xml:space="preserve">
+    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
+  </data>
+  <data name="7485" xml:space="preserve">
+    <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
+  </data>
+  <data name="7487" xml:space="preserve">
+    <value>여러 범위 공격을 하는 지팡이를 소환\n지팡이가 타겟에게 직선 범위 공격을 하기도 함\n층 전체 범위 공격을 함</value>
+  </data>
+  <data name="7489" xml:space="preserve">
+    <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
+  </data>
+  <data name="7490" xml:space="preserve">
+    <value>1) Summons balls of ice\n2) Summons icicle that pierces through room, detonating any ice balls it hits\n3) "Lunar Cry" detonates remaining ice balls\n4) Exploding ice balls inflict Deep Freeze if they hit a player\n5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)</value>
+  </data>
+  <data name="7493" xml:space="preserve">
+    <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
+  </data>
+  <data name="7610" xml:space="preserve">
+    <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
+  </data>
+  <data name="4975" xml:space="preserve">
+    <value>자신에게 헤이스트를 부여함</value>
+  </data>
+  <data name="4980" xml:space="preserve">
+    <value>독 디버프를 부여함</value>
+  </data>
+  <data name="4981" xml:space="preserve">
+    <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
+  </data>
+  <data name="4982" xml:space="preserve">
+    <value>받는 피해 상승 디버프를 부여함</value>
+  </data>
+  <data name="4985" xml:space="preserve">
+    <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
+  </data>
+  <data name="4986" xml:space="preserve">
+    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
+  </data>
+  <data name="4988" xml:space="preserve">
+    <value>독 디버프를 부여함</value>
+  </data>
+  <data name="4989" xml:space="preserve">
+    <value>「スティッキータン/Sticky Tongue」 스킬은 마주보고 있으면 기절 상태에 빠지지 않음</value>
+  </data>
+  <data name="4990" xml:space="preserve">
+    <value>즉사급 공격을 시전함</value>
+  </data>
+  <data name="4993" xml:space="preserve">
+    <value>둔화가 걸리는 구역</value>
+  </data>
+  <data name="4996" xml:space="preserve">
+    <value>자신에게 피해량 증가 버프를 시전함</value>
+  </data>
+  <data name="4997" xml:space="preserve">
+    <value>석화 디버프를 부여하는 마안 공격을 시전함. 「捕食/Devour」 스킬은 개구리 상태로 변한 플레이어를 즉사시킴</value>
+  </data>
+  <data name="4999" xml:space="preserve">
+    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
+  </data>
+  <data name="5010" xml:space="preserve">
+    <value>조금 강한 보이지 않는 범위공격을 시전함</value>
+  </data>
+  <data name="5011" xml:space="preserve">
+    <value>「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함</value>
+  </data>
+  <data name="5012" xml:space="preserve">
+    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
+  </data>
+  <data name="5022" xml:space="preserve">
+    <value>「ダークミスト/Dark Mist」 스킬은 공황 디버프를 부여함</value>
+  </data>
+  <data name="5025" xml:space="preserve">
+    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+  </data>
+  <data name="5030" xml:space="preserve">
+    <value>마비 디버프를 부여함</value>
+  </data>
+  <data name="5032" xml:space="preserve">
+    <value>마비 디버프를 부여함</value>
+  </data>
+  <data name="5038" xml:space="preserve">
+    <value>기믹 해설: 기믹을 실패하면 전체 범위 공격이 강화됨\n보스는 전체 공격을 종종 시전함\n1) 「インヘルス/In Health」스킬은 보스의 발밑 이외의 전체 범위 공격 또는 보스 중심의 원형 범위 공격\n2) 「狂気のまなざし/Cold Feet」 마안 공격</value>
+  </data>
+  <data name="5041" xml:space="preserve">
+    <value>공격하면 주변을 기절시키고 바로 죽는다.</value>
+  </data>
+  <data name="5046" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5047" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5048" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5049" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5050" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5051" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5052" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5053" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5283" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5284" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5285" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5286" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5287" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5288" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5289" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5290" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5291" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5292" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5293" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5294" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5295" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5296" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5297" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5298" xml:space="preserve">
+    <value>적 변형 마석에 내성이 있음</value>
+  </data>
+  <data name="5299" xml:space="preserve">
+    <value>마비 디버프를 부여하는 마안 공격을 함</value>
+  </data>
+  <data name="5308" xml:space="preserve">
+    <value>실명 디버프와 높은 데미지를 주는 마안 공격을 함</value>
+  </data>
+  <data name="5309" xml:space="preserve">
+    <value>큰 장판이 생기고 안으로 들어가면 고통 디버프가 부여된다.\n「ヴァルファズル/Valfodr」 스킬은 타겟에게 회피 불가의 넉백 직선 범위 공격, 장판 쪽으로 밀리지 않게 이동해야함</value>
+  </data>
+  <data name="5321" xml:space="preserve">
+    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
+  </data>
+  <data name="5333" xml:space="preserve">
+    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
+  </data>
+  <data name="5334" xml:space="preserve">
+    <value>일정 시간내로 죽이지 못하면 전체 공격인 「自爆/Self Destruct」을 시전함</value>
+  </data>
+  <data name="5345" xml:space="preserve">
+    <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
+  </data>
+  <data name="5356" xml:space="preserve">
+    <value>다수의 부하를 소환하고 큰 범위 공격을 시전함, 부하들은 적변형 마토기로 변형시킬 수 있음</value>
+  </data>
+  <data name="5364" xml:space="preserve">
+    <value>101-110층:\n 위협 수준의 몬스터들은 무시하기\n191-200층:\n연속 공격</value>
+  </data>
+  <data name="5365" xml:space="preserve">
+    <value>독 디버프를 부여함</value>
+  </data>
+  <data name="5366" xml:space="preserve">
+    <value>「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌</value>
+  </data>
+  <data name="5367" xml:space="preserve">
+    <value>받는 피해 상승 디버프를 부여함</value>
+  </data>
+  <data name="5370" xml:space="preserve">
+    <value>「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함</value>
+  </data>
+  <data name="5371" xml:space="preserve">
+    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
+  </data>
+  <data name="5374" xml:space="preserve">
+    <value>「スティッキータン/Sticky Tongue」스킬은 타겟을 끌어당기고, 마주 보고 있지 않으면 기절 디버프를 부여함, 이후 「レイバードリープ」은 타겟 중심의 범위 공격</value>
+  </data>
+  <data name="5375" xml:space="preserve">
+    <value>즉사급 공격을 시전함</value>
+  </data>
+  <data name="5377" xml:space="preserve">
+    <value>자신에게 주는 피해량 상승 버프를 부여함</value>
+  </data>
+  <data name="5378" xml:space="preserve">
+    <value>둔화가 걸리는 구역</value>
+  </data>
+  <data name="5380" xml:space="preserve">
+    <value>「臭い息/Bad Breath」 스킬을 시전하면 피하거나 끊어준다</value>
+  </data>
+  <data name="5381" xml:space="preserve">
+    <value>자신에게 피해량 증가 버프를 시전함</value>
+  </data>
+  <data name="5382" xml:space="preserve">
+    <value>석화를 부여하는 마안 공격을 시전함, 「リゴージ/Regorge」 스킬은 독을 부여하며\n개구리로 변한 상태라면 즉사함</value>
+  </data>
+  <data name="5384" xml:space="preserve">
+    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
+  </data>
+  <data name="5389" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5395" xml:space="preserve">
+    <value>「111トンズ・スイング/11-Tonze Swing」 - 높은 데미지와 넉백 시키는 원형 범위 공격</value>
+  </data>
+  <data name="5396" xml:space="preserve">
+    <value>「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함</value>
+  </data>
+  <data name="5397" xml:space="preserve">
+    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
+  </data>
+  <data name="5402" xml:space="preserve">
+    <value>전방 부채꼴 범위 공격 「レベル5石化/Level 5 Petrify」 로 석화 디버프를 부여함</value>
+  </data>
+  <data name="5406" xml:space="preserve">
+    <value>출혈 디버프를 부여하는 원형 범위 공격을 함</value>
+  </data>
+  <data name="5409" xml:space="preserve">
+    <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
+  </data>
+  <data name="5410" xml:space="preserve">
+    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
+  </data>
+  <data name="5413" xml:space="preserve">
+    <value>「ミールストーム/Charybdis」 - 파티 멤버의 체력을 1%로 만드는 공격</value>
+  </data>
+  <data name="5414" xml:space="preserve">
+    <value>매우 높은 데미지와 독 디버프를 부여함</value>
+  </data>
+  <data name="5415" xml:space="preserve">
+    <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
+  </data>
+  <data name="5420" xml:space="preserve">
+    <value>「イビルアイ/Evil Eye」 - 마안 공격</value>
+  </data>
+  <data name="5421" xml:space="preserve">
+    <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
+  </data>
+  <data name="5422" xml:space="preserve">
+    <value>높은 Hp를 가지고 있고 「スクリーム/Scream」 스킬로 매우 큰 범위 공격을 함</value>
+  </data>
+  <data name="5423" xml:space="preserve">
+    <value>Very high damage for the floors it appears on</value>
+  </data>
+  <data name="5424" xml:space="preserve">
+    <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
+  </data>
+  <data name="5429" xml:space="preserve">
+    <value>연속 2번 공격\n마비 디버프를 부여하는 마안 공격</value>
+  </data>
+  <data name="5430" xml:space="preserve">
+    <value>받는 피해 상승 디버프를 부여함</value>
+  </data>
+  <data name="5431" xml:space="preserve">
+    <value>「アイススパイク/Ice Spikes」스킬은 물리 데미지 반사 버프\n「ヴォイド・ブリザド/Void Blizzard」스킬은 둔화 디버프를 부여함</value>
+  </data>
+  <data name="5433" xml:space="preserve">
+    <value>연속으로 2회 공격하고 데미지 비례 Hp를 흡수함</value>
+  </data>
+  <data name="5436" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5437" xml:space="preserve">
+    <value>연속으로 공격\n실명 디버프와 강한 데미지를 입히는 마안 공격을 시전함</value>
+  </data>
+  <data name="5438" xml:space="preserve">
+    <value>큰 장판이 생기고 안으로 들어가면 고통 디버프가 부여된다.\n「ヴァルファズル/Valfodr」 스킬은 타겟에게 회피 불가의 넉백 직선 범위 공격, 장판 쪽으로 밀리지 않게 이동해야함</value>
+  </data>
+  <data name="5442" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5443" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5449" xml:space="preserve">
+    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
+  </data>
+  <data name="5450" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5451" xml:space="preserve">
+    <value>전투 개시 후 30초 전후로 강공격 시전함</value>
+  </data>
+  <data name="5452" xml:space="preserve">
+    <value>"Revelation" inflicts Confusion\n"Tropical Wind" gives enemy a large Haste and damage buff</value>
+  </data>
+  <data name="5453" xml:space="preserve">
+    <value>「グラワー/Glower」 스킬은 범위를 보여주지 않는 직선 범위 공격\n「100トンズ・スイング/100-Tonze Swing」 스킬은 범위를 보여주지 않는 보스 중심 원형 범위 공격</value>
+  </data>
+  <data name="5454" xml:space="preserve">
+    <value>자신에게 주는 피해 상승 버프를 부여하고, 전투 상태가 아닐 시 받는 물리 피해 상승 디버프를 부여하는 범위 공격을 함</value>
+  </data>
+  <data name="5458" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5459" xml:space="preserve">
+    <value>고통 디버프를 부여 범위 공격을 시전함\n「狂乱/Flying Frenzy」랜덤 타겟에게 데미지, 받는 피해량 상승 디버프를 부여, 기절 상태로 만듬</value>
+  </data>
+  <data name="5460" xml:space="preserve">
+    <value>강한 데미지와 고통 디버프를 부여하는 부채꼴 범위 공격을 시전함</value>
+  </data>
+  <data name="5461" xml:space="preserve">
+    <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
+  </data>
+  <data name="5463" xml:space="preserve">
+    <value>연속으로 2번 공격함</value>
+  </data>
+  <data name="5464" xml:space="preserve">
+    <value>고통 디버프를 부여하는 즉발 범위 공격을 시전함.</value>
+  </data>
+  <data name="5465" xml:space="preserve">
+    <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
+  </data>
+  <data name="5466" xml:space="preserve">
+    <value>플레이어를 끌어 당겨 데미지를 입힘\n「テールスクリュー/Tail Screw」스킬은 데미지와 둔화 디버프를 부여함</value>
+  </data>
+  <data name="5467" xml:space="preserve">
+    <value>강한 데미지와 둔화 디버프를 부여하는 즉발 범위 공격\n독 디버프를 부여하는 즉발 부채꼴 범위 공격을 시전함</value>
+  </data>
+  <data name="5470" xml:space="preserve">
+    <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
+  </data>
+  <data name="5471" xml:space="preserve">
+    <value>파란봄이 나타나면 우선해서 처치한다\n「大爆発/Massive Burst」 빨간봄을 보스에게 밀어 기절시키지 않으면 전멸한다\n보스는 전방으로 강한 공격을 한다</value>
+  </data>
+  <data name="5473" xml:space="preserve">
+    <value>전방 부채꼴 범위 공격 "레벨 5데스" 스킬을 시전함</value>
+  </data>
+  <data name="5475" xml:space="preserve">
+    <value>연속으로 2회 공격</value>
+  </data>
+  <data name="2566" xml:space="preserve">
+    <value>강한 데미지의 공격을 하고 즉사급 공격을 시전함\n「怨念/Infatuation」 스킬은 침묵으로만 끊을 수 있음</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>글자 크기</value>
+  </data>
+</root>
