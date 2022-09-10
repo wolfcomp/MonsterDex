@@ -78,16 +78,16 @@ AggroType: 적개심 유형
   Get knocked into a cloud to dispel it and avoid vuln
   Half-room wide AoE
 7394: |
-  Floors 61+&#58; Gold chests only
+  Floors 61+: Gold chests only
   High damage autos and instant kill AoE
   "Malice" can only be interrupted with interject
   CANNOT STUN
 7393: |
-  Floors 31-60&#58; Silver chests only
+  Floors 31-60: Silver chests only
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/interject
 7392: |
-  Floors 1-30&#58; Bronze chests only
+  Floors 1-30: Bronze chests only
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/knockback/witching/
   interject
@@ -108,11 +108,12 @@ AggroType: 적개심 유형
   Cleave
   Large line AoE that can be line of sighted
 7380: |
-  WHM&#58; double autos
+  WHM: double autos
   "Stone" can be line of sighted
-7379: 'MNK&#58; Haste buff, short invuln'
+7379: |
+  몽크: 헤이스트와 회피율 상승의 버프
 7378: |
-  WAR&#58; Triple knockback with heavy damage
+  WAR: Triple knockback with heavy damage
   Buffs own attack
   Extremely high damage cleave with knockback
 7377: 차지 공격, 자신에게 데미지 상승 버프 부여, 범위를 보여주지 않는 강공격 「Ripper Claw/リッパークロウ」
@@ -169,9 +170,11 @@ AggroType: 적개심 유형
 7327: 받는 피해 상승 디버프를 중첩시키는 공격을 함
 7326: 즉사급 공격을 시전함
 7324: 매우 넓은 폭의 직선 범위 공격을 함
-7323: 'Green&#58; Casts AoEs unaggroed'
+7323: |
+  초록: 어그로가 끌려있지 않더라도 범위 공격을 함
 7321: 큰 범위 공격을 함
-7320: 'Purple&#58; double auto'
+7320: |
+  보라색: 연속 2회 공격
 7319: 어그로가 끌려있지 않더라도 랜덤 범위 공격을 함
 7318: |
   Large line AoE
@@ -291,9 +294,9 @@ AggroType: 적개심 유형
 5421: Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind
 5420: '「イビルアイ/Evil Eye」 - 마안 공격'
 5415: |
-  Floors 141-150&#58;
+  Floors 141-150:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Casts large doughnut AoE "Death Spiral" that deals heavy damage
   Has soft enrage of a strong damage buff
 5414: 매우 높은 데미지와 독 디버프를 부여함
@@ -303,14 +306,14 @@ AggroType: 적개심 유형
   1) Summons four lingering AoEs
   2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
 5409: |
-  Floors 131-140&#58;
+  Floors 131-140:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Double autos
 5406: 출혈 디버프를 부여하는 원형 범위 공격을 함
 5402: 전방 부채꼴 범위 공격 「レベル5石化/Level 5 Petrify」 로 석화 디버프를 부여함
 5397: |
-  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  1) Spread out fire and ice AOEs and don't drop them in center because:
   2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
 5396: |
   「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함
@@ -343,9 +346,9 @@ AggroType: 적개심 유형
 5366: '「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌'
 5365: 독 디버프를 부여함
 5364: |
-  Floors 101-110&#58;
+  Floors 101-110:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Double autos
 5356: 다수의 부하를 소환하고 큰 범위 공격을 시전함, 부하들은 적변형 마토기로 변형시킬 수 있음
 5345: |
@@ -403,7 +406,7 @@ AggroType: 적개심 유형
 5022: |
   「ダークミスト/Dark Mist」 스킬은 공황 디버프를 부여함
 5012: |
-  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  1) Spread out fire and ice AOEs and don't drop them in center because:
   2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
 5011: |
   「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함
