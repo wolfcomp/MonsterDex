@@ -78,16 +78,16 @@ AggroType: 感知タイプ
   Get knocked into a cloud to dispel it and avoid vuln
   Half-room wide AoE
 7394: |
-  Floors 61+&#58; Gold chests only
+  Floors 61+: Gold chests only
   High damage autos and instant kill AoE
   "Malice" can only be interrupted with interject
   CANNOT STUN
 7393: |
-  Floors 31-60&#58; Silver chests only
+  Floors 31-60: Silver chests only
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/interject
 7392: |
-  Floors 1-30&#58; Bronze chests only
+  Floors 1-30: Bronze chests only
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/knockback/witching/
   interject
@@ -108,11 +108,12 @@ AggroType: 感知タイプ
   Cleave
   Large line AoE that can be line of sighted
 7380: |
-  WHM&#58; double autos
+  WHM: double autos
   "Stone" can be line of sighted
-7379: 'MNK&#58; Haste buff, short invuln'
+7379: |
+  モンク: ヘイストと回避率アップのバフ
 7378: |
-  WAR&#58; Triple knockback with heavy damage
+  WAR: Triple knockback with heavy damage
   Buffs own attack
   Extremely high damage cleave with knockback
 7377: チャージ攻撃、自身に与ダメージ上昇バフ付与、予兆無しの強攻撃「リッパークロウ」
@@ -169,9 +170,11 @@ AggroType: 感知タイプ
 7327: 被ダメージ上昇デバフをスタックするAA
 7326: 最後に時間切れ攻撃
 7324: 非常に幅が広い直線範囲攻撃
-7323: 'Green&#58; Casts AoEs unaggroed'
+7323: |
+  緑: 非戦闘時にランダム範囲攻撃
 7321: 大きな範囲攻撃
-7320: 'Purple&#58; double auto'
+7320: |
+  紫: 二連続AA
 7319: ランダム対象の範囲攻撃
 7318: |
   Large line AoE
@@ -291,9 +294,9 @@ AggroType: 感知タイプ
 5421: 自身のダメージ上昇、前方不可視攻撃「リッパークロウ」背面を歩くと回避できます。
 5420: 詠唱のある視線攻撃「イビルアイ」
 5415: |
-  Floors 141-150&#58;
+  Floors 141-150:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Casts large doughnut AoE "Death Spiral" that deals heavy damage
   Has soft enrage of a strong damage buff
 5414: 非常に高いダメージと毒デバフ付与
@@ -303,14 +306,14 @@ AggroType: 感知タイプ
   1) Summons four lingering AoEs
   2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
 5409: |
-  Floors 131-140&#58;
+  Floors 131-140:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Double autos
 5406: ターゲットに継続ダメージを与えるAoEをキャストする
 5402: 予兆無しの前方扇範囲攻撃「レベル5石化」で石化デバフを付与
 5397: |
-  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  1) Spread out fire and ice AOEs and don't drop them in center because:
   2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
 5396: |
   「チャープ」15秒間睡眠デバフを付与する
@@ -343,9 +346,9 @@ AggroType: 感知タイプ
 5366: '「ファイナルスピア」大ダメージ'
 5365: 毒デバフ付与
 5364: |
-  Floors 101-110&#58;
+  Floors 101-110:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Double autos
 5356: 雑魚を召喚し、大きなAoEを放つ。雑魚はクリブ化の攻撃が有効
 5345: |
@@ -403,7 +406,7 @@ AggroType: 感知タイプ
 5022: |
   「ダークミスト」恐慌デバフを付与する
 5012: |
-  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  1) Spread out fire and ice AOEs and don't drop them in center because:
   2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
 5011: |
   「チャープ」15秒間睡眠デバフを付与する
