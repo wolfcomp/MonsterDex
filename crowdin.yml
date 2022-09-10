@@ -3,3 +3,5 @@ api_token_env: CROWDIN_PERSONAL_TOKEN
 files:
   - source: /Localization/en.resx
     translation: /Localization/%locale%.resx
+  - source: /Localization/en.yml
+    translation: /Localization/%locale%.yml
