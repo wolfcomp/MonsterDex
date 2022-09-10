@@ -1,5 +1,5 @@
-files:
-  - source: /Localization/en.resx
-    translation: /Localization/%locale%.resx
 project_id: 526558
 api_token_env: CROWDIN_PERSONAL_TOKEN
+files:
+  - source: /Localization/en.resx
+    translation: /Localization/%locale%.yml
