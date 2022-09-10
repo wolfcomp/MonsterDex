@@ -1,885 +1,436 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="AggroType" xml:space="preserve">
-    <value>仇恨类型</value>
-  </data>
-  <data name="Bind" xml:space="preserve">
-    <value>绑定</value>
-  </data>
-  <data name="Boss" xml:space="preserve">
-    <value>Boss</value>
-  </data>
-  <data name="Caution" xml:space="preserve">
-    <value>注意</value>
-  </data>
-  <data name="Dangerous" xml:space="preserve">
-    <value>危险</value>
-  </data>
-  <data name="Easy" xml:space="preserve">
-    <value>简单</value>
-  </data>
-  <data name="Heavy" xml:space="preserve">
-    <value>Heavy</value>
-  </data>
-  <data name="HideBasedOnJob" xml:space="preserve">
-    <value>Hide vulnerabilities based on current class/job</value>
-  </data>
-  <data name="HideRedVulns" xml:space="preserve">
-    <value>Hide vulnerabilities that can't be inflicted</value>
-  </data>
-  <data name="IsClickthrough" xml:space="preserve">
-    <value>启用鼠标穿透</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>名称</value>
-  </data>
-  <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>说明</value>
-  </data>
-  <data name="Opacity" xml:space="preserve">
-    <value>不透明度</value>
-  </data>
-  <data name="Proximity" xml:space="preserve">
-    <value>范围感知</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>保存</value>
-  </data>
-  <data name="Sight" xml:space="preserve">
-    <value>视野感知</value>
-  </data>
-  <data name="Sleep" xml:space="preserve">
-    <value>Sleep</value>
-  </data>
-  <data name="Slow" xml:space="preserve">
-    <value>Slow</value>
-  </data>
-  <data name="Sound" xml:space="preserve">
-    <value>Sound</value>
-  </data>
-  <data name="Stun" xml:space="preserve">
-    <value>Stun</value>
-  </data>
-  <data name="Thanks" xml:space="preserve">
-    <value>感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！</value>
-  </data>
-  <data name="Threat" xml:space="preserve">
-    <value>Threat</value>
-  </data>
-  <data name="Undead" xml:space="preserve">
-    <value>Undead</value>
-  </data>
-  <data name="Undefined" xml:space="preserve">
-    <value>Undefined</value>
-  </data>
-  <data name="Vicious" xml:space="preserve">
-    <value>Vicious</value>
-  </data>
-  <data name="Vulns" xml:space="preserve">
-    <value>Vulns</value>
-  </data>
-  <data name="7262" xml:space="preserve">
-    <value>给一仇附加可驱散的加重Debuff</value>
-  </data>
-  <data name="7263" xml:space="preserve">
-    <value>给一仇附加物理易伤10秒</value>
-  </data>
-  <data name="7264" xml:space="preserve">
-    <value>读条圆形可见范围AoE</value>
-  </data>
-  <data name="7265" xml:space="preserve">
-    <value>给一仇附加可驱散的中毒Dot</value>
-  </data>
-  <data name="7266" xml:space="preserve">
-    <value>读条扇形不可见睡眠AoE\n读条可见扇形AoE</value>
-  </data>
-  <data name="7267" xml:space="preserve">
-    <value>读条扇形可见AoE</value>
-  </data>
-  <data name="7268" xml:space="preserve">
-    <value>石化背对</value>
-  </data>
-  <data name="7270" xml:space="preserve">
-    <value>读条可见击退AoE</value>
-  </data>
-  <data name="7271" xml:space="preserve">
-    <value>读条扇形\n/圆形可见AoE</value>
-  </data>
-  <data name="7272" xml:space="preserve">
-    <value>读条对随机一人释放单体大伤害攻击</value>
-  </data>
-  <data name="7273" xml:space="preserve">
-    <value>读条对随机一人释放单体大伤害攻击</value>
-  </data>
-  <data name="7279" xml:space="preserve">
-    <value>无读条对一仇释放三连伤害\n读条可见圆形AoE</value>
-  </data>
-  <data name="7281" xml:space="preserve">
-    <value>读条背对\n读条圆形可见范围AoE</value>
-  </data>
-  <data name="7285" xml:space="preserve">
-    <value>读条圆形可见范围AoE</value>
-  </data>
-  <data name="7286" xml:space="preserve">
-    <value>无读条对一仇释放大扇形Aoe</value>
-  </data>
-  <data name="7288" xml:space="preserve">
-    <value>读条对一仇单体伤害+背对</value>
-  </data>
-  <data name="7289" xml:space="preserve">
-    <value>读条回血技能，可打断</value>
-  </data>
-  <data name="7290" xml:space="preserve">
-    <value>读条释放直线/圆形AoE</value>
-  </data>
-  <data name="7291" xml:space="preserve">
-    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7292" xml:space="preserve">
-    <value>读条对前方释放不可见范围的击退扇形Aoe\n读条点名一人释放单体大伤害攻击</value>
-  </data>
-  <data name="7295" xml:space="preserve">
-    <value>读条点名随机1人释放吸引攻击将其吸引到自己脚下，然后对其释放扇形Aoe（可通过卡墙回避）</value>
-  </data>
-  <data name="7296" xml:space="preserve">
-    <value>石化背对</value>
-  </data>
-  <data name="7297" xml:space="preserve">
-    <value>读条释放可见范围的直线Aoe</value>
-  </data>
-  <data name="7298" xml:space="preserve">
-    <value>读条释放可见范围的十字Aoe（附加生命最大值下降Debuff）\n读条释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7299" xml:space="preserve">
-    <value>读条释放超大范围的强麻痹（可打断）</value>
-  </data>
-  <data name="7300" xml:space="preserve">
-    <value>读条释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7302" xml:space="preserve">
-    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
-  </data>
-  <data name="7303" xml:space="preserve">
-    <value>无读条对一仇释放单体伤害并附加可驱散的流血DoT\n读条可见扇形AoE</value>
-  </data>
-  <data name="7304" xml:space="preserve">
-    <value>低血量时，读条全屏范围的超高伤害的自爆技能“切腹”</value>
-  </data>
-  <data name="7305" xml:space="preserve">
-    <value>读条可见直线AoE\n全屏范围的超高伤害的自爆技能“切腹”</value>
-  </data>
-  <data name="7306" xml:space="preserve">
-    <value>对一仇无读条释放单体伤害</value>
-  </data>
-  <data name="7308" xml:space="preserve">
-    <value>读条释放需要分摊的中等伤害Aoe</value>
-  </data>
-  <data name="7310" xml:space="preserve">
-    <value>读条可见范围的超大范围圆形Aoe</value>
-  </data>
-  <data name="7311" xml:space="preserve">
-    <value>读条可见直线AoE\n全屏范围的超高伤害的自爆技能“切腹”</value>
-  </data>
-  <data name="7312" xml:space="preserve">
-    <value>无读条对前方发动不可见范围的连续扇形Aoe（看到抬起爪子远离正面）</value>
-  </data>
-  <data name="7313" xml:space="preserve">
-    <value>形变背对\n平A为扇形攻击</value>
-  </data>
-  <data name="7314" xml:space="preserve">
-    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
-  </data>
-  <data name="7318" xml:space="preserve">
-    <value>读条可见范围的直线Aoe</value>
-  </data>
-  <data name="7319" xml:space="preserve">
-    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
-  </data>
-  <data name="7320" xml:space="preserve">
-    <value>读条一仇单体伤害\n读条释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7321" xml:space="preserve">
-    <value>读条释放可见范围的扇形Aoe</value>
-  </data>
-  <data name="7323" xml:space="preserve">
-    <value>Green: Casts AoEs unaggroed</value>
-  </data>
-  <data name="7324" xml:space="preserve">
-    <value>Very wide line AoE</value>
-  </data>
-  <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
-  </data>
-  <data name="7327" xml:space="preserve">
-    <value>Autos inflict stacking vuln up</value>
-  </data>
-  <data name="7328" xml:space="preserve">
-    <value>Buster inflicts Bleed</value>
-  </data>
-  <data name="7329" xml:space="preserve">
-    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7330" xml:space="preserve">
-    <value>Eventual instant ENRAGE</value>
-  </data>
-  <data name="7331" xml:space="preserve">
-    <value>Cone AoE inflicts Bleed</value>
-  </data>
-  <data name="7332" xml:space="preserve">
-    <value>Exclusively fatal line AoEs</value>
-  </data>
-  <data name="7335" xml:space="preserve">
-    <value>Draw-in attack</value>
-  </data>
-  <data name="7336" xml:space="preserve">
-    <value>Instant AoEs on targeted player unaggroed</value>
-  </data>
-  <data name="7337" xml:space="preserve">
-    <value>Conal gaze, very quick low health ENRAGE</value>
-  </data>
-  <data name="7340" xml:space="preserve">
-    <value>Inflicts stacking Poison that lasts 30s</value>
-  </data>
-  <data name="7341" xml:space="preserve">
-    <value>Inflicts stacking vuln up</value>
-  </data>
-  <data name="7343" xml:space="preserve">
-    <value>Fast alternating line AoEs that inflict Paralysis</value>
-  </data>
-  <data name="7344" xml:space="preserve">
-    <value>Caster, double auto</value>
-  </data>
-  <data name="7345" xml:space="preserve">
-    <value>Conal AoE inflicts Paralysis</value>
-  </data>
-  <data name="7346" xml:space="preserve">
-    <value>Cleave and potent Poison</value>
-  </data>
-  <data name="7347" xml:space="preserve">
-    <value>Large doughnut AoE, gaze attack inflicts Fear</value>
-  </data>
-  <data name="7348" xml:space="preserve">
-    <value>Large circular AoE inflicts Bleed</value>
-  </data>
-  <data name="7349" xml:space="preserve">
-    <value>Buffs own or ally's defense</value>
-  </data>
-  <data name="7350" xml:space="preserve">
-    <value>AoE inflicts numerous debuffs at once</value>
-  </data>
-  <data name="7353" xml:space="preserve">
-    <value>Casts large AoE unaggroed\nExtremely large circular AoE</value>
-  </data>
-  <data name="7354" xml:space="preserve">
-    <value>Untelegraphed knockback on rear</value>
-  </data>
-  <data name="7355" xml:space="preserve">
-    <value>Double auto inflicts Bleed</value>
-  </data>
-  <data name="7356" xml:space="preserve">
-    <value>Casts AoEs unaggroed that inflict Deep Freeze</value>
-  </data>
-  <data name="7357" xml:space="preserve">
-    <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
-  </data>
-  <data name="7358" xml:space="preserve">
-    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7359" xml:space="preserve">
-    <value>Haste, eventual ENRAGE</value>
-  </data>
-  <data name="7360" xml:space="preserve">
-    <value>Very large AoEs</value>
-  </data>
-  <data name="7361" xml:space="preserve">
-    <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
-  </data>
-  <data name="7362" xml:space="preserve">
-    <value>Extremely large conal AoE, gaze inflicts Fear</value>
-  </data>
-  <data name="7364" xml:space="preserve">
-    <value>Double auto and very large AoE</value>
-  </data>
-  <data name="7365" xml:space="preserve">
-    <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
-  </data>
-  <data name="7366" xml:space="preserve">
-    <value>Buffs own damage unaggroed\nLarge AoE unaggroed that inflicts vuln up and stacks</value>
-  </data>
-  <data name="7367" xml:space="preserve">
-    <value>Charges on aggro</value>
-  </data>
-  <data name="7368" xml:space="preserve">
-    <value>Untelegraphed conal AoE on random player, gaze attack</value>
-  </data>
-  <data name="7369" xml:space="preserve">
-    <value>读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害</value>
-  </data>
-  <data name="7370" xml:space="preserve">
-    <value>Double autos, very strong rear cleave if behind</value>
-  </data>
-  <data name="7371" xml:space="preserve">
-    <value>Alternates line and circle AoEs untelegraphed</value>
-  </data>
-  <data name="7372" xml:space="preserve">
-    <value>读条释放可见范围的圆形Aoe“平地捶打”\n不断对一仇瞬发高伤害平A</value>
-  </data>
-  <data name="7373" xml:space="preserve">
-    <value>每隔几秒就会读条释放一次附加可叠加流血Dot的全屏Aoe“古菩的悲伤”，Dot很疼，可驱散\n读条可见圆形AoE\n无读条随机向一人方向释放扇形吸引，并马上释放可见范围扇形Aoe</value>
-  </data>
-  <data name="7374" xml:space="preserve">
-    <value>无读条释放全屏附加易伤的AoE“鲜血之月”\n读条释放可见范围环形/扇形Aoe，建议靠近打</value>
-  </data>
-  <data name="7375" xml:space="preserve">
-    <value>对建立仇恨者瞬发冲锋技能\n读条可见扇形Aoe“掀地”\n读条超大范围圆形Aoe“吼叫”\n软狂暴：十连全屏大伤害Aoe“遁地</value>
-  </data>
-  <data name="7376" xml:space="preserve">
-    <value>建立仇恨立刻释放单体伤害‘躯体冲撞'，附加15秒可驱散流血Dot\n读条释放有范围提示的扇形Aoe“缺氧吐息”\n读条点名一人释放非常疼的4连圆形Aoe“震雷”，带感电Dot</value>
-  </data>
-  <data name="7377" xml:space="preserve">
-    <value>无读条对开怪者释放直线攻击“狂野冲锋”\n读条对前方释放无范围提示扇形Aoe“撕裂利爪”\n读条释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="7378" xml:space="preserve">
-    <value>无读条对一仇释放单体高伤害技能”寒风斧“/'裂石暴环'\n无读条对一仇连续连续使用3次附加击退效果的冲锋技能”猛突进“，MT建议靠墙打</value>
-  </data>
-  <data name="7379" xml:space="preserve">
-    <value>读条'步法'给自身附加加速buff，可打断\n读条“飘羽步”强化自身回避率6s，可被打断\n无读条对一仇附加流血Dot并释放三连攻击</value>
-  </data>
-  <data name="7380" xml:space="preserve">
-    <value>读条对一仇释放单体攻击“飞石”\n读条“救疗”为其他敌人恢复体力并增强防御，可打断</value>
-  </data>
-  <data name="7381" xml:space="preserve">
-    <value>平A为正面扇形范围，请注意面向\n读条点名随机一人释放可见范围直线冲锋Aoe</value>
-  </data>
-  <data name="7382" xml:space="preserve">
-    <value>无读条对随机1人位置释放没有范围提示的圆形Aoe\n读条对随机1人释放可见范围的圆形Aoe'大漩涡'</value>
-  </data>
-  <data name="7384" xml:space="preserve">
-    <value>无论是否有仇恨，读条可见范围的附带割伤DoT的圆形Aoe狂风Gust\n读条对自身附加强化防御Debuff</value>
-  </data>
-  <data name="7385" xml:space="preserve">
-    <value>读条释放可见范围的圆形AOE“虚无陷阱”\n 无读条对一仇释放没有范围提示的扇形Aoe虚无斩</value>
-  </data>
-  <data name="7386" xml:space="preserve">
-    <value>读条释放非常快的直线Aoe“葬送击”，必须提前躲避</value>
-  </data>
-  <data name="7387" xml:space="preserve">
-    <value>读条释放可见范围的扇形Aoe”深渊回转“\n无读条随机对一人释放单体大伤害攻击</value>
-  </data>
-  <data name="7388" xml:space="preserve">
-    <value>无读条对建立仇恨者瞬发高伤害直线冲锋\n无读条对一仇方向释放无范围提示扇形Aoe“十六吨横扫”\n读条释放无范围提示超大扇形Aoe“三十二吨横扫”\n读条释放没有范围提示的以自身为圆心的圆形Aoe“百二十八吨回转”</value>
-  </data>
-  <data name="7389" xml:space="preserve">
-    <value>无读条对一仇释放没有范围提示的扇形Aoe\n读条释放有范围提示的圆形Aoe'浓云密布'\n注意：会不断对自己使用无读条的“巨大化”强化自身伤害，请务必尽快击杀。</value>
-  </data>
-  <data name="7390" xml:space="preserve">
-    <value>背对恐惧\n无读条对一仇释放单体攻击\n会不断强化自身伤害\n读条释放可见范围的大范围圆形超高威力Aoe'亚拉戈陨石'</value>
-  </data>
-  <data name="7391" xml:space="preserve">
-    <value>二连顺劈，带睡眠buff的锥形Aoe</value>
-  </data>
-  <data name="7584" xml:space="preserve">
-    <value>背对恐惧\n无读条对一仇造成单体伤害\n读条释放可见范围的大范围圆形超高威力Aoe“亚拉戈陨石”\n注意：怪物会不断提高自身攻击力，请尽快击杀。</value>
-  </data>
-  <data name="7392" xml:space="preserve">
-    <value>1-30层: 仅限铜箱子\n会释放高伤害单体攻击以及小范围即死AoE\n诅咒可被打断</value>
-  </data>
-  <data name="7393" xml:space="preserve">
-    <value>31-60层: 仅限银箱子\n会释放高伤害单体攻击以及小范围即死AoE\n诅咒可被打断</value>
-  </data>
-  <data name="7394" xml:space="preserve">
-    <value>61+层: 仅限金箱子\n会释放高伤害单体攻击以及小范围即死AoE\n诅咒只能被'插言'打断</value>
-  </data>
-  <data name="7478" xml:space="preserve">
-    <value>出啥躲啥, 当读条全屏AoE“踏脚”时，去场边雷云底下处理机制，亦可在读条时直接砸魔石处理（仅限21-30练级用）</value>
-  </data>
-  <data name="7480" xml:space="preserve">
-    <value>出啥躲啥</value>
-  </data>
-  <data name="7481" xml:space="preserve">
-    <value>出啥躲啥，注意背对，boss会在场外召唤若干小怪并引爆，站在中间处理</value>
-  </data>
-  <data name="7483" xml:space="preserve">
-    <value>出啥躲啥，风团出现后提前观察风团位置，读条全屏击退攻击”古代暴风“时注意不要被击退到风团区域</value>
-  </data>
-  <data name="7485" xml:space="preserve">
-    <value>1. 无读条对前方释放无范围扇形AoE，看见Boss举起手就离开前方\n2. 无读条对随机角色放出直线Aoe，看见Boss举起手就离开前方\n3. 注意背对恐惧\n4. 当Boss放置黑球时，观察黑球位置，往没有黑球的区域远离boss即可</value>
-  </data>
-  <data name="7487" xml:space="preserve">
-    <value>走位回避各种Aoe，奶妈注意在读条”古代核爆“时抬血"</value>
-  </data>
-  <data name="7489" xml:space="preserve">
-    <value>1. 读条释放前方的不可见范围扇形Aoe”猎食爪“\n2. 读条释放圆形Aoe'唾液飞溅'\n3. 点名随机1人读条释放'缩小球'并形成一个圆形区域。\n4. 读条全屏Aoe'狂吠'\n5. 读条点名随机1人释放可见范围的直线冲锋攻击'地狱冲', 请被点名者立刻进入圆形区域中缩小回避，回避后也要迅速离开圆形区域。</value>
-  </data>
-  <data name="7490" xml:space="preserve">
-    <value>出啥躲啥，当冰块出现时走位回避直线aoe并始终远离冰块</value>
-  </data>
-  <data name="7493" xml:space="preserve">
-    <value>出啥躲啥，读条全屏大伤害AoE“古代爆震”时请务必注意恢复\n沙球出现后会不断释放不可见范围的圆形Aoe，附带加重，一旦沙球出现立刻远离，如果坦克吃到了加重debuff请务必驱散"</value>
-  </data>
-  <data name="7610" xml:space="preserve">
-    <value>白给</value>
-  </data>
-  <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
-  </data>
-  <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
-  </data>
-  <data name="4981" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
-  </data>
-  <data name="4982" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
-  </data>
-  <data name="4985" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
-  </data>
-  <data name="4986" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
-  </data>
-  <data name="4988" xml:space="preserve">
-    <value>Inflicts poison</value>
-  </data>
-  <data name="4989" xml:space="preserve">
-    <value>"Sticky Tongue" does not stun if facing towards</value>
-  </data>
-  <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
-  </data>
-  <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
-  </data>
-  <data name="4996" xml:space="preserve">
-    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="4997" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
-  </data>
-  <data name="4999" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
-  </data>
-  <data name="5010" xml:space="preserve">
-    <value>Untelegraphed AOE does moderate damage and knockback</value>
-  </data>
-  <data name="5011" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
-  </data>
-  <data name="5012" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
-  </data>
-  <data name="5022" xml:space="preserve">
-    <value>"Dark Mist" inflicts Terror</value>
-  </data>
-  <data name="5025" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
-  </data>
-  <data name="5030" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
-  </data>
-  <data name="5032" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
-  </data>
-  <data name="5038" xml:space="preserve">
-    <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
-  </data>
-  <data name="5041" xml:space="preserve">
-    <value>白给</value>
-  </data>
-  <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5299" xml:space="preserve">
-    <value>Gaze inflicts Paralysis</value>
-  </data>
-  <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
-  </data>
-  <data name="5309" xml:space="preserve">
-    <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
-  </data>
-  <data name="5321" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
-  </data>
-  <data name="5333" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
-  </data>
-  <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
-  </data>
-  <data name="5345" xml:space="preserve">
-    <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
-  </data>
-  <data name="5356" xml:space="preserve">
-    <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
-  </data>
-  <data name="5364" xml:space="preserve">
-    <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
-  </data>
-  <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
-  </data>
-  <data name="5366" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
-  </data>
-  <data name="5367" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
-  </data>
-  <data name="5370" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
-  </data>
-  <data name="5371" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
-  </data>
-  <data name="5374" xml:space="preserve">
-    <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
-  </data>
-  <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
-  </data>
-  <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
-  </data>
-  <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
-  </data>
-  <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
-  </data>
-  <data name="5381" xml:space="preserve">
-    <value>无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe</value>
-  </data>
-  <data name="5382" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
-  </data>
-  <data name="5384" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
-  </data>
-  <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5395" xml:space="preserve">
-    <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
-  </data>
-  <data name="5396" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
-  </data>
-  <data name="5397" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
-  </data>
-  <data name="5402" xml:space="preserve">
-    <value>Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify</value>
-  </data>
-  <data name="5406" xml:space="preserve">
-    <value>Casts targeted AoE that inflicts Bleed</value>
-  </data>
-  <data name="5409" xml:space="preserve">
-    <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
-  </data>
-  <data name="5410" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
-  </data>
-  <data name="5413" xml:space="preserve">
-    <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
-  </data>
-  <data name="5414" xml:space="preserve">
-    <value>Very high damage, inflicts Poison</value>
-  </data>
-  <data name="5415" xml:space="preserve">
-    <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
-  </data>
-  <data name="5420" xml:space="preserve">
-    <value>Casts Gaze "Evil Eye"</value>
-  </data>
-  <data name="5421" xml:space="preserve">
-    <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
-  </data>
-  <data name="5422" xml:space="preserve">
-    <value>High health and very large AoE "Scream"</value>
-  </data>
-  <data name="5423" xml:space="preserve">
-    <value>Very high damage for the floors it appears on</value>
-  </data>
-  <data name="5424" xml:space="preserve">
-    <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
-  </data>
-  <data name="5429" xml:space="preserve">
-    <value>Double autos\nGaze inflicts Paralysis</value>
-  </data>
-  <data name="5430" xml:space="preserve">
-    <value>Inflicts Vuln Up debuff</value>
-  </data>
-  <data name="5431" xml:space="preserve">
-    <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
-  </data>
-  <data name="5433" xml:space="preserve">
-    <value>Double autos that lifesteal</value>
-  </data>
-  <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5437" xml:space="preserve">
-    <value>Double autos\nGaze inflicts heavy damage and Blind</value>
-  </data>
-  <data name="5438" xml:space="preserve">
-    <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
-  </data>
-  <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5449" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
-  </data>
-  <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5451" xml:space="preserve">
-    <value>Has semi-enrage around 30s in combat</value>
-  </data>
-  <data name="5452" xml:space="preserve">
-    <value>"Revelation" inflicts Confusion\n"Tropical Wind" gives enemy a large Haste and damage buff</value>
-  </data>
-  <data name="5453" xml:space="preserve">
-    <value>"Glower" - untelegraphed line AoE\n"100-Tonze Swing" - untelegraphed point-blank AoE</value>
-  </data>
-  <data name="5454" xml:space="preserve">
-    <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
-  </data>
-  <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5459" xml:space="preserve">
-    <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
-  </data>
-  <data name="5460" xml:space="preserve">
-    <value>Cleave does heavy damage and inflicts potent Bleed</value>
-  </data>
-  <data name="5461" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
-  </data>
-  <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5464" xml:space="preserve">
-    <value>Instant AoE that inflicts heavy Bleed</value>
-  </data>
-  <data name="5465" xml:space="preserve">
-    <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
-  </data>
-  <data name="5466" xml:space="preserve">
-    <value>Sucks in player and does heavy damage\n"Tail Screw" does damage and inflicts Slow</value>
-  </data>
-  <data name="5467" xml:space="preserve">
-    <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
-  </data>
-  <data name="5470" xml:space="preserve">
-    <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
-  </data>
-  <data name="5471" xml:space="preserve">
-    <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
-  </data>
-  <data name="5473" xml:space="preserve">
-    <value>Casts untelegraphed cone "Level 5 Death"</value>
-  </data>
-  <data name="5475" xml:space="preserve">
-    <value>Double auto</value>
-  </data>
-  <data name="2566" xml:space="preserve">
-    <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
-  </data>
-  <data name="FontSize" xml:space="preserve">
-    <value>Font Size</value>
-  </data>
-</root>
+Vulns: Vulns
+Vicious: Vicious
+Undefined: Undefined
+Undead: Undead
+Threat: Threat
+Thanks: 感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！
+Stun: Stun
+Sound: Sound
+Slow: Slow
+Sleep: Sleep
+Sight: 视野感知
+Save: 保存
+Proximity: 范围感知
+Opacity: 不透明度
+Notes: 说明
+NoDataFound: No data found for {0} ({1})
+Name: 名称
+IsClickthrough: 启用鼠标穿透
+HideRedVulns: Hide vulnerabilities that can't be inflicted
+HideBasedOnJob: Hide vulnerabilities based on current class/job
+Heavy: Heavy
+FontSize: Font Size
+Easy: 简单
+Dangerous: 危险
+Caution: 注意
+Boss: Boss
+Bind: 绑定
+AggroType: 仇恨类型
+7610: 白给
+7584: |
+  Permanent stacking damage buff
+  Massive enrage on random player"Allagan Meteor"
+  Gaze attack
+7493: |
+  1) Heavy room wide damage "Ancient Quaga"
+  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
+  3) "Meteor Impact" summons proximity AoE at boss's current location
+  4) Line AoE "Aura Cannon"
+  5) Targeted circle AoE "Burning Rave"
+  6) Point-blank circle AoE "Knuckle Press"
+  7) Repeat
+7490: |
+  1) Summons balls of ice
+  2) Summons icicle that pierces through room, detonating any ice balls it hits
+  3) "Lunar Cry" detonates remaining ice balls
+  4) Exploding ice balls inflict Deep Freeze if they hit a player
+  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+7489: |
+  1) Untelegraphed frontal cleave
+  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
+  3) Targets random player with "Hound out of Hell"
+  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
+  5) Repeat
+7487: |
+  Summons staffs that do various AoEs
+  Staffs then do line AoEs targeting players
+  Room wide AoE
+7485: |
+  1) Untelegraphed swipe
+  2) Untelegraphed line AoE on random player
+  3) Gaze mechanic that inflicts Fear
+  4) Summons pulsating bombs over arena and does a proximity AoE
+  5) Repeats after bombs explode for the last time
+7483: |
+  Summons clouds on edge of arena
+  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
+  Follows immediately with targeted line AoE
+7481: |
+  Summons butterflies on edges of arena
+  Does gaze mechanic that inflicts Fear
+  Butterflies explode untelegraphed
+7480: |
+  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
+  Follows immediately with a half-room wide AoE
+7478: |
+  Summons lightning clouds that inflict stacking vuln up when they explode
+  Boss does proximity AoE under itself that knocks players into the air
+  Get knocked into a cloud to dispel it and avoid vuln
+  Half-room wide AoE
+7394: |
+  Floors 61+&#58; Gold chests only
+  High damage autos and instant kill AoE
+  "Malice" can only be interrupted with interject
+  CANNOT STUN
+7393: |
+  Floors 31-60&#58; Silver chests only
+  High damage autos and instant kill AoE
+  "Malice" can be interrupted with silence/stun/interject
+7392: |
+  Floors 1-30&#58; Bronze chests only
+  High damage autos and instant kill AoE
+  "Malice" can be interrupted with silence/stun/knockback/witching/
+  interject
+7391: 二连顺劈，带睡眠buff的锥形Aoe
+7390: 背对恐惧\n无读条对一仇释放单体攻击\n会不断强化自身伤害\n读条释放可见范围的大范围圆形超高威力Aoe'亚拉戈陨石'
+7389: 无读条对一仇释放没有范围提示的扇形Aoe\n读条释放有范围提示的圆形Aoe'浓云密布'\n注意：会不断对自己使用无读条的“巨大化”强化自身伤害，请务必尽快击杀。
+7388: |
+  Charges
+  Untelegraphed line AoE "Swipe"
+  Untelegraphed wide circle AoE "Swing"
+7387: 读条释放可见范围的扇形Aoe”深渊回转“\n无读条随机对一人释放单体大伤害攻击
+7386: 读条释放非常快的直线Aoe“葬送击”，必须提前躲避
+7385: 读条释放可见范围的圆形AOE“虚无陷阱”\n 无读条对一仇释放没有范围提示的扇形Aoe虚无斩
+7384: 无论是否有仇恨，读条可见范围的附带割伤DoT的圆形Aoe狂风Gust\n读条对自身附加强化防御Debuff
+7382: |
+  无读条对随机1人位置释放没有范围提示的圆形Aoe\n读条对随机1人释放可见范围的圆形Aoe'大漩涡'
+7381: |
+  Cleave
+  Large line AoE that can be line of sighted
+7380: |
+  WHM&#58; double autos
+  "Stone" can be line of sighted
+7379: 'MNK&#58; Haste buff, short invuln'
+7378: |
+  WAR&#58; Triple knockback with heavy damage
+  Buffs own attack
+  Extremely high damage cleave with knockback
+7377: 无读条对开怪者释放直线攻击“狂野冲锋”\n读条对前方释放无范围提示扇形Aoe“撕裂利爪”\n读条释放可见范围的圆形Aoe
+7376: 建立仇恨立刻释放单体伤害‘躯体冲撞'，附加15秒可驱散流血Dot\n读条释放有范围提示的扇形Aoe“缺氧吐息”\n读条点名一人释放非常疼的4连圆形Aoe“震雷”，带感电Dot
+7375: 对建立仇恨者瞬发冲锋技能\n读条可见扇形Aoe“掀地”\n读条超大范围圆形Aoe“吼叫”\n软狂暴：十连全屏大伤害Aoe“遁地
+7374: 无读条释放全屏附加易伤的AoE“鲜血之月”\n读条释放可见范围环形/扇形Aoe，建议靠近打
+7373: 每隔几秒就会读条释放一次附加可叠加流血Dot的全屏Aoe“古菩的悲伤”，Dot很疼，可驱散\n读条可见圆形AoE\n无读条随机向一人方向释放扇形吸引，并马上释放可见范围扇形Aoe
+7372: 读条释放可见范围的圆形Aoe“平地捶打”\n不断对一仇瞬发高伤害平A
+7371: Alternates line and circle AoEs untelegraphed
+7370: Double autos, very strong rear cleave if behind
+7369: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
+7368: Untelegraphed conal AoE on random player, gaze attack
+7367: Charges on aggro
+7366: |
+  Buffs own damage unaggroed
+  Large AoE unaggroed that inflicts vuln up and stacks
+7365: |
+  Ram's Voice - get out
+  Dragon's Voice - get in
+  Telegraphed cleaves
+7364: Double auto and very large AoE
+7362: Extremely large conal AoE, gaze inflicts Fear
+7361: Draw-in attack, extremely large AoE, eventual ENRAGE
+7360: Very large AoEs
+7359: Haste, eventual ENRAGE
+7358: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7357: |
+  Casts room wide AoEs unaggroed
+  Large conal draw-in attack followed by heavy damage
+7356: Casts AoEs unaggroed that inflict Deep Freeze
+7355: Double auto inflicts Bleed
+7354: Untelegraphed knockback on rear
+7353: |
+  Casts large AoE unaggroed
+  Extremely large circular AoE
+7350: AoE inflicts numerous debuffs at once
+7349: Buffs own or ally's defense
+7348: Large circular AoE inflicts Bleed
+7347: Large doughnut AoE, gaze attack inflicts Fear
+7346: Cleave and potent Poison
+7345: Conal AoE inflicts Paralysis
+7344: Caster, double auto
+7343: Fast alternating line AoEs that inflict Paralysis
+7341: Inflicts stacking vuln up
+7340: Inflicts stacking Poison that lasts 30s
+7337: Conal gaze, very quick low health ENRAGE
+7336: Instant AoEs on targeted player unaggroed
+7335: Draw-in attack
+7332: Exclusively fatal line AoEs
+7331: Cone AoE inflicts Bleed
+7330: Eventual instant ENRAGE
+7329: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7328: Buster inflicts Bleed
+7327: Autos inflict stacking vuln up
+7326: Eventual ENRAGE
+7324: Very wide line AoE
+7323: 'Green&#58; Casts AoEs unaggroed'
+7321: 读条释放可见范围的扇形Aoe
+7320: 'Purple&#58; double auto'
+7319: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
+7318: |
+  Large line AoE
+  Eventual ENRAGE
+7314: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
+7313: 形变背对\n平A为扇形攻击
+7312: 无读条对前方发动不可见范围的连续扇形Aoe（看到抬起爪子远离正面）
+7311: |
+  Line AoE inflicts Bleed
+  Low health ENRAGE
+7310: 读条可见范围的超大范围圆形Aoe
+7308: 读条释放需要分摊的中等伤害Aoe
+7306: 对一仇无读条释放单体伤害
+7305: |
+  Line AoE inflicts Bleed
+  Low health ENRAGE
+7304: 低血量时，读条全屏范围的超高伤害的自爆技能“切腹”
+7303: |
+  Double auto inflicts Bleed
+  Low health ENRAGE
+7302: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
+7300: 读条释放可见范围的圆形Aoe
+7299: 读条释放超大范围的强麻痹（可打断）
+7298: 读条释放可见范围的十字Aoe（附加生命最大值下降Debuff）\n读条释放可见范围的圆形Aoe
+7297: 读条释放可见范围的直线Aoe
+7296: 石化背对
+7295: 读条点名随机1人释放吸引攻击将其吸引到自己脚下，然后对其释放扇形Aoe（可通过卡墙回避）
+7292: 读条对前方释放不可见范围的击退扇形Aoe\n读条点名一人释放单体大伤害攻击
+7291: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7290: |
+  Casts AoEs with knockback unaggroed
+  Line AoE inflicts Bleed
+7289: 读条回血技能，可打断
+7288: 读条对一仇单体伤害+背对
+7286: 无读条对一仇释放大扇形Aoe
+7285: 读条圆形可见范围AoE
+7281: 读条背对\n读条圆形可见范围AoE
+7279: 无读条对一仇释放三连伤害\n读条可见圆形AoE
+7273: 读条对随机一人释放单体大伤害攻击
+7272: 读条对随机一人释放单体大伤害攻击
+7271: |
+  Conal AoE inflicts Bleed
+  Circle AoE inflicts knockback
+7270: 读条可见击退AoE
+7268: 石化背对
+7267: 读条扇形可见AoE
+7266: 读条扇形不可见睡眠AoE\n读条可见扇形AoE
+7265: 给一仇附加可驱散的中毒Dot
+7264: 读条圆形可见范围AoE
+7263: 给一仇附加物理易伤10秒
+7262: 给一仇附加可驱散的加重Debuff
+5475: Double auto
+5473: Casts untelegraphed cone "Level 5 Death"
+5471: |
+  Kill blue bomb when it appears
+  Push red bomb into boss during "Massive Burst" cast, will wipe party if not stunned
+  Boss has cleave that does heavy damage
+5470: |
+  If familiar with chimera mechanics can be engaged
+  "The Dragon's Voice" - be inside hit box
+  "The Ram's Voice" - be outside of melee range
+5467: |
+  Instant AoE burst does heavy damage and inflicts Slow
+  Instant cone inflicts Poison
+5466: |
+  Sucks in player and does heavy damage
+  "Tail Screw" does damage and inflicts Slow
+5465: |
+  Instant AoE on pull, double autos
+  At 30 seconds will cast semi-enrage
+5464: Instant AoE that inflicts heavy Bleed
+5463: Double autos
+5461: |
+  "Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into
+  Boss will run to top or bottom of arena and cast "Trounce" - wide conal AoE
+  At 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds
+5460: Cleave does heavy damage and inflicts potent Bleed
+5459: |
+  Cleave inflicts Bleed
+  "Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns
+5458: Double autos
+5454: Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat
+5453: |
+  "Glower" - untelegraphed line AoE
+  "100-Tonze Swing" - untelegraphed point-blank AoE
+5452: |
+  "Revelation" inflicts Confusion
+  "Tropical Wind" gives enemy a large Haste and damage buff
+5451: Has semi-enrage around 30s in combat
+5450: Double autos
+5449: |
+  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it
+  Occasionally inflicts Heavy and casts targeted ground AoEs
+5443: Double autos
+5442: Double autos
+5438: |
+  Drops lingering AoEs that cause heavy Bleed if stood in
+  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+5437: |
+  Double autos
+  Gaze inflicts heavy damage and Blind
+5436: Double autos
+5433: Double autos that lifesteal
+5431: |
+  "Ice Spikes" reflects damage
+  "Void Blizzard" inflicts Slow
+5430: Inflicts Vuln Up debuff
+5429: |
+  Double autos
+  Gaze inflicts Paralysis
+5424: |
+  Summons adds
+  "Fanatic Zombie" will grab player and root in place until killed
+  "Fanatic Succubus" will heal boss if it reaches it
+5423: Very high damage for the floors it appears on
+5422: High health and very large AoE "Scream"
+5421: Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind
+5420: Casts Gaze "Evil Eye"
+5415: |
+  Floors 141-150&#58;
+  Nothing notable (ignore threat level)
+  Floors 191-200&#58;
+  Casts large doughnut AoE "Death Spiral" that deals heavy damage
+  Has soft enrage of a strong damage buff
+5414: Very high damage, inflicts Poison
+5413: |
+  "Charybdis" - semi-enrage that drops party health to 1%
+5410: |
+  1) Summons four lingering AoEs
+  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+5409: |
+  Floors 131-140&#58;
+  Nothing notable (ignore threat level)
+  Floors 191-200&#58;
+  Double autos
+5406: Casts targeted AoE that inflicts Bleed
+5402: Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify
+5397: |
+  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
+5396: |
+  "Chirp" inflicts Sleep for 15s
+5395: |
+  "11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback
+5389: Double autos
+5384: |
+  1) "Bloody Caress" - high damage cleave
+  2) Two telegraphed AOEs and a room wide AOE
+  3) Summons two hornets that must be killed before they "Final Sting"
+  4) "Rotten Stench" - high damage line AOE
+5382: |
+  Gaze attack inflicts Petrify, "Regorge" inflicts Poison
+  Will one-shot kill anyone inflicted with Toad
+5381: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+5380: Will inflict Sleep before casting "Bad Breath"
+5378: Area of effect Slow
+5377: Casts invuln buff on itself
+5375: Eventual ENRAGE
+5374: |
+  "Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy
+5371: |
+  1) "Whipcrack" - light tankbuster
+  2) "Stormwind" - conal AOE
+  3) "Bombination" - circular AOE on boss inflicts Slow
+  4) "Lumisphere" - targeted AOE on random player
+  5) "Aeroblast" - room wide AOE inflicts Bleed
+5370: Mini buster "Rhino Charge"
+5367: Inflicts vulnerability up
+5366: High damage "Final Sting"
+5365: Inflicts Poison
+5364: |
+  Floors 101-110&#58;
+  Nothing notable (ignore threat level)
+  Floors 191-200&#58;
+  Double autos
+5356: Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks
+5345: |
+  Casts large AoEs
+  Summons "Grey Bomb" - must be killed before it does high room wide damage
+  Begins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast
+5334: Casts wide "Self Destruct" if not killed in time
+5333: |
+  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
+  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
+  At 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage
+5321: |
+  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
+  Occasionally casts targeted ground AoEs
+5309: |
+  Drops large puddle AoEs that inflict Bleed if stood in
+  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+5308: Gaze inflicts Blind and does high damage
+5299: Gaze inflicts Paralysis
+5298: Immune to Pomander of Witching
+5297: Immune to Pomander of Witching
+5296: Immune to Pomander of Witching
+5295: Immune to Pomander of Witching
+5294: Immune to Pomander of Witching
+5293: Immune to Pomander of Witching
+5292: Immune to Pomander of Witching
+5291: Immune to Pomander of Witching
+5290: Immune to Pomander of Witching
+5289: Immune to Pomander of Witching
+5288: Immune to Pomander of Witching
+5287: Immune to Pomander of Witching
+5286: Immune to Pomander of Witching
+5285: Immune to Pomander of Witching
+5284: Immune to Pomander of Witching
+5283: Immune to Pomander of Witching
+5053: Immune to Pomander of Witching
+5052: Immune to Pomander of Witching
+5051: Immune to Pomander of Witching
+5050: Immune to Pomander of Witching
+5049: Immune to Pomander of Witching
+5048: Immune to Pomander of Witching
+5047: Immune to Pomander of Witching
+5046: Immune to Pomander of Witching
+5041: 白给
+5038: |
+  FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE
+  Boss will occasionally inflict Disease which slows
+  1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
+  2) "Cold Feet" -- Gaze
+5032: Inflicts Paralysis
+5030: Inflicts Paralysis
+5025: |
+  1) Summons four lingering AoEs
+  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+5022: |
+  "Dark Mist" inflicts Terror
+5012: |
+  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
+5011: |
+  "Chirp" inflicts Sleep for 15s
+5010: Untelegraphed AOE does moderate damage and knockback
+4999: |
+  1) "Bloody Caress" - high damage cleave
+  2) Two telegraphed AOEs and a room wide AOE
+  3) Summons two hornets that must be killed before they "Final Sting"
+  4) "Rotten Stench" - high damage line AOE
+4997: Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad
+4996: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+4993: Area of effect Slow
+4990: Eventual ENRAGE
+4989: |
+  "Sticky Tongue" does not stun if facing towards
+4988: Inflicts poison
+4986: |
+  1) "Whipcrack" - light tankbuster
+  2) "Stormwind" - conal AOE
+  3) "Bombination" - circular AOE on boss inflicts Slow
+  4) "Lumisphere" - targeted AOE on random player
+  5) "Aeroblast" - room wide AOE inflicts Bleed
+4985: Mini buster "Rhino Charge"
+4982: Inflicts vulnerability up
+4981: High damage "Final Sting"
+4980: Inflicts Poison
+4975: Casts Haste on itself
+2566: |
+  High damage autos and instant kill AoE
+  "Infatuation" can only be interrupted with interject
