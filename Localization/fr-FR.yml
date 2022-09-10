@@ -78,16 +78,16 @@ AggroType: Type d'aggro
   Get knocked into a cloud to dispel it and avoid vuln
   Half-room wide AoE
 7394: |
-  Floors 61+&#58; Gold chests only
+  Floors 61+: Gold chests only
   High damage autos and instant kill AoE
   "Malice" can only be interrupted with interject
   CANNOT STUN
 7393: |
-  Floors 31-60&#58; Silver chests only
+  Floors 31-60: Silver chests only
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/interject
 7392: |
-  Floors 1-30&#58; Bronze chests only
+  Floors 1-30: Bronze chests only
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/knockback/witching/
   interject
@@ -108,11 +108,12 @@ AggroType: Type d'aggro
   Cleave
   Large line AoE that can be line of sighted
 7380: |
-  WHM&#58; double autos
+  WHM: double autos
   "Stone" can be line of sighted
-7379: 'MNK&#58; Haste buff, short invuln'
+7379: |
+  MOI (MNK) : Buff Hâte, courte invulnérabilité
 7378: |
-  WAR&#58; Triple knockback with heavy damage
+  WAR: Triple knockback with heavy damage
   Buffs own attack
   Extremely high damage cleave with knockback
 7377: Charge, buff ses propres dégâts, buster non télégraphie "Griffe Éventreuse"
@@ -169,9 +170,11 @@ AggroType: Type d'aggro
 7327: Inflige un stack de Vulnérabilité augmentée
 7326: ENRAGE éventuel
 7324: Très large AoE linéaire
-7323: 'Green&#58; Casts AoEs unaggroed'
+7323: |
+  Vert : Casts des AoE sans être aggro
 7321: Large AoE en cône
-7320: 'Purple&#58; double auto'
+7320: |
+  Violet : double auto
 7319: Cast des AoE sans être aggro
 7318: |
   Large line AoE
@@ -291,9 +294,9 @@ AggroType: Type d'aggro
 5421: Buff ses propres dégâts, gros dégâts non télégraphies "Griffe éventreuse" - peut être évité en marchant derrière
 5420: Cast une attaque type Regard appelée "Oeil maléfique"
 5415: |
-  Floors 141-150&#58;
+  Floors 141-150:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Casts large doughnut AoE "Death Spiral" that deals heavy damage
   Has soft enrage of a strong damage buff
 5414: Très gros dégâts, inflige Poison
@@ -303,14 +306,14 @@ AggroType: Type d'aggro
   1) Summons four lingering AoEs
   2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
 5409: |
-  Floors 131-140&#58;
+  Floors 131-140:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Double autos
 5406: Cast des AoE ciblées infligeant Saignement
 5402: AoE en cône non télégraphiée "Pétrification niveau 5" inflige Pétrification
 5397: |
-  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  1) Spread out fire and ice AOEs and don't drop them in center because:
   2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
 5396: |
   "Gazouillement" inflige Sommeil pendant 15s
@@ -343,9 +346,9 @@ AggroType: Type d'aggro
 5366: '"Dard Final" dégâts importants'
 5365: Inflige Poison
 5364: |
-  Floors 101-110&#58;
+  Floors 101-110:
   Nothing notable (ignore threat level)
-  Floors 191-200&#58;
+  Floors 191-200:
   Double autos
 5356: Invoque des adds et fait de grosses AoE ciblées -- les adds sont sensibles aux attaques de la Poterie de Kuribu
 5345: |
@@ -403,7 +406,7 @@ AggroType: Type d'aggro
 5022: |
   "Brume funèbre" inflige Terreur
 5012: |
-  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  1) Spread out fire and ice AOEs and don't drop them in center because:
   2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
 5011: |
   "Gazouillement" inflige Sommeil pendant 15s
