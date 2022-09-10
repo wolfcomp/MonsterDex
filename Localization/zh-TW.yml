@@ -1,885 +1,436 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="AggroType" xml:space="preserve">
-    <value>Aggro Type</value>
-  </data>
-  <data name="Bind" xml:space="preserve">
-    <value>Bind</value>
-  </data>
-  <data name="Boss" xml:space="preserve">
-    <value>Boss</value>
-  </data>
-  <data name="Caution" xml:space="preserve">
-    <value>Caution</value>
-  </data>
-  <data name="Dangerous" xml:space="preserve">
-    <value>Dangerous</value>
-  </data>
-  <data name="Easy" xml:space="preserve">
-    <value>Easy</value>
-  </data>
-  <data name="Heavy" xml:space="preserve">
-    <value>Heavy</value>
-  </data>
-  <data name="HideBasedOnJob" xml:space="preserve">
-    <value>Hide vulnerabilities based on current class/job</value>
-  </data>
-  <data name="HideRedVulns" xml:space="preserve">
-    <value>Hide vulnerabilities that can't be inflicted</value>
-  </data>
-  <data name="IsClickthrough" xml:space="preserve">
-    <value>Enable clickthrough</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="NoDataFound" xml:space="preserve">
-    <value>No data found for {0} ({1})</value>
-  </data>
-  <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
-  </data>
-  <data name="Opacity" xml:space="preserve">
-    <value>Opacity</value>
-  </data>
-  <data name="Proximity" xml:space="preserve">
-    <value>Proximity</value>
-  </data>
-  <data name="Save" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="Sight" xml:space="preserve">
-    <value>Sight</value>
-  </data>
-  <data name="Sleep" xml:space="preserve">
-    <value>Sleep</value>
-  </data>
-  <data name="Slow" xml:space="preserve">
-    <value>Slow</value>
-  </data>
-  <data name="Sound" xml:space="preserve">
-    <value>Sound</value>
-  </data>
-  <data name="Stun" xml:space="preserve">
-    <value>Stun</value>
-  </data>
-  <data name="Thanks" xml:space="preserve">
-    <value>Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!</value>
-  </data>
-  <data name="Threat" xml:space="preserve">
-    <value>Threat</value>
-  </data>
-  <data name="Undead" xml:space="preserve">
-    <value>Undead</value>
-  </data>
-  <data name="Undefined" xml:space="preserve">
-    <value>Undefined</value>
-  </data>
-  <data name="Vicious" xml:space="preserve">
-    <value>Vicious</value>
-  </data>
-  <data name="Vulns" xml:space="preserve">
-    <value>Vulns</value>
-  </data>
-  <data name="7262" xml:space="preserve">
-    <value>Auto inflicts Heavy debuff</value>
-  </data>
-  <data name="7263" xml:space="preserve">
-    <value>Auto applies Physical Vuln Up every 10s</value>
-  </data>
-  <data name="7264" xml:space="preserve">
-    <value>AoE applies Paralysis</value>
-  </data>
-  <data name="7265" xml:space="preserve">
-    <value>Triple auto inflicts Bleed</value>
-  </data>
-  <data name="7266" xml:space="preserve">
-    <value>Untelegraphed Sleep followed by AoE</value>
-  </data>
-  <data name="7267" xml:space="preserve">
-    <value>AoE applies Bleed</value>
-  </data>
-  <data name="7268" xml:space="preserve">
-    <value>Gaze</value>
-  </data>
-  <data name="7270" xml:space="preserve">
-    <value>AoE inflicts knockback</value>
-  </data>
-  <data name="7271" xml:space="preserve">
-    <value>Conal AoE inflicts Bleed\nCircle AoE inflicts knockback</value>
-  </data>
-  <data name="7272" xml:space="preserve">
-    <value>Unavoidable tankbuster-like "Jaws"</value>
-  </data>
-  <data name="7273" xml:space="preserve">
-    <value>Untelegraphed buster inflicts Bleed and knockback</value>
-  </data>
-  <data name="7279" xml:space="preserve">
-    <value>Lite buster "Scissor Run" followed by AoE</value>
-  </data>
-  <data name="7281" xml:space="preserve">
-    <value>Gaze inflicts Seduce, followed by large AoE that inflicts Minimum</value>
-  </data>
-  <data name="7285" xml:space="preserve">
-    <value>Buster and triple auto</value>
-  </data>
-  <data name="7286" xml:space="preserve">
-    <value>Room wide ENRAGE</value>
-  </data>
-  <data name="7288" xml:space="preserve">
-    <value>Gaze inflicts Blind</value>
-  </data>
-  <data name="7289" xml:space="preserve">
-    <value>Cures self and allies</value>
-  </data>
-  <data name="7290" xml:space="preserve">
-    <value>Casts AoEs with knockback unaggroed\nLine AoE inflicts Bleed</value>
-  </data>
-  <data name="7291" xml:space="preserve">
-    <value>Buffs own damage</value>
-  </data>
-  <data name="7292" xml:space="preserve">
-    <value>Untelegraphed conal AoE with knockback, buster</value>
-  </data>
-  <data name="7295" xml:space="preserve">
-    <value>Draw-in followed by cleave</value>
-  </data>
-  <data name="7296" xml:space="preserve">
-    <value>Gaze</value>
-  </data>
-  <data name="7297" xml:space="preserve">
-    <value>Line AoE inflicts Bleed</value>
-  </data>
-  <data name="7298" xml:space="preserve">
-    <value>Cross AoE inflicts Suppuration</value>
-  </data>
-  <data name="7299" xml:space="preserve">
-    <value>Large AoE inflicts Paralysis</value>
-  </data>
-  <data name="7300" xml:space="preserve">
-    <value>Circle AoE inflicts Suppuration</value>
-  </data>
-  <data name="7302" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
-  </data>
-  <data name="7303" xml:space="preserve">
-    <value>Double auto inflicts Bleed\nLow health ENRAGE</value>
-  </data>
-  <data name="7304" xml:space="preserve">
-    <value>Low health ENRAGE</value>
-  </data>
-  <data name="7305" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
-  </data>
-  <data name="7306" xml:space="preserve">
-    <value>Cleaves every other auto</value>
-  </data>
-  <data name="7308" xml:space="preserve">
-    <value>Weak stack attack</value>
-  </data>
-  <data name="7310" xml:space="preserve">
-    <value>Extremely large AoE</value>
-  </data>
-  <data name="7311" xml:space="preserve">
-    <value>Line AoE inflicts Bleed\nLow health ENRAGE</value>
-  </data>
-  <data name="7312" xml:space="preserve">
-    <value>Frontal cleave without cast or telegraph</value>
-  </data>
-  <data name="7313" xml:space="preserve">
-    <value>Gaze inflicts Otter</value>
-  </data>
-  <data name="7314" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
-  </data>
-  <data name="7318" xml:space="preserve">
-    <value>Large line AoE\nEventual ENRAGE</value>
-  </data>
-  <data name="7319" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
-  </data>
-  <data name="7320" xml:space="preserve">
-    <value>Purple: double auto</value>
-  </data>
-  <data name="7321" xml:space="preserve">
-    <value>Large cone AoE</value>
-  </data>
-  <data name="7323" xml:space="preserve">
-    <value>Green: Casts AoEs unaggroed</value>
-  </data>
-  <data name="7324" xml:space="preserve">
-    <value>Very wide line AoE</value>
-  </data>
-  <data name="7326" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
-  </data>
-  <data name="7327" xml:space="preserve">
-    <value>Autos inflict stacking vuln up</value>
-  </data>
-  <data name="7328" xml:space="preserve">
-    <value>Buster inflicts Bleed</value>
-  </data>
-  <data name="7329" xml:space="preserve">
-    <value>Buffs own damage</value>
-  </data>
-  <data name="7330" xml:space="preserve">
-    <value>Eventual instant ENRAGE</value>
-  </data>
-  <data name="7331" xml:space="preserve">
-    <value>Cone AoE inflicts Bleed</value>
-  </data>
-  <data name="7332" xml:space="preserve">
-    <value>Exclusively fatal line AoEs</value>
-  </data>
-  <data name="7335" xml:space="preserve">
-    <value>Draw-in attack</value>
-  </data>
-  <data name="7336" xml:space="preserve">
-    <value>Instant AoEs on targeted player unaggroed</value>
-  </data>
-  <data name="7337" xml:space="preserve">
-    <value>Conal gaze, very quick low health ENRAGE</value>
-  </data>
-  <data name="7340" xml:space="preserve">
-    <value>Inflicts stacking Poison that lasts 30s</value>
-  </data>
-  <data name="7341" xml:space="preserve">
-    <value>Inflicts stacking vuln up</value>
-  </data>
-  <data name="7343" xml:space="preserve">
-    <value>Fast alternating line AoEs that inflict Paralysis</value>
-  </data>
-  <data name="7344" xml:space="preserve">
-    <value>Caster, double auto</value>
-  </data>
-  <data name="7345" xml:space="preserve">
-    <value>Conal AoE inflicts Paralysis</value>
-  </data>
-  <data name="7346" xml:space="preserve">
-    <value>Cleave and potent Poison</value>
-  </data>
-  <data name="7347" xml:space="preserve">
-    <value>Large doughnut AoE, gaze attack inflicts Fear</value>
-  </data>
-  <data name="7348" xml:space="preserve">
-    <value>Large circular AoE inflicts Bleed</value>
-  </data>
-  <data name="7349" xml:space="preserve">
-    <value>Buffs own or ally's defense</value>
-  </data>
-  <data name="7350" xml:space="preserve">
-    <value>AoE inflicts numerous debuffs at once</value>
-  </data>
-  <data name="7353" xml:space="preserve">
-    <value>Casts large AoE unaggroed\nExtremely large circular AoE</value>
-  </data>
-  <data name="7354" xml:space="preserve">
-    <value>Untelegraphed knockback on rear</value>
-  </data>
-  <data name="7355" xml:space="preserve">
-    <value>Double auto inflicts Bleed</value>
-  </data>
-  <data name="7356" xml:space="preserve">
-    <value>Casts AoEs unaggroed that inflict Deep Freeze</value>
-  </data>
-  <data name="7357" xml:space="preserve">
-    <value>Casts room wide AoEs unaggroed\nLarge conal draw-in attack followed by heavy damage</value>
-  </data>
-  <data name="7358" xml:space="preserve">
-    <value>Buffs own damage</value>
-  </data>
-  <data name="7359" xml:space="preserve">
-    <value>Haste, eventual ENRAGE</value>
-  </data>
-  <data name="7360" xml:space="preserve">
-    <value>Very large AoEs</value>
-  </data>
-  <data name="7361" xml:space="preserve">
-    <value>Draw-in attack, extremely large AoE, eventual ENRAGE</value>
-  </data>
-  <data name="7362" xml:space="preserve">
-    <value>Extremely large conal AoE, gaze inflicts Fear</value>
-  </data>
-  <data name="7364" xml:space="preserve">
-    <value>Double auto and very large AoE</value>
-  </data>
-  <data name="7365" xml:space="preserve">
-    <value>Ram's Voice - get out\nDragon's Voice - get in\nTelegraphed cleaves</value>
-  </data>
-  <data name="7366" xml:space="preserve">
-    <value>Buffs own damage unaggroed\nLarge AoE unaggroed that inflicts vuln up and stacks</value>
-  </data>
-  <data name="7367" xml:space="preserve">
-    <value>Charges on aggro</value>
-  </data>
-  <data name="7368" xml:space="preserve">
-    <value>Untelegraphed conal AoE on random player, gaze attack</value>
-  </data>
-  <data name="7369" xml:space="preserve">
-    <value>Casts AoEs unaggroed</value>
-  </data>
-  <data name="7370" xml:space="preserve">
-    <value>Double autos, very strong rear cleave if behind</value>
-  </data>
-  <data name="7371" xml:space="preserve">
-    <value>Alternates line and circle AoEs untelegraphed</value>
-  </data>
-  <data name="7372" xml:space="preserve">
-    <value>Buffs own damage and double autos</value>
-  </data>
-  <data name="7373" xml:space="preserve">
-    <value>Draw-in attack, tons of bleed, and a stacking poison</value>
-  </data>
-  <data name="7374" xml:space="preserve">
-    <value>Large doughnut AoE</value>
-  </data>
-  <data name="7375" xml:space="preserve">
-    <value>Cone AoE, circle AoE, party wide damage</value>
-  </data>
-  <data name="7376" xml:space="preserve">
-    <value>Charges, buffs own damage, double autos, electricity Bleed</value>
-  </data>
-  <data name="7377" xml:space="preserve">
-    <value>Charges, buffs own damage, untelegraphed buster "Ripper Claw"</value>
-  </data>
-  <data name="7378" xml:space="preserve">
-    <value>WAR: Triple knockback with heavy damage\nBuffs own attack\nExtremely high damage cleave with knockback</value>
-  </data>
-  <data name="7379" xml:space="preserve">
-    <value>MNK: Haste buff, short invuln</value>
-  </data>
-  <data name="7380" xml:space="preserve">
-    <value>WHM: double autos\n"Stone" can be line of sighted</value>
-  </data>
-  <data name="7381" xml:space="preserve">
-    <value>Cleave\nLarge line AoE that can be line of sighted</value>
-  </data>
-  <data name="7382" xml:space="preserve">
-    <value>"Charybdis" AoE that leaves tornadoes on random players</value>
-  </data>
-  <data name="7384" xml:space="preserve">
-    <value>Casts targeted AoEs unaggroed, buffs own defense</value>
-  </data>
-  <data name="7385" xml:space="preserve">
-    <value>Targeted AoEs, cleaves</value>
-  </data>
-  <data name="7386" xml:space="preserve">
-    <value>Extremely quick line AoE "Death's Door" that instantly kills</value>
-  </data>
-  <data name="7387" xml:space="preserve">
-    <value>Deals heavy damage to random players</value>
-  </data>
-  <data name="7388" xml:space="preserve">
-    <value>Charges\nUntelegraphed line AoE "Swipe"\nUntelegraphed wide circle AoE "Swing"</value>
-  </data>
-  <data name="7389" xml:space="preserve">
-    <value>Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"</value>
-  </data>
-  <data name="7390" xml:space="preserve">
-    <value>Rapid double autos and untelegraphed line AoE "Quasar"</value>
-  </data>
-  <data name="7391" xml:space="preserve">
-    <value>Double autos, cone AoE inflicts Sleep</value>
-  </data>
-  <data name="7584" xml:space="preserve">
-    <value>Permanent stacking damage buff\nMassive enrage on random player"Allagan Meteor"\nGaze attack</value>
-  </data>
-  <data name="7392" xml:space="preserve">
-    <value>Floors 1-30: Bronze chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/knockback/witching/\ninterject</value>
-  </data>
-  <data name="7393" xml:space="preserve">
-    <value>Floors 31-60: Silver chests only\nHigh damage autos and instant kill AoE\n"Malice" can be interrupted with silence/stun/interject</value>
-  </data>
-  <data name="7394" xml:space="preserve">
-    <value>Floors 61+: Gold chests only\nHigh damage autos and instant kill AoE\n"Malice" can only be interrupted with interject\nCANNOT STUN</value>
-  </data>
-  <data name="7478" xml:space="preserve">
-    <value>Summons lightning clouds that inflict stacking vuln up when they explode\nBoss does proximity AoE under itself that knocks players into the air\nGet knocked into a cloud to dispel it and avoid vuln\nHalf-room wide AoE</value>
-  </data>
-  <data name="7480" xml:space="preserve">
-    <value>Goes to center of arena and casts knockback to wall (cannot be knockback invulned)\nFollows immediately with a half-room wide AoE</value>
-  </data>
-  <data name="7481" xml:space="preserve">
-    <value>Summons butterflies on edges of arena\nDoes gaze mechanic that inflicts Fear\nButterflies explode untelegraphed</value>
-  </data>
-  <data name="7483" xml:space="preserve">
-    <value>Summons clouds on edge of arena\nDoes to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)\nFollows immediately with targeted line AoE</value>
-  </data>
-  <data name="7485" xml:space="preserve">
-    <value>1) Untelegraphed swipe\n2) Untelegraphed line AoE on random player\n3) Gaze mechanic that inflicts Fear\n4) Summons pulsating bombs over arena and does a proximity AoE\n5) Repeats after bombs explode for the last time</value>
-  </data>
-  <data name="7487" xml:space="preserve">
-    <value>Summons staffs that do various AoEs\nStaffs then do line AoEs targeting players\nRoom wide AoE</value>
-  </data>
-  <data name="7489" xml:space="preserve">
-    <value>1) Untelegraphed frontal cleave\n2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)\n3) Targets random player with "Hound out of Hell"\n4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)\n5) Repeat</value>
-  </data>
-  <data name="7490" xml:space="preserve">
-    <value>1) Summons balls of ice\n2) Summons icicle that pierces through room, detonating any ice balls it hits\n3) "Lunar Cry" detonates remaining ice balls\n4) Exploding ice balls inflict Deep Freeze if they hit a player\n5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)</value>
-  </data>
-  <data name="7493" xml:space="preserve">
-    <value>1) Heavy room wide damage "Ancient Quaga"\n2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one\n3) "Meteor Impact" summons proximity AoE at boss's current location\n4) Line AoE "Aura Cannon"\n5) Targeted circle AoE "Burning Rave"\n6) Point-blank circle AoE "Knuckle Press"\n7) Repeat</value>
-  </data>
-  <data name="7610" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
-  </data>
-  <data name="4975" xml:space="preserve">
-    <value>Casts Haste on itself</value>
-  </data>
-  <data name="4980" xml:space="preserve">
-    <value>Inflicts Poison</value>
-  </data>
-  <data name="4981" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
-  </data>
-  <data name="4982" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
-  </data>
-  <data name="4985" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
-  </data>
-  <data name="4986" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
-  </data>
-  <data name="4988" xml:space="preserve">
-    <value>Inflicts poison</value>
-  </data>
-  <data name="4989" xml:space="preserve">
-    <value>"Sticky Tongue" does not stun if facing towards</value>
-  </data>
-  <data name="4990" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
-  </data>
-  <data name="4993" xml:space="preserve">
-    <value>Area of effect Slow</value>
-  </data>
-  <data name="4996" xml:space="preserve">
-    <value>Buffs own damage</value>
-  </data>
-  <data name="4997" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad</value>
-  </data>
-  <data name="4999" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
-  </data>
-  <data name="5010" xml:space="preserve">
-    <value>Untelegraphed AOE does moderate damage and knockback</value>
-  </data>
-  <data name="5011" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
-  </data>
-  <data name="5012" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided</value>
-  </data>
-  <data name="5022" xml:space="preserve">
-    <value>"Dark Mist" inflicts Terror</value>
-  </data>
-  <data name="5025" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
-  </data>
-  <data name="5030" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
-  </data>
-  <data name="5032" xml:space="preserve">
-    <value>Inflicts Paralysis</value>
-  </data>
-  <data name="5038" xml:space="preserve">
-    <value>FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE\nBoss will occasionally inflict Disease which slows\n1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss \n2) "Cold Feet" -- Gaze</value>
-  </data>
-  <data name="5041" xml:space="preserve">
-    <value>Does not interact, wide stun and immediately dies when attacked</value>
-  </data>
-  <data name="5046" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5047" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5048" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5049" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5050" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5051" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5052" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5053" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5283" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5284" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5285" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5286" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5287" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5288" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5289" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5290" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5291" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5292" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5293" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5294" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5295" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5296" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5297" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5298" xml:space="preserve">
-    <value>Immune to Pomander of Witching</value>
-  </data>
-  <data name="5299" xml:space="preserve">
-    <value>Gaze inflicts Paralysis</value>
-  </data>
-  <data name="5308" xml:space="preserve">
-    <value>Gaze inflicts Blind and does high damage</value>
-  </data>
-  <data name="5309" xml:space="preserve">
-    <value>Drops large puddle AoEs that inflict Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
-  </data>
-  <data name="5321" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it\nOccasionally casts targeted ground AoEs</value>
-  </data>
-  <data name="5333" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes that cause high damage if sucked into\nBoss will run to edge of arena and cast "Trounce" - wide conal AoE\nAt 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage</value>
-  </data>
-  <data name="5334" xml:space="preserve">
-    <value>Casts wide "Self Destruct" if not killed in time</value>
-  </data>
-  <data name="5345" xml:space="preserve">
-    <value>Casts large AoEs\nSummons "Grey Bomb" - must be killed before it does high room wide damage\nBegins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast</value>
-  </data>
-  <data name="5356" xml:space="preserve">
-    <value>Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks</value>
-  </data>
-  <data name="5364" xml:space="preserve">
-    <value>Floors 101-110: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
-  </data>
-  <data name="5365" xml:space="preserve">
-    <value>Inflicts Poison</value>
-  </data>
-  <data name="5366" xml:space="preserve">
-    <value>High damage "Final Sting"</value>
-  </data>
-  <data name="5367" xml:space="preserve">
-    <value>Inflicts vulnerability up</value>
-  </data>
-  <data name="5370" xml:space="preserve">
-    <value>Mini buster "Rhino Charge"</value>
-  </data>
-  <data name="5371" xml:space="preserve">
-    <value>1) "Whipcrack" - light tankbuster\n2) "Stormwind" - conal AOE\n3) "Bombination" - circular AOE on boss inflicts Slow\n4) "Lumisphere" - targeted AOE on random player\n5) "Aeroblast" - room wide AOE inflicts Bleed</value>
-  </data>
-  <data name="5374" xml:space="preserve">
-    <value>"Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy</value>
-  </data>
-  <data name="5375" xml:space="preserve">
-    <value>Eventual ENRAGE</value>
-  </data>
-  <data name="5377" xml:space="preserve">
-    <value>Casts invuln buff on itself</value>
-  </data>
-  <data name="5378" xml:space="preserve">
-    <value>Area of effect Slow</value>
-  </data>
-  <data name="5380" xml:space="preserve">
-    <value>Will inflict Sleep before casting "Bad Breath"</value>
-  </data>
-  <data name="5381" xml:space="preserve">
-    <value>Buffs own damage</value>
-  </data>
-  <data name="5382" xml:space="preserve">
-    <value>Gaze attack inflicts Petrify, "Regorge" inflicts Poison\nWill one-shot kill anyone inflicted with Toad</value>
-  </data>
-  <data name="5384" xml:space="preserve">
-    <value>1) "Bloody Caress" - high damage cleave\n2) Two telegraphed AOEs and a room wide AOE\n3) Summons two hornets that must be killed before they "Final Sting"\n4) "Rotten Stench" - high damage line AOE</value>
-  </data>
-  <data name="5389" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5395" xml:space="preserve">
-    <value>"11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback</value>
-  </data>
-  <data name="5396" xml:space="preserve">
-    <value>"Chirp" inflicts Sleep for 15s</value>
-  </data>
-  <data name="5397" xml:space="preserve">
-    <value>1) Spread out fire and ice AOEs and don't drop them in center because: \n2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided</value>
-  </data>
-  <data name="5402" xml:space="preserve">
-    <value>Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify</value>
-  </data>
-  <data name="5406" xml:space="preserve">
-    <value>Casts targeted AoE that inflicts Bleed</value>
-  </data>
-  <data name="5409" xml:space="preserve">
-    <value>Floors 131-140: \nNothing notable (ignore threat level)\nFloors 191-200: \nDouble autos</value>
-  </data>
-  <data name="5410" xml:space="preserve">
-    <value>1) Summons four lingering AoEs\n2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead</value>
-  </data>
-  <data name="5413" xml:space="preserve">
-    <value>"Charybdis" - semi-enrage that drops party health to 1%</value>
-  </data>
-  <data name="5414" xml:space="preserve">
-    <value>Very high damage, inflicts Poison</value>
-  </data>
-  <data name="5415" xml:space="preserve">
-    <value>Floors 141-150: \nNothing notable (ignore threat level)\nFloors 191-200: \nCasts large doughnut AoE "Death Spiral" that deals heavy damage\nHas soft enrage of a strong damage buff</value>
-  </data>
-  <data name="5420" xml:space="preserve">
-    <value>Casts Gaze "Evil Eye"</value>
-  </data>
-  <data name="5421" xml:space="preserve">
-    <value>Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind</value>
-  </data>
-  <data name="5422" xml:space="preserve">
-    <value>High health and very large AoE "Scream"</value>
-  </data>
-  <data name="5423" xml:space="preserve">
-    <value>Very high damage for the floors it appears on</value>
-  </data>
-  <data name="5424" xml:space="preserve">
-    <value>Summons adds\n"Fanatic Zombie" will grab player and root in place until killed\n"Fanatic Succubus" will heal boss if it reaches it</value>
-  </data>
-  <data name="5429" xml:space="preserve">
-    <value>Double autos\nGaze inflicts Paralysis</value>
-  </data>
-  <data name="5430" xml:space="preserve">
-    <value>Inflicts Vuln Up debuff</value>
-  </data>
-  <data name="5431" xml:space="preserve">
-    <value>"Ice Spikes" reflects damage\n"Void Blizzard" inflicts Slow</value>
-  </data>
-  <data name="5433" xml:space="preserve">
-    <value>Double autos that lifesteal</value>
-  </data>
-  <data name="5436" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5437" xml:space="preserve">
-    <value>Double autos\nGaze inflicts heavy damage and Blind</value>
-  </data>
-  <data name="5438" xml:space="preserve">
-    <value>Drops lingering AoEs that cause heavy Bleed if stood in\n"Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge</value>
-  </data>
-  <data name="5442" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5443" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5449" xml:space="preserve">
-    <value>"Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it\nOccasionally inflicts Heavy and casts targeted ground AoEs </value>
-  </data>
-  <data name="5450" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5451" xml:space="preserve">
-    <value>Has semi-enrage around 30s in combat</value>
-  </data>
-  <data name="5452" xml:space="preserve">
-    <value>"Revelation" inflicts Confusion\n"Tropical Wind" gives enemy a large Haste and damage buff</value>
-  </data>
-  <data name="5453" xml:space="preserve">
-    <value>"Glower" - untelegraphed line AoE\n"100-Tonze Swing" - untelegraphed point-blank AoE</value>
-  </data>
-  <data name="5454" xml:space="preserve">
-    <value>Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat</value>
-  </data>
-  <data name="5458" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5459" xml:space="preserve">
-    <value>Cleave inflicts Bleed\n"Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns</value>
-  </data>
-  <data name="5460" xml:space="preserve">
-    <value>Cleave does heavy damage and inflicts potent Bleed</value>
-  </data>
-  <data name="5461" xml:space="preserve">
-    <value>"Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into\nBoss will run to top or bottom of arena and cast "Trounce" - wide conal AoE\nAt 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds</value>
-  </data>
-  <data name="5463" xml:space="preserve">
-    <value>Double autos</value>
-  </data>
-  <data name="5464" xml:space="preserve">
-    <value>Instant AoE that inflicts heavy Bleed</value>
-  </data>
-  <data name="5465" xml:space="preserve">
-    <value>Instant AoE on pull, double autos\nAt 30 seconds will cast semi-enrage</value>
-  </data>
-  <data name="5466" xml:space="preserve">
-    <value>Sucks in player and does heavy damage\n"Tail Screw" does damage and inflicts Slow</value>
-  </data>
-  <data name="5467" xml:space="preserve">
-    <value>Instant AoE burst does heavy damage and inflicts Slow\nInstant cone inflicts Poison</value>
-  </data>
-  <data name="5470" xml:space="preserve">
-    <value>If familiar with chimera mechanics can be engaged\n"The Dragon's Voice" - be inside hit box\n"The Ram's Voice" - be outside of melee range</value>
-  </data>
-  <data name="5471" xml:space="preserve">
-    <value>Kill blue bomb when it appears\nPush red bomb into boss during "Massive Burst" cast, will wipe party if not stunned\nBoss has cleave that does heavy damage</value>
-  </data>
-  <data name="5473" xml:space="preserve">
-    <value>Casts untelegraphed cone "Level 5 Death"</value>
-  </data>
-  <data name="5475" xml:space="preserve">
-    <value>Double auto</value>
-  </data>
-  <data name="2566" xml:space="preserve">
-    <value>High damage autos and instant kill AoE\n"Infatuation" can only be interrupted with interject</value>
-  </data>
-  <data name="FontSize" xml:space="preserve">
-    <value>Font Size</value>
-  </data>
-</root>
+Vulns: Vulns
+Vicious: Vicious
+Undefined: Undefined
+Undead: Undead
+Threat: Threat
+Thanks: Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!
+Stun: Stun
+Sound: Sound
+Slow: Slow
+Sleep: Sleep
+Sight: Sight
+Save: Save
+Proximity: Proximity
+Opacity: Opacity
+Notes: Notes
+NoDataFound: No data found for {0} ({1})
+Name: Name
+IsClickthrough: Enable clickthrough
+HideRedVulns: Hide vulnerabilities that can't be inflicted
+HideBasedOnJob: Hide vulnerabilities based on current class/job
+Heavy: Heavy
+FontSize: Font Size
+Easy: Easy
+Dangerous: Dangerous
+Caution: Caution
+Boss: Boss
+Bind: Bind
+AggroType: Aggro Type
+7610: Does not interact, wide stun and immediately dies when attacked
+7584: |
+  Permanent stacking damage buff
+  Massive enrage on random player"Allagan Meteor"
+  Gaze attack
+7493: |
+  1) Heavy room wide damage "Ancient Quaga"
+  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
+  3) "Meteor Impact" summons proximity AoE at boss's current location
+  4) Line AoE "Aura Cannon"
+  5) Targeted circle AoE "Burning Rave"
+  6) Point-blank circle AoE "Knuckle Press"
+  7) Repeat
+7490: |
+  1) Summons balls of ice
+  2) Summons icicle that pierces through room, detonating any ice balls it hits
+  3) "Lunar Cry" detonates remaining ice balls
+  4) Exploding ice balls inflict Deep Freeze if they hit a player
+  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+7489: |
+  1) Untelegraphed frontal cleave
+  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
+  3) Targets random player with "Hound out of Hell"
+  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
+  5) Repeat
+7487: |
+  Summons staffs that do various AoEs
+  Staffs then do line AoEs targeting players
+  Room wide AoE
+7485: |
+  1) Untelegraphed swipe
+  2) Untelegraphed line AoE on random player
+  3) Gaze mechanic that inflicts Fear
+  4) Summons pulsating bombs over arena and does a proximity AoE
+  5) Repeats after bombs explode for the last time
+7483: |
+  Summons clouds on edge of arena
+  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
+  Follows immediately with targeted line AoE
+7481: |
+  Summons butterflies on edges of arena
+  Does gaze mechanic that inflicts Fear
+  Butterflies explode untelegraphed
+7480: |
+  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
+  Follows immediately with a half-room wide AoE
+7478: |
+  Summons lightning clouds that inflict stacking vuln up when they explode
+  Boss does proximity AoE under itself that knocks players into the air
+  Get knocked into a cloud to dispel it and avoid vuln
+  Half-room wide AoE
+7394: |
+  Floors 61+&#58; Gold chests only
+  High damage autos and instant kill AoE
+  "Malice" can only be interrupted with interject
+  CANNOT STUN
+7393: |
+  Floors 31-60&#58; Silver chests only
+  High damage autos and instant kill AoE
+  "Malice" can be interrupted with silence/stun/interject
+7392: |
+  Floors 1-30&#58; Bronze chests only
+  High damage autos and instant kill AoE
+  "Malice" can be interrupted with silence/stun/knockback/witching/
+  interject
+7391: Double autos, cone AoE inflicts Sleep
+7390: Rapid double autos and untelegraphed line AoE "Quasar"
+7389: Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"
+7388: |
+  Charges
+  Untelegraphed line AoE "Swipe"
+  Untelegraphed wide circle AoE "Swing"
+7387: Deals heavy damage to random players
+7386: Extremely quick line AoE "Death's Door" that instantly kills
+7385: Targeted AoEs, cleaves
+7384: Casts targeted AoEs unaggroed, buffs own defense
+7382: |
+  "Charybdis" AoE that leaves tornadoes on random players
+7381: |
+  Cleave
+  Large line AoE that can be line of sighted
+7380: |
+  WHM&#58; double autos
+  "Stone" can be line of sighted
+7379: 'MNK&#58; Haste buff, short invuln'
+7378: |
+  WAR&#58; Triple knockback with heavy damage
+  Buffs own attack
+  Extremely high damage cleave with knockback
+7377: Charges, buffs own damage, untelegraphed buster "Ripper Claw"
+7376: Charges, buffs own damage, double autos, electricity Bleed
+7375: Cone AoE, circle AoE, party wide damage
+7374: Large doughnut AoE
+7373: Draw-in attack, tons of bleed, and a stacking poison
+7372: Buffs own damage and double autos
+7371: Alternates line and circle AoEs untelegraphed
+7370: Double autos, very strong rear cleave if behind
+7369: Casts AoEs unaggroed
+7368: Untelegraphed conal AoE on random player, gaze attack
+7367: Charges on aggro
+7366: |
+  Buffs own damage unaggroed
+  Large AoE unaggroed that inflicts vuln up and stacks
+7365: |
+  Ram's Voice - get out
+  Dragon's Voice - get in
+  Telegraphed cleaves
+7364: Double auto and very large AoE
+7362: Extremely large conal AoE, gaze inflicts Fear
+7361: Draw-in attack, extremely large AoE, eventual ENRAGE
+7360: Very large AoEs
+7359: Haste, eventual ENRAGE
+7358: Buffs own damage
+7357: |
+  Casts room wide AoEs unaggroed
+  Large conal draw-in attack followed by heavy damage
+7356: Casts AoEs unaggroed that inflict Deep Freeze
+7355: Double auto inflicts Bleed
+7354: Untelegraphed knockback on rear
+7353: |
+  Casts large AoE unaggroed
+  Extremely large circular AoE
+7350: AoE inflicts numerous debuffs at once
+7349: Buffs own or ally's defense
+7348: Large circular AoE inflicts Bleed
+7347: Large doughnut AoE, gaze attack inflicts Fear
+7346: Cleave and potent Poison
+7345: Conal AoE inflicts Paralysis
+7344: Caster, double auto
+7343: Fast alternating line AoEs that inflict Paralysis
+7341: Inflicts stacking vuln up
+7340: Inflicts stacking Poison that lasts 30s
+7337: Conal gaze, very quick low health ENRAGE
+7336: Instant AoEs on targeted player unaggroed
+7335: Draw-in attack
+7332: Exclusively fatal line AoEs
+7331: Cone AoE inflicts Bleed
+7330: Eventual instant ENRAGE
+7329: Buffs own damage
+7328: Buster inflicts Bleed
+7327: Autos inflict stacking vuln up
+7326: Eventual ENRAGE
+7324: Very wide line AoE
+7323: 'Green&#58; Casts AoEs unaggroed'
+7321: Large cone AoE
+7320: 'Purple&#58; double auto'
+7319: Casts AoEs unaggroed
+7318: |
+  Large line AoE
+  Eventual ENRAGE
+7314: Casts AoEs unaggroed
+7313: Gaze inflicts Otter
+7312: Frontal cleave without cast or telegraph
+7311: |
+  Line AoE inflicts Bleed
+  Low health ENRAGE
+7310: Extremely large AoE
+7308: Weak stack attack
+7306: Cleaves every other auto
+7305: |
+  Line AoE inflicts Bleed
+  Low health ENRAGE
+7304: Low health ENRAGE
+7303: |
+  Double auto inflicts Bleed
+  Low health ENRAGE
+7302: Casts AoEs unaggroed
+7300: Circle AoE inflicts Suppuration
+7299: Large AoE inflicts Paralysis
+7298: Cross AoE inflicts Suppuration
+7297: Line AoE inflicts Bleed
+7296: Gaze
+7295: Draw-in followed by cleave
+7292: Untelegraphed conal AoE with knockback, buster
+7291: Buffs own damage
+7290: |
+  Casts AoEs with knockback unaggroed
+  Line AoE inflicts Bleed
+7289: Cures self and allies
+7288: Gaze inflicts Blind
+7286: Room wide ENRAGE
+7285: Buster and triple auto
+7281: Gaze inflicts Seduce, followed by large AoE that inflicts Minimum
+7279: Lite buster "Scissor Run" followed by AoE
+7273: Untelegraphed buster inflicts Bleed and knockback
+7272: Unavoidable tankbuster-like "Jaws"
+7271: |
+  Conal AoE inflicts Bleed
+  Circle AoE inflicts knockback
+7270: AoE inflicts knockback
+7268: Gaze
+7267: AoE applies Bleed
+7266: Untelegraphed Sleep followed by AoE
+7265: Triple auto inflicts Bleed
+7264: AoE applies Paralysis
+7263: Auto applies Physical Vuln Up every 10s
+7262: Auto inflicts Heavy debuff
+5475: Double auto
+5473: Casts untelegraphed cone "Level 5 Death"
+5471: |
+  Kill blue bomb when it appears
+  Push red bomb into boss during "Massive Burst" cast, will wipe party if not stunned
+  Boss has cleave that does heavy damage
+5470: |
+  If familiar with chimera mechanics can be engaged
+  "The Dragon's Voice" - be inside hit box
+  "The Ram's Voice" - be outside of melee range
+5467: |
+  Instant AoE burst does heavy damage and inflicts Slow
+  Instant cone inflicts Poison
+5466: |
+  Sucks in player and does heavy damage
+  "Tail Screw" does damage and inflicts Slow
+5465: |
+  Instant AoE on pull, double autos
+  At 30 seconds will cast semi-enrage
+5464: Instant AoE that inflicts heavy Bleed
+5463: Double autos
+5461: |
+  "Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into
+  Boss will run to top or bottom of arena and cast "Trounce" - wide conal AoE
+  At 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds
+5460: Cleave does heavy damage and inflicts potent Bleed
+5459: |
+  Cleave inflicts Bleed
+  "Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns
+5458: Double autos
+5454: Buffs own damage and inflicts Physical Vuln Up with AoE damage out of combat
+5453: |
+  "Glower" - untelegraphed line AoE
+  "100-Tonze Swing" - untelegraphed point-blank AoE
+5452: |
+  "Revelation" inflicts Confusion
+  "Tropical Wind" gives enemy a large Haste and damage buff
+5451: Has semi-enrage around 30s in combat
+5450: Double autos
+5449: |
+  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it
+  Occasionally inflicts Heavy and casts targeted ground AoEs
+5443: Double autos
+5442: Double autos
+5438: |
+  Drops lingering AoEs that cause heavy Bleed if stood in
+  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+5437: |
+  Double autos
+  Gaze inflicts heavy damage and Blind
+5436: Double autos
+5433: Double autos that lifesteal
+5431: |
+  "Ice Spikes" reflects damage
+  "Void Blizzard" inflicts Slow
+5430: Inflicts Vuln Up debuff
+5429: |
+  Double autos
+  Gaze inflicts Paralysis
+5424: |
+  Summons adds
+  "Fanatic Zombie" will grab player and root in place until killed
+  "Fanatic Succubus" will heal boss if it reaches it
+5423: Very high damage for the floors it appears on
+5422: High health and very large AoE "Scream"
+5421: Buffs own damage, untelegraphed high damage "Ripper Claw" - can be avoided by walking behind
+5420: Casts Gaze "Evil Eye"
+5415: |
+  Floors 141-150&#58;
+  Nothing notable (ignore threat level)
+  Floors 191-200&#58;
+  Casts large doughnut AoE "Death Spiral" that deals heavy damage
+  Has soft enrage of a strong damage buff
+5414: Very high damage, inflicts Poison
+5413: |
+  "Charybdis" - semi-enrage that drops party health to 1%
+5410: |
+  1) Summons four lingering AoEs
+  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+5409: |
+  Floors 131-140&#58;
+  Nothing notable (ignore threat level)
+  Floors 191-200&#58;
+  Double autos
+5406: Casts targeted AoE that inflicts Bleed
+5402: Untelegraphed conal AoE "Level 5 Petrify" inflicts Petrify
+5397: |
+  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
+5396: |
+  "Chirp" inflicts Sleep for 15s
+5395: |
+  "11-Tonze Swing" - point-blank untelegraphed AoE that does high damage and knockback
+5389: Double autos
+5384: |
+  1) "Bloody Caress" - high damage cleave
+  2) Two telegraphed AOEs and a room wide AOE
+  3) Summons two hornets that must be killed before they "Final Sting"
+  4) "Rotten Stench" - high damage line AOE
+5382: |
+  Gaze attack inflicts Petrify, "Regorge" inflicts Poison
+  Will one-shot kill anyone inflicted with Toad
+5381: Buffs own damage
+5380: Will inflict Sleep before casting "Bad Breath"
+5378: Area of effect Slow
+5377: Casts invuln buff on itself
+5375: Eventual ENRAGE
+5374: |
+  "Sticky Tongue" draw-in and stun attack if not facing, followed by "Labored Leap" AoE centered on enemy
+5371: |
+  1) "Whipcrack" - light tankbuster
+  2) "Stormwind" - conal AOE
+  3) "Bombination" - circular AOE on boss inflicts Slow
+  4) "Lumisphere" - targeted AOE on random player
+  5) "Aeroblast" - room wide AOE inflicts Bleed
+5370: Mini buster "Rhino Charge"
+5367: Inflicts vulnerability up
+5366: High damage "Final Sting"
+5365: Inflicts Poison
+5364: |
+  Floors 101-110&#58;
+  Nothing notable (ignore threat level)
+  Floors 191-200&#58;
+  Double autos
+5356: Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks
+5345: |
+  Casts large AoEs
+  Summons "Grey Bomb" - must be killed before it does high room wide damage
+  Begins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast
+5334: Casts wide "Self Destruct" if not killed in time
+5333: |
+  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
+  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
+  At 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage
+5321: |
+  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
+  Occasionally casts targeted ground AoEs
+5309: |
+  Drops large puddle AoEs that inflict Bleed if stood in
+  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+5308: Gaze inflicts Blind and does high damage
+5299: Gaze inflicts Paralysis
+5298: Immune to Pomander of Witching
+5297: Immune to Pomander of Witching
+5296: Immune to Pomander of Witching
+5295: Immune to Pomander of Witching
+5294: Immune to Pomander of Witching
+5293: Immune to Pomander of Witching
+5292: Immune to Pomander of Witching
+5291: Immune to Pomander of Witching
+5290: Immune to Pomander of Witching
+5289: Immune to Pomander of Witching
+5288: Immune to Pomander of Witching
+5287: Immune to Pomander of Witching
+5286: Immune to Pomander of Witching
+5285: Immune to Pomander of Witching
+5284: Immune to Pomander of Witching
+5283: Immune to Pomander of Witching
+5053: Immune to Pomander of Witching
+5052: Immune to Pomander of Witching
+5051: Immune to Pomander of Witching
+5050: Immune to Pomander of Witching
+5049: Immune to Pomander of Witching
+5048: Immune to Pomander of Witching
+5047: Immune to Pomander of Witching
+5046: Immune to Pomander of Witching
+5041: Does not interact, wide stun and immediately dies when attacked
+5038: |
+  FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE
+  Boss will occasionally inflict Disease which slows
+  1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
+  2) "Cold Feet" -- Gaze
+5032: Inflicts Paralysis
+5030: Inflicts Paralysis
+5025: |
+  1) Summons four lingering AoEs
+  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+5022: |
+  "Dark Mist" inflicts Terror
+5012: |
+  1) Spread out fire and ice AOEs and don't drop them in center because&#58;
+  2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
+5011: |
+  "Chirp" inflicts Sleep for 15s
+5010: Untelegraphed AOE does moderate damage and knockback
+4999: |
+  1) "Bloody Caress" - high damage cleave
+  2) Two telegraphed AOEs and a room wide AOE
+  3) Summons two hornets that must be killed before they "Final Sting"
+  4) "Rotten Stench" - high damage line AOE
+4997: Gaze attack inflicts Petrify, "Devour" instantly kills players inflicted with Toad
+4996: Buffs own damage
+4993: Area of effect Slow
+4990: Eventual ENRAGE
+4989: |
+  "Sticky Tongue" does not stun if facing towards
+4988: Inflicts poison
+4986: |
+  1) "Whipcrack" - light tankbuster
+  2) "Stormwind" - conal AOE
+  3) "Bombination" - circular AOE on boss inflicts Slow
+  4) "Lumisphere" - targeted AOE on random player
+  5) "Aeroblast" - room wide AOE inflicts Bleed
+4985: Mini buster "Rhino Charge"
+4982: Inflicts vulnerability up
+4981: High damage "Final Sting"
+4980: Inflicts Poison
+4975: Casts Haste on itself
+2566: |
+  High damage autos and instant kill AoE
+  "Infatuation" can only be interrupted with interject
