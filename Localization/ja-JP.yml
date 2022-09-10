@@ -28,76 +28,75 @@ Bind: バインド
 AggroType: 感知タイプ
 7610: 攻撃をあてると範囲スタンを発生させてすぐに死ぬ。
 7584: |
-  Permanent stacking damage buff
-  Massive enrage on random player"Allagan Meteor"
-  Gaze attack
+  スタックする与ダメ上昇バフ
+  ランダム対象の即死攻撃「アラガンメテオ」
+  視線攻撃
 7493: |
-  1) Heavy room wide damage "Ancient Quaga"
-  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
-  3) "Meteor Impact" summons proximity AoE at boss's current location
-  4) Line AoE "Aura Cannon"
-  5) Targeted circle AoE "Burning Rave"
-  6) Point-blank circle AoE "Knuckle Press"
-  7) Repeat
+  1) 大ダメージの全体範囲攻撃「エンシェントクエイガ」
+  2) 砂球がフィールド内に出現し、範囲攻撃に当たると中ダメージとヘヴィをプレイヤーに付与する
+  3)「メテオインパクト」ボスの現在位置からの距離減衰攻撃
+  4)「オーラキャノン」直線範囲攻撃
+  5)「バーニングレイヴ」対象中心の円範囲攻撃
+  6)「ナックルプレス」ボス中心の円範囲攻撃
+  7) 繰り返し
 7490: |
-  1) Summons balls of ice
-  2) Summons icicle that pierces through room, detonating any ice balls it hits
-  3) "Lunar Cry" detonates remaining ice balls
-  4) Exploding ice balls inflict Deep Freeze if they hit a player
-  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+  1) 氷塊が出現
+  2) 氷柱が出現し直線範囲攻撃。範囲に当たった氷塊が爆発する
+  3)「ルナークライ」残った氷塊が爆発する
+  4) 氷塊の爆発に当たると凍結(強) が付与される
+  5) ランダムターゲットにジャンプし、ターゲットが凍結状態の場合は即死（それ以外は少ダメージ）。
 7489: |
-  1) Untelegraphed frontal cleave
-  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
-  3) Targets random player with "Hound out of Hell"
-  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
-  5) Repeat
+  1) 予兆無しの前方扇範囲攻撃
+  2) ランダムターゲットに「ミニマムバブル」。沼に入るとミニマムデバフが付与される。
+  3) ランダムターゲットに「ヘルチャージ」
+  4) ターゲットのプレイヤーは「ヘルチャージ」と「捕食」時には沼に入らなければならない。(入らないと即死、ボスに与ダメージ上昇バフがスタック)
+  5) 繰り返し
 7487: |
-  Summons staffs that do various AoEs
-  Staffs then do line AoEs targeting players
-  Room wide AoE
+  様々なAoEを行う杖を召喚する。
+  杖がプレイヤーをターゲットにした直線AoEを行う
+  全体攻撃
 7485: |
-  1) Untelegraphed swipe
-  2) Untelegraphed line AoE on random player
-  3) Gaze mechanic that inflicts Fear
-  4) Summons pulsating bombs over arena and does a proximity AoE
-  5) Repeats after bombs explode for the last time
+  1) 予兆無しの前方扇範囲攻撃
+  2) ランダムターゲットに予兆無しの直線範囲攻撃
+  3) 恐慌を付与する視線攻撃
+  4) フィールドに雷球を出現させ、雷球中心の円範囲攻撃
+  5) 雷球が爆発後くりかえし
 7483: |
-  Summons clouds on edge of arena
-  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
-  Follows immediately with targeted line AoE
+  フィールドの端に雲を召喚する
+  ノックバック無効を無視する攻撃、壁際で打ち上げられる(雲の中の安全な場所を探せ！)
+  直後に大きな直線AoE
 7481: |
-  Summons butterflies on edges of arena
-  Does gaze mechanic that inflicts Fear
-  Butterflies explode untelegraphed
+  外周に蝶が出現
+  恐慌デバフを付与する視線ギミック
+  蝶が予兆無しで爆発
 7480: |
-  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
-  Follows immediately with a half-room wide AoE
+  フィールド中央に移動し外周へノックバックを行う。(ノックバック無効は不可）
+  直後にフィールド半分の広範囲AoEで追撃
 7478: |
-  Summons lightning clouds that inflict stacking vuln up when they explode
-  Boss does proximity AoE under itself that knocks players into the air
-  Get knocked into a cloud to dispel it and avoid vuln
-  Half-room wide AoE
+  爆発時に被ダメージ上昇デバフをスタックする雷雲を召喚する
+  プレイヤーを空中に打ち上げる範囲攻撃
+  打ち上げられたときに雲に当たって消し去ることでデバフを回避することができ、
+  全体範囲攻撃を回避できる
 7394: |
-  Floors 61+: Gold chests only
-  High damage autos and instant kill AoE
-  "Malice" can only be interrupted with interject
-  CANNOT STUN
+  61階以降: 金箱のみ
+  高ダメージのAAと即死範囲攻撃
+  「怨念」はインタージェクトで中断できる。スタンは効かない。
 7393: |
-  Floors 31-60: Silver chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/interject
+  31-60階: 銀箱のみ
+  高ダメージのAAと即死範囲攻撃
+  「怨念」は沈黙、スタン、インタージェクトで中断できる
 7392: |
-  Floors 1-30: Bronze chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/knockback/witching/
-  interject
+  1-30階: 銅箱のみ
+  高ダメージのAAと即死範囲攻撃
+  「怨念」は沈黙、スタン、ノックバック、形態変化、
+  インタージェクトで中断できる
 7391: 二連続AA、睡眠デバフを付与する円範囲攻撃
 7390: 高速な二連続AAと予兆無しの前方直線範囲攻撃「クェーサー」
 7389: 大ダメージの扇範囲攻撃、HP吸収攻撃、自身に与ダメージ上昇バフ付与を繰り返し、バフのスタックが3になると時間切れ攻撃の「ブラックネビュラ」を詠唱する
 7388: |
-  Charges
-  Untelegraphed line AoE "Swipe"
-  Untelegraphed wide circle AoE "Swing"
+  チャージ攻撃
+  「スワイプ」予兆無しの直線範囲攻撃
+  「スイング」予兆無しの大きな円範囲攻撃
 7387: ランダムターゲットに大ダメージを与える
 7386: 非常に素早い即死の直線範囲攻撃「葬送撃」
 7385: ターゲットへの範囲攻撃、扇範囲攻撃
@@ -105,17 +104,17 @@ AggroType: 感知タイプ
 7382: |
   「ミールストーム」ランダム対象で竜巻を発生させる範囲攻撃
 7381: |
-  Cleave
-  Large line AoE that can be line of sighted
+  扇範囲攻撃
+  予兆ありの大きな直線範囲攻撃
 7380: |
-  WHM: double autos
-  "Stone" can be line of sighted
+  白魔道士: 二連続AA
+  「ストンガ」は視線切り可能
 7379: |
   モンク: ヘイストと回避率アップのバフ
 7378: |
-  WAR: Triple knockback with heavy damage
-  Buffs own attack
-  Extremely high damage cleave with knockback
+  戦士: 大ダメージの三連続ノックバック攻撃
+  自身の与ダメージ上昇バフ
+  極めてダメージが高いノックバック前方扇範囲攻撃
 7377: チャージ攻撃、自身に与ダメージ上昇バフ付与、予兆無しの強攻撃「リッパークロウ」
 7376: チャージ攻撃、自身に与ダメージ上昇バフ付与、二連続AA、感電デバフ付与
 7375: 扇範囲攻撃、円範囲攻撃、全体攻撃
@@ -128,12 +127,12 @@ AggroType: 感知タイプ
 7368: ランダムターゲットの予兆なし扇状範囲攻撃、視線攻撃
 7367: 戦闘状態になった際にチャージ攻撃
 7366: |
-  Buffs own damage unaggroed
-  Large AoE unaggroed that inflicts vuln up and stacks
+  非戦闘時に自身に与ダメージ上昇バフを付与する
+  非戦闘時にスタックする被ダメージ上昇デバフを付与する範囲攻撃
 7365: |
-  Ram's Voice - get out
-  Dragon's Voice - get in
-  Telegraphed cleaves
+  「氷結の咆哮」離れる
+  「雷電の咆哮」近づく
+  予兆ありの扇範囲攻撃
 7364: 二連続AAと非常に大きな範囲攻撃
 7362: 特大円範囲攻撃、恐慌デバフを付与する視線攻撃
 7361: 引き寄せ攻撃、特大範囲攻撃、時間切れ攻撃
@@ -141,14 +140,14 @@ AggroType: 感知タイプ
 7359: ヘイスト、時間切れ攻撃
 7358: 与ダメージ上昇のバフ
 7357: |
-  Casts room wide AoEs unaggroed
-  Large conal draw-in attack followed by heavy damage
+  非戦闘時に全体範囲攻撃
+  大きな扇範囲の引き寄せ攻撃のあと、大ダメージ
 7356: 非戦闘時に凍結(強) デバフを付与する範囲攻撃をキャストする
 7355: ペインを付与する二連続AA
 7354: 背面に予兆無しのノックバック攻撃
 7353: |
-  Casts large AoE unaggroed
-  Extremely large circular AoE
+  非戦闘時に大きな範囲攻撃をキャスト
+  特大円範囲攻撃
 7350: 一度に複数のデバフを付与する範囲攻撃
 7349: 自分か味方に防御力上昇バフを付与
 7348: ペインを付与する大きな円範囲攻撃
@@ -177,24 +176,24 @@ AggroType: 感知タイプ
   紫: 二連続AA
 7319: ランダム対象の範囲攻撃
 7318: |
-  Large line AoE
-  Eventual ENRAGE
+  大きな直線範囲攻撃
+  最後に時間切れ攻撃
 7314: ランダム対象の範囲攻撃
 7313: ウソウソに変化させる視線攻撃
 7312: 予兆無しの無詠唱前方範囲攻撃
 7311: |
-  Line AoE inflicts Bleed
-  Low health ENRAGE
+  ペインを付与する直線範囲攻撃
+  残体力が少なくなると時間切れ攻撃
 7310: 特大範囲攻撃
 7308: スタックする被ダメージ上昇デバフ
 7306: AAと扇範囲攻撃が交互にくる
 7305: |
-  Line AoE inflicts Bleed
-  Low health ENRAGE
+  ペインを付与する直線範囲攻撃
+  残体力が少なくなると時間切れ攻撃
 7304: 残体力が少なくなると時間切れ攻撃
 7303: |
-  Double auto inflicts Bleed
-  Low health ENRAGE
+  ペインを付与する二連続AA
+  残体力が少なくなると時間切れ攻撃
 7302: ランダム対象の範囲攻撃
 7300: 熱傷を付与する円範囲攻撃
 7299: 麻痺を付与する大きなAoE
@@ -205,8 +204,8 @@ AggroType: 感知タイプ
 7292: 予兆無しのノックバック前方範囲強攻撃
 7291: 与ダメージ上昇のバフ
 7290: |
-  Casts AoEs with knockback unaggroed
-  Line AoE inflicts Bleed
+  ランダム対象のノックバック範囲攻撃 
+   ペイン付与の直線範囲攻撃
 7289: 自身と味方を回復する
 7288: 暗闇を付与する視線攻撃
 7286: 時間切れの全体攻撃
@@ -216,8 +215,8 @@ AggroType: 感知タイプ
 7273: ペイン付与の予兆無しノックバック強攻撃
 7272: '「ジョーズ」避けられない強攻撃'
 7271: |
-  Conal AoE inflicts Bleed
-  Circle AoE inflicts knockback
+  ペインを付与する扇範囲攻撃
+  ノックバック円範囲攻撃
 7270: ノックバックの範囲攻撃
 7268: 視線攻撃
 7267: ペインを付与する範囲攻撃
@@ -229,105 +228,105 @@ AggroType: 感知タイプ
 5475: 二連続AA
 5473: 予兆なしの前方扇範囲「レベル５デス」を詠唱
 5471: |
-  Kill blue bomb when it appears
-  Push red bomb into boss during "Massive Burst" cast, will wipe party if not stunned
-  Boss has cleave that does heavy damage
+  青いボムが出現したら倒す
+  大爆発詠唱中に赤いボムをボスに当ててスタンさせないとパーティが壊滅
+  フレイムペンペンが特大ダメージ
 5470: |
-  If familiar with chimera mechanics can be engaged
-  "The Dragon's Voice" - be inside hit box
-  "The Ram's Voice" - be outside of melee range
+  キメラのギミックをよく知っているのであれば、
+  「雷電の咆哮」はターゲットサークル内に入る
+  「氷結の咆哮」は近接攻撃の範囲外に離れる
 5467: |
-  Instant AoE burst does heavy damage and inflicts Slow
-  Instant cone inflicts Poison
+  大ダメージとスロウを与えるインスタント範囲攻撃
+  毒を付与するインスタント扇範囲攻撃
 5466: |
-  Sucks in player and does heavy damage
-  "Tail Screw" does damage and inflicts Slow
+  吸引攻撃と大ダメージ
+  「テールスクリュー」はダメージとスロウを付与する。
 5465: |
-  Instant AoE on pull, double autos
-  At 30 seconds will cast semi-enrage
+  無詠唱AoE、二連続AA
+  戦闘開始から30秒ほどで引き寄せ、特大ダメージ
 5464: ペイン(強) を付与する即時発動の範囲攻撃
 5463: 二連続AA
 5461: |
-  "Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into
-  Boss will run to top or bottom of arena and cast "Trounce" - wide conal AoE
-  At 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds
+  「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。
+  ボスはフィールドの北か南に走り「トラウンス(扇形広範囲AoE))」を放つ
+  At 15% 早い詠唱「エクリプスメテオ」 - 9秒ごとに総HPの80%のダメージを全体に与えつづける
 5460: 大ダメージとペインを付与する扇範囲攻撃
 5459: |
-  Cleave inflicts Bleed
-  "Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns
+  ペイン付与の範囲攻撃
+  「狂乱」ランダム対象に大ダメージ、被ダメージ上昇、スタンを付与する
 5458: 二連続AA
 5454: 自身に与ダメージ上昇バフを付与し、非戦闘時に被物理ダメージ上昇デバフを付与する範囲攻撃
 5453: |
-  "Glower" - untelegraphed line AoE
-  "100-Tonze Swing" - untelegraphed point-blank AoE
+  「グラワー」予兆なしの直線範囲攻撃
+  「100トンズ・スイング」予兆なしの敵中心円範囲攻撃
 5452: |
-  "Revelation" inflicts Confusion
-  "Tropical Wind" gives enemy a large Haste and damage buff
+  「リヴァレーション」混乱を付与
+  「極楽の風」ヘイスト(強) と与ダメージ上昇(強) を敵に付与
 5451: 戦闘開始から30秒前後で大ダメージ
 5450: 二連続AA
 5449: |
-  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it
-  Occasionally inflicts Heavy and casts targeted ground AoEs
+  「ハイドレーション」－地面に残るAoE、その上にボスを乗せているとボスにヘイストと与ダメージ上昇がつく
+  時折ヘヴィを与え、フィールドにAoEをキャストする
 5443: 二連続AA
 5442: 二連続AA
 5438: |
-  Drops lingering AoEs that cause heavy Bleed if stood in
-  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+  大きな沼を発生させ、中に入るとペインが付与される。
+  「ヴァルファズル」ターゲットに回避不可のノックバック直線範囲攻撃。沼を避けて吹き飛ぶようにする
 5437: |
-  Double autos
-  Gaze inflicts heavy damage and Blind
+  二連続AA
+  大ダメージと暗闇を付与する視線攻撃
 5436: 二連続AA
 5433: 吸血付きの二連続AA
 5431: |
-  "Ice Spikes" reflects damage
-  "Void Blizzard" inflicts Slow
+  「アイススパイク」が物理ダメージ反射バフを付与
+  「ヴォイド・ブリザド」がスロウを与える
 5430: 被ダメージ上昇デバフ
 5429: |
-  Double autos
-  Gaze inflicts Paralysis
+  二連続AA
+  麻痺を付与する視線攻撃
 5424: |
-  Summons adds
-  "Fanatic Zombie" will grab player and root in place until killed
-  "Fanatic Succubus" will heal boss if it reaches it
+  追加召喚
+  「ファナティック・ゾンビー」はプレイヤーを掴み、殺すまでその場に根を張る。
+  「ファナティック・サキュバス」はボスに到達すると回復する。
 5423: 非常にダメージの高い可視攻撃
 5422: 高いHPと非常に大きなAoE「スクリーム」
 5421: 自身のダメージ上昇、前方不可視攻撃「リッパークロウ」背面を歩くと回避できます。
 5420: 詠唱のある視線攻撃「イビルアイ」
 5415: |
-  Floors 141-150:
-  Nothing notable (ignore threat level)
-  Floors 191-200:
-  Casts large doughnut AoE "Death Spiral" that deals heavy damage
-  Has soft enrage of a strong damage buff
+  Floors 141-150: 
+  何も注目に値しない（脅威レベルを無視する）
+  Floors 191-200: 
+  大きなドーナツAoE「デススパイラル」をキャストして重いダメージを与える
+  時間経過で強力なダメージバフがつく
 5414: 非常に高いダメージと毒デバフ付与
 5413: |
   「ミールストーム」パーティメンバーの体力を1%にする攻撃
 5410: |
-  1) Summons four lingering AoEs
-  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+  1) 長引くAoEを4つ召喚する。
+  2) 2体の雑魚を追加召喚 -- ボスが「スクリーム」を使う前に殺さなければならず、死んでいない場合は高ダメージのAoEでプレイヤーを狙う
 5409: |
-  Floors 131-140:
-  Nothing notable (ignore threat level)
-  Floors 191-200:
-  Double autos
+  131-140F: 
+  特になし (脅威レベルを無視する)
+  Floors 191-200: 
+  ２連続AA
 5406: ターゲットに継続ダメージを与えるAoEをキャストする
 5402: 予兆無しの前方扇範囲攻撃「レベル5石化」で石化デバフを付与
 5397: |
-  1) Spread out fire and ice AOEs and don't drop them in center because:
-  2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
+  1) 火と氷のAOEを広げて、中央に落とさないようにする。
+  2) 「フィアーミスト」早い詠唱、ボスのヒットボックス内に入ると回避できる。回避しないと高ダメージと恐怖を与える。
 5396: |
   「チャープ」15秒間睡眠デバフを付与する
 5395: |
   「111トンズ・スイング」ボス中心の大ダメージノックバック円範囲攻撃
 5389: 二連続AA
 5384: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AOEs and a room wide AOE
-  3) Summons two hornets that must be killed before they "Final Sting"
-  4) "Rotten Stench" - high damage line AOE
+  1)「ブラッディカレス」高ダメージの前方扇範囲攻撃
+  2) 2回の予兆あり範囲攻撃と全体範囲攻撃
+  3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す
+  4)「ロトンステンチ」高ダメージの直線範囲攻撃
 5382: |
-  Gaze attack inflicts Petrify, "Regorge" inflicts Poison
-  Will one-shot kill anyone inflicted with Toad
+  石化を付与する視線攻撃、「リゴージ」は毒を付与する
+  トード状態だと即死する
 5381: 与ダメージ上昇のバフ
 5380: '「臭い息」を詠唱する前に睡眠を与える'
 5378: スロウがかかる範囲
@@ -336,36 +335,36 @@ AggroType: 感知タイプ
 5374: |
   「スティッキータン」は引き寄せと、離れているとスタンを付与する。そのあとの「レイバードリープ」は敵中心の範囲攻撃
 5371: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AOE
-  3) "Bombination" - circular AOE on boss inflicts Slow
-  4) "Lumisphere" - targeted AOE on random player
-  5) "Aeroblast" - room wide AOE inflicts Bleed
+  1)「ウィップクラック」軽いタンク強攻撃
+  2)「ストームウィンド」扇範囲攻撃
+  3)「ボンビネーション」ボス中心のスロウ付与円範囲攻撃
+  4)「ルミスフィア」ランダムターゲットの範囲攻撃
+  5)「エアロブラスト」ペインを付与する全体範囲攻撃
 5370: '「ライノアタック」大ダメージ'
 5367: 被ダメージ上昇デバフ付与
 5366: '「ファイナルスピア」大ダメージ'
 5365: 毒デバフ付与
 5364: |
-  Floors 101-110:
-  Nothing notable (ignore threat level)
-  Floors 191-200:
-  Double autos
+  101-110F: 
+  特になし (脅威レベルを無視する)
+  Floors 191-200: 
+  ２連続AA
 5356: 雑魚を召喚し、大きなAoEを放つ。雑魚はクリブ化の攻撃が有効
 5345: |
-  Casts large AoEs
-  Summons "Grey Bomb" - must be killed before it does high room wide damage
-  Begins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast
+  大きなAoEを放つ。
+  「ペイニー・ボム」を召喚する。全体に大ダメージを与える前に殺さなければならない。
+  長い詠唱「特大爆発」を開始し「ギディ・ボム」を召喚する。「ギディ・ボム」をボスの方へはじくと詠唱中断できる。
 5334: 時間内に倒されていない場合、全体攻撃の「自爆」をキャストします
 5333: |
-  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
-  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
-  At 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage
+  「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。
+  ボスはフィールドの端に走り「トラウンス(扇形広範囲AoE))」を放つ
+  At 17% 長い詠唱「エクリプスメテオ」 総HPの80%のダメージを全体に与えつづける
 5321: |
-  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
-  Occasionally casts targeted ground AoEs
+  「ハイドレーション」 - 地面に残るAoE、その上にボスを乗せているとボスにヘイストがつく
+  時折フィールドにAoEをキャストする
 5309: |
-  Drops large puddle AoEs that inflict Bleed if stood in
-  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+  大きな沼を発生させ、中に入るとペインが付与される。
+  「ヴァルファズル」ターゲットに回避不可のノックバック直線範囲攻撃。沼を避けて吹き飛ぶようにする
 5308: 暗闇デバフと高ダメージを与える視線攻撃
 5299: 麻痺デバフを付与する視線攻撃
 5298: 形態変化に耐性がある
@@ -394,28 +393,28 @@ AggroType: 感知タイプ
 5046: 形態変化に耐性がある
 5041: 攻撃をあてると範囲スタンを発生させてすぐに死ぬ。
 5038: |
-  FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE
-  Boss will occasionally inflict Disease which slows
-  1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
-  2) "Cold Feet" -- Gaze
+  ギミック解説: ギミックを失敗すると全体範囲攻撃が強化される。
+  ボスは時々病気を付与する
+  1)「インヘルス」ボスの足元以外の全体範囲攻撃か、ボス中心の円範囲攻撃
+  2)「狂気のまなざし」視線攻撃
 5032: 麻痺デバフ付与
 5030: 麻痺デバフ付与
 5025: |
-  1) Summons four lingering AoEs
-  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+  1) 長引くAoEを4つ召喚する。
+  2) 2体の雑魚を追加召喚 -- ボスが「スクリーム」を使う前に殺さなければならず、死んでいない場合は高ダメージのAoEでプレイヤーを狙う
 5022: |
   「ダークミスト」恐慌デバフを付与する
 5012: |
-  1) Spread out fire and ice AOEs and don't drop them in center because:
-  2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
+  1) 火と氷のAOEを広げて、中央に落とさないようにする。
+  2) 「フィアーミスト」早い詠唱、ボスのヒットボックス内に入ると回避できる。回避しないと高ダメージと恐怖を与える。
 5011: |
   「チャープ」15秒間睡眠デバフを付与する
 5010: 中ダメージの予兆無しノックバック範囲攻撃
 4999: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AOEs and a room wide AOE
-  3) Summons two hornets that must be killed before they "Final Sting"
-  4) "Rotten Stench" - high damage line AOE
+  1)「ブラッディカレス」高ダメージの前方扇範囲攻撃
+  2) 2回の予兆あり範囲攻撃と全体範囲攻撃
+  3) パレス・ホーネットを2体召喚するので「ファイナルスピア」の前に必ず倒す
+  4)「ロトンステンチ」高ダメージの直線範囲攻撃
 4997: 石化デバフを付与する視線攻撃。「捕食」はトード状態のプレイヤーを即死させる。
 4996: 与ダメージ上昇のバフ
 4993: スロウがかかる範囲
@@ -424,16 +423,16 @@ AggroType: 感知タイプ
   「スティッキータン」正面を向いているとスタンされません
 4988: 毒デバフ付与
 4986: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AOE
-  3) "Bombination" - circular AOE on boss inflicts Slow
-  4) "Lumisphere" - targeted AOE on random player
-  5) "Aeroblast" - room wide AOE inflicts Bleed
+  1)「ウィップクラック」軽いタンク強攻撃
+  2)「ストームウィンド」扇範囲攻撃
+  3)「ボンビネーション」ボス中心のスロウ付与円範囲攻撃
+  4)「ルミスフィア」ランダムターゲットの範囲攻撃
+  5)「エアロブラスト」ペインを付与する全体範囲攻撃
 4985: '「ライノアタック」大ダメージ'
 4982: 被ダメージ上昇デバフ付与
 4981: '「ファイナルスピア」大ダメージ'
 4980: 毒デバフ付与
 4975: 自身にヘイストを付与する
 2566: |
-  High damage autos and instant kill AoE
-  "Infatuation" can only be interrupted with interject
+  高ダメージのAAと即死攻撃
+  「怨念」はインタージェクトでのみ中断できる
