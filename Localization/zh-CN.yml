@@ -26,6 +26,7 @@ Caution: 注意
 Boss: Boss
 Bind: 绑定
 AggroType: 仇恨类型
+ShowId: Show debug information
 7610: 白给
 7584: |
   Permanent stacking damage buff
