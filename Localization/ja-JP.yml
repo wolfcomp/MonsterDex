@@ -26,6 +26,7 @@ Caution: 注意
 Boss: ボス
 Bind: バインド
 AggroType: 感知タイプ
+ShowId: Show debug information
 7610: 攻撃をあてると範囲スタンを発生させてすぐに死ぬ。
 7584: |
   スタックする与ダメ上昇バフ
