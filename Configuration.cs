@@ -13,6 +13,7 @@ namespace DeepDungeonDex
         public float Opacity { get; set; } = 1.0f;
         public bool HideRedVulns { get; set; } = false;
         public bool HideBasedOnJob { get; set; } = false;
+        public bool ShowId { get; set; } = false;
         public int Locale { get; set; } = 0;
         public float FontSize { get; set; } = 16f;
 

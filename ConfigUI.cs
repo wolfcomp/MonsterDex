@@ -14,10 +14,10 @@ namespace DeepDungeonDex
         private bool _isClickthrough;
         private bool _hideRedVulns;
         private bool _hideBasedOnJob;
+        private bool _showId;
         private int _localeInt;
         private readonly Configuration _config;
         private readonly Locale _locale;
-        private float _fontSize;
 
         public ConfigUI(Configuration config, Locale locale)
         {
@@ -26,7 +26,7 @@ namespace DeepDungeonDex
             _isClickthrough = config.IsClickthrough;
             _hideRedVulns = config.HideRedVulns;
             _hideBasedOnJob = config.HideBasedOnJob;
-            _fontSize = config.FontSize;
+            _showId = config.ShowId;
             _localeInt = config.Locale;
             _locale = locale;
         }
@@ -64,6 +64,10 @@ namespace DeepDungeonDex
             if (ImGui.Checkbox(_locale.HideBasedOnJob, ref _hideBasedOnJob))
             {
                 _config.HideBasedOnJob = _hideBasedOnJob;
+            }
+            if (ImGui.Checkbox(_locale.ShowId, ref _showId))
+            {
+                _config.ShowId = _showId;
             }
 
             var locales = Locale.GetLocaleNames();
