@@ -26,6 +26,7 @@ Caution: Vorsicht
 Boss: Boss
 Bind: Bind
 AggroType: Bedrohungstyp
+ShowId: Show debug information
 7610: Does not interact, wide stun and immediately dies when attacked
 7584: |
   Permanent stacking damage buff
