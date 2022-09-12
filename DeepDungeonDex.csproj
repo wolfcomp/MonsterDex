@@ -44,6 +44,7 @@
     <None Remove="fonts\NotoSansTC-Regular.otf" />
     <None Remove="global.json" />
     <None Remove="LICENSE" />
+    <None Remove="Localization\*.yml" />
     <None Remove="Localization\locales.json" />
     <None Remove="mobData.yml" />
     <None Remove="packages.lock.json" />
