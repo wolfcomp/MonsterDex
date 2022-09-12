@@ -26,6 +26,7 @@ Caution: 주의
 Boss: 보스
 Bind: 속박
 AggroType: 적개심 유형
+ShowId: Show debug information
 7610: 공격하면 주변을 기절시키고 바로 죽는다.
 7584: |
   Permanent stacking damage buff
