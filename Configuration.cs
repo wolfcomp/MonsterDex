@@ -13,20 +13,15 @@ namespace DeepDungeonDex
         public float Opacity { get; set; } = 1.0f;
         public bool HideRedVulns { get; set; } = false;
         public bool HideBasedOnJob { get; set; } = false;
+        public bool ShowId { get; set; } = false;
         public int Locale { get; set; } = 0;
         public float FontSize { get; set; } = 16f;
 
         // Add any other properties or methods here.
         [JsonIgnore] private DalamudPluginInterface _pluginInterface;
-
-        [JsonIgnore]
-        public string LocaleString => Localization.Locale.GetLocales()[Locale];
-
-        [JsonIgnore]
-        public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
-        [JsonIgnore]
-        public float WindowSizeScaled { get; set; }
-
+        [JsonIgnore] public string LocaleString => Localization.Locale.GetLocales()[Locale];
+        [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
+        [JsonIgnore] public float WindowSizeScaled { get; set; }
 
         public void Initialize(DalamudPluginInterface pluginInterface)
         {

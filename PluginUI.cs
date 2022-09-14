@@ -91,9 +91,21 @@ namespace DeepDungeonDex
             ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 0), new Vector2(9001, 9001));
             ImGui.SetNextWindowBgAlpha(_config.Opacity);
             ImGui.Begin("cool strati window", flags);
-            ImGui.Text(_locale.Name+":\n" + Data.Name);
-            ImGui.NewLine();
-            ImGui.Columns(2, null, false);
+            if (_config.ShowId)
+            {
+                ImGui.Columns(2, null, false);
+                ImGui.Text(_locale.Name+":\n" + Data.Name);
+                ImGui.NextColumn();
+                ImGui.Text("ID:\n" + Data.NameID);
+                ImGui.NewLine();
+                ImGui.NextColumn();
+            }
+            else
+            {
+                ImGui.Text(_locale.Name+":\n" + Data.Name);
+                ImGui.NewLine();
+                ImGui.Columns(2, null, false);
+            }
             ImGui.Text(_locale.AggroType + ":\n");
             ImGui.Text(_locale.GetString(mobData.Aggro.ToString()));
             ImGui.NextColumn();
