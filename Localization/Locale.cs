@@ -130,7 +130,9 @@ namespace DeepDungeonDex.Localization
     {
         public static string GetString(this Dictionary<string, string> dictionary, string key)
         {
-            return dictionary[key];
+            if(dictionary.TryGetValue(key, out var value))
+                return value;
+            throw new KeyNotFoundException($"Key {key} could not be found in dictionary.");
         }
     }
 }
