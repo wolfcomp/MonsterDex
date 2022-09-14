@@ -26,7 +26,7 @@ Caution: Attention
 Boss: Boss
 Bind: Lier
 AggroType: Type d'aggro
-ShowId: Show debug information
+ShowId: Montrer les informations de débug
 7610: N'intéragit pas, large Etourdissement et meurt immédiatement lorsque attaqué
 7584: |
   Permanent stacking damage buff
