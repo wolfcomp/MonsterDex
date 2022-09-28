@@ -357,9 +357,9 @@ ShowId: 디버그 정보 보기
   「特大爆発 / Massive Burst」를 시전하고 「ギディ·ボム / Giddy Bomb」를 소환한다. 이 봄을 보스 쪽으로 밀어내면 시전을 중단시킬 수 있다.
 5334: 일정 시간내로 죽이지 못하면 전체 공격인 「自爆/Self Destruct」을 시전함
 5333: |
-  「ミールストーム」 토네이도를 2회 연속 발생시키고 빨려 들어가면 강한 데미지를 입음
-  보스는 필드의 북쪽이나 남쪽에서 「トラウンス / Trounce (매우 큰 부채꼴 범위 공격)」을 쏜다
-  HP 17% 이하에는 빠르게 「エクリプスメテオ / Ecliptic Meteor」을 시전하고 초마다 총 HP의 80% 피해를 계속 입힌다
+  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
+  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
+  At 17%% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80%% of total health damage
 5321: |
   「ハイドレーション」 - 지면에 남는 범위 장판, 그 위에 보스가 위치하고 있으면 보스에게 헤이스트 버프가 주어진다.
    필드에 광역 공격을 시전한다.
