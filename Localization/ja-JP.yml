@@ -357,9 +357,9 @@ ShowId: Show debug information
   長い詠唱「特大爆発」を開始し「ギディ・ボム」を召喚する。「ギディ・ボム」をボスの方へはじくと詠唱中断できる。
 5334: 時間内に倒されていない場合、全体攻撃の「自爆」をキャストします
 5333: |
-  「ミールストーム」 -- 竜巻を2回連続で発生させ、吸い込まれると高ダメージ。
-  ボスはフィールドの端に走り「トラウンス(扇形広範囲AoE))」を放つ
-  At 17% 長い詠唱「エクリプスメテオ」 総HPの80%のダメージを全体に与えつづける
+  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
+  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
+  At 17%% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80%% of total health damage
 5321: |
   「ハイドレーション」 - 地面に残るAoE、その上にボスを乗せているとボスにヘイストがつく
   時折フィールドにAoEをキャストする
