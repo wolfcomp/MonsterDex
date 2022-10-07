@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Dalamud.Data;
 using Dalamud.Game.ClientState;
 using Dalamud.Plugin;
@@ -29,7 +30,8 @@ namespace DeepDungeonDex
         private readonly ConfigUI _cui;
         internal static Locale Locale;
         internal static readonly Deserializer Deserializer = new();
-        
+        public static List<uint> LoggedIds = new();
+
         private TargetData _target;
 
         public Plugin(DalamudPluginInterface pluginInterface, ClientState clientState, CommandManager commands, Condition condition, Framework framework, TargetManager targets, DataManager gameData)

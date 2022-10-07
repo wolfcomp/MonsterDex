@@ -77,8 +77,9 @@ namespace DeepDungeonDex
                 return;
             ImGui.PushFont(Font.RegularFont);
             var data = DataHandler.Mobs(Data.NameID);
-            if (!data.HasValue)
+            if (!data.HasValue && !Plugin.LoggedIds.Contains(Data.NameID))
             {
+                Plugin.LoggedIds.Add(Data.NameID);
                 PluginLog.Log(string.Format(_locale.NoDataFound, Data.Name, Data.NameID));
                 return;
             }
