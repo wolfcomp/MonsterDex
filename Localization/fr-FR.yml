@@ -24,28 +24,28 @@ Easy: Facile
 Dangerous: Dangereux
 Caution: Attention
 Boss: Boss
-Bind: Lier
+Bind: Entrave
 AggroType: Type d'aggro
-ShowId: Show debug information
+ShowId: Montrer les informations de débug
 7610: N'intéragit pas, large Etourdissement et meurt immédiatement lorsque attaqué
 7584: |
-  Permanent stacking damage buff
-  Massive enrage on random player"Allagan Meteor"
-  Gaze attack
+  Augmentation de dégâts cumulables permanents
+  "Météore Allagois" Rage important sur un joueur aléatoire
+  Attaque de vue
 7493: |
-  1) Heavy room wide damage "Ancient Quaga"
-  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
-  3) "Meteor Impact" summons proximity AoE at boss's current location
-  4) Line AoE "Aura Cannon"
-  5) Targeted circle AoE "Burning Rave"
-  6) Point-blank circle AoE "Knuckle Press"
-  7) Repeat
+  1) Grand dommages sur la salle entière "Ancient Quaga"
+  2) Des rochers pulsant apparaisent dans l'arène, causant des dommages moyens et le malus "Lourd" si le joueur est touché par l'un d'entre eux
+  3) "Impacte Météore" crée des AoE à proximitée de la position du boss
+  4) AoE en ligne "Aura Cannon"
+  5) AoE circulaire visé "Burning Rave"
+  6) AoE circulaire à proximité "Knuckle Press"
+  7) Repartir de 1)
 7490: |
-  1) Summons balls of ice
-  2) Summons icicle that pierces through room, detonating any ice balls it hits
-  3) "Lunar Cry" detonates remaining ice balls
-  4) Exploding ice balls inflict Deep Freeze if they hit a player
-  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+  1) Invoque des boules de glace
+  2) Invoque des stalactites qui percent à travers la pièce, faisant détonner les boules de glace sur leur passage
+  3) "Cri lunaire" fait détonner les boules restantes
+  4) Les boules glaces infligent Congélation si elles touchent un joueur lorsqu'elles explosent
+  5) Le boss saute sur un joueur aléatoire, le tuant instantanément s'il est congelé (dégâts légers autrement)
 7489: |
   1) Untelegraphed frontal cleave
   2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
@@ -241,8 +241,8 @@ ShowId: Show debug information
   Instant AoE burst does heavy damage and inflicts Slow
   Instant cone inflicts Poison
 5466: |
-  Sucks in player and does heavy damage
-  "Tail Screw" does damage and inflicts Slow
+  Aspire le joueur et provoque de lourds dommages
+  "Tail Screw" inflige le malus "Lenteur" en plus des dégâts
 5465: |
   Instant AoE on pull, double autos
   At 30 seconds will cast semi-enrage
@@ -284,8 +284,8 @@ ShowId: Show debug information
   "Void Blizzard" inflicts Slow
 5430: Inflige un débuff de vulnérabilité augmentée
 5429: |
-  Double autos
-  Gaze inflicts Paralysis
+  Attaque automatique double
+  Attaque de vue infligant le malus "Paralysie"
 5424: |
   Summons adds
   "Fanatic Zombie" will grab player and root in place until killed
@@ -329,7 +329,7 @@ ShowId: Show debug information
 5382: |
   Gaze attack inflicts Petrify, "Regorge" inflicts Poison
   Will one-shot kill anyone inflicted with Toad
-5381: Dégâts des buffs
+5381: Améliore ses propres dégâts
 5380: Infligera "Sommeil" avant de caster "Mauvaise Haleine"
 5378: Lenteur en AoE
 5377: Cast "Invulnérabilité" sur soi-même
@@ -360,13 +360,13 @@ ShowId: Show debug information
 5333: |
   "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
   Boss will run to edge of arena and cast "Trounce" - wide conal AoE
-  At 17% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage
+  At 17%% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80%% of total health damage
 5321: |
   "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
   Occasionally casts targeted ground AoEs
 5309: |
-  Drops large puddle AoEs that inflict Bleed if stood in
-  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+  Place des flaques en AoE qui infligent le malus "Saignée" si vous êtes présent à l'intérieur
+  "Valfodr" -- AoE en ligne inévitable, centré sur un joueur, qui cause une forte poussée, évitez les AoEs environnant la partie extérieure
 5308: Regard inflige Cécité et fait de gros dégâts
 5299: Regard inflige Paralysie
 5298: Immunité contre la Poterie de Mutation
@@ -418,7 +418,7 @@ ShowId: Show debug information
   3) Summons two hornets that must be killed before they "Final Sting"
   4) "Rotten Stench" - high damage line AOE
 4997: Attaque type "Regard" infligeant Pétrification, "Dévoration" tue immédiatement si un joueur a l'état "Crapaud"
-4996: Dégâts des buffs
+4996: Améliore ses propres dégâts
 4993: Lenteur en AoE
 4990: ENRAGE éventuel
 4989: |
@@ -436,5 +436,5 @@ ShowId: Show debug information
 4980: Inflige Poison
 4975: Lance Hâte sur lui-même
 2566: |
-  High damage autos and instant kill AoE
-  "Infatuation" can only be interrupted with interject
+  Attaques automatiques puissantes, AoE de mort subite
+  "Infatuation" ne peut être arrêté que par Interjection
