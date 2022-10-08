@@ -88,10 +88,9 @@ ShowId: Montrer les informations de débug
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/interject
 7392: |
-  Floors 1-30: Bronze chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/knockback/witching/
-  interject
+  Étages 1-30: Coffres en Bronze seulement
+  Gros dégâts automatiques et AoE mortelle
+  "Malédiction" peut être interrompu par Silence/Étourdissement/Knockback/Poterie de Mutation/Interjection
 7391: Double autos, AoE en cône infligeant Sommeil
 7390: Double autos rapides et AoE linéaire non télégraphiée "Quasar"
 7389: Cleaves répétitifs causant de gros dégâts, vol de vie, buff ses propres dégâts, à trois stacks de dégâts augmentés cast ENRAGE "Nébuleuse noire"
