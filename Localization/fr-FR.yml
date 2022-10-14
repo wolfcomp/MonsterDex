@@ -1,6 +1,6 @@
-Vulns: Vulnérabilité
-Vicious: Vicieuse
-Undefined: Non défini
+Vulns: Vulnérabilités
+Vicious: Vicieux
+Undefined: Non-défini
 Undead: Mort-vivant
 Threat: Menace
 Thanks: 'Merci au serveur Discord : "Deep Dungeons" pour beaucoup de ressources communautaires. Merci à tous ceux qui ont pris le temps de rapporter des données incorrectes ou manquantes ! Des applaudissements à Maygi pour écrire les meilleurs guides du Donjon sans fond !'
@@ -18,7 +18,7 @@ Name: Nom
 IsClickthrough: Activer le clique à travers
 HideRedVulns: Cacher les vulnérabilités qui ne peuvent être infligées
 HideBasedOnJob: Masquer les vulnérabilités basées sur la classe ou le job actuel
-Heavy: Lourd
+Heavy: Pesanteur
 FontSize: Taille de la police
 Easy: Facile
 Dangerous: Dangereux
@@ -88,10 +88,9 @@ ShowId: Montrer les informations de débug
   High damage autos and instant kill AoE
   "Malice" can be interrupted with silence/stun/interject
 7392: |
-  Floors 1-30: Bronze chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/knockback/witching/
-  interject
+  Étages 1-30: Coffres en Bronze seulement
+  Gros dégâts automatiques et AoE mortelle
+  "Malédiction" peut être interrompu par Silence/Étourdissement/Knockback/Poterie de Mutation/Interjection
 7391: Double autos, AoE en cône infligeant Sommeil
 7390: Double autos rapides et AoE linéaire non télégraphiée "Quasar"
 7389: Cleaves répétitifs causant de gros dégâts, vol de vie, buff ses propres dégâts, à trois stacks de dégâts augmentés cast ENRAGE "Nébuleuse noire"
