@@ -29,9 +29,9 @@ AggroType: 仇恨类型
 ShowId: 显示调试信息
 7610: 白给
 7584: |
-  Permanent stacking damage buff
-  Massive enrage on random player"Allagan Meteor"
-  Gaze attack
+  无限叠加伤害Buff
+  随机点名大范围高伤害Aoe“亚拉戈陨石”
+  视线攻击
 7493: |
   1) Heavy room wide damage "Ancient Quaga"
   2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
