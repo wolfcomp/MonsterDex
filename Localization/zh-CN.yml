@@ -1,37 +1,37 @@
-Vulns: Vulns
-Vicious: Vicious
-Undefined: Undefined
-Undead: Undead
-Threat: Threat
+Vulns: 弱点
+Vicious: 凶险
+Undefined: 未定义
+Undead: 亡灵
+Threat: 威胁等级
 Thanks: 感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！
-Stun: Stun
-Sound: Sound
-Slow: Slow
-Sleep: Sleep
+Stun: 眩暈
+Sound: 声音
+Slow: 减速
+Sleep: 睡眠
 Sight: 视野感知
 Save: 保存
 Proximity: 范围感知
 Opacity: 不透明度
 Notes: 说明
-NoDataFound: No data found for {0} ({1})
+NoDataFound: 未找到 {0} ({1} ) 的数据
 Name: 名称
 IsClickthrough: 启用鼠标穿透
-HideRedVulns: Hide vulnerabilities that can't be inflicted
-HideBasedOnJob: Hide vulnerabilities based on current class/job
-Heavy: Heavy
-FontSize: Font Size
+HideRedVulns: 隐藏无效弱点
+HideBasedOnJob: 隐藏当前职业无法利用的弱点
+Heavy: 加重
+FontSize: 字体大小
 Easy: 简单
 Dangerous: 危险
 Caution: 注意
 Boss: Boss
-Bind: 绑定
+Bind: 止步
 AggroType: 仇恨类型
-ShowId: Show debug information
-7610: 白给
+ShowId: 显示调试信息
+7610: 不要接触！一旦开怪会导致长时间眩晕或者即死
 7584: |
-  Permanent stacking damage buff
-  Massive enrage on random player"Allagan Meteor"
-  Gaze attack
+  无限叠加伤害Buff
+  随机点名大范围高伤害Aoe“亚拉戈陨石”
+  视线攻击
 7493: |
   1) Heavy room wide damage "Ancient Quaga"
   2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
@@ -79,19 +79,17 @@ ShowId: Show debug information
   Get knocked into a cloud to dispel it and avoid vuln
   Half-room wide AoE
 7394: |
-  Floors 61+: Gold chests only
-  High damage autos and instant kill AoE
-  "Malice" can only be interrupted with interject
-  CANNOT STUN
+  61+层: 仅限金箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒只能被'插言'打断
 7393: |
-  Floors 31-60: Silver chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/interject
+  31-60层: 仅限银箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒可被 沉默/眩晕/插言 打断
 7392: |
-  Floors 1-30: Bronze chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/knockback/witching/
-  interject
+  1-30层: 仅限铜箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒可被打断
 7391: 二连顺劈，带睡眠buff的锥形Aoe
 7390: 背对恐惧\n无读条对一仇释放单体攻击\n会不断强化自身伤害\n读条释放可见范围的大范围圆形超高威力Aoe'亚拉戈陨石'
 7389: 无读条对一仇释放没有范围提示的扇形Aoe\n读条释放有范围提示的圆形Aoe'浓云密布'\n注意：会不断对自己使用无读条的“巨大化”强化自身伤害，请务必尽快击杀。
@@ -138,8 +136,8 @@ ShowId: Show debug information
 7364: Double auto and very large AoE
 7362: Extremely large conal AoE, gaze inflicts Fear
 7361: Draw-in attack, extremely large AoE, eventual ENRAGE
-7360: Very large AoEs
-7359: Haste, eventual ENRAGE
+7360: 超大范围AOE
+7359: 快点，最后会狂暴
 7358: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
 7357: |
   Casts room wide AoEs unaggroed
@@ -151,7 +149,7 @@ ShowId: Show debug information
   Casts large AoE unaggroed
   Extremely large circular AoE
 7350: AoE inflicts numerous debuffs at once
-7349: Buffs own or ally's defense
+7349: 全队减伤Buff
 7348: Large circular AoE inflicts Bleed
 7347: Large doughnut AoE, gaze attack inflicts Fear
 7346: Cleave and potent Poison
@@ -393,7 +391,7 @@ ShowId: Show debug information
 5048: Immune to Pomander of Witching
 5047: Immune to Pomander of Witching
 5046: Immune to Pomander of Witching
-5041: 白给
+5041: 不要接触！一旦开怪会导致长时间眩晕或者即死
 5038: |
   FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE
   Boss will occasionally inflict Disease which slows
