@@ -328,7 +328,7 @@ ShowId: Montrer les informations de débug
 5382: |
   Gaze attack inflicts Petrify, "Regorge" inflicts Poison
   Will one-shot kill anyone inflicted with Toad
-5381: Améliore ses propres dégâts
+5381: Dégâts des buffs
 5380: Infligera "Sommeil" avant de caster "Mauvaise Haleine"
 5378: Lenteur en AoE
 5377: Cast "Invulnérabilité" sur soi-même
@@ -417,7 +417,7 @@ ShowId: Montrer les informations de débug
   3) Summons two hornets that must be killed before they "Final Sting"
   4) "Rotten Stench" - high damage line AOE
 4997: Attaque type "Regard" infligeant Pétrification, "Dévoration" tue immédiatement si un joueur a l'état "Crapaud"
-4996: Améliore ses propres dégâts
+4996: Dégâts des buffs
 4993: Lenteur en AoE
 4990: ENRAGE éventuel
 4989: |
