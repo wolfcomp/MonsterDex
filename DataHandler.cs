@@ -140,7 +140,7 @@ namespace DeepDungeonDex
         public static void SetupData()
         {
             _mobs.Clear();
-            using var stream = new HttpClient().GetStreamAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/dev/mobData.yml").GetAwaiter().GetResult();
+            using var stream = new HttpClient().GetStreamAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/l10n_translation/mobData.yml").GetAwaiter().GetResult();
             using var reader = new StreamReader(stream);
             var data = Plugin.Deserializer.Deserialize<Dictionary<uint, YamlData>>(reader);
             foreach (var (key, value) in data)

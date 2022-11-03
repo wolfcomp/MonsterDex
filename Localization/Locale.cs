@@ -22,12 +22,12 @@ namespace DeepDungeonDex.Localization
 
         public static void LoadResources()
         {
-            var dictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(_httpClient.GetStringAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/dev/Localization/locales.json").GetAwaiter().GetResult());
+            var dictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(_httpClient.GetStringAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/l10n_translation/Localization/locales.json").GetAwaiter().GetResult());
             _langs = dictionary != null ? dictionary.Keys.ToArray() : new[] { "en" };
             _langNames = dictionary != null ? dictionary.Values.ToArray() : new[] { "English" };
             foreach (var t1 in _langs)
             {
-                var path = $"https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/dev/Localization/{t1}.yml";
+                var path = $"https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/l10n_translation/Localization/{t1}.yml";
                 var res = _httpClient.GetAsync(path).GetAwaiter().GetResult();
                 if(res.IsSuccessStatusCode)
                     _resourcesPaths.Add(t1, path);
