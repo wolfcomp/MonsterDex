@@ -33,51 +33,51 @@ ShowId: 显示调试信息
   随机点名大范围高伤害Aoe“亚拉戈陨石”
   视线攻击
 7493: |
-  1) Heavy room wide damage "Ancient Quaga"
-  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
-  3) "Meteor Impact" summons proximity AoE at boss's current location
-  4) Line AoE "Aura Cannon"
-  5) Targeted circle AoE "Burning Rave"
-  6) Point-blank circle AoE "Knuckle Press"
-  7) Repeat
+  1) “古代爆震”，高伤害、全屏幕攻击。
+  2) 场中出现多个砂石，玩家被击中后受到中等伤害并获得“加重”Debuff。
+  3) "陨石冲击" ，当前boss位置的距离衰减AOE。
+  4) "斗气炮"，直线AOE。
+  5) "燃烧咆哮"，点名圆形AOE。
+  6) "指压"，以boss为中心的钢铁AOE。
+  7) 重复。
 7490: |
-  1) Summons balls of ice
-  2) Summons icicle that pierces through room, detonating any ice balls it hits
-  3) "Lunar Cry" detonates remaining ice balls
-  4) Exploding ice balls inflict Deep Freeze if they hit a player
-  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+  1) boss在场中召唤冰块。
+  2) boss召唤冰柱，直线AOE，并引爆击中的冰块。
+  3) "月下咆哮"，引爆剩余的冰块。
+  4) 被冰块爆炸击中时，获得“冻结”DeBuff。
+  5) boss跳跃至任一玩家，如果拥有“冻结”DeBuff，则直接死亡，反之造成少量伤害。
 7489: |
-  1) Untelegraphed frontal cleave
-  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
-  3) Targets random player with "Hound out of Hell"
-  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
-  5) Repeat
+  1) 无读条的正面扇形aoe。
+  2) “缩小球”，随机点名，并在地面留下水潭，站在范围内获得“缩小”DeBuff。
+  3) "地狱冲"，随机点名。
+  4) 被“地狱冲”或“捕食”选定的玩家必须在读条结束前进入“缩小球”范围内，否则将直接死亡并赋予boss一层“伤害提高”Buff。
+  5) 重复。
 7487: |
-  Summons staffs that do various AoEs
-  Staffs then do line AoEs targeting players
-  Room wide AoE
+  boss召唤出法杖，并产生不同类型的AOE
+  法杖释放直线点名AOE。
+  全屏AOE
 7485: |
-  1) Untelegraphed swipe
-  2) Untelegraphed line AoE on random player
-  3) Gaze mechanic that inflicts Fear
-  4) Summons pulsating bombs over arena and does a proximity AoE
-  5) Repeats after bombs explode for the last time
+  1) 无读条的正面扇形aoe。
+  2) 无读条随机点名直线AOE。
+  3) 造成“恐慌”DeBuff的视线攻击。
+  4) 场中出现闪电球并造成圆形aoe。
+  5) 闪电球爆炸后重复机制。
 7483: |
-  Summons clouds on edge of arena
-  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
-  Follows immediately with targeted line AoE
+  在场边召唤雷云
+  无视防击退的击退攻击，请找安全方位被击退。
+  紧随其后的点名直线aoe。
 7481: |
-  Summons butterflies on edges of arena
-  Does gaze mechanic that inflicts Fear
-  Butterflies explode untelegraphed
+  在场边召唤蝴蝶。Summons butterflies on edges of arena
+  造成“恐慌”DeBuff的视线攻击。
+  无读条的蝴蝶爆炸。
 7480: |
-  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
-  Follows immediately with a half-room wide AoE
+  无视防击退的击退攻击。
+  紧接半场范围AOE
 7478: |
-  Summons lightning clouds that inflict stacking vuln up when they explode
-  Boss does proximity AoE under itself that knocks players into the air
-  Get knocked into a cloud to dispel it and avoid vuln
-  Half-room wide AoE
+  召唤爆炸时造成“受伤加重”debuff的雷云。
+  boss在所在位置造成距离衰减aoe并击飞玩家。
+  在空中触发雷云避免爆炸。
+  半场范围aoe。
 7394: |
   61+层: 仅限金箱子
   会释放高伤害单体攻击以及小范围即死AoE
@@ -367,30 +367,30 @@ ShowId: 显示调试信息
   "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
 5308: Gaze inflicts Blind and does high damage
 5299: Gaze inflicts Paralysis
-5298: Immune to Pomander of Witching
-5297: Immune to Pomander of Witching
-5296: Immune to Pomander of Witching
-5295: Immune to Pomander of Witching
-5294: Immune to Pomander of Witching
-5293: Immune to Pomander of Witching
-5292: Immune to Pomander of Witching
-5291: Immune to Pomander of Witching
-5290: Immune to Pomander of Witching
-5289: Immune to Pomander of Witching
-5288: Immune to Pomander of Witching
-5287: Immune to Pomander of Witching
-5286: Immune to Pomander of Witching
-5285: Immune to Pomander of Witching
-5284: Immune to Pomander of Witching
-5283: Immune to Pomander of Witching
-5053: Immune to Pomander of Witching
-5052: Immune to Pomander of Witching
-5051: Immune to Pomander of Witching
-5050: Immune to Pomander of Witching
-5049: Immune to Pomander of Witching
-5048: Immune to Pomander of Witching
-5047: Immune to Pomander of Witching
-5046: Immune to Pomander of Witching
+5298: 对“形态变化”有抗性
+5297: 对“形态变化”有抗性
+5296: 对“形态变化”有抗性
+5295: 对“形态变化”有抗性
+5294: 对“形态变化”有抗性
+5293: 对“形态变化”有抗性
+5292: 对“形态变化”有抗性
+5291: 对“形态变化”有抗性
+5290: 对“形态变化”有抗性
+5289: 对“形态变化”有抗性
+5288: 对“形态变化”有抗性
+5287: 对“形态变化”有抗性
+5286: 对“形态变化”有抗性
+5285: 对“形态变化”有抗性
+5284: 对“形态变化”有抗性
+5283: 对“形态变化”有抗性
+5053: 对“形态变化”有抗性
+5052: 对“形态变化”有抗性
+5051: 对“形态变化”有抗性
+5050: 对“形态变化”有抗性
+5049: 对“形态变化”有抗性
+5048: 对“形态变化”有抗性
+5047: 对“形态变化”有抗性
+5046: 对“形态变化”有抗性
 5041: 不要接触！一旦开怪会导致长时间眩晕或者即死
 5038: |
   FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE
