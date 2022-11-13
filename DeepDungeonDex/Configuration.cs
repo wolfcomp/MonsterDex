@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace DeepDungeonDex
 {
-    public class Configuration : ISave
+    public class Configuration : ISaveable
     {
         public int Version { get; set; }
         [JsonProperty("IsClickthrough")] public bool Clickthrough { get; set; }
@@ -28,7 +28,9 @@ namespace DeepDungeonDex
         
         public void Save(string path)
         {
-            StorageHandler.SerializeFile(path, this);
+            StorageHandler.SerializeJsonFile(path, this);
         }
+
+        public Action<DateTime> Updated { get; set; }
     }
 }
