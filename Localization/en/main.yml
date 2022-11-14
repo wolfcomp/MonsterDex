@@ -1,0 +1,29 @@
+Vulns: Vulns
+Vicious: Vicious
+Undefined: Undefined
+Undead: Undead
+Threat: Threat
+Thanks: Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!
+Stun: Stun
+Sound: Sound
+Slow: Slow
+Sleep: Sleep
+Sight: Sight
+Save: Save
+Proximity: Proximity
+Opacity: Opacity
+Notes: Notes
+NoDataFound: No data found for {0} ({1})
+Name: Name
+IsClickthrough: Enable clickthrough
+HideRedVulns: Hide vulnerabilities that can't be inflicted
+HideBasedOnJob: Hide vulnerabilities based on current class/job
+Heavy: Heavy
+FontSize: Font Size
+Easy: Easy
+Dangerous: Dangerous
+Caution: Caution
+Boss: Boss
+Bind: Bind
+AggroType: Aggro Type
+ShowId: Show debug information
