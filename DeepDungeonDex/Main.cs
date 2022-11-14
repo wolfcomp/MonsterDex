@@ -8,6 +8,7 @@ using Dalamud.Game;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
 using Dalamud.Plugin;
+using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
 using Microsoft.Extensions.DependencyInjection;
 

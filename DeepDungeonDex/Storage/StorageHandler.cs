@@ -7,6 +7,7 @@ using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
 using Dalamud.Plugin;
+using DeepDungeonDex.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using YamlDotNet.Core;

@@ -9,7 +9,7 @@ using DeepDungeonDex.Storage;
 using ImGuiNET;
 using Newtonsoft.Json;
 
-namespace DeepDungeonDex
+namespace DeepDungeonDex.Models
 {
     public class Configuration : ISaveable
     {
@@ -25,7 +25,7 @@ namespace DeepDungeonDex
         [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
 
         [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);
-        
+
         public void Save(string path)
         {
             StorageHandler.SerializeJsonFile(path, this);
