@@ -1,0 +1,293 @@
+﻿# PotD 51-60
+5299-palace deepeye:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5300-palace gremlin:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5301-palace imp:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+    - Undead
+5302-palace Anubys:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5303-palace soulflayer:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5304-palace taurus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5305-palace arch demon:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5306-palace vodoriga:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5307-palace idol:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5308-palace pot:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5309-the Black Rider:
+  Threat: Caution
+  Aggro: Boss
+# PotD 61-70
+5311-palace raptor:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5312-palace tyrannosaur:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5313-palace diplocaulus:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5314-palace triceratops:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5315-palace croc:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5316-palace mylodon:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5317-palace elbst:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5318-palace sarcosuchus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5319-palace blade:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5320-palace pteranodon:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5321-Yaquaru:
+  Threat: Caution
+  Aggro: Boss
+# PotD 71-80
+5322-palace bandersnatch:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5323-palace aurochs:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Sleep
+5324-bird of the palace:
+  Threat: Easy
+  Aggro: Proximity
+5325-palace cyclops:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5326-palace sasquatch:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5327-palace bear:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5328-palace coeurl:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5329-palace dhalmel:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5330-palace lion:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5331-palace anzu:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5332-palace wolf:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5333-Gudanna:
+  Threat: Caution
+  Aggro: Boss
+# PotD 81-90
+5334-palace bomb:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5335-palace wamouracampa:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5336-palace vinegaroon:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5337-flame dragon:
+  Threat: Easy
+  Aggro: Sight
+5338-palace worm:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5339-palace claw:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5340-palace eruca:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5341-palace gallimimus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5342-palace hapalit:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Sleep
+5343-palace wamoura:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5344-palace chimera:
+  Threat: Easy
+  Aggro: Proximity
+5345-the Godmother:
+  Threat: Caution
+  Aggro: Boss
+# PotD 91-100
+5346-palace mummy:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Undead
+5347-palace corse:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Undead
+5348-dark dragon:
+  Threat: Easy
+  Aggro: Sight
+5349-palace knight:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5350-palace roselet:
+  Threat: Easy
+  Aggro: Sound
+5351-palace swarm:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5352-palace gourmand:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Undead
+5353-palace iron corse:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Undead
+5354-palace wraith:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5355-palace gravekeeper:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Undead
+5356-Nybeth Obdilord:
+  Threat: Caution
+  Aggro: Boss

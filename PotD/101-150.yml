@@ -1,0 +1,321 @@
+﻿# PotD 101-110
+5360-deep palace squirrel:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5361-deep palace stag:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5362-deep palace gaelicat:
+  Threat: Easy
+  Aggro: Sight
+5363-deep palace doblyn:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5364-deep palace hippogryph:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5365-deep palace ladybug:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5366-deep palace hornet:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5367-deep palace yarzon:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5368-deep palace ziz:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5369-goblin adventurer:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5370-deep palace dung beetle:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5371-Alicanto:
+  Threat: Caution
+  Aggro: Boss
+# PotD 111-120
+5372-deep palace leech:
+  Threat: Easy
+  Aggro: Sight
+5373-deep palace bifericeras:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5374-deep palace gigantoad:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5375-deep palace slime:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+5376-deep palace nanka:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Sleep
+5377-deep palace salamander:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Sleep
+5378-deep palace ochu:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5379-deep palace seedling:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Sleep
+5380-deep palace morbol:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5381-deep palace pudding:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5382-deep palace cobra:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+5383-deep palace biloko:
+  Threat: Easy
+  Aggro: Sight
+5384-Kirtimukha:
+  Threat: Caution
+  Aggro: Boss
+# PotD 121-130
+5385-deep palace pteroc:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5386-deep palace biast:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5387-deep palace adamantoise:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Sleep
+5388-deep palace basilisk:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5389-deep palace wivre:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5390-deep palace spriggan:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5391-deep palace centaur:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Sleep
+5392-deep palace effigy:
+  Threat: Easy
+  Aggro: Sight
+5393-deep palace urolith:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5394-deep palace dullahan:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5395-deep palace minotaur:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5396-deep palace skatene:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+5397-Alfard:
+  Threat: Caution
+  Aggro: Boss
+# PotD 131-140
+5398-deep palace soul:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5399-deep palace hecteyes:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5400-deep palace ogre:
+  Threat: Easy
+  Aggro: Sight
+5401-deep palace mummy:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Undead
+5402-deep palace ahriman:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+5403-deep palace dahak:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5404-deep palace monk:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5405-deep palace troubador:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+5406-deep palace taurus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+5407-deep palace guard:
+  Threat: Easy
+  Aggro: Sight
+5408-deep palace catoblepas:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5409-deep palace gourmand:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Sleep
+    - Undead
+5410-Ah Puch:
+  Threat: Caution
+  Aggro: Boss
+  Weakness:
+    - Undead
+# PotD 141-150
+5411-deep palace follower:
+  Threat: Easy
+  Aggro: Sight
+5412-deep palace ked:
+  Threat: Easy
+  Aggro: Sight
+5413-deep palace demon:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+5414-deep palace gargoyle:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+5415-deep palace knight:
+  Threat: Dangerous
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5416-deep palace bhoot:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+5417-deep palace hellhound:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5418-deep palace persona:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5419-deep palace succubus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5420-onyx dragon:
+  Threat: Easy
+  Aggro: Proximity
+5421-deep palace manticore:
+  Threat: Easy
+  Aggro: Sight
+5422-deep palace wraith:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Undead
+5423-deep palace keeper:
+  Threat: Dangerous
+  Aggro: Sound
+  Weakness:
+    - Undead
+5424-Tisiphone:
+  Threat: Caution
+  Aggro: Boss

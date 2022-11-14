@@ -1,0 +1,85 @@
+﻿# PotD special NPCs and misc.
+5039-gargoyle steward:
+  Threat: Easy
+  Aggro: Sight
+5040-demon butler:
+  Threat: Easy
+  Aggro: Sight
+5041-pygmaioi:
+  Threat: Easy
+  Aggro: Proximity
+5046-Duskwight lancer:
+  Threat: Caution
+  Aggro: Sight
+5047-sword-swinging adventurer:
+  Threat: Caution
+  Aggro: Sight
+5048-staff-spinning adventurer:
+  Threat: Caution
+  Aggro: Sight
+5049-spear-shaking adventurer:
+  Threat: Caution
+  Aggro: Sight
+5050-Ishgardian pikeman:
+  Threat: Caution
+  Aggro: Sight
+5051-roughspun ruffian:
+  Threat: Caution
+  Aggro: Sight
+5052-frenzied freebooter:
+  Threat: Caution
+  Aggro: Sight
+5053-Immortal Flame:
+  Threat: Caution
+  Aggro: Sight
+5283-mortifying magnate:
+  Threat: Caution
+  Aggro: Sight
+5284-corrupted centurion:
+  Threat: Caution
+  Aggro: Sight
+5285-gangrenous gigant:
+  Threat: Caution
+  Aggro: Sight
+5286-half-cracked captain:
+  Threat: Caution
+  Aggro: Sight
+5287-sunken captain:
+  Threat: Caution
+  Aggro: Sight
+5288-flyblown praefectus:
+  Threat: Caution
+  Aggro: Sight
+5289-jaundiced tribunus:
+  Threat: Caution
+  Aggro: Sight
+5290-moldering merchant:
+  Threat: Caution
+  Aggro: Sight
+5291-blackening marketeer:
+  Threat: Caution
+  Aggro: Sight
+5292-bloated conjurer:
+  Threat: Caution
+  Aggro: Sight
+5293-bloated archer:
+  Threat: Caution
+  Aggro: Sight
+5294-bloated pugilist:
+  Threat: Caution
+  Aggro: Sight
+5295-emaciated engineer:
+  Threat: Caution
+  Aggro: Sight
+5296-putrid plutocrat:
+  Threat: Caution
+  Aggro: Sight
+5297-insentient inquisitor:
+  Threat: Caution
+  Aggro: Sight
+5298-necrose knight:
+  Threat: Caution
+  Aggro: Sight
+2566-mimic:
+  Threat: Caution
+  Aggro: Proximity

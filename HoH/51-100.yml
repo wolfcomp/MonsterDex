@@ -1,0 +1,334 @@
+# HoH floors 51-59
+7327-heavenly kamanari:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+7328-heavenly kamakiri:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+7329-heavenly tokagekiba:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7330-heavenly kongorei:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7331-heavenly tesso:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7332-heavenly maruishi:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7333-heavenly karakuri:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7334-heavenly shabti:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7335-heavenly gowan:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7336-heavenly rachimonai:
+  Threat: Caution
+  Aggro: Sight
+7337-heavenly naga:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7338-heavenly tetsu-kyojin:
+  Threat: Easy
+  Aggro: Sight
+7339-heavenly dokyu:
+  Threat: Easy
+  Aggro: Sight
+# HoH floors 61-69
+7340-heavenly wakakusa:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+7341-heavenly mannenso:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7342-heavenly iwamushi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7343-heavenly jellyfish:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7344-heavenly doguzeri:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+7345-heavenly kosodegai:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7346-heavenly shitaibana:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+7347-heavenly hashiri-dokoro:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7348-heavenly penghou:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7349-heavenly jubokko:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7350-heavenly morbol:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7351-heavenly chizakura:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+# HoH floors 71-79
+7352-heavenly shikubi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7353-heavenly ichijama:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7354-heavenly noyagi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7355-heavenly okami:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7356-heavenly yuki-tokage:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7357-heavenly mammoth:
+  Threat: Dangerous
+  Aggro: Sight
+7358-heavenly tofu:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7359-heavenly jujishi:
+  Threat: Dangerous
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7360-heavenly yuki-otoko:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7361-heavenly yak:
+  Threat: Caution
+  Aggro: Sight
+7362-heavenly hyoga:
+  Threat: Caution
+  Aggro: Sight
+7363-heavenly hyozan:
+  Threat: Easy
+  Aggro: Sight
+7364-heavenly shiro-jishi:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+# HoH floors 81-89
+7365-heavenly mukai-inu:
+  Threat: Dangerous
+  Aggro: Proximity
+7366-heavenly rowan:
+  Threat: Dangerous
+  Aggro: Sight
+7367-heavenly Matanga:
+  Threat: Easy
+  Aggro: Sight
+7368-heavenly Gozu:
+  Threat: Caution
+  Aggro: Sight
+7369-heavenly ryukotsu:
+  Threat: Easy
+  Aggro: Sight
+7370-heavenly ryujin:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7371-heavenly hitotsume:
+  Threat: Caution
+  Aggro: Sight
+7372-heavenly enko:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7373-heavenly araragi:
+  Threat: Caution
+  Aggro: Sight
+7374-heavenly koki:
+  Threat: Easy
+  Aggro: Proximity
+7375-heavenly Garula:
+  Threat: Dangerous
+  Aggro: Sight
+7376-heavenly shinzei:
+  Threat: Dangerous
+  Aggro: Sight
+7377-heavenly rakshasa:
+  Threat: Caution
+  Aggro: Sight
+# HoH floors 91-99
+7378-heavenly nuppeppo:
+  Threat: Vicious
+  Aggro: Sight
+  Weakness:
+    - Stun
+7379-heavenly nuppeppo:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7380-heavenly nuppeppo:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7381-heavenly mifune:
+  Threat: Dangerous
+  Aggro: Proximity
+7382-heavenly jaki:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7383-heavenly tokage-musha:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7384-heavenly kyozo:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7385-heavenly kuro-kishi:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7386-heavenly shabti:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7387-heavenly zenki:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7388-heavenly Gozu:
+  Threat: Dangerous
+  Aggro: Sight
+7389-heavenly kubinashi:
+  Threat: Dangerous
+  Aggro: Sight
+7390-heavenly tenma:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7391-heavenly dodo:
+  Threat: Caution
+  Aggro: Sight
+7584-heavenly jinba:
+  Threat: Dangerous
+  Aggro: Sight
+# HoH bosses and misc.
+7392-quivering coffer:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7393-quivering coffer:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7394-quivering coffer:
+  Threat: Caution
+  Aggro: Proximity
+7478-Hiruko:
+  Threat: Caution
+  Aggro: Boss
+7480-Mojabune:
+  Threat: Caution
+  Aggro: Boss
+7481-Beccho:
+  Threat: Caution
+  Aggro: Boss
+7483-Bhima:
+  Threat: Caution
+  Aggro: Boss
+7485-Gozu:
+  Threat: Caution
+  Aggro: Boss
+7487-Suikazura:
+  Threat: Caution
+  Aggro: Boss
+7489-Kenko:
+  Threat: Caution
+  Aggro: Boss
+7490-Kajigakaka:
+  Threat: Caution
+  Aggro: Boss
+7493-Onra:
+  Threat: Caution
+  Aggro: Boss
+7610-korrigan:
+  Threat: Easy
+  Aggro: Proximity

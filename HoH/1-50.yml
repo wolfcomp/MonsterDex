@@ -1,0 +1,323 @@
+# HoH floors 1-9
+7262-heavenly naked yumemi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7263-heavenly mutsu:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7264-heavenly bombfish:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7265-heavenly onryo:
+  Threat: Dangerous
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7266-heavenly coralshell:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7267-heavenly gyuki:
+  Threat: Easy
+  Aggro: Sight
+7268-heavenly uwabami:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7269-heavenly kraken:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7270-heavenly ango:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7271-heavenly matamata:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7272-heavenly shark:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7273-heavenly Amikiri:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7274-heavenly yumemi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+# HoH floors 11-19
+7275-heavenly korpokkur:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7276-heavenly shizuku:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7277-heavenly shiomushi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7278-heavenly hakagiri:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7279-heavenly unkiu:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7280-heavenly apa:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7281-heavenly otokage:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7282-heavenly tatsunoko:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7283-heavenly shioname:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7284-heavenly amagoi:
+  Threat: Easy
+  Aggro: Sight
+7285-heavenly Namazu:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7286-heavenly hand:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+7287-heavenly aomino:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+# HoH floors 21-29
+7288-heavenly onibi:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+7289-heavenly halgai:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+7290-heavenly dhruva:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7291-heavenly sai taisui:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+7292-heavenly hatamoto:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7293-heavenly tenaga:
+  Threat: Easy
+  Aggro: Sight
+7294-heavenly keukegen:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+7295-heavenly yuki:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7296-heavenly tengu:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7297-heavenly koja:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Heavy
+7298-heavenly katasharin:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+7299-heavenly menreiki:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7300-heavenly wanyudo:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+# HoH floors 31-39
+7301-heavenly gedan:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7302-heavenly hornbill:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7303-heavenly hanya:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7304-heavenly harakiri:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7305-heavenly onmitsu:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7306-heavenly moko:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7307-heavenly mokin:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7308-heavenly kiyofusa:
+  Threat: Easy
+  Aggro: Sight
+7309-heavenly ashigaru:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7310-heavenly shishi:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7311-heavenly onmitsu:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7312-heavenly vanara:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7313-heavenly dogu:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+# HoH floors 41-49
+7314-heavenly saikoro:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7315-heavenly ganseki:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+7316-heavenly dhara:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7317-heavenly sekizo:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7318-heavenly sekiban:
+  Threat: Caution
+  Aggro: Sight
+7319-heavenly saikoro:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7320-heavenly iseki:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+7321-heavenly aka-ishi:
+  Threat: Easy
+  Aggro: Sight
+7322-heavenly monoiwa:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7323-heavenly iseki:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7324-heavenly kuro-usagi:
+  Threat: Caution
+  Aggro: Sight
+7325-heavenly sekizo:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+7326-heavenly mizumimizu:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun

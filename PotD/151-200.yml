@@ -1,0 +1,300 @@
+﻿# PotD 151-160
+5429-deep palace deepeye:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5430-deep palace gremlin:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5431-deep palace devilet:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5432-deep palace shabti:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5433-deep palace soulflayer:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Bind
+5434-deep palace arch demon:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5435-deep palace abaia:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5436-deep palace marolith:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5437-deep palace pot:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+    - Bind
+5438-Todesritter:
+  Threat: Caution
+  Aggro: Boss
+# PotD 161-170
+5439-deep palace lindwurm:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5440-deep palace archaeosaur:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+5441-deep palace diplocaulus:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5442-deep palace triceratops:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+5443-deep palace croc:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5444-deep palace mylodon:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5445-deep palace tursus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5446-deep palace sarcosuchus:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5447-deep palace vinegaroon:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+5448-deep palace pteranodon:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5449-Yulunggu:
+  Threat: Easy
+  Aggro: Boss
+# PotD 171-180
+5450-deep palace bandersnatch:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5451-deep palace wisent:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Sleep
+5452-bird of the deep palace:
+  Threat: Easy
+  Aggro: Proximity
+5453-deep palace snowclops:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+5454-deep palace sasquatch:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+5455-deep palace bear:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5456-deep palace black coeurl:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5457-deep palace dhalmel:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5458-deep palace lion:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5459-deep palace anzu:
+  Threat: Vicious
+  Aggro: Sight
+  Weakness:
+    - Stun
+5460-deep palace wolf:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5461-Dendainsonne:
+  Threat: Dangerous
+  Aggro: Boss
+# PotD 181-190
+5462-deep palace grenade:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Sleep
+    - Bind
+5463-deep palace wamouracampa:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Heavy
+    - Bind
+5464-flood dragon:
+  Threat: Vicious
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Bind
+5465-deep palace worm:
+  Threat: Dangerous
+  Aggro: Sound
+  Weakness:
+    - Heavy
+    - Bind
+5466-deep palace claw:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Bind
+5467-deep palace crawler:
+  Threat: Dangerous
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Heavy
+    - Bind
+5468-deep palace vindthurs:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Heavy
+    - Bind
+5469-deep palace wamoura:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Heavy
+    - Bind
+5470-deep palace garm:
+  Threat: Vicious
+  Aggro: Proximity
+  Weakness:
+    - Heavy
+    - Sleep
+    - Bind
+5471-the Godfather:
+  Threat: Dangerous
+  Aggro: Boss
+# PotD 191-200
+5472-deep palace trap:
+  Threat: Easy
+  Aggro: Sound
+5473-deep palace fachan:
+  Threat: Dangerous
+  Aggro: Sight
+5474-deep palace bicephalus:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Heavy
+5475-deep palace iron corse:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - Undead
+5479-palace sprite:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+5480-deep palace sprite:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
