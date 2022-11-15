@@ -28,4 +28,19 @@ namespace DeepDungeonDex.Storage
 
         object ILoadable.Load(string path) => Load(path);
     }
+
+    public static class LocaleExtensions
+    {
+        public static string? GetLocale(this Locale locale, string key)
+        {
+            if (locale.LocaleDictionary.TryGetValue(key, out var value))
+                return value;
+            return key;
+        }
+
+        public static string? GetLocale(this IEnumerable<Locale> locales, string key)
+        {
+            return locales.FirstOrDefault(l => l.LocaleDictionary.ContainsKey(key))?.LocaleDictionary[key];
+        }
+    }
 }
