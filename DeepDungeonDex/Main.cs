@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Dalamud.Game;
@@ -32,6 +33,16 @@ namespace DeepDungeonDex
             _provider.GetRequiredService<StorageHandler>().Dispose();
             _provider.GetRequiredService<WindowSystem>().RemoveAllWindows();
             _provider.GetRequiredService<Font>().Dispose();
+        }
+
+        public void LoadWindows()
+        {
+            var sys = _provider.GetRequiredService<WindowSystem>();
+            Assembly.GetExecutingAssembly()
+                .GetTypes()
+                .Where(t => t.IsSubclassOf(typeof(Window)))
+                .ToList()
+                .ForEach(t => sys.AddWindow((Window)Activator.CreateInstance(t)!));
         }
 
         private IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager)
