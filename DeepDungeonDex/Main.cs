@@ -6,6 +6,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Dalamud.Game;
+using Dalamud.Game.ClientState.Conditions;
+using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
 using Dalamud.Plugin;
@@ -21,11 +23,12 @@ namespace DeepDungeonDex
         
         private IServiceProvider _provider;
 
-        public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager)
+        public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition)
         {
-            _provider = BuildProvider(this, pluginInterface, framework, manager);
+            _provider = BuildProvider(this, pluginInterface, framework, manager, target, condition);
 
             pluginInterface.UiBuilder.BuildFonts += () => _provider.GetRequiredService<Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
+            LoadWindows();
         }
 
         public void Dispose()
@@ -42,19 +45,22 @@ namespace DeepDungeonDex
                 .GetTypes()
                 .Where(t => t.IsSubclassOf(typeof(Window)))
                 .ToList()
-                .ForEach(t => sys.AddWindow((Window)Activator.CreateInstance(t)!));
+                .ForEach(t => sys.AddWindow((Window)ActivatorUtilities.CreateInstance(_provider, t)!));
         }
 
-        private IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager)
+        private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition)
         {
             return new ServiceCollection()
                 .AddSingleton(pluginInterface)
                 .AddSingleton(framework)
                 .AddSingleton(manager)
+                .AddSingleton(target)
+                .AddSingleton(condition)
                 .AddSingleton(new WindowSystem("DeepDungeonDex"))
                 .AddSingleton(main)
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font>(provider))
+                .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
                 .BuildServiceProvider();
         }
     }
