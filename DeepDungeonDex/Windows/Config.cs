@@ -15,8 +15,8 @@ namespace DeepDungeonDex.Windows
         private bool _hideJob;
         private bool _debug;
         private int _loc;
-        
-        public Config(StorageHandler handler) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize)
+
+        public Config(StorageHandler handler, CommandHandler command) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize)
         {
             Handler = handler;
             var _config = Handler.GetInstance<Configuration>()!;
@@ -26,11 +26,12 @@ namespace DeepDungeonDex.Windows
             _hideJob = _config.HideJob;
             _debug = _config.Debug;
             _loc = _config.Locale;
+            command.AddCommand(new[] { "config", "cfg" }, () => IsOpen = true, "Opens the config window.");
         }
 
         public override void Draw()
         {
-            var _config = Handler.GetInstance<Configuration>();
+            var _config = Handler.GetInstance<Configuration>()!;
             var _locale = Handler.GetInstances<Locale>();
             ImGui.PushFont(Font.RegularFont);
             ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
@@ -39,7 +40,7 @@ namespace DeepDungeonDex.Windows
             {
                 _config.Opacity = _opacity;
             }
-            ImGui.Columns(4,null, false);
+            ImGui.Columns(4, null, false);
             ImGui.Text(_locale.GetLocale("FontSize"));
             foreach (var f in new int[] { 12, 14, 16, 18, 24, 32 })
             {
@@ -87,7 +88,7 @@ namespace DeepDungeonDex.Windows
                 ImGui.TextWrapped(_locale.GetLocale("Thanks"));
                 ImGui.PopTextWrapPos();
                 ImGui.EndTooltip();
-            }; 
+            };
             ImGui.SameLine();
             ImGui.PushStyleColor(ImGuiCol.Button, 0xFF5E5BFF);
             ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
