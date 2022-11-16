@@ -33,9 +33,7 @@ namespace DeepDungeonDex.Storage
     {
         public static string? GetLocale(this Locale locale, string key)
         {
-            if (locale.LocaleDictionary.TryGetValue(key, out var value))
-                return value;
-            return key;
+            return locale.LocaleDictionary.TryGetValue(key, out var value) ? value : key;
         }
 
         public static string? GetLocale(this IEnumerable<Locale> locales, string key)
