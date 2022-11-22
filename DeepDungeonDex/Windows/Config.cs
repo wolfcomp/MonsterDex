@@ -1,4 +1,5 @@
-﻿using Dalamud.Interface.Windowing;
+﻿using System.Linq;
+using Dalamud.Interface.Windowing;
 using DeepDungeonDex.Storage;
 using DeepDungeonDex.Models;
 using ImGuiNET;
@@ -33,6 +34,7 @@ namespace DeepDungeonDex.Windows
         {
             var _config = Handler.GetInstance<Configuration>()!;
             var _locale = Handler.GetInstances<Locale>();
+            var _localeKeys = Handler.GetInstance<LocaleKeys>()!;
             ImGui.PushFont(Font.RegularFont);
             ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
             ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
@@ -68,12 +70,11 @@ namespace DeepDungeonDex.Windows
                 _config.Debug = _debug;
             }
 
-            //var locales = Locale.GetLocaleNames();
-            //if (ImGui.Combo("Locale", ref _loc, locales, locales.Length))
-            //{
-            //    _config.Locale = _loc;
-            //    _locale.ChangeLocale(_loc);
-            //}
+            var locales = _localeKeys.LocaleDictionary.Keys.ToArray();
+            if (ImGui.Combo("Locale", ref _loc, locales, locales.Length))
+            {
+                _config.Locale = _loc;
+            }
             ImGui.NewLine();
             if (ImGui.Button(_locale.GetLocale("Save")))
             {
