@@ -28,20 +28,25 @@ namespace DeepDungeonDex
         public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition)
         {
             _provider = BuildProvider(this, pluginInterface, framework, manager, target, condition);
+            _provider.GetRequiredService<Data>();
+            _provider.GetRequiredService<Language>();
 
             pluginInterface.UiBuilder.BuildFonts += () => _provider.GetRequiredService<Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
-            LoadWindows();
+            var sys = LoadWindows();
+            pluginInterface.UiBuilder.Draw += sys.Draw;
         }
 
         public void Dispose()
         {
+            _provider.GetRequiredService<Data>().Dispose();
+            _provider.GetRequiredService<Language>().Dispose();
             _provider.GetRequiredService<StorageHandler>().Dispose();
             _provider.GetRequiredService<CommandHandler>().Dispose();
             _provider.GetRequiredService<WindowSystem>().RemoveAllWindows();
             _provider.GetRequiredService<Font>().Dispose();
         }
 
-        public void LoadWindows()
+        public WindowSystem LoadWindows()
         {
             var sys = _provider.GetRequiredService<WindowSystem>();
             Assembly.GetExecutingAssembly()
@@ -49,10 +54,7 @@ namespace DeepDungeonDex
                 .Where(t => t.IsSubclassOf(typeof(Window)))
                 .ToList()
                 .ForEach(t => sys.AddWindow((Window)ActivatorUtilities.CreateInstance(_provider, t)!));
-            foreach (var sysWindow in sys.Windows)
-            {
-                PluginLog.Debug(sysWindow.WindowName);
-            }
+            return sys;
         }
 
         private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition)
@@ -66,10 +68,10 @@ namespace DeepDungeonDex
                 .AddSingleton(new WindowSystem("DeepDungeonDex"))
                 .AddSingleton(main)
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
-                .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font>(provider))
-                .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<Data>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<Language>(provider))
+                .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font>(provider))
+                .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
                 .BuildServiceProvider();
         }
     }
