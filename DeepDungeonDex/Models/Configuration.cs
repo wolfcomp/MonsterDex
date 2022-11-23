@@ -26,9 +26,10 @@ namespace DeepDungeonDex.Models
 
         [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);
 
-        public void Save(string path)
+        public NamedType? Save(string path)
         {
             StorageHandler.SerializeJsonFile(path, this);
+            return null;
         }
 
         public Action<DateTime> Updated { get; set; }

@@ -8,18 +8,20 @@ namespace DeepDungeonDex.Models
 {
     public interface ISaveable
     {
-        public void Save(string path);
+        public NamedType? Save(string path);
 
         public Action<DateTime> Updated { get; set; }
     }
 
     public interface ILoadable : ISaveable
     {
-        public object Load(string path);
+        public Storage.Storage Load(string path);
+        public Storage.Storage Load(string path, string name);
     }
 
-    public interface ILoadable<out T> : ILoadable
+    public class NamedType
     {
-        public T Load(string path);
+        public string Name { get; set; }
+        public Type Type { get; set; }
     }
 }

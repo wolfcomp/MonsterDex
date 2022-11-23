@@ -10,11 +10,11 @@ using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage
 {
-    public class MobData : ILoadable<MobData>
+    public class MobData : ILoadable
     {
         public Dictionary<int, Mob> MobDictionary { get; set; } = new();
 
-        public MobData Load(string path)
+        public Storage Load(string path)
         {
             var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(StorageHandler.ReadFile(path));
             foreach (var (key, value) in mobs)
@@ -25,16 +25,22 @@ namespace DeepDungeonDex.Storage
                 value.Name = name;
                 MobDictionary.Add(id, value);
             }
-            return this;
+            return new Storage(this, DateTime.Now);
         }
 
-        public void Save(string path)
+        public Storage Load(string path, string name)
         {
-            MobDictionary.Select(t => (t.Key, t.Value)).ToDictionary(t => $"{t.Key}-{t.Value.Name}", t => t.Value);
+            throw new NotImplementedException();
+        }
+
+        public NamedType? Save(string path)
+        {
+            var _dictionary = MobDictionary.Select(t => (t.Key, t.Value)).ToDictionary(t => $"{t.Key}-{t.Value.Name}", t => t.Value);
+            StorageHandler.SerializeJsonFile(path, _dictionary);
+            return null;
         }
 
         public Action<DateTime> Updated { get; set; }
-        object ILoadable.Load(string path) => Load(path);
     }
 
     public class Mob

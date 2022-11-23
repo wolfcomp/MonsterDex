@@ -8,44 +8,57 @@ using Newtonsoft.Json;
 
 namespace DeepDungeonDex.Storage
 {
-    public class Locale : ILoadable<Locale>
+    public class Locale : ILoadable
     {
         public Dictionary<string, string> TranslationDictionary { get; set; } = new();
+        
+        [JsonIgnore]
+        private Storage s;
 
-        public void Save(string path)
+        public NamedType Save(string path)
         {
             StorageHandler.SerializeJsonFile(path, TranslationDictionary);
+            return new NamedType { Name = s.Name, Type = GetType() };
         }
         
         public Action<DateTime> Updated { get; set; }
 
-        public Locale Load(string path)
+        public Storage Load(string path)
         {
             TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(StorageHandler.ReadFile(path));
-            return this;
+            return new Storage(this, DateTime.Now);
         }
 
-        object ILoadable.Load(string path) => Load(path);
+        public Storage Load(string path, string name)
+        {
+            var s = Load(path);
+            s.Name = name;
+            return s;
+        }
     }
 
-    public class LocaleKeys : ILoadable<LocaleKeys>
+    public class LocaleKeys : ILoadable
     {
         public Dictionary<string, string> LocaleDictionary { get; set; } = new();
 
-        public void Save(string path)
+        public NamedType Save(string path)
         {
             StorageHandler.SerializeJsonFile(path, LocaleDictionary);
+            return null;
         }
         
         public Action<DateTime> Updated { get; set; }
         
-        public LocaleKeys Load(string path)
+        public Storage Load(string path)
         {
             LocaleDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(StorageHandler.ReadFile(path));
-            return this;
+            return new Storage(this, DateTime.Now);
         }
         
-        object ILoadable.Load(string path) => Load(path);
+        public Storage Load(string path, string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public static class LocaleExtensions
