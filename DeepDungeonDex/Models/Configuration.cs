@@ -23,7 +23,6 @@ namespace DeepDungeonDex.Models
         public float Opacity { get; set; } = 1f;
 
         [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
-
         [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);
 
         public NamedType? Save(string path)
@@ -31,7 +30,5 @@ namespace DeepDungeonDex.Models
             StorageHandler.SerializeJsonFile(path, this);
             return null;
         }
-
-        public Action<DateTime> Updated { get; set; }
     }
 }

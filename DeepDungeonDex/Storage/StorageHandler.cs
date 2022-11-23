@@ -65,13 +65,13 @@ namespace DeepDungeonDex.Storage
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
             {
-                var storage = DeserializeFile<Dictionary<string, Tuple<string, DateTime, string?>>>(storagePath.FullName)!;
+                var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
                 _jsonStorage.Add(storagePath.Name, storage);
                 foreach (var (key, value) in storage)
                 {
                     try
                     {
-                        var (typeString, time, name) = value;
+                        var (typeString, name) = value;
                         var type = Type.GetType(typeString);
                         if (!type.IsAssignableFrom(typeof(ISaveable))) continue;
                         if (key.Contains(".json"))
@@ -84,7 +84,7 @@ namespace DeepDungeonDex.Storage
                                     : loadable.Load(Path.Join(_path, key));
                                 _jsonStorage.Add(key, obj);
                             }
-                            else if (DeserializeFile(key, type) is ISaveable content) _jsonStorage.Add(key, new Storage(content, time));
+                            else if (DeserializeFile(key, type) is ISaveable content) _jsonStorage.Add(key, new Storage(content));
                         }
                         else
                         {
@@ -96,7 +96,7 @@ namespace DeepDungeonDex.Storage
                                     : loadable.Load(Path.Join(_path, key));
                                 _ymlStorage.Add(key, obj);
                             }
-                            else if (Deserializer.Deserialize(key, type) is ISaveable content) _ymlStorage.Add(key, new Storage(content, time));
+                            else if (Deserializer.Deserialize(key, type) is ISaveable content) _ymlStorage.Add(key, new Storage(content));
                         }
                     }
                     catch(Exception e)
@@ -154,7 +154,7 @@ namespace DeepDungeonDex.Storage
         public void Save()
         {
             PluginLog.Debug("Saving...");
-            var storageDict = new Dictionary<string, Tuple<Type, DateTime, string?>>();
+            var storageDict = new Dictionary<string, Tuple<Type, string?>>();
 
             bool processObj(object obj, string path)
             {
@@ -203,12 +203,12 @@ namespace DeepDungeonDex.Storage
                     var (path, obj) = x;
                     var type = obj is Storage storage ? storage.Value.GetType() : obj.GetType();
                     if (!storageDict.ContainsKey(path))
-                        storageDict.Add(path, new Tuple<Type, DateTime, string?>(type, DateTime.Now, null));
+                        storageDict.Add(path, new Tuple<Type, string?>(type, null));
                 });
             SerializeJsonFile(storagePath, storageDict.Where(t => t.Key is not ("storage.json" or "config.json")).ToDictionary(t => t.Key, t =>
             {
-                var (type, time, name) = t.Value;
-                return new Tuple<string, DateTime, string?>(type.FullName!, time, name);
+                var (type, name) = t.Value;
+                return new Tuple<string, string?>(type.FullName!, name);
             }));
             PluginLog.Debug("Saved");
         }
@@ -248,16 +248,13 @@ namespace DeepDungeonDex.Storage
 
     public class Storage
     {
-        public Storage(ISaveable value, DateTime lastUpdated, string name = "")
+        public Storage(ISaveable value, string name = "")
         {
             Value = value;
-            LastUpdated = lastUpdated;
             Name = name;
-            value.Updated += time => LastUpdated = time;
         }
 
         public ISaveable Value { get; set; }
-        public DateTime LastUpdated { get; set; }
         public string Name { get; set; }
     }
 

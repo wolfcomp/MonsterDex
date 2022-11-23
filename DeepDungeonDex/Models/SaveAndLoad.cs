@@ -9,8 +9,6 @@ namespace DeepDungeonDex.Models
     public interface ISaveable
     {
         public NamedType? Save(string path);
-
-        public Action<DateTime> Updated { get; set; }
     }
 
     public interface ILoadable : ISaveable
@@ -28,7 +26,7 @@ namespace DeepDungeonDex.Models
     {
         public string Name { get; set; }
         public Type Type { get; set; }
-
-        public Tuple<Type, DateTime, string?> GetTuple() => new(Type, DateTime.Now, Name);
+        
+        public Tuple<Type, string?> GetTuple() => new(Type, Name);
     }
 }

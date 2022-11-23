@@ -20,13 +20,11 @@ namespace DeepDungeonDex.Storage
             StorageHandler.SerializeJsonFile(path, TranslationDictionary);
             return new NamedType { Name = s.Name, Type = GetType() };
         }
-        
-        public Action<DateTime> Updated { get; set; }
 
         public Storage Load(string path)
         {
             TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(StorageHandler.ReadFile(path));
-            return new Storage(this, DateTime.Now);
+            return new Storage(this);
         }
 
         public Storage Load(string path, string name)
@@ -47,12 +45,10 @@ namespace DeepDungeonDex.Storage
             return null;
         }
         
-        public Action<DateTime> Updated { get; set; }
-        
         public Storage Load(string path)
         {
             LocaleDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(StorageHandler.ReadFile(path));
-            return new Storage(this, DateTime.Now);
+            return new Storage(this);
         }
         
         public Storage Load(string path, string name)
