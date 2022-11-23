@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Dalamud.Interface.Windowing;
 using DeepDungeonDex.Storage;
 using DeepDungeonDex.Models;
@@ -43,7 +43,7 @@ namespace DeepDungeonDex.Windows
             var _locale = Handler.GetInstances<Locale>();
             var _localeKeys = Handler.GetInstance<LocaleKeys>()!;
             ImGui.PushFont(Font.RegularFont);
-            //ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
+            ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
             //ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
             if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
             {
@@ -77,7 +77,7 @@ namespace DeepDungeonDex.Windows
                 _config.Debug = _debug;
             }
 
-            var locales = _localeKeys.LocaleDictionary.Keys.ToArray();
+            var locales = _localeKeys.LocaleDictionary.Values.ToArray();
             if (ImGui.Combo("Locale", ref _loc, locales, locales.Length))
             {
                 _config.Locale = _loc;
