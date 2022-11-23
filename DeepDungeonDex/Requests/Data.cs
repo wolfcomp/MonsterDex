@@ -20,6 +20,7 @@ namespace DeepDungeonDex.Requests
         public Data(StorageHandler handler)
         {
             Handler = handler;
+            handler.AddJsonStorage("index.json", GetFileList().Result!);
             Task.Factory.StartNew(() => RefreshFileList(), TaskCreationOptions.LongRunning);
         }
 
@@ -43,6 +44,8 @@ namespace DeepDungeonDex.Requests
             if (list == null)
                 goto RefreshEnd;
 
+            Handler.AddJsonStorage("index.json", list);
+
             foreach (var file in list)
             {
                 try
@@ -53,9 +56,10 @@ namespace DeepDungeonDex.Requests
                 catch(Exception e)
                 {
                     PluginLog.Error(e, e.Message);
-                    continue;
                 }
             }
+
+            Handler.Save();
 
             RefreshEnd:
             if (continuous)

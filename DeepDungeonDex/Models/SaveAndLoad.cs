@@ -23,5 +23,7 @@ namespace DeepDungeonDex.Models
     {
         public string Name { get; set; }
         public Type Type { get; set; }
+
+        public Tuple<Type, DateTime, string?> GetTuple() => new(Type, DateTime.Now, Name);
     }
 }

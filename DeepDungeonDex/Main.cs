@@ -10,8 +10,10 @@ using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
+using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Models;
+using DeepDungeonDex.Requests;
 using DeepDungeonDex.Storage;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -34,6 +36,7 @@ namespace DeepDungeonDex
         public void Dispose()
         {
             _provider.GetRequiredService<StorageHandler>().Dispose();
+            _provider.GetRequiredService<CommandHandler>().Dispose();
             _provider.GetRequiredService<WindowSystem>().RemoveAllWindows();
             _provider.GetRequiredService<Font>().Dispose();
         }
@@ -46,6 +49,10 @@ namespace DeepDungeonDex
                 .Where(t => t.IsSubclassOf(typeof(Window)))
                 .ToList()
                 .ForEach(t => sys.AddWindow((Window)ActivatorUtilities.CreateInstance(_provider, t)!));
+            foreach (var sysWindow in sys.Windows)
+            {
+                PluginLog.Debug(sysWindow.WindowName);
+            }
         }
 
         private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition)
@@ -61,6 +68,8 @@ namespace DeepDungeonDex
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
+                .AddSingleton(provider => ActivatorUtilities.CreateInstance<Data>(provider))
+                .AddSingleton(provider => ActivatorUtilities.CreateInstance<Language>(provider))
                 .BuildServiceProvider();
         }
     }

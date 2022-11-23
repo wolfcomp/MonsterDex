@@ -5,12 +5,14 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Dalamud.Interface;
+using DeepDungeonDex.Storage;
 using ImGuiNET;
 
 namespace DeepDungeonDex
 {
     internal class Font : IDisposable
     {
+        private readonly StorageHandler _handler;
         private ImFontConfigPtr _fontCfg;
         private ImFontConfigPtr _fontCfgMerge;
         private (GCHandle, int) _gameSymFont;
@@ -34,8 +36,9 @@ namespace DeepDungeonDex
         );
         internal static ImFontPtr RegularFont;
 
-        public unsafe Font()
+        public unsafe Font(StorageHandler handler)
         {
+            _handler = handler;
             SetUpRanges();
             SetUpFonts();
             _fontCfg = new ImFontConfigPtr(ImGuiNative.ImFontConfig_ImFontConfig()) { FontDataOwnedByAtlas = false };
@@ -147,10 +150,19 @@ namespace DeepDungeonDex
         {
             RegularFont = ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_regularFont.Item1.AddrOfPinnedObject(), _regularFont.Item2, scale, _fontCfg, _ranges.Data);
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, scale, _fontCfgMerge, _jpRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, scale, _fontCfgMerge, _symRange.AddrOfPinnedObject());
+            var languages = _handler.GetInstance<LocaleKeys>();
+            if (languages == null)
+            {
+                return;
+            }
+
+            if(languages.LocaleDictionary.ContainsKey("ko-KR"))
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
+            if(languages.LocaleDictionary.ContainsKey("zh-TW"))
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
+            if(languages.LocaleDictionary.ContainsKey("zh-CN"))
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
         }
 
         public void Dispose()

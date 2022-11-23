@@ -9,6 +9,7 @@ namespace DeepDungeonDex.Windows
 {
     public class Config : Window
     {
+        private static Config _instance;
         public StorageHandler Handler;
         private float _opacity;
         private bool _clickthrough;
@@ -17,17 +18,23 @@ namespace DeepDungeonDex.Windows
         private bool _debug;
         private int _loc;
 
-        public Config(StorageHandler handler, CommandHandler command) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize)
+        public Config(StorageHandler handler, CommandHandler command) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
         {
             Handler = handler;
+            _instance = this;
             var _config = Handler.GetInstance<Configuration>()!;
+            SizeConstraints = new WindowSizeConstraints
+            {
+                MaximumSize = new Vector2(400 * _config.WindowSizeScaled, 600),
+                MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
+            };
             _opacity = _config.Opacity;
             _clickthrough = _config.Clickthrough;
             _hideRed = _config.HideRed;
             _hideJob = _config.HideJob;
             _debug = _config.Debug;
             _loc = _config.Locale;
-            command.AddCommand(new[] { "config", "cfg" }, () => IsOpen = true, "Opens the config window.");
+            command.AddCommand(new[] { "config", "cfg" }, () => _instance.IsOpen = true, "Opens the config window.");
         }
 
         public override void Draw()
@@ -36,8 +43,8 @@ namespace DeepDungeonDex.Windows
             var _locale = Handler.GetInstances<Locale>();
             var _localeKeys = Handler.GetInstance<LocaleKeys>()!;
             ImGui.PushFont(Font.RegularFont);
-            ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
-            ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
+            //ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
+            //ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
             if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
             {
                 _config.Opacity = _opacity;
@@ -95,7 +102,7 @@ namespace DeepDungeonDex.Windows
             ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
             ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
             ImGui.PopStyleColor(3);
-            ImGui.End();
+            //ImGui.End();
             ImGui.PopFont();
         }
     }

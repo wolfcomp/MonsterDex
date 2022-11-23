@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
+using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Models;
 using Newtonsoft.Json;
@@ -22,12 +23,19 @@ namespace DeepDungeonDex.Storage
         public static readonly IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
         private static readonly Serializer Serializer = new();
 
+        private readonly Type[] _types;
         private readonly Dictionary<string, object> _jsonStorage = new();
         private readonly Dictionary<string, object> _ymlStorage = new();
 
         public StorageHandler(DalamudPluginInterface pluginInterface)
         {
+            _types = Assembly.GetExecutingAssembly().GetTypes();
+            foreach (var type in _types)
+            {
+                PluginLog.Debug($"Found type: {type.FullName}");
+            }
             _path = pluginInterface.GetPluginConfigDirectory();
+            Load();
         }
 
         public void AddJsonStorage(string path, object storage)
@@ -46,42 +54,60 @@ namespace DeepDungeonDex.Storage
         {
             var oldConfig = new FileInfo(_path + ".json");
             var configPath = oldConfig.Exists ? oldConfig.FullName : Path.Combine(_path, "config.json");
-            var config = DeserializeFile<Configuration>(configPath)!;
-            _jsonStorage.Add(configPath, config);
-            var storagePath = Path.Combine(_path, "storage.json");
-            var storage = DeserializeFile<Dictionary<string, KeyValuePair<Type, DateTime?>>>(storagePath)!;
-            _jsonStorage.Add(storagePath, storage);
-            foreach (var (key, value) in storage)
+            Configuration config;
+            try
             {
-                var (type, time) = value;
-                if (!type.IsAssignableFrom(typeof(ISaveable))) continue;
-                if (key.Contains(".json"))
+                config = DeserializeFile<Configuration>(configPath)!;
+            }
+            catch
+            {
+                config = new Configuration();
+            }
+            _jsonStorage.Add("config.json", config);
+            var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
+            if (storagePath.Exists)
+            {
+                var storage = DeserializeFile<Dictionary<string, Tuple<string, DateTime, string?>>>(storagePath.FullName)!;
+                _jsonStorage.Add(storagePath.Name, storage);
+                foreach (var (key, value) in storage)
                 {
-                    if (type.IsAssignableFrom(typeof(ILoadable)))
+                    try
                     {
-                        var loadable = Activator.CreateInstance(type) as ILoadable;
-                        var obj = loadable?.Load(key);
-                        if (obj != null)
+                        var (typeString, time, name) = value;
+                        var type = _types.First(t => t.FullName == typeString);
+                        if (!type.IsAssignableFrom(typeof(ISaveable))) continue;
+                        if (key.Contains(".json"))
                         {
-                            _jsonStorage.Add(key, obj);
+                            if (type.IsAssignableFrom(typeof(ILoadable)))
+                            {
+                                var loadable = (ILoadable)Activator.CreateInstance(type)!;
+                                var obj = name != null
+                                    ? loadable.Load(_path, name)
+                                    : loadable.Load(_path);
+                                _jsonStorage.Add(key, obj);
+                            }
+                            else if (DeserializeFile(key, type) is ISaveable content) _jsonStorage.Add(key, new Storage(content, time));
+                        }
+                        else
+                        {
+                            if (type.IsAssignableFrom(typeof(ILoadable)))
+                            {
+                                var loadable = (ILoadable)Activator.CreateInstance(type)!;
+                                var obj = name != null
+                                    ? loadable.Load(_path, name)
+                                    : loadable.Load(_path);
+                                _ymlStorage.Add(key, obj);
+                            }
+                            else if (Deserializer.Deserialize(key, type) is ISaveable content) _ymlStorage.Add(key, new Storage(content, time));
                         }
                     }
-                    else if (DeserializeFile(key, type) is ISaveable content) _jsonStorage.Add(key, new Storage(content, time!.Value));
-                }
-                else
-                {
-                    if (type.IsAssignableFrom(typeof(ILoadable)))
+                    catch(Exception e)
                     {
-                        var loadable = Activator.CreateInstance(type) as ILoadable;
-                        var obj = loadable?.Load(key);
-                        if (obj != null)
-                        {
-                            _ymlStorage.Add(key, obj);
-                        }
+                        PluginLog.Error(e, e.Message);
                     }
-                    else if (Deserializer.Deserialize(key, type) is ISaveable content) _ymlStorage.Add(key, new Storage(content, time!.Value));
                 }
             }
+            Save();
         }
 
         public static T? DeserializeFile<T>(string path, bool ignoreJsonProperty = true) where T : class
@@ -129,19 +155,38 @@ namespace DeepDungeonDex.Storage
 
         public void Save()
         {
+            var storageDict = new Dictionary<string, Tuple<Type, DateTime, string?>>();
+
+            bool processObj(object obj, string path)
+            {
+                if (obj is Storage storage)
+                {
+                    var k = storage.Value.Save(path)?.GetTuple();
+                    if (k != null)
+                        storageDict.Add(path, k);
+                }
+                else
+                {
+                    if (!obj.GetType().IsAssignableFrom(typeof(ISaveable)))
+                    {
+                        return true;
+                    }
+
+                    var k = (obj as ISaveable)!.Save(path)?.GetTuple();
+                    if (k != null)
+                        storageDict.Add(path, k);
+                }
+
+                return false;
+            }
+
             foreach (var (path, obj) in _jsonStorage)
             {
                 if (!IsOld(path: path))
                     continue;
 
-                if (obj is Storage storage)
-                {
-                    storage.Value.Save(path);
-                }
-                else
-                {
+                if (processObj(obj, path))
                     SerializeJsonFile(path, obj);
-                }
             }
 
             foreach (var (path, obj) in _ymlStorage)
@@ -149,32 +194,25 @@ namespace DeepDungeonDex.Storage
                 if (!IsOld(path: path))
                     continue;
 
-                if (obj is Storage storage)
-                {
-                    storage.Value.Save(path);
-                }
-                else
-                {
+                if (processObj(obj, path))
                     SerializeYamlFile(path, obj);
-                }
             }
 
             var storagePath = Path.Combine(_path, "storage.json");
-            var storageDict = new Dictionary<string, KeyValuePair<Type, DateTime?>>();
             _jsonStorage.AsEnumerable()
                 .Concat(_ymlStorage)
                 .ToList()
                 .ForEach(x =>
                 {
                     var (path, obj) = x;
-                    storageDict.Add(path,
-                        obj is Storage storage
-                        ?
-                        new KeyValuePair<Type, DateTime?>(storage.Value.GetType(), storage.LastUpdated)
-                        :
-                        new KeyValuePair<Type, DateTime?>(obj.GetType(), null));
+                    if (!storageDict.ContainsKey(path))
+                        storageDict.Add(path, new Tuple<Type, DateTime, string?>(obj.GetType(), DateTime.Now, null));
                 });
-            SerializeJsonFile(storagePath, storageDict);
+            SerializeJsonFile(storagePath, storageDict.Where(t => t.Key is not "storage.json" or "config.json").ToDictionary(t => t.Key, t =>
+            {
+                var (type, time, name) = t.Value;
+                return new Tuple<string, DateTime, string?>(type.FullName!, time, name);
+            }));
         }
 
         public T? GetInstance<T>() where T : class, ISaveable

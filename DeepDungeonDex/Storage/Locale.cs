@@ -41,7 +41,7 @@ namespace DeepDungeonDex.Storage
     {
         public Dictionary<string, string> LocaleDictionary { get; set; } = new();
 
-        public NamedType Save(string path)
+        public NamedType? Save(string path)
         {
             StorageHandler.SerializeJsonFile(path, LocaleDictionary);
             return null;
