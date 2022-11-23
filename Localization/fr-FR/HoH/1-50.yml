@@ -52,7 +52,7 @@
 7268: Regard
 7267: Zone d'effets appliquant un saignement
 7266: Sommeil non télégraphié suivi de la zone d'effets
-7265: Inflige automatiquement des saignements triples
+7265: Attaque automatique triple infligant le malus "Saignée"
 7264: Zone d'effets appliquant la paralysie
-7263: Applique automatiquement une vulerabilté élevée physique toutes les 10 secondes
-7262: Inflige automatiquement des dégâts lourds
+7263: Applique automatiquement le malus "vulnérabilité physique améliorée" toutes les 10 secondes
+7262: Inflige automatiquement le malus "Lourdeur"
