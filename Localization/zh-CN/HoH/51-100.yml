@@ -1,0 +1,140 @@
+7610: 不要接触！一旦开怪会导致长时间眩晕或者即死
+7584: |
+  无限叠加伤害Buff
+  随机点名大范围高伤害Aoe“亚拉戈陨石”
+  视线攻击
+7493: |
+  1) Heavy room wide damage "Ancient Quaga"
+  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
+  3) "Meteor Impact" summons proximity AoE at boss's current location
+  4) Line AoE "Aura Cannon"
+  5) Targeted circle AoE "Burning Rave"
+  6) Point-blank circle AoE "Knuckle Press"
+  7) Repeat
+7490: |
+  1) Summons balls of ice
+  2) Summons icicle that pierces through room, detonating any ice balls it hits
+  3) "Lunar Cry" detonates remaining ice balls
+  4) Exploding ice balls inflict Deep Freeze if they hit a player
+  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+7489: |
+  1) Untelegraphed frontal cleave
+  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
+  3) Targets random player with "Hound out of Hell"
+  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
+  5) Repeat
+7487: |
+  Summons staffs that do various AoEs
+  Staffs then do line AoEs targeting players
+  Room wide AoE
+7485: |
+  1) Untelegraphed swipe
+  2) Untelegraphed line AoE on random player
+  3) Gaze mechanic that inflicts Fear
+  4) Summons pulsating bombs over arena and does a proximity AoE
+  5) Repeats after bombs explode for the last time
+7483: |
+  Summons clouds on edge of arena
+  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
+  Follows immediately with targeted line AoE
+7481: |
+  Summons butterflies on edges of arena
+  Does gaze mechanic that inflicts Fear
+  Butterflies explode untelegraphed
+7480: |
+  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
+  Follows immediately with a half-room wide AoE
+7478: |
+  Summons lightning clouds that inflict stacking vuln up when they explode
+  Boss does proximity AoE under itself that knocks players into the air
+  Get knocked into a cloud to dispel it and avoid vuln
+  Half-room wide AoE
+7394: |
+  61+层: 仅限金箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒只能被'插言'打断
+7393: |
+  31-60层: 仅限银箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒可被 沉默/眩晕/插言 打断
+7392: |
+  1-30层: 仅限铜箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒可被打断
+7391: 二连顺劈，带睡眠buff的锥形Aoe
+7390: 背对恐惧\n无读条对一仇释放单体攻击\n会不断强化自身伤害\n读条释放可见范围的大范围圆形超高威力Aoe'亚拉戈陨石'
+7389: 无读条对一仇释放没有范围提示的扇形Aoe\n读条释放有范围提示的圆形Aoe'浓云密布'\n注意：会不断对自己使用无读条的“巨大化”强化自身伤害，请务必尽快击杀。
+7388: |
+  Charges
+  Untelegraphed line AoE "Swipe"
+  Untelegraphed wide circle AoE "Swing"
+7387: 读条释放可见范围的扇形Aoe”深渊回转“\n无读条随机对一人释放单体大伤害攻击
+7386: 读条释放非常快的直线Aoe“葬送击”，必须提前躲避
+7385: 读条释放可见范围的圆形AOE“虚无陷阱”\n 无读条对一仇释放没有范围提示的扇形Aoe虚无斩
+7384: 无论是否有仇恨，读条可见范围的附带割伤DoT的圆形Aoe狂风Gust\n读条对自身附加强化防御Debuff
+7382: |
+  无读条对随机1人位置释放没有范围提示的圆形Aoe\n读条对随机1人释放可见范围的圆形Aoe'大漩涡'
+7381: |
+  Cleave
+  Large line AoE that can be line of sighted
+7380: |
+  WHM: double autos
+  "Stone" can be line of sighted
+7379: |
+  读条'步法'给自身附加加速buff，可打断\n读条“飘羽步”强化自身回避率6s，可被打断\n无读条对一仇附加流血Dot并释放三连攻击
+7378: |
+  WAR: Triple knockback with heavy damage
+  Buffs own attack
+  Extremely high damage cleave with knockback
+7377: 无读条对开怪者释放直线攻击“狂野冲锋”\n读条对前方释放无范围提示扇形Aoe“撕裂利爪”\n读条释放可见范围的圆形Aoe
+7376: 建立仇恨立刻释放单体伤害‘躯体冲撞'，附加15秒可驱散流血Dot\n读条释放有范围提示的扇形Aoe“缺氧吐息”\n读条点名一人释放非常疼的4连圆形Aoe“震雷”，带感电Dot
+7375: 对建立仇恨者瞬发冲锋技能\n读条可见扇形Aoe“掀地”\n读条超大范围圆形Aoe“吼叫”\n软狂暴：十连全屏大伤害Aoe“遁地
+7374: 无读条释放全屏附加易伤的AoE“鲜血之月”\n读条释放可见范围环形/扇形Aoe，建议靠近打
+7373: 每隔几秒就会读条释放一次附加可叠加流血Dot的全屏Aoe“古菩的悲伤”，Dot很疼，可驱散\n读条可见圆形AoE\n无读条随机向一人方向释放扇形吸引，并马上释放可见范围扇形Aoe
+7372: 读条释放可见范围的圆形Aoe“平地捶打”\n不断对一仇瞬发高伤害平A
+7371: Alternates line and circle AoEs untelegraphed
+7370: Double autos, very strong rear cleave if behind
+7369: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
+7368: Untelegraphed conal AoE on random player, gaze attack
+7367: Charges on aggro
+7366: |
+  Buffs own damage unaggroed
+  Large AoE unaggroed that inflicts vuln up and stacks
+7365: |
+  Ram's Voice - get out
+  Dragon's Voice - get in
+  Telegraphed cleaves
+7364: Double auto and very large AoE
+7362: Extremely large conal AoE, gaze inflicts Fear
+7361: Draw-in attack, extremely large AoE, eventual ENRAGE
+7360: 超大范围AOE
+7359: 快点，最后会狂暴
+7358: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7357: |
+  Casts room wide AoEs unaggroed
+  Large conal draw-in attack followed by heavy damage
+7356: Casts AoEs unaggroed that inflict Deep Freeze
+7355: Double auto inflicts Bleed
+7354: Untelegraphed knockback on rear
+7353: |
+  Casts large AoE unaggroed
+  Extremely large circular AoE
+7350: AoE inflicts numerous debuffs at once
+7349: 全队减伤Buff
+7348: Large circular AoE inflicts Bleed
+7347: Large doughnut AoE, gaze attack inflicts Fear
+7346: Cleave and potent Poison
+7345: Conal AoE inflicts Paralysis
+7344: Caster, double auto
+7343: Fast alternating line AoEs that inflict Paralysis
+7341: Inflicts stacking vuln up
+7340: Inflicts stacking Poison that lasts 30s
+7337: Conal gaze, very quick low health ENRAGE
+7336: Instant AoEs on targeted player unaggroed
+7335: Draw-in attack
+7332: Exclusively fatal line AoEs
+7331: Cone AoE inflicts Bleed
+7330: Eventual instant ENRAGE
+7329: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7328: Buster inflicts Bleed
+7327: Autos inflict stacking vuln up

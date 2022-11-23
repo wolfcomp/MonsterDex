@@ -1,0 +1,29 @@
+Vulns: 被ダメージ上昇
+Vicious: 要注意
+Undefined: 未設定
+Undead: アンデッド
+Threat: 危険度
+Thanks: Deep Dungeons Discord サーバーに多くのコミュニティリソースを提供していただき、ありがとうございました。間違ったデータや不足しているデータを報告するために時間を割いてくれた皆さんに感謝します！最高のディープダンジョンガイドを書いたMaygiに特別な賞賛を送ります！
+Stun: スタン
+Sound: 聴覚
+Slow: スロウ
+Sleep: 睡眠
+Sight: 視覚
+Save: 保存
+Proximity: 接近
+Opacity: 不透明度
+Notes: 備考
+NoDataFound: '{0} のデータが見つかりません({1})'
+Name: 名前
+IsClickthrough: クリックスルーを有効にする
+HideRedVulns: 与えられないデバフを非表示にする
+HideBasedOnJob: 現在のクラス/ジョブに基づいて与えられないデバフを非表示
+Heavy: ヘヴィ
+FontSize: フォントサイズ
+Easy: 簡単
+Dangerous: 危険
+Caution: 注意
+Boss: ボス
+Bind: バインド
+AggroType: 感知タイプ
+ShowId: Show debug information
