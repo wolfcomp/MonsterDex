@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Dalamud.Logging;
 using DeepDungeonDex.Storage;
@@ -10,16 +11,18 @@ using Newtonsoft.Json;
 
 namespace DeepDungeonDex.Requests
 {
-    public class Language
+    public class Language : IDisposable
     {
-        private Dictionary<string, string> _language = new();
+        private readonly CancellationTokenSource token = new();
+        private readonly Thread loadThread;
         public static TimeSpan CacheTime = TimeSpan.FromHours(6);
         public StorageHandler Handler;
 
         public Language(StorageHandler handler)
         {
             Handler = handler;
-            Task.Factory.StartNew(() => RefreshLang(), TaskCreationOptions.LongRunning);
+            loadThread = new Thread(() => RefreshLang());
+            loadThread.Start();
         }
 
         public async Task<LocaleKeys?> GetFileList()
@@ -53,8 +56,9 @@ namespace DeepDungeonDex.Requests
                 {
                     try
                     {
-                        var content = await Get($"{folders}/{file}");
-                        Handler.AddYmlStorage(file, new Locale().Load(content, name));
+                        var path = $"{name}/{file}";
+                        var content = await Get(path);
+                        Handler.AddYmlStorage(path, new Locale{ TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content)});
                     }
                     catch (Exception e)
                     {
@@ -68,14 +72,22 @@ namespace DeepDungeonDex.Requests
             RefreshEnd:
             if (continuous)
             {
-                await Task.Delay(CacheTime);
-                await RefreshLang();
+                await Task.Delay(CacheTime, token.Token);
+                if (!token.IsCancellationRequested)
+                    await RefreshLang();
             }
         }
         
         public static async Task<string> Get(string path)
         {
             return await Data.Get("Localization/" + path);
+        }
+
+        public void Dispose()
+        {
+            token.Cancel();
+            loadThread.Join();
+            token.Dispose();
         }
     }
 }

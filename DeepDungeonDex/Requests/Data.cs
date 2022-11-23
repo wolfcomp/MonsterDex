@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Dalamud.Logging;
 using DeepDungeonDex.Storage;
+using FFXIVClientStructs.FFXIV.Common.Lua;
 using Newtonsoft.Json;
+using YamlDotNet.Core.Tokens;
 
 namespace DeepDungeonDex.Requests
 {
-    public class Data
+    public class Data : IDisposable
     {
+        private readonly CancellationTokenSource token = new();
+        private readonly Thread loadThread;
         public static HttpClient Client = new();
         public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data";
         public static TimeSpan CacheTime = TimeSpan.FromHours(6);
@@ -21,7 +26,8 @@ namespace DeepDungeonDex.Requests
         {
             Handler = handler;
             handler.AddJsonStorage("index.json", GetFileList().Result!);
-            Task.Factory.StartNew(() => RefreshFileList(), TaskCreationOptions.LongRunning);
+            loadThread = new Thread(() => RefreshFileList());
+            loadThread.Start();
         }
 
         public async Task<string[]?> GetFileList()
@@ -33,7 +39,7 @@ namespace DeepDungeonDex.Requests
             }
             catch(Exception e)
             {
-                PluginLog.Error(e, e.Message);
+                PluginLog.Error(e, "");
                 return null;
             }
         }
@@ -51,11 +57,11 @@ namespace DeepDungeonDex.Requests
                 try
                 {
                     var content = await Get(file);
-                    Handler.AddYmlStorage(file, new MobData().Load(content));
+                    Handler.AddYmlStorage(file, new MobData().Load(content, false));
                 }
                 catch(Exception e)
                 {
-                    PluginLog.Error(e, e.Message);
+                    PluginLog.Error(e, "");
                 }
             }
 
@@ -64,19 +70,29 @@ namespace DeepDungeonDex.Requests
             RefreshEnd:
             if (continuous)
             {
-                await Task.Delay(CacheTime);
-                await RefreshFileList();
+                await Task.Delay(CacheTime, token.Token);
+                if (!token.IsCancellationRequested)
+                    await RefreshFileList();
             }
         }
 
         public static async Task<string> Get(string url)
         {
+            PluginLog.Debug($"Requesting {BaseUrl}/{url}");
             var response = await Client.GetAsync($"{BaseUrl}/{url}");
+            PluginLog.Debug($"Response: {response.StatusCode}");
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadAsStringAsync();
             }
             throw new HttpRequestException($"Request: {url}\nFailed with status code {response.StatusCode}");
+        }
+
+        public void Dispose()
+        {
+            token.Cancel();
+            loadThread.Join();
+            token.Dispose();
         }
     }
 }
