@@ -19,6 +19,11 @@ namespace DeepDungeonDex.Models
         public Storage.Storage Load(string path, string name);
     }
 
+    public interface ILoadableString : ILoadable
+    {
+        public Storage.Storage Load(string str, bool fromFile);
+    }
+
     public class NamedType
     {
         public string Name { get; set; }

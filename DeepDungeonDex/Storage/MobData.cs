@@ -10,7 +10,7 @@ using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage
 {
-    public class MobData : ILoadable
+    public class MobData : ILoadableString
     {
         public Dictionary<int, Mob> MobDictionary { get; set; } = new();
 
@@ -31,6 +31,22 @@ namespace DeepDungeonDex.Storage
         public Storage Load(string path, string name)
         {
             throw new NotImplementedException();
+        }
+
+        public Storage Load(string str, bool fromFile)
+        {
+            if (fromFile)
+                return Load(str);
+            var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(str);
+            foreach (var (key, value) in mobs)
+            {
+                var splitInd = key.IndexOf('-');
+                var id = int.Parse(key[..splitInd]);
+                var name = key[(splitInd + 1)..];
+                value.Name = name;
+                MobDictionary.Add(id, value);
+            }
+            return new Storage(this, DateTime.Now);
         }
 
         public NamedType? Save(string path)
