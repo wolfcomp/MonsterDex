@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Dalamud.Logging;
 using DeepDungeonDex.Storage;
-using Lumina.Excel.GeneratedSheets;
 using Newtonsoft.Json;
 
 namespace DeepDungeonDex.Requests
@@ -47,12 +44,12 @@ namespace DeepDungeonDex.Requests
 
             Handler.AddJsonStorage("locales.json", fileList);
 
-            if(Handler.GetInstance("index.json") is not string[] list)
+            if(Handler.GetInstance("index.json") is not Dictionary<string, string> list)
                 goto RefreshEnd;
 
             foreach (var (name, folders) in fileList.LocaleDictionary)
             {
-                foreach (var file in list)
+                foreach (var (_, file) in list)
                 {
                     try
                     {

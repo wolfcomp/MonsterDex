@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Dalamud.Logging;
+using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
-using FFXIVClientStructs.FFXIV.Common.Lua;
 using Newtonsoft.Json;
-using YamlDotNet.Core.Tokens;
 
 namespace DeepDungeonDex.Requests
 {
@@ -30,12 +29,12 @@ namespace DeepDungeonDex.Requests
             loadThread.Start();
         }
 
-        public async Task<string[]?> GetFileList()
+        public async Task<Dictionary<string, string[]>?> GetFileList()
         {
             try
             {
                 var content = await Get("index.json");
-                return JsonConvert.DeserializeObject<string[]>(content);
+                return JsonConvert.DeserializeObject<Dictionary<string, string[]>>(content);
             }
             catch(Exception e)
             {
@@ -52,16 +51,25 @@ namespace DeepDungeonDex.Requests
 
             Handler.AddJsonStorage("index.json", list);
 
-            foreach (var file in list)
+            var types = Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(ILoadableString))).ToArray();
+
+            foreach (var (className, files) in list)
             {
-                try
+                var type = types.FirstOrDefault(t => t.Name == className);
+                if(type == null)
+                    continue;
+                foreach (var file in files)
                 {
-                    var content = await Get(file);
-                    Handler.AddYmlStorage(file, new MobData().Load(content, false));
-                }
-                catch(Exception e)
-                {
-                    PluginLog.Error(e, "");
+                    try
+                    {
+                        var content = await Get(file);
+                        var instance = (ILoadableString)Activator.CreateInstance(type)!;
+                        Handler.AddYmlStorage(file, instance.Load(content, false));
+                    }
+                    catch(Exception e)
+                    {
+                        PluginLog.Error(e, "");
+                    }
                 }
             }
 

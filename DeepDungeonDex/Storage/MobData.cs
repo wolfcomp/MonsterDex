@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using DeepDungeonDex.Models;
 using YamlDotNet.Serialization;
 
@@ -37,6 +33,7 @@ namespace DeepDungeonDex.Storage
                 var id = uint.Parse(key[..splitInd]);
                 var vName = key[(splitInd + 1)..];
                 value.Name = vName;
+                value.Id = id;
                 MobDictionary.Add(id, value);
             }
             
@@ -57,6 +54,7 @@ namespace DeepDungeonDex.Storage
                 var id = uint.Parse(key[..splitInd]);
                 var name = key[(splitInd + 1)..];
                 value.Name = name;
+                value.Id = id;
                 MobDictionary.Add(id, value);
             }
             return new Storage(this);
@@ -64,7 +62,7 @@ namespace DeepDungeonDex.Storage
 
         public NamedType? Save(string path)
         {
-            StorageHandler.SerializeJsonFile(path, MobDictionary.Select(t => (t.Key, t.Value)).ToDictionary(t => $"{t.Key}-{t.Value.Name}", t => t.Value));
+            StorageHandler.SerializeYamlFile(path, MobDictionary.Select(t => (t.Key, t.Value)).ToDictionary(t => $"{t.Key}-{t.Value.Name}", t => t.Value));
             return null;
         }
     }
@@ -73,6 +71,10 @@ namespace DeepDungeonDex.Storage
     {
         [YamlIgnore]
         public string Name { get; set; }
+        [YamlIgnore]
+        public uint Id { get; set; }
+        [YamlIgnore]
+        public string Description { get; set; }
         public Weakness Weakness { get; set; }
         public Aggro Aggro { get; set; }
         public Threat Threat { get; set; }

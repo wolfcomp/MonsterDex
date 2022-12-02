@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Reflection.PortableExecutable;
-using System.Text;
-using System.Threading.Tasks;
 using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Models;
@@ -21,8 +18,8 @@ namespace DeepDungeonDex.Storage
     {
         private readonly string _path;
         public static readonly IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
-        private static readonly Serializer Serializer = new();
-        
+        private static readonly ISerializer Serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
+
         private readonly Dictionary<string, object> _jsonStorage = new();
         private readonly Dictionary<string, object> _ymlStorage = new();
 
