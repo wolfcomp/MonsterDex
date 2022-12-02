@@ -12,6 +12,7 @@ using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
 using Dalamud.Logging;
 using Dalamud.Plugin;
+using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Models;
 using DeepDungeonDex.Requests;
 using DeepDungeonDex.Storage;
@@ -24,6 +25,7 @@ namespace DeepDungeonDex
         public string Name => "DeepDungeonDex";
         
         private IServiceProvider _provider;
+        private AddonAgent _addon;
 
         public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition)
         {
@@ -34,10 +36,12 @@ namespace DeepDungeonDex
             pluginInterface.UiBuilder.BuildFonts += () => _provider.GetRequiredService<Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
             var sys = LoadWindows();
             pluginInterface.UiBuilder.Draw += sys.Draw;
+            _addon = new AddonAgent(framework);
         }
 
         public void Dispose()
         {
+            _addon.Dispose();
             _provider.GetRequiredService<Data>().Dispose();
             _provider.GetRequiredService<Language>().Dispose();
             _provider.GetRequiredService<StorageHandler>().Dispose();
