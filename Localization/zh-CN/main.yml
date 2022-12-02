@@ -1,0 +1,29 @@
+Vulns: 弱点
+Vicious: 凶险
+Undefined: 未定义
+Undead: 亡灵
+Threat: 威胁等级
+Thanks: 感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！
+Stun: 眩暈
+Sound: 声音
+Slow: 减速
+Sleep: 睡眠
+Sight: 视野感知
+Save: 保存
+Proximity: 范围感知
+Opacity: 不透明度
+Notes: 说明
+NoDataFound: 未找到 {0} ({1} ) 的数据
+Name: 名称
+IsClickthrough: 启用鼠标穿透
+HideRedVulns: 隐藏无效弱点
+HideBasedOnJob: 隐藏当前职业无法利用的弱点
+Heavy: 加重
+FontSize: 字体大小
+Easy: 简单
+Dangerous: 危险
+Caution: 注意
+Boss: Boss
+Bind: 止步
+AggroType: 仇恨类型
+ShowId: 显示调试信息

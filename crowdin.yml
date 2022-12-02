@@ -1,0 +1,5 @@
+project_id: 526558
+api_token_env: CROWDIN_PERSONAL_TOKEN
+files:
+  - source: /Localization/en/**/*.yml
+    translation: /Localization/%locale%/**/%original_file_name%
