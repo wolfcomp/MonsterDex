@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using Dalamud.Game;
-using Dalamud.Hooking;
-using Dalamud.Logging;
-using Dalamud.Utility.Signatures;
-using FFXIVClientStructs.FFXIV.Client.Game.Event;
 using FFXIVClientStructs.FFXIV.Client.UI.Agent;
 
 namespace DeepDungeonDex.Hooks
