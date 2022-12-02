@@ -1,9 +1,14 @@
-﻿[
-  "HoH/1-50.yml",
-  "HoH/51-100.yml",
-  "PotD/1-50.yml",
-  "PotD/51-100.yml",
-  "PotD/101-150.yml",
-  "PotD/151-200.yml",
-  "Special.yml"
-]
+﻿{
+  "MobData": [
+    "HoH/1-50.yml",
+    "HoH/51-100.yml",
+    "PotD/1-50.yml",
+    "PotD/51-100.yml",
+    "PotD/101-150.yml",
+    "PotD/151-200.yml",
+    "Special.yml"
+  ],
+  "JobData": [
+    "Job.yml"
+  ]
+}
