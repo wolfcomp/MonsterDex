@@ -1,4 +1,8 @@
 ﻿using System.CommandLine;
+using System.Reflection;
+using YamlDotNet.Core.Events;
+using YamlDotNet.Core;
+using YamlDotNet.Serialization;
 
 namespace DeepDungeonDexConsole
 {
@@ -6,17 +10,25 @@ namespace DeepDungeonDexConsole
     {
         public static void Main(string[] args)
         {
-            var input = new Option<FileInfo?>(new[] { "--input", "-i" }, "The file to process.");
-            var names = new Option<FileInfo?>(new[] { "--names", "-n" }, "The names file to use.");
-            var type = new Option<string?>(new[] { "--type", "-t" }, "The type operation to use.");
-            var verbose = new Option<bool>(new[] { "--verbose", "-v" }, "Enable verbose logging.");
-            var rootCommand = new RootCommand("Deep Dungeon Dex Console Tool");
-            rootCommand.AddOption(input);
-            rootCommand.AddOption(names);
-            rootCommand.AddOption(type);
-            rootCommand.AddOption(verbose);
-            rootCommand.SetHandler(RunCommand, input, names, type, verbose);
-            rootCommand.Invoke(args);
+            var str = new HttpClient().GetStringAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data/Job.yml").Result;
+            var dict = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build().Deserialize<Dictionary<uint, Weakness>>(str);
+
+            foreach (var (_key, _weakness) in dict)
+            {
+                Console.WriteLine($"{_key} - {_weakness}");
+            }
+            
+            //var input = new Option<FileInfo?>(new[] { "--input", "-i" }, "The file to process.");
+            //var names = new Option<FileInfo?>(new[] { "--names", "-n" }, "The names file to use.");
+            //var type = new Option<string?>(new[] { "--type", "-t" }, "The type operation to use.");
+            //var verbose = new Option<bool>(new[] { "--verbose", "-v" }, "Enable verbose logging.");
+            //var rootCommand = new RootCommand("Deep Dungeon Dex Console Tool");
+            //rootCommand.AddOption(input);
+            //rootCommand.AddOption(names);
+            //rootCommand.AddOption(type);
+            //rootCommand.AddOption(verbose);
+            //rootCommand.SetHandler(RunCommand, input, names, type, verbose);
+            //rootCommand.Invoke(args);
         }
 
         private static void RunCommand(FileInfo? input, FileInfo? names, string? type, bool verbose)
@@ -84,5 +96,59 @@ namespace DeepDungeonDexConsole
             key = default;
             return false;
         }
+    }
+
+    internal class YamlStringEnumConverter : IYamlTypeConverter
+    {
+        public bool Accepts(Type type) => type.IsEnum;
+
+        public object ReadYaml(IParser parser, Type type)
+        {
+            var items = new List<string>();
+            if (type.GetCustomAttributes<FlagsAttribute>().Any())
+            {
+                parser.TryConsume<SequenceStart>(out _);
+                while (parser.TryConsume<Scalar>(out var scalar))
+                {
+                    items.Add(scalar.Value);
+                }
+                parser.TryConsume<SequenceEnd>(out _);
+            }
+            else if (parser.TryConsume<Scalar>(out var scalar))
+                items.Add(scalar.Value);
+            return Enum.Parse(type, string.Join(", ", items));
+        }
+
+        public void WriteYaml(IEmitter emitter, object? value, Type type)
+        {
+            if (value == null) return;
+            if (type.GetCustomAttributes<FlagsAttribute>().Any())
+            {
+                var str = value.ToString()!.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+                emitter.Emit(new SequenceStart(default, default, false, SequenceStyle.Any));
+                foreach (var s in str)
+                {
+                    emitter.Emit(new Scalar(s));
+                }
+                emitter.Emit(new SequenceEnd());
+            }
+            else
+            {
+                emitter.Emit(new Scalar(value.ToString()!));
+            }
+        }
+    }
+
+    [Flags]
+    public enum Weakness
+    {
+        None = 0x00,
+        Stun = 0x01,
+        Heavy = 0x02,
+        Slow = 0x04,
+        Sleep = 0x08,
+        Bind = 0x10,
+        Undead = 0x20
     }
 }
