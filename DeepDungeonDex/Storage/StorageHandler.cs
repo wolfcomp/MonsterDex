@@ -117,8 +117,6 @@ namespace DeepDungeonDex.Storage
         {
             var result = JsonConvert.DeserializeObject(ReadFile(path), type, new JsonSerializerSettings()
             {
-                TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Simple,
-                TypeNameHandling = TypeNameHandling.Objects,
                 ContractResolver = ignoreJsonProperty ? new NameContractResolver() : null
             });
             return result;
@@ -137,8 +135,6 @@ namespace DeepDungeonDex.Storage
             var writer = new StreamWriter(path);
             writer.Write(JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings()
             {
-                TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Simple,
-                TypeNameHandling = TypeNameHandling.Objects,
                 ContractResolver = new NameContractResolver()
             }));
             writer.Dispose();

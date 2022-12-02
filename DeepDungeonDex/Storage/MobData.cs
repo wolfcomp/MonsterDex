@@ -12,7 +12,7 @@ namespace DeepDungeonDex.Storage
 {
     public class MobData : ILoadableString
     {
-        public Dictionary<int, Mob> MobDictionary { get; set; } = new();
+        public Dictionary<uint, Mob> MobDictionary { get; set; } = new();
 
         public Storage Load(string path)
         {
@@ -20,7 +20,7 @@ namespace DeepDungeonDex.Storage
             foreach (var (key, value) in mobs)
             {
                 var splitInd = key.IndexOf('-');
-                var id = int.Parse(key[..splitInd]);
+                var id = uint.Parse(key[..splitInd]);
                 var name = key[(splitInd + 1)..];
                 value.Name = name;
                 MobDictionary.Add(id, value);
@@ -30,7 +30,20 @@ namespace DeepDungeonDex.Storage
 
         public Storage Load(string path, string name)
         {
-            throw new NotImplementedException();
+            var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(StorageHandler.ReadFile(path));
+            foreach (var (key, value) in mobs)
+            {
+                var splitInd = key.IndexOf('-');
+                var id = uint.Parse(key[..splitInd]);
+                var vName = key[(splitInd + 1)..];
+                value.Name = vName;
+                MobDictionary.Add(id, value);
+            }
+            
+            return new Storage(this)
+            {
+                Name = name
+            };
         }
 
         public Storage Load(string str, bool fromFile)
@@ -41,7 +54,7 @@ namespace DeepDungeonDex.Storage
             foreach (var (key, value) in mobs)
             {
                 var splitInd = key.IndexOf('-');
-                var id = int.Parse(key[..splitInd]);
+                var id = uint.Parse(key[..splitInd]);
                 var name = key[(splitInd + 1)..];
                 value.Name = name;
                 MobDictionary.Add(id, value);
@@ -93,5 +106,18 @@ namespace DeepDungeonDex.Storage
         Caution,
         Dangerous,
         Vicious
+    }
+
+    public static class MobDataExtensions
+    {
+        public static Mob? GetData(this MobData data, uint key)
+        {
+            return data.MobDictionary.TryGetValue(key, out var value) ? value : null;
+        }
+
+        public static Mob? GetData(this IEnumerable<MobData> data, uint key)
+        {
+            return data.FirstOrDefault(l => l.MobDictionary.ContainsKey(key))?.MobDictionary[key];
+        }
     }
 }

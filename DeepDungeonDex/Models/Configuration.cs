@@ -21,6 +21,7 @@ namespace DeepDungeonDex.Models
         public int Locale { get; set; } = 0;
         public int FontSize { get; set; } = 16;
         public float Opacity { get; set; } = 1f;
+        public bool LegacyWindow { get; set; }
 
         [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
         [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);

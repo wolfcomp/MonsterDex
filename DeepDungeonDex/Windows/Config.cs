@@ -44,7 +44,6 @@ namespace DeepDungeonDex.Windows
             var _localeKeys = Handler.GetInstance<LocaleKeys>()!;
             ImGui.PushFont(Font.RegularFont);
             ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
-            //ImGui.Begin("config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize);
             if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
             {
                 _config.Opacity = _opacity;
@@ -102,7 +101,6 @@ namespace DeepDungeonDex.Windows
             ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
             ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
             ImGui.PopStyleColor(3);
-            //ImGui.End();
             ImGui.PopFont();
         }
     }
