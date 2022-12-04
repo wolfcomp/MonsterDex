@@ -121,5 +121,14 @@ namespace DeepDungeonDex.Storage
         {
             return data.FirstOrDefault(l => l.MobDictionary.ContainsKey(key))?.MobDictionary[key];
         }
+
+        public static uint GetColor(this Threat threat) => threat switch
+        {
+            Threat.Easy => 0xFF00FF00,
+            Threat.Caution => 0xFF00FFFF,
+            Threat.Dangerous => 0xFF0000FF,
+            Threat.Vicious => 0xFFFF00FF,
+            _ => 0xFFFFFFFF
+        };
     }
 }

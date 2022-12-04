@@ -23,11 +23,20 @@ namespace DeepDungeonDex.Models
         public float Opacity { get; set; } = 1f;
         public bool LegacyWindow { get; set; }
 
+        [JsonIgnore] public int PrevFontSize;
         [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
         [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);
+        [JsonIgnore] public Action<Configuration>? OnChange { get; set; }
+        [JsonIgnore] public Action? OnSizeChange { get; set; }
 
         public NamedType? Save(string path)
         {
+            if (FontSize != PrevFontSize)
+            {
+                PrevFontSize = FontSize;
+                OnSizeChange?.Invoke();
+            }
+            OnChange?.Invoke(this);
             StorageHandler.SerializeJsonFile(path, this);
             return null;
         }

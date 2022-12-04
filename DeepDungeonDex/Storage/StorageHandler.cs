@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -210,7 +210,7 @@ namespace DeepDungeonDex.Storage
         {
             var list = _jsonStorage.Values.ToList();
             list.AddRange(_ymlStorage.Values);
-            return list.FirstOrDefault(t => t is T or Storage { Value: T }) as T;
+            return (list.FirstOrDefault(x => x is T) ?? (list.FirstOrDefault(x => x is Storage { Value: T }) as Storage)?.Value) as T ?? null;
         }
 
         public T[] GetInstances<T>() where T : class, ISaveable

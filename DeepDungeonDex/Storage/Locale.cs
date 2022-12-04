@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace DeepDungeonDex.Storage
 {
-    public class Locale : ILoadable
+    public class Locale : ILoadableString
     {
         public Dictionary<string, string> TranslationDictionary { get; set; } = new();
         
@@ -30,6 +30,14 @@ namespace DeepDungeonDex.Storage
             var s = Load(path);
             s.Name = name;
             return s;
+        }
+
+        public Storage Load(string str, bool fromFile)
+        {
+            if(fromFile)
+                return Load(str);
+            TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(str);
+            return new Storage(this);
         }
     }
 
@@ -57,12 +65,12 @@ namespace DeepDungeonDex.Storage
 
     public static class LocaleExtensions
     {
-        public static string? GetLocale(this Locale locale, string key)
+        public static string GetLocale(this Locale locale, string key)
         {
             return locale.TranslationDictionary.TryGetValue(key, out var value) ? value : key;
         }
 
-        public static string? GetLocale(this IEnumerable<Locale> locales, string key)
+        public static string GetLocale(this IEnumerable<Locale> locales, string key)
         {
             return locales.FirstOrDefault(l => l.TranslationDictionary.ContainsKey(key))?.TranslationDictionary[key] ?? key;
         }
