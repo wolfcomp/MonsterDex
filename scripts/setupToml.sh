@@ -1,12 +1,11 @@
 echo "> Deleting old"
-rm -rf repo/stable/${INTERNAL_NAME}
 rm -rf repo/testing/live/${INTERNAL_NAME}
-rm -rf repo/testing/net6/${INTERNAL_NAME}
 echo "> Making new"
 if [[ ${MESSAGE} =~ .*"[TEST]".* ]]; then
-    mkdir repo/testing/net6/${INTERNAL_NAME}
-    cd repo/testing/net6/${INTERNAL_NAME}
+    mkdir repo/testing/live/${INTERNAL_NAME}
+    cd repo/testing/live/${INTERNAL_NAME}
 else
+    rm -rf repo/stable/${INTERNAL_NAME}
     mkdir repo/stable/${INTERNAL_NAME}
     cd repo/stable/${INTERNAL_NAME}
 fi
