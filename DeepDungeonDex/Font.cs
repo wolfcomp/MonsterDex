@@ -151,18 +151,9 @@ namespace DeepDungeonDex
             RegularFont = ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_regularFont.Item1.AddrOfPinnedObject(), _regularFont.Item2, scale, _fontCfg, _ranges.Data);
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, scale, _fontCfgMerge, _jpRanges.Data);
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, scale, _fontCfgMerge, _symRange.AddrOfPinnedObject());
-            var languages = _handler.GetInstance<LocaleKeys>();
-            if (languages == null)
-            {
-                return;
-            }
-
-            if(languages.LocaleDictionary.ContainsKey("ko-KR"))
-                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
-            if(languages.LocaleDictionary.ContainsKey("zh-TW"))
-                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
-            if(languages.LocaleDictionary.ContainsKey("zh-CN"))
-                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
         }
 
         public void Dispose()

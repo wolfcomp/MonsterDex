@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Dalamud.Logging;
+using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
 using Newtonsoft.Json;
 
@@ -20,6 +22,30 @@ namespace DeepDungeonDex.Requests
             Handler = handler;
             loadThread = new Thread(() => RefreshLang());
             loadThread.Start();
+        }
+
+        public void ChangeLanguage()
+        {
+            var loc = Handler.GetInstance<Configuration>()!.Locale;
+            if (Handler.GetInstance<LocaleKeys>() is not { } locales || Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
+                return;
+
+            var name = locales.LocaleDictionary.Keys.ToArray()[loc];
+            foreach (var (_, files) in list)
+            {
+                foreach (var file in files)
+                {
+                    if(file == "Job.yml")
+                        continue;
+                    var data = (Storage.Storage)Handler.GetInstance(file)!;
+                    var langData = (Locale)Handler.GetInstance($"{name}/{file}")!;
+                    foreach (var (id, _) in (data.Value as MobData).MobDictionary)
+                    {
+                        if(langData.TranslationDictionary.TryGetValue(id.ToString(), out var description))
+                            (data.Value as MobData).MobDictionary[id].Description = description;
+                    }
+                }
+            }
         }
 
         public async Task<LocaleKeys?> GetFileList()
@@ -44,27 +70,35 @@ namespace DeepDungeonDex.Requests
 
             Handler.AddJsonStorage("locales.json", fileList);
 
-            if(Handler.GetInstance("index.json") is not Dictionary<string, string> list)
+            if(Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
                 goto RefreshEnd;
 
             foreach (var (name, folders) in fileList.LocaleDictionary)
             {
-                foreach (var (_, file) in list)
+                var main = $"{name}/main.yml";
+                Handler.AddYmlStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(await Get(main))});
+                foreach (var (_, files) in list)
                 {
-                    try
+                    foreach(var file in files)
                     {
-                        var path = $"{name}/{file}";
-                        var content = await Get(path);
-                        Handler.AddYmlStorage(path, new Locale{ TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content)});
-                    }
-                    catch (Exception e)
-                    {
-                        PluginLog.Error(e, e.Message);
+                        if(file == "Job.yml")
+                            continue;
+                        try
+                        {
+                            var path = $"{name}/{file}";
+                            var content = await Get(path);
+                            Handler.AddYmlStorage(path, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content) });
+                        }
+                        catch (Exception e)
+                        {
+                            PluginLog.Error(e, "");
+                        }
                     }
                 }
             }
 
             Handler.Save();
+            ChangeLanguage();
 
             RefreshEnd:
             if (continuous)
