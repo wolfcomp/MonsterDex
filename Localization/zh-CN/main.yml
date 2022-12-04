@@ -27,3 +27,4 @@ Boss: Boss
 Bind: 止步
 AggroType: 仇恨类型
 ShowId: 显示调试信息
+Legacy: Use Legacy Window for mob data
