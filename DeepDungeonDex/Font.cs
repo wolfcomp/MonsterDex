@@ -5,12 +5,14 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Dalamud.Interface;
+using DeepDungeonDex.Storage;
 using ImGuiNET;
 
 namespace DeepDungeonDex
 {
     internal class Font : IDisposable
     {
+        private readonly StorageHandler _handler;
         private ImFontConfigPtr _fontCfg;
         private ImFontConfigPtr _fontCfgMerge;
         private (GCHandle, int) _gameSymFont;
@@ -34,11 +36,9 @@ namespace DeepDungeonDex
         );
         internal static ImFontPtr RegularFont;
 
-        private readonly Configuration _config;
-
-        public unsafe Font(Configuration config)
+        public unsafe Font(StorageHandler handler)
         {
-            _config = config;
+            _handler = handler;
             SetUpRanges();
             SetUpFonts();
             _fontCfg = new ImFontConfigPtr(ImGuiNative.ImFontConfig_ImFontConfig()) { FontDataOwnedByAtlas = false };
@@ -146,14 +146,14 @@ namespace DeepDungeonDex
             _scFont = (GCHandle.Alloc(sc, GCHandleType.Pinned), sc.Length, 1f);
         }
 
-        public void BuildFonts()
+        public void BuildFonts(float scale)
         {
-            RegularFont = ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_regularFont.Item1.AddrOfPinnedObject(), _regularFont.Item2, _config.FontSizeScaled, _fontCfg, _ranges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, _config.FontSizeScaled, _fontCfgMerge, _jpRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, _config.FontSizeScaled, _fontCfgMerge, _krRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, _config.FontSizeScaled, _fontCfgMerge, _tcRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, _config.FontSizeScaled, _fontCfgMerge, _scRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, _config.FontSizeScaled, _fontCfgMerge, _symRange.AddrOfPinnedObject());
+            RegularFont = ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_regularFont.Item1.AddrOfPinnedObject(), _regularFont.Item2, scale, _fontCfg, _ranges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, scale, _fontCfgMerge, _jpRanges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, scale, _fontCfgMerge, _symRange.AddrOfPinnedObject());
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
+            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
         }
 
         public void Dispose()
