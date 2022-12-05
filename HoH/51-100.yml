@@ -4,248 +4,392 @@
   Aggro: Sound
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 7328-heavenly kamakiri:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
 7329-heavenly tokagekiba:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Bind
+    - Slow
 7330-heavenly kongorei:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
 7331-heavenly tesso:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 7332-heavenly maruishi:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 7333-heavenly karakuri:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
 7334-heavenly shabti:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7335-heavenly gowan:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
 7336-heavenly rachimonai:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
 7337-heavenly naga:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 7338-heavenly tetsu-kyojin:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
 7339-heavenly dokyu:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
 # HoH floors 61-69
 7340-heavenly wakakusa:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7341-heavenly mannenso:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7342-heavenly iwamushi:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
 7343-heavenly jellyfish:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 7344-heavenly doguzeri:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7345-heavenly kosodegai:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
 7346-heavenly shitaibana:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7347-heavenly hashiri-dokoro:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
 7348-heavenly penghou:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7349-heavenly jubokko:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
 7350-heavenly morbol:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7351-heavenly chizakura:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - Stun
+    - Sleep
+    - Slow
 # HoH floors 71-79
 7352-heavenly shikubi:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Sleep
 7353-heavenly ichijama:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 7354-heavenly noyagi:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7355-heavenly okami:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7356-heavenly yuki-tokage:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7357-heavenly mammoth:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7358-heavenly tofu:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 7359-heavenly jujishi:
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 7360-heavenly yuki-otoko:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Sleep
 7361-heavenly yak:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7362-heavenly hyoga:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
 7363-heavenly hyozan:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
 7364-heavenly shiro-jishi:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Sleep
 # HoH floors 81-89
 7365-heavenly mukai-inu:
   Threat: Dangerous
   Aggro: Proximity
+  Weakness:
+    - Slow
+    - Sleep
 7366-heavenly rowan:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7367-heavenly Matanga:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7368-heavenly Gozu:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7369-heavenly ryukotsu:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7370-heavenly ryujin:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
+    - Sleep
     - Stun
 7371-heavenly hitotsume:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7372-heavenly enko:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
+    - Slow
+    - Sleep
     - Stun
 7373-heavenly araragi:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Sleep
 7374-heavenly koki:
   Threat: Easy
   Aggro: Proximity
+  Weakness:
+    - Slow
+    - Sleep
 7375-heavenly Garula:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
 7376-heavenly shinzei:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Sleep
 7377-heavenly rakshasa:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Sleep
 # HoH floors 91-99
 7378-heavenly nuppeppo:
   Threat: Vicious
   Aggro: Sight
   Weakness:
+    - Slow
     - Stun
+    - Bind
+    - Heavy
 7379-heavenly nuppeppo:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
+    - Slow
     - Stun
+    - Bind
+    - Heavy
 7380-heavenly nuppeppo:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Bind
+    - Heavy
 7381-heavenly mifune:
   Threat: Dangerous
   Aggro: Proximity
+  Weakness:
+    - Slow
 7382-heavenly jaki:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Bind
 7383-heavenly tokage-musha:
   Threat: Caution
   Aggro: Sight
@@ -256,6 +400,7 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7385-heavenly kuro-kishi:
   Threat: Caution
   Aggro: Proximity
@@ -266,25 +411,36 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7387-heavenly zenki:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7388-heavenly Gozu:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
 7389-heavenly kubinashi:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
 7390-heavenly tenma:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Sleep
 7391-heavenly dodo:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Stun
 7584-heavenly jinba:
   Threat: Dangerous
   Aggro: Sight
