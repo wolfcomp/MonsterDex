@@ -18,3 +18,7 @@ echo "changelog = ${CHANGELOG}" >>manifest.toml
 echo "version = \"${VERSION}\"" >>manifest.toml
 echo "> Done"
 cat manifest.toml
+mkdir images
+cd images
+echo "> Downloading images"
+curl -L -o https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/master/DeepDungeonDex/icon.png icon.png

@@ -7,6 +7,7 @@ using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Interface.Windowing;
+using Dalamud.Logging;
 using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
 using ImGuiNET;
@@ -113,7 +114,7 @@ namespace DeepDungeonDex.Windows
 
         private void GetData(Framework framework)
         {
-            if (!_debug)
+            if (_debug)
             {
                 return;
             }
@@ -157,6 +158,7 @@ namespace DeepDungeonDex.Windows
             if (_heavy == null || _bind == null || _stun == null || _slow == null || _sleep == null || _undead == null)
             {
                 _disable = true;
+                PluginLog.Error("Could not load icons, disabling Main window.");
             }
         }
 
