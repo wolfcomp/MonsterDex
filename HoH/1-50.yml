@@ -389,68 +389,100 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Sleep
+    - Bind
+    - Slow
 7313-heavenly dogu:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 # HoH floors 41-49
 7314-heavenly saikoro:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
 7315-heavenly ganseki:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Heavy
 7316-heavenly dhara:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Bind
 7317-heavenly sekizo:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 7318-heavenly sekiban:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Slow
 7319-heavenly saikoro:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
 7320-heavenly iseki:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7321-heavenly aka-ishi:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Slow
 7322-heavenly monoiwa:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 7323-heavenly iseki:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 7324-heavenly kuro-usagi:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Slow
 7325-heavenly sekizo:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - Stun
+    - Slow
 7326-heavenly mizumimizu:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
+    - Heavy
+    - Sleep
+    - Slow
