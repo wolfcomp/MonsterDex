@@ -75,7 +75,7 @@
       <Private>false</Private>
     </Reference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
-    <PackageReference Include="YamlDotNet" Version="12.0.0">
+    <PackageReference Include="YamlDotNet" Version="12.0.2">
       <Private>false</Private>
     </PackageReference>
     <PackageReference Include="DalamudPackager" Version="2.1.8" />

@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepDungeonDex", "DeepDunge
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F1FD06F1-DF12-43AD-B211-07E0999D9391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepDungeonDexConsole", "DeepDungeonDexConsole\DeepDungeonDexConsole.csproj", "{71B97776-5022-4DAC-849D-E82DE55FA827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepDungeonDexConsole", "DeepDungeonDexConsole\DeepDungeonDexConsole.csproj", "{71B97776-5022-4DAC-849D-E82DE55FA827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +20,8 @@ Global
 		{517A4352-7F10-48B9-B332-BB592157E377}.Debug|Any CPU.Build.0 = Debug|x64
 		{517A4352-7F10-48B9-B332-BB592157E377}.Debug|x64.ActiveCfg = Debug|x64
 		{517A4352-7F10-48B9-B332-BB592157E377}.Debug|x64.Build.0 = Debug|x64
-		{517A4352-7F10-48B9-B332-BB592157E377}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{517A4352-7F10-48B9-B332-BB592157E377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517A4352-7F10-48B9-B332-BB592157E377}.Release|Any CPU.ActiveCfg = Release|x64
+		{517A4352-7F10-48B9-B332-BB592157E377}.Release|Any CPU.Build.0 = Release|x64
 		{517A4352-7F10-48B9-B332-BB592157E377}.Release|x64.ActiveCfg = Release|x64
 		{517A4352-7F10-48B9-B332-BB592157E377}.Release|x64.Build.0 = Release|x64
 		{71B97776-5022-4DAC-849D-E82DE55FA827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
