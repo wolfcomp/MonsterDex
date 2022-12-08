@@ -29,6 +29,8 @@ namespace DeepDungeonDex.Hooks
             
             var floor = deepDungeonMap[0x18E8];
 
+            //use ClientState.TerritoryType to get the current instance, 0xF1E7 is PotD and 0xE3ED is HoH
+
             var agentDeepDungeonStatus = _structsFramework->UIModule->GetAgentModule()->GetAgentByInternalId(AgentId.DeepDungeonStatus);
         }
 
