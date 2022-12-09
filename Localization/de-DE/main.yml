@@ -27,3 +27,4 @@ Boss: Boss
 Bind: Fessel
 AggroType: Bedrohungstyp
 ShowId: Show debug information
+Legacy: Use Legacy Window for mob data
