@@ -56,10 +56,12 @@ namespace DeepDungeonDex.Windows
             {
                 if (!uint.TryParse(args.Split(' ')[0], out var id) || _disable)
                 {
+                    _debug = false;
                     IsOpen = false;
                     return;
                 }
 
+                _debug = true;
                 _instance.SetTarget(id);
                 _instance.IsOpen = true;
             }, show: false);

@@ -22,7 +22,7 @@ namespace DeepDungeonDex
         public string Name => "DeepDungeonDex";
         
         private IServiceProvider _provider;
-        private AddonAgent _addon;
+        //private AddonAgent _addon;
 
         public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state)
         {
@@ -34,7 +34,7 @@ namespace DeepDungeonDex
             pluginInterface.UiBuilder.BuildFonts += BuildFont;
             var sys = LoadWindows();
             pluginInterface.UiBuilder.Draw += sys.Draw;
-            _addon = new AddonAgent(framework);
+            //_addon = new AddonAgent(framework);
         }
 
         public void BuildFont()
@@ -44,7 +44,7 @@ namespace DeepDungeonDex
 
         public void Dispose()
         {
-            _addon.Dispose();
+            //_addon.Dispose();
             _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange -= _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts;
             _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.BuildFonts -= BuildFont;
             _provider.GetRequiredService<Data>().Dispose();
