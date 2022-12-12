@@ -1,10 +1,13 @@
+using System;
 using System.Linq;
 using Dalamud.Interface.Windowing;
 using DeepDungeonDex.Storage;
 using DeepDungeonDex.Models;
 using ImGuiNET;
 using System.Numerics;
+using Dalamud.Plugin;
 using DeepDungeonDex.Requests;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex.Windows
 {
@@ -13,6 +16,7 @@ namespace DeepDungeonDex.Windows
         private static Config _instance;
         private readonly StorageHandler _handler;
         private readonly Language _language;
+        private readonly IServiceProvider _provider;
         private float _opacity;
         private bool _clickthrough;
         private bool _hideRed;
@@ -20,11 +24,13 @@ namespace DeepDungeonDex.Windows
         private bool _debug;
         private bool _legacy;
         private int _loc;
+        private bool _loadAll;
 
-        public Config(StorageHandler handler, CommandHandler command, Language language) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
+        public Config(StorageHandler handler, CommandHandler command, Language language, IServiceProvider provider) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
         {
             _handler = handler;
             _language = language;
+            _provider = provider;
             _instance = this;
             var _config = _handler.GetInstance<Configuration>()!;
             _config.OnChange += OnChange;
@@ -40,6 +46,7 @@ namespace DeepDungeonDex.Windows
             _debug = _config.Debug;
             _legacy = _config.LegacyWindow;
             _loc = _config.Locale;
+            _loadAll = _config.LoadAll;
             command.AddCommand(new[] { "config", "cfg" }, () => _instance.IsOpen = true, "Opens the config window.");
         }
 
@@ -57,7 +64,7 @@ namespace DeepDungeonDex.Windows
         {
             var _config = _handler.GetInstance<Configuration>()!;
             var _localeKeys = _handler.GetInstance<LocaleKeys>()!;
-            var lang = _localeKeys.LocaleDictionary.Keys.ToArray()[_loc];
+            var lang = _localeKeys.LocaleDictionary.Keys.ToArray()[_config.PrevLocale];
             var _locale = (Locale)_handler.GetInstance($"{lang}/main.yml")!;
             ImGui.PushFont(Font.RegularFont);
             ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
@@ -96,6 +103,21 @@ namespace DeepDungeonDex.Windows
             {
                 _config.LegacyWindow = _legacy;
             }
+
+            if (ImGui.Checkbox(_locale.GetLocale("LoadAllFont"), ref _loadAll))
+            {
+                _config.LoadAll = _loadAll;
+                _provider.GetRequiredService<Font>().SetUpSpecificFonts(_config);
+                _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts();
+            }
+            if (ImGui.IsItemHovered())
+            {
+                ImGui.BeginTooltip();
+                ImGui.PushTextWrapPos(300f);
+                ImGui.TextWrapped(_locale.GetLocale("LoadAllFontWarning"));
+                ImGui.PopTextWrapPos();
+                ImGui.EndTooltip();
+            };
 
             var locales = _localeKeys.LocaleDictionary.Values.ToArray();
             if (ImGui.Combo("Locale", ref _loc, locales, locales.Length))

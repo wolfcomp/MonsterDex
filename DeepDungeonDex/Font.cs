@@ -5,7 +5,10 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Dalamud.Interface;
+using Dalamud.Logging;
+using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
+using DeepDungeonDex.Windows;
 using ImGuiNET;
 
 namespace DeepDungeonDex
@@ -122,14 +125,17 @@ namespace DeepDungeonDex
 
         public void SetUpFonts()
         {
+            var config = _handler.GetInstance<Configuration>()!;
             var regular = GetResource("DeepDungeonDex.fonts.NotoSans-Regular.ttf");
-            var jp = GetResource("DeepDungeonDex.fonts.NotoSansJP-Regular.otf");
-            var kr = GetResource("DeepDungeonDex.fonts.NotoSansKR-Regular.otf");
-            var tc = GetResource("DeepDungeonDex.fonts.NotoSansTC-Regular.otf");
-            var sc = GetResource("DeepDungeonDex.fonts.NotoSansSC-Regular.otf");
-
             if (_regularFont.Item1.IsAllocated)
                 _regularFont.Item1.Free();
+
+            _regularFont = (GCHandle.Alloc(regular, GCHandleType.Pinned), regular.Length, 1f);
+            SetUpSpecificFonts(config);
+        }
+
+        public void SetUpSpecificFonts(Configuration config)
+        {
             if (_jpFont.Item1.IsAllocated)
                 _jpFont.Item1.Free();
             if (_krFont.Item1.IsAllocated)
@@ -139,21 +145,46 @@ namespace DeepDungeonDex
             if (_scFont.Item1.IsAllocated)
                 _scFont.Item1.Free();
 
-            _regularFont = (GCHandle.Alloc(regular, GCHandleType.Pinned), regular.Length, 1f);
-            _jpFont = (GCHandle.Alloc(jp, GCHandleType.Pinned), jp.Length, 1f);
-            _krFont = (GCHandle.Alloc(kr, GCHandleType.Pinned), kr.Length, 1f);
-            _tcFont = (GCHandle.Alloc(tc, GCHandleType.Pinned), tc.Length, 1f);
-            _scFont = (GCHandle.Alloc(sc, GCHandleType.Pinned), sc.Length, 1f);
+            if (config.Locale == 1 || config.LoadAll)
+            {
+                var jp = GetResource("DeepDungeonDex.fonts.NotoSansJP-Regular.otf");
+                _jpFont = (GCHandle.Alloc(jp, GCHandleType.Pinned), jp.Length, 1f);
+            }
+
+            if (config.Locale == 4 || config.LoadAll)
+            {
+                var sc = GetResource("DeepDungeonDex.fonts.NotoSansSC-Regular.otf");
+                _scFont = (GCHandle.Alloc(sc, GCHandleType.Pinned), sc.Length, 1f);
+            }
+
+            if (config.Locale == 5 || config.LoadAll)
+            {
+                var tc = GetResource("DeepDungeonDex.fonts.NotoSansTC-Regular.otf");
+                _tcFont = (GCHandle.Alloc(tc, GCHandleType.Pinned), tc.Length, 1f);
+            }
+
+            if (config.Locale == 6 || config.LoadAll)
+            {
+                var kr = GetResource("DeepDungeonDex.fonts.NotoSansKR-Regular.otf");
+                _krFont = (GCHandle.Alloc(kr, GCHandleType.Pinned), kr.Length, 1f);
+            }
         }
 
         public void BuildFonts(float scale)
         {
+            var config = _handler.GetInstance<Configuration>()!;
+            if (!config.LoadAll)
+                SetUpSpecificFonts(config);
             RegularFont = ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_regularFont.Item1.AddrOfPinnedObject(), _regularFont.Item2, scale, _fontCfg, _ranges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, scale, _fontCfgMerge, _jpRanges.Data);
+            if (config.Locale == 1 || config.LoadAll)
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, scale, _fontCfgMerge, _jpRanges.Data);
+            if (config.Locale == 4 || config.LoadAll)
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
+            if (config.Locale == 5 || config.LoadAll)
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
+            if (config.Locale == 6 || config.LoadAll)
+                ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, scale, _fontCfgMerge, _symRange.AddrOfPinnedObject());
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_krFont.Item1.AddrOfPinnedObject(), _krFont.Item2, scale, _fontCfgMerge, _krRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_tcFont.Item1.AddrOfPinnedObject(), _tcFont.Item2, scale, _fontCfgMerge, _tcRanges.Data);
-            ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_scFont.Item1.AddrOfPinnedObject(), _scFont.Item2, scale, _fontCfgMerge, _scRanges.Data);
         }
 
         public void Dispose()

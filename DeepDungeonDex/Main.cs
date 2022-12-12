@@ -8,6 +8,7 @@ using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
+using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Models;
@@ -31,9 +32,10 @@ namespace DeepDungeonDex
             _provider.GetRequiredService<Language>();
             _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange += pluginInterface.UiBuilder.RebuildFonts;
             
-            pluginInterface.UiBuilder.BuildFonts += BuildFont;
             var sys = LoadWindows();
             pluginInterface.UiBuilder.Draw += sys.Draw;
+            pluginInterface.UiBuilder.BuildFonts += BuildFont;
+            pluginInterface.UiBuilder.RebuildFonts();
             //_addon = new AddonAgent(framework);
         }
 
