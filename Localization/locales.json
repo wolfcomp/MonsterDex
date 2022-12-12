@@ -1,9 +1,9 @@
 {
     "en": "English",
-    "ja-JP": "日本語",
-    "fr-FR": "Français",
-    "de-DE": "Deutsch",
-    "zh-CN": "汉语",
-    "zh-TW": "漢語",
-    "ko-KR": "한국어"
+    "ja-JP": "Japanese",
+    "fr-FR": "French",
+    "de-DE": "German",
+    "zh-CN": "Chinese (Simplified)",
+    "zh-TW": "Chinese (Traditional)",
+    "ko-KR": "Korean"
 }
