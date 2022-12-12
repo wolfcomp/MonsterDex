@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Dalamud.Logging;
@@ -14,6 +15,7 @@ namespace DeepDungeonDex.Requests
     {
         private readonly CancellationTokenSource token = new();
         private readonly Thread loadThread;
+        private readonly Regex percentRegex = new("(%%)|(%)", RegexOptions.Compiled);
         public static TimeSpan CacheTime = TimeSpan.FromHours(6);
         public StorageHandler Handler;
 
@@ -41,8 +43,10 @@ namespace DeepDungeonDex.Requests
                     var langData = (Locale)Handler.GetInstance($"{name}/{file}")!;
                     foreach (var (id, _) in (data.Value as MobData).MobDictionary)
                     {
-                        if(langData.TranslationDictionary.TryGetValue(id.ToString(), out var description))
-                            (data.Value as MobData).MobDictionary[id].Description = description;
+                        if (langData.TranslationDictionary.TryGetValue(id.ToString(), out var description))
+                        {
+                            (data.Value as MobData).MobDictionary[id].Description = percentRegex.Replace(description, "%%");
+                        }
                     }
                 }
             }
