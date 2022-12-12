@@ -27,3 +27,4 @@ Boss: Boss
 Bind: Bind
 AggroType: Aggro Type
 ShowId: Show debug information
+Legacy: Use Legacy Window for mob data

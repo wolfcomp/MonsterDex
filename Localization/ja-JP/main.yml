@@ -27,3 +27,4 @@ Boss: ボス
 Bind: バインド
 AggroType: 感知タイプ
 ShowId: Show debug information
+Legacy: Use Legacy Window for mob data
