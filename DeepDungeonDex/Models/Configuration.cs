@@ -14,16 +14,18 @@ namespace DeepDungeonDex.Models
     public class Configuration : ISaveable
     {
         public int Version { get; set; }
-        [JsonProperty("IsClickthrough")] public bool Clickthrough { get; set; }
-        [JsonProperty("HideRedVulns")] public bool HideRed { get; set; }
-        [JsonProperty("HideBasedOnJob")] public bool HideJob { get; set; }
-        [JsonProperty("ShowId")] public bool Debug { get; set; }
+        public bool Clickthrough { get; set; }
+        public bool HideRed { get; set; }
+        public bool HideJob { get; set; }
+        public bool Debug { get; set; }
         public int Locale { get; set; } = 0;
         public int FontSize { get; set; } = 16;
         public float Opacity { get; set; } = 1f;
         public bool LegacyWindow { get; set; }
+        public bool LoadAll { get; set; }
 
         [JsonIgnore] public int PrevFontSize;
+        [JsonIgnore] public int PrevLocale;
         [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
         [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);
         [JsonIgnore] public Action<Configuration>? OnChange { get; set; }
@@ -34,6 +36,11 @@ namespace DeepDungeonDex.Models
             if (FontSize != PrevFontSize)
             {
                 PrevFontSize = FontSize;
+                OnSizeChange?.Invoke();
+            }
+            if (PrevLocale != Locale)
+            {
+                PrevLocale = Locale;
                 OnSizeChange?.Invoke();
             }
             OnChange?.Invoke(this);

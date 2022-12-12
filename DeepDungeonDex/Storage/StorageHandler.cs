@@ -58,6 +58,9 @@ namespace DeepDungeonDex.Storage
             {
                 config = new Configuration();
             }
+            config.PrevLocale = config.Locale;
+            if(oldConfig.Exists)
+                oldConfig.Delete();
             _jsonStorage.Add("config.json", config);
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
