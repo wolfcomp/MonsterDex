@@ -315,12 +315,11 @@ namespace DeepDungeonDex.Windows
             drawVulns(_currentMob);
             ImGui.NextColumn();
             ImGui.Columns(1);
-            var note = _currentMob.Description.Replace("\\n", "\n");
-            if (!string.IsNullOrWhiteSpace(note))
+            if (!string.IsNullOrWhiteSpace(_currentMob.Description))
             {
                 ImGui.NewLine();
                 ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
-                ImGui.TextWrapped(note);
+                ImGui.TextWrapped(_currentMob.Description.Replace("\\n", "\n"));
             }
             ImGui.PopFont();
         }
