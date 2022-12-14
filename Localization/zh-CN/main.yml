@@ -28,3 +28,5 @@ Bind: 止步
 AggroType: 仇恨类型
 ShowId: 显示调试信息
 Legacy: Use Legacy Window for mob data
+LoadAllFont: Load all font faces (Can speed up load when changing languages)
+LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.

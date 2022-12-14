@@ -28,3 +28,5 @@ Bind: 속박
 AggroType: 적개심 유형
 ShowId: 디버그 정보 보기
 Legacy: Use Legacy Window for mob data
+LoadAllFont: Load all font faces (Can speed up load when changing languages)
+LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
