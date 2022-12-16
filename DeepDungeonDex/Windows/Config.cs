@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex.Windows
 {
-    public class Config : Window
+    public class Config : Window, IDisposable
     {
         private static Config _instance;
         private readonly StorageHandler _handler;
@@ -48,6 +48,11 @@ namespace DeepDungeonDex.Windows
             _loc = _config.Locale;
             _loadAll = _config.LoadAll;
             command.AddCommand(new[] { "config", "cfg" }, () => _instance.IsOpen = true, "Opens the config window.");
+        }
+
+        public void Dispose()
+        {
+            _handler.GetInstance<Configuration>()!.OnChange -= OnChange;
         }
 
         private void OnChange(Configuration config)
