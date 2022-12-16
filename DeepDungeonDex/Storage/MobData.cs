@@ -89,7 +89,13 @@ namespace DeepDungeonDex.Storage
         Slow = 0x04,
         Sleep = 0x08,
         Bind = 0x10,
-        Undead = 0x20
+        Undead = 0x20,
+        StunUnknown = 0x40 | Stun,
+        HeavyUnknown = 0x80 | Heavy,
+        SlowUnknown = 0x100 | Slow,
+        SleepUnknown = 0x200 | Sleep,
+        BindUnknown = 0x400 | Bind,
+        UndeadUnknown = 0x800 | Undead,
     }
 
     public enum Aggro
