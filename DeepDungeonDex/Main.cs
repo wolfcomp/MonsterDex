@@ -14,6 +14,7 @@ using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Models;
 using DeepDungeonDex.Requests;
 using DeepDungeonDex.Storage;
+using ImGuiScene;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex
@@ -23,7 +24,6 @@ namespace DeepDungeonDex
         public string Name => "DeepDungeonDex";
         
         private IServiceProvider _provider;
-        //private AddonAgent _addon;
 
         public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state)
         {
@@ -36,7 +36,6 @@ namespace DeepDungeonDex
             pluginInterface.UiBuilder.Draw += sys.Draw;
             pluginInterface.UiBuilder.BuildFonts += BuildFont;
             pluginInterface.UiBuilder.RebuildFonts();
-            //_addon = new AddonAgent(framework);
         }
 
         public void BuildFont()
@@ -46,14 +45,13 @@ namespace DeepDungeonDex
 
         public void Dispose()
         {
-            //_addon.Dispose();
+            _provider.GetRequiredService<WindowSystem>().DisposeAndRemoveAllWindows();
             _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange -= _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts;
             _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.BuildFonts -= BuildFont;
             _provider.GetRequiredService<Data>().Dispose();
             _provider.GetRequiredService<Language>().Dispose();
             _provider.GetRequiredService<StorageHandler>().Dispose();
             _provider.GetRequiredService<CommandHandler>().Dispose();
-            _provider.GetRequiredService<WindowSystem>().RemoveAllWindows();
             _provider.GetRequiredService<Font>().Dispose();
         }
 
@@ -85,7 +83,21 @@ namespace DeepDungeonDex
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<Language>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font>(provider))
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
+                .AddSingleton(provider => ActivatorUtilities.CreateInstance<AddonAgent>(provider))
                 .BuildServiceProvider();
+        }
+    }
+
+    public static class Extensions
+    {
+        public static void DisposeAndRemoveAllWindows(this WindowSystem windowSystem)
+        {
+            foreach (var windowSystemWindow in windowSystem.Windows)
+            {
+                if (windowSystemWindow is IDisposable disposable)
+                    disposable.Dispose();
+            }
+            windowSystem.RemoveAllWindows();
         }
     }
 }
