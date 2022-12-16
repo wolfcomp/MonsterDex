@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Numerics;
+using System.Reflection;
 using Dalamud.Data;
 using Dalamud.Game;
 using Dalamud.Game.ClientState;
@@ -8,6 +10,7 @@ using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Interface.Windowing;
 using Dalamud.Logging;
+using Dalamud.Plugin;
 using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
 using ImGuiNET;
@@ -25,6 +28,7 @@ namespace DeepDungeonDex.Windows
         private readonly Framework _framework;
         private readonly ClientState _state;
         private readonly DataManager _gameData;
+        private readonly DalamudPluginInterface _pluginInterface;
         private uint _targetId;
         private bool _debug;
         private bool _disable;
@@ -34,8 +38,9 @@ namespace DeepDungeonDex.Windows
         private TextureWrap? _slow;
         private TextureWrap? _sleep;
         private TextureWrap? _undead;
+        private TextureWrap? _unknown;
 
-        public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, ClientState state, DataManager gameData) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+        public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, ClientState state, DataManager gameData, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
         {
             _condition = condition;
             _target = target;
@@ -43,6 +48,7 @@ namespace DeepDungeonDex.Windows
             _framework = framework;
             _state = state;
             _gameData = gameData;
+            _pluginInterface = pluginInterface;
             _instance = this;
             var _config = _storage.GetInstance<Configuration>()!;
             SizeConstraints = new WindowSizeConstraints
@@ -52,7 +58,7 @@ namespace DeepDungeonDex.Windows
             };
             LoadIcons();
             framework.Update += GetData;
-            command.AddCommand("debug", (args) =>
+            command.AddCommand("debugmob", (args) =>
             {
                 if (!uint.TryParse(args.Split(' ')[0], out var id) || _disable)
                 {
@@ -76,6 +82,7 @@ namespace DeepDungeonDex.Windows
                 MinimumSize = new Vector2(250 * config.WindowSizeScaled, 100)
             };
             BgAlpha = config.Opacity;
+            // ReSharper disable once ConvertIfStatementToSwitchStatement
             if (config.Clickthrough && !Flags.HasFlag(ImGuiWindowFlags.NoInputs))
                 Flags |= ImGuiWindowFlags.NoInputs;
             else if (!config.Clickthrough && Flags.HasFlag(ImGuiWindowFlags.NoInputs))
@@ -85,8 +92,7 @@ namespace DeepDungeonDex.Windows
         public void Dispose()
         {
             _framework.Update -= GetData;
-            var _config = _storage.GetInstance<Configuration>()!;
-            _config.OnChange -= ConfigChanged;
+            var _config = _storage.GetInstance<Configuration>()!.OnChange -= ConfigChanged;
             _heavy.Dispose();
             _bind.Dispose();
             _stun.Dispose();
@@ -157,11 +163,20 @@ namespace DeepDungeonDex.Windows
             _slow = _gameData.GetImGuiTextureHqIcon(15009);
             _sleep = _gameData.GetImGuiTextureHqIcon(15013);
             _undead = _gameData.GetImGuiTextureHqIcon(15461);
+            _unknown = _pluginInterface.UiBuilder.LoadImage(GetResource("DeepDungeonDex.UnknownDebuf.png"));
             if (_heavy == null || _bind == null || _stun == null || _slow == null || _sleep == null || _undead == null)
             {
                 _disable = true;
                 PluginLog.Error("Could not load icons, disabling Main window.");
             }
+        }
+
+        public byte[] GetResource(string path)
+        {
+            using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path)!;
+            using var memory = new MemoryStream();
+            stream.CopyTo(memory);
+            return memory.ToArray();
         }
 
         public void DrawWeakness(Weakness weakness)
@@ -170,21 +185,45 @@ namespace DeepDungeonDex.Windows
             var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
             var uv0 = new Vector2(0, 0);
             var uv1 = new Vector2(1, 1);
+            var cursor = ImGui.GetCursorPos();
             ImGui.Image(_stun.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Stun) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+            if(weakness.HasFlag(Weakness.StunUnknown))
+                DrawUnknown(cursor, size);
             ImGui.SameLine();
             ImGui.Image(_heavy.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+            cursor = ImGui.GetCursorPos();
+            if(weakness.HasFlag(Weakness.HeavyUnknown))
+                DrawUnknown(cursor, size);
             ImGui.SameLine();
             ImGui.Image(_slow.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+            cursor = ImGui.GetCursorPos();
+            if(weakness.HasFlag(Weakness.SlowUnknown))
+                DrawUnknown(cursor, size);
             ImGui.SameLine();
             ImGui.Image(_sleep.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+            cursor = ImGui.GetCursorPos();
+            if(weakness.HasFlag(Weakness.SleepUnknown))
+                DrawUnknown(cursor, size);
             ImGui.SameLine();
             ImGui.Image(_bind.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+            cursor = ImGui.GetCursorPos();
+            if(weakness.HasFlag(Weakness.BindUnknown))
+                DrawUnknown(cursor, size);
             
             if (_currentMob.Id is not (>= 7262 and <= 7610))
             {
                 ImGui.SameLine();
                 ImGui.Image(_undead.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+                cursor = ImGui.GetCursorPos();
+                if(weakness.HasFlag(Weakness.UndeadUnknown))
+                    DrawUnknown(cursor, size);
             }
+        }
+
+        public void DrawUnknown(Vector2 pos, Vector2 size)
+        {
+            ImGui.SetCursorPos(pos);
+            ImGui.Image(_unknown.ImGuiHandle, size);
         }
 
         public void DrawCompact()
