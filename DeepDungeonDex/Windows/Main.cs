@@ -190,31 +190,31 @@ namespace DeepDungeonDex.Windows
             if(weakness.HasFlag(Weakness.StunUnknown))
                 DrawUnknown(cursor, size);
             ImGui.SameLine();
-            ImGui.Image(_heavy.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             cursor = ImGui.GetCursorPos();
+            ImGui.Image(_heavy.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             if(weakness.HasFlag(Weakness.HeavyUnknown))
                 DrawUnknown(cursor, size);
             ImGui.SameLine();
-            ImGui.Image(_slow.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             cursor = ImGui.GetCursorPos();
+            ImGui.Image(_slow.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             if(weakness.HasFlag(Weakness.SlowUnknown))
                 DrawUnknown(cursor, size);
             ImGui.SameLine();
-            ImGui.Image(_sleep.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             cursor = ImGui.GetCursorPos();
+            ImGui.Image(_sleep.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             if(weakness.HasFlag(Weakness.SleepUnknown))
                 DrawUnknown(cursor, size);
             ImGui.SameLine();
-            ImGui.Image(_bind.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             cursor = ImGui.GetCursorPos();
+            ImGui.Image(_bind.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             if(weakness.HasFlag(Weakness.BindUnknown))
                 DrawUnknown(cursor, size);
             
             if (_currentMob.Id is not (>= 7262 and <= 7610))
             {
                 ImGui.SameLine();
-                ImGui.Image(_undead.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
                 cursor = ImGui.GetCursorPos();
+                ImGui.Image(_undead.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
                 if(weakness.HasFlag(Weakness.UndeadUnknown))
                     DrawUnknown(cursor, size);
             }
