@@ -83,6 +83,7 @@
   Aggro: Sight
   Weakness:
     - Slow
+    - SleepUnknown
 7339-heavenly dokyu:
   Threat: Easy
   Aggro: Sight
@@ -289,6 +290,7 @@
   Weakness:
     - Slow
     - Sleep
+    - StunUnknown
 7367-heavenly Matanga:
   Threat: Easy
   Aggro: Sight
@@ -313,6 +315,9 @@
   Weakness:
     - Sleep
     - Stun
+    - SlowUnknown
+    - HeavyUnknown
+    - BindUnknown
 7371-heavenly hitotsume:
   Threat: Caution
   Aggro: Sight
@@ -331,12 +336,16 @@
   Aggro: Sight
   Weakness:
     - Sleep
+    - SlowUnknown
+    - HeavyUnknown
+    - BindUnknown
 7374-heavenly koki:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Slow
     - Sleep
+    - StunUnknown
 7375-heavenly Garula:
   Threat: Dangerous
   Aggro: Sight
@@ -348,11 +357,14 @@
   Weakness:
     - Slow
     - Sleep
+    - BindUnknown
+    - HeavyUnknown
 7377-heavenly rakshasa:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Sleep
+    - SlowUnknown
 # HoH floors 91-99
 7378-heavenly nuppeppo:
   Threat: Vicious
@@ -383,6 +395,8 @@
   Aggro: Proximity
   Weakness:
     - Slow
+    - BindUnknown
+    - HeavyUnknown
 7382-heavenly jaki:
   Threat: Dangerous
   Aggro: Sight
@@ -390,6 +404,7 @@
     - Stun
     - Slow
     - Bind
+    - HeavyUnknown
 7383-heavenly tokage-musha:
   Threat: Caution
   Aggro: Sight
@@ -401,33 +416,48 @@
   Weakness:
     - Stun
     - Slow
+    - BindUnknown
+    - HeavyUnknown
+    - SlowUnknown
 7385-heavenly kuro-kishi:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - BindUnknown
+    - HeavyUnknown
+    - SlowUnknown
 7386-heavenly shabti:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
+    - BindUnknown
+    - HeavyUnknown
+    - SleepUnknown
 7387-heavenly zenki:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
+    - BindUnknown
+    - HeavyUnknown
 7388-heavenly Gozu:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Slow
+    - BindUnknown
+    - HeavyUnknown
 7389-heavenly kubinashi:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Slow
+    - BindUnknown
+    - HeavyUnknown
 7390-heavenly tenma:
   Threat: Dangerous
   Aggro: Sight
@@ -435,15 +465,24 @@
     - Stun
     - Slow
     - Sleep
+    - BindUnknown
+    - HeavyUnknown
 7391-heavenly dodo:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Slow
     - Stun
+    - BindUnknown
+    - HeavyUnknown
+    - SleepUnknown
 7584-heavenly jinba:
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - BindUnknown
+    - HeavyUnknown
+    - SlowUnknown
 # HoH bosses and misc.
 7392-quivering coffer:
   Threat: Caution
