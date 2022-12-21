@@ -27,6 +27,6 @@ Boss: Boss
 Bind: 止步
 AggroType: 仇恨类型
 ShowId: 显示调试信息
-Legacy: Use Legacy Window for mob data
-LoadAllFont: Load all font faces (Can speed up load when changing languages)
-LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
+Legacy: 使用传统窗口显示怪物数据
+LoadAllFont: 加载所有字体 (在改变语言时可以加速加载)
+LoadAllFontWarning: 这将在内存中加载30MB的字体，在较弱的系统上会导致卡顿和较高的内存使用率，请注意。
