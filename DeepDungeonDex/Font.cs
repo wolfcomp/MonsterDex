@@ -5,10 +5,8 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using Dalamud.Interface;
-using Dalamud.Logging;
 using DeepDungeonDex.Models;
 using DeepDungeonDex.Storage;
-using DeepDungeonDex.Windows;
 using ImGuiNET;
 
 namespace DeepDungeonDex

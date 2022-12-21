@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dalamud.Configuration;
-using Dalamud.Plugin;
 using DeepDungeonDex.Storage;
 using ImGuiNET;
 using Newtonsoft.Json;
