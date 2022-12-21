@@ -10,5 +10,8 @@
   ],
   "JobData": [
     "Job.yml"
+  ],
+  "FloorData": [
+    "PotD/Floors.yml"
   ]
 }
