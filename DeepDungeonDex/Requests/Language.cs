@@ -37,16 +37,26 @@ namespace DeepDungeonDex.Requests
             {
                 foreach (var file in files)
                 {
-                    if(file == "Job.yml")
+                    if (file == "Job.yml")
                         continue;
                     var data = (Storage.Storage)Handler.GetInstance(file)!;
-                    var langData = (Locale)Handler.GetInstance($"{name}/{file}")!;
-                    foreach (var (id, _) in (data.Value as MobData).MobDictionary)
+                    if (data.Value is not MobData mobData)
+                        continue;
+
+                    try
                     {
-                        if (langData.TranslationDictionary.TryGetValue(id.ToString(), out var description))
+                        var langData = (Locale)Handler.GetInstance($"{name}/{file}")!;
+                        foreach (var (id, _) in mobData.MobDictionary)
                         {
-                            (data.Value as MobData).MobDictionary[id].Description = percentRegex.Replace(description, "%%");
+                            if (langData.TranslationDictionary.TryGetValue(id.ToString(), out var description))
+                            {
+                                mobData.MobDictionary[id].Description = percentRegex.Replace(description, "%%");
+                            }
                         }
+                    }
+                    catch (Exception e)
+                    {
+                        PluginLog.Error(e, "");
                     }
                 }
             }
@@ -57,7 +67,7 @@ namespace DeepDungeonDex.Requests
             try
             {
                 var list = await Get("locales.json");
-                return new LocaleKeys { LocaleDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(list)!};
+                return new LocaleKeys { LocaleDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(list)! };
             }
             catch (Exception e)
             {
@@ -69,33 +79,35 @@ namespace DeepDungeonDex.Requests
         public async Task RefreshLang(bool continuous = true)
         {
             var fileList = await GetFileList();
-            if (fileList == null) 
+            if (fileList == null)
                 goto RefreshEnd;
 
             Handler.AddJsonStorage("locales.json", fileList);
 
-            if(Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
+            if (Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
                 goto RefreshEnd;
 
             foreach (var (name, folders) in fileList.LocaleDictionary)
             {
                 var main = $"{name}/main.yml";
-                Handler.AddYmlStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(await Get(main))});
+                Handler.AddYmlStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(await Get(main)) });
                 foreach (var (_, files) in list)
                 {
-                    foreach(var file in files)
+                    foreach (var file in files)
                     {
-                        if(file == "Job.yml")
+                        if (file == "Job.yml")
                             continue;
+                        var content = "";
                         try
                         {
                             var path = $"{name}/{file}";
-                            var content = await Get(path);
+                            content = await Get(path);
                             Handler.AddYmlStorage(path, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content) });
                         }
                         catch (Exception e)
                         {
                             PluginLog.Error(e, "");
+                            PluginLog.Debug($"Message: {content}");
                         }
                     }
                 }
@@ -104,7 +116,7 @@ namespace DeepDungeonDex.Requests
             Handler.Save();
             ChangeLanguage();
 
-            RefreshEnd:
+        RefreshEnd:
             if (continuous)
             {
                 await Task.Delay(CacheTime, token.Token);
@@ -112,7 +124,7 @@ namespace DeepDungeonDex.Requests
                     await RefreshLang();
             }
         }
-        
+
         public static async Task<string> Get(string path)
         {
             return await Data.Get("Localization/" + path);
