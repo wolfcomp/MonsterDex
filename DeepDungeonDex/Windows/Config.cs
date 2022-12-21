@@ -25,6 +25,7 @@ namespace DeepDungeonDex.Windows
         private bool _legacy;
         private int _loc;
         private bool _loadAll;
+        private bool _hideFloor;
 
         public Config(StorageHandler handler, CommandHandler command, Language language, IServiceProvider provider) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
         {
@@ -47,6 +48,7 @@ namespace DeepDungeonDex.Windows
             _legacy = _config.LegacyWindow;
             _loc = _config.Locale;
             _loadAll = _config.LoadAll;
+            _hideFloor = _config.HideFloor;
             command.AddCommand(new[] { "config", "cfg" }, () => _instance.IsOpen = true, "Opens the config window.");
         }
 
@@ -99,6 +101,10 @@ namespace DeepDungeonDex.Windows
             if (ImGui.Checkbox(_locale.GetLocale("HideBasedOnJob"), ref _hideJob))
             {
                 _config.HideJob = _hideJob;
+            }
+            if (ImGui.Checkbox(_locale.GetLocale("HideFloorGuide"), ref _hideFloor))
+            {
+                _config.HideFloor = _hideFloor;
             }
             if (ImGui.Checkbox(_locale.GetLocale("ShowId"), ref _debug))
             {

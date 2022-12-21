@@ -11,6 +11,7 @@ namespace DeepDungeonDex.Models
         public bool Clickthrough { get; set; }
         public bool HideRed { get; set; }
         public bool HideJob { get; set; }
+        public bool HideFloor { get; set; }
         public bool Debug { get; set; }
         public int Locale { get; set; } = 0;
         public int FontSize { get; set; } = 16;
