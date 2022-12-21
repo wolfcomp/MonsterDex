@@ -12,6 +12,7 @@
     "Job.yml"
   ],
   "FloorData": [
-    "PotD/Floors.yml"
+    "PotD/Floors.yml",
+    "HoH/Floors.yml"
   ]
 }
