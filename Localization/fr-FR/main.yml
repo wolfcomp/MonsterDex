@@ -17,12 +17,12 @@ NoDataFound: Aucune donnée trouvée pour {0} ({1})
 Name: Nom
 IsClickthrough: Activer le clique à travers
 HideRedVulns: Cacher les vulnérabilités qui ne peuvent être infligées
-HideBasedOnJob: Masquer les vulnérabilités basées sur la classe ou le job actuel
+HideBasedOnJob: Masquer les vulnérabilités selon votre classe/job actuel·le
 Heavy: Pesanteur
 FontSize: Taille de la police
 Easy: Facile
-Dangerous: Dangereux
-Caution: Attention
+Dangerous: Danger
+Caution: Prudence
 Boss: Boss
 Bind: Entrave
 AggroType: Type d'aggro
