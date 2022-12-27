@@ -227,7 +227,7 @@ namespace DeepDungeonDex.Storage
         {
             var list = _jsonStorage.Values.ToList();
             list.AddRange(_ymlStorage.Values);
-            return list.Where(t => t is Storage { Value: T } storage && storage.Name == name).Select(t => t is T ? t : (t as Storage)?.Value).Cast<T>().ToArray();
+            return list.Where(t => t is Storage { Value: T } storage && storage.Name.StartsWith(name)).Select(t => t is T ? t : (t as Storage)?.Value).Cast<T>().ToArray();
         }
 
         public object? GetInstance(string path)

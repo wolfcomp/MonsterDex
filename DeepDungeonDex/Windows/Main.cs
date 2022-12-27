@@ -99,6 +99,7 @@ namespace DeepDungeonDex.Windows
             _slow.Dispose();
             _sleep.Dispose();
             _undead.Dispose();
+            _unknown.Dispose();
         }
 
         public void SetTarget(uint id)

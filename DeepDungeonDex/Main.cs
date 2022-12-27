@@ -8,13 +8,11 @@ using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
-using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Models;
 using DeepDungeonDex.Requests;
 using DeepDungeonDex.Storage;
-using ImGuiScene;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex
