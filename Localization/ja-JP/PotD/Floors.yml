@@ -1,47 +1,50 @@
 PotD1: |
-  Floors 1-6 floors have exactly 2 enemies per room, and no mimics.
-  There is 1 known wall trap.
-  The only enchantments which appear in this set are HP & MP Boost, HP Penalty, Haste, and Blind.
-  Floors 2-4 never have enchantments
-  Floor 5 is guaranteed to have exactly 1 enchantment
-  Floors 6-9 have at most 1 enchantment.
-  If solo, you probably want to full clear this set for exp. Watch out for hornets’ "Final Sting".
-  Pomanders of "Serenity", "Alteration", "Rage", "Purity", "Resolution", and "Raising" do not drop at all on this set.
-  "Affluence" and "Flight" do not drop on floor 9.
+  1-6階には1部屋に必ず2体の敵がおり、ミミックは出現しません。
+  壁際トラップは1個のみあります。
+  この階層で出現する魔法効果は、｢HP&MP増加｣｢最大HP現象｣｢ヘイスト｣｢暗闇｣のみです。
+  2-4階は魔法効果はありません。
+  5階は1個だけ確定で魔法効果があります。
+  6-9階は、最大でも1個の魔法効果があります。
+  ソロの場合は、経験値稼ぎのため全ての敵を倒したほうが良いかもしれません。
+  ただし、｢ホーネット｣のファイナルスピアに注意。
+  この階層では、｢魔法効果解除｣｢敵変化｣｢マンティコア化｣｢解呪｣｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
+  ｢宝箱増加｣と｢敵排除｣は、9階では出現しません。
 PotD11: |
-  Beware of slime enrage and stay away from snakes if you hit a toading trap!
-  There is 1 known wall trap.
-  The Knockback Penalty enchantment does not appear in this set. Floors can have up to 2 enchantments.
-  If solo, you probably want to full clear this set for exp.
-  Pomanders of "Rage", "Resolution", and "Raising" do not drop at all on this set.
-  "Affluence", "Flight", and "Alteration" do not drop on floor 19.
+  トードトラップ中は、｢スライム｣の時間切れ攻撃に注意し、｢コブラ(巡回)｣に近づかないようにしましょう。
+  壁際トラップは1個のみあります。
+  ノックバック無効の魔法効果は、この階層では出現しません。
+  各フロアでは、最大2個の魔法効果が発生する可能性があります。
+  ソロの場合は、すべての敵を倒して経験値を稼ぐのが良いかもしれません。
+  この階層では、｢マンティコア化｣｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、19階では出現しません。
 PotD21: |
-  Watch out for "Minotaur" patrols’ untelegraphed AoE.
-  There is also a known wall trap.
-  Starting from this set, all enchantments can appear and floors can have up to 3 enchantments.
-  Pomanders of "Resolution" and "Raising" do not drop at all on this set.
-  "Affluence", "Flight", and "Alteration" do not drop on floor 29.
+  ｢ミノタウロス(巡回)｣の、非戦闘AoEに注意しましょう。
+  また、既知の壁際トラップも存在します。
+  この階層からすべての魔法効果が出現するようになり、フロアには最大3個の魔法効果が発生します。
+  この階層では、｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、29階では出現しません。
 PotD31: |
-  Nothing too exciting here. There is a known wall trap that you can avoid.
-  Pomanders of "Resolution" and "Raising" do not drop at all on this set.
-  "Affluence", "Flight", and "Alteration" do not drop on floor 39.
+  ここでは、特に注意する点はありません。
+  回避可能な壁際トラップがあります。
+  この階層では、｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、39階では出現しません。
 PotD41: |
-  Mimics on this set and beyond are immune to stun, and found in gold chests.
-  There is a known wall trap that you can avoid.
-  Pomanders of "Alteration", "Resolution", and "Raising" do not drop at all on this set.
-  "Affluence" and "Flight" do not drop on floor 49.
-  Beating this set unlocks the option to start new files at floor 51.
+  この階層以降のミミックにはスタン耐性があり、金箱から出現します。
+  回避可能な、壁際トラップが存在します。
+  この階層では、｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、49階では出現しません。
+  この階層を踏破すると、51階から開始するオプションが解放されます。
 PotD51: |
-  The set everyone spams for exp.
-  Watch out for the wall traps.
-  Pomander of "Resolution" does not drop at all on this set.
-  "Affluence", "Flight", and "Alteration" do not drop on floor 59.
+  育成の為、周回されている階層。
+  壁際トラップに注意
+  この階層では、｢クリブ化｣の魔土器は出現しません。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、59階では出現しません。
 PotD61: |
-  Watch out for the wall traps.
-  Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 69.
+  壁際トラップに注意。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、69階では出現しません。
 PotD71: |
-  Watch out for the wall traps.
-  Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 79.
+  壁際トラップに注意。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、79階では出現しません。
 PotD81: |
   Be aware of bomb and worm enrages.
   There is a known wall trap here that you can avoid too.
