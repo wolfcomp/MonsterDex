@@ -46,59 +46,55 @@ PotD71: |
   壁際トラップに注意。
   ｢宝箱増加｣｢敵排除｣｢敵変化｣は、79階では出現しません。
 PotD81: |
-  Be aware of bomb and worm enrages.
-  There is a known wall trap here that you can avoid too.
-  Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 89.
+  ｢ボム｣や｢ウォーム｣の時間切れ攻撃に注意しましょう。
+  ここには既知の壁際トラップがありますが、回避可能です。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、89階では出現しません。
 PotD91: |
-  There are a lot of proximity mobs here, and a lot of undead.
-  Everything except "Swarms", "Roselets", and "Hippogryphs" can be killed quickly with "Resolution".
-  Just make sure to save one or more for the boss.
-  Watch out for the wall trap.
-  Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 99.
-  These are the last of the storyline floors.
+  ここは近接MOBが多く、アンデット系MOBも多い。
+  ｢スウォーム｣｢ローズレット｣｢ヒッポセルフ｣以外のMOBは、｢クリブ化｣の魔土器ですぐに倒せます。ただし、1個はボス用に温存しておきましょう。
+  壁際トラップに注意。
+  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、99階では出現しません。
+  このフロアは、ストーリー上は最後のフロアです。
 PotD101: |
-  Watch out for hornets’ "Final Sting".
-  There is also a wall trap you can avoid.
+  ｢ホーネット｣のファイナルスピアに注意。
+  回避可能な、壁際トラップもあります。
 PotD111: |
-  Things to watch out for:
-  - Slime enrage
-  - Snakes if you hit a toading trap
-  - Random AoE from "Nankas" when out of combat
-  Lots of wall traps here also.
+  注意すべき事:
+  - ｢スライム｣の即死攻撃
+  -トードトラップを踏んだ状態の｢コブラ(巡回)｣による即死攻撃
+  - 非戦闘時の、｢ナンカ｣によるAoE攻撃
+  ここでもたくさんの壁際トラップがあります。
 PotD121: |
-  Watch out for Minotaurs’ untelegraphed pointblank.
-  Lots of wall traps here also.
+  ｢ミノタウルス(巡回)｣の、111トンズ・スイングに注意。
+  たくさんの壁際トラップがあります。
 PotD131: |
-  Watch out for ahrimans’ untelegraphed petrify.
-  More wall traps too.
+  ｢アーリマン｣のランタゲ石化攻撃に注意。
+  壁際トラップも多い。
 PotD141: |
-  Things start getting a bit more painful here with several hard-hitting enemies.
-  Watch out for random Succubus AoEs cast out of combat.
-  Demons have an enrage also.
-  There are more wall traps too.
+  このあたりから、攻撃が痛い敵が増えているため難易度が上がっている。
+  ｢サキュバス｣のランダムAoEに注意。
+  ｢デーモン｣には時間切れ攻撃がある。
+  壁際トラップも多くなっている。
 PotD151: |
-  Some good news:
-  No more surprise patrols!
-  There are very few walls, so visibility is great the rest of the way.
-  Gold sacks drop now.
-  Use your Intuition poms ASAP, but do be careful walking into rooms to collect
-    luring traps are getting scarier and scarier!
-  Some people prefer not to risk collecting hoards,
-    but it is safer if you’ve used safety or sight or already hit a trap in the room
-  "Imp" and "Soulflayer" are the enemies to watch out for here.
-  Be aware of the wall traps on these floors.
+  良いお知らせがあります。もう巡回MOBは居ません！
+  壁がほとんど無く、視界が開けています。
+  埋もれた財宝G4が手に入るようになりました。｢財宝感知｣をすぐに使ってください。
+  　部屋に入る時は気を付けましょう。トラップがどんどん危険になっています。
+  危険を冒してまで財宝を集めないほうが良いという考えもあります。
+  　しかし｢呪印解除｣や｢サイトロ｣を使用していたり、既にトラップが発動した部屋は安全です。
+  ｢デビレット｣と｢ソウルフレア｣は要注意です。
+  これらの階層では、壁際トラップも注意しましょう。
 PotD161: |
-  There are some hard-hitting dinosaurs here, but it’s mostly easier than the previous set.
-  Be aware of the wall traps on these floors.
+  強敵の恐竜が何種類かいますが、前の階層よりはほとんど簡単です。
+  この階層では、壁際トラップにも注意しましょう。
 PotD171: |
-  Welcome to Behemoth’s Domain!
-  Lots of easy mobs in the first half, but the last few floors can get rough.
-  Try to conserve poms as much as possible,
-    but don’t be afraid to blow a flight if you’re short on time,
-    or a raging if you get a floor with a lot of Anzus and Sasquatches, bad debuffs, etc.
-  Make sure to pop raising immediately, assuming you either have 3 or are not confident in your ability to clear the set.
-  This is the last set where they drop too.
-  Be aware of the wall traps on these floors.
+  ベヒーモスエリアへようこそ！
+  前半は簡単なMOBが多いが、最後の数階は非常に荒れます。
+  できるだけ魔土器を温存するように。
+   -でも時間が無い場合は、｢敵排除｣を使うことを恐れてはいけません。
+   -｢アンズー｣や｢サスカッチ｣の多い階や、魔法効果のデバフが多い階では｢マンティコア化｣も使いましょう。
+  階層のクリアに自信が無い場合や、｢リレイズ｣を3個持っている場合は必ず使用してください。出現するのはこの階層が最後です。
+  これらのフロアでも、壁際トラップには注意しましょう。
 PotD181: |
   Don’t forget to use a pomander of raising at the start of the set. More cannot be found here, unfortunately.
   This is the scariest set in terms of the regular floors.
