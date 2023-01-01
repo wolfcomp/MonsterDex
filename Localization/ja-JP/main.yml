@@ -26,7 +26,7 @@ Caution: 注意
 Boss: ボス
 Bind: バインド
 AggroType: 感知タイプ
-ShowId: Show debug information
-Legacy: Use Legacy Window for mob data
-LoadAllFont: Load all font faces (Can speed up load when changing languages)
-LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
+ShowId: デバッグ情報を表示
+Legacy: Mob情報表示を、旧スタイルに変更する
+LoadAllFont: すべてのフォントを読み込む(言語変更時、読み込み速度が改善します)
+LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\n端末のスペックによっては、遅延やフリーズが発生する可能性があります"
