@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using Dalamud.Data;
 using Dalamud.Game;
 using Dalamud.Game.ClientState;
@@ -14,26 +15,33 @@ using DeepDungeonDex.Models;
 using DeepDungeonDex.Requests;
 using DeepDungeonDex.Storage;
 using Microsoft.Extensions.DependencyInjection;
+using YamlDotNet.Core;
 
 namespace DeepDungeonDex
 {
     public class Main : IDalamudPlugin
     {
         public string Name => "DeepDungeonDex";
-        
+
         private IServiceProvider _provider;
 
         public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state)
         {
             _provider = BuildProvider(this, pluginInterface, framework, manager, target, condition, gameData, state);
             _provider.GetRequiredService<Data>();
-            _provider.GetRequiredService<Language>();
             _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange += pluginInterface.UiBuilder.RebuildFonts;
-            
+            _provider.GetRequiredService<CommandHandler>().AddCommand(new[] { "refresh", "clear" }, () => { RefreshData(); }, "Refreshes the data internally stored");
+
             var sys = LoadWindows();
             pluginInterface.UiBuilder.Draw += sys.Draw;
             pluginInterface.UiBuilder.BuildFonts += BuildFont;
             pluginInterface.UiBuilder.RebuildFonts();
+        }
+
+        public async Task RefreshData()
+        {
+            await _provider.GetRequiredService<Data>().RefreshFileList(false);
+            await _provider.GetRequiredService<Language>().RefreshLang(false);
         }
 
         public void BuildFont()
