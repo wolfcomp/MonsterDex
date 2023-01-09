@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using Dalamud.Game;
 using Dalamud.Game.ClientState;
 using Dalamud.Game.ClientState.Conditions;
@@ -48,6 +49,7 @@ namespace DeepDungeonDex.Hooks
 
         public void Subscribe(object? sender, EventArgs eventArgs)
         {
+            Task.Delay(3000).GetAwaiter().GetResult(); // should find a better way to fix logout login crash of E8 ? ? ? ? 41 8B 5F 18.
             _framework.Update += OnUpdate;
         }
 
