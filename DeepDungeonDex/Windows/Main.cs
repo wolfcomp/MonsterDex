@@ -140,8 +140,13 @@ namespace DeepDungeonDex.Windows
                     IsOpen = false;
                 return;
             }
-            
+
             SetTarget(npc.NameId);
+            if (_currentMob is null)
+            {
+                IsOpen = false;
+                return;
+            }
             if (_currentMob.Name != npc.Name.ToString())
                 _currentMob.Name = npc.Name.ToString();
             IsOpen = true;
