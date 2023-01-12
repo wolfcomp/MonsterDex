@@ -59,6 +59,7 @@ namespace DeepDungeonDex
             _provider.GetRequiredService<StorageHandler>().Dispose();
             _provider.GetRequiredService<CommandHandler>().Dispose();
             _provider.GetRequiredService<Font>().Dispose();
+            _provider.GetRequiredService<AddonAgent>().Dispose();
         }
 
         public WindowSystem LoadWindows()

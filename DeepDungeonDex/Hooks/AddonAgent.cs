@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using Dalamud.Game;
 using Dalamud.Game.ClientState;
 using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Logging;
 using FFXIVClientStructs.FFXIV.Client.Game.Event;
-using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 
 namespace DeepDungeonDex.Hooks
 {
@@ -25,14 +22,16 @@ namespace DeepDungeonDex.Hooks
             _condition = condition;
             _framework = framework;
             _state = state;
-            state.Login += Subscribe;
-            state.Logout += Unsubscribe;
+            _framework.Update += OnUpdate;
         }
 
         private void OnUpdate(Framework framework)
         {
+            if (!IsInstanceContentSafe())
+                return;
             try
             {
+
                 var activeInstance = _structsFramework->GetInstanceContentDeepDungeon();
 
                 if (activeInstance == null)
@@ -47,21 +46,20 @@ namespace DeepDungeonDex.Hooks
             }
         }
 
-        public void Subscribe(object? sender, EventArgs eventArgs)
+        private bool IsInstanceContentSafe()
         {
-            Task.Delay(3000).GetAwaiter().GetResult(); // should find a better way to fix logout login crash of E8 ? ? ? ? 41 8B 5F 18.
-            _framework.Update += OnUpdate;
-        }
+            var internalResultValue = (void*)((long*)_structsFramework + 0x158);
 
-        public void Unsubscribe(object? sender, EventArgs eventArgs)
-        {
-            _framework.Update -= OnUpdate;
+            if (internalResultValue == null)
+                return false;
+
+            var targetAddress = (void*)((long*)internalResultValue + 0x330);
+
+            return targetAddress != null;
         }
 
         public void Dispose()
         {
-            _state.Login -= Subscribe;
-            _state.Logout -= Unsubscribe;
             _framework.Update -= OnUpdate;
             Disabled = true;
         }
