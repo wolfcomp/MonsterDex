@@ -48,12 +48,12 @@ namespace DeepDungeonDex.Hooks
 
         private bool IsInstanceContentSafe()
         {
-            var internalResultValue = (void*)((long*)_structsFramework + 0x158);
+            var internalResultValue = (long*)((byte*)_structsFramework + 0x158);
 
             if (internalResultValue == null)
                 return false;
 
-            var targetAddress = (void*)((long*)internalResultValue + 0x330);
+            var targetAddress = (void*)((byte*)*internalResultValue + 0x330);
 
             return targetAddress != null;
         }
