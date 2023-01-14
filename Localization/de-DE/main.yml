@@ -19,14 +19,14 @@ IsClickthrough: Enable clickthrough
 HideRedVulns: Hide vulnerabilities that can't be inflicted
 HideBasedOnJob: Hide vulnerabilities based on current class/job
 Heavy: Schwer
-FontSize: Font Size
+FontSize: Schriftgröße
 Easy: Einfach
 Dangerous: Gefährlich
 Caution: Vorsicht
 Boss: Boss
 Bind: Fessel
 AggroType: Bedrohungstyp
-ShowId: Show debug information
-Legacy: Use Legacy Window for mob data
-LoadAllFont: Load all font faces (Can speed up load when changing languages)
-LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
+ShowId: Zeige Debug-Informationen
+Legacy: Legacy-Fenster für Mob-Daten verwenden
+LoadAllFont: Alle Schriftarten laden (Beschleunigt das Ändern der Sprachen)
+LoadAllFontWarning: Dies lädt 30 MB Schriftarten in den Speicher und führt zu Verzögerungen und höherer Speicherauslastung auf schwächeren Systemen.
