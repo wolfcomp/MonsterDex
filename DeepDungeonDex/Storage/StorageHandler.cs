@@ -47,24 +47,32 @@ namespace DeepDungeonDex.Storage
 
         private void Load()
         {
+            PluginLog.Verbose("Loading Storage");
             var oldConfig = new FileInfo(_path + ".json");
             var configPath = oldConfig.Exists ? oldConfig.FullName : Path.Combine(_path, "config.json");
+            PluginLog.Verbose("Loading config from {0}", configPath);
             Configuration config;
             try
             {
+                PluginLog.Verbose("Deserializing config");
                 config = DeserializeFile<Configuration>(configPath)!;
             }
             catch
             {
+                PluginLog.Verbose("Failed to deserialize config, creating new config");
                 config = new Configuration();
             }
             config.PrevLocale = config.Locale;
-            if(oldConfig.Exists)
+            if (oldConfig.Exists)
+            {
+                PluginLog.Verbose("Deleting old config");
                 oldConfig.Delete();
+            }
             _jsonStorage.Add("config.json", config);
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
             {
+                PluginLog.Verbose("Loading storage from {0}", storagePath);
                 var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
                 _jsonStorage.Add(storagePath.Name, storage);
                 foreach (var (key, value) in storage)
@@ -73,7 +81,8 @@ namespace DeepDungeonDex.Storage
                     {
                         var (typeString, name) = value;
                         var type = Type.GetType(typeString);
-                        if (!type.IsAssignableFrom(typeof(ISaveable))) continue;
+                        if (!type!.IsAssignableFrom(typeof(ISaveable))) continue;
+                        PluginLog.Verbose("Loading {0}, Type: {1}, Name: {2}", key, typeString, name ?? "");
                         if (key.Contains(".json"))
                         {
                             if (type.IsAssignableFrom(typeof(ILoadable)))
@@ -115,17 +124,22 @@ namespace DeepDungeonDex.Storage
 
         public static object? DeserializeFile(string path, Type type, bool ignoreJsonProperty = true)
         {
+            PluginLog.Verbose("Deserializing {0}", path);
             var result = JsonConvert.DeserializeObject(ReadFile(path), type, new JsonSerializerSettings()
             {
                 ContractResolver = ignoreJsonProperty ? new NameContractResolver() : null
             });
+            PluginLog.Verbose("Deserialized {0}, Type: {1}", path, result?.GetType().ToString() ?? "");
             return result;
         }
 
         public static string ReadFile(string path)
         {
+            PluginLog.Verbose("Reading file {0}", path);
             var reader = new StreamReader(path);
             var result = reader.ReadToEnd();
+            PluginLog.Verbose("Read file {0}", path);
+            PluginLog.Verbose("Content: \n{0}", result);
             reader.Dispose();
             return result;
         }
@@ -149,19 +163,23 @@ namespace DeepDungeonDex.Storage
 
         public void Save()
         {
-            PluginLog.Debug("Saving...");
             var storageDict = new Dictionary<string, Tuple<Type, string?>>();
-
+            
             bool processObj(object obj, string path)
             {
                 var fileInfo = new FileInfo(Path.Join(_path, path));
+                PluginLog.Verbose("Saving: {0}", fileInfo);
                 Directory.CreateDirectory(fileInfo.DirectoryName!);
 
                 if (obj is Storage storage)
                 {
+                    PluginLog.Verbose("Saving inner obj");
                     var k = storage.Value.Save(fileInfo.FullName)?.GetTuple();
                     if (k != null)
+                    {
+                        PluginLog.Verbose($"Wrote inner obj of type {k.Item1.Name}");
                         storageDict.Add(path, k);
+                    }
                 }
                 else
                 {
@@ -170,27 +188,39 @@ namespace DeepDungeonDex.Storage
                         return true;
                     }
 
+                    PluginLog.Verbose("Saving obj");
                     var k = (obj as ISaveable)!.Save(fileInfo.FullName)?.GetTuple();
                     if (k != null)
+                    {
+                        PluginLog.Verbose($"Wrote obj of type {k.Item1.Name}");
                         storageDict.Add(path, k);
+                    }
                 }
 
                 return false;
             }
 
+            PluginLog.Verbose("Saving Json Storage");
             foreach (var (path, obj) in _jsonStorage.ToDictionary(t => t.Key, t => t.Value))
             {
-                if (processObj(obj, path))
-                    SerializeJsonFile(Path.Join(_path, path), obj);
+                if (!processObj(obj, path))
+                    continue;
+
+                SerializeJsonFile(Path.Join(_path, path), obj);
+                PluginLog.Verbose($"Wrote {obj.GetType()}");
             }
 
+            PluginLog.Verbose("Saving Yaml Storage");
             foreach (var (path, obj) in _ymlStorage.ToDictionary(t => t.Key, t => t.Value))
             {
-                if (processObj(obj, path))
-                    SerializeYamlFile(Path.Join(_path, path), obj);
+                if (!processObj(obj, path))
+                    continue;
+
+                SerializeYamlFile(Path.Join(_path, path), obj);
+                PluginLog.Verbose($"Wrote {obj.GetType()}");
             }
 
-            var storagePath = Path.Combine(_path, "storage.json");
+            PluginLog.Verbose("Filling missing storage data");
             _jsonStorage.AsEnumerable()
                 .Concat(_ymlStorage)
                 .ToList()
@@ -201,12 +231,14 @@ namespace DeepDungeonDex.Storage
                     if (!storageDict.ContainsKey(path))
                         storageDict.Add(path, new Tuple<Type, string?>(type, null));
                 });
+            var storagePath = Path.Combine(_path, "storage.json");
+            PluginLog.Verbose($"Writing {storagePath}");
             SerializeJsonFile(storagePath, storageDict.Where(t => t.Key is not ("storage.json" or "config.json")).ToDictionary(t => t.Key, t =>
             {
                 var (type, name) = t.Value;
                 return new Tuple<string, string?>(type.FullName!, name);
             }));
-            PluginLog.Debug("Saved");
+            PluginLog.Verbose("Saved");
         }
 
         public T? GetInstance<T>() where T : class, ISaveable
