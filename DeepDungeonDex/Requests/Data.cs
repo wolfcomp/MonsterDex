@@ -33,10 +33,11 @@ namespace DeepDungeonDex.Requests
         {
             try
             {
+                PluginLog.Verbose("Getting file list");
                 var content = await Get("index.json");
                 return JsonConvert.DeserializeObject<Dictionary<string, string[]>>(content);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 PluginLog.Error(e, "");
                 return null;
@@ -51,33 +52,40 @@ namespace DeepDungeonDex.Requests
 
             Handler.AddJsonStorage("index.json", list);
 
+            PluginLog.Verbose("Loading Types");
             var types = Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(ILoadableString))).ToArray();
 
             foreach (var (className, files) in list)
             {
                 var type = types.FirstOrDefault(t => t.Name == className);
-                if(type == null)
+                if (type == null)
                     continue;
+                PluginLog.Verbose($"Loading Files: {files.Length} of Type: {className}");
                 foreach (var file in files)
                 {
                     try
                     {
+                        PluginLog.Verbose($"Loading File: {file}");
                         var content = await Get(file);
+                        PluginLog.Verbose("Creating instance");
                         var instance = (ILoadableString)Activator.CreateInstance(type)!;
+                        PluginLog.Verbose("Loading content");
                         Handler.AddYmlStorage(file, instance.Load(content, false));
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         PluginLog.Error(e, "");
                     }
                 }
             }
 
+            PluginLog.Verbose("Loading complete saving storage");
             Handler.Save();
 
-            RefreshEnd:
+        RefreshEnd:
             if (continuous)
             {
+                PluginLog.Verbose($"Refreshing file list in {CacheTime:g}");
                 await Task.Delay(CacheTime, token.Token);
                 if (!token.IsCancellationRequested)
                     await RefreshFileList();
@@ -86,11 +94,12 @@ namespace DeepDungeonDex.Requests
 
         public static async Task<string> Get(string url)
         {
-            PluginLog.Debug($"Requesting {BaseUrl}/{url}");
+            PluginLog.Verbose($"Requesting {BaseUrl}/{url}");
             var response = await Client.GetAsync($"{BaseUrl}/{url}");
-            PluginLog.Debug($"Response: {response.StatusCode}");
+            PluginLog.Verbose($"Response: {response.StatusCode}");
             if (response.IsSuccessStatusCode)
             {
+                PluginLog.Verbose("Reading string");
                 return await response.Content.ReadAsStringAsync();
             }
             throw new HttpRequestException($"Request: {url}\nFailed with status code {response.StatusCode}");
