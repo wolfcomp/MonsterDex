@@ -16,7 +16,7 @@ Notes: Notizen
 NoDataFound: Keine Daten gefunden für {0} ({1})
 Name: Name
 IsClickthrough: Enable clickthrough
-HideRedVulns: Hide vulnerabilities that can't be inflicted
+HideRedVulns: Verwundbarkeiten die nicht zugefügt werden können verbergen
 HideBasedOnJob: Verwundbarkeiten basierend auf aktueller Klasse/Job ausblenden
 Heavy: Schwer
 FontSize: Schriftgröße
