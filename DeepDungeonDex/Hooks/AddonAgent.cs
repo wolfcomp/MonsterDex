@@ -9,29 +9,35 @@ namespace DeepDungeonDex.Hooks
 {
     public unsafe class AddonAgent : IDisposable
     {
-        private readonly EventFramework* _structsFramework;
         private readonly Framework _framework;
         private readonly Condition _condition;
         private readonly ClientState _state;
+        private EventFramework* _structsFramework;
         public byte Floor { get; private set; }
         public bool Disabled { get; private set; }
 
-        public AddonAgent(Framework framework, Condition condition, ClientState state)
+        public AddonAgent(Framework framework, Condition condition, ClientState state, CommandHandler handler)
         {
-            _structsFramework = EventFramework.Instance();
             _condition = condition;
             _framework = framework;
             _state = state;
             _framework.Update += OnUpdate;
+            handler.AddCommand(new[] { "enablefloor", "efloor", "enablef" }, () =>
+            {
+                if(!Disabled)
+                    return;
+                Disabled = false;
+                _framework.Update += OnUpdate;
+            });
         }
 
         private void OnUpdate(Framework framework)
         {
+            _structsFramework = EventFramework.Instance();
             if (!IsInstanceContentSafe())
                 return;
             try
             {
-
                 var activeInstance = _structsFramework->GetInstanceContentDeepDungeon();
 
                 if (activeInstance == null)
@@ -48,14 +54,14 @@ namespace DeepDungeonDex.Hooks
 
         private bool IsInstanceContentSafe()
         {
-            var internalResultValue = (void**)((byte*)_structsFramework + 0x158);
+            var contentDirector = _structsFramework->GetContentDirector();
 
-            if (*internalResultValue == null)
+            if ((IntPtr)contentDirector == IntPtr.Zero)
                 return false;
 
-            var targetAddress = (void*)((byte*)*internalResultValue + 0x330);
+            var eventHandlerInfo = contentDirector->Director.EventHandlerInfo;
 
-            return targetAddress != null;
+            return (IntPtr)eventHandlerInfo != IntPtr.Zero;
         }
 
         public void Dispose()

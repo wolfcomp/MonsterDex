@@ -15,7 +15,6 @@ using DeepDungeonDex.Models;
 using DeepDungeonDex.Requests;
 using DeepDungeonDex.Storage;
 using Microsoft.Extensions.DependencyInjection;
-using YamlDotNet.Core;
 
 namespace DeepDungeonDex
 {
