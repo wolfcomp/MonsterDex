@@ -1,45 +1,45 @@
-7326: Eventual ENRAGE
-7324: Very wide line AoE
+7326: Eventueller Enrage
+7324: Sehr breite Linie AoE
 7323: |
-  Green: Casts AoEs unaggroed
-7321: Large cone AoE
+  Grün: Zaubert AoEs ohne Aggro
+7321: Großer Kegel AoE
 7320: |
-  Purple: double auto
-7319: Casts AoEs unaggroed
+  Violett: Doppelter Auto Angriff
+7319: Zaubert AoEs ohne Aggro
 7318: |
-  Large line AoE
-  Eventual ENRAGE
-7314: Casts AoEs unaggroed
+  Große Linie AoE
+  Eventueller Enrage
+7314: Zaubert AoEs ohne Aggro
 7313: Gaze inflicts Otter
 7312: Frontal cleave without cast or telegraph
 7311: |
-  Line AoE inflicts Bleed
-  Low health ENRAGE
-7310: Extremely large AoE
+  Linien AoE verursacht Blutung
+  Enrage bei niedriger Gesundheit
+7310: Extrem große AoE
 7308: Weak stack attack
 7306: Cleaves every other auto
 7305: |
-  Line AoE inflicts Bleed
-  Low health ENRAGE
-7304: Low health ENRAGE
+  Linien AoE verursacht Blutung
+  Enrage bei niedriger Gesundheit
+7304: Enrage bei niedriger Gesundheit
 7303: |
-  Double auto inflicts Bleed
-  Low health ENRAGE
-7302: Casts AoEs unaggroed
-7300: Circle AoE inflicts Suppuration
-7299: Large AoE inflicts Paralysis
-7298: Cross AoE inflicts Suppuration
-7297: Line AoE inflicts Bleed
+  Doppelter Auto angriff verursacht Blutung
+  Enrage bei niedriger Gesundheit
+7302: Zaubert AoEs ohne Aggro
+7300: Kreis-AoE verursacht Eiterung
+7299: Große AoE verursacht Lähmung
+7298: Kreuz AoE verursacht Eiterung
+7297: Linien AoE verursacht Blutung
 7296: Gaze
 7295: Draw-in followed by cleave
 7292: Untelegraphed conal AoE with knockback, buster
-7291: Buffs own damage
+7291: Erhöht eigenen Schaden
 7290: |
-  Casts AoEs with knockback unaggroed
-  Line AoE inflicts Bleed
-7289: Cures self and allies
+  Zaubert AoEs mit Knockback ohne Aggro
+  Linien AoE verursacht Blutung
+7289: Heilt sich selbst und Verbündete
 7288: Gaze inflicts Blind
-7286: Room wide ENRAGE
+7286: Raumweite Enrage
 7285: Buster and triple auto
 7281: Gaze inflicts Seduce, followed by large AoE that inflicts Minimum
 7279: Lite buster "Scissor Run" followed by AoE
@@ -50,9 +50,9 @@
   Circle AoE inflicts knockback
 7270: AoE verursacht Rückstoß
 7268: Gaze
-7267: AoE bewirken Blutung
+7267: AoE verursacht Blutung
 7266: Untelegraphed Sleep followed by AoE
 7265: Triple auto inflicts Bleed
-7264: AoE fügen Paralyse zu
+7264: AoE fügt Paralyse zu
 7263: Auto applies Physical Vuln Up every 10s
 7262: Auto inflicts Heavy debuff
