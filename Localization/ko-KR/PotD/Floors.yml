@@ -1,20 +1,22 @@
 PotD1: |
-  Floors 1-6 floors have exactly 2 enemies per room, and no mimics.
-  There is 1 known wall trap.
-  The only enchantments which appear in this set are HP & MP Boost, HP Penalty, Haste, and Blind.
-  Floors 2-4 never have enchantments
-  Floor 5 is guaranteed to have exactly 1 enchantment
-  Floors 6-9 have at most 1 enchantment.
-  If solo, you probably want to full clear this set for exp. Watch out for hornets’ "Final Sting".
-  Pomanders of "Serenity", "Alteration", "Rage", "Purity", "Resolution", and "Raising" do not drop at all on this set.
-  "Affluence" and "Flight" do not drop on floor 9.
+  1~6층에는 방 한개에 반드시 2마리의 적이 있으며, 미믹은 출현하지 않습니다.
+  벽 쪽의 함정은 1개만 있습니다.
+  이 계층에서 출현하는 마법 효과는 「HP&MP 증가」 「최대 HP 상승」 「헤이스트」 「실명」뿐입니다.
+  2~4층은 마법효과가 없습니다.
+  5층은 1개의 마법효과가 있습니다.
+  6`9층은 최대 1개의 마법효과가 있습니다.
+  솔로의 경우는 경험치를 위해 모든 적을 쓰러뜨리는 것이 좋을지도 모릅니다.
+  단, 벌 몬스터의 「ファイナルスピア/Final Sting」에 주의.
+  이 계층에서는 「마법효과 해제」, 「적 변화」, 「만티코어화」, 「저주해제」, 「쿠리부화」, 「리레이즈」의 마토기는 출현하지 않습니다.
+  보물상자 증가와 적 배제는 9층에서는 나타나지 않습니다.
 PotD11: |
-  Beware of slime enrage and stay away from snakes if you hit a toading trap!
-  There is 1 known wall trap.
-  The Knockback Penalty enchantment does not appear in this set. Floors can have up to 2 enchantments.
-  If solo, you probably want to full clear this set for exp.
-  Pomanders of "Rage", "Resolution", and "Raising" do not drop at all on this set.
-  "Affluence", "Flight", and "Alteration" do not drop on floor 19.
+  개구리 함정을 밟았을 때 「슬라임」의 전멸기 공격에 주의하고 로머 「코브라」에게 가까이 가지마세요.
+  벽 쪽의 함정은 1개만 있습니다.
+  넉백 무효의 마법 효과는 이 계층에서는 출현하지 않습니다.
+  각 층에서는 최대 2개의 마법 효과가 발생할 수 있습니다.
+  솔로의 경우는 모든 적을 쓰러뜨려 경험치를 얻는 것이 좋을지도 모릅니다.
+  이 계층에서는 「만티코어화」, 「쿠리부화」, 「리레이즈」의 마토기가 출현하지 않습니다.
+  보물상자 증가, 적 배제, 적 변화는 19층에서 나타나지 않습니다.
 PotD21: |
   Watch out for "Minotaur" patrols’ untelegraphed AoE.
   There is also a known wall trap.
@@ -37,11 +39,11 @@ PotD51: |
   Pomander of "Resolution" does not drop at all on this set.
   "Affluence", "Flight", and "Alteration" do not drop on floor 59.
 PotD61: |
-  Watch out for the wall traps.
-  Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 69.
+  벽 쪽의 함정을 주의하세요.
+  보물상자 증가, 적 배제, 적 변화는 69층에서 나타나지 않습니다.
 PotD71: |
-  Watch out for the wall traps.
-  Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 79.
+  벽 쪽의 함정을 주의하세요.
+  보물상자 증가, 적 배제, 적 변화는 79층에서 나타나지 않습니다.
 PotD81: |
   Be aware of bomb and worm enrages.
   There is a known wall trap here that you can avoid too.
@@ -54,8 +56,8 @@ PotD91: |
   Pomanders of "Affluence", "Flight", and "Alteration" do not drop on floor 99.
   These are the last of the storyline floors.
 PotD101: |
-  Watch out for hornets’ "Final Sting".
-  There is also a wall trap you can avoid.
+  벌 몬스터의 「ァイナルスピア/Final Sting」 스킬을 주의하세요.
+  회피 가능한 벽 쪽의 함정도 있습니다.
 PotD111: |
   Things to watch out for:
   - Slime enrage
@@ -63,11 +65,11 @@ PotD111: |
   - Random AoE from "Nankas" when out of combat
   Lots of wall traps here also.
 PotD121: |
-  Watch out for Minotaurs’ untelegraphed pointblank.
-  Lots of wall traps here also.
+  로머 「미노타우루스」의 111톤 휘두르기 스킬을 주의하세요.
+  벽 쪽의 함정도 있습니다.
 PotD131: |
-  Watch out for ahrimans’ untelegraphed petrify.
-  More wall traps too.
+  「아리만」의 랜덤 대상 타겟 석화 공격에 주의하세요.
+  벽 쪽의 함정도 있습니다
 PotD141: |
   Things start getting a bit more painful here with several hard-hitting enemies.
   Watch out for random Succubus AoEs cast out of combat.
