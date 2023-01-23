@@ -1,32 +1,32 @@
 Vulns: Vulns
-Vicious: Vicious
+Vicious: Bösartig
 Undefined: Undefiniert
 Undead: Untot
 Threat: Bedrohung
 Thanks: Vielen Dank an den Deep Dungeons Discord Server für die große Anzahl an Community Ressourcen. Danke an Alle die ihre Zeit aufbrachten und fehlerhafte oder fehlende Daten zu melden. Besondere Erwähung an Maygi für das verfassen des besten Deep Dungeon Guides der verfügbar ist!
 Stun: Betäubung
-Sound: Sound
+Sound: Geräusche
 Slow: Langsam
 Sleep: Schlaf
 Sight: Sicht
 Save: Speichern
-Proximity: Proximity
+Proximity: Annäherung
 Opacity: Sichtbarkeit
 Notes: Notizen
 NoDataFound: Keine Daten gefunden für {0} ({1})
 Name: Name
 IsClickthrough: Enable clickthrough
-HideRedVulns: Hide vulnerabilities that can't be inflicted
-HideBasedOnJob: Hide vulnerabilities based on current class/job
+HideRedVulns: Verwundbarkeiten die nicht zugefügt werden können verbergen
+HideBasedOnJob: Verwundbarkeiten basierend auf aktueller Klasse/Job ausblenden
 Heavy: Schwer
-FontSize: Font Size
+FontSize: Schriftgröße
 Easy: Einfach
 Dangerous: Gefährlich
 Caution: Vorsicht
 Boss: Boss
 Bind: Fessel
 AggroType: Bedrohungstyp
-ShowId: Show debug information
-Legacy: Use Legacy Window for mob data
-LoadAllFont: Load all font faces (Can speed up load when changing languages)
-LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
+ShowId: Zeige Debug-Informationen
+Legacy: Legacy-Fenster für Mob-Daten verwenden
+LoadAllFont: Alle Schriftarten laden (Beschleunigt das Ändern der Sprachen)
+LoadAllFontWarning: Dies lädt 30 MB Schriftarten in den Speicher und führt zu Verzögerungen und höherer Speicherauslastung auf schwächeren Systemen.

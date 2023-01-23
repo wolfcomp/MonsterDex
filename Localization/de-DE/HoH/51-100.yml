@@ -96,7 +96,7 @@
 7372: Buffs own damage and double autos
 7371: Alternates line and circle AoEs untelegraphed
 7370: Double autos, very strong rear cleave if behind
-7369: Casts AoEs unaggroed
+7369: Zaubert AoEs ohne Aggro
 7368: Untelegraphed conal AoE on random player, gaze attack
 7367: Charges on aggro
 7366: |
@@ -111,7 +111,7 @@
 7361: Draw-in attack, extremely large AoE, eventual ENRAGE
 7360: Very large AoEs
 7359: Haste, eventual ENRAGE
-7358: Buffs own damage
+7358: Erhöht eigenen Schaden
 7357: |
   Casts room wide AoEs unaggroed
   Large conal draw-in attack followed by heavy damage
@@ -137,6 +137,6 @@
 7332: Exclusively fatal line AoEs
 7331: Cone AoE inflicts Bleed
 7330: Eventual instant ENRAGE
-7329: Buffs own damage
+7329: Erhöht eigenen Schaden
 7328: Buster inflicts Bleed
 7327: Autos inflict stacking vuln up
