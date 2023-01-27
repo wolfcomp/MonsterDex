@@ -14,7 +14,7 @@ Proximity: 근접
 Opacity: 불투명도
 Notes: 참고 사항
 NoDataFound: '{0}({1}) 에 대한 데이터를 찾을 수 없습니다.'
-Name: 이름
+Name: "Name\nWarning: This window is now deprecated and will be removed in a future update. Please get used to the new look before 6.35."
 IsClickthrough: 마우스 클릭통과
 HideRedVulns: 통하지 않는 약점 숨기기
 HideBasedOnJob: 현재 클래스/직업을 기준으로 약점 숨기기
