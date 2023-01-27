@@ -14,7 +14,7 @@ Proximity: Proximity
 Opacity: Opacity
 Notes: Notes
 NoDataFound: No data found for {0} ({1})
-Name: Name
+Name: "Name\nWarning: This window is now deprecated and will be removed in a future update. Please get used to the new look before 6.35."
 IsClickthrough: Enable clickthrough
 HideRedVulns: Hide vulnerabilities that can't be inflicted
 HideBasedOnJob: Hide vulnerabilities based on current class/job
