@@ -14,7 +14,7 @@ Proximity: 接近
 Opacity: 不透明度
 Notes: 備考
 NoDataFound: '{0} のデータが見つかりません({1})'
-Name: 名前
+Name: "Name\nWarning: This window is now deprecated and will be removed in a future update. Please get used to the new look before 6.35."
 IsClickthrough: クリックスルーを有効にする
 HideRedVulns: 与えられないデバフを非表示にする
 HideBasedOnJob: 現在のクラス/ジョブに基づいて与えられないデバフを非表示
