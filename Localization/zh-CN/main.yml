@@ -14,7 +14,7 @@ Proximity: 范围感知
 Opacity: 不透明度
 Notes: 说明
 NoDataFound: 未找到 {0} ({1} ) 的数据
-Name: 名称
+Name: "Name\nWarning: This window is now deprecated and will be removed in a future update. Please get used to the new look before 6.35."
 IsClickthrough: 启用鼠标穿透
 HideRedVulns: 隐藏无效弱点
 HideBasedOnJob: 隐藏当前职业无法利用的弱点
