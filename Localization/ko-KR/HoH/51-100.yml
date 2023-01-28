@@ -66,9 +66,9 @@
 7390: 빠르게 연속으로 2회 공격하고 전방 직선 범위 공격 「クェーサー/Quasar」
 7389: 강한 데미지의 부채꼴 범위 공격, HP 흡수 공격, 자신에게 피해량 상승 버프 부여를 반복하고 버프 스택이 3이 되면 즉사 공격의 「ブラックネビュラ/Black Nebula」를 시전함
 7388: |
-  차지 공격
-  「スワイプ / Swipe」 전조 없는 직선 범위 공격
-  「スイング / Swing」 전조 없는 큰 원형 범위 공격
+  Charges
+  Untelegraphed cone AoE "Swipe"
+  Untelegraphed wide circle AoE "Swing"
 7387: 무작위 대상에게 큰 데미지를 줌
 7386: 매우 빠른 즉사급 범위 공격 「葬送撃/Death's Door」을 시전함
 7385: 부채꼴 범위 공격을 함
