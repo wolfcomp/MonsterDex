@@ -181,6 +181,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
+    - Stun
     - Sleep
     - Slow
 # HoH floors 71-79
@@ -290,7 +291,6 @@
   Weakness:
     - Slow
     - Sleep
-    - StunUnknown
 7367-heavenly Matanga:
   Threat: Easy
   Aggro: Sight
@@ -315,9 +315,7 @@
   Weakness:
     - Sleep
     - Stun
-    - SlowUnknown
-    - HeavyUnknown
-    - BindUnknown
+    - Slow
 7371-heavenly hitotsume:
   Threat: Caution
   Aggro: Sight
@@ -337,15 +335,12 @@
   Weakness:
     - Sleep
     - SlowUnknown
-    - HeavyUnknown
-    - BindUnknown
 7374-heavenly koki:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Slow
     - Sleep
-    - StunUnknown
 7375-heavenly Garula:
   Threat: Dangerous
   Aggro: Sight
@@ -357,14 +352,13 @@
   Weakness:
     - Slow
     - Sleep
-    - BindUnknown
     - HeavyUnknown
 7377-heavenly rakshasa:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Sleep
-    - SlowUnknown
+    - Slow
 # HoH floors 91-99
 7378-heavenly nuppeppo:
   Threat: Vicious
@@ -404,7 +398,7 @@
     - Stun
     - Slow
     - Bind
-    - HeavyUnknown
+    - Heavy
 7383-heavenly tokage-musha:
   Threat: Caution
   Aggro: Sight
@@ -449,8 +443,6 @@
   Aggro: Sight
   Weakness:
     - Slow
-    - BindUnknown
-    - HeavyUnknown
 7389-heavenly kubinashi:
   Threat: Dangerous
   Aggro: Sight
