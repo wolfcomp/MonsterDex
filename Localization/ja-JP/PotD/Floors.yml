@@ -1,14 +1,13 @@
 PotD1: |
-  1-6階には1部屋に必ず2体の敵がおり、ミミックは出現しません。
-  壁際トラップは1個のみあります。
-  この階層で出現する魔法効果は、｢HP&MP増加｣｢最大HP現象｣｢ヘイスト｣｢暗闇｣のみです。
-  2-4階は魔法効果はありません。
-  5階は1個だけ確定で魔法効果があります。
-  6-9階は、最大でも1個の魔法効果があります。
-  ソロの場合は、経験値稼ぎのため全ての敵を倒したほうが良いかもしれません。
-  ただし、｢ホーネット｣のファイナルスピアに注意。
-  この階層では、｢魔法効果解除｣｢敵変化｣｢マンティコア化｣｢解呪｣｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
-  ｢宝箱増加｣と｢敵排除｣は、9階では出現しません。
+  Floors 1-6 floors have exactly 2 enemies per room, and no mimics.
+  There is 1 known wall trap.
+  The only enchantments which appear in this set are HP & MP Boost, HP Penalty, Haste, and Blind.
+  Floors 2-4 never have enchantments
+  Floor 5 is guaranteed to have exactly 1 enchantment
+  Floors 6-9 have at most 1 enchantment.
+  If solo, you probably want to full clear this set for exp. Watch out for hornets' "Final Sting".
+  Pomanders of "Serenity", "Alteration", "Rage", "Purity", "Resolution", and "Raising" do not drop at all on this set.
+  "Affluence" and "Flight" do not drop on floor 9.
 PotD11: |
   トードトラップ中は、｢スライム｣の時間切れ攻撃に注意し、｢コブラ(巡回)｣に近づかないようにしましょう。
   壁際トラップは1個のみあります。
@@ -18,11 +17,11 @@ PotD11: |
   この階層では、｢マンティコア化｣｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
   ｢宝箱増加｣｢敵排除｣｢敵変化｣は、19階では出現しません。
 PotD21: |
-  ｢ミノタウロス(巡回)｣の、非戦闘AoEに注意しましょう。
-  また、既知の壁際トラップも存在します。
-  この階層からすべての魔法効果が出現するようになり、フロアには最大3個の魔法効果が発生します。
-  この階層では、｢クリブ化｣｢リレイズ｣の魔土器は出現しません。
-  ｢宝箱増加｣｢敵排除｣｢敵変化｣は、29階では出現しません。
+  Watch out for "Minotaur" patrols' untelegraphed AoE.
+  There is also a known wall trap.
+  Starting from this set, all enchantments can appear and floors can have up to 3 enchantments.
+  Pomanders of "Resolution" and "Raising" do not drop at all on this set.
+  "Affluence", "Flight", and "Alteration" do not drop on floor 29.
 PotD31: |
   ここでは、特に注意する点はありません。
   回避可能な壁際トラップがあります。
@@ -56,8 +55,8 @@ PotD91: |
   ｢宝箱増加｣｢敵排除｣｢敵変化｣は、99階では出現しません。
   このフロアは、ストーリー上は最後のフロアです。
 PotD101: |
-  ｢ホーネット｣のファイナルスピアに注意。
-  回避可能な、壁際トラップもあります。
+  Watch out for hornets' "Final Sting".
+  There is also a wall trap you can avoid.
 PotD111: |
   注意すべき事:
   - ｢スライム｣の即死攻撃
@@ -65,64 +64,71 @@ PotD111: |
   - 非戦闘時の、｢ナンカ｣によるAoE攻撃
   ここでもたくさんの壁際トラップがあります。
 PotD121: |
-  ｢ミノタウルス(巡回)｣の、111トンズ・スイングに注意。
-  たくさんの壁際トラップがあります。
+  Watch out for Minotaurs' untelegraphed pointblank.
+  Lots of wall traps here also.
 PotD131: |
-  ｢アーリマン｣のランタゲ石化攻撃に注意。
-  壁際トラップも多い。
+  Watch out for ahrimans' untelegraphed petrify.
+  More wall traps too.
 PotD141: |
   このあたりから、攻撃が痛い敵が増えているため難易度が上がっている。
   ｢サキュバス｣のランダムAoEに注意。
   ｢デーモン｣には時間切れ攻撃がある。
   壁際トラップも多くなっている。
 PotD151: |
-  良いお知らせがあります。もう巡回MOBは居ません！
-  壁がほとんど無く、視界が開けています。
-  埋もれた財宝G4が手に入るようになりました。｢財宝感知｣をすぐに使ってください。
-  　部屋に入る時は気を付けましょう。トラップがどんどん危険になっています。
-  危険を冒してまで財宝を集めないほうが良いという考えもあります。
-  　しかし｢呪印解除｣や｢サイトロ｣を使用していたり、既にトラップが発動した部屋は安全です。
-  ｢デビレット｣と｢ソウルフレア｣は要注意です。
-  これらの階層では、壁際トラップも注意しましょう。
+  Some good news:
+  No more surprise patrols!
+  There are very few walls, so visibility is great the rest of the way.
+  Gold sacks drop now.
+  Use your Intuition poms ASAP, but do be careful walking into rooms to collect
+    luring traps are getting scarier and scarier!
+  Some people prefer not to risk collecting hoards,
+    but it is safer if you've used safety or sight or already hit a trap in the room
+  "Imp" and "Soulflayer" are the enemies to watch out for here.
+  Be aware of the wall traps on these floors.
 PotD161: |
-  強敵の恐竜が何種類かいますが、前の階層よりはほとんど簡単です。
-  この階層では、壁際トラップにも注意しましょう。
+  There are some hard-hitting dinosaurs here, but it's mostly easier than the previous set.
+  Be aware of the wall traps on these floors.
 PotD171: |
-  ベヒーモスエリアへようこそ！
-  前半は簡単なMOBが多いが、最後の数階は非常に荒れます。
-  できるだけ魔土器を温存するように。
-   -でも時間が無い場合は、｢敵排除｣を使うことを恐れてはいけません。
-   -｢アンズー｣や｢サスカッチ｣の多い階や、魔法効果のデバフが多い階では｢マンティコア化｣も使いましょう。
-  階層のクリアに自信が無い場合や、｢リレイズ｣を3個持っている場合は必ず使用してください。出現するのはこの階層が最後です。
-  これらのフロアでも、壁際トラップには注意しましょう。
+  Welcome to Behemoth's Domain!
+  Lots of easy mobs in the first half, but the last few floors can get rough.
+  Try to conserve poms as much as possible,
+    but don't be afraid to blow a flight if you're short on time,
+    or a raging if you get a floor with a lot of Anzus and Sasquatches, bad debuffs, etc.
+  Make sure to pop raising immediately, assuming you either have 3 or are not confident in your ability to clear the set.
+  This is the last set where they drop too.
+  Be aware of the wall traps on these floors.
 PotD181: |
-  階層の開始時に、｢リレイズ｣の魔土器を使用するのをお忘れなく。それ以上は何もできません。
-  ここは、死者の宮殿の中で一番危険な階層です。
-  187-189階には非常に危険なMOBがおり、ソロでは戦いたくないだろう。
-  186階も厳しいですが、出現するMOBがランダムです。
-  通常は、魔土器の使用を最小限にし、できるだけ先に進みましょう。
-   そして、最後の階層を突破するために必要なものを使用しましょう。
-  ｢敵変化｣を使用し、マンドラゴラを引けた場合は最高です。
-  もしミミックが出たとしても、他の敵を倒すよりはマシです。
-  ｢マンティコア化｣は、活用方法がいくつかあります。
-  -｢運気上昇増加｣と合わせて使用し、可能な限り多くの敵を倒す 
-   計画的に｢宝箱増加｣を組み合わせれば、さらに効果的です。　
-   -宝箱を開けた後、出口の位置を確認してから｢マンティコア化｣を使用することで、
-    複数のフロアでマンティコア化を活用することができる。
-  ｢敵排除｣は、｢敵変化｣との相性が悪いため、あまり使えない。
-  また、敵が分散しているため｢マンティコア化｣を使っても時間の節約にならない。
-  ｢敵排除｣は、次の階層の序盤で時間短縮に使うことができます。
-  この階層でも、壁際トラップには注意しましょう。
+  Don't forget to use a pomander of raising at the start of the set. More cannot be found here, unfortunately.
+  This is the scariest set in terms of the regular floors.
+  187-189 have absolutely terrible mobs that you mostly won't want to fight solo.
+  186 can be bad too, but is a bit more random in the enemies you'll see.
+  The usual plan is to get as far as you can with minimal pomander usage,
+    and then use what you need to get through the last few floors.
+  Alterations are great here - if you get mandragoras, great!
+  If you get mimics, they're still much better than most of the other enemies.
+  Rage is great, and there are a couple optimal ways to use it
+  Use fortune and clear the entire floor (or as much as possible), then go back to collect your loot.
+  Even better if you planned ahead and used affluence as well.
+  Double-rage - collect as many chests as you can and locate the exit before-hand, then use rage.
+  Clear enemies close to the exit as quickly as possible and go into the portal with rage still active.
+  You can then continue killing a few enemies on the next floor before it wears off.
+  Flights are not great here as they don't combine well with alteration,
+    and don't save you much time with rage either since the enemies are more spread out.
+  Flight will save more time on the earlier floors that you're going to fight through if you need it.
+  Be aware of the wall traps on these floors.
 PotD191: |
-  あと少し！控えめなプレイはやめて、全力を発揮する時です！
-  どの魔土器が残っているかを基に、計画を練って挑みましょう。
-  持っている場合は、必ずすぐに｢リレイズ｣を使ってください。
-   この階層では残念ながらドロップすることはありません。
-  魔土器が必要な場合は、早めに｢運気上昇｣と｢宝箱増加｣を使ってください。
-  ほとんどの敵は、戦闘開始から2-3回の攻撃で死亡します。
-   -通常は後半フロアで使用すべきだが、｢アイアンコース｣の巡回が多い場合は序盤フロアでの使用を検討してください。
-   -スタンが効かない敵に注意してください。2,3回目のスキル中に攻撃を受ける可能性がある為、｢防御強化｣の使用を検討してください。
-   -｢敵変化｣を使用することで少し安全になりますが、｢ファハン｣はまだ危険です。
-  序盤のフロアのMOBが一番楽なので、｢敵排除｣や｢マンティコア化｣は後半のフロアに取っておいたほうが良い。
-  ｢呪印解除｣と｢サイトロ｣を使い切るのを忘れずに。
-  この階層でも、壁際トラップには注意しましょう。
+  Almost there! Time to stop playing conservatively and use everything you've got!
+  Go in with a plan based on what pomanders you have.
+  Always use raising immediately if you have it.
+  More do not drop in this set unfortunately
+  Use fortunes/affluences early if you need pomanders
+  Most enemies die in 2-3 hits from resolution
+  Generally best used on the late floors,
+    but consider using on early floors if there are a lot of corse patrols,
+    as avoiding them can be very time-consuming
+  Note which enemies are immune to stun,
+    as you'll probably be taking hits from them while getting your second/third shots off. Consider using steel
+  Use witching first to make this a little safer. Just be careful with imps still
+  The early floor mobs are easiest, so best to save flights and rages for mid or late floors
+  Don't forget to use up your safties and sights
+  Be aware of the wall traps on these floors.
