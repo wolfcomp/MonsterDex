@@ -1,26 +1,26 @@
 5038: |
-  FOLLOW MECHANICS -- failed mechanics power up an unavoidable room AoE
-  Boss will occasionally inflict Disease which slows
-  1) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
-  2) "Cold Feet" -- Gaze
+  SUIVEZ LES MÉCANIQUES -- les mécaniques râtées augmenteront les dégâts d'une AoE inévitable à l'échelle de la pièce
+  Le boss infligera occasionnellement Maladie qui ralentit
+  1) "Dans la santé" -- peut être soit une AoE sûre sous le boss, soit une AoE à bout portant
+  2) "Regard Affolant" -- attaque type "Regard"
 5032: Inflige Paralysie
 5030: Inflige Paralysie
 5025: |
-  1) Summons four lingering AoEs
-  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+  1) Invoque quatre AoE persistantes
+  2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts
 5022: |
   "Brume funèbre" inflige Terreur
 5012: |
-  1) Spread out fire and ice AOEs and don't drop them in center because:
-  2) Get inside boss's hit box for "Fear Itself" - will inflict high damage and Terror if not avoided
+  1) Séparez les AoEs de feu et de glace et ne les déposez pas au centre car :
+  2) Allez au centre de la hitbox du boss lors de "Peur personnifiée" - infligera de lourds dégâts et Terreur si vous ne l'esquivez pas
 5011: |
   "Gazouillement" inflige Sommeil pendant 15s
 5010: AoE non télégraphiée infligeant des dégâts modérés et vous repoussant
 4999: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AOEs and a room wide AOE
-  3) Summons two hornets that must be killed before they "Final Sting"
-  4) "Rotten Stench" - high damage line AOE
+  1) « Caresse sanglante » - Cleave qui inflige de lourds dégâts
+  2) Deux AoE télégraphiées et une AoE à l'échelle de la pièce
+  3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent « Dard Final »
+  4) « Pestilence nauséabonde » - AoE linéaire qui inflige de lourds dégâts
 4997: Attaque type "Regard" infligeant Pétrification, "Dévoration" tue immédiatement si un joueur a l'état "Crapaud"
 4996: Dégâts des buffs
 4993: Lenteur en AoE
@@ -29,11 +29,11 @@
   "Langue poisseuse" n'étoudit pas si vous lui faites face
 4988: Inflige Poison
 4986: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AOE
-  3) "Bombination" - circular AOE on boss inflicts Slow
-  4) "Lumisphere" - targeted AOE on random player
-  5) "Aeroblast" - room wide AOE inflicts Bleed
+  1) « Claquement de fouet » - tankbuster léger
+  2) « Vent orageux » - AoE conique
+  3) « Vrombissement » - AoE circulaire sur le boss qui inflige Lenteur
+  4) « Lumisphère » - AoE ciblant un joueur aléatoire
+  5) « Souffle Éthéréen » - AoE à l'échelle de la pièce qui inflige Saignement
 4985: Mini buster "Attaque Rhino"
 4982: Inflige Vulnérabilité augmentée
 4981: '"Dard Final" dégâts importants'
