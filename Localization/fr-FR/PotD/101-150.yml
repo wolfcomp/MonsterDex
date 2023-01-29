@@ -16,8 +16,8 @@
 5413: |
   "Charybde" - Demi-enrage qui fait tomber la vide de toute l'équipe à 1%
 5410: |
-  1) Summons four lingering AoEs
-  2) Summons two adds -- they must be killed before boss casts "Scream", adds will target player with high damage AoEs if not dead
+  1) Invoque quatre AoE persistantes
+  2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts
 5409: |
   Floors 131-140:
   Nothing notable (ignore threat level)
@@ -34,10 +34,10 @@
   "Fauche de 11 tonz" - AoE à bout portant non télégraphiée qui inflige de lourds dégâts et vous repousse
 5389: Doubles autos
 5384: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AOEs and a room wide AOE
-  3) Summons two hornets that must be killed before they "Final Sting"
-  4) "Rotten Stench" - high damage line AOE
+  1) « Caresse sanglante » - Cleave qui inflige de lourds dégâts
+  2) Deux AoE télégraphiées et une AoE à l'échelle de la pièce
+  3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent « Dard Final »
+  4) « Pestilence nauséabonde » - AoE linéaire qui inflige de lourds dégâts
 5382: |
   Gaze attack inflicts Petrify, "Regorge" inflicts Poison
   Will one-shot kill anyone inflicted with Toad
@@ -49,11 +49,11 @@
 5374: |
   "Langue poisseuse" vous attire et vous étourdit si vous ne lui faites pas face, suivi d'une AoE "Bond laborieux" à bout portant de l'ennemi
 5371: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AOE
-  3) "Bombination" - circular AOE on boss inflicts Slow
-  4) "Lumisphere" - targeted AOE on random player
-  5) "Aeroblast" - room wide AOE inflicts Bleed
+  1) « Claquement de fouet » - tankbuster léger
+  2) « Vent orageux » - AoE conique
+  3) « Vrombissement » - AoE circulaire sur le boss qui inflige Lenteur
+  4) « Lumisphère » - AoE ciblant un joueur aléatoire
+  5) « Souffle Éthéréen » - AoE à l'échelle de la pièce qui inflige Saignement
 5370: Mini buster "Attaque Rhino"
 5367: Inflige Vulnérabilité augmentée
 5366: '"Dard Final" dégâts importants'
