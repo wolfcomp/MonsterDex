@@ -18,32 +18,32 @@
   4) Les boules glaces infligent Congélation si elles touchent un joueur lorsqu'elles explosent
   5) Le boss saute sur un joueur aléatoire, le tuant instantanément s'il est congelé (dégâts légers autrement)
 7489: |
-  1) Untelegraphed frontal cleave
-  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
-  3) Targets random player with "Hound out of Hell"
-  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
-  5) Repeat
+  1) Cleave frontal non télégraphié
+  2) Cible un joueur aléatoire avec une flaque "Mini-bulles" (Rester dans la flaque inflige Mini)
+  3) Cible un joueur aléatoire avec "Charge infernale"
+  4) Le joueur ciblé doit rester dans la flaque pour esquiver "Charge infernale" et "Dévoration" (Mort instantanée si hors de la flaque, donnant un stack de bonus de dégâts au boss)
+  5) Répétez
 7487: |
-  Summons staffs that do various AoEs
-  Staffs then do line AoEs targeting players
-  Room wide AoE
+  Invoque des bâtons effectuant diverses AoEs
+  Les bâtons effectuent ensuite des AoEs linéaires ciblant les joueurs
+  AoE de la taille de la pièce
 7485: |
-  1) Untelegraphed swipe
-  2) Untelegraphed line AoE on random player
-  3) Gaze mechanic that inflicts Fear
-  4) Summons pulsating bombs over arena and does a proximity AoE
-  5) Repeats after bombs explode for the last time
+  1) Fauchage non télégraphié
+  2) AoE linéaire non télégraphiée sous un joueur aléatoire
+  3) Mécanique type "Regard" infligeant Peur
+  4) Invoque des bombes pulsantes sur l'arène et effectue une AoE de proximité
+  5) Se répète après que les bombes explosent pour une dernière fois
 7483: |
-  Summons clouds on edge of arena
-  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
-  Follows immediately with targeted line AoE
+  Invoque des nuages aux bords de l'arène
+  Vous repousse jusqu'au mur, ignorant vos résistances au repoussement (Regardez la zone safe dans les nuages !)
+  Enchaine immédiatement par une AoE linéaire ciblée
 7481: |
-  Summons butterflies on edges of arena
-  Does gaze mechanic that inflicts Fear
-  Butterflies explode untelegraphed
+  Invoque des papillons aux bords de l'arène
+  Effectue une mécanique type "Regard" infligeant Peur
+  Les papillons explose sans avertissement
 7480: |
-  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
-  Follows immediately with a half-room wide AoE
+  Se dirige vers le centre de l'arène et lance une attaque repoussant jusqu'au mur (ignore vos résistances au repoussement)
+  Enchaine immédiatement avec une AoE faisant la moitié de l'arène
 7478: |
   Summons lightning clouds that inflict stacking vuln up when they explode
   Boss does proximity AoE under itself that knocks players into the air
