@@ -1,17 +1,17 @@
 5424: |
-  Summons adds
-  "Fanatic Zombie" will grab player and root in place until killed
-  "Fanatic Succubus" will heal boss if it reaches it
+  Invoque des adds
+  "Zombies fanatiques" attraperont les joueurs et les entraveront tant que les adds sont encore en vie
+  "Succube fanatique" soignera le boss lorsqu'elle l'atteint
 5423: Très gros dégâts pour l'étage où il apparait
 5422: Beaucoup de vie et très grosse AoE "Cri"
 5421: Buff ses propres dégâts, gros dégâts non télégraphies "Griffe éventreuse" - peut être évité en marchant derrière
 5420: Cast une attaque type Regard appelée "Oeil maléfique"
 5415: |
-  Floors 141-150:
-  Nothing notable (ignore threat level)
-  Floors 191-200:
-  Casts large doughnut AoE "Death Spiral" that deals heavy damage
-  Has soft enrage of a strong damage buff
+  Étages 141-150 :
+  Rien de particulier (ignorez l'indice de dangerosité)
+  Étages 191-200 :
+  Lance de larges AoE en forme de donut "Spirale de la mort" qui inflige de lourds dégâts
+  A un soft enrage dans la forme d'un gros buff de dégâts augmentés
 5414: Très gros dégâts, inflige Poison
 5413: |
   "Charybde" - Demi-enrage qui fait tomber la vide de toute l'équipe à 1%
@@ -19,15 +19,15 @@
   1) Invoque quatre AoE persistantes
   2) Invoque deux adds - elles doivent être tuées avant que le boss ne cast "Cri", sinon elles cibleront un joueur avec des AoE infligeant de lourds dégâts
 5409: |
-  Floors 131-140:
-  Nothing notable (ignore threat level)
-  Floors 191-200:
+  Étages 131-140 :
+  Rien de particulier (ignorez l'indice de dangerosité)
+  Étages 191-200 :
   Double autos
 5406: Cast des AoE ciblées infligeant Saignement
 5402: AoE en cône non télégraphiée "Pétrification niveau 5" inflige Pétrification
 5397: |
-  1) Spread out fire and ice AOEs and don't drop them in center because:
-  2) Get inside boss's hit box for fast cast "Fear Itself" - will inflict high damage and Terror if not avoided
+  1) Répartissez les AOEs de feu et de glace et ne les déposez pas au centre car :
+  2) Placez-vous au centre de la hitbox du boss lors de l'incantation rapide "Peur personnifiée" : infligera de lourds dégâts et Terreur si vous ne l'évitez pas
 5396: |
   "Gazouillement" inflige Sommeil pendant 15s
 5395: |
@@ -39,8 +39,8 @@
   3) Invoque deux guêpes qui doivent mourir avant qu'elles n'utilisent « Dard Final »
   4) « Pestilence nauséabonde » - AoE linéaire qui inflige de lourds dégâts
 5382: |
-  Gaze attack inflicts Petrify, "Regorge" inflicts Poison
-  Will one-shot kill anyone inflicted with Toad
+  Attaque type "Regard" qui inflige Pétrification, "Vomissure" inflige Poison
+  Tuera instantanément n'importe qui avec l'état "Crapaud"
 5381: Dégâts des buffs
 5380: Infligera "Sommeil" avant de caster "Mauvaise Haleine"
 5378: Lenteur en AoE
@@ -59,7 +59,7 @@
 5366: '"Dard Final" dégâts importants'
 5365: Inflige Poison
 5364: |
-  Floors 101-110:
-  Nothing notable (ignore threat level)
-  Floors 191-200:
+  Étages 101-110 :
+  Rien de particulier (ignorez l'indice de dangerosité)
+  Étages 191-200 :
   Double autos
