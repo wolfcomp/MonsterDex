@@ -45,19 +45,19 @@
   Se dirige vers le centre de l'arène et lance une attaque repoussant jusqu'au mur (ignore vos résistances au repoussement)
   Enchaine immédiatement avec une AoE faisant la moitié de l'arène
 7478: |
-  Summons lightning clouds that inflict stacking vuln up when they explode
-  Boss does proximity AoE under itself that knocks players into the air
-  Get knocked into a cloud to dispel it and avoid vuln
-  Half-room wide AoE
+  Invoque des nuages de foudre infligeant des stack de vulnérabilité augmentée lorsqu'ils explosent
+  Le boss fait des AoE de proximité sous ses pieds qui renverse les joueurs en l'air
+  Faites vous renverser en l'air dans un nuage pour le dissiper et éviter une vulnérabilité
+  AoE faisant la moitié de la pièce
 7394: |
-  Floors 61+: Gold chests only
-  High damage autos and instant kill AoE
-  "Malice" can only be interrupted with interject
-  CANNOT STUN
+  Étages 61+ : Coffres en Or seulement
+  Les autos font de lourds dommages et AoE mortelle
+  "Malédiction" ne peut être interrompu QUE par Interjection
+  NE PEUT PAS ÊTRE ÉTOURDI
 7393: |
-  Floors 31-60: Silver chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/interject
+  Étages 31 à 60: Coffres en Argent seulement
+  Les autos font de lourds dommages et AoE mortelle
+  "Malédiction" peut être interrompu par Silence/Étourdissement/Interjection
 7392: |
   Étages 1-30: Coffres en Bronze seulement
   Gros dégâts automatiques et AoE mortelle
@@ -67,8 +67,8 @@
 7389: Cleaves répétitifs causant de gros dégâts, vol de vie, buff ses propres dégâts, à trois stacks de dégâts augmentés cast ENRAGE "Nébuleuse noire"
 7388: |
   Charges
-  Untelegraphed cone AoE "Swipe"
-  Untelegraphed wide circle AoE "Swing"
+  AoE linéaire non télégraphiée "Fauche"
+  Large AoE circulaire non télégraphiée "Swing"
 7387: Inflige de lourds dégâts à des joueurs aléatoires
 7386: AoE linéaire extrêmement rapide "Portes de la mort" qui tue instantanément
 7385: AoE ciblées, cleaves
@@ -77,16 +77,16 @@
   AoE "Charybde" laissant des tornades sous un joueur aléatoire
 7381: |
   Cleave
-  Large line AoE that can be line of sighted
+  Large AoE linéaire qui peut être esquivé en vous cachant derrière un mur
 7380: |
-  WHM: double autos
-  "Stone" can be line of sighted
+  MBL (WHM) : doubles autos
+  Se cacher derrière un mur peut interrompre son sort "Terre"
 7379: |
   MOI (MNK) : Buff Hâte, courte invulnérabilité
 7378: |
-  WAR: Triple knockback with heavy damage
-  Buffs own attack
-  Extremely high damage cleave with knockback
+  GUE (WAR) : Triple repoussement avec de gros dégâts
+  Buff ses propres attaques
+  Cleave qui repousse + fait de gros dégâts
 7377: Charge, buff ses propres dégâts, buster non télégraphie "Griffe Éventreuse"
 7376: Charge, buff ses propres dégâts, double auto, Saignement électrique
 7375: AoE en cône, AoE circulaire, dégâts de groupe
@@ -99,12 +99,12 @@
 7368: AoE en cône non télégraphiée sur un joueur aléatoire, attaque type "Regard"
 7367: Charge quand aggro
 7366: |
-  Buffs own damage unaggroed
-  Large AoE unaggroed that inflicts vuln up and stacks
+  Buff ses propres dégâts sans être aggro
+  Large AoE sans être aggro qui inflige un stack de vulnérabilité augmentée
 7365: |
-  Ram's Voice - get out
-  Dragon's Voice - get in
-  Telegraphed cleaves
+  Voix du Bélier : s'éloigner
+  Voix du Dragon : se rapprocher
+  Cleave télégraphié
 7364: Double auto et très grande AoE
 7362: AoE en cône extrêmement large, regard inflige Peur
 7361: Attaque attirante, AoE extrêmement large, ENRAGE éventuel
@@ -112,14 +112,14 @@
 7359: Hâte, ENRAGE éventuel
 7358: Dégâts des buffs
 7357: |
-  Casts room wide AoEs unaggroed
-  Large conal draw-in attack followed by heavy damage
+  Lance des AoE de la taille de la pièce sans être aggro
+  Large attaque conique qui aspire suivie de lourds dégâts
 7356: Cast des AoE sans être aggro, infligeant Congélation
 7355: Double auto infligeant Saignement
 7354: Repoussement non télégraphié à l'arrière
 7353: |
-  Casts large AoE unaggroed
-  Extremely large circular AoE
+  Lance une large AoE sans être aggro
+  AoE circulaire extrêmement large
 7350: AoE infligeant de nombreux malus d'un coup
 7349: Buff sa propre défense ou celle d'un allié
 7348: Grande AoE circulaire infligeant Saignement
