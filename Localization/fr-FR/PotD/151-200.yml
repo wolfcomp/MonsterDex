@@ -1,58 +1,58 @@
 5475: Doubles autos
 5473: Cast un cône non télégraphie "Mort niveau 5"
 5471: |
-  Kill blue bomb when it appears
-  Push red bomb into boss during "Massive Burst" cast, will wipe party if not stunned
-  Boss has cleave that does heavy damage
+  Tuez le bombo bleu lorsqu'il apparait
+  Poussez le bombo rouge sur le boss lors de son cast "Énorme Explosion", ce sort tuera tout le monde si non-interrompu
+  Le boss a un cleave qui inflige de lourds dégâts
 5470: |
-  If familiar with chimera mechanics can be engaged
-  "The Dragon's Voice" - be inside hit box
-  "The Ram's Voice" - be outside of melee range
+  Peut être engagé si vous connaissez les mécaniques de la chimère
+  "Voix du Dragon" - être dans la hitbox 
+  "Voix du Bélier" - être hors de portée de mêlée
 5467: |
-  Instant AoE burst does heavy damage and inflicts Slow
-  Instant cone inflicts Poison
+  Une rafale d'AoE instantanée infligeant de lourds dégâts ainsi que Lenteur
+  Cône instantanée infligeant Poison
 5466: |
   Aspire le joueur et provoque de lourds dommages
   "Tail Screw" inflige le malus "Lenteur" en plus des dégâts
 5465: |
-  Instant AoE on pull, double autos
-  At 30 seconds will cast semi-enrage
+  AoE instantanée quand engagé, doubles autos
+  Lancera un semi-enrage 30 secondes après le début du combat
 5464: AoE instantanée infligeant un puissant Saignement
 5463: Doubles autos
 5461: |
-  "Charybdis" -- lingering ground tornadoes cast twice in a row that cause high damage if sucked into
-  Boss will run to top or bottom of arena and cast "Trounce" - wide conal AoE
-  At 15% casts FAST CAST "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80% of total health damage every 9 seconds
+  "Charybde" -- tornade au sol persistante qui cause de lourds dégâts si elle vous aspire
+  Le boss ira au bord de l'arène pour lancer "Écrabouillement" - large AoE conique
+  A 15% il lance "Météore écliptique" - IMMENSE DÉGÂTS qui inflige 80% de votre vie totale dans toute la pièce toutes les 9 secondes
 5460: Cleave infligeant de gros dégâts ainsi qu'un puissant Saignement
 5459: |
-  Cleave inflicts Bleed
-  "Flying Frenzy" targets a player and does heavy damage, Vuln Down, and stuns
+  Cleave qui inflige Saignement
+  "Démence" cible un joueur et lui inflige de gros dégâts, une vulnérabilité augmentée, et l'étourdit
 5458: Doubles autos
 5454: Buff ses propres dégâts et inflige Vulnérabilité Physique augmentée hors combat
 5453: |
-  "Glower" - untelegraphed line AoE
-  "100-Tonze Swing" - untelegraphed point-blank AoE
+  "Regard noir" : AoE linéaire non télégraphiée
+  "Swing de 100 tonz" : AoE à bout portant non télégraphiée
 5452: |
-  "Revelation" inflicts Confusion
-  "Tropical Wind" gives enemy a large Haste and damage buff
+  "Révélation" inflige Confusion
+  "Vent tropical" donne à l'ennemi un gros buff de Hâte et des dégâts augmentés
 5451: A un demi-enrage environ 30s après le début du combat
 5450: Doubles autos
 5449: |
-  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste and Damage Up if left in it
-  Occasionally inflicts Heavy and casts targeted ground AoEs
+  "Hydratation" : AoE persistante au sol infligeant Saignement si vous restez dedans et renforce le boss avec Hâte s'il est laissé dedans
+  Lance occasionnellement des AoE ciblées au sol
 5443: Doubles autos
 5442: Doubles autos
 5438: |
-  Drops lingering AoEs that cause heavy Bleed if stood in
-  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
+  Laisse de large flaque d'AoE infligeant Saignement si vous restez dedans
+  "Valfodr" -- AoE linéaire ciblée non esquivable focalisée sur un joueur, le repoussant : évitez les AoEs encerclant le bord extérieur
 5437: |
   Double autos
-  Gaze inflicts heavy damage and Blind
+  Regard qui inflige de gros dégâts et Cécité
 5436: Doubles autos
 5433: Double auto qui volent de la vie
 5431: |
-  "Ice Spikes" reflects damage
-  "Void Blizzard" inflicts Slow
+  "Pointes de glace" reflète les dégâts
+  "Glace du néant" inflige Lenteur
 5430: Inflige un débuff de vulnérabilité augmentée
 5429: |
   Attaque automatique double

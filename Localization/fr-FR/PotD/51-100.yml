@@ -1,16 +1,16 @@
 5356: Invoque des adds et fait de grosses AoE ciblées -- les adds sont sensibles aux attaques de la Poterie de Kuribu
 5345: |
-  Casts large AoEs
-  Summons "Grey Bomb" - must be killed before it does high room wide damage
-  Begins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast
+  Lance de larges AoE
+  Invoque "Bombo irascible" - doit être tué avant qu'il n'effectue de gros dégâts dans toute la pièce
+  Commence à lancer "Énorme Explosion" et invoque un bombo bleu qui doit être repoussé vers le boss pour interrompre son incantation
 5334: Cast une grande "Auto-destruction" si non tué à temps
 5333: |
-  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
-  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
-  At 17%% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80%% of total health damage
+  "Charybde" -- tornade au sol persistante qui cause de lourds dégâts si elle vous aspire
+  Le boss ira au bord de l'arène pour lancer "Écrabouillement" - large AoE conique
+  A 17% il lance "Météore écliptique" : IMMENSE DÉGÂTS incantation longue qui inflige 80% de votre vie totale dans toute la pièce
 5321: |
-  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
-  Occasionally casts targeted ground AoEs
+  "Hydratation" : AoE persistante au sol infligeant Saignement si vous restez dedans et renforce le boss avec Hâte s'il est laissé dedans
+  Lance occasionnellement des AoE ciblées au sol
 5309: |
   Place des flaques en AoE qui infligent le malus "Saignée" si vous êtes présent à l'intérieur
   "Valfodr" -- AoE en ligne inévitable, centré sur un joueur, qui cause une forte poussée, évitez les AoEs environnant la partie extérieure
