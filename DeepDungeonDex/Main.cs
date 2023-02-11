@@ -51,6 +51,7 @@ namespace DeepDungeonDex
         public void Dispose()
         {
             _provider.GetRequiredService<WindowSystem>().DisposeAndRemoveAllWindows();
+            _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.Draw -= _provider.GetRequiredService<WindowSystem>().Draw;
             _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange -= _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts;
             _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.BuildFonts -= BuildFont;
             _provider.GetRequiredService<Data>().Dispose();
