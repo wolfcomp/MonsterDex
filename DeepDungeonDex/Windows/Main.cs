@@ -162,11 +162,25 @@ namespace DeepDungeonDex.Windows
 
         public override void Draw()
         {
-            var legacy = _storage.GetInstance<Configuration>()?.LegacyWindow ?? false;
-            if (legacy)
-                DrawLegacy();
-            else
-                DrawCompact();
+            var config = _storage.GetInstance<Configuration>();
+            var locale = _storage.GetInstances<Locale>();
+            ImGui.PushFont(Font.RegularFont);
+            var line = $"{_currentMob.Name}{(config.Debug ? $" ({_currentMob.Id})" : "")}";
+            ImGui.TextUnformatted(line);
+            ImGui.TextUnformatted($"{locale.GetLocale(_currentMob.Aggro.ToString())}\t");
+            ImGui.SameLine();
+            PrintTextWithColor(locale.GetLocale(_currentMob.Threat.ToString()), _currentMob.Threat.GetColor());
+            ImGui.NewLine();
+            ImGui.TextUnformatted(locale.GetLocale("Vulns"));
+            ImGui.SameLine();
+            DrawWeakness(_currentMob.Weakness);
+            if (!string.IsNullOrWhiteSpace(_currentMob.Description))
+            {
+                ImGui.NewLine();
+                ImGui.TextUnformatted(locale.GetLocale("Notes") + ":\n");
+                ImGui.TextWrapped(_currentMob.Description.Replace("\\n", "\n"));
+            }
+            ImGui.PopFont();
         }
 
         public void LoadIcons()
@@ -241,29 +255,6 @@ namespace DeepDungeonDex.Windows
             ImGui.SetCursorPos(pos);
             ImGui.Image(_unknown!.ImGuiHandle, size);
         }
-
-        public void DrawCompact()
-        {
-            var config = _storage.GetInstance<Configuration>();
-            var locale = _storage.GetInstances<Locale>();
-            ImGui.PushFont(Font.RegularFont);
-            var line = $"{_currentMob.Name}{(config.Debug ? $" ({_currentMob.Id})" : "")}";
-            ImGui.TextUnformatted(line);
-            ImGui.TextUnformatted($"{locale.GetLocale(_currentMob.Aggro.ToString())}\t");
-            ImGui.SameLine();
-            PrintTextWithColor(locale.GetLocale(_currentMob.Threat.ToString()), _currentMob.Threat.GetColor());
-            ImGui.NewLine();
-            ImGui.TextUnformatted(locale.GetLocale("Vulns"));
-            ImGui.SameLine();
-            DrawWeakness(_currentMob.Weakness);
-            if (!string.IsNullOrWhiteSpace(_currentMob.Description))
-            {
-                ImGui.NewLine();
-                ImGui.TextUnformatted(locale.GetLocale("Notes") + ":\n");
-                ImGui.TextWrapped(_currentMob.Description.Replace("\\n", "\n"));
-            }
-            ImGui.PopFont();
-        }
         
         private static void PrintTextWithColor(string? text, uint color)
         {
@@ -271,114 +262,5 @@ namespace DeepDungeonDex.Windows
             ImGui.TextUnformatted(text);
             ImGui.PopStyleColor();
         }
-
-        #region Legacy Window Code (deprecated as of 2.4.0)
-
-        public void DrawLegacy()
-        {
-            var config = _storage.GetInstance<Configuration>()!;
-            // ReSharper disable once ConvertIfStatementToSwitchStatement
-            if (config.Clickthrough && !Flags.HasFlag(ImGuiWindowFlags.NoInputs))
-                Flags |= ImGuiWindowFlags.NoInputs;
-            else if (!config.Clickthrough && Flags.HasFlag(ImGuiWindowFlags.NoInputs))
-                Flags &= ~ImGuiWindowFlags.NoInputs;
-            ImGui.PushFont(Font.RegularFont);
-            ImGui.SetNextWindowSizeConstraints(new Vector2(250 * config.WindowSizeScaled, 0), new Vector2(9001, 9001));
-            ImGui.SetNextWindowBgAlpha(config.Opacity);
-            var locale = _storage.GetInstances<Locale>();
-
-
-            void printSingleVuln(bool? flag, string? message)
-            {
-                if (message is null)
-                    return;
-                switch (flag)
-                {
-                    case true:
-                        PrintTextWithColor(message, 0xFF00FF00);
-                        break;
-                    case false:
-                        if (!config.HideRed)
-                        {
-                            PrintTextWithColor(message, 0xFF0000FF);
-                        }
-                        break;
-                    default:
-                        PrintTextWithColor(message, 0x50FFFFFF);
-                        break;
-                }
-                ImGui.NextColumn();
-            }
-
-            void drawVulns(Mob mob)
-            {
-                var classJobId = _state.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
-                var classJob = _storage.GetInstance<JobData>()!.JobDictionary[classJobId];
-                foreach (var weakness in new[] { Weakness.Stun, Weakness.Sleep, Weakness.Bind, Weakness.Heavy, Weakness.Slow })
-                {
-                    if (!config.HideJob || classJob.HasFlag(weakness))
-                    {
-                        printSingleVuln(mob.Weakness.HasFlag(weakness), locale.GetLocale(weakness.ToString()));
-                    }
-                }
-                if (mob.Id is not (>= 7262 and <= 7610))
-                {
-                    printSingleVuln(mob.Weakness.HasFlag(Weakness.Undead), locale.GetLocale("Undead"));
-                }
-            }
-
-            if (config.Debug)
-            {
-                ImGui.Columns(2, null, false);
-                ImGui.TextUnformatted(locale.GetLocale("Name") + ":\n" + _currentMob.Name);
-                ImGui.NextColumn();
-                ImGui.TextUnformatted("ID:\n" + _currentMob.Id);
-                ImGui.NewLine();
-                ImGui.NextColumn();
-            }
-            else
-            {
-                ImGui.TextUnformatted(locale.GetLocale("Name") + ":\n" + _currentMob.Name);
-                ImGui.NewLine();
-                ImGui.Columns(2, null, false);
-            }
-            ImGui.TextUnformatted(locale.GetLocale("AggroType") + ":\n");
-            ImGui.TextUnformatted(locale.GetLocale(_currentMob.Aggro.ToString()));
-            ImGui.NextColumn();
-            ImGui.TextUnformatted(locale.GetLocale("Threat") + ":\n");
-            switch (_currentMob.Threat)
-            {
-                case Threat.Easy:
-                    PrintTextWithColor(locale.GetLocale("Easy"), 0xFF00FF00);
-                    break;
-                case Threat.Caution:
-                    PrintTextWithColor(locale.GetLocale("Caution"), 0xFF00FFFF);
-                    break;
-                case Threat.Dangerous:
-                    PrintTextWithColor(locale.GetLocale("Dangerous"), 0xFF0000FF);
-                    break;
-                case Threat.Vicious:
-                    PrintTextWithColor(locale.GetLocale("Vicious"), 0xFFFF00FF);
-                    break;
-                default:
-                    ImGui.TextUnformatted(locale.GetLocale("Undefined"));
-                    break;
-            }
-            ImGui.NextColumn();
-            ImGui.NewLine();
-            ImGui.TextUnformatted(locale.GetLocale("Vulns") + ":\n");
-            ImGui.Columns(4, null, false);
-            drawVulns(_currentMob);
-            ImGui.NextColumn();
-            ImGui.Columns(1);
-            if (!string.IsNullOrWhiteSpace(_currentMob.Description))
-            {
-                ImGui.NewLine();
-                ImGui.TextUnformatted(locale.GetLocale("Notes") + ":\n");
-                ImGui.TextWrapped(_currentMob.Description.Replace("\\n", "\n"));
-            }
-            ImGui.PopFont();
-        }
-        #endregion
     }
 }

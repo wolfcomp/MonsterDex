@@ -48,8 +48,7 @@ namespace DeepDungeonDex.Storage
         private void Load()
         {
             PluginLog.Verbose("Loading Storage");
-            var oldConfig = new FileInfo(_path + ".json");
-            var configPath = oldConfig.Exists ? oldConfig.FullName : Path.Combine(_path, "config.json");
+            var configPath = Path.Combine(_path, "config.json");
             PluginLog.Verbose("Loading config from {0}", configPath);
             Configuration config;
             try
@@ -63,11 +62,6 @@ namespace DeepDungeonDex.Storage
                 config = new Configuration();
             }
             config.PrevLocale = config.Locale;
-            if (oldConfig.Exists)
-            {
-                PluginLog.Verbose("Deleting old config");
-                oldConfig.Delete();
-            }
             _jsonStorage.Add("config.json", config);
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
