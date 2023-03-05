@@ -18,10 +18,10 @@ namespace DeepDungeonDex.Storage
     {
         private readonly string _path;
         public static readonly IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
-        private static readonly ISerializer Serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
+        private static readonly ISerializer _serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
 
-        private readonly Dictionary<string, object> _jsonStorage = new();
-        private readonly Dictionary<string, object> _ymlStorage = new();
+        internal readonly Dictionary<string, object> JsonStorage = new();
+        internal readonly Dictionary<string, object> YmlStorage = new();
 
         public StorageHandler(DalamudPluginInterface pluginInterface)
         {
@@ -31,18 +31,18 @@ namespace DeepDungeonDex.Storage
 
         public void AddJsonStorage(string path, object storage)
         {
-            if (_jsonStorage.ContainsKey(path))
-                _jsonStorage[path] = storage;
+            if (JsonStorage.ContainsKey(path))
+                JsonStorage[path] = storage;
             else
-                _jsonStorage.Add(path, storage);
+                JsonStorage.Add(path, storage);
         }
 
         public void AddYmlStorage(string path, object storage)
         {
-            if (_ymlStorage.ContainsKey(path))
-                _ymlStorage[path] = storage;
+            if (YmlStorage.ContainsKey(path))
+                YmlStorage[path] = storage;
             else
-                _ymlStorage.Add(path, storage);
+                YmlStorage.Add(path, storage);
         }
 
         private void Load()
@@ -62,13 +62,13 @@ namespace DeepDungeonDex.Storage
                 config = new Configuration();
             }
             config.PrevLocale = config.Locale;
-            _jsonStorage.Add("config.json", config);
+            JsonStorage.Add("config.json", config);
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
             {
                 PluginLog.Verbose("Loading storage from {0}", storagePath);
                 var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
-                _jsonStorage.Add(storagePath.Name, storage);
+                JsonStorage.Add(storagePath.Name, storage);
                 foreach (var (key, value) in storage)
                 {
                     try
@@ -85,9 +85,9 @@ namespace DeepDungeonDex.Storage
                                 var obj = name != null
                                     ? loadable.Load(Path.Join(_path, key), name)
                                     : loadable.Load(Path.Join(_path, key));
-                                _jsonStorage.Add(key, obj);
+                                JsonStorage.Add(key, obj);
                             }
-                            else if (DeserializeFile(key, type) is ISaveable content) _jsonStorage.Add(key, new Storage(content));
+                            else if (DeserializeFile(key, type) is ISaveable content) JsonStorage.Add(key, new Storage(content));
                         }
                         else
                         {
@@ -97,9 +97,9 @@ namespace DeepDungeonDex.Storage
                                 var obj = name != null
                                     ? loadable.Load(Path.Join(_path, key), name)
                                     : loadable.Load(Path.Join(_path, key));
-                                _ymlStorage.Add(key, obj);
+                                YmlStorage.Add(key, obj);
                             }
-                            else if (Deserializer.Deserialize(key, type) is ISaveable content) _ymlStorage.Add(key, new Storage(content));
+                            else if (Deserializer.Deserialize(key, type) is ISaveable content) YmlStorage.Add(key, new Storage(content));
                         }
                     }
                     catch(Exception e)
@@ -151,7 +151,7 @@ namespace DeepDungeonDex.Storage
         public static void SerializeYamlFile(string path, object obj)
         {
             var writer = new StreamWriter(path);
-            writer.Write(Serializer.Serialize(obj));
+            writer.Write(_serializer.Serialize(obj));
             writer.Dispose();
         }
 
@@ -195,7 +195,7 @@ namespace DeepDungeonDex.Storage
             }
 
             PluginLog.Verbose("Saving Json Storage");
-            foreach (var (path, obj) in _jsonStorage.ToDictionary(t => t.Key, t => t.Value))
+            foreach (var (path, obj) in JsonStorage.ToDictionary(t => t.Key, t => t.Value))
             {
                 if (!processObj(obj, path))
                     continue;
@@ -205,7 +205,7 @@ namespace DeepDungeonDex.Storage
             }
 
             PluginLog.Verbose("Saving Yaml Storage");
-            foreach (var (path, obj) in _ymlStorage.ToDictionary(t => t.Key, t => t.Value))
+            foreach (var (path, obj) in YmlStorage.ToDictionary(t => t.Key, t => t.Value))
             {
                 if (!processObj(obj, path))
                     continue;
@@ -215,8 +215,8 @@ namespace DeepDungeonDex.Storage
             }
 
             PluginLog.Verbose("Filling missing storage data");
-            _jsonStorage.AsEnumerable()
-                .Concat(_ymlStorage)
+            JsonStorage.AsEnumerable()
+                .Concat(YmlStorage)
                 .ToList()
                 .ForEach(x =>
                 {
@@ -237,34 +237,34 @@ namespace DeepDungeonDex.Storage
 
         public T? GetInstance<T>() where T : class, ISaveable
         {
-            var list = _jsonStorage.Values.ToList();
-            list.AddRange(_ymlStorage.Values);
+            var list = JsonStorage.Values.ToList();
+            list.AddRange(YmlStorage.Values);
             return (list.FirstOrDefault(x => x is T) ?? (list.FirstOrDefault(x => x is Storage { Value: T }) as Storage)?.Value) as T ?? null;
         }
 
         public T[] GetInstances<T>() where T : class, ISaveable
         {
-            var list = _jsonStorage.Values.ToList();
-            list.AddRange(_ymlStorage.Values);
+            var list = JsonStorage.Values.ToList();
+            list.AddRange(YmlStorage.Values);
             return list.Where(t => t is T or Storage { Value: T }).Select(t => t is T ? t : (t as Storage)?.Value).Cast<T>().ToArray();
         }
 
         public T[] GetInstances<T>(string name) where T : class, ISaveable
         {
-            var list = _jsonStorage.Values.ToList();
-            list.AddRange(_ymlStorage.Values);
+            var list = JsonStorage.Values.ToList();
+            list.AddRange(YmlStorage.Values);
             return list.Where(t => t is Storage { Value: T } storage && storage.Name.StartsWith(name)).Select(t => t is T ? t : (t as Storage)?.Value).Cast<T>().ToArray();
         }
 
         public object? GetInstance(string path)
         {
-            return _jsonStorage.TryGetValue(path, out var obj) ? obj : _ymlStorage.TryGetValue(path, out obj) ? obj : null;
+            return JsonStorage.TryGetValue(path, out var obj) ? obj : YmlStorage.TryGetValue(path, out obj) ? obj : null;
         }
 
         public string GetFilePath(Type type)
         {
-            var list = _jsonStorage.ToList();
-            list.AddRange(_ymlStorage);
+            var list = JsonStorage.ToList();
+            list.AddRange(YmlStorage);
             var filePath = list.FirstOrDefault(t => t.Value.GetType() == type || t.Value is Storage { Value: { } value } && value.GetType() == type).Key;
             return Path.Combine(_path, filePath);
         }
