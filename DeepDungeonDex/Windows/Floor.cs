@@ -68,6 +68,7 @@ namespace DeepDungeonDex.Windows
             {
                 >= 561 and <= 565 or >= 593 and <= 607 => "PotD",
                 >= 770 and <= 775 or >= 782 and <= 785 => "HoH",
+                >= 0 and <= 0 or >= 0 and <= 0 => "EO",
                 _ => ""
             };
         }
