@@ -50,14 +50,14 @@ namespace DeepDungeonDex.Windows
                 IsOpen = true;
 
             }, show: false);
-            var _config = _storage.GetInstance<Configuration>()!;
+            var config = _storage.GetInstance<Configuration>()!;
             SizeConstraints = new WindowSizeConstraints
             {
-                MaximumSize = new Vector2(800 * _config.WindowSizeScaled, 600),
-                MinimumSize = new Vector2(450 * _config.WindowSizeScaled, 100)
+                MaximumSize = new Vector2(800 * config.WindowSizeScaled, 600),
+                MinimumSize = new Vector2(450 * config.WindowSizeScaled, 100)
             };
             framework.Update += GetData;
-            _config.OnChange += ConfigChanged;
+            config.OnChange += ConfigChanged;
             state.TerritoryChanged += TerritoryChanged;
             TerritoryChanged(null, state.TerritoryType);
         }
@@ -68,6 +68,7 @@ namespace DeepDungeonDex.Windows
             {
                 >= 561 and <= 565 or >= 593 and <= 607 => "PotD",
                 >= 770 and <= 775 or >= 782 and <= 785 => "HoH",
+                >= 1099 and <= 1108 => "EO",
                 _ => ""
             };
         }
@@ -77,9 +78,14 @@ namespace DeepDungeonDex.Windows
             if (_debug != 0)
                 return;
 
-            var _config = _storage.GetInstance<Configuration>()!;
-            if (_addon.Floor % 10 != 0 && !_addon.Disabled && _condition[ConditionFlag.InDeepDungeon] && _dataPath != "" && !_config.HideFloor && _storage.GetInstance(_dataPath + "/Floors.yml") != null)
-                IsOpen = true;
+            if (_condition[ConditionFlag.InDeepDungeon])
+            {
+                var config = _storage.GetInstance<Configuration>()!;
+                if(!_addon.Disabled && _dataPath != "" && !config.HideFloor && _addon.Floor % 10 != 0 && _storage.GetInstance(_dataPath + "/Floors.yml") != null)
+                    IsOpen = true;
+                else
+                    IsOpen = false;
+            }
             else
                 IsOpen = false;
         }
@@ -101,13 +107,13 @@ namespace DeepDungeonDex.Windows
 
         public override void Draw()
         {
-            var _locale = _storage.GetInstances<Locale>();
-            var _remap = (FloorData)((Storage.Storage)_storage.GetInstance(_dataPath + "/Floors.yml")!).Value;
+            var locale = _storage.GetInstances<Locale>();
+            var remap = (FloorData)((Storage.Storage)_storage.GetInstance(_dataPath + "/Floors.yml")!).Value;
             var floor = _debug == 0 ? _addon.Floor : _debug;
-            floor = _remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
+            floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
             ImGui.PushFont(Font.RegularFont);
             ImGui.Text("Floor Help");
-            ImGui.TextUnformatted(_locale.GetLocale($"{_dataPath}{floor}"));
+            ImGui.TextUnformatted(locale.GetLocale($"{_dataPath}{floor}"));
             ImGui.PopFont();
         }
 
