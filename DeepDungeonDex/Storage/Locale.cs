@@ -72,7 +72,8 @@ namespace DeepDungeonDex.Storage
 
         public static string GetLocale(this IEnumerable<Locale> locales, string key)
         {
-            return locales.FirstOrDefault(l => l.TranslationDictionary.ContainsKey(key))?.TranslationDictionary[key] ?? key;
+            var ret = locales.FirstOrDefault(l => l.TranslationDictionary.ContainsKey(key));
+            return ret != null ? ret.TranslationDictionary[key] : key;
         }
     }
 }
