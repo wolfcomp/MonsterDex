@@ -16,7 +16,6 @@ namespace DeepDungeonDex.Models
         public int Locale { get; set; } = 0;
         public int FontSize { get; set; } = 16;
         public float Opacity { get; set; } = 1f;
-        public bool LegacyWindow { get; set; }
         public bool LoadAll { get; set; }
 
         [JsonIgnore] public int PrevFontSize;

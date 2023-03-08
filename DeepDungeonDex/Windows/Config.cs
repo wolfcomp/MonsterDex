@@ -110,10 +110,6 @@ namespace DeepDungeonDex.Windows
             {
                 _config.Debug = _debug;
             }
-            if(ImGui.Checkbox(_locale.GetLocale("Legacy"), ref _legacy))
-            {
-                _config.LegacyWindow = _legacy;
-            }
 
             if (ImGui.IsItemHovered())
             {
