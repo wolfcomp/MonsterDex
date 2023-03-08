@@ -4,36 +4,32 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - Slow
-    - BindUnknown
     - SleepUnknown
 12112-Orthos imp:
   Threat: Undefined
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
     - SleepUnknown
 12117-orthoiron claw:
   Threat: Undefined
   Aggro: Proximity
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - Slow
-    - BindUnknown
     - SleepUnknown
 12111-Orthos dahak:
   Threat: Undefined
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
     - SleepUnknown
 12110-Orthos grenade:
   Threat: Undefined
