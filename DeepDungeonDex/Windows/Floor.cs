@@ -112,8 +112,15 @@ namespace DeepDungeonDex.Windows
             var floor = _debug == 0 ? _addon.Floor : _debug;
             floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
             ImGui.PushFont(Font.RegularFont);
-            ImGui.Text("Floor Help");
-            ImGui.TextUnformatted(locale.GetLocale($"{_dataPath}{floor}"));
+            try
+            {
+                ImGui.Text("Floor Help");
+                ImGui.TextUnformatted(locale.GetLocale($"{_dataPath}{floor}"));
+            }
+            catch
+            {
+                // ignored
+            }
             ImGui.PopFont();
         }
 
