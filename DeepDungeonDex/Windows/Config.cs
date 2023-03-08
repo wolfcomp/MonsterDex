@@ -22,7 +22,6 @@ namespace DeepDungeonDex.Windows
         private bool _hideRed;
         private bool _hideJob;
         private bool _debug;
-        private bool _legacy;
         private int _loc;
         private bool _loadAll;
         private bool _hideFloor;
@@ -45,7 +44,6 @@ namespace DeepDungeonDex.Windows
             _hideRed = _config.HideRed;
             _hideJob = _config.HideJob;
             _debug = _config.Debug;
-            _legacy = _config.LegacyWindow;
             _loc = _config.Locale;
             _loadAll = _config.LoadAll;
             _hideFloor = _config.HideFloor;
