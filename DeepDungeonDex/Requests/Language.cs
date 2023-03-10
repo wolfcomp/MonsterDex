@@ -49,7 +49,8 @@ namespace DeepDungeonDex.Requests
                     try
                     {
                         PluginLog.Verbose("Loading language file");
-                        var langData = (Locale)Handler.GetInstance($"{name}/{file}")!;
+                        if(Handler.GetInstance($"{name}/{file}") is not Locale langData)
+                            continue;
                         PluginLog.Verbose("Looping through MobData");
                         foreach (var (id, _) in mobData.MobDictionary)
                         {
