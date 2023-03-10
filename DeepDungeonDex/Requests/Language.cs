@@ -41,15 +41,15 @@ namespace DeepDungeonDex.Requests
                     if (file == "Job.yml")
                         continue;
                     PluginLog.Verbose($"Loading {file}");
-                    var data = (Storage.Storage)Handler.GetInstance(file)!;
-                    if (data.Value is not MobData mobData)
+                    if (Handler.GetInstance(file) is not Storage.Storage { Value: MobData mobData })
                         continue;
 
                     PluginLog.Verbose($"Processing MobData descriptions for {file}");
                     try
                     {
                         PluginLog.Verbose("Loading language file");
-                        var langData = (Locale)Handler.GetInstance($"{name}/{file}")!;
+                        if (Handler.GetInstance($"{name}/{file}") is not Locale langData)
+                            continue;
                         PluginLog.Verbose("Looping through MobData");
                         foreach (var (id, _) in mobData.MobDictionary)
                         {
@@ -64,6 +64,7 @@ namespace DeepDungeonDex.Requests
                     {
                         PluginLog.Error(e, "");
                     }
+
                 }
             }
         }
