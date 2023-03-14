@@ -255,9 +255,8 @@
   Aggro: Sight
   Weakness:
     - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Heavy
+    - Slow
     - SleepUnknown
 12135-orthogiant:
   Threat: Easy
