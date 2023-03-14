@@ -1,4 +1,11 @@
 12109: |
-  Casts Ecliptic Meteor at 40%
+  Casts Ecliptic Meteor at 40%, can LoS
+12110: Casts untelegraphed PB AoE
+12116: Casts disease
 12132: |
-  Casts Self-detonate at 30%
+  Casts Self-detonate at 30%, can LoS
+12240: |
+  Steel recommended for solo
+12133: |
+  Late telegraphed draw-in into AoE
+  KB immunity works

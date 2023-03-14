@@ -1,6 +1,6 @@
 # EO floors 1-9
 12108-Orthos succubus:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -8,7 +8,7 @@
     - Slow
     - SleepUnknown
 12112-Orthos imp:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -16,7 +16,7 @@
     - SlowUnknown
     - SleepUnknown
 12117-orthoiron claw:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
@@ -24,7 +24,7 @@
     - Slow
     - SleepUnknown
 12111-Orthos dahak:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -32,7 +32,7 @@
     - SlowUnknown
     - SleepUnknown
 12110-Orthos grenade:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
@@ -41,7 +41,7 @@
     - BindUnknown
     - SleepUnknown
 12115-Orthos vassago:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - HeavyUnknown
@@ -49,7 +49,7 @@
     - BindUnknown
     - SleepUnknown
 12113-Orthos demon:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -58,31 +58,31 @@
     - BindUnknown
     - SleepUnknown
 12109-Orthos behemoth:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Sight
   Weakness:
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
 12106-undead Orthos dragon:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - HeavyUnknown
     - Slow
     - BindUnknown
     - Sleep
 12107-Orthos Thanatos:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - Stun
     - HeavyUnknown
     - Slow
     - BindUnknown
 12114-Orthos fachan:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -90,8 +90,8 @@
     - BindUnknown
     - Sleep
 12116-Orthos bhoot:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sound
   Weakness:
     - Stun
     - HeavyUnknown
@@ -99,7 +99,7 @@
     - BindUnknown
     - Sleep
 12118-Orthos water sprite:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
@@ -110,7 +110,7 @@
 
 # EO boss floor 10
 12240-Gancanagh:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Undefined
   Weakness:
     - StunUnknown
@@ -121,8 +121,8 @@
 
 # EO floors 11-19
 12130-great Orthos morbol:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -130,8 +130,8 @@
     - BindUnknown
     - SleepUnknown
 12129-Orthos spirulina:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -139,8 +139,8 @@
     - BindUnknown
     - SleepUnknown
 12128-Orthos netzach:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -148,8 +148,8 @@
     - BindUnknown
     - SleepUnknown
 12121-Orthos microsystem:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -157,8 +157,8 @@
     - BindUnknown
     - SleepUnknown
 12131-Orthos Belladonna:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -166,8 +166,8 @@
     - BindUnknown
     - SleepUnknown
 12123-Orthos Wood Golem:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -175,8 +175,8 @@
     - BindUnknown
     - SleepUnknown
 12122-Orthosoldier:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -184,7 +184,7 @@
     - BindUnknown
     - SleepUnknown
 12120-Orthosystem β:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Undefined
   Weakness:
     - StunUnknown
@@ -193,8 +193,8 @@
     - BindUnknown
     - SleepUnknown
 12126-Orthos Rafflesia:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -202,8 +202,8 @@
     - BindUnknown
     - SleepUnknown
 12124-Orthos Groundskeeper:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -211,8 +211,8 @@
     - BindUnknown
     - SleepUnknown
 12119-Orthohunter:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -222,7 +222,7 @@
 
 # EO boss floor 20
 12261-Cloning Node:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Undefined
   Weakness:
     - StunUnknown
@@ -233,7 +233,7 @@
 
 # EO floors 21-29
 12142-Orthos brobinyak:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - StunUnknown
@@ -242,7 +242,7 @@
     - BindUnknown
     - SleepUnknown
 12132-orthodemolisher:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Proximity
   Weakness:
     - StunUnknown
@@ -251,7 +251,7 @@
     - BindUnknown
     - SleepUnknown
 12139-Orthos wyvern:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - StunUnknown
@@ -260,8 +260,8 @@
     - BindUnknown
     - SleepUnknown
 12135-orthogiant:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -269,7 +269,7 @@
     - BindUnknown
     - SleepUnknown
 12133-orthoknight:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Sight
   Weakness:
     - StunUnknown
@@ -278,8 +278,8 @@
     - BindUnknown
     - SleepUnknown
 12134-orthodroid:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -287,8 +287,8 @@
     - BindUnknown
     - SleepUnknown
 12138-lesser Orthos dragon:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Caution
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
