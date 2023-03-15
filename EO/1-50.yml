@@ -294,11 +294,64 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
-# -orthodemolisher
-# -vanara
+12140-Orthoblue dragon:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - SlowUnknown
+    - SleepUnknown
+12143-Orthos vanara:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12141-Orthos Vouivre:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12137-Orthos biast:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12136-Orthokaliya:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12144-Orthoshelled dragon:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # EO boss floor 30
-# Tiamats clone
+12242-Tiamat clone:
+  Threat: Caution
+  Aggro: Undefined
+  Weakness:
 
 # EO floors 31-39
 # -mirrorknight
@@ -306,7 +359,23 @@
 # -orthospider
 # -orthikalison
 # -orthopredator
+# -orthonaga
+# -orthotaur
+# -orthoray
+# -orthochimera
+# -orthoempuse
 
 # EO boss floor 40
+# -Twintania Clone
 
 # EO floors 41-49
+# -bergthurs
+# -hedetet
+# -spriggan
+# -acheron
+# -kelpie
+# -goobbue
+# -gelato
+# -hoarhound
+# -mudman
+# -kukulkan

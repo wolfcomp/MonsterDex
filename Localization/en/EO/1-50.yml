@@ -9,10 +9,40 @@
 12133: |
   Late telegraphed draw-in into AoE
   KB immunity works
+12141: Casts roomwide vuln stacking AoE unaggroed
+12242:
+ 1) "Dark Wyrmtail" -- cleaves middle
+ 2) "Dark Wyrmwing" -- cleaves sides
+ 3) "Whei Morn" -- multiple baited AoEs
 
-# 
 
-# floor 30
-#  1) "Dark Wyrmtail" -- cleaves middle
-#  2) "Dark Wyrmwing" -- cleaves sides
-#  3) "Whei Morn" -- four baited AoEs
+# mirrorknight
+#  Casts inflicts Stun
+# orthospider
+#  PB AoE
+# orthikalison
+#  Buffs enemies with double damage
+# orthopredator
+#  Casts Haste
+# orthotaur
+#  "100 Tonze Swing" -- PB AoE
+#  "11 Tonze Swipe" -- Close Conal AoE
+# orthoray
+#  "Forearming" -- Half Circle AoE
+#  "Atmospheric Displacement" -- PB AoE
+# orthochimera
+#  "The Dragon's Voice" - doughnut
+#  "The Ram's Voice" - PB AoE
+# orthoempuse
+#  "Nothing personal kid"
+
+# floor 40
+#  1) "Twister" -- 
+
+# floor 50
+#  1) "Song of Thunder and Ice" -- doughnut then PB AoE
+#  2) "Song of Ice and Thunder" -- PB AoE then doughnut
+#  3) "Cold Thunder" -- proximity dash, PB AoE then doughnut
+#  4) "Thunderous Cold" -- proximity dash, doughnut then PB AoE
+#  5) "Leftbreathed/Rightbreathed" -- halfroom cleave
+#  6) "Cacophony" -- ball tether, kite away
