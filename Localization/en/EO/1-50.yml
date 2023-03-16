@@ -10,35 +10,32 @@
   Late telegraphed draw-in into AoE
   KB immunity works
 12141: Casts roomwide vuln stacking AoE unaggroed
-12242:
+12242: |
  1) "Dark Wyrmtail" -- cleaves middle
  2) "Dark Wyrmwing" -- cleaves sides
  3) "Whei Morn" -- multiple baited AoEs
-
-
-# mirrorknight
-#  Casts inflicts Stun
-# orthospider
-#  PB AoE
-# orthikalison
-#  Buffs enemies with double damage
-# orthopredator
-#  Casts Haste
-# orthotaur
-#  "100 Tonze Swing" -- PB AoE
-#  "11 Tonze Swipe" -- Close Conal AoE
-# orthoray
-#  "Forearming" -- Half Circle AoE
-#  "Atmospheric Displacement" -- PB AoE
-# orthochimera
-#  "The Dragon's Voice" - doughnut
-#  "The Ram's Voice" - PB AoE
-# orthoempuse
-#  "Nothing personal kid"
-
-# floor 40
-#  1) "Twister" -- 
-
+12149: |
+  Casts inflicts Stun
+12146: PB AoE
+12154: |
+  Buffs enemies with double damage
+12147: Casts Haste
+12150: |
+  "100 Tonze Swing" -- PB AoE
+  "11 Tonze Swipe" -- Close Conal AoE
+12148: |
+  "Forearming" -- Half Circle AoE
+  "Atmospheric Displacement" -- PB AoE
+12152: |
+  "The Dragon's Voice" - doughnut
+  "The Ram's Voice" - PB AoE
+12156: |
+  "Nothing personal kid"
+12263: |
+  1) "Twister" -- Move away from twister bait
+  2) "Twisting Dive" -- Cleave down middle with twister bait
+  3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
+    
 # floor 50
 #  1) "Song of Thunder and Ice" -- doughnut then PB AoE
 #  2) "Song of Ice and Thunder" -- PB AoE then doughnut
