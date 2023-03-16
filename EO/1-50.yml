@@ -348,10 +348,10 @@
     - SleepUnknown
 
 # EO boss floor 30
-12242-Tiamat clone:
-  Threat: Caution
-  Aggro: Undefined
-  Weakness:
+# 12242-Tiamat clone:
+#   Threat: Caution
+#   Aggro: Undefined
+#   Weakness:
 
 # # EO floors 31-39
 # 12149-mirrorknight:
