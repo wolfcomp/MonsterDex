@@ -1,6 +1,6 @@
 # EO floors 1-9
 12108-Orthos succubus:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -8,7 +8,7 @@
     - Slow
     - SleepUnknown
 12112-Orthos imp:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -16,7 +16,7 @@
     - SlowUnknown
     - SleepUnknown
 12117-orthoiron claw:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
@@ -24,15 +24,15 @@
     - Slow
     - SleepUnknown
 12111-Orthos dahak:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Heavy
-    - SlowUnknown
+    - Slow
     - SleepUnknown
 12110-Orthos grenade:
-  Threat: Undefined
+  Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
@@ -41,7 +41,7 @@
     - BindUnknown
     - SleepUnknown
 12115-Orthos vassago:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - HeavyUnknown
@@ -49,7 +49,7 @@
     - BindUnknown
     - SleepUnknown
 12113-Orthos demon:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
@@ -58,31 +58,31 @@
     - BindUnknown
     - SleepUnknown
 12109-Orthos behemoth:
-  Threat: Undefined
+  Threat: Dangerous
   Aggro: Sight
   Weakness:
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
 12106-undead Orthos dragon:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - HeavyUnknown
     - Slow
     - BindUnknown
     - Sleep
 12107-Orthos Thanatos:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - Stun
     - HeavyUnknown
     - Slow
     - BindUnknown
 12114-Orthos fachan:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -90,8 +90,8 @@
     - BindUnknown
     - Sleep
 12116-Orthos bhoot:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Easy
+  Aggro: Sound
   Weakness:
     - Stun
     - HeavyUnknown
@@ -99,7 +99,7 @@
     - BindUnknown
     - Sleep
 12118-Orthos water sprite:
-  Threat: Undefined
+  Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
@@ -110,8 +110,8 @@
 
 # EO boss floor 10
 12240-Gancanagh:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Caution
+  Aggro: Boss
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -222,8 +222,8 @@
 
 # EO boss floor 20
 12261-Cloning Node:
-  Threat: Undefined
-  Aggro: Undefined
+  Threat: Caution
+  Aggro: Boss
   Weakness:
     - StunUnknown
     - HeavyUnknown
