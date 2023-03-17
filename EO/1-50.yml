@@ -308,10 +308,9 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
+    - Stun
     - SlowUnknown
-    - BindUnknown
+    - Slow
     - SleepUnknown
 12137-Orthos biast:
   Threat: Easy
@@ -469,16 +468,125 @@
   Aggro: Boss
 
 # EO floors 41-49
-# -bergthurs
-# -hedetet
-# -spriggan
-# -acheron
-# -kelpie
-# -goobbue
-# -gelato
-# -hoarhound
-# -mudman
-# -kukulkan
+12167-Orthos albaia:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - Heavy
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12160-Orthos bergthurs:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - Heavy
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12165-Orthos huwasi:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12169-Orthos hedetet:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12159-Orthos spriggan:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12166-Orthos acheron:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12162-Orthos kelpie:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12168-Orthos goobbue:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12158-Orthos gelato:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12164-Orthos hoarhound:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12170-Orthos mudman:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12163-Orthos kukulkan:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12161-Orthos apa:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # EO boss floor 50
-# Orthochimerataw
+12265-Servomechanical chimera:
+  Threat: Caution
+  Aggro: Boss
