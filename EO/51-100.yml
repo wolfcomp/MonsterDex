@@ -53,7 +53,7 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
-12161-Orthos yabby:
+12176-Orthos yabby:
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -116,7 +116,7 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
-12175-Orthos big claw :
+12175-Orthos big claw:
   Threat: Easy
   Aggro: Sight
   Weakness:
