@@ -3,7 +3,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -21,7 +20,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -57,7 +55,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -84,16 +81,15 @@
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
 12179-Orthos zaratan:
   Threat: Caution
-  Aggro: Sight
+  Aggro: Sound
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -111,7 +107,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -120,7 +116,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -128,5 +124,226 @@
 
 # EO boss floor 60
 12267-Servomechanical minotaur:
+  Threat: Caution
+  Aggro: Boss
+
+# EO floors 71-79
+12197-Orthos toco toco:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12199-Orthos unicorn:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12202-Orthos gulo gulo:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12207-Orthos thunderbeast:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12201-Orthos wolf:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12209-Orthos kargas:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12208-Orthos flamebeast:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12205-Orthoskunoichi:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - HeavyUnknown  
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12198-Orthos skatene:
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12206-Bird of orthos:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12203-Orthos sasquatch:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+
+# EO boss floor 80
+12247-Protokaliya:
+  Threat: Dangerous
+  Aggro: Boss
+
+# EO floors 81-89
+12212-Orthos hecteyes:
+  Threat: Sound
+  Aggro: Dangerous
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12217-Orthoiron Corse:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12218-Orthos catoblepas:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12214-Orthos persona:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12161-Orthos deepeye:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12215-Orthos gourmand:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12222-Orthos abyss:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12213-Orthos pudding:
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12211-Orthos spartoi:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12220-Orthos wraith:
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12221-Orthos specter:
+  Threat: Dangerous
+  Aggro: Proximity
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12216-Orthos ahriman:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12219-Orthos pegasus:
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+
+12102-Administrator:
   Threat: Caution
   Aggro: Boss
