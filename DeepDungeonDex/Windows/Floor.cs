@@ -8,6 +8,7 @@ using ImGuiNET;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Models;
 using System.Numerics;
+using Dalamud.Logging;
 
 namespace DeepDungeonDex.Windows
 {
@@ -18,6 +19,7 @@ namespace DeepDungeonDex.Windows
         private readonly Framework _framework;
         private readonly StorageHandler _storage;
         private readonly AddonAgent _addon;
+        private Locale _locale;
         private byte _debug;
         private string _dataPath;
 
@@ -31,8 +33,14 @@ namespace DeepDungeonDex.Windows
             command.AddCommand("debugfloor", args =>
             {
                 var argArr = args.Split(' ');
-                if (!byte.TryParse(argArr[0], out var id) || !uint.TryParse(argArr[1], out var ter) || ter is > 1 or < 0)
+                if (!byte.TryParse(argArr[0], out var id) || !uint.TryParse(argArr[1], out var ter) || ter is > 2 or < 0)
                 {
+                    if (argArr[0] == "print")
+                    {
+                        var floor = _debug == 0 ? _addon.Floor : _debug;
+                        PluginLog.Debug($"Currently displaying: {_dataPath}{floor}");
+                        return;
+                    }
                     _debug = 0;
                     _dataPath = "";
                     IsOpen = false;
@@ -45,8 +53,10 @@ namespace DeepDungeonDex.Windows
 #pragma warning restore CS8509
                 {
                     0 => "PotD",
-                    1 => "HoH"
+                    1 => "HoH",
+                    2 => "EO"
                 };
+                _locale = _storage.GetInstance<Locale>(_dataPath + "/Floors.yml");
                 IsOpen = true;
 
             }, show: false);
@@ -71,6 +81,7 @@ namespace DeepDungeonDex.Windows
                 >= 1099 and <= 1108 => "EO",
                 _ => ""
             };
+            _locale = _storage.GetInstance<Locale>(_dataPath + "/Floors.yml");
         }
 
         private void GetData(Framework framework)
@@ -107,7 +118,6 @@ namespace DeepDungeonDex.Windows
 
         public override void Draw()
         {
-            var locale = _storage.GetInstances<Locale>();
             var remap = (FloorData)((Storage.Storage)_storage.GetInstance(_dataPath + "/Floors.yml")!).Value;
             var floor = _debug == 0 ? _addon.Floor : _debug;
             floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
@@ -115,7 +125,7 @@ namespace DeepDungeonDex.Windows
             try
             {
                 ImGui.Text("Floor Help");
-                ImGui.TextUnformatted(locale.GetLocale($"{_dataPath}{floor}"));
+                ImGui.TextUnformatted(_locale.GetLocale($"{_dataPath}{floor}"));
             }
             catch
             {

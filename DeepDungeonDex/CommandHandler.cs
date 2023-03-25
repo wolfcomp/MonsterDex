@@ -18,7 +18,7 @@ namespace DeepDungeonDex
         public void AddCommand(string command, Action action, string helpText = "", bool show = true)
         {
             _commands.Add(_command + command);
-            _manager.AddHandler(command, new CommandInfo((_, _) => action.Invoke())
+            _manager.AddHandler(_command + command, new CommandInfo((_, _) => action.Invoke())
             {
                 HelpMessage = helpText,
                 ShowInHelp = show
