@@ -67,6 +67,8 @@ namespace DeepDungeonDex.Requests
                     {
                         PluginLog.Verbose($"Loading File: {file}");
                         var content = await Get(file);
+                        if (string.IsNullOrWhiteSpace(content))
+                            continue;
                         PluginLog.Verbose("Creating instance");
                         var instance = (ILoadableString)Activator.CreateInstance(type)!;
                         PluginLog.Verbose("Loading content");
