@@ -41,8 +41,7 @@ namespace DeepDungeonDex.Requests
                     if (file == "Job.yml")
                         continue;
                     PluginLog.Verbose($"Loading {file}");
-                    var data = (Storage.Storage)Handler.GetInstance(file)!;
-                    if (data.Value is not MobData mobData)
+                    if (Handler.GetInstance(file) is not Storage.Storage {Value: MobData mobData})
                         continue;
 
                     PluginLog.Verbose($"Processing MobData descriptions for {file}");

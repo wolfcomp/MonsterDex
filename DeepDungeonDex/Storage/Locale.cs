@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Dalamud.Logging;
 using DeepDungeonDex.Models;
 using Newtonsoft.Json;
 
@@ -72,8 +73,21 @@ namespace DeepDungeonDex.Storage
 
         public static string GetLocale(this IEnumerable<Locale> locales, string key)
         {
+            var langs = locales.GetLocaleList(key);
             var ret = locales.FirstOrDefault(l => l.TranslationDictionary.ContainsKey(key));
             return ret != null ? ret.TranslationDictionary[key] : key;
+        }
+
+        public static IEnumerable<KeyValuePair<string, string>> GetLocaleList(this IEnumerable<Locale> locales, string key)
+        {
+            foreach (var locale in locales)
+            {
+                foreach (var (s, value) in locale.TranslationDictionary)
+                {
+                    if(s == key)
+                        yield return new KeyValuePair<string, string>(s, value);
+                }
+            }
         }
     }
 }

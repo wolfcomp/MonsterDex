@@ -9,6 +9,7 @@ using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
+using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Models;
@@ -69,7 +70,11 @@ namespace DeepDungeonDex
                 .GetTypes()
                 .Where(t => t.IsSubclassOf(typeof(Window)))
                 .ToList()
-                .ForEach(t => sys.AddWindow((Window)ActivatorUtilities.CreateInstance(_provider, t)!));
+                .ForEach(t =>
+                {
+                    PluginLog.Verbose($"Loading window: {t.Name}");
+                    sys.AddWindow((Window)ActivatorUtilities.CreateInstance(_provider, t)!);
+                });
             return sys;
         }
 

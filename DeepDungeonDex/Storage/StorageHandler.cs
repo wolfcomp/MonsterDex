@@ -242,6 +242,14 @@ namespace DeepDungeonDex.Storage
             return (list.FirstOrDefault(x => x is T) ?? (list.FirstOrDefault(x => x is Storage { Value: T }) as Storage)?.Value) as T ?? null;
         }
 
+        public T? GetInstance<T>(string path) where T : class, ISaveable
+        {
+            var list = JsonStorage.ToList();
+            list.AddRange(YmlStorage);
+            var set = list.Where(t => t.Key.Contains(path)).Select(t => t.Value).ToList();
+            return (set.FirstOrDefault(x => x is T) ?? (set.FirstOrDefault(x => x is Storage { Value: T }) as Storage)?.Value) as T ?? null;
+        }
+
         public T[] GetInstances<T>() where T : class, ISaveable
         {
             var list = JsonStorage.Values.ToList();
