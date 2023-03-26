@@ -3,7 +3,7 @@
 12110: Casts untelegraphed PB AoE
 12116: Casts disease
 12132: |
-  Casts Self-detonate at 30%, can LoS
+  30%때 자폭 시전, 벽 뒤로 숨거나 멀리 도망가세요.
 12240: |
   Steel recommended for solo
 12133: |
@@ -45,7 +45,7 @@
 12168: |
   Fast untelegraphed conal after suck in
 12158: |
-  Casts Explosion at 30%, can LoS
+  30%때 폭발 시전, 벽 뒤로 숨거나 멀리 도망가세요.
 12164: |
   "Abyssal Cry" - Large AoE that stuns, can LoS
 12170: Applies potent heavy
