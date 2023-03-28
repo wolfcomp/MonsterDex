@@ -1,9 +1,9 @@
 12109: |
-  Casts Ecliptic Meteor at 40%, can LoS
+  40%때 이클립스 메테오 시전, 벽 뒤로 숨거나 멀리 도망가세요.
 12110: Casts untelegraphed PB AoE
 12116: Casts disease
 12132: |
-  Casts Self-detonate at 30%, can LoS
+  30%때 자폭 시전, 벽 뒤로 숨거나 멀리 도망가세요.
 12240: |
   Steel recommended for solo
 12133: |
@@ -19,7 +19,7 @@
 12146: PB AoE
 12154: |
   Buffs enemies with double damage
-12147: Casts Haste
+12147: 헤이스트 시전
 12150: |
   "100 Tonze Swing" -- PB AoE
   "11 Tonze Swipe" -- Close Conal AoE
@@ -37,7 +37,7 @@
   3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
 12160: Quick behind cleave
 12169: Casts stacking slow
-12159: Casts Haste
+12159: 헤이스트 시전
 12166: |
   Casts roomwide aoe, interruptable
 12162: |
@@ -45,7 +45,7 @@
 12168: |
   Fast untelegraphed conal after suck in
 12158: |
-  Casts Explosion at 30%, can LoS
+  30%때 폭발 시전, 벽 뒤로 숨거나 멀리 도망가세요.
 12164: |
   "Abyssal Cry" - Large AoE that stuns, can LoS
 12170: Applies potent heavy
