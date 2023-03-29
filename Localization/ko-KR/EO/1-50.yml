@@ -1,22 +1,22 @@
 12109: |
   40%때 이클립스 메테오 시전, 벽 뒤로 숨거나 멀리 도망가세요.
-12110: Casts untelegraphed PB AoE
+12110: 몬스터 중심으로 보이지 않는 범위공격을 시전
 12116: 질병 디버프 시전
 12132: |
   30%때 자폭 시전, 벽 뒤로 숨거나 멀리 도망가세요.
 12240: |
-  Steel recommended for solo
+  혼자라면 방어강화를 추천합니다.
 12133: |
   Late telegraphed draw-in into AoE
   KB immunity works
-12141: Casts roomwide vuln stacking AoE unaggroed
+12141: 비전투 상태일 때 받는 피해량 증가 디버프를 주는 방 전체 범위공격 시전
 12242: |
-  1) "Dark Wyrmtail" -- cleaves middle
-  2) "Dark Wyrmwing" -- cleaves sides
-  3) "Whei Morn" -- multiple baited AoEs
+  「ダークネステイル / Dark Wyrmtail」 -- 중앙 범위공격
+  「ダークネスウイング / Dark Wyrmwing」 -- 양옆 범위공격
+  ウェイ・モーン / Whei Morn -- 대상자를 따라오는 범위공격 (5회)
 12149: |
   Casts inflicts Stun
-12146: PB AoE
+12146: 몬스터 중심으로 범위공격을 시전
 12154: |
   Buffs enemies with double damage
 12147: 헤이스트 시전
@@ -36,10 +36,10 @@
   2) "Twisting Dive" -- Cleave down middle with twister bait
   3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
 12160: Quick behind cleave
-12169: Casts stacking slow
+12169: 중첩되는 둔화 디버프 시전
 12159: 헤이스트 시전
 12166: |
-  Casts roomwide aoe, interruptable
+  방 전체에 범위공격 시전, 침묵 가능
 12162: |
   PB AoE after dash, can LoS
 12168: |
@@ -49,7 +49,7 @@
 12164: |
   "Abyssal Cry" - Large AoE that stuns, can LoS
 12170: Applies potent heavy
-12163: Casts roomwide vuln stacking AoE unaggroed
+12163: 비전투 상태일 때 받는 피해량 증가 디버프를 주는 방 전체 범위공격 시전
 12265: |
   1) "Song of Thunder and Ice" -- doughnut then PB AoE
   2) "Song of Ice and Thunder" -- PB AoE then doughnut
