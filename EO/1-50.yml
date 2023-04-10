@@ -6,7 +6,7 @@
     - Stun
     - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12112-Orthos imp:
   Threat: Easy
   Aggro: Sight
@@ -14,7 +14,7 @@
     - Stun
     - Heavy
     - SlowUnknown
-    - SleepUnknown
+    - Sleep
 12117-orthoiron claw:
   Threat: Easy
   Aggro: Proximity
@@ -22,7 +22,6 @@
     - Stun
     - Heavy
     - Slow
-    - SleepUnknown
 12111-Orthos dahak:
   Threat: Easy
   Aggro: Sight
@@ -30,7 +29,7 @@
     - Stun
     - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12110-Orthos grenade:
   Threat: Caution
   Aggro: Sight
@@ -234,7 +233,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 12132-orthodemolisher:
   Threat: Caution
   Aggro: Proximity
@@ -251,7 +250,7 @@
     - StunUnknown
     - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12135-orthogiant:
   Threat: Easy
   Aggro: Sight
