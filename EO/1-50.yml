@@ -350,7 +350,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -368,7 +368,7 @@
   Threat: Caution
   Aggro: Sound
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -412,7 +412,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -446,7 +446,7 @@
     - SleepUnknown
 12152-orthochimera:
   Threat: Dangerous
-  Aggro: Sight
+  Aggro: Proximity
   Weakness:
     - HeavyUnknown
     - SlowUnknown
@@ -454,9 +454,9 @@
     - SleepUnknown
 12156-orthoempuse:
   Threat: Caution
-  Aggro: Sight
+  Aggro: Sound
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -481,7 +481,7 @@
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - StunUnknown
+    - Stun
     - Heavy
     - SlowUnknown
     - BindUnknown
@@ -499,7 +499,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -508,7 +508,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -517,7 +517,6 @@
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -526,7 +525,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -535,7 +534,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -544,7 +542,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -553,7 +550,6 @@
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -562,7 +558,7 @@
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -571,7 +567,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
