@@ -1,4 +1,66 @@
 EO1: |
-  Every marked attack hurts have fun.
+  Mimics: Bronze Coffers, Interruptable and Stunnable
+  Intuition: Bronze Tinged Sacks
+  Note: All patrol floor data is approximate as data is incomplete
+  Succubus: 1 to 3
+  Gargoyle: 4 to 6
+  Fachan: 7 to 9
+EO11: |
+  Mimics: Bronze Coffers, Interruptable and Stunnable
+  Intuition: Bronze Tinged Sacks
+  Keter: 1 to 3
+  Golem: 4 to 6
+  Groundskeeper: 7 to 9 
+EO21: |
+  Mimics: Bronze Coffers, Interruptable and Stunnable
+  Intuition: Bronze Tinged Sacks
+  Giant: 1 to 4
+  Lesser Dragon: 4 to 6
+  Vanara: 7 to 9
+EO31: |
+  Mimics: Silver Coffers, Interruptable and Stunnable
+  Intuition: Silver Tinged Sacks -- New Tier
+  Mirrorknight: 1 to 3
+  Naga: 4 to 6
+  Orthoray: 6 to 9 
+EO41: |
+  Mimics: Silver Coffers, Interruptable and Stunnable
+  Intuition: Silver Tinged Sacks
+  Archeron: 1 to 4
+  Kelpie: 4 to 6
+  Hoarhound: 7 to 9
+EO51: |
+  Mimics: Silver Coffers, Interruptable and Stunnable
+  Intuition: Silver Tinged Sacks
+  Rockfin: 1 to 3
+  Yabby: 4 to 6
+  Monk: 6 to 9
+EO61: |
+  Mimics: Gold Coffers, Interrutable only
+  Intuition: Silver Tinged Sacks
+  Cobra: 1 to 4
+  Ninja: 1,2,7,8,9
+  Gowrow: 3 to 5
+EO71: |
+  Mimics: Gold Coffers, Interruptable only
+  Intuition: Gold Tinged Sacks -- New Tier
+  Couerl: 1 to 4
+  Kunouchi: 1 to 9
+  Thunderbeast: 3 to 6
+  Beware Sasquatch OoC
+EO81: |
+  Mimics: Gold Coffers, Interruptable only
+  Intuition: Gold Tinged Sacks
+  Corse: 1 to 4
+  Gourmand: 5 to 9
+  Pegasus: 6 to 9
+  Beware Catoblepas OoC
 EO91: |
-  Floor 99: Have fun
+  Mimics: Gold Coffers, Interruptable only
+  Intuition: Gold Tinged Sacks
+  System Y: 1 to 3
+  Orthotaur: 3 to 8
+  Chimera: 5 to 8
+  Beware Zaghnal and Fitter OoC
+EO100: |
+  Congratulations, you did it

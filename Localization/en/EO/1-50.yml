@@ -1,59 +1,127 @@
+# Behemoth
 12109: |
-  Casts Ecliptic Meteor at 40%, can LoS
-12110: Casts untelegraphed PB AoE
-12116: Casts disease
+  "Ecliptic Meteor" at 40%, can LoS
+  Charges knockback autoattack, preposition or use KB immunity
+# Grenade
+12110: |
+  "Big Burst" Late lethal PBAOE
+# Bhoot
+12116: Casts disease, can be interrupted or esunad
+12135: Patrol mob
+# Orthos water sprite
+12118: Proximity
+12117: THE CLAAW
+# Orthodemolisher
 12132: |
   Casts Self-detonate at 30%, can LoS
+# Floor 10 Boss Gancanagh
 12240: |
-  Steel recommended for solo
+  This dude slaps, Steel recommended for solo
+# Sawtooth
+12127: Standing behind will bait "Mean Thrash" tailswipe
+# Lesser Orthos Dragon
+12138: |
+  Patrol Mob
+  "Swinge" LATE HUGE CONAL AOE
+# Orthoknight
 12133: |
-  Late telegraphed draw-in into AoE
-  KB immunity works
-12141: Casts roomwide vuln stacking AoE unaggroed
+  "Electromagnetism" -LATE draw-in AoE into PBAOE
+  KB immunity works, not stunnable
+# Vanara
+12143: |
+  Patrol Mob
+  "Scythe Tail" LATE PBAOE that stuns + combo kill
+# Vouivre
+12141: When unaggroed casts roomwide vuln stacking AoE
+# Floor 20 Boss Cloning Node
+12261: |
+  Will tether to dragons who will do area wide conal AOE, Will later do multi wave tethers
+  Easy dodge -- Stand next to dragon that does not have another dragon on opposite side
+# Floor 30 Boss Tiamats Clone
 12242: |
- 1) "Dark Wyrmtail" -- cleaves middle
- 2) "Dark Wyrmwing" -- cleaves sides
- 3) "Whei Morn" -- multiple baited AoEs
+  1) "Dark Wyrmtail" -- cleaves middle
+  2) "Dark Wyrmwing" -- cleaves sides
+  3) "Whei Morn" -- multiple baited AoEs
+# mirrorknight
 12149: |
-  Casts inflicts Stun
-12146: PB AoE
+  Patrol Mob
+  Roomwide gaze attack that stuns for 20s + combo telegraphed targeted AOE
+  Just look away
+# orthospider
+12146: |
+  "Particle Collision" Late small PBAOE that applies minimum + combo that may 1shot if you are minimumed
+# Orthobug
+12145: |
+  Proximity, Extra attack that leeches health
+# orthoiksalion
 12154: |
-  Buffs enemies with double damage
-12147: Casts Haste
+  Buffs enemies with double damage 
+# orthopredator
+12147: Casts Haste, will double auto attack
+# Naga
+12155: Conal gaze, stunnable
+# orthotaur
 12150: |
-  "100 Tonze Swing" -- PB AoE
-  "11 Tonze Swipe" -- Close Conal AoE
+  "100 Tonze Swing" -- Medium size PBAoE
+  "11 Tonze Swipe" -- Smaller Conal AoE 
+# orthoray
 12148: |
-  "Forearming" -- Half Circle AoE
-  "Atmospheric Displacement" -- PB AoE
+  Patrol Mob-- Looks like Ravana
+  "Forearming" -- HUGE LATE front half circle AOE
+  "Atmospheric Displacement" -- Medium PBAoE
+# Chimera
 12152: |
-  "The Dragon's Voice" - doughnut
-  "The Ram's Voice" - PB AoE
+  "The Dragon's Voice" -- Large doughnut AoE
+  "The Ram's Voice" -- PB AoE
+  Uninterruptable
+# orthoempuse
 12156: |
   "Nothing personal kid"
+  Will dash behind target and knock back once
+# Floor 40 Boss Twintania Clone
 12263: |
-  1) "Twister" -- Move away from twister bait
-  2) "Twisting Dive" -- Cleave down middle with twister bait
-  3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
-12160: Quick behind cleave
-12169: Casts stacking slow
-12159: Casts Haste
+  1) "Twister" -- Move away from your positon when the cast goes off, Avoid the green tornado left behind or you die
+  2) "Twisting Dive" -- Line AOE divebomb + "Twister" at the same time, Only happens once during fight
+  3) "Meracydian Cyclone" -- Creates multiple ground AOE tornadoes, Each player will have x4 targeted tornadoes
+  These AOE resolve slowly and will reslove before boss casts "Turbine"
+  4)"Turbine" Be INSIDE boss hitbox for this knockback, avoid puddles -- KB immunity does not work
+# bergthurs
+12160: Standing behind will bait "Elbow Drop" back conal
+# Hedetet
+12169: Potent stacking slow effect
+# spriggan
+12159: Casts Haste then double autos
+# Acheron
 12166: |
-  Casts roomwide aoe, interruptable
+  Patrol Mob
+  "Quake" Long cast, untelegraphed PB AoE
+  Can Interrupt, can LOS
+# Kelpie
 12162: |
-  PB AoE after dash, can LoS
+  Patrol Mob
+  Dashes to target then casts "Bloody Puddle" untelegraphed deadly PB AoE
+  Can Stun, can LoS
+# goobbue
 12168: |
-  Fast untelegraphed conal after suck in
+  Sucks in target then does FAST untelegraphed frontal conal that will oneshot
+  Run behind it ASAP after getting sucked in, KB Immunity does NOT work
+# gelato
 12158: |
-  Casts Explosion at 30%, can LoS
+  Casts "Explosion" at 30%, roomwide aoe, Can LoS
+# hoarhound
 12164: |
-  "Abyssal Cry" - Large AoE that stuns, can LoS
-12170: Applies potent heavy
-12163: Casts roomwide vuln stacking AoE unaggroed
+  Patrol mob-- Looks like Fenrir
+  "Abyssal Cry" -- Untelegraphed, roomwide AoE that stuns + combo kill you
+  Must LoS or kill it 
+# mudman
+12170: Applies potent heavy, stunnable
+# kukulkan
+12163: When unaggroed casts roomwide vuln stacking AoE
+# Floor 50 Boss servomechanical chimera
 12265: |
-  1) "Song of Thunder and Ice" -- doughnut then PB AoE
+  1) "Song of Thunder and Ice" -- doughnut get in then PB AoE
   2) "Song of Ice and Thunder" -- PB AoE then doughnut
-  3) "Cold Thunder" -- proximity dash, PB AoE then doughnut
-  4) "Thunderous Cold" -- proximity dash, doughnut then PB AoE
-  5) "Leftbreathed/Rightbreathed" -- halfroom cleave
-  6) "Cacophony" -- ball tether, kite away
+  3) "Cold Thunder" -- dash to target,then PB AoE then doughnut
+  4) "Thunderous Cold" -- dash to target, then doughnut then PB AoE
+  5) "Leftbreathed/Rightbreathed" -- halfroom cleave aimed to left or right
+  6) "Cacophony" -- ball tether, kite away, Applies paralysis

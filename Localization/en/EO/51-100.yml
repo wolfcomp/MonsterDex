@@ -1,0 +1,264 @@
+# Orthos ice sprite
+12180: |
+  Self destructs on death casting "Hypothermic Combustion" untelegraphed small PB AoE
+# Ymir
+12183: |
+  "Ice Spikes" Will one shot you if hit with physical attack
+  5 second uptime, IS stunnable
+# Rockfin
+12182: |
+  Patrol Mob
+  "Aqua Spear" LoS line charge or you will die
+# Yabby
+12176: |
+  Patrol Mob
+  Potent heavy and targeted "Tail Screw" AOE sets you to 1 HP
+  If you shield Heavy they will not Tail Screw
+# Orthos big claw
+12175: |
+  Standing behind will bait "Crab Dribble" back conal
+# Zaratan
+12179: |
+  "Sewer Water" Half circle AOE then immediately hits the other half
+# Stingray
+12173: |
+  Jumps to target, doing aoe damage and knocking back any other players before casting either
+  "Electric Whorl" Donut
+  "Expulsion" PB Aoe
+# Monk
+12172: |
+  Patrol mob, Proximity
+  Sucks target in then does telegraphed AoE
+# Floor 60 Boss Servomechanical minotaur 16
+12267: |
+  1) "Octuple Swipe" Shows 8 telegraphs, the first pattern is always UP DOWN RIGHT LEFT
+  The last four are either a repeat, or the reverse -- LEFT RIGHT DOWN UP
+  2) Electric Orbs will spawn during Octuple Swipe, will despawn after exploding once
+  Boss' left side is generally safe for orbs since its the last side hit in pattern
+  3) "Disorienting Groan" knockback, stand inside boss' hitbox
+  "Bullish Swipe" Late telegraphed conal attack in front
+  "Bullish Swing" Late telegraphed large PB AoE
+# Diplocaulus
+12189: |
+  Proximity aggro
+  Its AoE attack buffs mobs with 70% evasion up for 3 mins, Not recommended to multipull
+# Drake
+12185: |
+  "Smouldering Scales" Will one shot you if hit with physical attack
+  IS Stunnable
+# Cobra
+12186: |
+  Standing behind will bait "Whip Back" back conal
+  Self destructs on death, gives a 70% vuln stack
+# Palleon
+12192: |
+  Pulls in target then does fast but small PB AoE
+  Current bug-- If AOE is cancelled it will attempt to cast it again instantly
+# Perfected
+12196: Double auto that knocks back
+# orthoninja
+12195: |
+  Will "Assassinate" targets under 20% HP
+# Gowrow
+12194: |
+  No cast bar or telegraphs
+  Lifts arm slowly-- "Ripper Claw" frontal cone
+  Lifts tail slowly-- "Tail Sweep" back conal
+# Falak
+12193: |
+  "Electric Cachexia" Untelegraphed roomwide donut AoE that is cast only when someone is at long range
+  Otherwise only autoattacks
+# Floor 70 Boss Aeturna
+12246: |
+  You should probably look up a diagram
+  1) "Ferocity" Distance tether to boss, walk away until it turns purple or you die
+  2) "Preternatural Turn"
+  Blue Glow is Donut AoE
+  NO Glow is PB AoE
+  3) "Roar" Crystals spawn, Last one to spawn will be further than others and be near safe spot,
+  "Preternatural Turn" will be cast again, watch for if boss glows or not, It will do either Donut or PB Aoe and following
+  IF GLOW: Crystals do PB AoE, Get in boss hitbox, stand on side of furthest crystal
+  NO GLOW: Crystals will do huge conal AoE facing outside of arena, Stand away from boss' PB AoE, the furthest crystal will have a safe spot
+# Toco Toco
+12197: |
+  "Slowcall" Late telegraph small frontal cone, Has double auto attack
+# Kunoichi
+12205: |
+  Patrol mob, Proximity
+  Will "Assassinate" targets under 20% HP
+# Primelephas
+12204: |
+  Charges target then uses "Rear" PB Aoe
+  Current bug-- If AOE is cancelled it will attempt to cast it again instantly
+# Wolf
+12201: Applies low damage DOT, Will eventually apply damage up buff on self and DOT may hurt more
+# Coeurl
+12200: |
+  Patrol mob, Telegraphed attacks and can be stunned
+  "Wide Blaster" HUGE and WIDE frontal cone attack
+  "Tail Swing" HUGE rear conal when someone is behind
+# Unicorn
+12199: |
+  Knocks back targets far X3
+  "Innocence" targeted AoE
+# Thunderbeast
+12207: |
+  Patrol mob
+  "Spark" Untelegraphed roomwide donut AoE that is cast only when someone is at long range
+  "Scythe Tail" Animation only attack, NO CAST and Untelegraphed PB AoE
+  It will crouch down like other Vanara mobs and prepare its attack
+# Bird of Orthos
+12206: |
+  Stunnable
+  "Eye of the Fierce" Roomwide gaze that inflicts confusion and lethal targeted AOE combo on the confused
+  Do not attempt to "Rescue" the confused as the mob will spam AoE until the confused is dead
+# Gulo Gulo
+12202: |
+  "The Killing Paw" Small frontal conal AoE x2, First time is telegraphed followed instantly by an untelegraphed
+  Current bug-- If AOE is cancelled it will attempt to cast it again instantly
+# Griffin
+12209: |
+  "Winds of Winter" Roomwide untelegraphed AoE, Can LoS or Stun
+  Will cast it after x2 Freefalls or 30s after pull
+# Sasquatch
+12203: |
+  Super Danger Out of Combat
+  "Ripe Banana" Out of Combat cast that buffs damage for 15s and will immediately follow with
+  "Chest Thump" HUGE AOE that will one shot
+  Make sure to LoS ANY Sasquatch if you see them cast "Ripe Banana" or hear them "Chest Thump"
+  Will charge and knockback you on pull, Once pulled is otherwise unremarkable
+# Skatene
+12198: |
+  Sound Aggro, Stunnable and Sleepable
+  "Chirp" Untelegraphed AoE that sleeps then lethal combo
+  Can LOS, Stun, or run out, Size is more than max melee/about half cast distance
+# Flamebeast
+12208: |
+  "Blistering Roar" HUGE line AOE, CANNOT LOS
+# Floor 80 Boss Proto Kaliya
+12247: |
+  You should probably look up a diagram
+  Breath attacks and Drone line AoE give vuln, but will not oneshot if you have steel or are tank
+  1) "Centralized Nerve Gas" Wide frontal cone
+  "Rightward/Leftward Nerve Gas" 180degree OFF CENTER AOE, Front is always safe for these
+  2) "Barofield" INSTANT KILL ZONE under boss hitbox  DOT zone around arena -- which is not instant kill
+  3) "Nanospore Jet" Gives all players Positive or Negative charge then tethers to a drone that has its own charge
+  Opposites attract, Same repels
+  One more "Nerve Gas" will resolve before the push or pull mechanic executes
+  4) "Nerve Gas Ring" Donut breath attack that executes right after push or pull
+# Corse
+12217: |
+  Proximity
+  "Glass Punch" Late short range frontal cone
+# Persona
+12214: |
+  Proximity, Stunnable
+  "Teleports to you and starts being worthless" --Maygi
+# Gourmand
+12215: |
+  Patrol Mob, Proximity
+  Sucks in target then does FAST untelegraphed frontal conal that will oneshot
+  Run behind it ASAP after getting sucked in, KB Immunity works
+# Catoblepas
+12218: |
+  Out of Combat room-wide gaze attack, stuns for 20s but no damage
+  Will charge you on pull, Once pulled is otherwise unremarkable
+# Hecteyes
+12212: |
+  Sound Aggro
+  "Catharsis" Huge PB AoE, uninterruptible
+  Small AOE gaze that only paralyses
+# Pudding
+12213: |
+  "Dark II" Huge telegraphed cone AOE
+# Abyss
+12222: Pushover
+# Deepeye
+12210: Paralysis gaze attack, small PB AoE vuln
+# Spartoi
+12211: Medium targeted circle AoE followed be late telegraph frontal cone
+# Specter
+12221: |
+  Proximity, HUGE AOE
+  "Ringing Burst" Roomwide Donut
+  "Left/Right Sweep" 225degree huge side cleave, Front is not safe
+  "Surrounding Burst" Large PB AoE
+# Wraith
+12220: |
+  Proximity
+  "Scream" Large, late telegraph PB AoE, Uninterruptible
+  If hit, stuns you for 20s
+# Ahriman
+12216: Large line AoE, Stunnable
+# Pegasus
+12219: |
+  Dashes to target then casts "Nicker" late telegraph large PB AoE
+  After this cast will do a knockback autoattack
+# Floor 90 Boss Administrator
+12102: |
+  You should probably look up a diagram
+# System A
+12229: |
+  Proximity
+  "Aetherochemical Laser a" Large frontal cone with late telegraph, stunnable
+# System Y
+12224: |
+  Patrol mob, Proximity
+  "High Voltage" HUGE, bigger than max cast range, PB AoE. Can Interrupt
+  "Repelling Canons" Medium PB AoE
+  "Ring Cannon" Donut AoE
+# Mining Drone
+12231: |
+  Sound aggro
+  Knock back x4 then uses "Aetherochemical Cannon" HUGE fron facing half circle AoE
+# Ortho drone
+12223: |
+  Proximity
+  Self destructs on death
+# Motherbit
+12232: |
+  Proximity
+  "Allagan Gravity" Targeted circle AoE
+  "Citadel Buster" Late telegraph line AoE
+# Orthotaur
+12234: |
+  Patrol Mob
+  "32 Tonze Swipe" Huge conal AoE
+  "128 Tonze Swing" Medium PB AoE
+# Sphinx
+12228: |
+  "Swinge" Large, late fronal cone
+  Gaze attack is fronal cone
+# Zaghnal
+12230: |
+  "Beastly Roar" Out of Combat room-wide late telegraph AoE. This will one shot
+  "Pounce Errant" jumps to marked target, knocking back any other players
+# Mithridates
+12225: |
+  "Laserblade" 270 degree late telegraph frontal cone. Stunnable
+# Chimera
+12233: |
+  Patrol Mob
+  "Dragons Breath" Late huge conal to upper left
+  "Engulfing Ice" Late huge conal to upper right
+  "Scorpion Sting" Late medium rear conal
+  "Dragons Voice" Untelegraphed donut
+  "Rams Voice"  Untelegraphed medium PB AoE
+# Durga
+12235: |
+  Proximity
+  "Diffusion Ray" Telegraphed large fronal cone AoE
+  "Brain Jack" Confuses target for 3s and casts circle AoE on target
+  You can walk out of AoE after confusion falls off. Beware it will use "Diffusion Ray" after the followup AoE
+# Orthonaught
+12226: |
+  "Rotoswipe" Wide frontal cone AoE
+  "Steam Clean" minor self damage buff
+# Fitter
+12227: |
+  "Unholy" Out of Combat room-wide late telegraph AoE. This will one shot
+  Trivial once pulled
+  Current bug-- Out of Combat AoE may be cast without any windup, be careful if you know one that hasn't cast in a while
+# Excalibur
+12100: |
+  You should probably look up a diagram
