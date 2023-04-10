@@ -344,6 +344,122 @@
     - BindUnknown
     - SleepUnknown
 
+# EO boss floor 90
 12102-Administrator:
+  Threat: Caution
+  Aggro: Boss
+
+# EO floors 91-98
+12224-Orthos pegasus:
+  Threat: Undefined
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12225-Orthos Mithridates:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12226-Orthonaught:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12227-Orthos Fitter:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12228-Orthos Sphinx:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12229-Orthosystem α:
+  Threat: Undefined
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12230-Orthos Zaghnal:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12231-Orthos Mining Drone:
+  Threat: Undefined
+  Aggro: Sound
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12232-Orthos Motherbit:
+  Threat: Undefined
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12233-Servomechanical Orthochimera:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12234-Servomechanical Orthotaur:
+  Threat: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12235-Orthos Durga:
+  Threat: Undefined
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+
+# EO boss floor 99
+12100-Excalibur:
   Threat: Caution
   Aggro: Boss
