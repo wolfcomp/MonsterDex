@@ -1,0 +1,52 @@
+12182: |
+  Casts one shot line charge, must LoS
+12180: |
+  Explodes after dying
+12183: |
+  Casts ice spikes, will one shot if hit with physical damage (pet damage ok)
+12161: |
+  Inflicts heavy
+  "Tail Screw" -- sets to 1 hp
+12172: |
+  Pulls in then PB AoE
+12179: |
+  "Sewer Water" -- Half circle cleave followed immediately by other half
+12173: |
+  Jumps to player and does half room knockback
+  "Electric Whorl" -- Doughnut
+  "Expulsion" -- PB AoE
+12175: |
+  Untelegraphed AoE behind
+12267: |
+  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
+  "Disorienting Groan" -- Knockback, be inside boss
+  "Bullish Swipe" -- Frontal cleave
+  "Bullish Swing" -- Large PB AoE
+12197: Late telegraph frontal cone
+12199: Triple targeted knockbacks
+12202: |
+  "The Killing Paw" -- double frontal cone (second untelegraphed)
+  Be carefufl with stun or slow as this enemy can store the second swipe
+12207: |
+  "Spark" -- untelegraphed doughnut
+  "Scythe Tail" -- no cast bar PB AoE, it will crouch and wiggle its tail
+12209: |
+  "Winds of Winter" -- large AoE after 2 freefalls, must LoS or stun
+12208: |
+  Wide line AoE, cannot LoS
+12205: |
+  Executes if below 20% HP
+12198: |
+  "Chirp" -- untelegraphed PB AoE
+12206: Roomwide gaze
+12203: |
+  "Chest Thump" -- Huge unaggroed AoE after using "Ripe Banana", must LoS
+12247: |
+  When the boss casts "Nanospore Jet", players must find whether they are tethered too,
+  then dodge a nerve gas cast. After, the players must be knocked back or pulled near the
+  center of the boss for a doughnut AoE (do not touch the boss' hitbox)
+  "Central Nerve Gas" -- Frontal cleave
+  "Rightward Nerve Gas" -- Right Halfroom cleave (front and left quandrants are safe)
+  "Leftward Nerve Gas" -- Left Halfroom cleave (front and right quadrants are safe)
+  "Barofield" -- Creates a instakill zone under the boss and outside ring with DoT
+  "Nanospore Jet" -- Gives players a positive or negative charge
