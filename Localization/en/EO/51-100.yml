@@ -179,6 +179,7 @@
 12211: Medium targeted circle AoE followed be late telegraph frontal cone
 # Specter
 12221: |
+  Patrol Mob
   Proximity, HUGE AOE
   "Ringing Burst" Roomwide Donut
   "Left/Right Sweep" 225degree huge side cleave, Front is not safe
@@ -197,6 +198,11 @@
 # Floor 90 Boss Administrator
 12102: |
   You should probably look up a diagram
+  Raidwide hurts like a mofo, Steel recommended
+  Round Node is Donut, Egg Node is Conal AoE, Cubes are Line AoE
+  "Parralel Execution" 2 Perpendicular line laser AoE across arena, At same time x5 targeted circle AoE per person
+  Can resolve circle AoEs before running through lasers AFTER their animation
+  "Salvo Script" Much AoE, If eggs pointing at arena center safe spot NW cornerish, If eggs pointing at themselves safespot NE cornerish
 # System A
 12229: |
   Proximity

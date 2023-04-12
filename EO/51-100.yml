@@ -125,6 +125,7 @@
     - SlowUnknown
     - BindUnknown
     - Sleep
+
 # EO boss floor 60
 12267-Servomechanical Minotaur 16:
   Threat: Caution
@@ -393,7 +394,7 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
-12154-Orthos Hecteyes:
+12212-Orthos Hecteyes:
   Threat: Dangerous
   Aggro: Sound
   Weakness:
