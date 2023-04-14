@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
+using Dalamud.Game.Gui;
 using Dalamud.Logging;
 using Dalamud.Plugin;
 using DeepDungeonDex.Models;
@@ -17,15 +19,18 @@ namespace DeepDungeonDex.Storage
     public class StorageHandler : IDisposable
     {
         private readonly string _path;
+        private readonly ChatGui _chat;
+        private bool _debugError;
         public static readonly IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
         private static readonly ISerializer _serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
 
         internal readonly Dictionary<string, object> JsonStorage = new();
         internal readonly Dictionary<string, object> YmlStorage = new();
 
-        public StorageHandler(DalamudPluginInterface pluginInterface)
+        public StorageHandler(DalamudPluginInterface pluginInterface, ChatGui chat)
         {
             _path = pluginInterface.GetPluginConfigDirectory();
+            _chat = chat;
             Load();
         }
 
@@ -47,66 +52,90 @@ namespace DeepDungeonDex.Storage
 
         private void Load()
         {
-            PluginLog.Verbose("Loading Storage");
-            var configPath = Path.Combine(_path, "config.json");
-            PluginLog.Verbose("Loading config from {0}", configPath);
-            Configuration config;
             try
             {
-                PluginLog.Verbose("Deserializing config");
-                config = DeserializeFile<Configuration>(configPath)!;
-            }
-            catch
-            {
-                PluginLog.Verbose("Failed to deserialize config, creating new config");
-                config = new Configuration();
-            }
-            config.PrevLocale = config.Locale;
-            JsonStorage.Add("config.json", config);
-            var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
-            if (storagePath.Exists)
-            {
-                PluginLog.Verbose("Loading storage from {0}", storagePath);
-                var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
-                JsonStorage.Add(storagePath.Name, storage);
-                foreach (var (key, value) in storage)
+#if DEBUG
+                if (!_debugError)
                 {
-                    try
+                    _debugError = true;
+                    throw new Exception("yeet error out");
+                }
+#endif
+                PluginLog.Verbose("Loading Storage");
+                var configPath = Path.Combine(_path, "config.json");
+                PluginLog.Verbose("Loading config from {0}", configPath);
+                Configuration config;
+                try
+                {
+                    PluginLog.Verbose("Deserializing config");
+                    config = DeserializeFile<Configuration>(configPath)!;
+                }
+                catch
+                {
+                    PluginLog.Verbose("Failed to deserialize config, creating new config");
+                    config = new Configuration();
+                }
+
+                config.PrevLocale = config.Locale;
+                JsonStorage.Add("config.json", config);
+                var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
+                if (storagePath.Exists)
+                {
+                    PluginLog.Verbose("Loading storage from {0}", storagePath);
+                    var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
+                    JsonStorage.Add(storagePath.Name, storage);
+                    foreach (var (key, value) in storage)
                     {
-                        var (typeString, name) = value;
-                        var type = Type.GetType(typeString);
-                        if (!type!.IsAssignableFrom(typeof(ISaveable))) continue;
-                        PluginLog.Verbose("Loading {0}, Type: {1}, Name: {2}", key, typeString, name ?? "");
-                        if (key.Contains(".json"))
+                        try
                         {
-                            if (type.IsAssignableFrom(typeof(ILoadable)))
+                            var (typeString, name) = value;
+                            var type = Type.GetType(typeString);
+                            if (!type!.IsAssignableFrom(typeof(ISaveable))) continue;
+                            PluginLog.Verbose("Loading {0}, Type: {1}, Name: {2}", key, typeString, name ?? "");
+                            if (key.Contains(".json"))
                             {
-                                var loadable = (ILoadable)Activator.CreateInstance(type)!;
-                                var obj = name != null
-                                    ? loadable.Load(Path.Join(_path, key), name)
-                                    : loadable.Load(Path.Join(_path, key));
-                                JsonStorage.Add(key, obj);
+                                if (type.IsAssignableFrom(typeof(ILoadable)))
+                                {
+                                    var loadable = (ILoadable)Activator.CreateInstance(type)!;
+                                    var obj = name != null
+                                        ? loadable.Load(Path.Join(_path, key), name)
+                                        : loadable.Load(Path.Join(_path, key));
+                                    JsonStorage.Add(key, obj);
+                                }
+                                else if (DeserializeFile(key, type) is ISaveable content) JsonStorage.Add(key, new Storage(content));
                             }
-                            else if (DeserializeFile(key, type) is ISaveable content) JsonStorage.Add(key, new Storage(content));
+                            else
+                            {
+                                if (type.IsAssignableFrom(typeof(ILoadable)))
+                                {
+                                    var loadable = (ILoadable)Activator.CreateInstance(type)!;
+                                    var obj = name != null
+                                        ? loadable.Load(Path.Join(_path, key), name)
+                                        : loadable.Load(Path.Join(_path, key));
+                                    YmlStorage.Add(key, obj);
+                                }
+                                else if (Deserializer.Deserialize(key, type) is ISaveable content) YmlStorage.Add(key, new Storage(content));
+                            }
                         }
-                        else
+                        catch (Exception e)
                         {
-                            if (type.IsAssignableFrom(typeof(ILoadable)))
-                            {
-                                var loadable = (ILoadable)Activator.CreateInstance(type)!;
-                                var obj = name != null
-                                    ? loadable.Load(Path.Join(_path, key), name)
-                                    : loadable.Load(Path.Join(_path, key));
-                                YmlStorage.Add(key, obj);
-                            }
-                            else if (Deserializer.Deserialize(key, type) is ISaveable content) YmlStorage.Add(key, new Storage(content));
+                            PluginLog.Error(e, e.Message);
                         }
-                    }
-                    catch(Exception e)
-                    {
-                        PluginLog.Error(e, e.Message);
                     }
                 }
+            }
+            catch (Exception e)
+            {
+                PluginLog.Error(e, e.Message);
+                var sb = new StringBuilder();
+                sb.AppendLine("Could not load DeepDungeonDex storage. Clearing storage and retrying.");
+                sb.Append("If this error persists, please report it on the DeepDungeonDex channel in the plugin help forum.");
+                var errorMsg = sb.ToString();
+                PluginLog.Error(errorMsg);
+                _chat.PrintError(errorMsg);
+                Directory.Delete(_path, true);
+                Directory.CreateDirectory(_path);
+                Load();
             }
             Save();
         }

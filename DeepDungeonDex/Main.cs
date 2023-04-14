@@ -8,6 +8,7 @@ using Dalamud.Game.ClientState;
 using Dalamud.Game.ClientState.Conditions;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.Command;
+using Dalamud.Game.Gui;
 using Dalamud.Interface.Windowing;
 using Dalamud.Logging;
 using Dalamud.Plugin;
@@ -25,9 +26,9 @@ namespace DeepDungeonDex
 
         private IServiceProvider _provider;
 
-        public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state)
+        public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state, ChatGui chat)
         {
-            _provider = BuildProvider(this, pluginInterface, framework, manager, target, condition, gameData, state);
+            _provider = BuildProvider(this, pluginInterface, framework, manager, target, condition, gameData, state, chat);
             _provider.GetRequiredService<Data>();
             _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange += pluginInterface.UiBuilder.RebuildFonts;
             _provider.GetRequiredService<CommandHandler>().AddCommand(new[] { "refresh", "clear" }, () => { RefreshData(); }, "Refreshes the data internally stored");
@@ -78,7 +79,7 @@ namespace DeepDungeonDex
             return sys;
         }
 
-        private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state)
+        private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state, ChatGui chat)
         {
             return new ServiceCollection()
                 .AddSingleton(pluginInterface)
@@ -88,6 +89,7 @@ namespace DeepDungeonDex
                 .AddSingleton(condition)
                 .AddSingleton(gameData)
                 .AddSingleton(state)
+                .AddSingleton(chat)
                 .AddSingleton(new WindowSystem("DeepDungeonDex"))
                 .AddSingleton(main)
                 .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
