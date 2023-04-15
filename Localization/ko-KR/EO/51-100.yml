@@ -5,8 +5,8 @@
 12183: |
   Casts ice spikes, will one shot if hit with physical damage (pet damage ok)
 12161: |
-  Inflicts heavy
-  "Tail Screw" -- sets to 1 hp
+  과중력 부여 후
+  「テールスクリュー / Tail Screw」 시전 -- Hp를 1로 만듬
 12172: |
   Pulls in then PB AoE
 12179: |
@@ -16,7 +16,7 @@
   "Electric Whorl" -- Doughnut
   "Expulsion" -- PB AoE
 12175: |
-  Untelegraphed AoE behind
+  전조없는 후방 범위공격
 12267: |
   "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
   "Disorienting Groan" -- Knockback, be inside boss
