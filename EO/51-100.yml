@@ -232,8 +232,8 @@
 
 # EO floors 81-89
 12212-Orthos hecteyes:
-  Threat: Sound
-  Aggro: Dangerous
+  Threat: Dangerous
+  Aggro: Sound
   Weakness:
     - HeavyUnknown
     - SlowUnknown
