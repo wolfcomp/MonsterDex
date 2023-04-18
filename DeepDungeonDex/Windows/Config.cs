@@ -39,7 +39,7 @@ namespace DeepDungeonDex.Windows
                 MaximumSize = new Vector2(400 * _config.WindowSizeScaled, 600),
                 MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
             };
-            _opacity = _config.Opacity;
+            BgAlpha = _opacity = _config.Opacity;
             _clickthrough = _config.Clickthrough;
             _hideRed = _config.HideRed;
             _hideJob = _config.HideJob;
