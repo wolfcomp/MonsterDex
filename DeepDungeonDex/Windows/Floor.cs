@@ -66,6 +66,7 @@ namespace DeepDungeonDex.Windows
                 MaximumSize = new Vector2(800 * config.WindowSizeScaled, 600),
                 MinimumSize = new Vector2(450 * config.WindowSizeScaled, 100)
             };
+            BgAlpha = config.Opacity;
             framework.Update += GetData;
             config.OnChange += ConfigChanged;
             state.TerritoryChanged += TerritoryChanged;

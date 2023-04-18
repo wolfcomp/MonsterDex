@@ -58,6 +58,7 @@ namespace DeepDungeonDex.Windows
                 MaximumSize = new Vector2(400 * config.WindowSizeScaled, 600),
                 MinimumSize = new Vector2(250 * config.WindowSizeScaled, 100)
             };
+            BgAlpha = config.Opacity;
             LoadIcons();
             framework.Update += GetData;
             command.AddCommand("debugmob", (args) =>
