@@ -1,9 +1,9 @@
 12182: |
-  Casts one shot line charge, must LoS
+  释放直线跟踪型秒杀级AOE，须隔墙躲避（不穿无敌），不吃晕
 12180: |
-  Explodes after dying
+  死亡后爆炸（不可见钢铁AOE），不吃晕
 12183: |
-  Casts ice spikes, will one shot if hit with physical damage (pet damage ok)
+  读条“寒冰尖刺”后，将会反弹物理伤害，需击晕或停手（召唤物伤害无妨）
 12161: |
   Inflicts heavy
   "Tail Screw" -- sets to 1 hp
