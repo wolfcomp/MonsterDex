@@ -1,52 +1,60 @@
 12182: |
-  Casts one shot line charge, must LoS
+  释放直线跟踪型秒杀级AOE，须隔墙躲避（不穿无敌）；
+  不吃晕
 12180: |
-  Explodes after dying
+  死亡后爆炸（不可见钢铁AOE）；
+  不吃晕
 12183: |
-  Casts ice spikes, will one shot if hit with physical damage (pet damage ok)
+  读条“寒冰尖刺”后，将会反弹物理伤害，需击晕或停手（召唤物伤害无妨）
 12161: |
-  Inflicts heavy
-  "Tail Screw" -- sets to 1 hp
+  单体平A重击，附加“加重”效果；
+  点名被加重玩家释放“螺旋尾”（可见圆形AOE），血量归1；
+  不吃晕
 12172: |
-  Pulls in then PB AoE
+  释放大范围不可见吸引（防击退/隔墙有效），然后快速读条可见钢铁AOE，需快速远离；
+  不吃晕
 12179: |
-  "Sewer Water" -- Half circle cleave followed immediately by other half
+  随机向正前或背后释放半圆AOE（前半不可见、后半可见），随后立刻对反方向释放一次；
+  吃晕
 12173: |
-  Jumps to player and does half room knockback
-  "Electric Whorl" -- Doughnut
-  "Expulsion" -- PB AoE
+  跳向一仇玩家造成范围伤害并击退半场距离（防击退有效）；
+  随机释放钢铁或月环，可通过特效判断；
+  吃晕
 12175: |
-  Untelegraphed AoE behind
+  背后有人时会触发快速读条，释放几乎不可见扇形AOE；
+  吃晕
 12267: |
-  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
-  "Disorienting Groan" -- Knockback, be inside boss
-  "Bullish Swipe" -- Frontal cleave
-  "Bullish Swing" -- Large PB AoE
-12197: Late telegraph frontal cone
-12199: Triple targeted knockbacks
+  8次预兆扇形AOE，分 北南东西/北南东西 或 北南东西/西东南北 两种情况；
+  击退攻击；
+  前方扇形AOE；
+  非T即死大钢铁；
+12197: "释放正面几乎不可见小扇形AOE，附加减速debuff；\n吃晕"
+12199: "对一仇三连冲锋，注意减伤；\n点名一名玩家释放可见圆形AOE；\n吃晕"
 12202: |
-  "The Killing Paw" -- double frontal cone (second untelegraphed)
-  Be carefufl with stun or slow as this enemy can store the second swipe
+  释放正面可见扇形AOE，之后会复读一次不可见的AOE；
+  注意击晕或减速后，依然会释放第二次；
+  吃晕
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AoE, it will crouch and wiggle its tail
+  原地趴着不动时蓄力释放无读条且不可见钢铁AOE，附带击退和眩晕；
+  读条释放安全区较大的月环AOE；可通过摇尾巴判断是否蓄力钢铁；
+  不吃晕
 12209: |
-  "Winds of Winter" -- large AoE after 2 freefalls, must LoS or stun
+  点名一名玩家释放两次可见圆形AOE，然后释放全屏不可见AOE，需要隔墙躲避或击晕；
+  吃晕
 12208: |
-  Wide line AoE, cannot LoS
+  点名玩家释放很宽的直线AOE，无法隔墙躲避，靠近处理；
+  不吃晕
 12205: |
-  Executes if below 20% HP
+  平A+三连重击，秒杀20%血量以下玩家；
+  不吃晕
 12198: |
-  "Chirp" -- untelegraphed PB AoE
-12206: Roomwide gaze
+  释放不可见钢铁AOE，附件昏睡debuff；对昏睡玩家释放可见圆形AOE；
+  吃晕
+12206: "释放全屏不可见AOE，背对回避；\n吃晕"
 12203: |
-  "Chest Thump" -- Huge unaggroed AoE after using "Ripe Banana", must LoS
+  吃香蕉后对自身附加15秒伤害提升；期间会读条超大范围几乎不可见秒杀AOE，需要隔墙躲避；
+  吃晕
 12247: |
-  When the boss casts "Nanospore Jet", players must find whether they are tethered too,
-  then dodge a nerve gas cast. After, the players must be knocked back or pulled near the
-  center of the boss for a doughnut AoE (do not touch the boss' hitbox)
-  "Central Nerve Gas" -- Frontal cleave
-  "Rightward Nerve Gas" -- Right Halfroom cleave (front and left quandrants are safe)
-  "Leftward Nerve Gas" -- Left Halfroom cleave (front and right quadrants are safe)
-  "Barofield" -- Creates a instakill zone under the boss and outside ring with DoT
-  "Nanospore Jet" -- Gives players a positive or negative charge
+  三头蛇，左中右AOE；
+  Boss脚下是即死区；
+  根据磁石正负极保证击退或拉近后，在boss附近的斜点方向
