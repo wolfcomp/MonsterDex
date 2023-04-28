@@ -25,39 +25,47 @@
   吃晕
 12147: "赋予自己一分钟的加速buff，加重攻击高频率出现，同时不影响平A；\n不吃晕"
 12150: |
-  "100 Tonze Swing" -- PB AoE
-  "11 Tonze Swipe" -- Close Conal AoE
+  释放几乎不可见钢铁AOE；释放正面几乎不可见扇形AOE；
+  不吃战技封印；不吃晕；
 12148: |
-  "Forearming" -- Half Circle AoE
-  "Atmospheric Displacement" -- PB AoE
+  随机面向一名玩家释放正面几乎不可见超大范围AOE；
+  释放几乎不可见钢铁AOE；平A单体重攻击；
+  不吃晕
 12152: |
-  "The Dragon's Voice" - doughnut
-  "The Ram's Voice" - PB AoE
+  释放不可见月环AOE，紧接读条冰洁——不可见钢铁AOE；
+  释放不可见钢铁AOE，紧接读条雷电——不可见月环AOE；
+  不吃晕
 12156: |
-  "Nothing personal kid"
+  释放正面范围不可见扇形AOE且附加击退效果，偶尔绕到玩家背后读条；
+  吃晕
 12263: |
-  1) "Twister" -- Move away from twister bait
-  2) "Twisting Dive" -- Cleave down middle with twister bait
-  3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
-12160: Quick behind cleave
-12169: Casts stacking slow
+  1) "Twister" — — 旋风，读条结束时移动躲避
+  2) "Twister Dive" — — 旋风俯冲，躲避俯冲的同时躲避旋风
+  3) "Meracydian Cyclone" — — 生成带有4个需要躲避的风圈
+12160: "背后不可见扇形AOE；点名一名玩家释放可见圆形AOE；\n吃晕"
+12169: "每隔一段时间对玩家附加减速效果，最高16层；点名一名玩家释放前方可见长直线AOE；\n吃晕"
 12159: "赋予自己一分钟的加速buff，加重攻击高频率出现，同时不影响平A；\n不吃晕"
 12166: |
-  Casts roomwide aoe, interruptable
+  释放不可见全屏秒杀AOE，可插言打断或隔墙躲避；释放正面可见扇形AOE；
+  不吃晕
 12162: |
-  PB AoE after dash, can LoS
+  点名一名玩家冲锋，随后快速读条，释放不可见钢铁AOE；
+  吃晕
 12168: |
-  Fast untelegraphed conal after suck in
+  正面无读条不可见吸引，然后快速读条释放正面不可见扇形AOE；
+  不吃晕
 12158: |
-  Casts Explosion at 30%, can LoS
+  血量30%以下读条自爆，释放不可见大范围AOE，可隔墙躲避；
+  不吃晕
 12164: |
-  "Abyssal Cry" - Large AoE that stuns, can LoS
-12170: Applies potent heavy
+  释放不可见全屏AOE，只可隔墙躲避，命中后附加眩晕debuff，随机扑向并秒杀眩晕玩家；
+  不吃晕
+12170: "释放无读条不可见钢铁AOE，伤害不高但会附加加重debuff；\n吃晕"
 12163: "未进战时读条释放几乎不可见大范围AOE，命中附加易伤debuff，可叠加；平A单体重攻击；\n吃晕"
 12265: |
-  1) "Song of Thunder and Ice" -- doughnut then PB AoE
-  2) "Song of Ice and Thunder" -- PB AoE then doughnut
-  3) "Cold Thunder" -- proximity dash, PB AoE then doughnut
-  4) "Thunderous Cold" -- proximity dash, doughnut then PB AoE
-  5) "Leftbreathed/Rightbreathed" -- halfroom cleave
-  6) "Cacophony" -- ball tether, kite away
+  1) "雷冰之歌" -- 先月环后钢铁
+  2) "冰雷" -- 先钢铁后月环
+  3) "冷雷" -- 拉开连线，先钢铁再月环
+  4) "雷冷" -- 拉开连线， 先月环再钢铁
+  5) "左呼吸/右呼吸" -- 半屏顺劈
+  6) "Cacophony" -- 引导球移动，直到球消失
