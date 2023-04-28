@@ -1,25 +1,29 @@
 12109: |
-  Casts Ecliptic Meteor at 40%, can LoS
-12110: Casts untelegraphed PB AoE
-12116: Casts disease
+  对一仇目标读条击退攻击（防击退有效）；血量40%以下读条黄道陨石（大范围AOE），可隔墙躲避；
+  不吃晕
+12110: "释放前半不可见后半可见钢铁AOE；\n吃晕"
+12116: "对一仇目标释放病弱debuff，可插言打断；\n吃晕"
 12132: |
-  Casts Self-detonate at 30%, can LoS
+  血量30%以下回读条大范围AOE雾散爆发，可隔墙躲避；
+  不吃晕
 12240: |
-  Steel recommended for solo
+  单人solo推荐使用防御强化
 12133: |
-  Late telegraphed draw-in into AoE
-  KB immunity works
-12141: Casts roomwide vuln stacking AoE unaggroed
+  释放几乎不可见大范围圆形吸引，防击退有效，随后释放不可见钢铁AOE；
+  不吃晕
+12141: "未进战时读条释放几乎不可见大范围AOE，命中附加易伤debuff，可叠加；平A单体重攻击；\n吃晕"
 12242: |
-  1) "Dark Wyrmtail" -- cleaves middle
-  2) "Dark Wyrmwing" -- cleaves sides
-  3) "Whei Morn" -- multiple baited AoEs
+  1) "Dark Wyrmtail" -- 顺劈中间
+  2) "Dark Wyrmwing" -- 顺劈边缘
+  3) "Whei Morn" -- 释放多个AoE
 12149: |
-  Casts inflicts Stun
-12146: PB AoE
+  释放不可见全屏AOE，可背对回避，命中被附加眩晕debuff；点名一名玩家释放AOE；
+  吃晕
+12146: "释放几乎不可见钢铁AOE，命中后附加缩小debuff；秒杀拥有缩小debuff的玩家，穿无敌；\n吃晕"
 12154: |
-  Buffs enemies with double damage
-12147: Casts Haste
+  点名一名玩家释放可见圆形AOE；给附近一只怪赋予伤害提升一倍buff；
+  吃晕
+12147: "赋予自己一分钟的加速buff，加重攻击高频率出现，同时不影响平A；\n不吃晕"
 12150: |
   "100 Tonze Swing" -- PB AoE
   "11 Tonze Swipe" -- Close Conal AoE
@@ -37,7 +41,7 @@
   3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
 12160: Quick behind cleave
 12169: Casts stacking slow
-12159: Casts Haste
+12159: "赋予自己一分钟的加速buff，加重攻击高频率出现，同时不影响平A；\n不吃晕"
 12166: |
   Casts roomwide aoe, interruptable
 12162: |
@@ -49,7 +53,7 @@
 12164: |
   "Abyssal Cry" - Large AoE that stuns, can LoS
 12170: Applies potent heavy
-12163: Casts roomwide vuln stacking AoE unaggroed
+12163: "未进战时读条释放几乎不可见大范围AOE，命中附加易伤debuff，可叠加；平A单体重攻击；\n吃晕"
 12265: |
   1) "Song of Thunder and Ice" -- doughnut then PB AoE
   2) "Song of Ice and Thunder" -- PB AoE then doughnut
