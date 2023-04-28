@@ -6,15 +6,15 @@
     - Stun
     - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12112-Orthos imp:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Heavy
-    - SlowUnknown
-    - SleepUnknown
+    - Slow
+    - Sleep
 12117-orthoiron claw:
   Threat: Easy
   Aggro: Proximity
@@ -22,7 +22,6 @@
     - Stun
     - Heavy
     - Slow
-    - SleepUnknown
 12111-Orthos dahak:
   Threat: Easy
   Aggro: Sight
@@ -30,83 +29,70 @@
     - Stun
     - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12110-Orthos grenade:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - Slow
-    - BindUnknown
-    - SleepUnknown
+    - Sleep
 12115-Orthos vassago:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
     - Slow
-    - BindUnknown
-    - SleepUnknown
 12113-Orthos demon:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12109-Orthos behemoth:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Slow
 12106-undead Orthos dragon:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
     - Slow
-    - BindUnknown
     - Sleep
 12107-Orthos Thanatos:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - Slow
-    - BindUnknown
+    - Bind
 12114-Orthos fachan:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Slow
     - Sleep
 12116-Orthos bhoot:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Heavy
+    - Slow
     - Sleep
 12118-Orthos water sprite:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 
 # EO boss floor 10
 12240-Gancanagh:
@@ -118,228 +104,177 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 12129-Orthos spirulina:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12128-Orthos netzach:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12121-Orthos microsystem:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
 12131-Orthos Belladonna:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12123-Orthos Wood Golem:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
 12122-Orthosoldier:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12120-Orthosystem β:
   Threat: Easy
   Aggro: Undefined
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12126-Orthos Rafflesia:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12124-Orthos Groundskeeper:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
 12119-Orthohunter:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+
+    - Slow
 
 # EO boss floor 20
 12261-Cloning Node:
   Threat: Caution
   Aggro: Boss
-  Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
 
 # EO floors 21-29
 12142-Orthos brobinyak:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 12132-orthodemolisher:
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12139-Orthos wyvern:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12135-orthogiant:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
 12133-orthoknight:
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Slow
 12134-orthodroid:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
 12138-lesser Orthos dragon:
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12140-Orthoblue dragon:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - SlowUnknown
-    - SleepUnknown
+    - Slow
+    - Sleep
 12143-Orthos vanara:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
+    - SleeP
 12141-Orthos Vouivre:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - SlowUnknown
+    - Heavy
     - Slow
-    - SleepUnknown
+    - Sleep
 12137-Orthos biast:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12136-Orthokaliya:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12144-Orthoshelled dragon:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
-
+    - Slow
+    - Sleep
 # EO boss floor 30
 12242-Tiamat clone:
   Threat: Caution
@@ -351,116 +286,95 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - HeavY
+    - Slow
+    - Bind
+    - Sleep
 12154-orthikalison:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 12146-orthospider:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
 12145-orthobug:
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
 12153-Orthos shabti:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12157-Orthos lamia:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12147-orthopredator:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - SleepUnknown
+    - Slow
 12155-orthonaga:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12150-orthotaur:
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
+    - Sleep
 12148-Phantom orthoray:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12151-Orthos reptoid:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12152-orthochimera:
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12156-orthoempuse:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 
 # EO boss floor 40
 12263-Twintania clone:
@@ -472,115 +386,96 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - Heavy
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
+    - Sleep
 12160-Orthos bergthurs:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Heavy
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
+    - Bind
+    - Sleep
 12165-Orthos huwasi:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12169-Orthos hedetet:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12159-Orthos spriggan:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12166-Orthos acheron:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12162-Orthos kelpie:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12168-Orthos goobbue:
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
+    - Sleep
 12158-Orthos gelato:
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12164-Orthos hoarhound:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12170-Orthos mudman:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
 12163-Orthos kukulkan:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 12161-Orthos apa:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 
 # EO boss floor 50
 12265-Servomechanical chimera:
