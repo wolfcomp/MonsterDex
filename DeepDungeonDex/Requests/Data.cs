@@ -76,7 +76,7 @@ namespace DeepDungeonDex.Requests
                     }
                     catch (Exception e)
                     {
-                        PluginLog.Error(e, "");
+                        PluginLog.Error(e, $"Failed processing File: {file}");
                     }
                 }
             }
