@@ -17,6 +17,26 @@
   "Expulsion" -- PB AoE
 12175: |
   Untelegraphed AoE behind
+12195: |
+  Executes if below 20% HP
+12185: |
+  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+12189: |
+  AOE will give evasion to other enemies it hits
+12196: |
+  Knockback
+12192: |
+  Pull in then PB AOE
+12194: |
+  Untelegraphed claw swipe and tail swipe
+12193: |
+  Will cast "Electric Cachexia" (Donut AoE) when players aren't in melee
+12186: |
+  Back attack
+12246: |
+  "Ferocity" -- distance tether
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
 12267: |
   "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
   "Disorienting Groan" -- Knockback, be inside boss
@@ -24,6 +44,9 @@
   "Bullish Swing" -- Large PB AoE
 12197: Late telegraph frontal cone
 12199: Triple targeted knockbacks
+12200: |
+  Huge wide frontal cone
+  Huge rear cone (if player behind)
 12202: |
   "The Killing Paw" -- double frontal cone (second untelegraphed)
   Be carefufl with stun or slow as this enemy can store the second swipe
