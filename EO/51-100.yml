@@ -29,7 +29,7 @@
     - Sleep
 12171-Orthos banshee:
   Threat: Easy
-  Aggro: Sight
+  Aggro: Proximity
   Weakness:
     - Stun
     - Heavy
@@ -106,6 +106,52 @@
 
 # EO boss floor 60
 12267-Servomechanical minotaur:
+  Threat: Caution
+  Aggro: Boss
+  
+# EO floors 61-69
+12184-Orthos pteroc:
+  Threat: Easy
+  Aggro: Sight
+12191-Orthos matamata:
+  Threat: Easy
+  Aggro: Sight
+12189-Orthos diplocaulus:
+  Threat: Caution
+  Aggro: Proximity
+12187-Orthos monitor:
+  Threat: Easy
+  Aggro: Sight
+12186-Orthos cobra:
+  Threat: Easy
+  Aggro: Sight
+12185-Orthos drake:
+  Threat: Caution
+  Aggro: Sight
+12194-Orthos gowrow:
+  Threat: Caution
+  Aggro: Sight
+12195-Orthoninja:
+  Threat: Caution
+  Aggro: Proximity
+12190-Orthos basilisk:
+  Threat: Easy
+  Aggro: Sight
+12196-Haokah perfected:
+  Threat: Easy
+  Aggro: Sight
+12188-Orthos anala:
+  Threat: Easy
+  Aggro: Sight
+12193-Orthos falak:
+  Threat: Dangerous
+  Aggro: Sight
+12192-Orthos palleon:
+  Threat: Easy
+  Aggro: Sight
+
+# EO floor 70
+12246-Aeturna:
   Threat: Caution
   Aggro: Boss
 
@@ -185,6 +231,9 @@
     - Heavy
     - Slow
     - Sleep
+12200-Orthos coeurl:
+  Threat: Caution
+  Aggro: Sight
 12203-Orthos sasquatch:
   Threat: Dangerous
   Aggro: Sight
