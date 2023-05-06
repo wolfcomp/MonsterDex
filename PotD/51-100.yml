@@ -250,6 +250,8 @@
   Threat: Easy
   Aggro: Proximity
   Weakness:
+    - Slow
+    - Heavy
     - Undead
 5348-dark dragon:
   Threat: Easy
@@ -273,10 +275,15 @@
   Weakness:
     - Stun
     - Undead
+    - Slow
+    - Sleep
+    - Heavy
 5353-palace iron corse:
   Threat: Easy
   Aggro: Proximity
   Weakness:
+    - Stun
+    - Slow
     - Undead
 5354-palace wraith:
   Threat: Easy

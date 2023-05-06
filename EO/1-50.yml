@@ -469,7 +469,7 @@
     - Sleep
 12161-Orthos apa:
   Threat: Easy
-  Aggro: Sight
+  Aggro: Proximity
   Weakness:
     - Stun
     - Heavy
