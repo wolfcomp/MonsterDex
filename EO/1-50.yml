@@ -65,7 +65,7 @@
     - Sleep
 12107-Orthos Thanatos:
   Threat: Easy
-  Aggro: Sight
+  Aggro: Sound
   Weakness:
     - Stun
     - Heavy
@@ -128,7 +128,7 @@
     - Sleep
 12121-Orthos microsystem:
   Threat: Easy
-  Aggro: Sight
+  Aggro: Proximity
   Weakness:
     - Stun
     - Heavy
@@ -156,7 +156,7 @@
     - Slow
 12120-Orthosystem β:
   Threat: Easy
-  Aggro: Undefined
+  Aggro: Proximity
   Weakness:
     - Slow
 12126-Orthos Rafflesia:
@@ -285,7 +285,7 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavY
+    - Heavy
     - Slow
     - Bind
     - Sleep
