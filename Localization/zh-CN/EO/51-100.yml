@@ -23,6 +23,27 @@
 12175: |
   背后有人时会触发快速读条，释放几乎不可见扇形AOE；
   吃晕
+12195: |
+  平A+三连重击，秒杀20%血量以下玩家；
+  不吃晕
+12185: |
+  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+12189: |
+  AOE will give evasion to other enemies it hits
+12196: |
+  Knockback
+12192: |
+  Pull in then PB AOE
+12194: |
+  Untelegraphed claw swipe and tail swipe
+12193: |
+  Will cast "Electric Cachexia" (Donut AoE) when players aren't in melee
+12186: |
+  Back attack
+12246: |
+  "Ferocity" -- distance tether
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
 12267: |
   8次预兆扇形AOE，分 北南东西/北南东西 或 北南东西/西东南北 两种情况；
   击退攻击；
@@ -30,6 +51,9 @@
   非T即死大钢铁；
 12197: "释放正面几乎不可见小扇形AOE，附加减速debuff；\n吃晕"
 12199: "对一仇三连冲锋，注意减伤；\n点名一名玩家释放可见圆形AOE；\n吃晕"
+12200: |
+  Huge wide frontal cone
+  Huge rear cone (if player behind)
 12202: |
   释放正面可见扇形AOE，之后会复读一次不可见的AOE；
   注意击晕或减速后，依然会释放第二次；
