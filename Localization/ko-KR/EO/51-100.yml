@@ -3,12 +3,12 @@
 12180: |
   사망 후 폭발
 12183: |
-  Casts ice spikes, will one shot if hit with physical damage (pet damage ok)
+  버프를 시전하고 물리 피해를 입힐 시 즉사 (소환수 피해는 ok)
 12161: |
   과중력 부여 후
   「テールスクリュー / Tail Screw」 시전 -- Hp를 1로 만듬
 12172: |
-  Pulls in then PB AoE
+  주변을 빨아들인 후 몬스터 중심으로 범위 공격
 12179: |
   "Sewer Water" -- Half circle cleave followed immediately by other half
 12173: |
@@ -24,15 +24,15 @@
 12189: |
   AOE will give evasion to other enemies it hits
 12196: |
-  Knockback
+  넉백 시전
 12192: |
-  Pull in then PB AOE
+  주변을 빨아들인 후 몬스터 중심으로 범위 공격
 12194: |
   Untelegraphed claw swipe and tail swipe
 12193: |
   Will cast "Electric Cachexia" (Donut AoE) when players aren't in melee
 12186: |
-  Back attack
+  후방 공격 있음
 12246: |
   "Ferocity" -- distance tether
   "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
@@ -56,11 +56,11 @@
 12209: |
   "Winds of Winter" -- large AoE after 2 freefalls, must LoS or stun
 12208: |
-  Wide line AoE, cannot LoS
+  매우 넓은 직선 범위 공격 시전, 벽 뒤로 숨더라도 피격 판정
 12205: |
   Executes if below 20% HP
 12198: |
-  "Chirp" -- untelegraphed PB AoE
+  몬스터 중심으로 보이지 않는 범위공격을 시전
 12206: Roomwide gaze
 12203: |
   "Chest Thump" -- Huge unaggroed AoE after using "Ripe Banana", must LoS
