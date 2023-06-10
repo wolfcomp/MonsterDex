@@ -10,66 +10,67 @@
 12172: |
   주변을 빨아들인 후 몬스터 중심으로 범위 공격
 12179: |
-  "Sewer Water" -- Half circle cleave followed immediately by other half
+  「スーウェッジ・ウォーター / Sewer Water」 -- 반원 모양의 범위 공격, 랜덤 방향을 향해 시전하고 끝나면 전조 없이 바로 반대 방향으로 반원 범위 공격
 12173: |
-  Jumps to player and does half room knockback
-  "Electric Whorl" -- Doughnut
-  "Expulsion" -- PB AoE
+  랜덤 플레이어에게 뛰어들고 그 근처의 플레이어는 넉백, 그리고 스킬 시전
+  「エレクトリックワーラル / Electric Whorl」 -- 히트박스 안으로 (도넛 범위 공격)
+  「エクスパルション / Expulsion」 -- 멀리 도망가기 (보스 중심으로 원형 범위 공격)
 12175: |
   전조없는 후방 범위공격
 12195: |
   HP 20%이하일 때 즉사기 시전
 12185: |
-  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+  「炎の鱗 / Smouldering Scales」 -- 물리데미지로 공격 시 즉사, 기절로 끊어주거나 그냥 버프가 사라질 때 까지 공격하지 않기
 12189: |
-  AOE will give evasion to other enemies it hits
+  범위 공격을 시전하고, 해당 범위에 있던 적에게 회피율 증가 버프를 부여
 12196: |
   넉백 시전
 12192: |
   주변을 빨아들인 후 몬스터 중심으로 범위 공격
 12194: |
-  Untelegraphed claw swipe and tail swipe
+  범위를 보여주지 않는 정면/후면 범위 공격 (뭔가 캐스팅 하면 측면으로)
 12193: |
-  Will cast "Electric Cachexia" (Donut AoE) when players aren't in melee
+  「雷放射 / Electric Cachexia」 (도넛 범위 공격), 플레이어가 근처에 없을 때 시전함
 12186: |
   후방 공격 있음
 12246: |
-  "Ferocity" -- distance tether
-  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
+  「強襲 / Ferocity」 -- 탱버
+  「魔科学旋爪 / Preternatural Turn」 -- 보스가 빛나면 히트박스 안으로 (도넛모양 범위 공격) 빛나지 않으면 멀리가기 (보스를 중심으로 한 원형 범위 공격)
+  「咆哮 / Roar」 -- 4개의 크리스탈이 떨어짐, 뒤늦게 떨어지는 크리스탈 근처가 안전지대, 보스의 빛 유무를 보고 이동
 12267: |
-  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
-  "Disorienting Groan" -- Knockback, be inside boss
-  "Bullish Swipe" -- Frontal cleave
-  "Bullish Swing" -- Large PB AoE
+  「オクタブルスワイプ / Octuple Swipe」 -- 동서남북으로 8번의 부채꼴 범위를 보여주고, 그 방향과 순서대로 범위 공격을 시전함 
+  「雄叫び / Disorienting Groan」 -- 보스 중앙에서 넉백 공격, 보스에게 가까이 붙지 않으면 장외사
+  「ブルスワイプ / Bullish Swipe」-- 보스가 바라보는 방향으로 부채꼴 범위 공격
+  「ブルスイング / Bullish Swing」 -- 보스 중심 원형 범위 공격
 12197: 캐스팅이 끝나기 직전에 범위를 보여주는 부채꼴 범위 공격 (미리 정면에서 피하기)
 12199: 랜덤 플레이어에게 연속 3회 넉백 돌진
 12200: |
   정면으로 매우 큰 부채꼴 범위 공격 시전
   후면에 플레이어가 있으면 후면으로도 부채꼴 범위 공격 시전
 12202: |
-  "The Killing Paw" -- double frontal cone (second untelegraphed)
-  Be carefufl with stun or slow as this enemy can store the second swipe
+  「 キリングバウ / The Killing Paw」 -- 전방 부채꼴 범위 공격을 시전하고 전조 없이 다시 전방 부채꼴 범위 공격
+  기본적으로 후면으로 피하는걸 추천
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AoE, it will crouch and wiggle its tail
+  「スパーク / Spark」 - 범위를 보여주지 않는 도넛 모양의 범위 공격
+  캐스팅 없이 가만히 서있으면 도망치기, 몬스터 중심으로 원형 범위 공격
 12209: |
-  "Winds of Winter" -- large AoE after 2 freefalls, must LoS or stun
+  「ウィンターウィンド / Winds of Winter」 -- 랜덤 플레이어에게 점프 2회 후 시전하는 범위 공격,
+  기절 스킬을 넣거나 벽 뒤로 숨기
 12208: |
   매우 넓은 직선 범위 공격 시전, 벽 뒤로 숨더라도 피격 판정
 12205: |
   HP 20%이하일 때 즉사기 시전
 12198: |
   몬스터 중심으로 보이지 않는 범위공격을 시전
-12206: Roomwide gaze
+12206: 매우 넓은 범위의 마안 공격
 12203: |
-  "Chest Thump" -- Huge unaggroed AoE after using "Ripe Banana", must LoS
+  바나나를 먹으면 자신의 공격력이 15초 동안 증가하고 비전투 상태여도 랜덤 장소에 범위 공격을 시전하므로 잘 피하기
+  범위 공격을 맞으면 즉사
 12247: |
-  When the boss casts "Nanospore Jet", players must find whether they are tethered too,
-  then dodge a nerve gas cast. After, the players must be knocked back or pulled near the
-  center of the boss for a doughnut AoE (do not touch the boss' hitbox)
-  "Central Nerve Gas" -- Frontal cleave
-  "Rightward Nerve Gas" -- Right Halfroom cleave (front and left quandrants are safe)
-  "Leftward Nerve Gas" -- Left Halfroom cleave (front and right quadrants are safe)
-  "Barofield" -- Creates a instakill zone under the boss and outside ring with DoT
-  "Nanospore Jet" -- Gives players a positive or negative charge
+  보스의 히트박스와 외곽의 장판에 닿지않게 조심, 즉사함
+  「ナーブガス~ / ~ Nerve Gas 」의 방향을 보면서 안전지대를 찾아 빠르게 이동하기, 공격을 맞으면 아픈 데미지와 받는 피해량 증가 디버프가 붙음
+  「ナーブガス・ライトフロント / Central Nerve Gas」 -- 정면 부채꼴 범위 공격, 보스의 머리 방향 반드시 확인
+  「ナーブガス・ライト / Rightward Nerve Gas」 -- 보스 기준으로 오른쪽 범위 공격, 보스가 바라보는 방향에서 45도 정도 기울어진 범위
+  「ナーブガス・レフト / Leftward Nerve Gas」 -- 보스 기준으로 왼쪽 범위 공격, 보스가 바라보는 방향에서 45도 정도 기울어진 범위
+  「パロフィールド / Barofield」 -- 보스 아래와 외곽에 즉사 구역을 만들어 냄, 절대 지나가지 않기
+  「魔科学粒子散布 / Nanospore Jet」 -- 플레이어에게 랜덤으로 +, - 극을 부여
