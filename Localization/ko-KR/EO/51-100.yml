@@ -18,7 +18,7 @@
 12175: |
   전조없는 후방 범위공격
 12195: |
-  Executes if below 20% HP
+  HP 20%이하일 때 즉사기 시전
 12185: |
   "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
 12189: |
@@ -42,11 +42,11 @@
   "Disorienting Groan" -- Knockback, be inside boss
   "Bullish Swipe" -- Frontal cleave
   "Bullish Swing" -- Large PB AoE
-12197: Late telegraph frontal cone
-12199: Triple targeted knockbacks
+12197: 캐스팅이 끝나기 직전에 범위를 보여주는 부채꼴 범위 공격 (미리 정면에서 피하기)
+12199: 랜덤 플레이어에게 연속 3회 넉백 돌진
 12200: |
-  Huge wide frontal cone
-  Huge rear cone (if player behind)
+  정면으로 매우 큰 부채꼴 범위 공격 시전
+  후면에 플레이어가 있으면 후면으로도 부채꼴 범위 공격 시전
 12202: |
   "The Killing Paw" -- double frontal cone (second untelegraphed)
   Be carefufl with stun or slow as this enemy can store the second swipe
@@ -58,7 +58,7 @@
 12208: |
   매우 넓은 직선 범위 공격 시전, 벽 뒤로 숨더라도 피격 판정
 12205: |
-  Executes if below 20% HP
+  HP 20%이하일 때 즉사기 시전
 12198: |
   몬스터 중심으로 보이지 않는 범위공격을 시전
 12206: Roomwide gaze
