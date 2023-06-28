@@ -1,76 +1,167 @@
+#EO floors 51-59
 12182: |
   직선 범위 공격, 멀리 도망가거나 벽 뒤로 숨으세요
+12174: |
+
 12180: |
   사망 후 폭발
 12183: |
-  버프를 시전하고 물리 피해를 입힐 시 즉사 (소환수 피해는 ok)
-12161: |
-  과중력 부여 후
-  「テールスクリュー / Tail Screw」 시전 -- Hp를 1로 만듬
+  Casts ice spikes, will one shot if hit with physical damage
+12171: |
+
+12178: |
+
+12176: |
+
+12318: |
+
+12181: |
+
 12172: |
-  주변을 빨아들인 후 몬스터 중심으로 범위 공격
+  Pulls in then PB AOE
 12179: |
   「スーウェッジ・ウォーター / Sewer Water」 -- 반원 모양의 범위 공격, 랜덤 방향을 향해 시전하고 끝나면 전조 없이 바로 반대 방향으로 반원 범위 공격
+12177: |
+
 12173: |
-  랜덤 플레이어에게 뛰어들고 그 근처의 플레이어는 넉백, 그리고 스킬 시전
-  「エレクトリックワーラル / Electric Whorl」 -- 히트박스 안으로 (도넛 범위 공격)
-  「エクスパルション / Expulsion」 -- 멀리 도망가기 (보스 중심으로 원형 범위 공격)
+  Jumps to player and does half room knockback
+  "Electric Whorl" -- Doughnut
+  "Expulsion" -- PB AOE
 12175: |
-  전조없는 후방 범위공격
-12195: |
-  HP 20%이하일 때 즉사기 시전
-12185: |
-  「炎の鱗 / Smouldering Scales」 -- 물리데미지로 공격 시 즉사, 기절로 끊어주거나 그냥 버프가 사라질 때 까지 공격하지 않기
+  Untelegraphed AOE behind
+#EO boss floor 60
+12267: |
+  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
+  "Disorienting Groan" -- Knockback, be inside boss
+  "Bullish Swipe" -- Frontal cleave
+  "Bullish Swing" -- Large PB AOE
+#EO floors 61-69
+12184: |
+
+12191: |
+
 12189: |
   범위 공격을 시전하고, 해당 범위에 있던 적에게 회피율 증가 버프를 부여
+12187: |
+
+12186: |
+  Untelegraphed conal back cleave if player is behind.
+12185: |
+  「炎の鱗 / Smouldering Scales」 -- 물리데미지로 공격 시 즉사, 기절로 끊어주거나 그냥 버프가 사라질 때 까지 공격하지 않기
+12194: |
+  Untelegraphed Claw/Tail swipe swipe conal AOE.
+12195: |
+  HP 20%이하일 때 즉사기 시전
+12190: |
+
 12196: |
   넉백 시전
+12188: |
+
+12193: |
+  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range.
 12192: |
   주변을 빨아들인 후 몬스터 중심으로 범위 공격
-12194: |
-  범위를 보여주지 않는 정면/후면 범위 공격 (뭔가 캐스팅 하면 측면으로)
-12193: |
-  「雷放射 / Electric Cachexia」 (도넛 범위 공격), 플레이어가 근처에 없을 때 시전함
-12186: |
-  후방 공격 있음
+#EO floor 70
 12246: |
   「強襲 / Ferocity」 -- 탱버
   「魔科学旋爪 / Preternatural Turn」 -- 보스가 빛나면 히트박스 안으로 (도넛모양 범위 공격) 빛나지 않으면 멀리가기 (보스를 중심으로 한 원형 범위 공격)
   「咆哮 / Roar」 -- 4개의 크리스탈이 떨어짐, 뒤늦게 떨어지는 크리스탈 근처가 안전지대, 보스의 빛 유무를 보고 이동
-12267: |
-  「オクタブルスワイプ / Octuple Swipe」 -- 동서남북으로 8번의 부채꼴 범위를 보여주고, 그 방향과 순서대로 범위 공격을 시전함 
-  「雄叫び / Disorienting Groan」 -- 보스 중앙에서 넉백 공격, 보스에게 가까이 붙지 않으면 장외사
-  「ブルスワイプ / Bullish Swipe」-- 보스가 바라보는 방향으로 부채꼴 범위 공격
-  「ブルスイング / Bullish Swing」 -- 보스 중심 원형 범위 공격
-12197: 캐스팅이 끝나기 직전에 범위를 보여주는 부채꼴 범위 공격 (미리 정면에서 피하기)
-12199: 랜덤 플레이어에게 연속 3회 넉백 돌진
-12200: |
-  정면으로 매우 큰 부채꼴 범위 공격 시전
-  후면에 플레이어가 있으면 후면으로도 부채꼴 범위 공격 시전
+#EO floors 71-79
+12197: |
+  캐스팅이 끝나기 직전에 범위를 보여주는 부채꼴 범위 공격 (미리 정면에서 피하기)
+12199: |
+  랜덤 플레이어에게 연속 3회 넉백 돌진
 12202: |
-  「 キリングバウ / The Killing Paw」 -- 전방 부채꼴 범위 공격을 시전하고 전조 없이 다시 전방 부채꼴 범위 공격
-  기본적으로 후면으로 피하는걸 추천
+  "The Killing Paw" -- double frontal cone second is untelegraphed
+  Be carefull with stun or slow as this enemy can store the second swipe
 12207: |
-  「スパーク / Spark」 - 범위를 보여주지 않는 도넛 모양의 범위 공격
-  캐스팅 없이 가만히 서있으면 도망치기, 몬스터 중심으로 원형 범위 공격
+  "Spark" -- untelegraphed doughnut
+  "Scythe Tail" -- no cast bar PB AOE, it will crouch and wiggle its tail
+12201: |
+
 12209: |
-  「ウィンターウィンド / Winds of Winter」 -- 랜덤 플레이어에게 점프 2회 후 시전하는 범위 공격,
-  기절 스킬을 넣거나 벽 뒤로 숨기
+  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
 12208: |
-  매우 넓은 직선 범위 공격 시전, 벽 뒤로 숨더라도 피격 판정
+  Wide line AOE, can not be line of sighted.
+12204: |
+
 12205: |
-  HP 20%이하일 때 즉사기 시전
+  Executes player if below 20% HP
 12198: |
-  몬스터 중심으로 보이지 않는 범위공격을 시전
-12206: 매우 넓은 범위의 마안 공격
+  "Chirp" -- untelegraphed PB AOE
+12206: |
+  매우 넓은 범위의 마안 공격
+12200: |
+  Huge wide frontal cone
+  Huge rear cone if player is behind
 12203: |
-  바나나를 먹으면 자신의 공격력이 15초 동안 증가하고 비전투 상태여도 랜덤 장소에 범위 공격을 시전하므로 잘 피하기
-  범위 공격을 맞으면 즉사
+  "Chest Thump" -- Huge unaggroed AOE after using "Ripe Banana"
+#EO boss floor 80
 12247: |
-  보스의 히트박스와 외곽의 장판에 닿지않게 조심, 즉사함
-  「ナーブガス~ / ~ Nerve Gas 」의 방향을 보면서 안전지대를 찾아 빠르게 이동하기, 공격을 맞으면 아픈 데미지와 받는 피해량 증가 디버프가 붙음
-  「ナーブガス・ライトフロント / Central Nerve Gas」 -- 정면 부채꼴 범위 공격, 보스의 머리 방향 반드시 확인
-  「ナーブガス・ライト / Rightward Nerve Gas」 -- 보스 기준으로 오른쪽 범위 공격, 보스가 바라보는 방향에서 45도 정도 기울어진 범위
-  「ナーブガス・レフト / Leftward Nerve Gas」 -- 보스 기준으로 왼쪽 범위 공격, 보스가 바라보는 방향에서 45도 정도 기울어진 범위
-  「パロフィールド / Barofield」 -- 보스 아래와 외곽에 즉사 구역을 만들어 냄, 절대 지나가지 않기
-  「魔科学粒子散布 / Nanospore Jet」 -- 플레이어에게 랜덤으로 +, - 극을 부여
+  "Rightward/Leftward Nerve Gass" -- Halfroom cleaves front is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave
+  "Barofield" -- Creates a dead zone under the boss and outside ring with DoT
+  "Nanospore Jet" -- Gives players a positive or negative charged theather to drones outside the ring.
+  Theater will be visible after dodging a few "Nerve Gas" attacks.
+  Opposite charge will be attracted and same charge will be repelled.
+  You want to end up close to the boss after the charged theater is over to avoid a donut AOE.
+#EO floors 81-89
+12212: |
+
+12217: |
+
+12218: |
+
+12214: |
+
+12161: |
+  과중력 부여 후
+  「テールスクリュー / Tail Screw」 시전 -- Hp를 1로 만듬
+12215: |
+
+12222: |
+
+12213: |
+
+12211: |
+
+12220: |
+
+12221: |
+
+12216: |
+
+12219: |
+
+#EO boss floor 90
+12102: |
+
+#EO floors 91-98
+12224: |
+
+12225: |
+
+12226: |
+
+12227: |
+
+12228: |
+
+12229: |
+
+12230: |
+
+12231: |
+
+12232: |
+
+12233: |
+
+12234: |
+
+12235: |
+
+#EO boss floor 99
+12100: |
+
