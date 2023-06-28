@@ -1,84 +1,176 @@
+#EO floors 51-59
 12182: |
   释放直线跟踪型秒杀级AOE，须隔墙躲避（不穿无敌）；
   不吃晕
+12174: |
+
 12180: |
   死亡后爆炸（不可见钢铁AOE）；
   不吃晕
 12183: |
-  读条“寒冰尖刺”后，将会反弹物理伤害，需击晕或停手（召唤物伤害无妨）
-12161: |
-  单体平A重击，附加“加重”效果；
-  点名被加重玩家释放“螺旋尾”（可见圆形AOE），血量归1；
-  不吃晕
+  Casts ice spikes, will one shot if hit with physical damage
+12171: |
+
+12178: |
+
+12176: |
+
+12318: |
+
+12181: |
+
 12172: |
-  释放大范围不可见吸引（防击退/隔墙有效），然后快速读条可见钢铁AOE，需快速远离；
-  不吃晕
+  Pulls in then PB AOE
 12179: |
   随机向正前或背后释放半圆AOE（前半不可见、后半可见），随后立刻对反方向释放一次；
   吃晕
+12177: |
+
 12173: |
-  跳向一仇玩家造成范围伤害并击退半场距离（防击退有效）；
-  随机释放钢铁或月环，可通过特效判断；
-  吃晕
+  Jumps to player and does half room knockback
+  "Electric Whorl" -- Doughnut
+  "Expulsion" -- PB AOE
 12175: |
-  背后有人时会触发快速读条，释放几乎不可见扇形AOE；
-  吃晕
+  Untelegraphed AOE behind
+#EO boss floor 60
+12267: |
+  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
+  "Disorienting Groan" -- Knockback, be inside boss
+  "Bullish Swipe" -- Frontal cleave
+  "Bullish Swing" -- Large PB AOE
+#EO floors 61-69
+12184: |
+
+12191: |
+
+12189: |
+  AOE will give evasion to other enemies it hits
+12187: |
+
+12186: |
+  Untelegraphed conal back cleave if player is behind.
+12185: |
+  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+12194: |
+  Untelegraphed Claw/Tail swipe swipe conal AOE.
 12195: |
   平A+三连重击，秒杀20%血量以下玩家；
   不吃晕
-12185: |
-  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
-12189: |
-  AOE will give evasion to other enemies it hits
+12190: |
+
 12196: |
   Knockback
+12188: |
+
+12193: |
+  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range.
 12192: |
   Pull in then PB AOE
-12194: |
-  Untelegraphed claw swipe and tail swipe
-12193: |
-  Will cast "Electric Cachexia" (Donut AoE) when players aren't in melee
-12186: |
-  Back attack
+#EO floor 70
 12246: |
   "Ferocity" -- distance tether
   "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
   "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
-12267: |
-  8次预兆扇形AOE，分 北南东西/北南东西 或 北南东西/西东南北 两种情况；
-  击退攻击；
-  前方扇形AOE；
-  非T即死大钢铁；
-12197: "释放正面几乎不可见小扇形AOE，附加减速debuff；\n吃晕"
-12199: "对一仇三连冲锋，注意减伤；\n点名一名玩家释放可见圆形AOE；\n吃晕"
+#EO floors 71-79
+12197: |
+  释放正面几乎不可见小扇形AOE，附加减速debuff；
+  吃晕
+12199: |
+  对一仇三连冲锋，注意减伤；
+  点名一名玩家释放可见圆形AOE；
+  吃晕
+12202: |
+  "The Killing Paw" -- double frontal cone second is untelegraphed
+  Be carefull with stun or slow as this enemy can store the second swipe
+12207: |
+  "Spark" -- untelegraphed doughnut
+  "Scythe Tail" -- no cast bar PB AOE, it will crouch and wiggle its tail
+12201: |
+
+12209: |
+  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
+12208: |
+  Wide line AOE, can not be line of sighted.
+12204: |
+
+12205: |
+  Executes player if below 20% HP
+12198: |
+  "Chirp" -- untelegraphed PB AOE
+12206: |
+  释放全屏不可见AOE，背对回避；
+  吃晕
 12200: |
   Huge wide frontal cone
-  Huge rear cone (if player behind)
-12202: |
-  释放正面可见扇形AOE，之后会复读一次不可见的AOE；
-  注意击晕或减速后，依然会释放第二次；
-  吃晕
-12207: |
-  原地趴着不动时蓄力释放无读条且不可见钢铁AOE，附带击退和眩晕；
-  读条释放安全区较大的月环AOE；可通过摇尾巴判断是否蓄力钢铁；
-  不吃晕
-12209: |
-  点名一名玩家释放两次可见圆形AOE，然后释放全屏不可见AOE，需要隔墙躲避或击晕；
-  吃晕
-12208: |
-  点名玩家释放很宽的直线AOE，无法隔墙躲避，靠近处理；
-  不吃晕
-12205: |
-  平A+三连重击，秒杀20%血量以下玩家；
-  不吃晕
-12198: |
-  释放不可见钢铁AOE，附件昏睡debuff；对昏睡玩家释放可见圆形AOE；
-  吃晕
-12206: "释放全屏不可见AOE，背对回避；\n吃晕"
+  Huge rear cone if player is behind
 12203: |
-  吃香蕉后对自身附加15秒伤害提升；期间会读条超大范围几乎不可见秒杀AOE，需要隔墙躲避；
-  吃晕
+  "Chest Thump" -- Huge unaggroed AOE after using "Ripe Banana"
+#EO boss floor 80
 12247: |
-  三头蛇，左中右AOE；
-  Boss脚下是即死区；
-  根据磁石正负极保证击退或拉近后，在boss附近的斜点方向
+  "Rightward/Leftward Nerve Gass" -- Halfroom cleaves front is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave
+  "Barofield" -- Creates a dead zone under the boss and outside ring with DoT
+  "Nanospore Jet" -- Gives players a positive or negative charged theather to drones outside the ring.
+  Theater will be visible after dodging a few "Nerve Gas" attacks.
+  Opposite charge will be attracted and same charge will be repelled.
+  You want to end up close to the boss after the charged theater is over to avoid a donut AOE.
+#EO floors 81-89
+12212: |
+
+12217: |
+
+12218: |
+
+12214: |
+
+12161: |
+  单体平A重击，附加“加重”效果；
+  点名被加重玩家释放“螺旋尾”（可见圆形AOE），血量归1；
+  不吃晕
+12215: |
+
+12222: |
+
+12213: |
+
+12211: |
+
+12220: |
+
+12221: |
+
+12216: |
+
+12219: |
+
+#EO boss floor 90
+12102: |
+
+#EO floors 91-98
+12224: |
+
+12225: |
+
+12226: |
+
+12227: |
+
+12228: |
+
+12229: |
+
+12230: |
+
+12231: |
+
+12232: |
+
+12233: |
+
+12234: |
+
+12235: |
+
+#EO boss floor 99
+12100: |
+
