@@ -108,7 +108,7 @@
 12267-Servomechanical minotaur:
   Threat: Caution
   Aggro: Boss
-  
+
 # EO floors 61-69
 12184-Orthos pteroc:
   Threat: Easy
@@ -209,6 +209,15 @@
   Aggro: Sight
   Weakness:
     - Slow
+12204-Orthos Primelephas:
+  Threat: Undefined
+  Aggro: Undefined
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 12205-Orthoskunoichi:
   Threat: Caution
   Aggro: Proximity
