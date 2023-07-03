@@ -35,7 +35,7 @@ public partial class Requests
                             continue;
 
                         PluginLog.Verbose($"Found description for {id}");
-                        mobData.MobDictionary[id].Description = percentRegex.Replace(description, "%%");
+                        mobData.MobDictionary[id].Description = _percentRegex.Replace(description, "%%");
                     }
                 }
                 catch (Exception e)
@@ -111,8 +111,8 @@ public partial class Requests
         if (continuous)
         {
             PluginLog.Verbose($"Refreshing file list in {CacheTime:g}");
-            await Task.Delay(CacheTime, token.Token);
-            if (!token.IsCancellationRequested)
+            await Task.Delay(CacheTime, _token.Token);
+            if (!_token.IsCancellationRequested)
                 await RefreshLang();
         }
     }
