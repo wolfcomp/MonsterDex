@@ -17,7 +17,6 @@ public class Main : Window, IDisposable
     private readonly TargetManager _target;
     private readonly StorageHandler _storage;
     private readonly Framework _framework;
-    private readonly ClientState _state;
     private readonly DataManager _gameData;
     private readonly DalamudPluginInterface _pluginInterface;
     private uint _targetId;
@@ -31,13 +30,12 @@ public class Main : Window, IDisposable
     private TextureWrap? _undead;
     private TextureWrap? _unknown;
 
-    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, ClientState state, DataManager gameData, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, DataManager gameData, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
         _storage = storage;
         _framework = framework;
-        _state = state;
         _gameData = gameData;
         _pluginInterface = pluginInterface;
         _instance = this;
