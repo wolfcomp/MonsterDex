@@ -109,15 +109,6 @@ namespace DeepDungeonDex.Windows
                 _config.Debug = _debug;
             }
 
-            if (ImGui.IsItemHovered())
-            {
-                ImGui.BeginTooltip();
-                ImGui.PushTextWrapPos(300f);
-                ImGui.TextWrapped("This will change the window to the old style.\nAs of 2.4.0 this feature is deprecated and will be removed after 6.35 is released.");
-                ImGui.PopTextWrapPos();
-                ImGui.EndTooltip();
-            }
-
             if (ImGui.Checkbox(_locale.GetLocale("LoadAllFont"), ref _loadAll))
             {
                 _config.LoadAll = _loadAll;
