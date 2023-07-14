@@ -87,7 +87,7 @@
 # EO special NPCs and misc.
 12324-Demi-Cochma:
   Threat: Undefined
-  Aggro: Undefined
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -96,7 +96,16 @@
     - SleepUnknown
 12322-Lamia Queen:
   Threat: Undefined
-  Aggro: Undefined
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+12323-Meracydian Clone:
+  Threat: Undefined
+  Aggro: Sight
   Weakness:
     - StunUnknown
     - HeavyUnknown

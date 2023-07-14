@@ -258,6 +258,15 @@
   Aggro: Boss
 
 # EO floors 81-89
+12210-Orthos deepeye:
+  Aggro: Sight
+  Thread: Undefined
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 12212-Orthos hecteyes:
   Threat: Dangerous
   Aggro: Sound
@@ -348,6 +357,15 @@
   Aggro: Boss
 
 # EO floors 91-98
+12223-Orthodrone:
+  Aggro: Proximity
+  Thread: Undefined
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 12224-Orthos pegasus:
   Threat: Caution
   Aggro: Proximity
