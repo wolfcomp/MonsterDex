@@ -8,7 +8,7 @@
   死亡后爆炸（不可见钢铁AOE）；
   不吃晕
 12183: |
-  Casts ice spikes, will one shot if hit with physical damage
+  读条后将会反弹物理伤害，直接秒杀，需击晕或停手
 12171: |
 
 12178: |
@@ -27,9 +27,9 @@
 12177: |
 
 12173: |
-  Jumps to player and does half room knockback
-  "Electric Whorl" -- Doughnut
-  "Expulsion" -- PB AOE
+  跳向一仇玩家造成范围伤害并击退半场距离（防击退有效）；
+  随机释放钢铁或月环，可通过特效判断；
+  吃晕
 12175: |
   Untelegraphed AOE behind
 #EO boss floor 60
@@ -44,7 +44,7 @@
 12191: |
 
 12189: |
-  AOE will give evasion to other enemies it hits
+  AOE 会对其他怪物添加闪避BUFF
 12187: |
 
 12186: |
@@ -94,7 +94,7 @@
 12204: |
 
 12205: |
-  Executes player if below 20% HP
+  秒杀20%血量以下玩家
 12198: |
   "Chirp" -- untelegraphed PB AOE
 12206: |
@@ -104,7 +104,7 @@
   Huge wide frontal cone
   Huge rear cone if player is behind
 12203: |
-  "Chest Thump" -- Huge unaggroed AOE after using "Ripe Banana"
+  脱战会读条吃香蕉赋予攻击力上升buff，然后发动超大钢铁，吃到被秒杀，可以卡墙，卡水晶无效。进战很菜，冲向一仇击退后只会点名黄圈，可以晕。
 #EO boss floor 80
 12247: |
   "Rightward/Leftward Nerve Gass" -- Halfroom cleaves front is always safe.
