@@ -36,10 +36,9 @@
   吃晕
 #EO boss floor 60
 12267: |
-  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
-  "Disorienting Groan" -- Knockback, be inside boss
-  "Bullish Swipe" -- Frontal cleave
-  "Bullish Swing" -- Large PB AOE
+  八重横扫：8次预兆扇形aoe，分前后左右 右左后前 或 前后左右 前后左右
+  牛魔横扫：前方扇形aoe；牛魔回转：大钢铁；吼叫：击飞，去脚下；
+  招雷：随机召唤雷球aoe 随后接八重横扫 找安全位置处理八重
 #EO floors 61-69
 12184: |
 
@@ -50,29 +49,33 @@
 12187: |
 
 12186: |
-  Untelegraphed conal back cleave if player is behind.
+  玩家在背后时使用无范围提示背后aoe。
 12185: |
   读条反伤盾，反射物理伤害，直接秒杀，停手停普攻收武器
 12194: |
-  Untelegraphed Claw/Tail swipe swipe conal AOE.
+  无范围提示爪尾aoe
 12195: |
   平A+三连重击，秒杀20%血量以下玩家；
   不吃晕
 12190: |
 
 12196: |
-  击退
+  击退，靠墙处理。（不知道是什么技能，击飞几次，原文没写）
+  （U宫的击飞都非常远，一定记得靠墙！）
 12188: |
 
 12193: |
-  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range.
+  近战无目标则读条雷云放射(月环aoe)，靠近只平A。
 12192: |
-  Pull in then PB AOE
+  释放大范围不可见吸引（防击退/隔墙有效）
+  然后快速读条可见钢铁AOE，需快速远离；
+  不吃晕
 #EO floor 70
 12246: |
-  "Ferocity" -- distance tether
-  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
+  铁爪：死刑，开点减伤；强袭：点名拉线，拉至紫色安全；
+  随后接魔科学旋爪：身上发光为月环，目标圈内安全；不发光为大范围钢铁，远离。
+  咆哮：召唤小范围aoe和四个水晶，后接魔科学旋爪。
+  处理方式：钢铁去远水晶侧面和其他水晶夹角外侧，月环去远水晶内侧目标环内环一步。
 #EO floors 71-79
 12197: |
   释放正面几乎不可见小扇形AOE，附加减速debuff；
@@ -82,11 +85,13 @@
   点名一名玩家释放可见圆形AOE；
   吃晕
 12202: |
-  "The Killing Paw" -- double frontal cone second is untelegraphed
-  Be carefull with stun or slow as this enemy can store the second swipe
+  释放正面可见扇形AOE，之后会复读一次不可见的AOE；
+  注意击晕或减速后，依然会释放第二次；
+  吃晕
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AOE, it will crouch and wiggle its tail
+  原地趴着不动时蓄力释放无读条且不可见钢铁AOE，附带击退和眩晕；
+  有人远离时读条释放安全区较大的月环AOE；
+  可通过摇尾巴判断是否蓄力钢铁。不吃晕
 12201: |
 
 12209: |
@@ -104,19 +109,18 @@
   释放全屏不可见AOE，背对回避；
   吃晕
 12200: |
-  Huge wide frontal cone
-  Huge rear cone if player is behind
+  前方大范围扇形攻击，后方有人则读条后方扇形扫尾。
 12203: |
   脱战会读条吃香蕉赋予攻击力上升buff，然后发动超大钢铁，吃到被秒杀，可以卡墙，卡水晶无效。进战很菜，冲向一仇击退后只会点名黄圈，可以晕。
 #EO boss floor 80
 12247: |
-  "Rightward/Leftward Nerve Gass" -- Halfroom cleaves front is always safe.
-  "Centralized Nerve Gas" -- Wide frontal conal cleave
-  "Barofield" -- Creates a dead zone under the boss and outside ring with DoT
-  "Nanospore Jet" -- Gives players a positive or negative charged theather to drones outside the ring.
-  Theater will be visible after dodging a few "Nerve Gas" attacks.
-  Opposite charge will be attracted and same charge will be repelled.
-  You want to end up close to the boss after the charged theater is over to avoid a donut AOE.
+  共鸣：死刑；左侧/右侧神经毒气喷射：后方对应扇形aoe，正面永远安全；
+  正面神经毒气喷射：正面扇形aoe，去侧面。
+  气压领域：场地外侧和目标圈内即死区。
+  boss大部分时间会在目标圈内和场地外放置即死区，永远别进去。
+  场地外小怪使用三次十字aoe同时boss使用三次神经毒气，
+  第四次小怪读条磁力并点名，拉线到和boss目标圈相切，同性靠近，异性去对面半场外侧
+  磁力判定后躲开boss月环和第四次十字aoe
 #EO floors 81-89
 12212: |
 
