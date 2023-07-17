@@ -20,9 +20,10 @@
 12181: |
 
 12172: |
-  Pulls in then PB AOE
+  释放大范围不可见吸引（防击退/隔墙有效），然后快速读条可见钢铁AOE，需快速远离；
+  不吃晕
 12179: |
-  随机向正前或背后释放半圆AOE（前半不可见、后半可见），随后立刻对反方向释放一次；
+  随机向正前或背后释放半圆AOE（看到读条就跑，动画最后才出），随后立刻对反方向释放一次；
   吃晕
 12177: |
 
@@ -31,7 +32,8 @@
   随机释放钢铁或月环，可通过特效判断；
   吃晕
 12175: |
-  Untelegraphed AOE behind
+  背后有人时会触发快速读条，释放几乎不可见扇形AOE；
+  吃晕
 #EO boss floor 60
 12267: |
   "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
@@ -50,7 +52,7 @@
 12186: |
   Untelegraphed conal back cleave if player is behind.
 12185: |
-  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+  读条反伤盾，反射物理伤害，直接秒杀，停手停普攻收武器
 12194: |
   Untelegraphed Claw/Tail swipe swipe conal AOE.
 12195: |
@@ -88,15 +90,16 @@
 12201: |
 
 12209: |
-  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
+  自由落体：点名玩家释放可见aoe。使用两次之后读条凛冬之风：全屏狂暴，卡墙或击晕或速杀
 12208: |
-  Wide line AOE, can not be line of sighted.
+  前方长条不可见AOE，去背后躲
 12204: |
 
 12205: |
   秒杀20%血量以下玩家
 12198: |
-  "Chirp" -- untelegraphed PB AOE
+  释放不可见钢铁AOE，附加昏睡debuff；对昏睡玩家释放可见圆形AOE；
+  吃晕
 12206: |
   释放全屏不可见AOE，背对回避；
   吃晕
