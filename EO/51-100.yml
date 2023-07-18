@@ -359,7 +359,7 @@
 # EO floors 91-98
 12223-Orthodrone:
   Aggro: Proximity
-  Thread: Undefined
+  Threat: Undefined
   Weakness:
     - StunUnknown
     - HeavyUnknown
