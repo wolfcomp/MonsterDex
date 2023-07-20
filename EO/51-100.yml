@@ -260,7 +260,7 @@
 # EO floors 81-89
 12210-Orthos deepeye:
   Aggro: Sight
-  Thread: Undefined
+  Threat: Undefined
   Weakness:
     - StunUnknown
     - HeavyUnknown
