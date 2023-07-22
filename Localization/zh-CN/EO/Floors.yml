@@ -1,10 +1,9 @@
 EO1: |
-  在这里会生成几个带有大范围攻击的巡逻怪。
-  要注意来自怪物“扎戈斧龙”的瞬间范围攻击，它释放技能时的范围提示出现的较晚。
-  “埋藏的宝藏”会掉落铂辉宝藏。
-  金宝箱会生成“拟态怪”。
-
-  我听说你喜欢的楼层91-100没有boss... 如果我告诉你楼层99有个boss，你会怎么想？
+  1-10层将会比天之御柱或死者宫殿的1-10层更困难。
+  从第7层开始，将会出现克隆体或者解咒、魔法效果解除、大漩涡、重生或者恐慌装甲的魔陶器。
+  掉落青铜宝藏。
+  第9层不会掉落宝箱增加、减少敌人和改变敌人的魔陶器。
+  铜宝箱会出现拟态怪。
 EO11: |
   Accursed Hoard drops Bronze-tinged Sacks.
   Pomanders of affluence, flight, and alteration do not drop on floor 19.
@@ -15,10 +14,10 @@ EO21: |
   Pomanders of affluence, flight, and alteration do not drop on floor 29.
   Mimics spawns from bronze chests.
 EO31: |
-  The following sets of floors assume that every telegraph/attack is a one-shot.
-  Accursed Hoard drops Silver-tinged Sacks.
-  Pomanders of affluence, flight, and alteration do not drop on floor 39.
-  Mimics spawns from silver chests.
+  这十层的每个技能都是一击必杀。
+  “埋藏的宝藏”掉落银辉宝藏。
+  在第39层，不会掉落魔陶器：宝箱增加、魔陶器：减少敌人和魔陶器：改变敌人。
+  银宝箱会生成“拟态怪”。
 EO41: |
   要注意这十层的巡逻怪。
   “埋藏的宝藏”掉落银辉宝藏。
