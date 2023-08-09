@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Numerics;
 using Dalamud.Data;
 using Dalamud.Game.ClientState.Objects;
@@ -17,7 +17,7 @@ public class Main : Window, IDisposable
     private readonly TargetManager _target;
     private readonly StorageHandler _storage;
     private readonly Framework _framework;
-    private readonly DataManager _gameData;
+    private readonly ITextureProvider _textureProvider;
     private readonly DalamudPluginInterface _pluginInterface;
     private uint _targetId;
     private bool _debug;
@@ -30,13 +30,13 @@ public class Main : Window, IDisposable
     private TextureWrap? _undead;
     private TextureWrap? _unknown;
 
-    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, DataManager gameData, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, ITextureProvider textureProvider, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
         _storage = storage;
         _framework = framework;
-        _gameData = gameData;
+        _textureProvider = textureProvider;
         _pluginInterface = pluginInterface;
         _instance = this;
         var config = _storage.GetInstance<Configuration>()!;
@@ -83,12 +83,6 @@ public class Main : Window, IDisposable
     {
         _framework.Update -= GetData;
         _storage.GetInstance<Configuration>()!.OnChange -= ConfigChanged;
-        _heavy?.Dispose();
-        _bind?.Dispose();
-        _stun?.Dispose();
-        _slow?.Dispose();
-        _sleep?.Dispose();
-        _undead?.Dispose();
         _unknown?.Dispose();
     }
 
@@ -173,19 +167,7 @@ public class Main : Window, IDisposable
 
     public void LoadIcons()
     {
-        _heavy = _gameData.GetImGuiTextureHqIcon(15002);
-        _bind = _gameData.GetImGuiTextureHqIcon(15003);
-        _stun = _gameData.GetImGuiTextureHqIcon(15004);
-        _slow = _gameData.GetImGuiTextureHqIcon(15009);
-        _sleep = _gameData.GetImGuiTextureHqIcon(15013);
-        _undead = _gameData.GetImGuiTextureHqIcon(15461);
         _unknown = _pluginInterface.UiBuilder.LoadImage(GetResource("DeepDungeonDex.UnknownDebuf.png"));
-        // ReSharper disable once InvertIf
-        if (_heavy == null || _bind == null || _stun == null || _slow == null || _sleep == null || _undead == null)
-        {
-            _disable = true;
-            PluginLog.Error("Could not load icons, disabling Main window.");
-        }
     }
 
     public byte[] GetResource(string path)
@@ -203,27 +185,27 @@ public class Main : Window, IDisposable
         var uv0 = new Vector2(0, 0);
         var uv1 = new Vector2(1, 1);
         var cursor = ImGui.GetCursorPos();
-        ImGui.Image(_stun!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Stun) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+        ImGui.Image(_textureProvider.GetIcon(15004)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Stun) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
         if(weakness.HasFlag(Weakness.StunUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
-        ImGui.Image(_heavy!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+        ImGui.Image(_textureProvider.GetIcon(15002)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
         if(weakness.HasFlag(Weakness.HeavyUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
-        ImGui.Image(_slow!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+        ImGui.Image(_textureProvider.GetIcon(15009)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
         if(weakness.HasFlag(Weakness.SlowUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
-        ImGui.Image(_sleep!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+        ImGui.Image(_textureProvider.GetIcon(15013)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
         if(weakness.HasFlag(Weakness.SleepUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
-        ImGui.Image(_bind!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+        ImGui.Image(_textureProvider.GetIcon(15003)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
         if(weakness.HasFlag(Weakness.BindUnknown))
             DrawUnknown(cursor, size);
             
@@ -232,7 +214,7 @@ public class Main : Window, IDisposable
         {
             ImGui.SameLine();
             cursor = ImGui.GetCursorPos();
-            ImGui.Image(_undead!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
+            ImGui.Image(_textureProvider.GetIcon(15461)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
             if(weakness.HasFlag(Weakness.UndeadUnknown))
                 DrawUnknown(cursor, size);
         }

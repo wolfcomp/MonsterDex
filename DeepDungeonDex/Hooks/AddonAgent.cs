@@ -6,12 +6,12 @@ public unsafe class AddonAgent : IDisposable
 {
     private readonly Framework _framework;
     private readonly Condition _condition;
-    private readonly ClientState _state;
+    private readonly IClientState _state;
     private EventFramework* _structsFramework;
     public byte Floor { get; private set; }
     public bool Disabled { get; private set; }
 
-    public AddonAgent(Framework framework, Condition condition, ClientState state, CommandHandler handler)
+    public AddonAgent(Framework framework, Condition condition, IClientState state, CommandHandler handler)
     {
         _condition = condition;
         _framework = framework;

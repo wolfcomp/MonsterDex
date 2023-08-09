@@ -5,7 +5,7 @@ namespace DeepDungeonDex.Windows;
 
 public class Floor : Window, IDisposable
 {
-    private readonly ClientState _clientState;
+    private readonly IClientState _clientState;
     private readonly Condition _condition;
     private readonly Framework _framework;
     private readonly StorageHandler _storage;
@@ -14,7 +14,7 @@ public class Floor : Window, IDisposable
     private byte _debug;
     private string _dataPath;
 
-    public Floor(StorageHandler storage, CommandHandler command, Framework framework, Condition condition, ClientState state, AddonAgent addon) : base("DeepDungeonDex FloorGuide", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Floor(StorageHandler storage, CommandHandler command, Framework framework, Condition condition, IClientState state, AddonAgent addon) : base("DeepDungeonDex FloorGuide", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _storage = storage;
         _framework = framework;

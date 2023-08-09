@@ -4,11 +4,11 @@ namespace DeepDungeonDex;
 
 public class CommandHandler : IDisposable
 {
-    private readonly CommandManager _manager;
+    private readonly ICommandManager _manager;
     private readonly string _command = "/pddd";
     private readonly List<string> _commands = new();
 
-    public CommandHandler(CommandManager manager)
+    public CommandHandler(ICommandManager manager)
     {
         _manager = manager;
     }

@@ -1,8 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Dalamud.Data;
 using Dalamud.Game.ClientState.Objects;
-using Dalamud.Game.Command;
 using Dalamud.Game.Gui;
+using Dalamud.IoC;
 using DeepDungeonDex.Hooks;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,9 +13,9 @@ public class Main : IDalamudPlugin
 
     private IServiceProvider _provider;
 
-    public Main(DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state, ChatGui chat)
+    public Main(DalamudPluginInterface pluginInterface)
     {
-        _provider = BuildProvider(this, pluginInterface, framework, manager, target, condition, gameData, state, chat);
+        _provider = BuildProvider(this, pluginInterface);
         _provider.GetRequiredService<Requests>();
         _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange += pluginInterface.UiBuilder.RebuildFonts;
         _provider.GetRequiredService<CommandHandler>().AddCommand(new[] { "refresh", "clear" }, () => { RefreshData(); }, "Refreshes the data internally stored");
@@ -67,17 +66,17 @@ public class Main : IDalamudPlugin
         return sys;
     }
 
-    private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface, Framework framework, CommandManager manager, TargetManager target, Condition condition, DataManager gameData, ClientState state, ChatGui chat)
+    private static IServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface)
     {
         return new ServiceCollection()
             .AddSingleton(pluginInterface)
-            .AddSingleton(framework)
-            .AddSingleton(manager)
-            .AddSingleton(target)
-            .AddSingleton(condition)
-            .AddSingleton(gameData)
-            .AddSingleton(state)
-            .AddSingleton(chat)
+            .AddDalamudService<Framework>()
+            .AddDalamudService<ICommandManager>()
+            .AddDalamudService<TargetManager>()
+            .AddDalamudService<Condition>()
+            .AddDalamudService<IClientState>()
+            .AddDalamudService<ChatGui>()
+            .AddDalamudService<ITextureProvider>()
             .AddSingleton(new WindowSystem("DeepDungeonDex"))
             .AddSingleton(main)
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
@@ -99,5 +98,23 @@ public static class Extensions
                 disposable.Dispose();
         }
         windowSystem.RemoveAllWindows();
+    }
+
+    public static IServiceCollection AddDalamudService<T>(this IServiceCollection collection) where T : class
+    {
+        return collection.AddSingleton(provider =>
+        {
+            return new DalamudServiceIntermediate<T>(provider.GetRequiredService<DalamudPluginInterface>()).Service;
+        });
+    }
+}
+
+public class DalamudServiceIntermediate<T> where T : class
+{
+    [PluginService] public T Service { get; private set; } = null!;
+
+    public DalamudServiceIntermediate(DalamudPluginInterface pluginInterface)
+    {
+        pluginInterface.Inject(this);
     }
 }

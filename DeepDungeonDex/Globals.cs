@@ -9,6 +9,6 @@ global using Dalamud.Logging;
 global using System.Reflection;
 global using Dalamud.Interface.Windowing;
 global using Dalamud.Game;
-global using Dalamud.Game.ClientState;
 global using Dalamud.Game.ClientState.Conditions;
 global using Dalamud.Plugin;
+global using Dalamud.Plugin.Services;
