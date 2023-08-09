@@ -35,7 +35,7 @@ public partial class Requests
                             continue;
 
                         PluginLog.Verbose($"Found description for {id}");
-                        mobData.MobDictionary[id].Description = _percentRegex.Replace(description, "%%");
+                        mobData.MobDictionary[id].Description = _percentRegex.Replace(description, "%%").Replace("\\n", "\n").Split("\n").Select(t => t.Split(' ')).ToArray();
                     }
                 }
                 catch (Exception e)

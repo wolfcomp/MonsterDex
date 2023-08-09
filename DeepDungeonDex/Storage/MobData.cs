@@ -1,4 +1,5 @@
-﻿using YamlDotNet.Serialization;
+﻿using System.Drawing;
+using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage;
 
@@ -70,10 +71,38 @@ public class Mob
     [YamlIgnore]
     public uint Id { get; set; }
     [YamlIgnore]
-    public string Description { get; set; }
+    public string[][]? Description { get; set; }
+
+    [YamlIgnore]
+    public string[] ProcessedDescription { get; private set; } = Array.Empty<string>();
+
     public Weakness Weakness { get; set; }
     public Aggro Aggro { get; set; }
     public Threat Threat { get; set; }
+
+    public void ProcessDescription(float width)
+    {
+        var strList = new List<string>();
+        foreach (var t1 in Description)
+        {
+            var s = "";
+            foreach (var t in t1)
+            {
+                if (ImGui.CalcTextSize(s + t).X < width)
+                {
+                    s += t + " ";
+                }
+                else
+                {
+                    strList.Add(s[..^1]);
+                    s = t + " ";
+                }
+            }
+            if (s.Length > 0)
+                strList.Add(s[..^1]);
+        }
+        ProcessedDescription = strList.ToArray()[..^1];
+    }
 }
 
 [Flags]

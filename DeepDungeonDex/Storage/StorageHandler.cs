@@ -19,6 +19,8 @@ public class StorageHandler : IDisposable
     internal readonly Dictionary<string, object> JsonStorage = new();
     internal readonly Dictionary<string, object> YmlStorage = new();
 
+    public event EventHandler<StorageEventArgs> StorageChanged;
+
     public StorageHandler(DalamudPluginInterface pluginInterface, ChatGui chat)
     {
         _path = pluginInterface.GetPluginConfigDirectory();
@@ -28,18 +30,20 @@ public class StorageHandler : IDisposable
 
     public void AddJsonStorage(string path, object storage)
     {
-        if (JsonStorage.ContainsKey(path))
-            JsonStorage[path] = storage;
-        else
-            JsonStorage.Add(path, storage);
+        JsonStorage[path] = storage;
+        var args = storage is Storage { Value: not null } obj
+            ? new StorageEventArgs(obj.GetType())
+            : new StorageEventArgs(storage.GetType());
+        StorageChanged?.Invoke(this, args);
     }
 
     public void AddYmlStorage(string path, object storage)
     {
-        if (YmlStorage.ContainsKey(path))
-            YmlStorage[path] = storage;
-        else
-            YmlStorage.Add(path, storage);
+        YmlStorage[path] = storage;
+        var args = storage is Storage { Value: not null } obj
+            ? new StorageEventArgs(obj.GetType())
+            : new StorageEventArgs(storage.GetType());
+        StorageChanged?.Invoke(this, args);
     }
 
     private void Load()
@@ -372,5 +376,15 @@ internal class YamlStringEnumConverter : IYamlTypeConverter
         {
             emitter.Emit(new Scalar(value.ToString()!));
         }
+    }
+}
+
+public class StorageEventArgs : EventArgs
+{
+    public Type StorageType { get; set; }
+
+    public StorageEventArgs(Type storageType)
+    {
+        StorageType = storageType;
     }
 }

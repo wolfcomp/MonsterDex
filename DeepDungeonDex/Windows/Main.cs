@@ -1,6 +1,5 @@
-using System.IO;
+﻿using System.IO;
 using System.Numerics;
-using Dalamud.Data;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using ImGuiScene;
@@ -10,7 +9,6 @@ namespace DeepDungeonDex.Windows;
 public class Main : Window, IDisposable
 {
 #pragma warning disable CS8618
-    private static Main _instance;
     private static Mob _currentMob;
 #pragma warning restore CS8618
     private readonly Condition _condition;
@@ -19,15 +17,11 @@ public class Main : Window, IDisposable
     private readonly Framework _framework;
     private readonly ITextureProvider _textureProvider;
     private readonly DalamudPluginInterface _pluginInterface;
+    private readonly Configuration _config;
+    private Locale[] _locale;
     private uint _targetId;
     private bool _debug;
     private bool _disable;
-    private TextureWrap? _heavy;
-    private TextureWrap? _bind;
-    private TextureWrap? _stun;
-    private TextureWrap? _slow;
-    private TextureWrap? _sleep;
-    private TextureWrap? _undead;
     private TextureWrap? _unknown;
 
     public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, ITextureProvider textureProvider, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
@@ -35,17 +29,18 @@ public class Main : Window, IDisposable
         _condition = condition;
         _target = target;
         _storage = storage;
+        storage.StorageChanged += Storage_StorageChanged;
         _framework = framework;
         _textureProvider = textureProvider;
         _pluginInterface = pluginInterface;
-        _instance = this;
-        var config = _storage.GetInstance<Configuration>()!;
+        var instance = this;
+        _config = _storage.GetInstance<Configuration>()!;
         SizeConstraints = new WindowSizeConstraints
         {
-            MaximumSize = new Vector2(400 * config.WindowSizeScaled, 600),
-            MinimumSize = new Vector2(250 * config.WindowSizeScaled, 100)
+            MaximumSize = new Vector2(400 * _config.WindowSizeScaled, 600),
+            MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
         };
-        BgAlpha = config.Opacity;
+        BgAlpha = _config.Opacity;
         LoadIcons();
         framework.Update += GetData;
         command.AddCommand("debugmob", (args) =>
@@ -58,10 +53,18 @@ public class Main : Window, IDisposable
             }
 
             _debug = true;
-            _instance.SetTarget(id);
-            _instance.IsOpen = true;
+            instance.SetTarget(id);
+            instance.IsOpen = true;
         }, show: false);
-        config.OnChange += ConfigChanged;
+        _config.OnChange += ConfigChanged;
+    }
+
+    private void Storage_StorageChanged(object? sender, StorageEventArgs e)
+    {
+        if (e.StorageType == typeof(Locale))
+        {
+            _locale = _storage.GetInstances<Locale>();
+        }
     }
 
     public void ConfigChanged(Configuration config)
@@ -144,23 +147,28 @@ public class Main : Window, IDisposable
 
     public override void Draw()
     {
-        var config = _storage.GetInstance<Configuration>();
-        var locale = _storage.GetInstances<Locale>();
         ImGui.PushFont(Font.RegularFont);
-        var line = $"{_currentMob.Name}{(config.Debug ? $" ({_currentMob.Id})" : "")}";
+        var line = $"{_currentMob.Name}{(_config.Debug ? $" ({_currentMob.Id})" : "")}";
         ImGui.TextUnformatted(line);
-        ImGui.TextUnformatted($"{locale.GetLocale(_currentMob.Aggro.ToString())}\t");
+        ImGui.TextUnformatted($"{_locale.GetLocale(_currentMob.Aggro.ToString())}\t");
         ImGui.SameLine();
-        PrintTextWithColor(locale.GetLocale(_currentMob.Threat.ToString()), _currentMob.Threat.GetColor());
+        PrintTextWithColor(_locale.GetLocale(_currentMob.Threat.ToString()), _currentMob.Threat.GetColor());
         ImGui.NewLine();
-        ImGui.TextUnformatted(locale.GetLocale("Vulns"));
+        ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
         DrawWeakness(_currentMob.Weakness);
-        if (!string.IsNullOrWhiteSpace(_currentMob.Description))
+        if (_currentMob.Description != null)
         {
             ImGui.NewLine();
-            ImGui.TextUnformatted(locale.GetLocale("Notes") + ":\n");
-            ImGui.TextWrapped(_currentMob.Description.Replace("\\n", "\n"));
+            ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
+            var size = ImGui.GetWindowSize();
+            var desc = _currentMob.ProcessedDescription;
+            if(desc.Length == 0)
+                _currentMob.ProcessDescription(size.X);
+            foreach (var s in desc)
+            {
+                ImGui.TextUnformatted(s);
+            }
         }
         ImGui.PopFont();
     }
@@ -180,8 +188,7 @@ public class Main : Window, IDisposable
 
     public void DrawWeakness(Weakness weakness)
     {
-        var config = _storage.GetInstance<Configuration>()!;
-        var size = new Vector2(24 * config.FontSize / 16f, 32 * config.FontSize / 16f);
+        var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
         var uv0 = new Vector2(0, 0);
         var uv1 = new Vector2(1, 1);
         var cursor = ImGui.GetCursorPos();
