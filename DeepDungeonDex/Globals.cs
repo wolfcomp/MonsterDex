@@ -1,0 +1,14 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using DeepDungeonDex.Models;
+global using DeepDungeonDex.Storage;
+global using ImGuiNET;
+global using Newtonsoft.Json;
+global using Dalamud.Logging;
+global using System.Reflection;
+global using Dalamud.Interface.Windowing;
+global using Dalamud.Game;
+global using Dalamud.Game.ClientState.Conditions;
+global using Dalamud.Plugin;
+global using Dalamud.Plugin.Services;
