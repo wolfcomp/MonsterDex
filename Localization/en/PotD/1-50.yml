@@ -65,7 +65,7 @@
   1) Summons four lingering AoEs followed by AoEs which inflicts Disease
   2) Summons two Nightmare Bhoots, they must be killed before the boss next attack
   3) Casts "Scream", and adds will use "Tornado", a high damage AoE, if still alive
-  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use mitigations before this attack
+  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use damage reduction skills before this attack
 5026: Ranged auto-attack, non interruptable
 5029: Casts Physical Damage Up on itself
 5030: Inflicts Paralysis
