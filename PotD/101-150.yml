@@ -5,57 +5,88 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5361-deep palace stag:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5362-deep palace gaelicat:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Slow
 5363-deep palace doblyn:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5364-deep palace hippogryph:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5365-deep palace ladybug:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5366-deep palace hornet:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 5367-deep palace yarzon:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5368-deep palace ziz:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5369-goblin adventurer:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5370-deep palace dung beetle:
   Threat: Easy
-  Aggro: Sight
+  Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5371-Alicanto:
   Threat: Caution
   Aggro: Boss
@@ -63,17 +94,26 @@
 5372-deep palace leech:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Sleep
+    - Slow
+    - Bind
 5373-deep palace bifericeras:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
 5374-deep palace gigantoad:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
 5375-deep palace slime:
   Threat: Caution
   Aggro: Sound
@@ -85,40 +125,63 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5377-deep palace salamander:
   Threat: Easy
   Aggro: Sound
   Weakness:
+    - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5378-deep palace ochu:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5379-deep palace seedling:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5380-deep palace morbol:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Heavy
 5381-deep palace pudding:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 5382-deep palace cobra:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
+    - Heavy
 5383-deep palace biloko:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Heavy
+    - Bind
 5384-Kirtimukha:
   Threat: Caution
   Aggro: Boss
@@ -129,63 +192,94 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5386-deep palace biast:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5387-deep palace adamantoise:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Sleep
+    - Slow
+    - Heavy
 5388-deep palace basilisk:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
+    - Heavy
 5389-deep palace wivre:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
 5390-deep palace spriggan:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Sleep
+    - Heavy
+    - Bind
 5391-deep palace centaur:
   Threat: Easy
   Aggro: Proximity
   Weakness:
+    - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5392-deep palace effigy:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
+    - Heavy
 5393-deep palace urolith:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 5394-deep palace dullahan:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5395-deep palace minotaur:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
 5396-deep palace skatene:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5397-Alfard:
   Threat: Caution
   Aggro: Boss
@@ -195,6 +289,8 @@
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
+    - Undead
 5399-deep palace hecteyes:
   Threat: Easy
   Aggro: Sound
@@ -203,11 +299,19 @@
 5400-deep palace ogre:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5401-deep palace mummy:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
     - Undead
 5402-deep palace ahriman:
   Threat: Caution
@@ -220,11 +324,15 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5404-deep palace monk:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Heavy
 5405-deep palace troubador:
   Threat: Easy
   Aggro: Proximity
@@ -237,20 +345,34 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5407-deep palace guard:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
 5408-deep palace catoblepas:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
 5409-deep palace gourmand:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Undead
+5411-deep palace follower:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
     - Undead
 5410-Ah Puch:
   Threat: Caution
@@ -258,64 +380,101 @@
   Weakness:
     - Undead
 # PotD 141-150
-5411-deep palace follower:
-  Threat: Easy
-  Aggro: Sight
 5412-deep palace ked:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
 5413-deep palace demon:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5414-deep palace gargoyle:
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 5415-deep palace knight:
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
+    - Undead
 5416-deep palace bhoot:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
+    - Sleep
+    - Slow
+    - Undead
 5417-deep palace hellhound:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
+    - Heavy
 5418-deep palace persona:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Undead
 5419-deep palace succubus:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 5420-onyx dragon:
   Threat: Easy
   Aggro: Proximity
+  Weakness:
+    - Slow
+    - Undead
 5421-deep palace manticore:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Slow
+    - Heavy
+    - Bind
 5422-deep palace wraith:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
     - Undead
 5423-deep palace keeper:
   Threat: Dangerous
   Aggro: Sound
   Weakness:
+    - Slow
+    - Heavy
+    - Bind
     - Undead
+5427-fanatic zombie:
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Heavy
+    - Bind
+5428-fanatic succubus:
+  Threat: Caution
+  Aggro: Proximity
 5424-Tisiphone:
   Threat: Caution
   Aggro: Boss

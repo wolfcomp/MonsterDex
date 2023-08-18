@@ -1,22 +1,27 @@
 ﻿# PotD 1-10
+5479-palace sprite:
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
 4975-palace deathmouse:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
-    - Bind
     - Slow
+    - Heavy
+    - Bind
 4976-palace antelope:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
-    - Bind
     - Slow
+    - Heavy
+    - Bind
 4977-palace bat:
   Threat: Easy
   Aggro: Sound
@@ -28,26 +33,26 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
     - Heavy
     - Bind
-    - Slow
 4979-palace hippocerf:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
-    - Heavy
     - Sleep
-    - Bind
     - Slow
+    - Heavy
+    - Bind
 4980-palace beetle:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
     - Heavy
     - Bind
-    - Slow
 4981-palace hornet:
   Threat: Caution
   Aggro: Proximity
@@ -59,33 +64,34 @@
   Aggro: Sound
   Weakness:
     - Stun
-    - Sleep
     - Slow
+    - Heavy
+    - Bind
 4983-palace ziz:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
     - Heavy
     - Bind
-    - Slow
 4984-lost goblin:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
-    - Bind
     - Slow
+    - Heavy
+    - Bind
 4985-palace dung beetle:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
     - Heavy
     - Bind
-    - Slow
 4986-palace deathgaze:
   Threat: Caution
   Aggro: Boss
@@ -95,59 +101,71 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
     - Bind
 4988-palace uragnite:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
 4989-palace toad:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
     - Heavy
 4990-palace slime:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
 4991-palace ninki nanka:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 4992-palace nanka:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 4993-palace ochu:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
     - Heavy
     - Bind
 4994-palace seedling:
   Threat: Easy
-  Aggro: Proximity
+  Aggro: Sound
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 4995-palace morbol:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
     - Heavy
 4996-palace pudding:
   Threat: Easy
@@ -160,10 +178,12 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
 4998-palace biloko:
   Threat: Easy
   Aggro: Sight
   Weakness:
+    - Slow
     - Heavy
     - Bind
 4999-Spurge:
@@ -175,69 +195,77 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 5001-palace drake:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 5002-palace adamantoise:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - Heavy
     - Sleep
-    - Bind
+    - Slow
+    - Heavy
 5003-palace peiste:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
 5004-palace wivre:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
 5005-palace spriggan:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Heavy
     - Bind
 5006-palace centaur:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 5007-palace effigy:
   Threat: Easy
   Aggro: Sight
   Weakness:
+    - Slow
     - Heavy
 5008-palace marolith:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 5009-palace dullahan:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
     - Heavy
     - Bind
 5010-palace minotaur:
@@ -245,15 +273,16 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
 5011-palace skatene:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
     - Heavy
-    - Sleep
     - Bind
 5012-Ningishzida:
   Threat: Caution
@@ -261,27 +290,32 @@
 # PotD 31-40
 5013-nightmare bogy:
   Threat: Easy
-  Aggro: Proximity
+  Aggro: Sound
   Weakness:
     - Stun
+    - Slow
 5014-nightmare hecteyes:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
+    - Slow
 5015-nightmare ogre:
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - Stun
-    - Heavy
     - Sleep
+    - Slow
+    - Heavy
     - Bind
 5016-nightmare mummy:
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - Undead
+    - Stun
+    - Slow
+    - Heavy
+    - Bind
 5017-nightmare eye:
   Threat: Easy
   Aggro: Sight
@@ -293,11 +327,15 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
+    - Bind
 5019-nightmare monk:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Bind
 5020-nightmare troubadour:
   Threat: Easy
   Aggro: Proximity
@@ -310,28 +348,32 @@
   Weakness:
     - Stun
     - Sleep
+    - Slow
+    - Heavy
 5022-nightmare succubus:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 5023-nightmare catoblepas:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
 5024-nightmare gourmand:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
-    - Undead
+    - Slow
+    - Heavy
 5025-Ixtab:
   Threat: Easy
   Aggro: Boss
-  Weakness:
-    - Undead
 # PotD 41-50
 5026-nightmare gnat:
   Threat: Easy
@@ -343,53 +385,74 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
 5028-nightmare gargoyle:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
 5029-nightmare knight:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5030-nightmare bhoot:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
     - Sleep
+    - Slow
 5031-nightmare hellhound:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Sleep
+    - Slow
+    - Heavy
 5032-nightmare persona:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 5033-nightmare bloodguard:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
 5034-nightmare dragon:
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Slow
 5035-nightmare manticore:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Slow
+    - Heavy
+    - Bind
 5036-nightmare wraith:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+    - Slow
 5037-nightmare gravekeeper:
   Threat: Easy
   Aggro: Sound
   Weakness:
-    - Undead
+    - Slow
+    - Heavy
+    - Bind
 5038-Edda Blackbosom:
   Threat: Caution
   Aggro: Boss
