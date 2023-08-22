@@ -23,7 +23,7 @@ public unsafe class AddonAgent : IDisposable
                 return;
             Disabled = false;
             _framework.Update += OnUpdate;
-        });
+        }, "Resets the floor getter function to try again");
     }
 
     private void OnUpdate(Framework framework)
