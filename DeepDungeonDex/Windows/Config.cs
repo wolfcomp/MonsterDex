@@ -8,6 +8,7 @@ public class Config : Window, IDisposable
     private static Config _instance;
     private readonly StorageHandler _handler;
     private readonly Requests _requests;
+    private readonly DalamudPluginInterface _pluginInterface;
     private readonly IServiceProvider _provider;
     private float _opacity;
     private bool _clickthrough;
@@ -18,11 +19,12 @@ public class Config : Window, IDisposable
     private bool _loadAll;
     private bool _hideFloor;
 
-    public Config(StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
+    public Config(DalamudPluginInterface pluginInterface, StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
     {
         _handler = handler;
         _requests = requests;
         _provider = provider;
+        _pluginInterface = pluginInterface;
         _instance = this;
         var _config = _handler.GetInstance<Configuration>()!;
         _config.OnChange += OnChange;
@@ -39,6 +41,7 @@ public class Config : Window, IDisposable
         _loc = _config.Locale;
         _loadAll = _config.LoadAll;
         _hideFloor = _config.HideFloor;
+        _pluginInterface.UiBuilder.OpenConfigUi += () => _instance.IsOpen = true;
         command.AddCommand(new[] { "config", "cfg" }, () => _instance.IsOpen = true, "Opens the config window.");
     }
 
@@ -105,7 +108,7 @@ public class Config : Window, IDisposable
         {
             _config.LoadAll = _loadAll;
             _provider.GetRequiredService<Font>().SetUpSpecificFonts(_config);
-            _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts();
+            _pluginInterface.UiBuilder.RebuildFonts();
         }
         if (ImGui.IsItemHovered())
         {
