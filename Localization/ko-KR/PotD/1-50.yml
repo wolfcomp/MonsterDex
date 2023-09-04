@@ -1,41 +1,83 @@
-5038: |
-  기믹 해설: 기믹을 실패하면 전체 범위 공격이 강화됨
-  보스는 전체 공격을 종종 시전함
-  1) 「インヘルス/In Health」스킬은 보스의 발밑 이외의 전체 범위 공격 또는 보스 중심의 원형 범위 공격
-  2) 「狂気のまなざし/Cold Feet」 마안 공격
-5032: 마비 디버프를 부여함
-5030: 마비 디버프를 부여함
-5025: |
-  1) 사라지지 않는 범위 장판을 4개 소환한다.
-  2) 부하 몬스터 2마리 추가 소환 -- 보스가 「スクリーム / Scream」을 사용하기 전에 죽여야 하며, 죽지 않은 경우 강한 데미지의 범위 공격으로 플레이어를 노린다.
-5022: |
-  「ダークミスト/Dark Mist」 스킬은 공황 디버프를 부여함
-5012: |
-  1) 불과 얼음의 장판을 중앙에 떨어뜨리지 않도록 한다.
-  2) 「フィアーミスト / Fear Itself」 스킬을 시전하며, 보스의 히트박스 안에 들어가면 회피할 수 있다. 회피하지 않으면 높은 데미지와 공포 디버프를 부여 받음
+5479: Caster, break line of sight to evade auto-attacks
+4975: 자신에게 헤이스트를 부여함
+4977: Absorbs health with each attack
+4979: AoE "Shriek" inflicts Stun
+4980: 독 디버프를 부여함
+4981: Soft-enrage "Final Sting", break line of sight to evade
+4982: Inflicts Vulnerability Up
+4983: AoE "Slumber Breath" inflicts Sleep
+4985: Mini buster "Rhino Charge", break line of sight to evade
+4986: |
+  1) "Whipcrack" - light tankbuster
+  2) "Stormwind" - conal AoE
+  3) "Bombination" - circular AoE on boss inflicts Slow
+  4) "Lumisphere" - targeted AoE on random player
+  5) "Aeroblast" - room wide AoE inflicts Windburn (15s DoT)
+4988: 독 디버프를 부여함
+4989: |
+  "Sticky Tongue" draw-in a player, inflicting Stun if not facing the monster
+  "Labored Leap" AoE is immediately casted after, inflicts substantial damage
+4990: |
+  Can ENRAGE with "Rupture" and wipe the whole team if not killed in time
+  Absorbs health with each attack
+4993: Casts instant Untelegraphed AoE which inflicts Slow
+4994: 독 디버프를 부여함
+4995: |
+  "Bad Breath" AoE inflicts multiple debuffs if not evaded
+4996: |
+  Caster, break line of sight to evade auto-attacks
+  Buffs own damage with "Golden Tongue"
+4997: |
+  INSTANTLY KILLS players inflicted with Toad using "Devour"
+  Gaze attack inflicts Petrify, do not target while casted to evade
+4999: |
+  1) "Bloody Caress" - high damage cleave
+  2) Two telegraphed AoEs and a room wide AoE
+  3) Summons two Palace Hornets that must be killed before they casts "Final Sting"
+  4) "Rotten Stench" - high damage line AoE
+5001: Casts Fire Damage Up on itself
+5003: Gaze attack inflicts Petrify, do not target while casted to evade
+5004: High auto-attack damage
+5005: |
+  Caster, break line of sight to evade auto-attacks
+  Casts Haste on itself
+5006: Casts Physical Damage Up on itself
+5007: Can knockback player
+5010: Untelegraphed AoE "111-Tonze Swing" does moderate damage and knockback
 5011: |
   「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함
-5010: 조금 강한 보이지 않는 범위공격을 시전함
-4999: |
-  1)「ブラッディカレス / Bloody Caress」 강한 데미지의 전방 부채꼴 범위 공격
-  2) 2회의범위 공격을 하고 다시 전체 범위 공격
-  3) 벌 2마리가 소환되며 「ファイナルスピア / Final Sting」 스킬 시전이 오기 전에 처치한다.
-  4)「ロトンステンチ / Rotten Stench」 강한 데미지의 직선 범위 공격
-4997: 석화 디버프를 부여하는 마안 공격을 시전함. 「捕食/Devour」 스킬은 개구리 상태로 변한 플레이어를 즉사시킴
-4996: 자신에게 피해량 증가 버프를 시전함
-4993: 둔화가 걸리는 구역
-4990: 즉사급 공격을 시전함
-4989: |
-  「スティッキータン/Sticky Tongue」 스킬은 마주보고 있으면 기절 상태에 빠지지 않음
-4988: 독 디버프를 부여함
-4986: |
-  1) 「ウィップクラック / Whipcrack」 탱크 강공격
-  2) 「ストームウィンド / Stormwind」 부채꼴 범위 공격
-  3) 「ボンビネーション / Bombination」 보스 중심의 둔화 부여 원형 범위 공격
-  4) 「ルミスフィア / Lumisphere」 랜덤 타겟에게 범위 공격
-  5) 「エアロブラスト / Aeroblast」 고통 디버프를 부여하는 전체 범위 공격
-4985: '「ライノアタック/Rhino Charge」 라는 스킬으로 강공격을 함'
-4982: 받는 피해 상승 디버프를 부여함
-4981: '「ファイナルスピア/Final Sting」 라는 스킬으로 높은 데미지를 줌'
-4980: 독 디버프를 부여함
-4975: 자신에게 헤이스트를 부여함
+5012: |
+  1) Spread out Fire and Ice AoEs on arena borders
+  2) After the fourth AoE, run to the center of the arena alongside the boss
+  2) Get inside boss's hit box before "Fear Itself" is casted, or it will inflict high damage and Terror
+5014: Inflicts Paralysis if caught in AoE
+5016: Inflicts Stun if caught in AoE
+5017: Caster, break line of sight to evade auto-attacks
+5019: |
+  Draws-in near players and then casts an AoE
+  Caster, break line of sight to evade auto-attacks
+5020: Caster, break line of sight to evade auto-attacks
+5022: |
+  Casts "Dark Mist" AoE, which inflicts Terror
+  "Void Fire II" AoE is subsequently casted to inflict high damage to stunned players
+5023: Gaze attack inflicts Petrify
+5025: |
+  1) Summons four lingering AoEs followed by AoEs which inflicts Disease
+  2) Summons two Nightmare Bhoots, they must be killed before the boss next attack
+  3) Casts "Scream", and adds will use "Tornado", a high damage AoE, if still alive
+  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use damage reduction skills before this attack
+5026: Ranged auto-attack, non interruptable
+5029: Casts Physical Damage Up on itself
+5030: 마비 디버프를 부여함
+5032: 마비 디버프를 부여함
+5036: Wide AoE which inflicts Terror
+5037: |
+  High physical damage
+  "Nail in the Coffin" does a lot of damage
+5038: |
+  FOLLOW MECHANICS -- evade all AoEs and Gazes
+  Failed mechanics will increase Black Honeymoon room AoE (3+ stacks is a near wipe)
+  1) "Cold Feet" -- Gaze
+  2) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
+  3) "In Sickness" -- instantly inflicts Disease on a player
+  4) Black Honeymoon
