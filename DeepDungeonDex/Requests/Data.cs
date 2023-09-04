@@ -15,6 +15,9 @@ public partial class Requests : IDisposable
     public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data";
     public TimeSpan CacheTime = TimeSpan.FromHours(6);
     public StorageHandler Handler;
+    public bool RequestingData { get; private set; }
+    public bool RequestingLang { get; private set; }
+    public bool IsRequesting => RequestingData || RequestingLang;
 
     public Requests(StorageHandler handler)
     {
@@ -45,6 +48,7 @@ public partial class Requests : IDisposable
 
     public async Task RefreshFileList(bool continuous = true)
     {
+        RequestingData = true;
         var list = await GetFileList();
         if (list == null)
             goto RefreshEnd;
@@ -84,6 +88,7 @@ public partial class Requests : IDisposable
         Handler.Save();
 
         RefreshEnd:
+        RequestingData = false;
         if (continuous)
         {
             PluginLog.Verbose($"Refreshing file list in {CacheTime:g}");

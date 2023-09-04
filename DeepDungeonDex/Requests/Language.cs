@@ -64,6 +64,7 @@ public partial class Requests
 
     public async Task RefreshLang(bool continuous = true)
     {
+        RequestingLang = true;
         var fileList = await GetLangFileList();
         if (fileList == null)
             goto RefreshEnd;
@@ -108,6 +109,7 @@ public partial class Requests
         ChangeLanguage();
 
         RefreshEnd:
+        RequestingLang = false;
         if (continuous)
         {
             PluginLog.Verbose($"Refreshing file list in {CacheTime:g}");
