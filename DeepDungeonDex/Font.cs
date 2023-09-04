@@ -91,6 +91,11 @@ internal class Font : IDisposable
             builder.AddText("Œœ");
             // Romanian
             builder.AddText("ĂăÂâÎîȘșȚț");
+            // Greek
+            for (var i = 0x0370; i <= 0x03FF; i++)
+            {
+                builder.AddChar((char)i);
+            }
             // "Enclosed Alphanumerics" (partial) https://www.compart.com/en/unicode/block/U+2460
             for (var i = 0x2460; i <= 0x24B5; i++)
             {
