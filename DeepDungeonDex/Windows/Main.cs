@@ -18,13 +18,14 @@ public class Main : Window, IDisposable
     private readonly ITextureProvider _textureProvider;
     private readonly DalamudPluginInterface _pluginInterface;
     private readonly Configuration _config;
+    private readonly IClientState _clientState;
     private Locale[] _locale;
     private uint _targetId;
     private bool _debug;
     private bool _disable;
     private TextureWrap? _unknown;
 
-    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, Condition condition, ITextureProvider textureProvider, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, IClientState state, Condition condition, ITextureProvider textureProvider, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -33,6 +34,7 @@ public class Main : Window, IDisposable
         _framework = framework;
         _textureProvider = textureProvider;
         _pluginInterface = pluginInterface;
+        _clientState = state;
         var instance = this;
         _config = _storage.GetInstance<Configuration>()!;
         SizeConstraints = new WindowSizeConstraints
@@ -43,7 +45,7 @@ public class Main : Window, IDisposable
         BgAlpha = _config.Opacity;
         LoadIcons();
         framework.Update += GetData;
-        command.AddCommand("debugmob", (args) =>
+        command.AddCommand("debug_mob", (args) =>
         {
             if (!uint.TryParse(args.Split(' ')[0], out var id) || _disable)
             {
@@ -135,6 +137,7 @@ public class Main : Window, IDisposable
         }
 
         SetTarget(npc.NameId);
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
         if (_currentMob is null)
         {
             IsOpen = false;
@@ -157,7 +160,7 @@ public class Main : Window, IDisposable
         ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
         DrawWeakness(_currentMob.Weakness);
-        if (_currentMob.Description != null)
+        if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
         {
             ImGui.NewLine();
             ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
@@ -217,7 +220,7 @@ public class Main : Window, IDisposable
             DrawUnknown(cursor, size);
             
         // ReSharper disable once InvertIf
-        if (_currentMob.Id is not (>= 7262 and <= 7610))
+        if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
         {
             ImGui.SameLine();
             cursor = ImGui.GetCursorPos();

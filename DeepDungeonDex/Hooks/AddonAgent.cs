@@ -17,7 +17,7 @@ public unsafe class AddonAgent : IDisposable
         _framework = framework;
         _state = state;
         _framework.Update += OnUpdate;
-        handler.AddCommand(new[] { "enablefloor", "efloor", "enablef" }, () =>
+        handler.AddCommand(new[] { "enable_floor", "e_floor", "enable_f", "ef" }, () =>
         {
             if(!Disabled)
                 return;

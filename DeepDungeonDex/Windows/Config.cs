@@ -41,12 +41,18 @@ public class Config : Window, IDisposable
         _loc = _config.Locale;
         _loadAll = _config.LoadAll;
         _hideFloor = _config.HideFloor;
-        _pluginInterface.UiBuilder.OpenConfigUi += () => _instance.IsOpen = true;
-        command.AddCommand(new[] { "config", "cfg" }, () => _instance.IsOpen = true, "Opens the config window.");
+        _pluginInterface.UiBuilder.OpenConfigUi += Open;
+        command.AddCommand(new[] { "config", "cfg" }, Open, "Opens the config window.");
+    }
+
+    public void Open()
+    {
+        IsOpen = true;
     }
 
     public void Dispose()
     {
+        _pluginInterface.UiBuilder.OpenConfigUi -= Open;
         _handler.GetInstance<Configuration>()!.OnChange -= OnChange;
     }
 
