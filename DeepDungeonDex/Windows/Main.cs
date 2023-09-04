@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
@@ -137,6 +137,7 @@ public class Main : Window, IDisposable
         }
 
         SetTarget(npc.NameId);
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
         if (_currentMob is null)
         {
             IsOpen = false;
@@ -159,7 +160,7 @@ public class Main : Window, IDisposable
         ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
         DrawWeakness(_currentMob.Weakness);
-        if (_currentMob.Description != null)
+        if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
         {
             ImGui.NewLine();
             ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
