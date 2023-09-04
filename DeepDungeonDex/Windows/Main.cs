@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
@@ -43,7 +43,7 @@ public class Main : Window, IDisposable
         BgAlpha = _config.Opacity;
         LoadIcons();
         framework.Update += GetData;
-        command.AddCommand("debugmob", (args) =>
+        command.AddCommand("debug_mob", (args) =>
         {
             if (!uint.TryParse(args.Split(' ')[0], out var id) || _disable)
             {

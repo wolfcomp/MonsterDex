@@ -1,63 +1,90 @@
 ﻿using Dalamud.Game.Command;
+using Dalamud.Game.Gui;
+using YamlDotNet.Core.Tokens;
 
 namespace DeepDungeonDex;
 
 public class CommandHandler : IDisposable
 {
     private readonly ICommandManager _manager;
+    private readonly ChatGui _chat;
     private readonly string _command = "/pddd";
-    private readonly List<string> _commands = new();
+    private readonly Dictionary<string[], Tuple<object, string, bool>> _actions = new();
+    private readonly string[] _help = new[] { "help", "h" };
 
-    public CommandHandler(ICommandManager manager)
+    public CommandHandler(ICommandManager manager, ChatGui chat)
     {
         _manager = manager;
+        _chat = chat;
+    }
+
+    private string CommandStrings => string.Join("\n\t", _actions.Where(t => t.Value.Item3).Select(t => $"{string.Join(", ", t.Key)} → {t.Value.Item2}"));
+
+    private void AddMainHandler()
+    {
+        _manager.AddHandler(_command, new CommandInfo(ProcessCommand)
+        {
+            HelpMessage = $"Deep Dungeon Dex commands\n\thelp, h → shows all commands in chat\n\t{CommandStrings}",
+            ShowInHelp = true
+        });
+    }
+
+    public void ProcessCommand(string command, string argument)
+    {
+        var args = argument.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (args.Length == 0 || _help.Any(t => args.First().ToLowerInvariant() == t))
+        {
+            if(args.Length == 0)
+                _chat.PrintError("[DeepDungeonDex] Expected additional args");
+            _chat.Print($"[DeepDungeonDex] Available commands:");
+            foreach (var (key, val) in _actions)
+            {
+                var (_, help, show) = val;
+                if(show)
+                    _chat.Print($"  {string.Join(", ", key)} → {help}");
+            }
+
+            return;
+        }
+
+        var action = args[0];
+        if (!_actions.Keys.SelectMany(t => t).Contains(action, StringComparer.InvariantCultureIgnoreCase))
+        {
+            _chat.PrintError($"[DeepDungeonDex] Unknown action {action}");
+            return;
+        }
+
+        var (act, _, _) = _actions.First(t => t.Key.Contains(action, StringComparer.InvariantCultureIgnoreCase)).Value;
+        var actType = act.GetType();
+        if (actType == typeof(Action<string>))
+            (act as Action<string>)!.Invoke(string.Join(' ', args.Skip(1)));
+        else
+            (act as Action)!.Invoke();
     }
 
     public void AddCommand(string command, Action action, string helpText = "", bool show = true)
     {
-        _commands.Add(_command + command);
-        _manager.AddHandler(_command + command, new CommandInfo((_, _) => action.Invoke())
-        {
-            HelpMessage = helpText,
-            ShowInHelp = show
-        });
+        AddCommand(new[] {command}, action, helpText, show);
     }
 
     public void AddCommand(string[] commands, Action action, string helpText = "", bool show = true)
     {
-        foreach (var _s in commands)
-        {
-            _commands.Add(_command + _s);
-            _manager.AddHandler(_command + _s, new CommandInfo((_, _) => action.Invoke())
-            {
-                HelpMessage = helpText,
-                ShowInHelp = show
-            });
-        }
+        RemoveMainHandler();
+        _actions.Add(commands, new Tuple<object, string, bool>(action, helpText, show));
+        AddMainHandler();
     }
 
     public void AddCommand(string command, Action<string> action, string helpText = "", bool show = true)
     {
-        _commands.Add(_command + command);
-        _manager.AddHandler(_command + command, new CommandInfo((_, args) => action.Invoke(args))
-        {
-            HelpMessage = helpText,
-            ShowInHelp = show
-        });
+        RemoveMainHandler();
+        _actions.Add(new[] { command }, new Tuple<object, string, bool>(action, helpText, show));
+        AddMainHandler();
     }
 
-    public void AddCommand(string command, Action<string, string> action, string helpText = "", bool show = true)
-    {
-        _commands.Add(_command + command);
-        _manager.AddHandler(_command + command, new CommandInfo(action.Invoke)
-        {
-            HelpMessage = helpText,
-            ShowInHelp = show
-        });
-    }
+    public void Dispose() => RemoveMainHandler();
 
-    public void Dispose()
+    public void RemoveMainHandler()
     {
-        _commands.ForEach(s => _manager.RemoveHandler(s));
+        _manager.RemoveHandler(_command);
     }
 }

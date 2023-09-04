@@ -1,4 +1,4 @@
-﻿using DeepDungeonDex.Hooks;
+using DeepDungeonDex.Hooks;
 using System.Numerics;
 
 namespace DeepDungeonDex.Windows;
@@ -21,7 +21,7 @@ public class Floor : Window, IDisposable
         _condition = condition;
         _clientState = state;
         _addon = addon;
-        command.AddCommand("debugfloor", args =>
+        command.AddCommand("debug_floor", args =>
         {
             var argArr = args.Split(' ');
             if (!byte.TryParse(argArr[0], out var id) || !uint.TryParse(argArr[1], out var ter) || ter is > 2 or < 0)
