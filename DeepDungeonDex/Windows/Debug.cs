@@ -13,7 +13,6 @@ internal class Debug : Window
         _storage = storage;
         _instance = this;
         _requests = requests;
-        IsOpen = true;
         handler.AddCommand("debug_window", () => _instance.IsOpen = true, "Shows all the data loaded into the plugin.");
     }
 
