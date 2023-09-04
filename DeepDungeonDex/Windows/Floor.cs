@@ -1,4 +1,4 @@
-using DeepDungeonDex.Hooks;
+﻿using DeepDungeonDex.Hooks;
 using System.Numerics;
 
 namespace DeepDungeonDex.Windows;
