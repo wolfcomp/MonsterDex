@@ -117,7 +117,7 @@ public class Mob
             if (s.Length > 0)
                 strList.Add(s[..^1]);
         }
-        ProcessedDescription = strList.ToArray()[..^1];
+        ProcessedDescription = strList.Where(t => !string.IsNullOrWhiteSpace(t)).ToArray();
     }
 }
 
