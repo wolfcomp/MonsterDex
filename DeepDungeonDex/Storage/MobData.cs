@@ -66,15 +66,31 @@ public class MobData : ILoadableString
 
 public class Mob
 {
+    private string[][] _description = Array.Empty<string[]>();
+
     [YamlIgnore]
     public string Name { get; set; }
     [YamlIgnore]
     public uint Id { get; set; }
+
     [YamlIgnore]
-    public string[][]? Description { get; set; }
+    public string[][]? Description
+    {
+        get => _description;
+        set
+        {
+            if(value is null)
+                return;
+            _description = value;
+            JoinedProcessedDescription = string.Join("\n", _description.Select(t => string.Join(" ", t)));
+        }
+    }
 
     [YamlIgnore]
     public string[] ProcessedDescription { get; private set; } = Array.Empty<string>();
+
+    [YamlIgnore] 
+    public string JoinedProcessedDescription { get; private set; } = "";
 
     public Weakness Weakness { get; set; }
     public Aggro Aggro { get; set; }
@@ -83,7 +99,7 @@ public class Mob
     public void ProcessDescription(float width)
     {
         var strList = new List<string>();
-        foreach (var t1 in Description)
+        foreach (var t1 in Description!)
         {
             var s = "";
             foreach (var t in t1)
@@ -114,13 +130,15 @@ public enum Weakness
     Slow = 0x04,
     Sleep = 0x08,
     Bind = 0x10,
-    Undead = 0x20,
+    Undead = 0x20, // currently only for mobs in PotD floors 51-200
     StunUnknown = 0x40 | Stun,
     HeavyUnknown = 0x80 | Heavy,
     SlowUnknown = 0x100 | Slow,
     SleepUnknown = 0x200 | Sleep,
     BindUnknown = 0x400 | Bind,
     UndeadUnknown = 0x800 | Undead,
+    All = Stun | Heavy | Slow | Sleep | Bind,
+    AllUnknown = StunUnknown | HeavyUnknown | SlowUnknown | SleepUnknown | BindUnknown
 }
 
 public enum Aggro
