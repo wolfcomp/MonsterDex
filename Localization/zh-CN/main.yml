@@ -30,3 +30,4 @@ ShowId: 显示调试信息
 Legacy: 使用传统窗口显示怪物数据
 LoadAllFont: 加载所有字体 (在改变语言时可以加速加载)
 LoadAllFontWarning: 这将在内存中加载30MB的字体，在较弱的系统上会导致卡顿和较高的内存使用率，请注意。
+HideFloorGuide: Stop showing the floor guide when entering a new floor
