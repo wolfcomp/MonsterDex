@@ -1,75 +1,167 @@
+#EO floors 51-59
 12182: |
   Casts one shot line charge, must LoS
+12174: |
+
 12180: |
   Explodes after dying
 12183: |
-  Casts ice spikes, will one shot if hit with physical damage (pet damage ok)
-12161: |
-  Inflicts heavy
-  "Tail Screw" -- sets to 1 hp
+  Casts ice spikes, will one shot if hit with physical damage
+12171: |
+
+12178: |
+
+12176: |
+
+12318: |
+
+12181: |
+
 12172: |
-  Pulls in then PB AoE
+  Pulls in then PB AOE
 12179: |
   "Sewer Water" -- Half circle cleave followed immediately by other half
+12177: |
+
 12173: |
   Jumps to player and does half room knockback
   "Electric Whorl" -- Doughnut
-  "Expulsion" -- PB AoE
+  "Expulsion" -- PB AOE
 12175: |
-  Untelegraphed AoE behind
-12195: |
-  Executes if below 20% HP
-12185: |
-  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
-12189: |
-  AOE will give evasion to other enemies it hits
-12196: |
-  Knockback
-12192: |
-  Pull in then PB AOE
-12194: |
-  Untelegraphed claw swipe and tail swipe
-12193: |
-  Will cast "Electric Cachexia" (Donut AoE) when players aren't in melee
-12186: |
-  Back attack
-12246: |
-  "Ferocity" -- distance tether
-  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
+  Untelegraphed AOE behind
+#EO boss floor 60
 12267: |
   "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
   "Disorienting Groan" -- Knockback, be inside boss
   "Bullish Swipe" -- Frontal cleave
-  "Bullish Swing" -- Large PB AoE
-12197: Late telegraph frontal cone
-12199: Triple targeted knockbacks
-12200: |
-  Huge wide frontal cone
-  Huge rear cone (if player behind)
+  "Bullish Swing" -- Large PB AOE
+#EO floors 61-69
+12184: |
+
+12191: |
+
+12189: |
+  AOE will give evasion to other enemies it hits
+12187: |
+
+12186: |
+  Untelegraphed conal back cleave if player is behind.
+12185: |
+  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+12194: |
+  Untelegraphed Claw/Tail swipe swipe conal AOE.
+12195: |
+  Executes if below 20% HP
+12190: |
+
+12196: |
+  Knockback
+12188: |
+
+12193: |
+  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range.
+12192: |
+  Pull in then PB AOE
+#EO floor 70
+12246: |
+  "Ferocity" -- distance tether
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
+#EO floors 71-79
+12197: |
+  Late telegraph frontal cone
+12199: |
+  Triple targeted knockbacks
 12202: |
-  "The Killing Paw" -- double frontal cone (second untelegraphed)
-  Be carefufl with stun or slow as this enemy can store the second swipe
+  "The Killing Paw" -- double frontal cone second is untelegraphed
+  Be carefull with stun or slow as this enemy can store the second swipe
 12207: |
   "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AoE, it will crouch and wiggle its tail
+  "Scythe Tail" -- no cast bar PB AOE, it will crouch and wiggle its tail
+12201: |
+
 12209: |
-  "Winds of Winter" -- large AoE after 2 freefalls, must LoS or stun
+  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
 12208: |
-  Wide line AoE, cannot LoS
+  Wide line AOE, can not be line of sighted.
+12204: |
+
 12205: |
-  Executes if below 20% HP
+  Executes player if below 20% HP
 12198: |
-  "Chirp" -- untelegraphed PB AoE
-12206: Roomwide gaze
+  "Chirp" -- untelegraphed PB AOE
+12206: |
+  Roomwide gaze
+12200: |
+  Huge wide frontal cone
+  Huge rear cone if player is behind
 12203: |
-  "Chest Thump" -- Huge unaggroed AoE after using "Ripe Banana", must LoS
+  "Chest Thump" -- Huge unaggroed AOE after using "Ripe Banana"
+#EO boss floor 80
 12247: |
-  When the boss casts "Nanospore Jet", players must find whether they are tethered too,
-  then dodge a nerve gas cast. After, the players must be knocked back or pulled near the
-  center of the boss for a doughnut AoE (do not touch the boss' hitbox)
-  "Central Nerve Gas" -- Frontal cleave
-  "Rightward Nerve Gas" -- Right Halfroom cleave (front and left quandrants are safe)
-  "Leftward Nerve Gas" -- Left Halfroom cleave (front and right quadrants are safe)
-  "Barofield" -- Creates a instakill zone under the boss and outside ring with DoT
-  "Nanospore Jet" -- Gives players a positive or negative charge
+  "Rightward/Leftward Nerve Gass" -- Halfroom cleaves front is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave
+  "Barofield" -- Creates a dead zone under the boss and outside ring with DoT
+  "Nanospore Jet" -- Gives players a positive or negative charged theather to drones outside the ring.
+  Theater will be visible after dodging a few "Nerve Gas" attacks.
+  Opposite charge will be attracted and same charge will be repelled.
+  You want to end up close to the boss after the charged theater is over to avoid a donut AOE.
+#EO floors 81-89
+12212: |
+
+12217: |
+
+12218: |
+
+12214: |
+
+12161: |
+  Inflicts heavy
+  "Tail Screw" -- sets to 1 hp
+12215: |
+
+12222: |
+
+12213: |
+
+12211: |
+
+12220: |
+
+12221: |
+
+12216: |
+
+12219: |
+
+#EO boss floor 90
+12102: |
+
+#EO floors 91-98
+12224: |
+
+12225: |
+
+12226: |
+
+12227: |
+
+12228: |
+
+12229: |
+
+12230: |
+
+12231: |
+
+12232: |
+
+12233: |
+
+12234: |
+
+12235: |
+
+#EO boss floor 99
+12100: |
+
