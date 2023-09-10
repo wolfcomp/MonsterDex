@@ -180,6 +180,15 @@
   Aggro: Sight
   Weakness:
     - Slow
+12127-Orthos Sawtooth:
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # EO boss floor 20
 12261-Cloning Node:
