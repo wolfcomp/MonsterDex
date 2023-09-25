@@ -32,4 +32,9 @@ public class JobData : ILoadableString
         JobDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<uint, Weakness>>(str);
         return new Storage(this);
     }
+
+    public void Dispose()
+    {
+        JobDictionary.Clear();
+    }
 }

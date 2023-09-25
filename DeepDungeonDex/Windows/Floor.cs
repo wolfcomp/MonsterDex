@@ -5,22 +5,24 @@ namespace DeepDungeonDex.Windows;
 
 public class Floor : Window, IDisposable
 {
-    private readonly IClientState _clientState;
-    private readonly Condition _condition;
-    private readonly Framework _framework;
-    private readonly StorageHandler _storage;
-    private readonly AddonAgent _addon;
-    private Locale _locale;
+    private IClientState _clientState;
+    private ICondition _condition;
+    private IFramework _framework;
+    private IPluginLog _log;
+    private StorageHandler _storage;
+    private AddonAgent _addon;
+    private Locale? _locale;
     private byte _debug;
-    private string _dataPath;
+    private string _dataPath = "";
 
-    public Floor(StorageHandler storage, CommandHandler command, Framework framework, Condition condition, IClientState state, AddonAgent addon) : base("DeepDungeonDex FloorGuide", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Floor(StorageHandler storage, CommandHandler command, IFramework framework, ICondition condition, IClientState state, IPluginLog log, AddonAgent addon) : base("DeepDungeonDex FloorGuide", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _storage = storage;
         _framework = framework;
         _condition = condition;
         _clientState = state;
         _addon = addon;
+        _log = log;
         command.AddCommand("debug_floor", args =>
         {
             var argArr = args.Split(' ');
@@ -29,7 +31,7 @@ public class Floor : Window, IDisposable
                 if (argArr[0] == "print")
                 {
                     var floor = _debug == 0 ? _addon.Floor : _debug;
-                    PluginLog.Debug($"Currently displaying: {_dataPath}{floor}");
+                    _log.Debug($"Currently displaying: {_dataPath}{floor}");
                     return;
                 }
                 _debug = 0;
@@ -61,10 +63,10 @@ public class Floor : Window, IDisposable
         framework.Update += GetData;
         config.OnChange += ConfigChanged;
         state.TerritoryChanged += TerritoryChanged;
-        TerritoryChanged(null, state.TerritoryType);
+        TerritoryChanged(state.TerritoryType);
     }
 
-    private void TerritoryChanged(object? sender, ushort e)
+    private void TerritoryChanged(ushort e)
     {
         _dataPath = e switch
         {
@@ -76,7 +78,7 @@ public class Floor : Window, IDisposable
         _locale = _storage.GetInstance<Locale>(_dataPath + "/Floors.yml");
     }
 
-    private void GetData(Framework framework)
+    private void GetData(IFramework framework)
     {
         if (_debug != 0)
             return;
@@ -117,7 +119,7 @@ public class Floor : Window, IDisposable
         try
         {
             ImGui.Text("Floor Help");
-            ImGui.TextUnformatted(_locale.GetLocale($"{_dataPath}{floor}"));
+            ImGui.TextUnformatted(_locale?.GetLocale($"{_dataPath}{floor}"));
         }
         catch
         {
@@ -132,5 +134,12 @@ public class Floor : Window, IDisposable
         _clientState.TerritoryChanged -= TerritoryChanged;
         var _config = _storage.GetInstance<Configuration>()!;
         _config.OnChange -= ConfigChanged;
+        _clientState = null!;
+        _condition = null!;
+        _framework = null!;
+        _storage = null!;
+        _addon = null!;
+        _locale = null!;
+        _log = null!;
     }
 }

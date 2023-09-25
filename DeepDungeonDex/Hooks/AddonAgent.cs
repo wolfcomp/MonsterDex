@@ -4,18 +4,16 @@ namespace DeepDungeonDex.Hooks;
 
 public unsafe class AddonAgent : IDisposable
 {
-    private readonly Framework _framework;
-    private readonly Condition _condition;
-    private readonly IClientState _state;
+    private IFramework _framework;
+    private IPluginLog _log;
     private EventFramework* _structsFramework;
     public byte Floor { get; private set; }
     public bool Disabled { get; private set; }
 
-    public AddonAgent(Framework framework, Condition condition, IClientState state, CommandHandler handler)
+    public AddonAgent(IFramework framework, IPluginLog log, CommandHandler handler)
     {
-        _condition = condition;
         _framework = framework;
-        _state = state;
+        _log = log;
         _framework.Update += OnUpdate;
         handler.AddCommand(new[] { "enable_floor", "e_floor", "enable_f", "ef" }, () =>
         {
@@ -26,7 +24,7 @@ public unsafe class AddonAgent : IDisposable
         }, "Resets the floor getter function to try again");
     }
 
-    private void OnUpdate(Framework framework)
+    private void OnUpdate(IFramework framework)
     {
         _structsFramework = EventFramework.Instance();
         if (!IsInstanceContentSafe())
@@ -42,8 +40,8 @@ public unsafe class AddonAgent : IDisposable
         }
         catch (Exception e)
         {
-            PluginLog.Error(e, "Error trying to fetch InstanceContentDeepDungeon disabling feature.");
-            Dispose();
+            _log.Error(e, "Error trying to fetch InstanceContentDeepDungeon disabling feature.");
+            Dispose(false);
         }
     }
 
@@ -59,9 +57,16 @@ public unsafe class AddonAgent : IDisposable
         return (IntPtr)eventHandlerInfo != IntPtr.Zero;
     }
 
-    public void Dispose()
+    public void Dispose(bool disposing)
     {
         _framework.Update -= OnUpdate;
         Disabled = true;
+        if (!disposing)
+            return;
+
+        _framework = null!;
+        _log = null!;
     }
+
+    public void Dispose() => Dispose(true);
 }

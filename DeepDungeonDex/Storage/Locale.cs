@@ -5,12 +5,12 @@ public class Locale : ILoadableString
     public Dictionary<string, string> TranslationDictionary { get; set; } = new();
         
     [JsonIgnore]
-    private Storage s;
+    private Storage _s = null!;
 
     public NamedType Save(string path)
     {
         StorageHandler.SerializeJsonFile(path, TranslationDictionary);
-        return new NamedType { Name = s.Name, Type = GetType() };
+        return new NamedType { Name = _s.Name, Type = GetType() };
     }
 
     public Storage Load(string path)
@@ -33,6 +33,12 @@ public class Locale : ILoadableString
         TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(str);
         return new Storage(this);
     }
+
+    public void Dispose()
+    {
+        _s = null!;
+        TranslationDictionary.Clear();
+    }
 }
 
 public class LocaleKeys : ILoadable
@@ -54,6 +60,11 @@ public class LocaleKeys : ILoadable
     public Storage Load(string path, string name)
     {
         throw new NotImplementedException();
+    }
+
+    public void Dispose()
+    {
+        LocaleDictionary.Clear();
     }
 }
 

@@ -62,14 +62,19 @@ public class MobData : ILoadableString
         StorageHandler.SerializeYamlFile(path, MobDictionary.Select(t => (t.Key, t.Value)).ToDictionary(t => $"{t.Key}-{t.Value.Name}", t => t.Value));
         return null;
     }
+
+    public void Dispose()
+    {
+        MobDictionary.Clear();
+    }
 }
 
-public class Mob
+public record Mob
 {
     private string[][] _description = Array.Empty<string[]>();
 
-    [YamlIgnore]
-    public string Name { get; set; }
+    [YamlIgnore] 
+    public string Name { get; set; } = "";
     [YamlIgnore]
     public uint Id { get; set; }
 

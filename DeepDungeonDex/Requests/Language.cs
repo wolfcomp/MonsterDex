@@ -11,36 +11,36 @@ public partial class Requests
 
         var loc = Handler.GetInstance<Configuration>()!.Locale;
         var name = locales.LocaleDictionary.Keys.ToArray()[loc];
-        PluginLog.Verbose($"Changed language to {name} processing MobData descriptions");
+        _log.Verbose($"Changed language to {name} processing MobData descriptions");
         foreach (var (_, files) in list)
         {
             foreach (var file in files)
             {
                 if (file == "Job.yml")
                     continue;
-                PluginLog.Verbose($"Loading {file}");
+                _log.Verbose($"Loading {file}");
                 if (Handler.GetInstance(file) is not Storage.Storage { Value: MobData mobData })
                     continue;
 
-                PluginLog.Verbose($"Processing MobData descriptions for {file}");
+                _log.Verbose($"Processing MobData descriptions for {file}");
                 try
                 {
-                    PluginLog.Verbose("Loading language file");
+                    _log.Verbose("Loading language file");
                     if (Handler.GetInstance($"{name}/{file}") is not Locale langData)
                         continue;
-                    PluginLog.Verbose("Looping through MobData");
+                    _log.Verbose("Looping through MobData");
                     foreach (var (id, _) in mobData.MobDictionary)
                     {
                         if (!langData.TranslationDictionary.TryGetValue(id.ToString(), out var description))
                             continue;
 
-                        PluginLog.Verbose($"Found description for {id}");
+                        _log.Verbose($"Found description for {id}");
                         mobData.MobDictionary[id].Description = _percentRegex.Replace(description, "%").Replace("\\n", "\n").Split("\n").Select(t => t.Split(' ')).ToArray();
                     }
                 }
                 catch (Exception e)
                 {
-                    PluginLog.Error(e, "");
+                    _log.Error(e, "");
                 }
 
             }
@@ -51,13 +51,13 @@ public partial class Requests
     {
         try
         {
-            PluginLog.Verbose("Getting file list");
+            _log.Verbose("Getting file list");
             var list = await GetLocalization("locales.json");
             return new LocaleKeys { LocaleDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(list)! };
         }
         catch (Exception e)
         {
-            PluginLog.Error(e, e.Message);
+            _log.Error(e, e.Message);
             return null;
         }
     }
@@ -71,14 +71,14 @@ public partial class Requests
 
         Handler.AddJsonStorage("locales.json", fileList);
 
-        PluginLog.Verbose("Getting file list");
+        _log.Verbose("Getting file list");
         if (Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
             goto RefreshEnd;
 
         foreach (var (name, _) in fileList.LocaleDictionary)
         {
             var main = $"{name}/main.yml";
-            PluginLog.Verbose("Loading main language file");
+            _log.Verbose("Loading main language file");
             Handler.AddYmlStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(await GetLocalization(main)) });
             foreach (var (_, files) in list)
             {
@@ -90,21 +90,21 @@ public partial class Requests
                     try
                     {
                         var path = $"{name}/{file}";
-                        PluginLog.Verbose($"Loading {path}");
+                        _log.Verbose($"Loading {path}");
                         content = await GetLocalization(path);
-                        PluginLog.Verbose("Deserializing");
+                        _log.Verbose("Deserializing");
                         Handler.AddYmlStorage(path, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content) });
                     }
                     catch (Exception e)
                     {
-                        PluginLog.Error(e, "");
-                        PluginLog.Debug($"Message: {content}");
+                        _log.Error(e, "");
+                        _log.Debug($"Message: {content}");
                     }
                 }
             }
         }
 
-        PluginLog.Verbose("Loading complete saving storage");
+        _log.Verbose("Loading complete saving storage");
         Handler.Save();
         ChangeLanguage();
 
@@ -112,7 +112,7 @@ public partial class Requests
         RequestingLang = false;
         if (continuous)
         {
-            PluginLog.Verbose($"Refreshing file list in {CacheTime:g}");
+            _log.Verbose($"Refreshing file list in {CacheTime:g}");
             await Task.Delay(CacheTime, _token.Token);
             if (!_token.IsCancellationRequested)
                 await RefreshLang();

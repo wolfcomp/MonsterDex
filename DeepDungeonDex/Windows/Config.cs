@@ -5,11 +5,10 @@ namespace DeepDungeonDex.Windows;
 
 public class Config : Window, IDisposable
 {
-    private static Config _instance;
-    private readonly StorageHandler _handler;
-    private readonly Requests _requests;
-    private readonly DalamudPluginInterface _pluginInterface;
-    private readonly IServiceProvider _provider;
+    private StorageHandler _handler;
+    private Requests _requests;
+    private DalamudPluginInterface _pluginInterface;
+    private IServiceProvider _provider;
     private float _opacity;
     private bool _clickthrough;
     private bool _hideRed;
@@ -25,7 +24,6 @@ public class Config : Window, IDisposable
         _requests = requests;
         _provider = provider;
         _pluginInterface = pluginInterface;
-        _instance = this;
         var _config = _handler.GetInstance<Configuration>()!;
         _config.OnChange += OnChange;
         SizeConstraints = new WindowSizeConstraints
@@ -54,6 +52,10 @@ public class Config : Window, IDisposable
     {
         _pluginInterface.UiBuilder.OpenConfigUi -= Open;
         _handler.GetInstance<Configuration>()!.OnChange -= OnChange;
+        _handler = null!;
+        _requests = null!;
+        _pluginInterface = null!;
+        _provider = null!;
     }
 
     private void OnChange(Configuration config)

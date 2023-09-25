@@ -2,7 +2,7 @@
 using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
-using ImGuiScene;
+using Dalamud.Interface.Internal;
 
 namespace DeepDungeonDex.Windows;
 
@@ -11,21 +11,21 @@ public class Main : Window, IDisposable
 #pragma warning disable CS8618
     private static Mob _currentMob;
 #pragma warning restore CS8618
-    private readonly Condition _condition;
-    private readonly TargetManager _target;
-    private readonly StorageHandler _storage;
-    private readonly Framework _framework;
-    private readonly ITextureProvider _textureProvider;
-    private readonly DalamudPluginInterface _pluginInterface;
-    private readonly Configuration _config;
-    private readonly IClientState _clientState;
-    private Locale[] _locale;
+    private ICondition _condition;
+    private ITargetManager _target;
+    private IFramework _framework;
+    private ITextureProvider _textureProvider;
+    private IClientState _clientState;
+    private IPluginLog _log;
+    private StorageHandler _storage;
+    private DalamudPluginInterface _pluginInterface;
+    private Configuration _config;
+    private Locale[] _locale = Array.Empty<Locale>();
     private uint _targetId;
     private bool _debug;
-    private bool _disable;
-    private TextureWrap? _unknown;
+    private IDalamudTextureWrap? _unknown;
 
-    public Main(StorageHandler storage, CommandHandler command, TargetManager target, Framework framework, IClientState state, Condition condition, ITextureProvider textureProvider, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -35,6 +35,7 @@ public class Main : Window, IDisposable
         _textureProvider = textureProvider;
         _pluginInterface = pluginInterface;
         _clientState = state;
+        _log = log;
         var instance = this;
         _config = _storage.GetInstance<Configuration>()!;
         SizeConstraints = new WindowSizeConstraints
@@ -47,7 +48,7 @@ public class Main : Window, IDisposable
         framework.Update += GetData;
         command.AddCommand("debug_mob", (args) =>
         {
-            if (!uint.TryParse(args.Split(' ')[0], out var id) || _disable)
+            if (!uint.TryParse(args.Split(' ')[0], out var id))
             {
                 _debug = false;
                 IsOpen = false;
@@ -86,9 +87,19 @@ public class Main : Window, IDisposable
 
     public void Dispose()
     {
+        _config.OnChange -= ConfigChanged;
         _framework.Update -= GetData;
         _storage.GetInstance<Configuration>()!.OnChange -= ConfigChanged;
         _unknown?.Dispose();
+        _locale = null!;
+        _currentMob = null!;
+        _textureProvider = null!;
+        _pluginInterface = null!;
+        _clientState = null!;
+        _condition = null!;
+        _target = null!;
+        _storage = null!;
+        _framework = null!;
     }
 
     public void SetTarget(uint id)
@@ -103,7 +114,7 @@ public class Main : Window, IDisposable
         var data = _storage.GetInstances<MobData>().GetData(_targetId);
         if (data == null)
         {
-            PluginLog.Information($"No data for {_targetId} setting unknowns.");
+            _log.Information($"No data for {_targetId} setting unknowns.");
             data = new Mob
             {
                 Aggro = Aggro.Undefined,
@@ -116,14 +127,14 @@ public class Main : Window, IDisposable
         _currentMob = data;
     }
 
-    private void GetData(Framework framework)
+    private void GetData(IFramework framework)
     {
         if (_debug)
         {
             return;
         }
             
-        if (!_condition[ConditionFlag.InDeepDungeon] || _disable)
+        if (!_condition[ConditionFlag.InDeepDungeon])
         {
             IsOpen = false;
             return;
