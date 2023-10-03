@@ -32,4 +32,9 @@ internal class FloorData : ILoadableString
         FloorDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<byte, byte>>(str);
         return new Storage(this);
     }
+
+    public void Dispose()
+    {
+        FloorDictionary.Clear();
+    }
 }

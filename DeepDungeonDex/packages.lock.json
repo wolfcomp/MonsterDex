@@ -4,9 +4,9 @@
     "net7.0-windows7.0": {
       "DalamudPackager": {
         "type": "Direct",
-        "requested": "[2.1.11, )",
-        "resolved": "2.1.11",
-        "contentHash": "9qlAWoRRTiL/geAvuwR/g6Bcbrd/bJJgVnB/RurBiyKs6srsP0bvpoo8IK+Eg8EA6jWeM6/YJWs66w4FIAzqPw=="
+        "requested": "[2.1.12, )",
+        "resolved": "2.1.12",
+        "contentHash": "Sc0PVxvgg4NQjcI8n10/VfUQBAS4O+Fw2pZrAqBdRMbthYGeogzu5+xmIGCGmsEZ/ukMOBuAqiNiB5qA3MRalg=="
       },
       "Microsoft.Extensions.DependencyInjection": {
         "type": "Direct",
@@ -19,9 +19,9 @@
       },
       "YamlDotNet": {
         "type": "Direct",
-        "requested": "[13.1.0, )",
-        "resolved": "13.1.0",
-        "contentHash": "S4tzJjofMDx8PKtbnwkaMznbPD1aUffVKW+ClhfOGAYFIPuY9sSrArcFQOcRkbwRP1kYIaMbXk4Vsnfk3dE3dQ=="
+        "requested": "[13.4.0, )",
+        "resolved": "13.4.0",
+        "contentHash": "XkqTRgpt/tkqX9sOKcdPAZLVMktR5sBFwt7aK/PP061k9yoUntr/Qc8o9KshjSte34WYTIuCrpBs1+LwR7dFdA=="
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions": {
         "type": "Transitive",

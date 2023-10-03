@@ -1,6 +1,6 @@
 ﻿namespace DeepDungeonDex.Models;
 
-public interface ISaveable
+public interface ISaveable : IDisposable
 {
     public NamedType? Save(string path);
 }
@@ -18,8 +18,8 @@ public interface ILoadableString : ILoadable
 
 public class NamedType
 {
-    public string Name { get; set; }
-    public Type Type { get; set; }
+    public string Name { get; set; } = "";
+    public Type Type { get; set; } = typeof(object);
         
     public Tuple<Type, string?> GetTuple() => new(Type, Name);
 }

@@ -36,4 +36,8 @@ public class Configuration : ISaveable
         StorageHandler.SerializeJsonFile(path, this);
         return null;
     }
+
+    public void Dispose()
+    {
+    }
 }

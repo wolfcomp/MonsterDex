@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Text;
-using Dalamud.Game.Gui;
 using Newtonsoft.Json.Serialization;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
@@ -11,20 +10,21 @@ namespace DeepDungeonDex.Storage;
 public class StorageHandler : IDisposable
 {
     private readonly string _path;
-    private readonly ChatGui _chat;
-    private bool _debugError;
-    public static readonly IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
-    private static readonly ISerializer _serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
+    private IChatGui _chat;
+    private static IPluginLog _log = null!;
+    public static IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
+    private static ISerializer _serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
 
     internal readonly Dictionary<string, object> JsonStorage = new();
     internal readonly Dictionary<string, object> YmlStorage = new();
 
-    public event EventHandler<StorageEventArgs> StorageChanged;
+    public event EventHandler<StorageEventArgs>? StorageChanged;
 
-    public StorageHandler(DalamudPluginInterface pluginInterface, ChatGui chat)
+    public StorageHandler(DalamudPluginInterface pluginInterface, IChatGui chat, IPluginLog log)
     {
         _path = pluginInterface.GetPluginConfigDirectory();
         _chat = chat;
+        _log = log;
         Load();
     }
 
@@ -50,25 +50,18 @@ public class StorageHandler : IDisposable
     {
         try
         {
-#if DEBUG
-            if (!_debugError)
-            {
-                _debugError = true;
-                throw new Exception("yeet error out");
-            }
-#endif
-            PluginLog.Verbose("Loading Storage");
+            _log.Verbose("Loading Storage");
             var configPath = Path.Combine(_path, "config.json");
-            PluginLog.Verbose("Loading config from {0}", configPath);
+            _log.Verbose("Loading config from {0}", configPath);
             Configuration config;
             try
             {
-                PluginLog.Verbose("Deserializing config");
+                _log.Verbose("Deserializing config");
                 config = DeserializeFile<Configuration>(configPath)!;
             }
             catch
             {
-                PluginLog.Verbose("Failed to deserialize config, creating new config");
+                _log.Verbose("Failed to deserialize config, creating new config");
                 config = new Configuration();
             }
 
@@ -76,8 +69,8 @@ public class StorageHandler : IDisposable
             JsonStorage.Add("config.json", config);
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
-            {
-                PluginLog.Verbose("Loading storage from {0}", storagePath);
+            {   
+                _log.Verbose("Loading storage from {0}", storagePath);
                 var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
                 JsonStorage.Add(storagePath.Name, storage);
                 foreach (var (key, value) in storage)
@@ -87,7 +80,7 @@ public class StorageHandler : IDisposable
                         var (typeString, name) = value;
                         var type = Type.GetType(typeString);
                         if (!type!.IsAssignableFrom(typeof(ISaveable))) continue;
-                        PluginLog.Verbose("Loading {0}, Type: {1}, Name: {2}", key, typeString, name ?? "");
+                        _log.Verbose("Loading {0}, Type: {1}, Name: {2}", key, typeString, name ?? "");
                         if (key.Contains(".json"))
                         {
                             if (type.IsAssignableFrom(typeof(ILoadable)))
@@ -115,19 +108,19 @@ public class StorageHandler : IDisposable
                     }
                     catch (Exception e)
                     {
-                        PluginLog.Error(e, e.Message);
+                        _log.Error(e, e.Message);
                     }
                 }
             }
         }
         catch (Exception e)
         {
-            PluginLog.Error(e, e.Message);
+            _log.Error(e, e.Message);
             var sb = new StringBuilder();
             sb.AppendLine("Could not load DeepDungeonDex storage. Clearing storage and retrying.");
             sb.Append("If this error persists, please report it on the DeepDungeonDex channel in the plugin help forum.");
             var errorMsg = sb.ToString();
-            PluginLog.Error(errorMsg);
+            _log.Error(errorMsg);
             _chat.PrintError(errorMsg);
             Directory.Delete(_path, true);
             Directory.CreateDirectory(_path);
@@ -143,22 +136,22 @@ public class StorageHandler : IDisposable
 
     public static object? DeserializeFile(string path, Type type, bool ignoreJsonProperty = true)
     {
-        PluginLog.Verbose("Deserializing {0}", path);
+        _log.Verbose("Deserializing {0}", path);
         var result = JsonConvert.DeserializeObject(ReadFile(path), type, new JsonSerializerSettings()
         {
             ContractResolver = ignoreJsonProperty ? new NameContractResolver() : null
         });
-        PluginLog.Verbose("Deserialized {0}, Type: {1}", path, result?.GetType().ToString() ?? "");
+        _log.Verbose("Deserialized {0}, Type: {1}", path, result?.GetType().ToString() ?? "");
         return result;
     }
 
     public static string ReadFile(string path)
     {
-        PluginLog.Verbose("Reading file {0}", path);
+        _log.Verbose("Reading file {0}", path);
         var reader = new StreamReader(path);
         var result = reader.ReadToEnd();
-        PluginLog.Verbose("Read file {0}", path);
-        PluginLog.Verbose("Content: \n{0}", result);
+        _log.Verbose("Read file {0}", path);
+        _log.Verbose("Content: \n{0}", result);
         reader.Dispose();
         return result;
     }
@@ -183,20 +176,20 @@ public class StorageHandler : IDisposable
     public void Save()
     {
         var storageDict = new Dictionary<string, Tuple<Type, string?>>();
-            
+
         bool processObj(object obj, string path)
         {
             var fileInfo = new FileInfo(Path.Join(_path, path));
-            PluginLog.Verbose("Saving: {0}", fileInfo);
+            _log.Verbose("Saving: {0}", fileInfo);
             Directory.CreateDirectory(fileInfo.DirectoryName!);
 
             if (obj is Storage storage)
             {
-                PluginLog.Verbose("Saving inner obj");
+                _log.Verbose("Saving inner obj");
                 var k = storage.Value.Save(fileInfo.FullName)?.GetTuple();
                 if (k != null)
                 {
-                    PluginLog.Verbose($"Wrote inner obj of type {k.Item1.Name}");
+                    _log.Verbose($"Wrote inner obj of type {k.Item1.Name}");
                     storageDict.Add(path, k);
                 }
             }
@@ -207,11 +200,11 @@ public class StorageHandler : IDisposable
                     return true;
                 }
 
-                PluginLog.Verbose("Saving obj");
+                _log.Verbose("Saving obj");
                 var k = (obj as ISaveable)!.Save(fileInfo.FullName)?.GetTuple();
                 if (k != null)
                 {
-                    PluginLog.Verbose($"Wrote obj of type {k.Item1.Name}");
+                    _log.Verbose($"Wrote obj of type {k.Item1.Name}");
                     storageDict.Add(path, k);
                 }
             }
@@ -219,27 +212,27 @@ public class StorageHandler : IDisposable
             return false;
         }
 
-        PluginLog.Verbose("Saving Json Storage");
+        _log.Verbose("Saving Json Storage");
         foreach (var (path, obj) in JsonStorage.ToDictionary(t => t.Key, t => t.Value))
         {
             if (!processObj(obj, path))
                 continue;
 
             SerializeJsonFile(Path.Join(_path, path), obj);
-            PluginLog.Verbose($"Wrote {obj.GetType()}");
+            _log.Verbose($"Wrote {obj.GetType()}");
         }
 
-        PluginLog.Verbose("Saving Yaml Storage");
+        _log.Verbose("Saving Yaml Storage");
         foreach (var (path, obj) in YmlStorage.ToDictionary(t => t.Key, t => t.Value))
         {
             if (!processObj(obj, path))
                 continue;
 
             SerializeYamlFile(Path.Join(_path, path), obj);
-            PluginLog.Verbose($"Wrote {obj.GetType()}");
+            _log.Verbose($"Wrote {obj.GetType()}");
         }
 
-        PluginLog.Verbose("Filling missing storage data");
+        _log.Verbose("Filling missing storage data");
         JsonStorage.AsEnumerable()
             .Concat(YmlStorage)
             .ToList()
@@ -251,13 +244,17 @@ public class StorageHandler : IDisposable
                     storageDict.Add(path, new Tuple<Type, string?>(type, null));
             });
         var storagePath = Path.Combine(_path, "storage.json");
-        PluginLog.Verbose($"Writing {storagePath}");
-        SerializeJsonFile(storagePath, storageDict.Where(t => t.Key is not ("storage.json" or "config.json")).ToDictionary(t => t.Key, t =>
-        {
-            var (type, name) = t.Value;
-            return new Tuple<string, string?>(type.FullName!, name);
-        }));
-        PluginLog.Verbose("Saved");
+        _log.Verbose($"Writing {storagePath}");
+        var storageInfo = storageDict.Where(t => t.Key is not ("storage.json" or "config.json")).ToDictionary(
+            t => t.Key, t =>
+            {
+                var (type, name) = t.Value;
+                return new Tuple<string, string?>(type.FullName!, name);
+            });
+        SerializeJsonFile(storagePath, storageInfo);
+        _log.Verbose("Saved");
+        storageDict.Clear();
+        storageInfo.Clear();
     }
 
     public T? GetInstance<T>() where T : class, ISaveable
@@ -305,10 +302,25 @@ public class StorageHandler : IDisposable
     public void Dispose()
     {
         Save();
+        foreach (var (_, obj) in JsonStorage)
+        {
+            (obj as IDisposable)?.Dispose();
+        }
+
+        foreach (var (_, obj) in YmlStorage)
+        {
+            (obj as IDisposable)?.Dispose();
+        }
+        JsonStorage.Clear();
+        YmlStorage.Clear();
+        _serializer = null!;
+        Deserializer = null!;
+        _log = null!;
+        _chat = null!;
     }
 }
 
-public class Storage
+public class Storage : IDisposable
 {
     public Storage(ISaveable value, string name = "")
     {
@@ -318,6 +330,12 @@ public class Storage
 
     public ISaveable Value { get; set; }
     public string Name { get; set; }
+
+    public void Dispose()
+    {
+        Value.Dispose();
+        Value = null!;
+    }
 }
 
 internal class NameContractResolver : DefaultContractResolver

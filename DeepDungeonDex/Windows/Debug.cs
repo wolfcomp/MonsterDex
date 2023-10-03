@@ -2,11 +2,11 @@
 
 namespace DeepDungeonDex.Windows;
 
-internal class Debug : Window
+internal class Debug : Window, IDisposable
 {
-    private readonly StorageHandler _storage;
-    private readonly Debug _instance;
-    private readonly Requests _requests;
+    private StorageHandler _storage;
+    private Debug _instance;
+    private Requests _requests;
 
     public Debug(StorageHandler storage, CommandHandler handler, Requests requests) : base("DeepDungeonDex Debug Window", ImGuiWindowFlags.NoCollapse)
     {
@@ -14,6 +14,13 @@ internal class Debug : Window
         _instance = this;
         _requests = requests;
         handler.AddCommand("debug_window", () => _instance.IsOpen = true, "Shows all the data loaded into the plugin.");
+    }
+
+    public void Dispose()
+    {
+        _instance = null!;
+        _storage = null!;
+        _requests = null!;
     }
 
     public override void Draw()
@@ -80,31 +87,29 @@ internal class Debug : Window
                                 }
                             break;
                         case MobData mob:
-                            if (mob.MobDictionary != null)
-                                foreach (var (mobKey, mobValue) in mob.MobDictionary)
+                            foreach (var (mobKey, mobValue) in mob.MobDictionary)
+                            {
+                                ImGui.TextUnformatted($"{mobKey}");
+                                ImGui.Indent();
+                                ImGui.TextUnformatted($"Name: {mobValue.Name}");
+                                ImGui.TextUnformatted($"Aggro: {mobValue.Aggro}");
+                                ImGui.TextUnformatted($"Threat: {mobValue.Threat}");
+                                ImGui.TextUnformatted($"Weakness: {mobValue.Weakness}");
+                                ImGui.TextUnformatted($"Description:");
+                                ImGui.Indent();
+                                foreach (var description in mobValue.Description!)
                                 {
-                                    ImGui.TextUnformatted($"{mobKey}");
-                                    ImGui.Indent();
-                                    ImGui.TextUnformatted($"Name: {mobValue.Name}");
-                                    ImGui.TextUnformatted($"Aggro: {mobValue.Aggro}");
-                                    ImGui.TextUnformatted($"Threat: {mobValue.Threat}");
-                                    ImGui.TextUnformatted($"Weakness: {mobValue.Weakness}");
-                                    ImGui.TextUnformatted($"Description:");
-                                    ImGui.Indent();
-                                    foreach (var description in mobValue.Description)
-                                    {
-                                        ImGui.TextUnformatted($"{string.Join(" ", description)}");
-                                    }
-                                    ImGui.Unindent();
-                                    ImGui.Unindent();
+                                    ImGui.TextUnformatted($"{string.Join(" ", description)}");
                                 }
+                                ImGui.Unindent();
+                                ImGui.Unindent();
+                            }
                             break;
                         case JobData job:
-                            if (job.JobDictionary != null)
-                                foreach (var (jobKey, jobValue) in job.JobDictionary)
-                                {
-                                    ImGui.TextUnformatted($"{jobKey}: {jobValue}");
-                                }
+                            foreach (var (jobKey, jobValue) in job.JobDictionary)
+                            {
+                                ImGui.TextUnformatted($"{jobKey}: {jobValue}");
+                            }
                             break;
                     }
                     ImGui.TextUnformatted("  " + storage.Value.GetType());

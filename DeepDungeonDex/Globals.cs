@@ -12,3 +12,4 @@ global using Dalamud.Game;
 global using Dalamud.Game.ClientState.Conditions;
 global using Dalamud.Plugin;
 global using Dalamud.Plugin.Services;
+global using Dalamud.Game.Gui;

@@ -6,13 +6,13 @@ namespace DeepDungeonDex;
 
 public class CommandHandler : IDisposable
 {
-    private readonly ICommandManager _manager;
-    private readonly ChatGui _chat;
+    private ICommandManager _manager;
+    private IChatGui _chat;
     private readonly string _command = "/pddd";
     private readonly Dictionary<string[], Tuple<object, string, bool>> _actions = new();
     private readonly string[] _help = new[] { "help", "h" };
 
-    public CommandHandler(ICommandManager manager, ChatGui chat)
+    public CommandHandler(ICommandManager manager, IChatGui chat)
     {
         _manager = manager;
         _chat = chat;
@@ -81,7 +81,13 @@ public class CommandHandler : IDisposable
         AddMainHandler();
     }
 
-    public void Dispose() => RemoveMainHandler();
+    public void Dispose()
+    {
+        RemoveMainHandler();
+        _actions.Clear();
+        _chat = null!;
+        _manager = null!;
+    } 
 
     public void RemoveMainHandler()
     {

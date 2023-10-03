@@ -184,7 +184,7 @@ internal class Font : IDisposable
         ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_gameSymFont.Item1.AddrOfPinnedObject(), _gameSymFont.Item2, scale, _fontCfgMerge, _symRange.AddrOfPinnedObject());
     }
 
-    public void Dispose()
+    public unsafe void Dispose()
     {
         if (_regularFont.Item1.IsAllocated)
             _regularFont.Item1.Free();
@@ -201,7 +201,9 @@ internal class Font : IDisposable
         if (_gameSymFont.Item1.IsAllocated)
             _gameSymFont.Item1.Free();
 
-        _fontCfg.Destroy();
-        _fontCfgMerge.Destroy();
+        if(_fontCfg.NativePtr != null)
+            _fontCfg.Destroy();
+        if(_fontCfgMerge.NativePtr != null)
+            _fontCfgMerge.Destroy();
     }
 }
