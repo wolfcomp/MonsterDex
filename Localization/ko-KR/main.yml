@@ -30,3 +30,4 @@ ShowId: 디버그 정보 보기
 Legacy: 몬스터 정보 표시를 이전 스타일로 변경
 LoadAllFont: 모든 글꼴 가져오기(언어 변경 시 불러오는 속도가 개선됩니다)
 LoadAllFontWarning: "약 30MB의 글꼴이 메모리에 로드됩니다.\n기기 사양에 따라 지연이나 멈춤 현상이 발생할 수 있습니다."
+HideFloorGuide: Stop showing the floor guide when entering a new floor

@@ -30,3 +30,4 @@ ShowId: Zeige Debug-Informationen
 Legacy: Legacy-Fenster für Mob-Daten verwenden
 LoadAllFont: Alle Schriftarten laden (Beschleunigt das Ändern der Sprachen)
 LoadAllFontWarning: Dies lädt 30 MB Schriftarten in den Speicher und führt zu Verzögerungen und höherer Speicherauslastung auf schwächeren Systemen.
+HideFloorGuide: Stop showing the floor guide when entering a new floor
