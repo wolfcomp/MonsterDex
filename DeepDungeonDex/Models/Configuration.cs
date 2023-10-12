@@ -16,7 +16,7 @@ public class Configuration : ISaveable
     [JsonIgnore] public int PrevFontSize;
     [JsonIgnore] public int PrevLocale;
     [JsonIgnore] public float FontSizeScaled => FontSize * 1 / ImGui.GetIO().FontGlobalScale;
-    [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f);
+    [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSizeScaled / 16f, 1f);
     [JsonIgnore] public Action<Configuration>? OnChange { get; set; }
     [JsonIgnore] public Action? OnSizeChange { get; set; }
 
