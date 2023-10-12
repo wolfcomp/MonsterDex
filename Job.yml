@@ -1,9 +1,6 @@
 1:
   - Stun
-  - Heavy
   - Slow
-  - Sleep
-  - Bind
 2:
   - Stun
   - Slow
@@ -97,10 +94,7 @@
   - Sleep
 37:
   - Stun
-  - Heavy
   - Slow
-  - Sleep
-  - Bind
 38:
   - Stun
   - Slow
