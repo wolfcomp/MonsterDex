@@ -30,3 +30,4 @@ ShowId: デバッグ情報を表示
 Legacy: Mob情報表示を、旧スタイルに変更する
 LoadAllFont: すべてのフォントを読み込む(言語変更時、読み込み速度が改善します)
 LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\n端末のスペックによっては、遅延やフリーズが発生する可能性があります"
+HideFloorGuide: Stop showing the floor guide when entering a new floor
