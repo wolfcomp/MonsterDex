@@ -42,6 +42,8 @@ public class Main : IDalamudPlugin
     public void BuildFont()
     {
         _provider.GetRequiredService<Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
+        var conf = _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>();
+        conf?.OnChange?.Invoke(conf);
     }
 
     public void Dispose()
