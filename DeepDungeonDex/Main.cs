@@ -10,8 +10,6 @@ namespace DeepDungeonDex;
 
 public class Main : IDalamudPlugin
 {
-    public string Name => "DeepDungeonDex";
-
     private ServiceProvider _provider;
     private bool isDisposed;
 
