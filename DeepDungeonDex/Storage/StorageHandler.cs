@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Text;
+using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
@@ -17,8 +18,9 @@ public class StorageHandler : IDisposable
 
     internal readonly Dictionary<string, object> JsonStorage = new();
     internal readonly Dictionary<string, object> YmlStorage = new();
+    internal readonly Dictionary<string, IBinaryLoadable> BinaryStorage = new();
 
-    public event EventHandler<StorageEventArgs>? StorageChanged;
+    public event Action<StorageEventArgs>? StorageChanged;
 
     public StorageHandler(DalamudPluginInterface pluginInterface, IChatGui chat, IPluginLog log)
     {
@@ -34,7 +36,7 @@ public class StorageHandler : IDisposable
         var args = storage is Storage { Value: not null } obj
             ? new StorageEventArgs(obj.GetType())
             : new StorageEventArgs(storage.GetType());
-        StorageChanged?.Invoke(this, args);
+        StorageChanged?.Invoke(args);
     }
 
     public void AddYmlStorage(string path, object storage)
@@ -43,7 +45,14 @@ public class StorageHandler : IDisposable
         var args = storage is Storage { Value: not null } obj
             ? new StorageEventArgs(obj.GetType())
             : new StorageEventArgs(storage.GetType());
-        StorageChanged?.Invoke(this, args);
+        StorageChanged?.Invoke(args);
+    }
+
+    public void AddBinaryStorage(string path, IBinaryLoadable storage)
+    {
+        BinaryStorage[path] = storage;
+        var args = new StorageEventArgs(storage.GetType());
+        StorageChanged?.Invoke(args);
     }
 
     private void Load()
@@ -51,25 +60,12 @@ public class StorageHandler : IDisposable
         try
         {
             _log.Verbose("Loading Storage");
-            var configPath = Path.Combine(_path, "config.json");
-            _log.Verbose("Loading config from {0}", configPath);
-            Configuration config;
-            try
-            {
-                _log.Verbose("Deserializing config");
-                config = DeserializeFile<Configuration>(configPath)!;
-            }
-            catch
-            {
-                _log.Verbose("Failed to deserialize config, creating new config");
-                config = new Configuration();
-            }
-
+            Configuration config = LoadConfig();
             config.PrevLocale = config.Locale;
-            JsonStorage.Add("config.json", config);
+            BinaryStorage.Add("config.dat", config);
             var storagePath = new FileInfo(Path.Combine(_path, "storage.json"));
             if (storagePath.Exists)
-            {   
+            {
                 _log.Verbose("Loading storage from {0}", storagePath);
                 var storage = DeserializeFile<Dictionary<string, Tuple<string, string?>>>(storagePath.FullName)!;
                 JsonStorage.Add(storagePath.Name, storage);
@@ -127,6 +123,88 @@ public class StorageHandler : IDisposable
             Load();
         }
         Save();
+    }
+
+    private Configuration LoadConfig()
+    {
+        var configPath = Path.Combine(_path, "config.json");
+        _log.Verbose("Loading config from {0}", configPath);
+    otherFile:
+        try
+        {
+            _log.Verbose("Deserializing config");
+            Stream file = new FileStream(configPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            var binary = new BinaryReader(file);
+            var config = new Configuration();
+            if (binary.ReadByte() == 0x7B)
+            {
+                file.Position = 0;
+                TextReader text = new StreamReader(file);
+                JsonReader reader = new JsonTextReader(text);
+                var obj = (JObject)JToken.ReadFrom(reader);
+                if (obj.GetValue("Version")!.Value<int>() == 0)
+                {
+                    if (obj.TryGetValue("ClickThrough", out var clickThrough))
+                        config.ClickThrough = clickThrough.Value<bool>();
+                    if (obj.TryGetValue("HideRed", out var hideRed))
+                        config.HideRed = hideRed.Value<bool>();
+                    if (obj.TryGetValue("HideJob", out var hideJob))
+                        config.HideJob = hideJob.Value<bool>();
+                    if (obj.TryGetValue("HideFloor", out var hideFloor))
+                        config.HideFloor = hideFloor.Value<bool>();
+                    if (obj.TryGetValue("Debug", out var debug))
+                        config.Debug = debug.Value<bool>();
+                    if (obj.TryGetValue("Locale", out var locale))
+                        config.Locale = locale.Value<int>();
+                    if (obj.TryGetValue("FontSize", out var fontSize))
+                        config.FontSize = fontSize.Value<int>();
+                    if (obj.TryGetValue("Opacity", out var opacity))
+                        config.Opacity = opacity.Value<float>();
+                    if (obj.TryGetValue("LoadAll", out var loadAll))
+                        config.LoadAll = loadAll.Value<bool>();
+                }
+                reader.Close();
+                text.Close();
+                file.Close();
+                File.Delete(configPath);
+            }
+            else
+            {
+                file.Position = 0;
+                switch (binary.ReadByte())
+                {
+                    case 1:
+                        var flags = binary.ReadByte();
+                        config.ClickThrough = (flags & 1) == 1;
+                        config.HideRed = (flags & 2) == 2;
+                        config.HideJob = (flags & 4) == 4;
+                        config.HideFloor = (flags & 8) == 8;
+                        config.HideSpawns = (flags & 16) == 16;
+                        config.Debug = (flags & 32) == 32;
+                        config.LoadAll = (flags & 64) == 64;
+                        config.Locale = binary.ReadInt32();
+                        config.FontSize = binary.ReadInt32();
+                        config.Opacity = binary.ReadSingle();
+                        break;
+                    default:
+                        throw new Exception("Invalid config version");
+                }
+            }
+            binary.Close();
+            file.Close();
+            return config;
+        }
+        catch
+        {
+            if (!configPath.EndsWith(".dat"))
+            {
+                _log.Verbose("Failed to find old config file checking new file.");
+                configPath = Path.Combine(_path, "config.dat");
+                goto otherFile;
+            }
+            _log.Verbose("Failed to deserialize config, creating new config");
+            return new Configuration();
+        }
     }
 
     public static T? DeserializeFile<T>(string path, bool ignoreJsonProperty = true) where T : class
@@ -187,11 +265,13 @@ public class StorageHandler : IDisposable
             {
                 _log.Verbose("Saving inner obj");
                 var k = storage.Value.Save(fileInfo.FullName)?.GetTuple();
-                if (k != null)
+                if (k == null)
                 {
-                    _log.Verbose($"Wrote inner obj of type {k.Item1.Name}");
-                    storageDict.Add(path, k);
+                    return false;
                 }
+
+                _log.Verbose($"Wrote inner obj of type {k.Item1.Name}");
+                storageDict.Add(path, k);
             }
             else
             {
@@ -202,11 +282,14 @@ public class StorageHandler : IDisposable
 
                 _log.Verbose("Saving obj");
                 var k = (obj as ISaveable)!.Save(fileInfo.FullName)?.GetTuple();
-                if (k != null)
+                if (k == null)
                 {
-                    _log.Verbose($"Wrote obj of type {k.Item1.Name}");
-                    storageDict.Add(path, k);
+                    return false;
                 }
+
+                _log.Verbose($"Wrote obj of type {k.Item1.Name}");
+                storageDict.Add(path, k);
+
             }
 
             return false;
@@ -232,9 +315,20 @@ public class StorageHandler : IDisposable
             _log.Verbose($"Wrote {obj.GetType()}");
         }
 
+        _log.Verbose("Saving Binary Storage");
+        foreach (var (path, obj) in BinaryStorage.ToDictionary(t => t.Key, t => t.Value))
+        {
+            var fullPath = Path.Join(_path, path);
+            var named = obj.BinarySave(fullPath);
+            if(named != null)
+                storageDict.Add(fullPath, named.GetTuple());
+            _log.Verbose($"Wrote {obj.GetType()}");
+        }
+
         _log.Verbose("Filling missing storage data");
         JsonStorage.AsEnumerable()
             .Concat(YmlStorage)
+            .Concat(BinaryStorage.ToDictionary(t => t.Key, t => (object)t.Value))
             .ToList()
             .ForEach(x =>
             {
@@ -245,7 +339,7 @@ public class StorageHandler : IDisposable
             });
         var storagePath = Path.Combine(_path, "storage.json");
         _log.Verbose($"Writing {storagePath}");
-        var storageInfo = storageDict.Where(t => t.Key is not ("storage.json" or "config.json")).ToDictionary(
+        var storageInfo = storageDict.Where(t => t.Key is not ("storage.json" or "config.json" or "")).ToDictionary(
             t => t.Key, t =>
             {
                 var (type, name) = t.Value;
@@ -261,6 +355,7 @@ public class StorageHandler : IDisposable
     {
         var list = JsonStorage.Values.ToList();
         list.AddRange(YmlStorage.Values);
+        list.AddRange(BinaryStorage.Select(t => (object)t.Value));
         return (list.FirstOrDefault(x => x is T) ?? (list.FirstOrDefault(x => x is Storage { Value: T }) as Storage)?.Value) as T ?? null;
     }
 
@@ -268,6 +363,7 @@ public class StorageHandler : IDisposable
     {
         var list = JsonStorage.ToList();
         list.AddRange(YmlStorage);
+        list.AddRange(BinaryStorage.ToDictionary(t => t.Key, t => (object)t.Value));
         var set = list.Where(t => t.Key.Contains(path)).Select(t => t.Value).ToList();
         return (set.FirstOrDefault(x => x is T) ?? (set.FirstOrDefault(x => x is Storage { Value: T }) as Storage)?.Value) as T ?? null;
     }
@@ -276,6 +372,7 @@ public class StorageHandler : IDisposable
     {
         var list = JsonStorage.Values.ToList();
         list.AddRange(YmlStorage.Values);
+        list.AddRange(BinaryStorage.Select(t => (object)t.Value));
         return list.Where(t => t is T or Storage { Value: T }).Select(t => t is T ? t : (t as Storage)?.Value).Cast<T>().ToArray();
     }
 
@@ -283,6 +380,7 @@ public class StorageHandler : IDisposable
     {
         var list = JsonStorage.Values.ToList();
         list.AddRange(YmlStorage.Values);
+        list.AddRange(BinaryStorage.Select(t => (object)t.Value));
         return list.Where(t => t is Storage { Value: T } storage && storage.Name.StartsWith(name)).Select(t => t is T ? t : (t as Storage)?.Value).Cast<T>().ToArray();
     }
 
@@ -295,6 +393,7 @@ public class StorageHandler : IDisposable
     {
         var list = JsonStorage.ToList();
         list.AddRange(YmlStorage);
+        list.AddRange(BinaryStorage.ToDictionary(t => t.Key, t => (object)t.Value));
         var filePath = list.FirstOrDefault(t => t.Value.GetType() == type || t.Value is Storage { Value: { } value } && value.GetType() == type).Key;
         return Path.Combine(_path, filePath);
     }
@@ -308,6 +407,11 @@ public class StorageHandler : IDisposable
         }
 
         foreach (var (_, obj) in YmlStorage)
+        {
+            (obj as IDisposable)?.Dispose();
+        }
+
+        foreach (var (_, obj) in BinaryStorage)
         {
             (obj as IDisposable)?.Dispose();
         }

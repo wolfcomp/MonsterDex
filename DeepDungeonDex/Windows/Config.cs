@@ -32,7 +32,7 @@ public class Config : Window, IDisposable
             MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
         };
         BgAlpha = _opacity = _config.Opacity;
-        _clickthrough = _config.Clickthrough;
+        _clickthrough = _config.ClickThrough;
         _hideRed = _config.HideRed;
         _hideJob = _config.HideJob;
         _debug = _config.Debug;
@@ -93,7 +93,7 @@ public class Config : Window, IDisposable
         ImGui.Columns(1);
         if (ImGui.Checkbox(_locale.GetLocale("IsClickthrough"), ref _clickthrough))
         {
-            _config.Clickthrough = _clickthrough;
+            _config.ClickThrough = _clickthrough;
         }
         if (ImGui.Checkbox(_locale.GetLocale("HideRedVulns"), ref _hideRed))
         {

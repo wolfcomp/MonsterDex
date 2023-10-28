@@ -104,9 +104,9 @@ public class Floor : Window, IDisposable
         };
         BgAlpha = config.Opacity;
         // ReSharper disable once ConvertIfStatementToSwitchStatement
-        if (config.Clickthrough && !Flags.HasFlag(ImGuiWindowFlags.NoInputs))
+        if (config.ClickThrough && !Flags.HasFlag(ImGuiWindowFlags.NoInputs))
             Flags |= ImGuiWindowFlags.NoInputs;
-        else if (!config.Clickthrough && Flags.HasFlag(ImGuiWindowFlags.NoInputs))
+        else if (!config.ClickThrough && Flags.HasFlag(ImGuiWindowFlags.NoInputs))
             Flags &= ~ImGuiWindowFlags.NoInputs;
     }
 
