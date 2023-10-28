@@ -62,7 +62,7 @@ public class Main : Window, IDisposable
         _config.OnChange += ConfigChanged;
     }
 
-    private void Storage_StorageChanged(object? sender, StorageEventArgs e)
+    private void Storage_StorageChanged(StorageEventArgs e)
     {
         if (e.StorageType == typeof(Locale))
         {
@@ -79,9 +79,9 @@ public class Main : Window, IDisposable
         };
         BgAlpha = config.Opacity;
         // ReSharper disable once ConvertIfStatementToSwitchStatement
-        if (config.Clickthrough && !Flags.HasFlag(ImGuiWindowFlags.NoInputs))
+        if (config.ClickThrough && !Flags.HasFlag(ImGuiWindowFlags.NoInputs))
             Flags |= ImGuiWindowFlags.NoInputs;
-        else if (!config.Clickthrough && Flags.HasFlag(ImGuiWindowFlags.NoInputs))
+        else if (!config.ClickThrough && Flags.HasFlag(ImGuiWindowFlags.NoInputs))
             Flags &= ~ImGuiWindowFlags.NoInputs;
     }
 

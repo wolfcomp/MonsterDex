@@ -32,7 +32,7 @@ public class Config : Window, IDisposable
             MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
         };
         BgAlpha = _opacity = _config.Opacity;
-        _clickthrough = _config.Clickthrough;
+        _clickthrough = _config.ClickThrough;
         _hideRed = _config.HideRed;
         _hideJob = _config.HideJob;
         _debug = _config.Debug;
@@ -75,7 +75,7 @@ public class Config : Window, IDisposable
         var lang = _localeKeys.LocaleDictionary.Keys.ToArray()[_config.PrevLocale];
         var _locale = (Locale)_handler.GetInstance($"{lang}/main.yml")!;
         ImGui.PushFont(Font.RegularFont);
-        ImGui.SetNextWindowSizeConstraints(new Vector2(250 * _config.WindowSizeScaled, 100), new Vector2(400 * _config.WindowSizeScaled, 600));
+        ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - ImGui.CalcTextSize("Opacity").X);
         if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
         {
             _config.Opacity = _opacity;
@@ -93,7 +93,7 @@ public class Config : Window, IDisposable
         ImGui.Columns(1);
         if (ImGui.Checkbox(_locale.GetLocale("IsClickthrough"), ref _clickthrough))
         {
-            _config.Clickthrough = _clickthrough;
+            _config.ClickThrough = _clickthrough;
         }
         if (ImGui.Checkbox(_locale.GetLocale("HideRedVulns"), ref _hideRed))
         {
@@ -128,6 +128,7 @@ public class Config : Window, IDisposable
         };
 
         var locales = _localeKeys.LocaleDictionary.Values.ToArray();
+        ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - ImGui.CalcTextSize("Locale").X);
         if (ImGui.Combo("Locale", ref _loc, locales, locales.Length))
         {
             _config.Locale = _loc;

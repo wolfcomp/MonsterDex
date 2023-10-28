@@ -170,8 +170,7 @@ internal class Font : IDisposable
     public void BuildFonts(float scale)
     {
         var config = _handler.GetInstance<Configuration>()!;
-        if (!config.LoadAll)
-            SetUpSpecificFonts(config);
+        SetUpSpecificFonts(config);
         RegularFont = ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_regularFont.Item1.AddrOfPinnedObject(), _regularFont.Item2, scale, _fontCfg, _ranges.Data);
         if (config.Locale == 1 || config.LoadAll)
             ImGui.GetIO().Fonts.AddFontFromMemoryTTF(_jpFont.Item1.AddrOfPinnedObject(), _jpFont.Item2, scale, _fontCfgMerge, _jpRanges.Data);
@@ -201,9 +200,9 @@ internal class Font : IDisposable
         if (_gameSymFont.Item1.IsAllocated)
             _gameSymFont.Item1.Free();
 
-        if(_fontCfg.NativePtr != null)
+        if (_fontCfg.NativePtr != null)
             _fontCfg.Destroy();
-        if(_fontCfgMerge.NativePtr != null)
+        if (_fontCfgMerge.NativePtr != null)
             _fontCfgMerge.Destroy();
     }
 }

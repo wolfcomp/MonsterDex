@@ -10,8 +10,6 @@ namespace DeepDungeonDex;
 
 public class Main : IDalamudPlugin
 {
-    public string Name => "DeepDungeonDex";
-
     private ServiceProvider _provider;
     private bool isDisposed;
 
@@ -42,6 +40,8 @@ public class Main : IDalamudPlugin
     public void BuildFont()
     {
         _provider.GetRequiredService<Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
+        var conf = _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>();
+        conf?.OnChange?.Invoke(conf);
     }
 
     public void Dispose()
