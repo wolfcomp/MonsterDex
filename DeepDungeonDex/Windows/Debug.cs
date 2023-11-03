@@ -25,7 +25,7 @@ internal class Debug : Window, IDisposable
 
     public override void Draw()
     {
-        ImGui.PushFont(Font.RegularFont);
+        ImGui.PushFont(Font.Font.RegularFont);
 
         if (_requests.IsRequesting)
         {

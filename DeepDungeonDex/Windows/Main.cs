@@ -161,7 +161,7 @@ public class Main : Window, IDisposable
 
     public override void Draw()
     {
-        ImGui.PushFont(Font.RegularFont);
+        ImGui.PushFont(Font.Font.RegularFont);
         var line = $"{_currentMob.Name}{(_config.Debug ? $" ({_currentMob.Id})" : "")}";
         ImGui.TextUnformatted(line);
         ImGui.TextUnformatted($"{_locale.GetLocale(_currentMob.Aggro.ToString())}\t");
