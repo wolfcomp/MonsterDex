@@ -77,7 +77,10 @@ public partial class Requests : IDisposable
                     _log.Verbose("Creating instance");
                     var instance = (ILoadableString)Activator.CreateInstance(type)!;
                     _log.Verbose("Loading content");
-                    Handler.AddYmlStorage(file, instance.Load(content, false));
+                    if (instance is IBinaryLoadable loadable)
+                        Handler.AddBinaryStorage(file.Replace(".yml", ".dat"), loadable.StringLoad(content));
+                    else
+                        Handler.AddYmlStorage(file, instance.Load(content, false));
                 }
                 catch (Exception e)
                 {
@@ -89,7 +92,7 @@ public partial class Requests : IDisposable
         _log.Verbose("Loading complete saving storage");
         Handler.Save();
 
-        RefreshEnd:
+    RefreshEnd:
         RequestingData = false;
         if (continuous)
         {

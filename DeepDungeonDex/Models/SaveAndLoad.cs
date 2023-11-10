@@ -16,8 +16,9 @@ public interface ILoadableString : ILoadable
     public Storage.Storage Load(string str, bool fromFile);
 }
 
-public interface IBinaryLoadable
+public interface IBinaryLoadable : ILoadable
 {
+    public IBinaryLoadable StringLoad(string str);
     public NamedType? BinarySave(string path);
     public IBinaryLoadable BinaryLoad(string path);
 }

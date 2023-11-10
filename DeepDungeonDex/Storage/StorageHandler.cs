@@ -77,7 +77,7 @@ public class StorageHandler : IDisposable
                         var type = Type.GetType(typeString);
                         if (!type!.IsAssignableFrom(typeof(ISaveable))) continue;
                         _log.Verbose("Loading {0}, Type: {1}, Name: {2}", key, typeString, name ?? "");
-                        if (key.Contains(".json"))
+                        if (key.EndsWith(".json"))
                         {
                             if (type.IsAssignableFrom(typeof(ILoadable)))
                             {
@@ -88,6 +88,12 @@ public class StorageHandler : IDisposable
                                 JsonStorage.Add(key, obj);
                             }
                             else if (DeserializeFile(key, type) is ISaveable content) JsonStorage.Add(key, new Storage(content));
+                        }
+                        else if (key.EndsWith(".dat"))
+                        {
+                            var binary = (IBinaryLoadable)Activator.CreateInstance(type)!;
+                            binary.BinaryLoad(Path.Join(_path, key));
+                            BinaryStorage.Add(key, binary);
                         }
                         else
                         {
@@ -171,10 +177,11 @@ public class StorageHandler : IDisposable
             else
             {
                 file.Position = 0;
+                byte flags;
                 switch (binary.ReadByte())
                 {
                     case 1:
-                        var flags = binary.ReadByte();
+                        flags = binary.ReadByte();
                         config.ClickThrough = (flags & 1) == 1;
                         config.HideRed = (flags & 2) == 2;
                         config.HideJob = (flags & 4) == 4;
@@ -182,6 +189,17 @@ public class StorageHandler : IDisposable
                         config.HideSpawns = (flags & 16) == 16;
                         config.Debug = (flags & 32) == 32;
                         config.LoadAll = (flags & 64) == 64;
+                        config.Locale = binary.ReadInt32();
+                        config.FontSize = binary.ReadInt32();
+                        config.Opacity = binary.ReadSingle();
+                        break;
+                    case 2:
+                        flags = binary.ReadByte();
+                        config.ClickThrough = (flags & (1 << 1)) == (1 << 1);
+                        config.HideFloor = (flags & (1 << 2)) == (1 << 2);
+                        config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
+                        config.Debug = (flags & (1 << 4)) == (1 << 4);
+                        config.LoadAll = (flags & (1 << 5)) == (1 << 5);
                         config.Locale = binary.ReadInt32();
                         config.FontSize = binary.ReadInt32();
                         config.Opacity = binary.ReadSingle();
@@ -320,7 +338,7 @@ public class StorageHandler : IDisposable
         {
             var fullPath = Path.Join(_path, path);
             var named = obj.BinarySave(fullPath);
-            if(named != null)
+            if (named != null)
                 storageDict.Add(fullPath, named.GetTuple());
             _log.Verbose($"Wrote {obj.GetType()}");
         }

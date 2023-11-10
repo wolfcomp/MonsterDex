@@ -39,7 +39,7 @@ public class Main : IDalamudPlugin
 
     public void BuildFont()
     {
-        _provider.GetRequiredService<Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
+        _provider.GetRequiredService<Font.Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
         var conf = _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>();
         conf?.OnChange?.Invoke(conf);
     }
@@ -94,7 +94,7 @@ public class Main : IDalamudPlugin
             .AddSingleton(main)
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<Requests>(provider))
-            .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font>(provider))
+            .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font.Font>(provider))
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<AddonAgent>(provider))
             .BuildServiceProvider();

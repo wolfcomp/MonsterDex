@@ -74,7 +74,7 @@ public class Config : Window, IDisposable
         var _localeKeys = _handler.GetInstance<LocaleKeys>()!;
         var lang = _localeKeys.LocaleDictionary.Keys.ToArray()[_config.PrevLocale];
         var _locale = (Locale)_handler.GetInstance($"{lang}/main.yml")!;
-        ImGui.PushFont(Font.RegularFont);
+        ImGui.PushFont(Font.Font.RegularFont);
         ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - ImGui.CalcTextSize("Opacity").X);
         if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
         {
@@ -95,14 +95,6 @@ public class Config : Window, IDisposable
         {
             _config.ClickThrough = _clickthrough;
         }
-        if (ImGui.Checkbox(_locale.GetLocale("HideRedVulns"), ref _hideRed))
-        {
-            _config.HideRed = _hideRed;
-        }
-        if (ImGui.Checkbox(_locale.GetLocale("HideBasedOnJob"), ref _hideJob))
-        {
-            _config.HideJob = _hideJob;
-        }
         if (ImGui.Checkbox(_locale.GetLocale("HideFloorGuide"), ref _hideFloor))
         {
             _config.HideFloor = _hideFloor;
@@ -115,7 +107,6 @@ public class Config : Window, IDisposable
         if (ImGui.Checkbox(_locale.GetLocale("LoadAllFont"), ref _loadAll))
         {
             _config.LoadAll = _loadAll;
-            _provider.GetRequiredService<Font>().SetUpSpecificFonts(_config);
             _pluginInterface.UiBuilder.RebuildFonts();
         }
         if (ImGui.IsItemHovered())

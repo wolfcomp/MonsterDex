@@ -77,9 +77,8 @@ public static class LocaleExtensions
 
     public static string GetLocale(this IEnumerable<Locale> locales, string key)
     {
-        var langs = locales.GetLocaleList(key);
-        var ret = locales.FirstOrDefault(l => l.TranslationDictionary.ContainsKey(key));
-        return ret != null ? ret.TranslationDictionary[key] : key;
+        var ret = locales.FirstOrDefault(l => l.TranslationDictionary.Keys.Any(t => string.Equals(t.Trim(), key.Trim(), StringComparison.InvariantCultureIgnoreCase)));
+        return ret != null ? ret.TranslationDictionary.First(t => string.Equals(t.Key.Trim(), key.Trim(), StringComparison.InvariantCultureIgnoreCase)).Value : key;
     }
 
     public static IEnumerable<KeyValuePair<string, string>> GetLocaleList(this IEnumerable<Locale> locales, string key)

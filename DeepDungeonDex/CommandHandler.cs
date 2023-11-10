@@ -91,6 +91,7 @@ public class CommandHandler : IDisposable
 
     public void RemoveMainHandler()
     {
-        _manager.RemoveHandler(_command);
+        if(_manager.Commands.ContainsKey(_command))
+            _manager.RemoveHandler(_command);
     }
 }
