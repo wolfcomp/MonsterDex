@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
@@ -133,7 +133,7 @@ public class Main : Window, IDisposable
         {
             return;
         }
-            
+
         if (!_condition[ConditionFlag.InDeepDungeon])
         {
             IsOpen = false;
@@ -177,7 +177,7 @@ public class Main : Window, IDisposable
             ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
             var size = ImGui.GetWindowSize();
             var desc = _currentMob.ProcessedDescription;
-            if(desc.Length == 0)
+            if (desc.Length == 0 || Math.Abs(size.X - _currentMob.LastProcessedWidth) > float.Epsilon)
                 _currentMob.ProcessDescription(size.X);
             foreach (var s in desc)
             {
@@ -207,36 +207,36 @@ public class Main : Window, IDisposable
         var uv1 = new Vector2(1, 1);
         var cursor = ImGui.GetCursorPos();
         ImGui.Image(_textureProvider.GetIcon(15004)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Stun) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if(weakness.HasFlag(Weakness.StunUnknown))
+        if (weakness.HasFlag(Weakness.StunUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
         ImGui.Image(_textureProvider.GetIcon(15002)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if(weakness.HasFlag(Weakness.HeavyUnknown))
+        if (weakness.HasFlag(Weakness.HeavyUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
         ImGui.Image(_textureProvider.GetIcon(15009)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if(weakness.HasFlag(Weakness.SlowUnknown))
+        if (weakness.HasFlag(Weakness.SlowUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
         ImGui.Image(_textureProvider.GetIcon(15013)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if(weakness.HasFlag(Weakness.SleepUnknown))
+        if (weakness.HasFlag(Weakness.SleepUnknown))
             DrawUnknown(cursor, size);
         ImGui.SameLine();
         cursor = ImGui.GetCursorPos();
         ImGui.Image(_textureProvider.GetIcon(15003)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if(weakness.HasFlag(Weakness.BindUnknown))
+        if (weakness.HasFlag(Weakness.BindUnknown))
             DrawUnknown(cursor, size);
-            
+
         // ReSharper disable once InvertIf
         if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
         {
             ImGui.SameLine();
             cursor = ImGui.GetCursorPos();
             ImGui.Image(_textureProvider.GetIcon(15461)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-            if(weakness.HasFlag(Weakness.UndeadUnknown))
+            if (weakness.HasFlag(Weakness.UndeadUnknown))
                 DrawUnknown(cursor, size);
         }
     }
@@ -246,7 +246,7 @@ public class Main : Window, IDisposable
         ImGui.SetCursorPos(pos);
         ImGui.Image(_unknown!.ImGuiHandle, size);
     }
-        
+
     private static void PrintTextWithColor(string? text, uint color)
     {
         ImGui.PushStyleColor(ImGuiCol.Text, color);
