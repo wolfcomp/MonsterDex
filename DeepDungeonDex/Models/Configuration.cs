@@ -2,9 +2,9 @@
 
 namespace DeepDungeonDex.Models;
 
-public class Configuration : ISaveable, IBinaryLoadable
+public class Configuration : IBinaryLoadable
 {
-    public byte Version { get; set; } = 1;
+    public byte Version { get; } = 2;
     public bool ClickThrough { get; set; }
     public bool HideRed { get; set; }
     public bool HideJob { get; set; }
@@ -31,7 +31,7 @@ public class Configuration : ISaveable, IBinaryLoadable
             PrevFontSize = FontSize;
             OnSizeChange?.Invoke();
         }
-        if (PrevLocale != Locale)
+        if (PrevLocale != Locale && !LoadAll)
         {
             PrevLocale = Locale;
             OnSizeChange?.Invoke();
@@ -44,6 +44,11 @@ public class Configuration : ISaveable, IBinaryLoadable
     {
     }
 
+    public IBinaryLoadable StringLoad(string str)
+    {
+        throw new NotImplementedException();
+    }
+
     public NamedType? BinarySave(string path)
     {
         var origPath = path;
@@ -53,13 +58,11 @@ public class Configuration : ISaveable, IBinaryLoadable
         BinaryWriter writer = new(stream);
         writer.Write(Version);
         byte flags = 0;
-        flags |= (byte)(ClickThrough ? 1 : 0);
-        flags |= (byte)(HideRed ? 2 : 0);
-        flags |= (byte)(HideJob ? 4 : 0);
-        flags |= (byte)(HideFloor ? 8 : 0);
-        flags |= (byte)(HideSpawns ? 16 : 0);
-        flags |= (byte)(Debug ? 32 : 0);
-        flags |= (byte)(LoadAll ? 64 : 0);
+        flags |= (byte)(ClickThrough ? 1 << 1 : 0);
+        flags |= (byte)(HideFloor ? 1 << 2 : 0);
+        flags |= (byte)(HideSpawns ? 1 << 3 : 0);
+        flags |= (byte)(Debug ? 1 << 4 : 0);
+        flags |= (byte)(LoadAll ? 1 << 5 : 0);
         writer.Write(flags);
         writer.Write(Locale);
         writer.Write(FontSize);
@@ -74,22 +77,16 @@ public class Configuration : ISaveable, IBinaryLoadable
 
     public IBinaryLoadable BinaryLoad(string path)
     {
-        Stream stream = File.Open(path, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
-        BinaryReader reader = new(stream);
-        Version = reader.ReadByte();
-        byte flags = reader.ReadByte();
-        ClickThrough = (flags & 1) == 1;
-        HideRed = (flags & 2) == 2;
-        HideJob = (flags & 4) == 4;
-        HideFloor = (flags & 8) == 8;
-        HideSpawns = (flags & 16) == 16;
-        Debug = (flags & 32) == 32;
-        LoadAll = (flags & 64) == 64;
-        Locale = reader.ReadInt32();
-        FontSize = reader.ReadInt32();
-        Opacity = reader.ReadSingle();
-        reader.Close();
-        stream.Close();
-        return this;
+        throw new NotImplementedException();
+    }
+
+    public Storage.Storage Load(string path)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Storage.Storage Load(string path, string name)
+    {
+        throw new NotImplementedException();
     }
 }
