@@ -121,26 +121,10 @@ internal class Font : IDisposable
     public void SetUpSpecificFonts(Configuration config)
     {
         FreeFonts(_jpFont, _krFont, _scFont, _tcFont);
-
-        if (config.Locale == 1 || config.LoadAll)
-        {
-            LoadFontFile("DeepDungeonDex.Font.NotoSansJP-Regular.otf", ref _jpFont);
-        }
-
-        if (config.Locale == 4 || config.LoadAll)
-        {
-            LoadFontFile("DeepDungeonDex.Font.NotoSansSC-Regular.otf", ref _scFont);
-        }
-
-        if (config.Locale == 5 || config.LoadAll)
-        {
-            LoadFontFile("DeepDungeonDex.Font.NotoSansTC-Regular.otf", ref _tcFont);
-        }
-
-        if (config.Locale == 6 || config.LoadAll)
-        {
-            LoadFontFile("DeepDungeonDex.Font.NotoSansKR-Regular.otf", ref _krFont);
-        }
+        LoadFontFile("DeepDungeonDex.Font.NotoSansJP-Regular.otf", ref _jpFont);
+        LoadFontFile("DeepDungeonDex.Font.NotoSansSC-Regular.otf", ref _scFont);
+        LoadFontFile("DeepDungeonDex.Font.NotoSansTC-Regular.otf", ref _tcFont);
+        LoadFontFile("DeepDungeonDex.Font.NotoSansKR-Regular.otf", ref _krFont);
     }
 
     public void FreeFonts(params (GCHandle, int)[] fonts)
@@ -169,7 +153,6 @@ internal class Font : IDisposable
     public void BuildFonts(float scale)
     {
         var config = _handler.GetInstance<Configuration>()!;
-        SetUpSpecificFonts(config);
         RegularFont = AddFont(_regularFont, scale, _fontCfg, _ranges);
         if (config.Locale == 1 || config.LoadAll)
             AddFont(_jpFont, scale, _fontCfgMerge, _jpRanges);
