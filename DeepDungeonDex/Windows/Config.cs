@@ -95,14 +95,6 @@ public class Config : Window, IDisposable
         {
             _config.ClickThrough = _clickthrough;
         }
-        if (ImGui.Checkbox(_locale.GetLocale("HideRedVulns"), ref _hideRed))
-        {
-            _config.HideRed = _hideRed;
-        }
-        if (ImGui.Checkbox(_locale.GetLocale("HideBasedOnJob"), ref _hideJob))
-        {
-            _config.HideJob = _hideJob;
-        }
         if (ImGui.Checkbox(_locale.GetLocale("HideFloorGuide"), ref _hideFloor))
         {
             _config.HideFloor = _hideFloor;
@@ -115,7 +107,6 @@ public class Config : Window, IDisposable
         if (ImGui.Checkbox(_locale.GetLocale("LoadAllFont"), ref _loadAll))
         {
             _config.LoadAll = _loadAll;
-            _provider.GetRequiredService<Font.Font>().SetUpSpecificFonts(_config);
             _pluginInterface.UiBuilder.RebuildFonts();
         }
         if (ImGui.IsItemHovered())
