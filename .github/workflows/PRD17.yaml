@@ -23,12 +23,12 @@ jobs:
           submodules: recursive
       - name: Bump version and push tag
         id: version
-        uses: mathieudutour/github-tag-action@v6.0
+        uses: mathieudutour/github-tag-action@v6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Clean string
         id: clean
-        uses: frabert/replace-string-action@v2.0
+        uses: frabert/replace-string-action@v2.4
         with:
           pattern: '(\[)|(\][\w\d.\]\(:\/]+\))'
           string: ${{ steps.version.outputs.changelog }}
