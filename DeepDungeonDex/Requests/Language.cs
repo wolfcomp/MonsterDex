@@ -18,8 +18,10 @@ public partial class Requests
             {
                 if (file == "Job.yml")
                     continue;
-                _log.Verbose($"Loading {file}");
-                if (Handler.GetInstance(file) is not Storage.Storage { Value: MobData mobData })
+                var path = file.Replace(".yml", ".dat");
+                _log.Verbose($"Loading {path}");
+                var mobData = Handler.GetInstance<MobData>(path);
+                if (mobData == null)
                     continue;
 
                 _log.Verbose($"Processing MobData descriptions for {file}");

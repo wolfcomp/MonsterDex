@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Reflection;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
@@ -337,6 +338,7 @@ public class StorageHandler : IDisposable
         foreach (var (path, obj) in BinaryStorage.ToDictionary(t => t.Key, t => t.Value))
         {
             var fullPath = Path.Join(_path, path);
+            _log.Verbose("Saving: {0}", fullPath);
             var named = obj.BinarySave(fullPath);
             if (named != null)
                 storageDict.Add(fullPath, named.GetTuple());
@@ -404,7 +406,7 @@ public class StorageHandler : IDisposable
 
     public object? GetInstance(string path)
     {
-        return JsonStorage.TryGetValue(path, out var obj) ? obj : YmlStorage.TryGetValue(path, out obj) ? obj : null;
+        return JsonStorage.TryGetValue(path, out var obj) ? obj : YmlStorage.TryGetValue(path, out obj) ? obj : BinaryStorage.GetValueOrDefault(path);
     }
 
     public string GetFilePath(Type type)
