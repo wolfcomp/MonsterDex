@@ -2,115 +2,128 @@
 12182: |
   Casts one shot line charge, must LoS
 12174: |
-
+  PB and Targeted circle AOEs can be stunned.
 12180: |
-  Explodes after dying
+  Explodes after dying, will not explode if petrified when killed.
 12183: |
-  Casts ice spikes, will one shot if hit with physical damage
+  Casts Gelid Charge, Ice Spikes buff will one shot if hit with physical damage
 12171: |
-
+  Telegraphed front conal AOE
 12178: |
-
+  Gives stacking vuln stacks, be careful not to pull too many.
 12176: |
-
+  Will give a Heavy debuff followed by Tail Screw AOE. Heavy can be negated through shielding.
 12318: |
-
+  Flush PB AOE
 12181: |
-
+  Will cast 1000 Spines, PB AOE
 12172: |
-  Pulls in then PB AOE
+  Pulls in with Sucker then PB AOE, knockback resist or walk away immediately after pull in.
 12179: |
-  "Sewer Water" -- Half circle cleave followed immediately by other half
+  "Sewer Water" -- Half circle cleave followed immediately by other half. Must move immediately after telegraph disappears.
 12177: |
-
+  Useless. Really useless.
 12173: |
-  Jumps to player and does half room knockback
+  Jumps to player and does half room knockback to everyone not targeted.
   "Electric Whorl" -- Doughnut
   "Expulsion" -- PB AOE
 12175: |
-  Untelegraphed AOE behind
+  Crab Dribble fast cast rear conal AOE triggered by being behind. Can be outranged.
 
 # EO boss floor 60
 12267: |
-  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN
-  "Disorienting Groan" -- Knockback, be inside boss
-  "Bullish Swipe" -- Frontal cleave
-  "Bullish Swing" -- Large PB AOE
+  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN.
+  "Disorienting Groan" -- Knockback, be centered in arena or use knockback resist during cast.
+  "Bullish Swipe" -- Frontal cleave.
+  "Bullish Swing" -- Large PB AOE.
+  "Thundercall" -- Summons blue orbs followed by Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
 
 # EO floors 61-69
 12184: |
-
+  Inflicts fast stacking poison debuff, do not pull too many at once.
 12191: |
-
+  Has telegraphed front conal and PB AOE.
 12189: |
-  AOE will give evasion to other enemies it hits
+  AOE will give evasion to other enemies it hits, try to kill away from other enemies.
 12187: |
-
+  Has a telegraphed narrow front conal AOE.
 12186: |
-  Untelegraphed conal back cleave if player is behind.
+  Fast untelegraphed conal back cleave if player is behind, PB AOE on death with a short duration vuln stack.
 12185: |
-  "Smouldering Scales" -- shield that will 1 shot if hit by physical damage
+  "Smouldering Scales" -- buff that will 1 shot if hit by physical damage
 12194: |
-  Untelegraphed Claw/Tail swipe swipe conal AOE.
+  Untelegraphed Claw/Tail swipe swipe conal AOE. Watch animation carefully.
 12195: |
-  Executes if below 20% HP
+  Assassinates if below 20% HP
 12190: |
-
+  Front conal gaze attack and PB AOE.
 12196: |
-  Knockback
+  Untelegraphed knockback PB AOE, caution when pulling with certain enemies. 
 12188: |
-
+  Telegraphed targeted AOE
 12193: |
-  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range.
+  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range. Can be ranged pulled.
 12192: |
-  Pull in then PB AOE
+  Instant pull in followed by fast cast PB AOE "Body Press." Pay attention for pull in sound/animation.
 
 # EO floor 70
 12246: |
-  "Ferocity" -- distance tether
+  "Steel Claw" -- tankbuster, sort of.
+  "Ferocity" -- distance tether followed by Preternatural Turn.
   "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple baited AOEs - spawns crystals that have a large PB AOE
+  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
+  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
 
 # EO floors 71-79
 12197: |
-  Late telegraph frontal cone
+  "Slowcall" -- late telegraph front conal, gives a very bad slow effect
 12199: |
-  Triple targeted knockbacks
+  Triple targeted knockbacks, wedge yourself into a corner if possible.
+  "Innocence" -- targeted circle AOE
 12202: |
   "The Killing Paw" -- double frontal cone second is untelegraphed
   Be carefull with stun or slow as this enemy can store the second swipe
 12207: |
   "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AOE, it will crouch and wiggle its tail
+  "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction. 
+  Moving side to side will allow you to easily tell when Scythe Tail is casting.
 12201: |
-
+  Gives a mild bleed debuff and buffs itself after a short period.
 12209: |
+  "Freefall" -- randomly targetd medium circle AOE
   "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
 12208: |
-  Wide line AOE, can not be line of sighted.
+  "Blistering Roar" -- Wide line AOE, can not be LOSed, MUST MOVE BEHIND.
 12204: |
-
+  Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
+  DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
 12205: |
-  Executes player if below 20% HP
+  Assassinates player if below 20% HP
 12198: |
-  "Chirp" -- untelegraphed PB AOE
+  "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
+  "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
 12206: |
-  Roomwide gaze
+  "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
+  "Revelation" -- untelegraphed AOE cast on Confused players
 12200: |
-  Huge wide frontal cone
-  Huge rear cone if player is behind
+  "Wide Blaster" -- Huge wide frontal cone targeted at random player
+  "Tail Swing" -- Huge rear cone if player is behind
 12203: |
-  "Chest Thump" -- Huge unaggroed AOE after using "Ripe Banana"
+  "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
+  "Stool Pelt" -- randomly targetd circle AOE
+  Pull when safe to prevent getting caught by Chest Thump
 
 # EO boss floor 80
 12247: |
-  "Rightward/Leftward Nerve Gass" -- Halfroom cleaves front is always safe.
-  "Centralized Nerve Gas" -- Wide frontal conal cleave
-  "Barofield" -- Creates a dead zone under the boss and outside ring with DoT
-  "Nanospore Jet" -- Gives players a positive or negative charged theather to drones outside the ring.
-  Theater will be visible after dodging a few "Nerve Gas" attacks.
-  Opposite charge will be attracted and same charge will be repelled.
-  You want to end up close to the boss after the charged theater is over to avoid a donut AOE.
+  "Resonance" -- Wide conal tankbuster.
+  "Rightward/Leftward Nerve Gas" -- Diagonal halfroom cleaves, front of boss is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave.
+  "Nerve Gas Ring" -- large donut that leaves only melee distance safe.
+  "Barofield" -- Creates insta-kill zone under the boss and outside ring with DoT.
+  "Auto Cannons" -- drones on cardinals fire a line AOE across arena.
+  "Nanospore Jet" -- Gives players a positive or negative charge and later tethers to a drone on a cardinal direction. Subsequent casts create new Barofield.
+  Nanospore Rotation: Nerve Gas 1, Nerve Gas  2 (with Auto Cannons), Nerve Gas 3 (with Auto Cannons), Tether appears, Nerve Gas 4 (with Auto Cannons), Nerve Gas Ring (with Auto Cannons)
+  Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
 
 # EO floors 81-89
 12212: |

@@ -129,7 +129,7 @@
   Threat: Caution
   Aggro: Sight
 12194-Orthos gowrow:
-  Threat: Caution
+  Threat: Dangerous
   Aggro: Sight
 12195-Orthoninja:
   Threat: Caution
@@ -138,7 +138,7 @@
   Threat: Easy
   Aggro: Sight
 12196-Haokah perfected:
-  Threat: Easy
+  Threat: Caution
   Aggro: Sight
 12188-Orthos anala:
   Threat: Easy
@@ -147,7 +147,7 @@
   Threat: Dangerous
   Aggro: Sight
 12192-Orthos palleon:
-  Threat: Easy
+  Threat: Caution
   Aggro: Sight
 
 # EO floor 70
@@ -260,7 +260,7 @@
 # EO floors 81-89
 12210-Orthos deepeye:
   Aggro: Sight
-  Threat: Undefined
+  Threat: Easy
   Weakness:
     - StunUnknown
     - HeavyUnknown
