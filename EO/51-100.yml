@@ -213,7 +213,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -243,6 +243,8 @@
 12200-Orthos coeurl:
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Stun
 12203-Orthos sasquatch:
   Threat: Dangerous
   Aggro: Sight
@@ -262,11 +264,11 @@
   Aggro: Sight
   Threat: Easy
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 12212-Orthos hecteyes:
   Threat: Dangerous
   Aggro: Sound
@@ -359,21 +361,17 @@
 # EO floors 91-98
 12223-Orthodrone:
   Aggro: Proximity
-  Threat: Undefined
+  Threat: Caution
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
-12224-Orthos pegasus:
+12224-Orthosystem y:
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - Stun
     - Heavy
     - Slow
-    - Sleep
 12225-Orthos Mithridates:
   Threat: Caution
   Aggro: Sight

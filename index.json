@@ -10,9 +10,6 @@
     "EO/51-100.yml",
     "Special.yml"
   ],
-  "JobData": [
-    "Job.yml"
-  ],
   "FloorData": [
     "PotD/Floors.yml",
     "HoH/Floors.yml",
