@@ -3,124 +3,124 @@
   释放直线跟踪型秒杀级AOE，须隔墙躲避（不穿无敌）；
   不吃晕
 12174: |
-
+  PB and Targeted circle AOEs can be stunned.
 12180: |
-  死亡后爆炸（不可见钢铁AOE）；
-  不吃晕
+  Explodes after dying, will not explode if petrified when killed.
 12183: |
-  读条后将会反弹物理伤害，直接秒杀，需击晕或停手
+  Casts Gelid Charge, Ice Spikes buff will one shot if hit with physical damage
 12171: |
-
+  Telegraphed front conal AOE
 12178: |
-
+  Gives stacking vuln stacks, be careful not to pull too many.
 12176: |
-
+  Will give a Heavy debuff followed by Tail Screw AOE. Heavy can be negated through shielding.
 12318: |
-
+  Flush PB AOE
 12181: |
-
+  Will cast 1000 Spines, PB AOE
 12172: |
-  释放大范围不可见吸引（防击退/隔墙有效），然后快速读条可见钢铁AOE，需快速远离；
-  不吃晕
+  Pulls in with Sucker then PB AOE, knockback resist or walk away immediately after pull in.
 12179: |
-  随机向正前或背后释放半圆AOE（看到读条就跑，动画最后才出），随后立刻对反方向释放一次；
-  吃晕
+  "Sewer Water" -- Half circle cleave followed immediately by other half. Must move immediately after telegraph disappears.
 12177: |
-
+  Useless. Really useless.
 12173: |
-  跳向一仇玩家造成范围伤害并击退半场距离（防击退有效）；
-  随机释放钢铁或月环，可通过特效判断；
-  吃晕
+  Jumps to player and does half room knockback to everyone not targeted.
+  "Electric Whorl" -- Doughnut
+  "Expulsion" -- PB AOE
 12175: |
-  背后有人时会触发快速读条，释放几乎不可见扇形AOE；
-  吃晕
+  Crab Dribble fast cast rear conal AOE triggered by being behind. Can be outranged.
 #EO boss floor 60
 12267: |
-  八重横扫：8次预兆扇形aoe，分前后左右 右左后前 或 前后左右 前后左右
-  牛魔横扫：前方扇形aoe；牛魔回转：大钢铁；吼叫：击飞，去脚下；
-  招雷：随机召唤雷球aoe 随后接八重横扫 找安全位置处理八重
+  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN.
+  "Disorienting Groan" -- Knockback, be centered in arena or use knockback resist during cast.
+  "Bullish Swipe" -- Frontal cleave.
+  "Bullish Swing" -- Large PB AOE.
+  "Thundercall" -- Summons blue orbs followed by Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
 #EO floors 61-69
 12184: |
-  Fast stacking posion
+  Inflicts fast stacking poison debuff, do not pull too many at once.
 12191: |
-
+  Has telegraphed front conal and PB AOE.
 12189: |
-  AOE 会对其他怪物添加闪避BUFF
+  AOE will give evasion to other enemies it hits, try to kill away from other enemies.
 12187: |
-
+  Has a telegraphed narrow front conal AOE.
 12186: |
-  玩家在背后时使用无范围提示背后aoe。
+  Fast untelegraphed conal back cleave if player is behind, PB AOE on death with a short duration vuln stack.
 12185: |
-  读条反伤盾，反射物理伤害，直接秒杀，停手停普攻收武器
+  "Smouldering Scales" -- buff that will 1 shot if hit by physical damage
 12194: |
-  无范围提示爪尾aoe
+  Untelegraphed Claw/Tail swipe swipe conal AOE. Watch animation carefully.
 12195: |
-  平A+三连重击，秒杀20%血量以下玩家；
-  不吃晕
+  Assassinates if below 20% HP
 12190: |
-  Conal gaze
+  Front conal gaze attack and PB AOE.
 12196: |
-  击退，靠墙处理。（不知道是什么技能，击飞几次，原文没写）
-  （U宫的击飞都非常远，一定记得靠墙！）
+  Untelegraphed knockback PB AOE, caution when pulling with certain enemies.
 12188: |
-
+  Telegraphed targeted AOE
 12193: |
-  近战无目标则读条雷云放射(月环aoe)，靠近只平A。
+  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range. Can be ranged pulled.
 12192: |
-  释放大范围不可见吸引（防击退/隔墙有效）
-  然后快速读条可见钢铁AOE，需快速远离；
-  不吃晕
+  Instant pull in followed by fast cast PB AOE "Body Press." Pay attention for pull in sound/animation.
 #EO floor 70
 12246: |
-  铁爪：死刑，开点减伤；强袭：点名拉线，拉至紫色安全；
-  随后接魔科学旋爪：身上发光为月环，目标圈内安全；不发光为大范围钢铁，远离。
-  咆哮：召唤小范围aoe和四个水晶，后接魔科学旋爪。
-  处理方式：钢铁去远水晶侧面和其他水晶夹角外侧，月环去远水晶内侧目标环内环一步。
+  "Steel Claw" -- tankbuster, sort of.
+  "Ferocity" -- distance tether followed by Preternatural Turn.
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
+  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
 #EO floors 71-79
 12197: |
-  释放正面几乎不可见小扇形AOE，附加减速debuff；
-  吃晕
+  "Slowcall" -- late telegraph front conal, gives a very bad slow effect
 12199: |
-  对一仇三连冲锋，注意减伤；
-  点名一名玩家释放可见圆形AOE；
-  吃晕
+  Triple targeted knockbacks, wedge yourself into a corner if possible.
+  "Innocence" -- targeted circle AOE
 12202: |
   释放正面可见扇形AOE，之后会复读一次不可见的AOE；
   注意击晕或减速后，依然会释放第二次；
   吃晕
 12207: |
-  原地趴着不动时蓄力释放无读条且不可见钢铁AOE，附带击退和眩晕；
-  有人远离时读条释放安全区较大的月环AOE；
-  可通过摇尾巴判断是否蓄力钢铁。不吃晕
+  "Spark" -- untelegraphed doughnut
+  "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction.
+  Moving side to side will allow you to easily tell when Scythe Tail is casting.
 12201: |
-
+  Gives a mild bleed debuff and buffs itself after a short period.
 12209: |
-  自由落体：点名玩家释放可见aoe。使用两次之后读条凛冬之风：全屏狂暴，卡墙或击晕或速杀
+  "Freefall" -- randomly targetd medium circle AOE
+  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
 12208: |
-  前方长条不可见AOE，去背后躲
+  "Blistering Roar" -- Wide line AOE, can not be LOSed, MUST MOVE BEHIND.
 12204: |
-
+  Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
+  DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
 12205: |
-  秒杀20%血量以下玩家
+  Assassinates player if below 20% HP
 12198: |
-  释放不可见钢铁AOE，附加昏睡debuff；对昏睡玩家释放可见圆形AOE；
-  吃晕
+  "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
+  "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
 12206: |
-  释放全屏不可见AOE，背对回避；
-  吃晕
+  "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
+  "Revelation" -- untelegraphed AOE cast on Confused players
 12200: |
-  前方大范围扇形攻击，后方有人则读条后方扇形扫尾。
+  "Wide Blaster" -- Huge wide frontal cone targeted at random player
+  "Tail Swing" -- Huge rear cone if player is behind
 12203: |
-  脱战会读条吃香蕉赋予攻击力上升buff，然后发动超大钢铁，吃到被秒杀，可以卡墙，卡水晶无效。进战很菜，冲向一仇击退后只会点名黄圈，可以晕。
+  "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
+  "Stool Pelt" -- randomly targetd circle AOE
+  Pull when safe to prevent getting caught by Chest Thump
 #EO boss floor 80
 12247: |
-  共鸣：死刑；左侧/右侧神经毒气喷射：后方对应扇形aoe，正面永远安全；
-  正面神经毒气喷射：正面扇形aoe，去侧面。
-  气压领域：场地外侧和目标圈内即死区。
-  boss大部分时间会在目标圈内和场地外放置即死区，永远别进去。
-  场地外小怪使用三次十字aoe同时boss使用三次神经毒气，
-  第四次小怪读条磁力并点名，拉线到和boss目标圈相切，同性靠近，异性去对面半场外侧
-  磁力判定后躲开boss月环和第四次十字aoe
+  "Resonance" -- Wide conal tankbuster.
+  "Rightward/Leftward Nerve Gas" -- Diagonal halfroom cleaves, front of boss is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave.
+  "Nerve Gas Ring" -- large donut that leaves only melee distance safe.
+  "Barofield" -- Creates insta-kill zone under the boss and outside ring with DoT.
+  "Auto Cannons" -- drones on cardinals fire a line AOE across arena.
+  "Nanospore Jet" -- Gives players a positive or negative charge and later tethers to a drone on a cardinal direction. Subsequent casts create new Barofield.
+  Nanospore Rotation: Nerve Gas 1, Nerve Gas  2 (with Auto Cannons), Nerve Gas 3 (with Auto Cannons), Tether appears, Nerve Gas 4 (with Auto Cannons), Nerve Gas Ring (with Auto Cannons)
+  Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
 #EO floors 81-89
 12212: |
   PB Gaze AOE
