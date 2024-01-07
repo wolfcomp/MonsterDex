@@ -4,6 +4,7 @@
   Aggro: Sound
   Weakness:
     - Stun
+  InstanceContentType: 9
 4975-palace deathmouse:
   Threat: Easy
   Aggro: Sight
@@ -13,6 +14,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4976-palace antelope:
   Threat: Easy
   Aggro: Sight
@@ -22,12 +24,14 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4977-palace bat:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 4978-palace coblyn:
   Threat: Easy
   Aggro: Sight
@@ -36,6 +40,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4979-palace hippocerf:
   Threat: Easy
   Aggro: Proximity
@@ -45,6 +50,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4980-palace beetle:
   Threat: Easy
   Aggro: Sight
@@ -53,12 +59,14 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4981-palace hornet:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 4982-palace yarzon:
   Threat: Easy
   Aggro: Sound
@@ -67,6 +75,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4983-palace ziz:
   Threat: Easy
   Aggro: Sight
@@ -75,6 +84,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4984-lost goblin:
   Threat: Easy
   Aggro: Sight
@@ -84,6 +94,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4985-palace dung beetle:
   Threat: Easy
   Aggro: Proximity
@@ -92,9 +103,11 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4986-palace deathgaze:
   Threat: Caution
   Aggro: Boss
+  InstanceContentType: 9
 # PotD 11-20
 4987-living whelk:
   Threat: Easy
@@ -104,6 +117,7 @@
     - Sleep
     - Slow
     - Bind
+  InstanceContentType: 9
 4988-palace uragnite:
   Threat: Easy
   Aggro: Sight
@@ -111,6 +125,7 @@
     - Stun
     - Sleep
     - Slow
+  InstanceContentType: 9
 4989-palace toad:
   Threat: Easy
   Aggro: Sight
@@ -119,12 +134,14 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 4990-palace slime:
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 4991-palace ninki nanka:
   Threat: Easy
   Aggro: Sound
@@ -134,6 +151,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4992-palace nanka:
   Threat: Easy
   Aggro: Sound
@@ -143,6 +161,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4993-palace ochu:
   Threat: Easy
   Aggro: Proximity
@@ -151,6 +170,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4994-palace seedling:
   Threat: Easy
   Aggro: Sound
@@ -160,6 +180,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4995-palace morbol:
   Threat: Easy
   Aggro: Proximity
@@ -167,11 +188,13 @@
     - Stun
     - Slow
     - Heavy
+  InstanceContentType: 9
 4996-palace pudding:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
+  InstanceContentType: 9
 4997-palace cobra:
   Threat: Dangerous
   Aggro: Sight
@@ -179,6 +202,7 @@
     - Stun
     - Sleep
     - Slow
+  InstanceContentType: 9
 4998-palace biloko:
   Threat: Easy
   Aggro: Sight
@@ -186,9 +210,11 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 4999-Spurge:
   Threat: Caution
   Aggro: Boss
+  InstanceContentType: 9
 # PotD 21-30
 5000-palace puk:
   Threat: Easy
@@ -199,6 +225,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5001-palace drake:
   Threat: Easy
   Aggro: Sight
@@ -208,6 +235,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5002-palace adamantoise:
   Threat: Easy
   Aggro: Sight
@@ -215,6 +243,7 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5003-palace peiste:
   Threat: Easy
   Aggro: Sight
@@ -223,6 +252,7 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5004-palace wivre:
   Threat: Easy
   Aggro: Proximity
@@ -231,6 +261,7 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5005-palace spriggan:
   Threat: Easy
   Aggro: Sight
@@ -239,6 +270,7 @@
     - Sleep
     - Heavy
     - Bind
+  InstanceContentType: 9
 5006-palace centaur:
   Threat: Easy
   Aggro: Proximity
@@ -248,18 +280,21 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5007-palace effigy:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
     - Heavy
+  InstanceContentType: 9
 5008-palace marolith:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5009-palace dullahan:
   Threat: Easy
   Aggro: Sound
@@ -268,6 +303,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5010-palace minotaur:
   Threat: Caution
   Aggro: Sight
@@ -276,6 +312,7 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5011-palace skatene:
   Threat: Caution
   Aggro: Sound
@@ -284,9 +321,11 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5012-Ningishzida:
   Threat: Caution
   Aggro: Boss
+  InstanceContentType: 9
 # PotD 31-40
 5013-nightmare bogy:
   Threat: Easy
@@ -294,12 +333,14 @@
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5014-nightmare hecteyes:
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5015-nightmare ogre:
   Threat: Easy
   Aggro: Sight
@@ -308,6 +349,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5016-nightmare mummy:
   Threat: Easy
   Aggro: Proximity
@@ -316,11 +358,13 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5017-nightmare eye:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+  InstanceContentType: 9
 5018-nightmare dahak:
   Threat: Easy
   Aggro: Sight
@@ -330,18 +374,21 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5019-nightmare monk:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Bind
+  InstanceContentType: 9
 5020-nightmare troubadour:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
+  InstanceContentType: 9
 5021-nightmare haagenti:
   Threat: Easy
   Aggro: Sight
@@ -350,12 +397,14 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5022-nightmare succubus:
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5023-nightmare catoblepas:
   Threat: Easy
   Aggro: Sight
@@ -363,6 +412,7 @@
     - Stun
     - Slow
     - Heavy
+  InstanceContentType: 9
 5024-nightmare gourmand:
   Threat: Easy
   Aggro: Proximity
@@ -371,15 +421,18 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5025-Ixtab:
   Threat: Easy
   Aggro: Boss
+  InstanceContentType: 9
 # PotD 41-50
 5026-nightmare gnat:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+  InstanceContentType: 9
 5027-nightmare demon:
   Threat: Easy
   Aggro: Sight
@@ -387,12 +440,14 @@
     - Stun
     - Slow
     - Heavy
+  InstanceContentType: 9
 5028-nightmare gargoyle:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5029-nightmare knight:
   Threat: Easy
   Aggro: Proximity
@@ -401,6 +456,7 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5030-nightmare bhoot:
   Threat: Caution
   Aggro: Sound
@@ -408,6 +464,7 @@
     - Stun
     - Sleep
     - Slow
+  InstanceContentType: 9
 5031-nightmare hellhound:
   Threat: Easy
   Aggro: Sight
@@ -416,22 +473,26 @@
     - Sleep
     - Slow
     - Heavy
+  InstanceContentType: 9
 5032-nightmare persona:
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5033-nightmare bloodguard:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
+  InstanceContentType: 9
 5034-nightmare dragon:
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
+  InstanceContentType: 9
 5035-nightmare manticore:
   Threat: Easy
   Aggro: Sight
@@ -440,12 +501,14 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5036-nightmare wraith:
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
+  InstanceContentType: 9
 5037-nightmare gravekeeper:
   Threat: Easy
   Aggro: Sound
@@ -453,6 +516,8 @@
     - Slow
     - Heavy
     - Bind
+  InstanceContentType: 9
 5038-Edda Blackbosom:
   Threat: Caution
   Aggro: Boss
+  InstanceContentType: 9
