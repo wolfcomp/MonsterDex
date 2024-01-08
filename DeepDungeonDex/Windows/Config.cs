@@ -1,4 +1,5 @@
 using System.Numerics;
+using Dalamud.Interface.Utility.Raii;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex.Windows;
@@ -74,7 +75,7 @@ public class Config : Window, IDisposable
         var _localeKeys = _handler.GetInstance<LocaleKeys>()!;
         var lang = _localeKeys.LocaleDictionary.Keys.ToArray()[_config.PrevLocale];
         var _locale = (Locale)_handler.GetInstance($"{lang}/main.yml")!;
-        ImGui.PushFont(Font.Font.RegularFont);
+        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
         ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - ImGui.CalcTextSize("Opacity").X);
         if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
         {
@@ -145,6 +146,5 @@ public class Config : Window, IDisposable
         ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
         ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
         ImGui.PopStyleColor(3);
-        ImGui.PopFont();
     }
 }

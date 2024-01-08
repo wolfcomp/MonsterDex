@@ -1,4 +1,5 @@
-using System.Numerics;
+﻿using System.Numerics;
+using Dalamud.Interface.Utility.Raii;
 
 namespace DeepDungeonDex.Windows;
 
@@ -25,7 +26,7 @@ internal class Debug : Window, IDisposable
 
     public override void Draw()
     {
-        ImGui.PushFont(Font.Font.RegularFont);
+        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
 
         var config = _storage.GetInstance<Configuration>()!;
         if (!config.LoadAll)

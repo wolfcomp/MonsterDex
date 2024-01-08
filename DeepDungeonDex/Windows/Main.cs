@@ -3,6 +3,7 @@ using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Interface.Internal;
+using Dalamud.Interface.Utility.Raii;
 
 namespace DeepDungeonDex.Windows;
 
@@ -161,7 +162,7 @@ public class Main : Window, IDisposable
 
     public override void Draw()
     {
-        ImGui.PushFont(Font.Font.RegularFont);
+        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
         var line = $"{_currentMob.Name}{(_config.Debug ? $" ({_currentMob.Id})" : "")}";
         ImGui.TextUnformatted(line);
         ImGui.TextUnformatted($"{_locale.GetLocale(_currentMob.Aggro.ToString())}\t");
@@ -184,7 +185,7 @@ public class Main : Window, IDisposable
                 ImGui.TextUnformatted(s);
             }
         }
-        ImGui.PopFont();
+
     }
 
     public void LoadIcons()
