@@ -1,4 +1,4 @@
-﻿using DeepDungeonDex.Hooks;
+using DeepDungeonDex.Hooks;
 using System.Numerics;
 
 namespace DeepDungeonDex.Windows;
@@ -112,7 +112,7 @@ public class Floor : Window, IDisposable
 
     public override void Draw()
     {
-        var remap = (FloorData)((Storage.Storage)_storage.GetInstance(_dataPath + "/Floors.yml")!).Value;
+        var remap = (FloorData)_storage.GetInstance(_dataPath + "/Floors.yml")!;
         var floor = _debug == 0 ? _addon.Floor : _debug;
         floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
         ImGui.PushFont(Font.Font.RegularFont);

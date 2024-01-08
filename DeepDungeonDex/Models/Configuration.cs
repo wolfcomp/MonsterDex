@@ -1,8 +1,8 @@
-﻿using System.IO;
+using System.IO;
 
 namespace DeepDungeonDex.Models;
 
-public class Configuration : IBinaryLoadable
+public class Configuration
 {
     public byte Version { get; } = 2;
     public bool ClickThrough { get; set; }
@@ -24,7 +24,7 @@ public class Configuration : IBinaryLoadable
     [JsonIgnore] public Action<Configuration>? OnChange { get; set; }
     [JsonIgnore] public Action? OnSizeChange { get; set; }
 
-    public NamedType? Save(string path)
+    public void Save(string path)
     {
         if (FontSize != PrevFontSize)
         {
@@ -37,20 +37,6 @@ public class Configuration : IBinaryLoadable
             OnSizeChange?.Invoke();
         }
         OnChange?.Invoke(this);
-        return BinarySave(path);
-    }
-
-    public void Dispose()
-    {
-    }
-
-    public IBinaryLoadable StringLoad(string str)
-    {
-        throw new NotImplementedException();
-    }
-
-    public NamedType? BinarySave(string path)
-    {
         var origPath = path;
         if(!path.EndsWith(".tmp"))
             path += ".tmp";
@@ -72,21 +58,5 @@ public class Configuration : IBinaryLoadable
         if (File.Exists(origPath))
             File.Delete(origPath);
         File.Move(path, origPath);
-        return null;
-    }
-
-    public IBinaryLoadable BinaryLoad(string path)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Storage.Storage Load(string path)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Storage.Storage Load(string path, string name)
-    {
-        throw new NotImplementedException();
     }
 }

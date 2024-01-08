@@ -1,50 +1,16 @@
-﻿using System.Drawing;
+using System.Drawing;
 using System.IO;
+using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage;
 
-public class MobData : ILoadableString, IBinaryLoadable
+public class MobData : ILoad<MobData>
 {
     public Dictionary<uint, Mob> MobDictionary { get; set; } = new();
 
-    public Storage Load(string path)
+    public MobData Load(string str)
     {
-        var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(StorageHandler.ReadFile(path));
-        foreach (var (key, value) in mobs)
-        {
-            var splitInd = key.IndexOf('-');
-            var id = uint.Parse(key[..splitInd]);
-            var name = key[(splitInd + 1)..];
-            value.Name = name;
-            MobDictionary.Add(id, value);
-        }
-        return new Storage(this);
-    }
-
-    public Storage Load(string path, string name)
-    {
-        var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(StorageHandler.ReadFile(path));
-        foreach (var (key, value) in mobs)
-        {
-            var splitInd = key.IndexOf('-');
-            var id = uint.Parse(key[..splitInd]);
-            var vName = key[(splitInd + 1)..];
-            value.Name = vName;
-            value.Id = id;
-            MobDictionary.Add(id, value);
-        }
-            
-        return new Storage(this)
-        {
-            Name = name
-        };
-    }
-
-    public Storage Load(string str, bool fromFile)
-    {
-        if (fromFile)
-            return Load(str);
         var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(str);
         foreach (var (key, value) in mobs)
         {
@@ -52,84 +18,16 @@ public class MobData : ILoadableString, IBinaryLoadable
             var id = uint.Parse(key[..splitInd]);
             var name = key[(splitInd + 1)..];
             value.Name = name;
-            value.Id = id;
             MobDictionary.Add(id, value);
         }
-        return new Storage(this);
-    }
-
-    public NamedType? Save(string path)
-    {
-        StorageHandler.SerializeYamlFile(path, MobDictionary.Select(t => (t.Key, t.Value)).ToDictionary(t => $"{t.Key}-{t.Value.Name}", t => t.Value));
-        return null;
+        return this;
     }
 
     public void Dispose()
     {
         MobDictionary.Clear();
     }
-
-    public IBinaryLoadable StringLoad(string str)
-    {
-        var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(str);
-        foreach (var (key, value) in mobs)
-        {
-            var splitInd = key.IndexOf('-');
-            var id = uint.Parse(key[..splitInd]);
-            var name = key[(splitInd + 1)..];
-            value.Name = name;
-            value.Id = id;
-            MobDictionary.Add(id, value);
-        }
-
-        return this;
-    }
-
-    public NamedType? BinarySave(string path)
-    {
-        var temp = path[..^4];
-        var stream = File.Open(temp, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);
-        var writer = new BinaryWriter(stream);
-        writer.Write(MobDictionary.Count);
-        foreach (var (key, value) in MobDictionary)
-        {
-            writer.Write(key);
-            writer.Write((ushort)value.Weakness);
-            writer.Write((byte)((byte)value.Aggro << 4) + (byte)value.Threat);
-        }
-        writer.Dispose();
-        stream.Dispose();
-        File.Delete(path);
-        File.Move(temp, path);
-        return null;
-    }
-
-    public IBinaryLoadable BinaryLoad(string path)
-    {
-        var stream = File.Open(path, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
-        var reader = new BinaryReader(stream);
-        if (reader.BaseStream.Length <= 0)
-        {
-            return null!;
-        }
-
-        var count = reader.ReadUInt32();
-        for (var i = 0; i < count; i++)
-        {
-            var key = reader.ReadUInt32();
-            var weakness = (Weakness)reader.ReadUInt16();
-            var aggro = (Aggro)(reader.ReadByte() >> 4);
-            var threat = (Threat)(reader.ReadByte() & 0x0F);
-            MobDictionary.Add(key, new Mob
-            {
-                Aggro = aggro,
-                Id = key,
-                Threat = threat,
-                Weakness = weakness
-            });
-        }
-        return this;
-    }
+    object ILoad.Load(string str) => Load(str);
 }
 
 public record Mob
@@ -165,6 +63,7 @@ public record Mob
     public Weakness Weakness { get; set; }
     public Aggro Aggro { get; set; }
     public Threat Threat { get; set; }
+    public InstanceContentType InstanceContentType { get; set; }
 
     public void ProcessDescription(float width)
     {

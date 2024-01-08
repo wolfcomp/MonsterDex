@@ -1,40 +1,18 @@
 ﻿namespace DeepDungeonDex.Storage;
 
-internal class FloorData : ILoadableString
+internal class FloorData : ILoad<FloorData>
 {
     public Dictionary<byte, byte> FloorDictionary { get; set; } = new();
 
-    public NamedType? Save(string path)
+    public FloorData Load(string path)
     {
-        StorageHandler.SerializeYamlFile(path, FloorDictionary);
-        return null;
-    }
-
-    public Storage Load(string path)
-    {
-        FloorDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<byte, byte>>(StorageHandler.ReadFile(path));
-        return new Storage(this);
-    }
-
-    public Storage Load(string path, string name)
-    {
-        FloorDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<byte, byte>>(StorageHandler.ReadFile(path));
-        return new Storage(this)
-        {
-            Name = name
-        };
-    }
-
-    public Storage Load(string str, bool fromFile)
-    {
-        if (fromFile)
-            return Load(str);
-        FloorDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<byte, byte>>(str);
-        return new Storage(this);
+        FloorDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<byte, byte>>(path);
+        return this;
     }
 
     public void Dispose()
     {
         FloorDictionary.Clear();
     }
+    object ILoad.Load(string str) => Load(str);
 }
