@@ -1,33 +1,26 @@
 Vulns: Vulns
-Vicious: Bösartig
 Undefined: Undefiniert
-Undead: Untot
 Threat: Bedrohung
-Thanks: Vielen Dank an den Deep Dungeons Discord Server für die große Anzahl an Community Ressourcen. Danke an Alle die ihre Zeit aufbrachten und fehlerhafte oder fehlende Daten zu melden. Besondere Erwähung an Maygi für das verfassen des besten Deep Dungeon Guides der verfügbar ist!
-Stun: Betäubung
-Sound: Geräusche
-Slow: Langsam
-Sleep: Schlaf
-Sight: Sicht
-Save: Speichern
-Proximity: Annäherung
-Opacity: Sichtbarkeit
-Notes: Notizen
-NoDataFound: Keine Daten gefunden für {0} ({1})
-Name: "Name\nWarning: This window is now deprecated and will be removed in a \nfuture update. Please get used to the new look before 6.35."
-IsClickthrough: Enable clickthrough
-HideRedVulns: Verwundbarkeiten die nicht zugefügt werden können verbergen
-HideBasedOnJob: Verwundbarkeiten basierend auf aktueller Klasse/Job ausblenden
-Heavy: Schwer
-FontSize: Schriftgröße
+Vicious: Bösartig
 Easy: Einfach
 Dangerous: Gefährlich
 Caution: Vorsicht
-Boss: Boss
-Bind: Fessel
 AggroType: Bedrohungstyp
+Boss: Boss
+Sound: Geräusche
+Sight: Sicht
+Proximity: Annäherung
+Bloodlust: Bloodlust
+Magic: Magic
+Thanks: Vielen Dank an den Deep Dungeons Discord Server für die große Anzahl an Community Ressourcen. Danke an Alle die ihre Zeit aufbrachten und fehlerhafte oder fehlende Daten zu melden. Besondere Erwähung an Maygi für das verfassen des besten Deep Dungeon Guides der verfügbar ist!
+Save: Speichern
+Opacity: Sichtbarkeit
+Notes: Notizen
+NoDataFound: Keine Daten gefunden für {0} ({1})
+IsClickthrough: Enable clickthrough
+FontSize: Schriftgröße
 ShowId: Zeige Debug-Informationen
-Legacy: Legacy-Fenster für Mob-Daten verwenden
 LoadAllFont: Alle Schriftarten laden (Beschleunigt das Ändern der Sprachen)
 LoadAllFontWarning: Dies lädt 30 MB Schriftarten in den Speicher und führt zu Verzögerungen und höherer Speicherauslastung auf schwächeren Systemen.
 HideFloorGuide: Stop showing the floor guide when entering a new floor
+UnknownContent: Unknown Content no display available
