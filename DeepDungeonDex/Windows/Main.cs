@@ -1,13 +1,15 @@
 using System.IO;
 using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
+using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Interface.Internal;
 using Dalamud.Interface.Utility.Raii;
+using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 
 namespace DeepDungeonDex.Windows;
 
-public class Main : Window, IDisposable
+public partial class Main : Window, IDisposable
 {
 #pragma warning disable CS8618
     private static Mob _currentMob;
@@ -135,13 +137,13 @@ public class Main : Window, IDisposable
             return;
         }
 
-        if (!_condition[ConditionFlag.InDeepDungeon])
+        if (_condition[ConditionFlag.PvPDisplayActive])
         {
             IsOpen = false;
             return;
         }
 
-        if (_target.Target is not BattleNpc npc)
+        if (_target.Target is not BattleNpc { BattleNpcKind: BattleNpcSubKind.Enemy } npc)
         {
             if (!_debug)
                 IsOpen = false;
@@ -163,29 +165,31 @@ public class Main : Window, IDisposable
     public override void Draw()
     {
         using var _ = ImRaii.PushFont(Font.Font.RegularFont);
-        var line = $"{_currentMob.Name}{(_config.Debug ? $" ({_currentMob.Id})" : "")}";
-        ImGui.TextUnformatted(line);
-        ImGui.TextUnformatted($"{_locale.GetLocale(_currentMob.Aggro.ToString())}\t");
-        ImGui.SameLine();
-        PrintTextWithColor(_locale.GetLocale(_currentMob.Threat.ToString()), _currentMob.Threat.GetColor());
-        ImGui.NewLine();
-        ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
-        ImGui.SameLine();
-        DrawWeakness(_currentMob.Weakness);
-        if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
+        // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
+        switch (_currentMob.InstanceContentType)
         {
-            ImGui.NewLine();
-            ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
-            var size = ImGui.GetWindowSize();
-            var desc = _currentMob.ProcessedDescription;
-            if (desc.Length == 0 || Math.Abs(size.X - _currentMob.LastProcessedWidth) > float.Epsilon)
-                _currentMob.ProcessDescription(size.X);
-            foreach (var s in desc)
-            {
-                ImGui.TextUnformatted(s);
-            }
+            case InstanceContentType.DeepDungeon:
+                DrawDeepDungeonData();
+                break;
+            case InstanceContentType.Dungeon:
+            case InstanceContentType.GuildOrder:
+            case InstanceContentType.QuestBattle:
+            case InstanceContentType.BeginnerTraining:
+            case InstanceContentType.TreasureHuntDungeon:
+            case InstanceContentType.SeasonalDungeon:
+            case InstanceContentType.MaskedCarnivale:
+            case InstanceContentType.VariantDungeon:
+            case InstanceContentType.CriterionDungeon:
+            default:
+                DrawUnknownContent();
+                break;
         }
+    }
 
+    public void DrawUnknownContent()
+    {
+        ImGui.TextUnformatted($"Got {_currentMob.Id} with {_currentMob.InstanceContentType}");
+        ImGui.TextUnformatted(_locale.GetLocale("UnknownContent"));
     }
 
     public void LoadIcons()
@@ -204,48 +208,45 @@ public class Main : Window, IDisposable
     public void DrawWeakness(Weakness weakness)
     {
         var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
-        var uv0 = new Vector2(0, 0);
-        var uv1 = new Vector2(1, 1);
-        var cursor = ImGui.GetCursorPos();
-        ImGui.Image(_textureProvider.GetIcon(15004)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Stun) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if (weakness.HasFlag(Weakness.StunUnknown))
-            DrawUnknown(cursor, size);
+        DrawIcon(15004, size, weakness, Weakness.Stun);
         ImGui.SameLine();
-        cursor = ImGui.GetCursorPos();
-        ImGui.Image(_textureProvider.GetIcon(15002)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Heavy) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if (weakness.HasFlag(Weakness.HeavyUnknown))
-            DrawUnknown(cursor, size);
+        DrawIcon(15002, size, weakness, Weakness.Heavy);
         ImGui.SameLine();
-        cursor = ImGui.GetCursorPos();
-        ImGui.Image(_textureProvider.GetIcon(15009)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Slow) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if (weakness.HasFlag(Weakness.SlowUnknown))
-            DrawUnknown(cursor, size);
+        DrawIcon(15009, size, weakness, Weakness.Slow);
         ImGui.SameLine();
-        cursor = ImGui.GetCursorPos();
-        ImGui.Image(_textureProvider.GetIcon(15013)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Sleep) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if (weakness.HasFlag(Weakness.SleepUnknown))
-            DrawUnknown(cursor, size);
+        DrawIcon(15013, size, weakness, Weakness.Sleep);
         ImGui.SameLine();
-        cursor = ImGui.GetCursorPos();
-        ImGui.Image(_textureProvider.GetIcon(15003)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Bind) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-        if (weakness.HasFlag(Weakness.BindUnknown))
-            DrawUnknown(cursor, size);
+        DrawIcon(15003, size, weakness, Weakness.Bind);
 
         // ReSharper disable once InvertIf
         if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
         {
             ImGui.SameLine();
-            cursor = ImGui.GetCursorPos();
-            ImGui.Image(_textureProvider.GetIcon(15461)!.ImGuiHandle, size, uv0, uv1, weakness.HasFlag(Weakness.Undead) ? new Vector4(1, 1, 1, 1) : new Vector4(0.5f, 0.5f, 0.5f, 0.5f));
-            if (weakness.HasFlag(Weakness.UndeadUnknown))
-                DrawUnknown(cursor, size);
+            DrawIcon(15461, size, weakness, Weakness.Undead);
         }
     }
 
-    public void DrawUnknown(Vector2 pos, Vector2 size)
+    private static Vector2 _uv0 = new(0, 0);
+    private static Vector2 _uv1 = new(1, 1);
+    private static Vector4 _color = new(1, 1, 1, 1);
+    private static Vector4 _unknownColor = new(0.5f, 0.5f, 0.5f, 0.5f);
+
+    public void DrawIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
     {
-        ImGui.SetCursorPos(pos);
-        ImGui.Image(_unknown!.ImGuiHandle, size);
+        var cursor = ImGui.GetCursorPos();
+        var color = GetColor(weakness, check);
+        ImGui.Image(_textureProvider.GetIcon(iconId)!.ImGuiHandle, size, _uv0, _uv1, color);
+        var unknownBit = (Weakness)((int)check << 6);
+        if (weakness.HasFlag(unknownBit))
+        {
+            ImGui.SetCursorPos(cursor);
+            ImGui.Image(_unknown!.ImGuiHandle, size);
+        }
+    }
+
+    public Vector4 GetColor(Weakness weakness, Weakness check)
+    {
+        return weakness.HasFlag(check) ? _color : _unknownColor;
     }
 
     private static void PrintTextWithColor(string? text, uint color)
