@@ -1,33 +1,26 @@
 Vulns: 약점
-Vicious: 요주의
 Undefined: 알 수 없음
-Undead: 언데드
 Threat: 위협 수준
-Thanks: Deep Dungeons 디스코드 서버 덕분에 많은 자료가 확보되었습니다. 시간을 내어 정확하지 않거나 누락된 데이터를 보고해 주신 모든 분들께 감사드립니다! 또한 최고의 딥 던전 가이드를 쓴 Maygi에게 진심으로 감사드립니다!
-Stun: 기절
-Sound: 소리
-Slow: 둔화
-Sleep: 수면
-Sight: 시각
-Save: 저장
-Proximity: 근접
-Opacity: 불투명도
-Notes: 참고 사항
-NoDataFound: '{0}({1}) 에 대한 데이터를 찾을 수 없습니다.'
-Name: "이름\n경고: 이 창은 이제 더 이상 사용되지 않으며 향후 업데이트에서 제거됩니다 \n6.35의 새로운 모습에 익숙해지세요."
-IsClickthrough: 마우스 클릭통과
-HideRedVulns: 통하지 않는 약점 숨기기
-HideBasedOnJob: 현재 클래스/직업을 기준으로 약점 숨기기
-Heavy: 과중력
-FontSize: 글자 크기
+Vicious: 요주의
 Easy: 쉬움
 Dangerous: 위험
 Caution: 주의
-Boss: 보스
-Bind: 속박
 AggroType: 적개심 유형
+Boss: 보스
+Sound: 소리
+Sight: 시각
+Proximity: 근접
+Bloodlust: Bloodlust
+Magic: Magic
+Thanks: Deep Dungeons 디스코드 서버 덕분에 많은 자료가 확보되었습니다. 시간을 내어 정확하지 않거나 누락된 데이터를 보고해 주신 모든 분들께 감사드립니다! 또한 최고의 딥 던전 가이드를 쓴 Maygi에게 진심으로 감사드립니다!
+Save: 저장
+Opacity: 불투명도
+Notes: 참고 사항
+NoDataFound: '{0}({1}) 에 대한 데이터를 찾을 수 없습니다.'
+IsClickthrough: 마우스 클릭통과
+FontSize: 글자 크기
 ShowId: 디버그 정보 보기
-Legacy: 몬스터 정보 표시를 이전 스타일로 변경
 LoadAllFont: 모든 글꼴 가져오기(언어 변경 시 불러오는 속도가 개선됩니다)
 LoadAllFontWarning: "약 30MB의 글꼴이 메모리에 로드됩니다.\n기기 사양에 따라 지연이나 멈춤 현상이 발생할 수 있습니다."
 HideFloorGuide: Stop showing the floor guide when entering a new floor
+UnknownContent: Unknown Content no display available
