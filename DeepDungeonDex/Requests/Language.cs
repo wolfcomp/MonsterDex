@@ -6,7 +6,8 @@ public partial class Requests
 {
     public void ChangeLanguage()
     {
-        if (Handler.GetInstance<LocaleKeys>() is not { } locales || Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
+        if (Handler.GetInstance<LocaleKeys>() is not { } locales ||
+            Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
             return;
 
         var loc = Handler.GetInstance<Configuration>()!.Locale;
@@ -37,7 +38,8 @@ public partial class Requests
                             continue;
 
                         _log.Verbose($"Found description for {id}");
-                        mobData.MobDictionary[id].Description = _percentRegex.Replace(description, "%").Replace("\\n", "\n").Split("\n").Select(t => t.Split(' ')).ToArray();
+                        mobData.MobDictionary[id].Description = _percentRegex.Replace(description, "%")
+                            .Replace("\\n", "\n").Split("\n").Select(t => t.Split(' ')).ToArray();
                     }
                 }
                 catch (Exception e)
@@ -55,23 +57,23 @@ public partial class Requests
         {
             _log.Verbose("Getting file list");
             var list = await GetLocalization("locales.json");
-            return new LocaleKeys { LocaleDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(list)! };
+            return string.IsNullOrWhiteSpace(list) ? null : new LocaleKeys { LocaleDictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(list)! };
         }
-        catch (Exception e)
+        catch
         {
-            _log.Error(e, e.Message);
             return null;
         }
     }
 
     public async Task RefreshLang(bool continuous = true)
     {
+    StartRequest:
         RequestingLang = true;
         var fileList = await GetLangFileList();
         if (fileList == null)
             goto RefreshEnd;
 
-        Handler.AddJsonStorage("locales.json", fileList);
+        Handler.AddStorage("locales.json", fileList);
 
         _log.Verbose("Getting file list");
         if (Handler.GetInstance("index.json") is not Dictionary<string, string[]> list)
@@ -81,7 +83,10 @@ public partial class Requests
         {
             var main = $"{name}/main.yml";
             _log.Verbose("Loading main language file");
-            Handler.AddYmlStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(await GetLocalization(main)) });
+            var localization = await GetLocalization(main);
+            if (string.IsNullOrWhiteSpace(localization))
+                continue;
+            Handler.AddStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(localization) });
             foreach (var (_, files) in list)
             {
                 foreach (var file in files)
@@ -94,8 +99,13 @@ public partial class Requests
                         var path = $"{name}/{file}";
                         _log.Verbose($"Loading {path}");
                         content = await GetLocalization(path);
+                        if (string.IsNullOrWhiteSpace(content))
+                        {
+                            _log.Verbose($"No content for {path}");
+                            continue;
+                        }
                         _log.Verbose("Deserializing");
-                        Handler.AddYmlStorage(path, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content) });
+                        Handler.AddStorage(path, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(content) });
                     }
                     catch (Exception e)
                     {
@@ -105,24 +115,21 @@ public partial class Requests
                 }
             }
         }
-
-        _log.Verbose("Loading complete saving storage");
-        Handler.Save();
         ChangeLanguage();
 
-        RefreshEnd:
+    RefreshEnd:
         RequestingLang = false;
         if (continuous)
         {
             _log.Verbose($"Refreshing file list in {CacheTime:g}");
             await Task.Delay(CacheTime, _token.Token);
             if (!_token.IsCancellationRequested)
-                await RefreshLang();
+                goto StartRequest;
         }
     }
 
-    public async Task<string> GetLocalization(string path)
+    public Task<string?> GetLocalization(string path)
     {
-        return await Get("Localization/" + path);
+        return Get("Localization/" + path);
     }
 }

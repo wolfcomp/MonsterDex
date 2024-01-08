@@ -1,4 +1,5 @@
-﻿using DeepDungeonDex.Hooks;
+﻿using Dalamud.Interface.Utility.Raii;
+using DeepDungeonDex.Hooks;
 using System.Numerics;
 
 namespace DeepDungeonDex.Windows;
@@ -112,10 +113,10 @@ public class Floor : Window, IDisposable
 
     public override void Draw()
     {
-        var remap = (FloorData)((Storage.Storage)_storage.GetInstance(_dataPath + "/Floors.yml")!).Value;
+        var remap = (FloorData)_storage.GetInstance(_dataPath + "/Floors.yml")!;
         var floor = _debug == 0 ? _addon.Floor : _debug;
         floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
-        ImGui.PushFont(Font.Font.RegularFont);
+        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
         try
         {
             ImGui.Text("Floor Help");
@@ -125,7 +126,6 @@ public class Floor : Window, IDisposable
         {
             // ignored
         }
-        ImGui.PopFont();
     }
 
     public void Dispose()

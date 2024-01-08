@@ -20,11 +20,11 @@ public partial class Requests : IDisposable
     public bool RequestingLang { get; private set; }
     public bool IsRequesting => RequestingData || RequestingLang;
 
+
     public Requests(StorageHandler handler, IPluginLog log)
     {
         Handler = handler;
         _log = log;
-        handler.AddJsonStorage("index.json", GetFileList().Result!);
 #pragma warning disable CS4014
         _loadFileThread = new Thread(() => RefreshFileList());
         _loadLangThread = new Thread(() => RefreshLang());
@@ -39,7 +39,7 @@ public partial class Requests : IDisposable
         {
             _log.Verbose("Getting file list");
             var content = await Get("index.json");
-            return JsonConvert.DeserializeObject<Dictionary<string, string[]>>(content);
+            return string.IsNullOrWhiteSpace(content) ? null : JsonConvert.DeserializeObject<Dictionary<string, string[]>>(content);
         }
         catch (Exception e)
         {
@@ -50,15 +50,21 @@ public partial class Requests : IDisposable
 
     public async Task RefreshFileList(bool continuous = true)
     {
+    StartRequest:
         RequestingData = true;
         var list = await GetFileList();
         if (list == null)
+        {
+            _log.Error("Failed to get file list using precompiled data");
+            list = await GetFileListFromFile();
+        }
+        if (list == null)
             goto RefreshEnd;
 
-        Handler.AddJsonStorage("index.json", list);
+        Handler.AddStorage("index.json", list);
 
         _log.Verbose("Loading Types");
-        var types = Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(ILoadableString))).ToArray();
+        var types = Assembly.GetExecutingAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(ILoad))).ToArray();
 
         foreach (var (className, files) in list)
         {
@@ -75,12 +81,9 @@ public partial class Requests : IDisposable
                     if (string.IsNullOrWhiteSpace(content))
                         continue;
                     _log.Verbose("Creating instance");
-                    var instance = (ILoadableString)Activator.CreateInstance(type)!;
+                    var instance = (ILoad)Activator.CreateInstance(type)!;
                     _log.Verbose("Loading content");
-                    if (instance is IBinaryLoadable loadable)
-                        Handler.AddBinaryStorage(file.Replace(".yml", ".dat"), loadable.StringLoad(content));
-                    else
-                        Handler.AddYmlStorage(file, instance.Load(content, false));
+                    Handler.AddStorage(file, instance.Load(content));
                 }
                 catch (Exception e)
                 {
@@ -89,9 +92,6 @@ public partial class Requests : IDisposable
             }
         }
 
-        _log.Verbose("Loading complete saving storage");
-        Handler.Save();
-
     RefreshEnd:
         RequestingData = false;
         if (continuous)
@@ -99,21 +99,30 @@ public partial class Requests : IDisposable
             _log.Verbose($"Refreshing file list in {CacheTime:g}");
             await Task.Delay(CacheTime, _token.Token);
             if (!_token.IsCancellationRequested)
-                await RefreshFileList();
+                goto StartRequest;
         }
     }
 
-    public async Task<string> Get(string url)
+    public async Task<string?> Get(string url)
     {
-        _log.Verbose($"Requesting {BaseUrl}/{url}");
-        var response = await Client.GetAsync($"{BaseUrl}/{url}");
-        _log.Verbose($"Response: {response.StatusCode}");
-        if (response.IsSuccessStatusCode)
+        try
         {
-            _log.Verbose("Reading string");
-            return await response.Content.ReadAsStringAsync();
+            _log.Verbose($"Requesting {BaseUrl}/{url}");
+            var response = await Client.GetAsync($"{BaseUrl}/{url}");
+            _log.Verbose($"Response: {response.StatusCode}");
+            if (response.IsSuccessStatusCode)
+            {
+                _log.Verbose("Reading string");
+                return await response.Content.ReadAsStringAsync();
+            }
+
+            throw new HttpRequestException($"Request: {url}\nFailed with status code {response.StatusCode}");
         }
-        throw new HttpRequestException($"Request: {url}\nFailed with status code {response.StatusCode}");
+        catch (Exception e)
+        {
+            _log.Error(e, "Trying to get file from precompiled data");
+            return await GetFromFile(url);
+        }
     }
 
     public void Dispose()
@@ -122,6 +131,7 @@ public partial class Requests : IDisposable
         _loadFileThread.Join();
         _loadLangThread.Join();
         _token.Dispose();
+        _fileStream?.Dispose();
         _log = null!;
     }
 }

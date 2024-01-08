@@ -1,26 +1,13 @@
 ﻿namespace DeepDungeonDex.Models;
 
-public interface ISaveable : IDisposable
+public interface ILoad : IDisposable
 {
-    public NamedType? Save(string path);
+    public object Load(string str);
 }
 
-public interface ILoadable : ISaveable
+public interface ILoad<out T> : ILoad where T : class
 {
-    public Storage.Storage Load(string path);
-    public Storage.Storage Load(string path, string name);
-}
-
-public interface ILoadableString : ILoadable
-{
-    public Storage.Storage Load(string str, bool fromFile);
-}
-
-public interface IBinaryLoadable : ILoadable
-{
-    public IBinaryLoadable StringLoad(string str);
-    public NamedType? BinarySave(string path);
-    public IBinaryLoadable BinaryLoad(string path);
+    public new T Load(string str);
 }
 
 public class NamedType
