@@ -1,5 +1,7 @@
 ﻿using System.CommandLine;
+using System.IO.Compression;
 using System.Reflection;
+using System.Text;
 using YamlDotNet.Core.Events;
 using YamlDotNet.Core;
 using YamlDotNet.Serialization;
@@ -10,75 +12,29 @@ namespace DeepDungeonDexConsole
     {
         public static void Main(string[] args)
         {
-            var str = new HttpClient().GetStringAsync("https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data/Job.yml").Result;
-            var dict = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build().Deserialize<Dictionary<uint, Weakness>>(str);
-
-            foreach (var (_key, _weakness) in dict)
-            {
-                Console.WriteLine($"{_key} - {_weakness}");
-            }
-            
-            //var input = new Option<FileInfo?>(new[] { "--input", "-i" }, "The file to process.");
-            //var names = new Option<FileInfo?>(new[] { "--names", "-n" }, "The names file to use.");
-            //var type = new Option<string?>(new[] { "--type", "-t" }, "The type operation to use.");
-            //var verbose = new Option<bool>(new[] { "--verbose", "-v" }, "Enable verbose logging.");
-            //var rootCommand = new RootCommand("Deep Dungeon Dex Console Tool");
-            //rootCommand.AddOption(input);
-            //rootCommand.AddOption(names);
-            //rootCommand.AddOption(type);
-            //rootCommand.AddOption(verbose);
-            //rootCommand.SetHandler(RunCommand, input, names, type, verbose);
-            //rootCommand.Invoke(args);
+            var program = new Program();
+            program.CompressDataFiles();
         }
 
-        private static void RunCommand(FileInfo? input, FileInfo? names, string? type, bool verbose)
+        public void CompressDataFiles()
         {
-            if (input == null || names == null || type == null || type.Length == 0 || type is not ("id" or "name"))
+            var dataPath = @"D:\source\repos\DeepDungeonDexData";
+            var path = @"D:\source\repos\DeepDungeonDex\DeepDungeonDex\data.dat";
+            if(File.Exists(path))
+                File.Delete(path);
+            var stream = new FileStream(path, FileMode.Create);
+            var archive = new ZipArchive(stream, ZipArchiveMode.Create, true, Encoding.UTF8);
+            var files = Directory.GetFiles(dataPath, "*", SearchOption.AllDirectories);
+            foreach (var file in files)
             {
-                Console.WriteLine("You must specify both an input and names file.");
-                return;
+                var entryName = file.Replace(dataPath, "")[1..];
+                if(entryName == "crowdin.yml" || entryName.StartsWith('.'))
+                    continue;
+                var entry = archive.CreateEntryFromFile(file, entryName, CompressionLevel.Optimal);
+                Console.WriteLine($"Compressed {file} to data.dat({entry.FullName})");
             }
-            Console.WriteLine($"Input: {input.FullName}");
-            Console.WriteLine($"Names: {names.FullName}");
-            var bnpcsv = File.ReadAllLines(names.FullName);
-            var bnpc = bnpcsv
-                .Skip(3)
-                .Select(line => line.Split(','))
-                .ToDictionary(split => int.Parse(split[0]), split => split[1]);
-            var lines = File.ReadAllLines(input.FullName);
-            switch (type)
-            {
-                case "id":
-                    for (var i = 0; i < lines.Length; i++)
-                    {
-                        if (lines[i].StartsWith("#")) continue;
-                        var line = lines[i];
-                        var start = line.Split(':')[0];
-                        if (verbose && !start.StartsWith(" ")) Console.WriteLine($"{i}:\n{line}\n{start}");
-                        if (start.StartsWith(" ") || !int.TryParse(start.Trim(), out var j)) continue;
-                        var name = bnpc[j][1..^1];
-                        start += "-" + name + ":" + line.Split(':')[1];
-                        if (verbose) Console.WriteLine(start);
-                        lines[i] = start;
-                    }
-
-                    break;
-                case "name":
-                    for (var i = 0; i < lines.Length; i++)
-                    {
-                        if (lines[i].StartsWith("#")) continue;
-                        var line = lines[i];
-                        var start = line.Split(':')[0];
-                        if (verbose && !start.StartsWith(" ")) Console.WriteLine($"{i}:\n{line}\n{start}");
-                        if (start.StartsWith(" ") || bnpc.TryGetKey(start.Trim(), out var k) || k == 0) continue;
-                        start = k + "-" + start.Trim() + ":";
-                        if (verbose) Console.WriteLine(start);
-                        lines[i] = start;
-                    }
-                    break;
-            }
-
-            File.WriteAllLines(input.FullName, lines);
+            archive.Dispose();
+            stream.Dispose();
         }
     }
 

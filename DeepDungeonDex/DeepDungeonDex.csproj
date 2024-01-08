@@ -16,9 +16,10 @@
 		<DalamudLibPath Condition="$(DALAMUD_HOME) != ''">$(DALAMUD_HOME)/</DalamudLibPath>
 	</PropertyGroup>
 
-	<Import Project="$(DalamudLibPath)/targets/Dalamud.Plugin.targets"/>
+	<Import Project="$(DalamudLibPath)/targets/Dalamud.Plugin.targets" />
 
 	<ItemGroup>
+		<None Remove="data.dat" />
 		<None Remove="UnknownDebuf.png" />
 	</ItemGroup>
 
@@ -37,5 +38,13 @@
 			<Private>false</Private>
 		</PackageReference>
 	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="data.dat" />
+	</ItemGroup>
+
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+	  <Exec Command="dotnet run --project $(ProjectDir)..\DeepDungeonDexConsole\DeepDungeonDexConsole.csproj" />
+	</Target>
 
 </Project>
