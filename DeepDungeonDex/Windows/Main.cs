@@ -188,7 +188,7 @@ public partial class Main : Window, IDisposable
 
     public void DrawUnknownContent()
     {
-        ImGui.TextUnformatted($"Got {_currentMob.Id} with {_currentMob.InstanceContentType}");
+        ImGui.TextUnformatted(string.Format(_locale.GetLocale("UnknownContent"), _currentMob.Name, _currentMob.Id));
         ImGui.TextUnformatted(_locale.GetLocale("UnknownContent"));
     }
 
