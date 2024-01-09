@@ -1,33 +1,26 @@
 Vulns: Vulnérabilités
-Vicious: Vicieux
 Undefined: Non-défini
-Undead: Mort-vivant
 Threat: Menace
-Thanks: 'Merci au serveur Discord : "Deep Dungeons" pour beaucoup de ressources communautaires. Merci à tous ceux qui ont pris le temps de rapporter des données incorrectes ou manquantes ! Des applaudissements à Maygi pour écrire les meilleurs guides du Donjon sans fond !'
-Stun: Étourdissement
-Sound: Son
-Slow: Lenteur
-Sleep: Sommeil
-Sight: Vue
-Save: Sauvegarder
-Proximity: Proximité
-Opacity: Opacité
-Notes: Notes
-NoDataFound: Aucune donnée trouvée pour {0} ({1})
-Name: "Nom\nAttention : Cette fenêtre est maintenant obsolète et sera supprimée dans une \nfuture mise à jour. Merci de vous habituer au nouveau look avant 6.35."
-IsClickthrough: Activer le clique à travers
-HideRedVulns: Cacher les vulnérabilités qui ne peuvent être infligées
-HideBasedOnJob: Masquer les vulnérabilités selon votre classe/job actuel·le
-Heavy: Pesanteur
-FontSize: Taille de la police
+Vicious: Vicieux
 Easy: Facile
 Dangerous: Danger
 Caution: Prudence
-Boss: Boss
-Bind: Entrave
 AggroType: Type d'aggro
+Boss: Boss
+Sound: Son
+Sight: Vue
+Proximity: Proximité
+Bloodlust: Soif de sang
+Magic: Magie
+Thanks: 'Merci au serveur Discord : "Deep Dungeons" pour beaucoup de ressources communautaires. Merci à tous ceux qui ont pris le temps de rapporter des données incorrectes ou manquantes ! Des applaudissements à Maygi pour écrire les meilleurs guides du Donjon sans fond !'
+Save: Sauvegarder
+Opacity: Opacité
+Notes: Notes
+NoDataFound: Aucune donnée trouvée pour {0} ({1})
+IsClickthrough: Activer le clique à travers
+FontSize: Taille de la police
 ShowId: Montrer les informations de débug
-Legacy: Utiliser l'ancienne fenêtre pour les données des monstres
 LoadAllFont: Charger toutes les polices (Peut accélérer le chargement lors du changement de langue)
 LoadAllFontWarning: Cette action chargera 30 Mo de polices en mémoire et provoquera du lag et une plus grande utilisation de la mémoire sur les systèmes plus faibles.
-HideFloorGuide: Stop showing the floor guide when entering a new floor
+HideFloorGuide: Arrêter d'afficher le guide des planchers lorsque vous entrez dans un nouvel étage
+UnknownContent: Contenu inconnu non affiché pour {0}({1})

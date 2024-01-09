@@ -3,67 +3,67 @@
   释放直线跟踪型秒杀级AOE，须隔墙躲避（不穿无敌）；
   不吃晕
 12174: |
-  PB and Targeted circle AOEs can be stunned.
+  PB和目标圆形AOE可以发育不良。
 12180: |
-  Explodes after dying, will not explode if petrified when killed.
+  死后爆炸，如果杀死时不会爆炸。
 12183: |
-  Casts Gelid Charge, Ice Spikes buff will one shot if hit with physical damage
+  Casts Gelid Charge, Ice Spikes buff将被击中后会被击中一颗。
 12171: |
-  Telegraphed front conal AOE
+  Telegraphed frontal conal AOE
 12178: |
-  Gives stacking vuln stacks, be careful not to pull too many.
+  给我们堆栈，小心不要拉得太多。
 12176: |
-  Will give a Heavy debuff followed by Tail Screw AOE. Heavy can be negated through shielding.
+  将提供重型调试，然后是尾指螺丝雷。重型可以通过屏蔽来取消。
 12318: |
-  Flush PB AOE
+  刷新PB AOE
 12181: |
-  Will cast 1000 Spines, PB AOE
+  将投射1000个螺纹，PB AOE
 12172: |
-  Pulls in with Sucker then PB AOE, knockback resist or walk away immediately after pull in.
+  用Sucker 拉进后PB AOE，击退后立即反抗或走去。
 12179: |
-  "Sewer Water" -- Half circle cleave followed immediately by other half. Must move immediately after telegraph disappears.
+  “下水道”——半圆圈隔开，然后紧随其他一半。必须在电报消失后立即移动。
 12177: |
-  Useless. Really useless.
+  没用。真的没用了。
 12173: |
   Jumps to player and does half room knockback to everyone not targeted.
   "Electric Whorl" -- Doughnut
   "Expulsion" -- PB AOE
 12175: |
-  Crab Dribble fast cast rear conal AOE triggered by being behind. Can be outranged.
+  后面触发的 Crab Dribbble 快速投影后方形AOE。可以外围。
 #EO boss floor 60
 12267: |
-  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN.
-  "Disorienting Groan" -- Knockback, be centered in arena or use knockback resist during cast.
-  "Bullish Swipe" -- Frontal cleave.
-  "Bullish Swing" -- Large PB AOE.
-  "Thundercall" -- Summons blue orbs followed by Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
+  "Octuple Swipe" -- 8 teligs, or nSEW two or NSEW then WESN
+  "Disorating Groan" -- Knockback, 中心在舞台上或在投影时使用击退抗体。
+  "Bullish Swipe" -- 前线清除.
+  "Bullish Swing" -- 大型PB AOE.
+  "Thundercall" -- Summons Blue orbs followed by Octuple Shipe Telegrape 雷管将在小的PB AOE内引爆，并进行第一次滑动清理。
 #EO floors 61-69
 12184: |
-  Inflicts fast stacking poison debuff, do not pull too many at once.
+  引发快速堆积毒物堆积，同时不会拉得太多。
 12191: |
-  Has telegraphed front conal and PB AOE.
+  有电报前台和 PB AOE。
 12189: |
-  AOE will give evasion to other enemies it hits, try to kill away from other enemies.
+  AOE会让它所击中的其他敌人逃避，试图远离其他敌人。
 12187: |
-  Has a telegraphed narrow front conal AOE.
+  有一个电报狭窄的面孔AOE。
 12186: |
-  Fast untelegraphed conal back cleave if player is behind, PB AOE on death with a short duration vuln stack.
+  如果玩家落后，快速无电绘制回形状的锥形回清理，PB AOE死亡时短暂地堆栈。
 12185: |
-  "Smouldering Scales" -- buff that will 1 shot if hit by physical damage
+  "涂料缩放" -- 如果被物理伤害击中将会有一发的bouff
 12194: |
-  Untelegraphed Claw/Tail swipe swipe conal AOE. Watch animation carefully.
+  未电报的 Claw/Tail 滑动滑动曲线。仔细监视动画。
 12195: |
-  Assassinates if below 20% HP
+  如果暗杀剂低于20%HP
 12190: |
-  Front conal gaze attack and PB AOE.
+  锥形眼镜头攻击和 PB AOE。
 12196: |
-  Untelegraphed knockback PB AOE, caution when pulling with certain enemies.
+  未以电传方式击退PB AOE，在与某些敌人拉电时要谨慎。
 12188: |
-  Telegraphed targeted AOE
+  Telegramed targeted AOE
 12193: |
-  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range. Can be ranged pulled.
+  当玩家不在近战范围内时将投射“电时”（多努特AOE），可以被拉伸。
 12192: |
-  Instant pull in followed by fast cast PB AOE "Body Press." Pay attention for pull in sound/animation.
+  即时拉进，随后是快速投射PB AOE "Body Press." 注意声音/动画中的拉入。
 #EO floor 70
 12246: |
   "Steel Claw" -- tankbuster, sort of.
@@ -73,7 +73,7 @@
   "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
 #EO floors 71-79
 12197: |
-  "Slowcall" -- late telegraph front conal, gives a very bad slow effect
+  "慢速调用" — — 晚电报前台会产生非常不好的缓慢效果
 12199: |
   Triple targeted knockbacks, wedge yourself into a corner if possible.
   "Innocence" -- targeted circle AOE
@@ -82,30 +82,30 @@
   注意击晕或减速后，依然会释放第二次；
   吃晕
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction.
-  Moving side to side will allow you to easily tell when Scythe Tail is casting.
+  "Spark" -- 未用电报刻录的
+  "Scythe Tail" -- 没有投影条 PB AOE, 它将滚动并停止自动攻击或改变方向。
+  移动到旁边将使您能够轻松地告诉Scythe Tail是何时投射的。
 12201: |
-  Gives a mild bleed debuff and buffs itself after a short period.
+  短时间后给自己一个轻微的调试和浮标。
 12209: |
-  "Freefall" -- randomly targetd medium circle AOE
-  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
+  "空闲" -- 随机瞄准中间圆形AOE
+  "冬季风" -- 两个空闲后大型AOE，必须是LoS 或 sten
 12208: |
-  "Blistering Roar" -- Wide line AOE, can not be LOSed, MUST MOVE BEHIND.
+  "Blistering Roar" -- 宽线AOE, 不能丢失，MUST MOVE BEHIND。
 12204: |
   Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
   DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
 12205: |
-  Assassinates player if below 20% HP
+  如果玩家低于20%HP
 12198: |
   "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
   "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
 12206: |
-  "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
-  "Revelation" -- untelegraphed AOE cast on Confused players
+  “火焰之眼”-- 360度迷宫机械，引起迷惑
+  “揭露”-- 未以电报形式投射受困玩家。
 12200: |
-  "Wide Blaster" -- Huge wide frontal cone targeted at random player
-  "Tail Swing" -- Huge rear cone if player is behind
+  "宽闪电" — — 瞄准随机播放器
+  "尾掉" — 如果玩家落在后面的巨型后圆锥。
 12203: |
   "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
   "Stool Pelt" -- randomly targetd circle AOE
@@ -125,9 +125,9 @@
 12212: |
   PB Gaze AOE
 12217: |
-  "Glass Punch" -- Late telegraphed Conal AOE
+  "Glass Punch" -- 迟交的电报电报Conal AOE
 12218: |
-  Room wide Gaze both out and in combat
+  全天候外出和战斗中的房间
 12214: |
 
 12161: |
@@ -143,11 +143,11 @@
 12211: |
 
 12220: |
-  Room wide AOE applies "Terror"
+  整个空间应用“恐怖主义”
 12221: |
 
 12216: |
-  "Bustering Blink" -- Wide line AOE, can not be line of sighted.
+  "Busing Blink" -- 宽线AOE, 不能视为视线。
 12219: |
 
 #EO boss floor 90
@@ -155,23 +155,23 @@
 
 #EO floors 91-98
 12223: |
-  Large PB AOE when killed
+  杀死大型PB AOE
 12224: |
 
 12225: |
-  270 degree frontal cleave
+  270 度正面净化
 12226: |
 
 12227: |
 
 12228: |
-  Conal Gaze
+  康勒格尔
 12229: |
 
 12230: |
 
 12231: |
-  4 knockback dashes into a large frontal cleave
+  4 击退灰石进入一个大的前面净化
 12232: |
 
 12233: |

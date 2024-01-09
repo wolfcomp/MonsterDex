@@ -1,33 +1,26 @@
 Vulns: 被ダメージ上昇
-Vicious: 要注意
 Undefined: 未設定
-Undead: アンデッド
 Threat: 危険度
-Thanks: Deep Dungeons Discord サーバーに多くのコミュニティリソースを提供していただき、ありがとうございました。間違ったデータや不足しているデータを報告するために時間を割いてくれた皆さんに感謝します！最高のディープダンジョンガイドを書いたMaygiに特別な賞賛を送ります！
-Stun: スタン
-Sound: 聴覚
-Slow: スロウ
-Sleep: 睡眠
-Sight: 視覚
-Save: 保存
-Proximity: 接近
-Opacity: 不透明度
-Notes: 備考
-NoDataFound: '{0} のデータが見つかりません({1})'
-Name: "Name\nWarning: This window is now deprecated and will be removed in a \nfuture update. Please get used to the new look before 6.35."
-IsClickthrough: クリックスルーを有効にする
-HideRedVulns: 与えられないデバフを非表示にする
-HideBasedOnJob: 現在のクラス/ジョブに基づいて与えられないデバフを非表示
-Heavy: ヘヴィ
-FontSize: フォントサイズ
+Vicious: 要注意
 Easy: 簡単
 Dangerous: 危険
 Caution: 注意
-Boss: ボス
-Bind: バインド
 AggroType: 感知タイプ
+Boss: ボス
+Sound: 聴覚
+Sight: 視覚
+Proximity: 接近
+Bloodlust: 血の渇き
+Magic: Magic
+Thanks: Deep Dungeons Discord サーバーに多くのコミュニティリソースを提供していただき、ありがとうございました。間違ったデータや不足しているデータを報告するために時間を割いてくれた皆さんに感謝します！最高のディープダンジョンガイドを書いたMaygiに特別な賞賛を送ります！
+Save: 保存
+Opacity: 不透明度
+Notes: 備考
+NoDataFound: '{0} のデータが見つかりません({1})'
+IsClickthrough: クリックスルーを有効にする
+FontSize: フォントサイズ
 ShowId: デバッグ情報を表示
-Legacy: Mob情報表示を、旧スタイルに変更する
 LoadAllFont: すべてのフォントを読み込む(言語変更時、読み込み速度が改善します)
 LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\n端末のスペックによっては、遅延やフリーズが発生する可能性があります"
-HideFloorGuide: Stop showing the floor guide when entering a new floor
+HideFloorGuide: 新しいフロアに入るときにフロアガイドの表示を停止する
+UnknownContent: 不明なコンテンツは、 {0}({1}) で使用できません。

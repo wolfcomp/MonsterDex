@@ -1,55 +1,55 @@
 12109: |
-  Casts Ecliptic Meteor at 40%, can LoS
-12110: Casts untelegraphed PB AoE
-12116: Casts disease
+  黄道流星を40%でキャストします。LoSを使用できます。
+12110: 非電信PBAoEをキャストします
+12116: キャスト疾患
 12132: |
-  Casts Self-detonate at 30%, can LoS
+  30%で自己爆発キャスト、LoS可能
 12240: |
-  Steel recommended for solo
+  ソロに推奨する木材
 12133: |
-  Late telegraphed draw-in into AoE
-  KB immunity works
-12141: Casts roomwide vuln stacking AoE unaggroed
+  AoE
+  KB 免疫作用にドローイン後期電信化されます。
+12141: AoEを手に入れられていない部屋全体をキャストします。
 12242: |
   1) "Dark Wyrmtail" -- cleaves middle
-  2) "Dark Wyrmwing" -- cleaves sides
-  3) "Whei Morn" -- multiple baited AoEs
+  2) "Dark Wyrmwing" -- cleaves side
+  3) "Whei Morn" -- 複数のベイトされたAoEs
 12149: |
-  Casts inflicts Stun
+  Stun を与えるキャスト。
 12146: PB AoE
 12154: |
-  Buffs enemies with double damage
-12147: Casts Haste
+  ダメージが2倍になる敵をバフする
+12147: キャストヘイスト
 12150: |
   "100 Tonze Swing" -- PB AoE
-  "11 Tonze Swipe" -- Close Conal AoE
+  "11 Tonze Swipe" -- Conal AoE
 12148: |
   "Forearming" -- Half Circle AoE
   "Atmospheric Displacement" -- PB AoE
 12152: |
-  "The Dragon's Voice" - doughnut
-  "The Ram's Voice" - PB AoE
+  「ドラゴンの声」 - ドーナツ
+  「ラムの声」 - PB AoE
 12156: |
-  "Nothing personal kid"
+  "個人の子供はありません"
 12263: |
   1) "Twister" -- Move away from twister bait
   2) "Twisting Dive" -- Cleave down middle with twister bait
   3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
-12160: Quick behind cleave
-12169: Casts stacking slow
-12159: Casts Haste
+12160: 切り抜きの背後に速いです
+12169: スローキャストスタッキング
+12159: キャストヘイスト
 12166: |
-  Casts roomwide aoe, interruptable
+  キャストルームワイドエアー、割り込み可能
 12162: |
-  PB AoE after dash, can LoS
+  ダッシュ後のPB AoE, can LoS
 12168: |
-  Fast untelegraphed conal after suck in
+  吸った後の高速非電信コナ
 12158: |
-  Casts Explosion at 30%, can LoS
+  30%で爆発をキャストできます。
 12164: |
-  "Abyssal Cry" - Large AoE that stuns, can LoS
-12170: Applies potent heavy
-12163: Casts roomwide vuln stacking AoE unaggroed
+  「アビサルクライ」 - スタントできる大きなAoE、LoSができます
+12170: 強力なヘビーを適用する
+12163: AoEを手に入れられていない部屋全体をキャストします。
 12265: |
   1) "Song of Thunder and Ice" -- doughnut then PB AoE
   2) "Song of Ice and Thunder" -- PB AoE then doughnut

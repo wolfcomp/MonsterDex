@@ -1,81 +1,81 @@
-5479: Caster, break line of sight to evade auto-attacks
-4975: Casts Haste on itself
-4977: Absorbs health with each attack
-4979: AoE "Shriek" inflicts Stun
-4980: Inflicts Poison
-4981: Soft-enrage "Final Sting", break line of sight to evade
-4982: Inflicts Vulnerability Up
-4983: AoE "Slumber Breath" inflicts Sleep
-4985: Mini buster "Rhino Attack", break line of sight to evade
+5479: 赌场，切断视线以逃避自动攻击
+4975: 急速种子本身的
+4977: 每次攻击都吸收生命值
+4979: AoE "Shriek" 附着灵魂之力
+4980: 引发毒剂
+4981: Soft-enrage "终点静音", 故障视线以躲避。
+4982: 增强脆弱性
+4983: AoE "slumber Breath" 附着睡眠
+4985: 迷你破坏器"莱希诺攻击", 故障视线以逃避。
 4986: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AoE
-  3) "Bombination" - circular AoE on boss inflicts Slow
-  4) "Lumisphere" - targeted AoE on random player
-  5) "Aeroblast" - room wide AoE inflicts Windburn (15s DoT)
-4988: Inflicts Poison
+  1) "whippcrack" - light tankbuster
+  2) "风暴" - conal AoE
+  3) "轰炸" - 圆形AoE on boss poss slow
+  4) "Lumisphere" - 目标AoE on randing player
+  5) "Aeroslast" - 宽房间AoE 施加风暴(15s DoT)
+4988: 引发毒剂
 4989: |
-  "Sticky Tongue" draw-in a player, inflicting Stun if not facing the monster
-  "Labored Leap" AoE is immediately casted after, inflicts substantial damage
+  “粘性钟点”抽动玩家，如果不对付怪物
+  “破碎脱节”会立即投射，造成巨大伤害
 4990: |
   Can ENRAGE with "Rupture" and wipe the whole team if not killed in time
   Absorbs health with each attack
-4993: Casts instant Untelegraphed AoE which inflicts Slow
-4994: Inflicts Poison
+4993: 立刻取消电报的自动播放器会造成减速
+4994: 引发毒剂
 4995: |
-  "Bad Breath" AoE inflicts multiple debuffs if not evaded
+  “坏的呼吸”AoE会造成多个调试，如果不回避的话。
 4996: |
-  Caster, break line of sight to evade auto-attacks
-  Buffs own damage with "Golden Tongue"
+  Caster, 中断视线以逃避自动攻击
+  增益自身造成的伤害与 “金色宝藏”
 4997: |
-  INSTANTLY KILLS players inflicted with Toad using "Devour"
-  Gaze attack inflicts Petrify, do not target while casted to evade
+  使用 "Devour"
+  对玩家杀死土豆。投射时不要瞄准目标以躲避。
 4999: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AoEs and a room wide AoE
-  3) Summons two Palace Hornets that must be killed before they casts "Final Sting"
-  4) "Rotten Stench" - high damage line AoE
+  1) "血腥的洞穴" - 高伤害
+  2) 两次电传绘的 AoEs 和一间宽的AoE
+  3) 召唤两只王室龙，这些龙头龙头投射前必须杀死，然后投射“最终着场”
+  4) "Rotten Stench" - 高伤害线
 5001: |
   Casts "Smoldering Scales" applying "Blaze Spikes" to self.
   "Blaze Spikes" inflicts fire damage upon melee attacks.
-5003: Gaze attack inflicts Petrify, do not target while casted to evade
-5004: High auto-attack damage
+5003: Gaze attacks attacks petrify, 不能在投影时躲避投射。
+5004: 高自动攻击伤害
 5005: |
-  Caster, break line of sight to evade auto-attacks
-  Casts Haste on itself
-5006: Casts Physical Damage Up on itself
-5007: Can knockback player
-5010: Untelegraphed AoE "111-Tonze Swing" does moderate damage and knockback
+  赌场，切断视线以逃避自动攻击
+  种姓急速自身。
+5006: 连铸物理伤害
+5007: 可以击退玩家
+5010: 未电报的 AoE "111-Tonze Swing" 会造成中度伤害并击退伤害
 5011: |
-  "Chirp" inflicts Sleep for 15s
+  “芯片”造成睡眠效果持续15秒。
 5012: |
-  1) Spread out Fire and Ice AoEs on arena borders
-  2) After the fourth AoE, run to the center of the arena alongside the boss
-  2) Get inside boss's hit box before "Fear Itself" is casted, or it will inflict high damage and Terror
-5014: Inflicts Paralysis if caught in AoE
-5016: Inflicts Stun if caught in AoE
-5017: Caster, break line of sight to evade auto-attacks
+  1) 火焰和冰原散布在战场边界
+  2) 在第四次火灾之后。 跑到竞技场的中心, 并行的
+  2) 在投射前, 在“恐惧的自身”之前, 进入巨型的撞击框内, 或者它会造成严重伤害和恐惧。
+5014: 如果发现在酸奶中，会引发透析度
+5016: 如果在奥埃中被抓住，将会引入斯顿。
+5017: 赌场，切断视线以逃避自动攻击
 5019: |
-  Draws-in near players and then casts an AoE
-  Caster, break line of sight to evade auto-attacks
-5020: Caster, break line of sight to evade auto-attacks
+  拖动到玩家附近，然后投放AoE
+  Caster，中断视线以逃避自动攻击
+5020: 赌场，切断视线以逃避自动攻击
 5022: |
   Casts "Dark Mist" AoE, which inflicts Terror
   "Void Fire II" AoE is subsequently casted to inflict high damage to stunned players
-5023: Gaze attack inflicts Petrify
+5023: Gaze 攻击会造成双精度
 5025: |
-  1) Summons four lingering AoEs followed by AoEs which inflicts Disease
-  2) Summons two Nightmare Bhoots, they must be killed before the boss next attack
-  3) Casts "Scream", and adds will use "Tornado", a high damage AoE, if still alive
-  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use damage reduction skills before this attack
-5026: Ranged auto-attack, non interruptable
-5029: Casts Physical Damage Up on itself
-5030: Inflicts Paralysis
-5032: Inflicts Paralysis
-5036: Wide AoE which inflicts Terror
+  1) 召唤四个悬浮的奥埃斯，然后是奥埃斯，引起疾病
+  2) 召唤两只奈玛尔布特斯， 他们必须在下一次进攻
+  3号时被杀死， 并添加将使用"旋风式"，如果仍然活着
+  4) 种子“阴影闪光”全局大型AoE。 造成恐怖的恐惧——在这次攻击之前愈合或使用减少伤害的技能
+5026: 远程自动攻击，不能打断。
+5029: 连铸物理伤害
+5030: 引发透析性
+5032: 引发透析性
+5036: 可造成恐怖的广大AoE
 5037: |
-  High physical damage
-  "Nail in the Coffin" does a lot of damage
+  高物理伤害
+  "Coffin中的铁轨" 会造成大量伤害
 5038: |
   FOLLOW MECHANICS -- evade all AoEs and Gazes
   Failed mechanics will increase Black Honeymoon room AoE (3+ stacks is a near wipe)

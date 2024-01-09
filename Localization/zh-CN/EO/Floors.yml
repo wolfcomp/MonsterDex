@@ -5,19 +5,19 @@ EO1: |
   Pomanders of affluence, flight, and alteration do not drop on floor 9.
   Mimics spawn from bronze chests.
 EO11: |
-  Accursed Hoard drops Bronze-tinged Sacks.
-  Pomanders of affluence, flight, and alteration do not drop on floor 19.
-  Mimics spawn from bronze chests.
+  准确的Hoard 掉落了青铜刺刀。
+  富裕、飞行和改装的怪物不会掉落在底层19。
+  从青铜箱中生成。
 EO21: |
   Watch out for "Orthodemolishers'" AOE, "Lesser Orthos Dragons'" Swinge, and "Orthoknights'" Electromagnetism.
   Accursed Hoard drops Bronze-tinged Sacks.
   Pomanders of affluence, flight, and alteration do not drop on floor 29.
   Mimics spawn from bronze chests.
 EO31: |
-  The following sets of floors assume that every telegraph/attack is a one-shot.
-  Accursed Hoard drops Silver-tinged Sacks.
-  Pomanders of affluence, flight, and alteration do not drop on floor 39.
-  Mimics spawn from silver  chests.
+  以下几组楼层假定每次电报/攻击都是一次性的。
+  准确的Hoard 会掉落银色的萨克。
+  富裕、飞行和改装的浮动者不会落在39楼上。
+  Mimics 从银箱中生成。
 EO41: |
   Watch out for the patrols in this set.
   Accursed Hoard drops Silver-tinged Sacks.
@@ -38,9 +38,9 @@ EO71: |
   Accursed Hoard drops Gold-tinged Sacks.
   Mimics spawn from gold chests.
 EO81: |
-  Don't try to line of sight as there are no reasonable spots from this point onwards.
-  Accursed Hoard drops Gold-tinged Sacks.
-  Mimics spawns from gold chests.
+  不要试图看一下，因为从这一点起没有合理的位置。
+  准确的Hoard 掉落了金色陷阱。
+  Mimics 从金箱中生成。
 EO91: |
   在这里会生成几个带有大范围攻击的巡逻怪。
   要注意来自怪物“扎戈斧龙”的瞬间范围攻击，它的技能范围提示出现的较晚。

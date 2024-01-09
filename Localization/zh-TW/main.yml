@@ -1,33 +1,26 @@
 Vulns: Vulns
-Vicious: Vicious
 Undefined: Undefined
-Undead: Undead
 Threat: Threat
-Thanks: Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!
-Stun: Stun
-Sound: Sound
-Slow: Slow
-Sleep: Sleep
-Sight: Sight
-Save: Save
-Proximity: Proximity
-Opacity: Opacity
-Notes: Notes
-NoDataFound: No data found for {0} ({1})
-Name: "Name\nWarning: This window is now deprecated and will be removed in a \nfuture update. Please get used to the new look before 6.35."
-IsClickthrough: Enable clickthrough
-HideRedVulns: Hide vulnerabilities that can't be inflicted
-HideBasedOnJob: Hide vulnerabilities based on current class/job
-Heavy: Heavy
-FontSize: Font Size
+Vicious: Vicious
 Easy: Easy
 Dangerous: Dangerous
 Caution: Caution
-Boss: Boss
-Bind: Bind
 AggroType: Aggro Type
+Boss: Boss
+Sound: Sound
+Sight: Sight
+Proximity: Proximity
+Bloodlust: Bloodlust
+Magic: Magic
+Thanks: Thanks to the Deep Dungeons Discord server for a lot of community resources. Thanks to everyone who's taken the time to report incorrect or missing data! Special shoutouts to Maygi for writing the best Deep Dungeon guides out there!
+Save: Save
+Opacity: Opacity
+Notes: Notes
+NoDataFound: No data found for {0} ({1})
+IsClickthrough: Enable clickthrough
+FontSize: Font Size
 ShowId: Show debug information
-Legacy: Use Legacy Window for mob data
 LoadAllFont: Load all font faces (Can speed up load when changing languages)
 LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
 HideFloorGuide: Stop showing the floor guide when entering a new floor
+UnknownContent: Unknown Content no display available for {0}({1})

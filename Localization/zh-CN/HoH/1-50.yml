@@ -1,26 +1,26 @@
-7326: Eventual ENRAGE
+7326: 最终环境
 7324: 超宽直线AoE
 7323: |
-  Green: Casts AoEs unaggroed
+  绿色: 种姓AoEs 未被Aggroed
 7321: 读条释放可见范围的扇形Aoe
 7320: |
   读条一仇单体伤害\n读条释放可见范围的圆形Aoe
 7319: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
 7318: |
-  Large line AoE
-  Eventual ENRAGE
+  大行
+  终极色度
 7314: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
 7313: 形变背对\n平A为扇形攻击
 7312: 无读条对前方发动不可见范围的连续扇形Aoe（看到抬起爪子远离正面）
 7311: |
-  Line AoE inflicts Bleed
-  Low health ENRAGE
+  直线AoE会造成低生命值的
+  低生命值
 7310: 读条可见范围的超大范围圆形Aoe
 7308: 读条释放需要分摊的中等伤害Aoe
 7306: 对一仇无读条释放单体伤害
 7305: |
-  Line AoE inflicts Bleed
-  Low health ENRAGE
+  直线AoE会造成低生命值的
+  低生命值
 7304: 低血量时，读条全屏范围的超高伤害的自爆技能“切腹”
 7303: |
   Double auto inflicts Bleed
@@ -35,8 +35,8 @@
 7292: 读条对前方释放不可见范围的击退扇形Aoe\n读条点名一人释放单体大伤害攻击
 7291: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
 7290: |
-  Casts AoEs with knockback unaggroed
-  Line AoE inflicts Bleed
+  击退
+  直线自动投射会造成捆绑效果
 7289: 读条回血技能，可打断
 7288: 读条对一仇单体伤害+背对
 7286: 无读条对一仇释放大扇形Aoe
