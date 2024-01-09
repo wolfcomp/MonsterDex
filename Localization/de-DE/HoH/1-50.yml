@@ -10,14 +10,14 @@
   Große Linie AoE
   Eventueller Enrage
 7314: Zaubert AoEs ohne Aggro
-7313: Gaze inflicts Otter
-7312: Frontal cleave without cast or telegraph
+7313: Blick fügt Otter zu
+7312: Frontalklemme ohne Cast- oder Telegraphen
 7311: |
   Linien AoE verursacht Blutung
   Enrage bei niedriger Gesundheit
 7310: Extrem große AoE
-7308: Weak stack attack
-7306: Cleaves every other auto
+7308: Schwacher Stapelangriff
+7306: Leicht alle anderen Auto
 7305: |
   Linien AoE verursacht Blutung
   Enrage bei niedriger Gesundheit
@@ -30,29 +30,29 @@
 7299: Große AoE verursacht Lähmung
 7298: Kreuz AoE verursacht Eiterung
 7297: Linien AoE verursacht Blutung
-7296: Gaze
-7295: Draw-in followed by cleave
-7292: Untelegraphed conal AoE with knockback, buster
+7296: Schau
+7295: Draw-in gefolgt von Spalten
+7292: Nicht telegrafiertes Konal AoE mit Knockback, Buster
 7291: Erhöht eigenen Schaden
 7290: |
   Zaubert AoEs mit Knockback ohne Aggro
   Linien AoE verursacht Blutung
 7289: Heilt sich selbst und Verbündete
-7288: Gaze inflicts Blind
+7288: Blick fügt Blind zu
 7286: Raumweite Enrage
-7285: Buster and triple auto
-7281: Gaze inflicts Seduce, followed by large AoE that inflicts Minimum
-7279: Lite buster "Scissor Run" followed by AoE
-7273: Untelegraphed buster inflicts Bleed and knockback
+7285: Buster und Triple Auto
+7281: Die Aussicht verursacht Nebeneffekte, gefolgt von einem großen AoE, das Minimum verursacht
+7279: Lite-Buster "Scissor Run" gefolgt von AoE
+7273: Nicht telegrafierter Buster verursacht Blutung und Rückstoß
 7272: Unvermeidbarer Tankbuster wie "Kiefer"
 7271: |
-  Conal AoE inflicts Bleed
-  Circle AoE inflicts knockback
+  Conal AoE verursacht Blutung
+  Kreis-AoE Rückschlag
 7270: AoE verursacht Rückstoß
-7268: Gaze
+7268: Schau
 7267: AoE verursacht Blutung
-7266: Untelegraphed Sleep followed by AoE
-7265: Triple auto inflicts Bleed
+7266: Nicht telegrafischer Schlaf, gefolgt von AoE
+7265: Dreifach automatisch blutt
 7264: AoE fügt Paralyse zu
-7263: Auto applies Physical Vuln Up every 10s
-7262: Auto inflicts Heavy debuff
+7263: Automatisch alle 10 Sekunden körperlichen Vuln auftragen
+7262: Automatisch verursacht schwere Schwächung
