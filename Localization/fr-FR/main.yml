@@ -23,4 +23,4 @@ ShowId: Montrer les informations de débug
 LoadAllFont: Charger toutes les polices (Peut accélérer le chargement lors du changement de langue)
 LoadAllFontWarning: Cette action chargera 30 Mo de polices en mémoire et provoquera du lag et une plus grande utilisation de la mémoire sur les systèmes plus faibles.
 HideFloorGuide: Stop showing the floor guide when entering a new floor
-UnknownContent: Unknown Content no display available
+UnknownContent: Unknown Content no display available for {0}({1})
