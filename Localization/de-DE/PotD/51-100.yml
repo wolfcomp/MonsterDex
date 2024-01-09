@@ -1,18 +1,18 @@
-5356: Summons adds and does large targeted AoEs -- adds are vulnerable to Pomander of Resolution's attacks
+5356: Beschwören fügt dem Ziel Aoes hinzu - zusätzlich sind Angriffe von Pomander der Auflösung verwundbar
 5345: |
   Casts large AoEs
   Summons "Grey Bomb" - must be killed before it does high room wide damage
   Begins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast
-5334: Casts wide "Self Destruct" if not killed in time
+5334: Wirkt weite "Selbstzerstörung" wenn nicht rechtzeitig getötet wird
 5333: |
-  "Charybdis" -- lingering ground tornadoes that cause high damage if sucked into
-  Boss will run to edge of arena and cast "Trounce" - wide conal AoE
-  At 17%% casts "Ecliptic Meteor" - HIGH DAMAGE room wide with long cast that deals 80%% of total health damage
+  "Charybdis" -- anhaltende Tornados, die hohen Schaden verursachen, wenn in
+  Boss gesaugt wird, wird an den Rand der Arena laufen und "Trounce" wirken - breite Konale AoE
+  Bei 17%% wirkt "Ecliptic Meteor" - HOCHSCHÄDEN mit langem Wirken und verursacht 80%% des totalen Gesundheitsschadens.
 5321: |
   "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
   Occasionally casts targeted ground AoEs
 5309: |
-  Drops large puddle AoEs that inflict Bleed if stood in
-  "Valfodr" -- targeted unavoidable line AoE centered on player that causes strong knockback, avoid AoEs surrounding outer edge
-5308: Gaze inflicts Blind and does high damage
-5299: Gaze inflicts Paralysis
+  Droppt große Puddelaoes, die Blutungen verursachen, wenn sie in
+  "Valfodr" stehen -- zielgerichtete unausweichliche Linie AoE zentriert auf Spieler, die starken Rückschlag verursacht. vermeide Aoes um äußeren Rand
+5308: Gaze fügt Blind zu und verursacht hohen Schaden
+5299: Gaze verursacht Lähmung
