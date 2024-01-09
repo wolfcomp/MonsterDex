@@ -10,8 +10,8 @@ Boss: Boss
 Sound: 声音
 Sight: 视野感知
 Proximity: 范围感知
-Bloodlust: Bloodlust
-Magic: Magic
+Bloodlust: 鲜血粉剂
+Magic: 魔法
 Thanks: 感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！
 Save: 保存
 Opacity: 不透明度
@@ -22,5 +22,5 @@ FontSize: 字体大小
 ShowId: 显示调试信息
 LoadAllFont: 加载所有字体 (在改变语言时可以加速加载)
 LoadAllFontWarning: 这将在内存中加载30MB的字体，在较弱的系统上会导致卡顿和较高的内存使用率，请注意。
-HideFloorGuide: Stop showing the floor guide when entering a new floor
-UnknownContent: Unknown Content no display available for {0}({1})
+HideFloorGuide: 进入新楼面时停止显示地板指南
+UnknownContent: 未知内容无法显示为 {0}({1})
