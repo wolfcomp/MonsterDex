@@ -13,7 +13,6 @@ internal class Font : IDisposable
     private readonly IPluginLog _log;
     private ImFontConfigPtr _fontCfg;
     private ImFontConfigPtr _fontCfgMerge;
-    private (GCHandle, int) _gameSymFont;
     private GCHandle _ranges;
     private GCHandle _jpRanges;
     private GCHandle _krRanges;
@@ -42,15 +41,6 @@ internal class Font : IDisposable
         SetUpFonts();
         _fontCfg = new ImFontConfigPtr(ImGuiNative.ImFontConfig_ImFontConfig()) { FontDataOwnedByAtlas = false };
         _fontCfgMerge = new ImFontConfigPtr(ImGuiNative.ImFontConfig_ImFontConfig()) { FontDataOwnedByAtlas = false, MergeMode = true };
-        var gameSym = new HttpClient().GetAsync("https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.ttf")
-            .Result
-            .Content
-            .ReadAsByteArrayAsync()
-            .Result;
-        _gameSymFont = (
-            GCHandle.Alloc(gameSym, GCHandleType.Pinned),
-            gameSym.Length
-        );
     }
 
     public byte[] GetResource(string path)
@@ -162,12 +152,11 @@ internal class Font : IDisposable
             AddFont(_tcFont, scale, _fontCfgMerge, _tcRanges);
         if (config.Locale == 6 || config.LoadAll)
             AddFont(_krFont, scale, _fontCfgMerge, _krRanges);
-        AddFont(_gameSymFont, scale, _fontCfgMerge, _symRange);
     }
 
     public unsafe void Dispose()
     {
-        FreeFonts(_regularFont, _jpFont, _krFont, _scFont, _tcFont, _gameSymFont);
+        FreeFonts(_regularFont, _jpFont, _krFont, _scFont, _tcFont);
         FreeGcHandles(_symRange, _ranges, _jpRanges, _krRanges, _tcRanges, _scRanges);
 
         if (_fontCfg.NativePtr != null)
