@@ -1,5 +1,6 @@
 # HoH floors 1-9
 7262-heavenly naked yumemi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -9,6 +10,7 @@
     - Bind
     - Slow
 7263-heavenly mutsu:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -18,6 +20,7 @@
     - Bind
     - Slow
 7264-heavenly bombfish:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -26,6 +29,7 @@
     - Sleep
     - Slow
 7265-heavenly onryo:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
@@ -34,6 +38,7 @@
     - Sleep
     - Slow
 7266-heavenly coralshell:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -43,12 +48,14 @@
     - Bind
     - Slow
 7267-heavenly gyuki:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Sleep
     - Slow
 7268-heavenly uwabami:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -58,6 +65,7 @@
     - Bind
     - Slow
 7269-heavenly kraken:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -65,6 +73,7 @@
     - Heavy
     - Slow
 7270-heavenly ango:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -73,6 +82,7 @@
     - Sleep
     - Slow
 7271-heavenly matamata:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -82,6 +92,7 @@
     - Bind
     - Slow
 7272-heavenly shark:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
@@ -90,6 +101,7 @@
     - Sleep
     - Slow
 7273-heavenly Amikiri:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -97,6 +109,7 @@
     - Sleep
     - Slow
 7274-heavenly yumemi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -106,6 +119,7 @@
     - Slow
 # HoH floors 11-19
 7275-heavenly korpokkur:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -115,6 +129,7 @@
     - Bind
     - Slow
 7276-heavenly shizuku:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -122,6 +137,7 @@
     - Heavy
     - Slow
 7277-heavenly shiomushi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -130,6 +146,7 @@
     - Bind
     - Slow
 7278-heavenly hakagiri:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -139,6 +156,7 @@
     - Bind
     - Slow
 7279-heavenly unkiu:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -148,6 +166,7 @@
     - Bind
     - Slow
 7280-heavenly apa:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -155,6 +174,7 @@
     - Heavy
     - Slow
 7281-heavenly otokage:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -164,6 +184,7 @@
     - Bind
     - Slow
 7282-heavenly tatsunoko:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -172,18 +193,21 @@
     - Sleep
     - Slow
 7283-heavenly shioname:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7284-heavenly amagoi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Sleep
     - Slow
 7285-heavenly Namazu:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -193,12 +217,14 @@
     - Bind
     - Slow
 7286-heavenly hand:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7287-heavenly aomino:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -207,6 +233,7 @@
     - Slow
 # HoH floors 21-29
 7288-heavenly onibi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -214,6 +241,7 @@
     - Heavy
     - Slow
 7289-heavenly halgai:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -223,6 +251,7 @@
     - Bind
     - Slow
 7290-heavenly dhruva:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -230,6 +259,7 @@
     - Heavy
     - Slow
 7291-heavenly sai taisui:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -239,6 +269,7 @@
     - Bind
     - Slow
 7292-heavenly hatamoto:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -247,6 +278,7 @@
     - Bind
     - Slow
 7293-heavenly tenaga:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -254,11 +286,13 @@
     - Bind
     - Slow
 7294-heavenly keukegen:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
 7295-heavenly yuki:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -267,6 +301,7 @@
     - Bind
     - Slow
 7296-heavenly tengu:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -274,6 +309,7 @@
     - Sleep
     - Slow
 7297-heavenly koja:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -282,6 +318,7 @@
     - Bind
     - Slow
 7298-heavenly katasharin:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -289,6 +326,7 @@
     - Heavy
     - Slow
 7299-heavenly menreiki:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -297,6 +335,7 @@
     - Bind
     - Slow
 7300-heavenly wanyudo:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -305,6 +344,7 @@
     - Slow
 # HoH floors 31-39
 7301-heavenly gedan:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -314,6 +354,7 @@
     - Bind
     - Slow
 7302-heavenly hornbill:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -322,24 +363,28 @@
     - Sleep
     - Slow
 7303-heavenly hanya:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7304-heavenly harakiri:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7305-heavenly onmitsu:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7306-heavenly moko:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -349,6 +394,7 @@
     - Bind
     - Slow
 7307-heavenly mokin:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -357,11 +403,13 @@
     - Sleep
     - Slow
 7308-heavenly kiyofusa:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
 7309-heavenly ashigaru:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -370,6 +418,7 @@
     - Bind
     - Slow
 7310-heavenly shishi:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -379,12 +428,14 @@
     - Bind
     - Slow
 7311-heavenly onmitsu:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7312-heavenly vanara:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -394,6 +445,7 @@
     - Bind
     - Slow
 7313-heavenly dogu:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -402,6 +454,7 @@
     - Slow
 # HoH floors 41-49
 7314-heavenly saikoro:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -409,12 +462,14 @@
     - Heavy
     - Slow
 7315-heavenly ganseki:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Heavy
 7316-heavenly dhara:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -422,6 +477,7 @@
     - Heavy
     - Bind
 7317-heavenly sekizo:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -430,11 +486,13 @@
     - Heavy
     - Bind
 7318-heavenly sekiban:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Slow
 7319-heavenly saikoro:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -442,24 +500,28 @@
     - Slow
     - Heavy
 7320-heavenly iseki:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7321-heavenly aka-ishi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7322-heavenly monoiwa:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7323-heavenly iseki:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -468,17 +530,20 @@
     - Heavy
     - Bind
 7324-heavenly kuro-usagi:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 7325-heavenly sekizo:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
 7326-heavenly mizumimizu:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sound
   Weakness:

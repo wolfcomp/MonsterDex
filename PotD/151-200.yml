@@ -1,5 +1,6 @@
 ﻿# PotD 151-160
 5429-deep palace deepeye:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -9,12 +10,14 @@
     - Heavy
     - Bind
 5430-deep palace gremlin:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5431-deep palace devilet:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -23,12 +26,14 @@
     - Heavy
     - Bind
 5432-deep palace shabti:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5433-deep palace soulflayer:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -36,24 +41,28 @@
     - Heavy
     - Bind
 5434-deep palace arch demon:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
 5435-deep palace abaia:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5436-deep palace marolith:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
 5437-deep palace pot:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -62,10 +71,12 @@
     - Heavy
     - Bind
 5438-Todesritter:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
 # PotD 161-170
 5439-deep palace lindwurm:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -75,6 +86,7 @@
     - Heavy
     - Bind
 5440-deep palace archaeosaur:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -83,6 +95,7 @@
     - Slow
     - Heavy
 5441-deep palace diplocaulus:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -92,6 +105,7 @@
     - Heavy
     - Bind
 5442-deep palace triceratops:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -100,6 +114,7 @@
     - Slow
     - Heavy
 5443-deep palace croc:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -109,18 +124,21 @@
     - Heavy
     - Bind
 5444-deep palace mylodon:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5445-deep palace tursus:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5446-deep palace sarcosuchus:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -130,12 +148,14 @@
     - Heavy
     - Bind
 5447-deep palace vinegaroon:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5448-deep palace pteranodon:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -145,10 +165,12 @@
     - Heavy
     - Bind
 5449-Yulunggu:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Boss
 # PotD 171-180
 5450-deep palace bandersnatch:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -158,17 +180,20 @@
     - Heavy
     - Bind
 5451-deep palace wisent:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Sleep
     - Slow
 5452-bird of the deep palace:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Slow
 5453-deep palace snowclops:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -177,6 +202,7 @@
     - Slow
     - Heavy
 5454-deep palace sasquatch:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -185,6 +211,7 @@
     - Slow
     - Heavy
 5455-deep palace bear:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -194,6 +221,7 @@
     - Heavy
     - Bind
 5456-deep palace black coeurl:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -203,6 +231,7 @@
     - Heavy
     - Bind
 5457-deep palace dhalmel:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -212,6 +241,7 @@
     - Heavy
     - Bind
 5458-deep palace lion:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -221,12 +251,14 @@
     - Heavy
     - Bind
 5459-deep palace anzu:
+  InstanceContentType: DeepDungeon
   Threat: Vicious
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5460-deep palace wolf:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
@@ -236,10 +268,12 @@
     - Heavy
     - Bind
 5461-Dendainsonne:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Boss
 # PotD 181-190
 5480-deep palace sprite:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -248,6 +282,7 @@
     - Heavy
     - Bind
 5462-deep palace grenade:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -257,6 +292,7 @@
     - Heavy
     - Bind
 5463-deep palace wamouracampa:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sound
   Weakness:
@@ -265,6 +301,7 @@
     - Heavy
     - Bind
 5464-flood dragon:
+  InstanceContentType: DeepDungeon
   Threat: Vicious
   Aggro: Sight
   Weakness:
@@ -272,6 +309,7 @@
     - Heavy
     - Bind
 5465-deep palace worm:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sound
   Weakness:
@@ -280,6 +318,7 @@
     - Heavy
     - Bind
 5466-deep palace claw:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -288,6 +327,7 @@
     - Heavy
     - Bind
 5467-deep palace crawler:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sound
   Weakness:
@@ -296,6 +336,7 @@
     - Heavy
     - Bind
 5468-deep palace vindthurs:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -304,6 +345,7 @@
     - Heavy
     - Bind
 5469-deep palace wamoura:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -312,21 +354,26 @@
     - Heavy
     - Bind
 5470-deep palace garm:
+  InstanceContentType: DeepDungeon
   Threat: Vicious
   Aggro: Proximity
   Weakness:
     - Slow
 4579-remedy bomb:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 4580-lava bomb:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
 5471-the Godfather:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Boss
 # PotD 191-200
 5472-deep palace trap:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -335,17 +382,20 @@
     - Heavy
     - Bind
 5473-deep palace fachan:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
 5474-deep palace bicephalus:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Slow
     - Heavy
 5475-deep palace iron corse:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:

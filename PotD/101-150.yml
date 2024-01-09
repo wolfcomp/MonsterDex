@@ -1,5 +1,6 @@
 ﻿# PotD 101-110
 5360-deep palace squirrel:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -9,6 +10,7 @@
     - Heavy
     - Bind
 5361-deep palace stag:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -18,12 +20,14 @@
     - Heavy
     - Bind
 5362-deep palace gaelicat:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5363-deep palace doblyn:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -32,6 +36,7 @@
     - Heavy
     - Bind
 5364-deep palace hippogryph:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -41,6 +46,7 @@
     - Heavy
     - Bind
 5365-deep palace ladybug:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -49,12 +55,14 @@
     - Heavy
     - Bind
 5366-deep palace hornet:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
 5367-deep palace yarzon:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -63,6 +71,7 @@
     - Heavy
     - Bind
 5368-deep palace ziz:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -71,6 +80,7 @@
     - Heavy
     - Bind
 5369-goblin adventurer:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -80,6 +90,7 @@
     - Heavy
     - Bind
 5370-deep palace dung beetle:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -88,10 +99,12 @@
     - Heavy
     - Bind
 5371-Alicanto:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
 # PotD 111-120
 5372-deep palace leech:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -100,6 +113,7 @@
     - Slow
     - Bind
 5373-deep palace bifericeras:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -107,6 +121,7 @@
     - Sleep
     - Slow
 5374-deep palace gigantoad:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -115,11 +130,13 @@
     - Slow
     - Heavy
 5375-deep palace slime:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sound
   Weakness:
     - Stun
 5376-deep palace nanka:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -129,6 +146,7 @@
     - Heavy
     - Bind
 5377-deep palace salamander:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -138,6 +156,7 @@
     - Heavy
     - Bind
 5378-deep palace ochu:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -146,6 +165,7 @@
     - Heavy
     - Bind
 5379-deep palace seedling:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -155,6 +175,7 @@
     - Heavy
     - Bind
 5380-deep palace morbol:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -162,12 +183,14 @@
     - Slow
     - Heavy
 5381-deep palace pudding:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
 5382-deep palace cobra:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
@@ -176,6 +199,7 @@
     - Slow
     - Heavy
 5383-deep palace biloko:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -183,10 +207,12 @@
     - Heavy
     - Bind
 5384-Kirtimukha:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
 # PotD 121-130
 5385-deep palace pteroc:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -196,6 +222,7 @@
     - Heavy
     - Bind
 5386-deep palace biast:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -205,6 +232,7 @@
     - Heavy
     - Bind
 5387-deep palace adamantoise:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -212,6 +240,7 @@
     - Slow
     - Heavy
 5388-deep palace basilisk:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -220,6 +249,7 @@
     - Slow
     - Heavy
 5389-deep palace wivre:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -228,6 +258,7 @@
     - Slow
     - Heavy
 5390-deep palace spriggan:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -236,6 +267,7 @@
     - Heavy
     - Bind
 5391-deep palace centaur:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -245,18 +277,21 @@
     - Heavy
     - Bind
 5392-deep palace effigy:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
     - Heavy
 5393-deep palace urolith:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Slow
 5394-deep palace dullahan:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -265,6 +300,7 @@
     - Heavy
     - Bind
 5395-deep palace minotaur:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -273,6 +309,7 @@
     - Slow
     - Heavy
 5396-deep palace skatene:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sound
   Weakness:
@@ -281,10 +318,12 @@
     - Heavy
     - Bind
 5397-Alfard:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
 # PotD 131-140
 5398-deep palace soul:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -292,11 +331,13 @@
     - Slow
     - Undead
 5399-deep palace hecteyes:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
     - Stun
 5400-deep palace ogre:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -305,6 +346,7 @@
     - Heavy
     - Bind
 5401-deep palace mummy:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -314,11 +356,13 @@
     - Bind
     - Undead
 5402-deep palace ahriman:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
 5403-deep palace dahak:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -328,18 +372,21 @@
     - Heavy
     - Bind
 5404-deep palace monk:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Heavy
 5405-deep palace troubador:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
 5406-deep palace taurus:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -349,11 +396,13 @@
     - Heavy
     - Bind
 5407-deep palace guard:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Slow
 5408-deep palace catoblepas:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -361,6 +410,7 @@
     - Slow
     - Heavy
 5409-deep palace gourmand:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -370,22 +420,26 @@
     - Heavy
     - Undead
 5411-deep palace follower:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Undead
 5410-Ah Puch:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
   Weakness:
     - Undead
 # PotD 141-150
 5412-deep palace ked:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
 5413-deep palace demon:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
@@ -394,12 +448,14 @@
     - Heavy
     - Bind
 5414-deep palace gargoyle:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5415-deep palace knight:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
@@ -409,6 +465,7 @@
     - Bind
     - Undead
 5416-deep palace bhoot:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sound
   Weakness:
@@ -417,6 +474,7 @@
     - Slow
     - Undead
 5417-deep palace hellhound:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -425,6 +483,7 @@
     - Slow
     - Heavy
 5418-deep palace persona:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
@@ -432,18 +491,21 @@
     - Slow
     - Undead
 5419-deep palace succubus:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
     - Slow
 5420-onyx dragon:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Slow
     - Undead
 5421-deep palace manticore:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
@@ -452,6 +514,7 @@
     - Heavy
     - Bind
 5422-deep palace wraith:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
@@ -459,6 +522,7 @@
     - Slow
     - Undead
 5423-deep palace keeper:
+  InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sound
   Weakness:
@@ -467,14 +531,17 @@
     - Bind
     - Undead
 5427-fanatic zombie:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
     - Heavy
     - Bind
 5428-fanatic succubus:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5424-Tisiphone:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
