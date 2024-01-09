@@ -23,4 +23,4 @@ ShowId: デバッグ情報を表示
 LoadAllFont: すべてのフォントを読み込む(言語変更時、読み込み速度が改善します)
 LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\n端末のスペックによっては、遅延やフリーズが発生する可能性があります"
 HideFloorGuide: Stop showing the floor guide when entering a new floor
-UnknownContent: Unknown Content no display available
+UnknownContent: Unknown Content no display available for {0}({1})
