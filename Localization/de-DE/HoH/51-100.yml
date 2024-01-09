@@ -1,8 +1,8 @@
-7610: Does not interact, wide stun and immediately dies when attacked
+7610: Interagiert nicht, breiter Betäuben und stirbt sofort, wenn angegriffen wird
 7584: |
-  Permanent stacking damage buff
-  Massive enrage on random player"Allagan Meteor"
-  Gaze attack
+  Permanenter Stapelschaden Stärkungszauber
+  Massiver Wut auf zufälliger Spieler"Allagan Meteor"
+  Gaze-Angriff
 7493: |
   1) Heavy room wide damage "Ancient Quaga"
   2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
@@ -12,21 +12,21 @@
   6) Point-blank circle AoE "Knuckle Press"
   7) Repeat
 7490: |
-  1) Summons balls of ice
-  2) Summons icicle that pierces through room, detonating any ice balls it hits
-  3) "Lunar Cry" detonates remaining ice balls
-  4) Exploding ice balls inflict Deep Freeze if they hit a player
-  5) Boss jumps to random player, instantly killing if player is frozen (light damage otherwise)
+  1) Beschwört Bälle aus Eis
+  2) beschwört Eiskörper der durch Raum durchbricht Explodierende Eisbälle, die es trifft,
+  3) "Lunar Cry" detoniert die verbleibenden Eisbälle
+  4) Explodierende Eisbälle verursachen Deep Freeze wenn sie einen Spieler
+  treffen 5) Boss springt zu zufälligen Spielern, Töte sofort, wenn der Spieler eingefroren ist (sonst leichter Schaden)
 7489: |
-  1) Untelegraphed frontal cleave
-  2) Targets random player with "Innerspace" puddle (standing in puddle inflicts Minimum)
-  3) Targets random player with "Hound out of Hell"
-  4) Targeted player must stand in puddle to dodge "Hound out of Hell" and "Devour" (will instant-kill if not in puddle and give the boss a stack of damage up)
-  5) Repeat
+  1) Untelegrafierter Frontalklemme
+  2) Zielspieler mit "Innerspace" Puddle (stehend in der Puddle fügt Minimum)
+  3) Zielspieler mit "Hound out of Hell"
+  4) Zielspieler müssen in der Puddle stehen um "Hund out of Hell" und "Devour" auszuweichen (wird sofort töten, wenn nicht im Puddle und geben dem Boss einen Stapel Schadens)
+  5) Wiederholen (
 7487: |
-  Summons staffs that do various AoEs
-  Staffs then do line AoEs targeting players
-  Room wide AoE
+  Beschwört Teams, die verschiedene AoEs
+  Staffs tun, dann Linie AoEs Ziel Spieler
+  Raumweite AoE
 7485: |
   1) Untelegraphed swipe
   2) Untelegraphed line AoE on random player
@@ -34,109 +34,109 @@
   4) Summons pulsating bombs over arena and does a proximity AoE
   5) Repeats after bombs explode for the last time
 7483: |
-  Summons clouds on edge of arena
-  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
-  Follows immediately with targeted line AoE
+  Beschwört Wolken am Rand der Arena
+  Macht einen Rückschlag, der Rückschlag ignoriert (suche nach sicheren Flecken in Wolken!
+  folgt sofort mit Ziellinie AoE
 7481: |
   Summons butterflies on edges of arena
   Does gaze mechanic that inflicts Fear
   Butterflies explode untelegraphed
 7480: |
-  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
-  Follows immediately with a half-room wide AoE
+  Geht in die Mitte der Arena und wirft an die Wand zurück (kann nicht verwundbar werden)
+  Folgt sofort mit einer halbraumweiten AoE
 7478: |
   Summons lightning clouds that inflict stacking vuln up when they explode
   Boss does proximity AoE under itself that knocks players into the air
   Get knocked into a cloud to dispel it and avoid vuln
   Half-room wide AoE
 7394: |
-  Floors 61+: Gold chests only
-  High damage autos and instant kill AoE
-  "Malice" can only be interrupted with interject
-  CANNOT STUN
+  61+: Goldkisten nur
+  Hohe Schaden-Autos und sofortige Tötung von AoE
+  "Malice" können nur mit Interject
+  NICHT STUN unterbrochen werden
 7393: |
-  Floors 31-60: Silver chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/interject
+  Etagen 31-60: Silberkisten nur
+  Hohe Schaden-Autos und sofortige Tötung AoE
+  "Malice" können mit Schweigen/Stun/Interjekt unterbrochen werden
 7392: |
-  Floors 1-30: Bronze chests only
-  High damage autos and instant kill AoE
-  "Malice" can be interrupted with silence/stun/knockback/witching/
-  interject
-7391: Double autos, cone AoE inflicts Sleep
-7390: Rapid double autos and untelegraphed line AoE "Quasar"
-7389: Repeatedly cleaves for high damage, lifesteal, buffs own damage, three stacks of damage up casts ENRAGE "Black Nebula"
+  Etagen 1-30: Bronzekisten nur
+  Hohe Schadensautos und sofortige Tötung AoE
+  "Malice" können mit Stille / Stun/Knockback/Hexen/
+  Interject unterbrochen werden
+7391: Doppelte Autos, Kegel AoE Schlafen
+7390: Schnelle Doppelautos und nicht telegraphierte Linie AoE "Quasar"
+7389: Wiederholt hält sich für hohen Schaden, Lebensdauer, Stärkungsschaden, drei Kumulierungen von Schaden, die ENRAGE "Schwarzer Nebel" wirken
 7388: |
-  Charges
-  Untelegraphed cone AoE "Swipe"
-  Untelegraphed wide circle AoE "Swing"
-7387: Deals heavy damage to random players
-7386: Extremely quick line AoE "Death's Door" that instantly kills
-7385: Targeted AoEs, cleaves
-7384: Casts targeted AoEs unaggroed, buffs own defense
+  Ladungen
+  Untelegrafierter Kegel AoE "Swipe"
+  Nicht telegrafierter breiter Kreis AoE "Swing"
+7387: Verursacht zufälligen Spielern schweren Schaden
+7386: Extrem schnelle Linie AoE "Todestür", die sofort tötet
+7385: Gezielte AoEs, spaltet
+7384: Wirkt unangefochtene Aoes, stärkt eigene Verteidigung
 7382: |
-  "Charybdis" AoE that leaves tornadoes on random players
+  "Charybdis" AoE, die Tornados auf zufällige Spieler hinterlässt
 7381: |
   Cleave
-  Large line AoE that can be line of sighted
+  Große Linie AoE, die sehbar sein kann
 7380: |
-  WHM: double autos
-  "Stone" can be line of sighted
+  WHM: Doppelautos
+  "Stein" kann eine Sichtlinie sein
 7379: |
-  MNK: Haste buff, short invuln
+  MNK: Eile Buff, kurze Verwundung
 7378: |
-  WAR: Triple knockback with heavy damage
-  Buffs own attack
-  Extremely high damage cleave with knockback
-7377: Charges, buffs own damage, untelegraphed buster "Ripper Claw"
-7376: Charges, buffs own damage, double autos, electricity Bleed
-7375: Cone AoE, circle AoE, party wide damage
-7374: Large doughnut AoE
-7373: Draw-in attack, tons of bleed, and a stacking poison
-7372: Buffs own damage and double autos
-7371: Alternates line and circle AoEs untelegraphed
-7370: Double autos, very strong rear cleave if behind
+  WARNUNG: Dreifacher Rückschlag mit schwerem Schaden
+  Buffs eigenen Angriff
+  Extrem hoher Schaden mit Rückschlag
+7377: Angriffe, Buffs eigenen Schaden, untelegrafischer Buster "Ripper Claw"
+7376: Ladungen, Buffs eigenen Schaden, doppelte Autos, Stromblutung
+7375: Kone AoE, Kreis AoE, Gruppen-weite Schaden
+7374: Große Doughnut AoE
+7373: Ziehe in Angriff, Tonnen Blutung und ein Stapelgift
+7372: Erhöht eigenen Schaden und doppelte Autos
+7371: Alternative Linie und Kreis von Aoes untelegrafiert
+7370: Doppelte Autos, sehr starke Heckspalte wenn hinten
 7369: Zaubert AoEs ohne Aggro
-7368: Untelegraphed conal AoE on random player, gaze attack
-7367: Charges on aggro
+7368: Nicht telegrafiertes Konal AoE auf zufälligen Spieler, Blickangriff
+7367: Ladungen auf Aggro
 7366: |
-  Buffs own damage unaggroed
-  Large AoE unaggroed that inflicts vuln up and stacks
+  Stärkt eigenen Schaden ungehorsamer
+  Großer AoE ungehorcht der vuln und stapelt
 7365: |
-  Ram's Voice - get out
-  Dragon's Voice - get in
-  Telegraphed cleaves
-7364: Double auto and very large AoE
-7362: Extremely large conal AoE, gaze inflicts Fear
-7361: Draw-in attack, extremely large AoE, eventual ENRAGE
-7360: Very large AoEs
-7359: Haste, eventual ENRAGE
+  Ram's Stimme - erhalte die Stimme des
+  Drachens - komme in
+  Telegraphierte Spalten
+7364: Doppelte Auto und sehr große AoE
+7362: Extrem große Konal AoE, Blick verursacht Angst
+7361: Draw-in-Angriff, extrem große AoE, eventuell ENRAGE
+7360: Sehr große Aoes
+7359: Haste, letztendliche ENRAGE
 7358: Erhöht eigenen Schaden
 7357: |
   Casts room wide AoEs unaggroed
   Large conal draw-in attack followed by heavy damage
-7356: Casts AoEs unaggroed that inflict Deep Freeze
-7355: Double auto inflicts Bleed
-7354: Untelegraphed knockback on rear
+7356: Wirf Aoes unaufgewertet, das Deep Freeze verursacht
+7355: Doppelte automatische Blutungen
+7354: Untelegrafierter Rückklopfen auf der Rückseite
 7353: |
-  Casts large AoE unaggroed
-  Extremely large circular AoE
-7350: AoE inflicts numerous debuffs at once
-7349: Buffs own or ally's defense
-7348: Large circular AoE inflicts Bleed
-7347: Large doughnut AoE, gaze attack inflicts Fear
-7346: Cleave and potent Poison
-7345: Conal AoE inflicts Paralysis
-7344: Caster, double auto
-7343: Fast alternating line AoEs that inflict Paralysis
-7341: Inflicts stacking vuln up
-7340: Inflicts stacking Poison that lasts 30s
-7337: Conal gaze, very quick low health ENRAGE
-7336: Instant AoEs on targeted player unaggroed
-7335: Draw-in attack
-7332: Exclusively fatal line AoEs
-7331: Cone AoE inflicts Bleed
-7330: Eventual instant ENRAGE
+  Wirkt große AoE unaufgeheizte
+  Extrem große kreisförmige AoE
+7350: AoE verursacht zahlreiche Schwächung auf einmal
+7349: Stärkt die eigene oder Verbündete Verteidigung
+7348: Große kreisförmige AoE blutt
+7347: Große Doughnut AoE, Blickangriff verursacht Angst
+7346: Cleave und starkes Gift
+7345: Conal AoE verursacht Lähmung
+7344: Caster, doppelte Auto
+7343: Schnell wechselnde Linie Aoes, die Lähmung verursacht
+7341: Verursacht stapeln vuln hoch
+7340: Verursacht Stapelgift 30 Sekunden
+7337: Konal Blick, sehr schnell niedrige Gesundheit ENRAGE
+7336: Sofortige Aoes auf Zielspieler ohne Belästigung
+7335: Draw-in-Angriff
+7332: Exklusiv tödliche Linie Aoes
+7331: Knochen AoE blutt
+7330: Eventuelle sofortige ENRAGE
 7329: Erhöht eigenen Schaden
-7328: Buster inflicts Bleed
-7327: Autos inflict stacking vuln up
+7328: Buster blutt
+7327: Autos stapeln vuln hoch
