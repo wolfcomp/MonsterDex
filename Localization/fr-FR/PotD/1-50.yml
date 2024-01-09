@@ -1,85 +1,85 @@
-5479: Caster, break line of sight to evade auto-attacks
+5479: Caster, briser la ligne de vue pour éviter les attaques automatiques
 4975: Lance Hâte sur lui-même
-4977: Absorbs health with each attack
-4979: AoE "Shriek" inflicts Stun
+4977: Absorbe la vie à chaque attaque
+4979: La zone « Shriek» inflige des étourdissements
 4980: Inflige Poison
-4981: Soft-enrage "Final Sting", break line of sight to evade
-4982: Inflicts Vulnerability Up
-4983: AoE "Slumber Breath" inflicts Sleep
-4985: Mini buster "Rhino Attack", break line of sight to evade
+4981: Soudainement enragé "Dernière", briser la ligne de vue pour échapper
+4982: Inflige une vulnérabilité
+4983: Le « Souffle de bois » inflige le sommeil
+4985: Mini buster "Rhino Attack", briser la ligne de vue pour échapper
 4986: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AoE
-  3) "Bombination" - circular AoE on boss inflicts Slow
-  4) "Lumisphere" - targeted AoE on random player
-  5) "Aeroblast" - room wide AoE inflicts Windburn (15s DoT)
+  1) "Whipcrack" - Chariot léger
+  2) "Hurleuil" - AoE cône
+  3) "Bombination" - AoE circulaire sur boss inflige lentement
+  4) "Lumisphère" - AoE ciblée sur le joueur aléatoire
+  5) "Aeroblast" - AoE toute la pièce inflige Windburn (15s DoT)
 4988: Inflige Poison
 4989: |
-  "Sticky Tongue" draw-in a player, inflicting Stun if not facing the monster
-  "Labored Leap" AoE is immediately casted after, inflicts substantial damage
+  Le « Sticky Tongue» attire un joueur, infligeant des dégâts étourdissants s'il ne fait pas face au monstre
+  « Saut Lâché» est lancé immédiatement après, inflige des dégâts substantiels
 4990: |
-  Can ENRAGE with "Rupture" and wipe the whole team if not killed in time
-  Absorbs health with each attack
-4993: Casts instant Untelegraphed AoE which inflicts Slow
+  Peut ENRAGER avec "Rupture" et essuyer toute l'équipe si elle n'est pas tuée à temps
+  Absorbe la vie à chaque attaque
+4993: Lance une zone instantanée non télégraphiée qui inflige lentement
 4994: Inflige Poison
 4995: |
-  "Bad Breath" AoE inflicts multiple debuffs if not evaded
+  La zone « Bad Breath» inflige de multiples affaiblissements si elle n'est pas éludée
 4996: |
   Caster, break line of sight to evade auto-attacks
   Buffs own damage with "Golden Tongue"
 4997: |
-  INSTANTLY KILLS players inflicted with Toad using "Devour"
-  Gaze attack inflicts Petrify, do not target while casted to evade
+  INSTANTEMENT les joueurs KILLS infligés avec Toad en utilisant "Dévoir"
+  Attaque de Regard inflige Petrify, ne pas cibler lorsqu'ils sont lancés pour échapper
 4999: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AoEs and a room wide AoE
-  3) Summons two Palace Hornets that must be killed before they casts "Final Sting"
-  4) "Rotten Stench" - high damage line AoE
+  1) "Soin de sang" - les dégâts les plus élevés se déchirent
+  2) Deux zones télégraphiées et une zone de zone de zone
+  3) Invoque deux cornets du palais qui doivent être tués avant de lancer "Piqûre finale"
+  4) "Piqûre putrée" - Ligne de dégâts élevée AoE
 5001: |
-  Casts "Smoldering Scales" applying "Blaze Spikes" to self.
-  "Blaze Spikes" inflicts fire damage upon melee attacks.
-5003: Gaze attack inflicts Petrify, do not target while casted to evade
-5004: High auto-attack damage
+  Lance « Écailles fumantes » s'appliquant aux « Pointes incandescentes ».
+  « Pointes incandescentes » inflige des dégâts de feu à chaque attaque de mêlée.
+5003: L'attaque de Regard inflige Petrify et ne cible pas lorsqu'il est lancé pour échapper
+5004: Dégâts d'attaque automatique élevés
 5005: |
-  Caster, break line of sight to evade auto-attacks
-  Casts Haste on itself
-5006: Casts Physical Damage Up on itself
-5007: Can knockback player
-5010: Untelegraphed AoE "111-Tonze Swing" does moderate damage and knockback
+  Caster, briser la ligne de vue pour esquiver les attaques automatiques
+  lance hâte sur elle-même
+5006: Inflige des dégâts physiques sur lui-même
+5007: Vous pouvez repousser le joueur
+5010: La zone de zone non télégraphiée "111-Tonze Swing" inflige des dégâts modérés et recule
 5011: |
   "Gazouillement" inflige Sommeil pendant 15s
 5012: |
-  1) Spread out Fire and Ice AoEs on arena borders
-  2) After the fourth AoE, run to the center of the arena alongside the boss
-  2) Get inside boss's hit box before "Fear Itself" is casted, or it will inflict high damage and Terror
-5014: Inflicts Paralysis if caught in AoE
-5016: Inflicts Stun if caught in AoE
-5017: Caster, break line of sight to evade auto-attacks
+  1) Répandez les zones de feu et de glace sur les bords de l'arène
+  2) Après la quatrième AoE, courir au centre de l'arène à côté du boss
+  2) Entrer dans la boîte de frappe du boss avant de lancer "Fear Itself" sinon il infligera des dégâts élevés et de la terreur
+5014: Inflige une paralysie si prise en zone de zone
+5016: Inflige un étourdissement si attrapé dans la zone de zone
+5017: Caster, briser la ligne de vue pour éviter les attaques automatiques
 5019: |
-  Draws-in near players and then casts an AoE
-  Caster, break line of sight to evade auto-attacks
-5020: Caster, break line of sight to evade auto-attacks
+  Pioche près des joueurs et lance ensuite un lanceur de sorts
+  , brise la ligne de vue pour échapper aux attaques automatiques
+5020: Caster, briser la ligne de vue pour éviter les attaques automatiques
 5022: |
-  Casts "Dark Mist" AoE, which inflicts Terror
-  "Void Fire II" AoE is subsequently casted to inflict high damage to stunned players
-5023: Gaze attack inflicts Petrify
+  Lance la zone de « Brume noire» qui inflige la terreur
+  « Feu du Néant II» AoE est ensuite lancé pour infliger des dégâts élevés aux joueurs étourdis
+5023: L'attaque du regard inflige Petrify
 5025: |
-  1) Summons four lingering AoEs followed by AoEs which inflicts Disease
-  2) Summons two Nightmare Bhoots, they must be killed before the boss next attack
-  3) Casts "Scream", and adds will use "Tornado", a high damage AoE, if still alive
-  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use damage reduction skills before this attack
-5026: Ranged auto-attack, non interruptable
-5029: Casts Physical Damage Up on itself
+  1) Invoque quatre zones de zone persistantes suivies de zones de zone infligeant la maladie
+  2) Invoque deux hameçons cauchemardesformat@@0 ils doivent être tués avant la prochaine attaque du patron
+  3) Lance "Scream", et ajoute utilisera « Tornade», une zone de dégâts élevés, si toujours en vie
+  4) Lance « Fusée éclairante» globale de « Fusée éclairante» qui inflige la terreur - soigner ou utiliser les compétences de réduction des dégâts avant cette attaque
+5026: Attaque automatique à distance, non interruptable
+5029: Inflige des dégâts physiques sur lui-même
 5030: Inflige Paralysie
 5032: Inflige Paralysie
-5036: Wide AoE which inflicts Terror
+5036: Grande zone qui inflige la terreur
 5037: |
-  High physical damage
-  "Nail in the Coffin" does a lot of damage
+  Dégâts physiques élevés
+  "Pointe dans le Coffre" inflige beaucoup de dégâts
 5038: |
-  FOLLOW MECHANICS -- evade all AoEs and Gazes
-  Failed mechanics will increase Black Honeymoon room AoE (3+ stacks is a near wipe)
-  1) "Cold Feet" -- Gaze
-  2) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
-  3) "In Sickness" -- instantly inflicts Disease on a player
-  4) Black Honeymoon
+  FOLLOW MECHANICS -- Evadez toutes les AoEs et les Regards
+  La mécanique de la mécanique de la lune de miel augmentera la zone de la zone de la lune noire (3+ piles est une essuie)
+  1) "Pieds froids" -- Regard
+  2) "En santé" -- peut être une zone large avec un endroit sûr sur le patron ou la zone ciblée AoE sous le boss
+  3) "En malade" -- inflige instantanément une maladie à un joueur
+  Lune de miel noire
