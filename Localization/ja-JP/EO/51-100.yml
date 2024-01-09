@@ -1,34 +1,34 @@
 #EO floors 51-59
 12182: |
-  Casts one shot line charge, must LoS
+  ショットラインチャージをキャストします。LoSが必要です
 12174: |
-  PB and Targeted circle AOEs can be stunned.
+  PBとターゲット円AOEは唖然とすることができます。
 12180: |
-  Explodes after dying, will not explode if petrified when killed.
+  死んだ後に爆発します。殺されたときに岩石化された場合は爆発しません。
 12183: |
-  Casts Gelid Charge, Ice Spikes buff will one shot if hit with physical damage
+  キャストジェリッドチャージ、アイススパイクバフは物理ダメージを与えられた場合1発のヒットとなります。
 12171: |
-  Telegraphed front conal AOE
+  前円錐骨をテレグラフ化したAOE（青江）
 12178: |
-  Gives stacking vuln stacks, be careful not to pull too many.
+  Vuln スタックを積層します。多すぎないように注意してください。
 12176: |
-  Will give a Heavy debuff followed by Tail Screw AOE. Heavy can be negated through shielding.
+  ヘビーデビュー後、テールスクリューAOEが追加されます。ヘビーはシールドで無効にできます。
 12318: |
-  Flush PB AOE
+  PB AOEをフラッシュする
 12181: |
-  Will cast 1000 Spines, PB AOE
+  1000個のトゲを鋳造します
 12172: |
-  Pulls in with Sucker then PB AOE, knockback resist or walk away immediately after pull in.
+  Suckerを使用してプルインし、PB AE、ノックバック抵抗またはプルイン直後に離れて歩いてください。
 12179: |
-  "Sewer Water" -- Half circle cleave followed immediately by other half. Must move immediately after telegraph disappears.
+  「下水」-- 半円が残りの半分を切断しました。電報が消えた直後に動かなければなりません。
 12177: |
-  Useless. Really useless.
+  役に立たない本当に役に立たない
 12173: |
-  Jumps to player and does half room knockback to everyone not targeted.
-  "Electric Whorl" -- Doughnut
-  "Expulsion" -- PB AOE
+  プレイヤーにジャンプし、目標外の全員に半分の部屋ノックバックを行います。
+  "Electric Whorl" -- ドーナツ
+  "Expulsion" -- PB AOE。
 12175: |
-  Crab Dribble fast cast rear conal AOE triggered by being behind. Can be outranged.
+  カニドリブル速いキャスト後部円錐AOE背後にあることによって引き起こされます。
 #EO boss floor 60
 12267: |
   "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN.
@@ -38,31 +38,31 @@
   "Thundercall" -- Summons blue orbs followed by Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
 #EO floors 61-69
 12184: |
-  Inflicts fast stacking poison debuff, do not pull too many at once.
+  毒デバフを速く積み上げることを許可します。一度にあまり多くを引っ張ることはありません。
 12191: |
-  Has telegraphed front conal and PB AOE.
+  正面円錐形とPBのAOEをテレグラフ化しました。
 12189: |
-  AOE will give evasion to other enemies it hits, try to kill away from other enemies.
+  AOEは他の敵に回避を与え、他の敵から離れて殺そうとします。
 12187: |
-  Has a telegraphed narrow front conal AOE.
+  電信狭い正面直腸AEを持っています.
 12186: |
-  Fast untelegraphed conal back cleave if player is behind, PB AOE on death with a short duration vuln stack.
+  背後にプレイヤーがいる場合、高速非電信円錐形の背中を切断, 短い期間のヴァルンスタックで死亡時にPB AOE.
 12185: |
-  "Smouldering Scales" -- buff that will 1 shot if hit by physical damage
+  「巨大スケール」-- 物理ダメージに当たると1発のバフ
 12194: |
-  Untelegraphed Claw/Tail swipe swipe conal AOE. Watch animation carefully.
+  Untelegraphed Claw/Tail swipe swipe swipe conal AIE 注意深くアニメーションを見る。
 12195: |
-  Assassinates if below 20% HP
+  HPが20%以下の場合、暗殺されます
 12190: |
-  Front conal gaze attack and PB AOE.
+  フロント側の視線攻撃とPBのAOE。
 12196: |
-  Untelegraphed knockback PB AOE, caution when pulling with certain enemies.
+  特定の敵と一緒に引っ張るときは注意してください。
 12188: |
-  Telegraphed targeted AOE
+  テレグラフ・ターゲットAOEformat@@0
 12193: |
-  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range. Can be ranged pulled.
+  プレイヤーが近接距離にいない場合、"Electric Cachexia"(Donut AOE)がキャストされます。範囲を引っ張ることができます。
 12192: |
-  Instant pull in followed by fast cast PB AOE "Body Press." Pay attention for pull in sound/animation.
+  インスタントプルインに続いて高速キャストPB AOE"Body Press"が続きます。 音/アニメーションのプルに注意してください。
 #EO floor 70
 12246: |
   "Steel Claw" -- tankbuster, sort of.
@@ -72,10 +72,10 @@
   "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
 #EO floors 71-79
 12197: |
-  "Slowcall" -- late telegraph front conal, gives a very bad slow effect
+  スローコール（スローコール）-- 前頭円錐形の後期電信がスロー効果をもたらします
 12199: |
-  Triple targeted knockbacks, wedge yourself into a corner if possible.
-  "Innocence" -- targeted circle AOE
+  トリプルはノックバックをターゲットにし、可能な場合はコーナーへとくみを入れました。
+  "イノセンス" -- ターゲット円AOE。
 12202: |
   "The Killing Paw" -- double frontal cone second is untelegraphed
   Be carefull with stun or slow as this enemy can store the second swipe
@@ -84,20 +84,20 @@
   "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction.
   Moving side to side will allow you to easily tell when Scythe Tail is casting.
 12201: |
-  Gives a mild bleed debuff and buffs itself after a short period.
+  軽度のブリードデビューを与え、短い期間の後に自分自身をバフ.
 12209: |
   "Freefall" -- randomly targetd medium circle AOE
   "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
 12208: |
-  "Blistering Roar" -- Wide line AOE, can not be LOSed, MUST MOVE BEHIND.
+  「轟音」-- ワイドラインAOE、損失することはできません、動かなければなりません。
 12204: |
   Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
   DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
 12205: |
-  Assassinates player if below 20% HP
+  HPが20%以下の場合、プレイヤーを暗殺する
 12198: |
-  "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
-  "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
+  「Chirp」-- 長時間スリープ
+  「Tornado」を引き起こす非電信PBAOE-- ランダムにターゲットを絞った円AE、最初にスリープを持つプレイヤーにキャスト。
 12206: |
   "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
   "Revelation" -- untelegraphed AOE cast on Confused players
@@ -105,9 +105,9 @@
   "Wide Blaster" -- Huge wide frontal cone targeted at random player
   "Tail Swing" -- Huge rear cone if player is behind
 12203: |
-  "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
-  "Stool Pelt" -- randomly targetd circle AOE
-  Pull when safe to prevent getting caught by Chest Thump
+  「チェストスロープ」－「パイプバナナ」
+  「ストールペレット」を使用した後、AOEが大規模な戦闘を行った。－ランダムにターゲットd円AOE
+  安全に引っ張って胸切りに捕まえられないようにする。
 #EO boss floor 80
 12247: |
   "Resonance" -- Wide conal tankbuster.
@@ -121,16 +121,16 @@
   Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
 #EO floors 81-89
 12212: |
-  PB Gaze AOE
+  PB視線AOEformat@@0
 12217: |
-  "Glass Punch" -- Late telegraphed Conal AOE
+  「グラスパンチ」-- 後期電信Conal AOE-
 12218: |
-  Room wide Gaze both out and in combat
+  部屋の広い視野の両方アウトと戦闘中
 12214: |
 
 12161: |
-  Inflicts heavy
-  "Tail Screw" -- sets to 1 hp
+  重い
+  "テールねじ" -- 1馬力にセット
 12215: |
 
 12222: |
@@ -140,11 +140,11 @@
 12211: |
 
 12220: |
-  Room wide AOE applies "Terror"
+  ルームワイドのAOEが適用されます "テロ"
 12221: |
 
 12216: |
-  "Bustering Blink" -- Wide line AOE, can not be line of sighted.
+  "バスターリングブリンク" -- ワイドラインAOEは、視力のラインすることはできません。
 12219: |
 
 #EO boss floor 90
@@ -152,11 +152,11 @@
 
 #EO floors 91-98
 12223: |
-  Large PB AOE when killed
+  殺された時に大きなPB AOEを設定してください
 12224: |
 
 12225: |
-  270 degree frontal cleave
+  270度前頭葉切断。
 12226: |
 
 12227: |
@@ -168,7 +168,7 @@
 12230: |
 
 12231: |
-  4 knockback dashes into a large frontal cleave
+  4ノックバックは大きな前頭部切断にダッシュします
 12232: |
 
 12233: |
