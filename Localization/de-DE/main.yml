@@ -10,17 +10,17 @@ Boss: Boss
 Sound: Geräusche
 Sight: Sicht
 Proximity: Annäherung
-Bloodlust: Bloodlust
-Magic: Magic
+Bloodlust: Blutlust
+Magic: Magie
 Thanks: Vielen Dank an den Deep Dungeons Discord Server für die große Anzahl an Community Ressourcen. Danke an Alle die ihre Zeit aufbrachten und fehlerhafte oder fehlende Daten zu melden. Besondere Erwähung an Maygi für das verfassen des besten Deep Dungeon Guides der verfügbar ist!
 Save: Speichern
 Opacity: Sichtbarkeit
 Notes: Notizen
 NoDataFound: Keine Daten gefunden für {0} ({1})
-IsClickthrough: Enable clickthrough
+IsClickthrough: Clickthrough aktivieren
 FontSize: Schriftgröße
 ShowId: Zeige Debug-Informationen
 LoadAllFont: Alle Schriftarten laden (Beschleunigt das Ändern der Sprachen)
 LoadAllFontWarning: Dies lädt 30 MB Schriftarten in den Speicher und führt zu Verzögerungen und höherer Speicherauslastung auf schwächeren Systemen.
-HideFloorGuide: Stop showing the floor guide when entering a new floor
-UnknownContent: Unknown Content no display available for {0}({1})
+HideFloorGuide: Die Fußbodenleitung nicht mehr anzeigen, wenn Sie eine neue Etage betreten
+UnknownContent: Unbekannter Inhalt keine Anzeige für {0}({1})
