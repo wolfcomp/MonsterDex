@@ -10,8 +10,8 @@ Boss: Boss
 Sound: Son
 Sight: Vue
 Proximity: Proximité
-Bloodlust: Bloodlust
-Magic: Magic
+Bloodlust: Soif de sang
+Magic: Magie
 Thanks: 'Merci au serveur Discord : "Deep Dungeons" pour beaucoup de ressources communautaires. Merci à tous ceux qui ont pris le temps de rapporter des données incorrectes ou manquantes ! Des applaudissements à Maygi pour écrire les meilleurs guides du Donjon sans fond !'
 Save: Sauvegarder
 Opacity: Opacité
@@ -22,5 +22,5 @@ FontSize: Taille de la police
 ShowId: Montrer les informations de débug
 LoadAllFont: Charger toutes les polices (Peut accélérer le chargement lors du changement de langue)
 LoadAllFontWarning: Cette action chargera 30 Mo de polices en mémoire et provoquera du lag et une plus grande utilisation de la mémoire sur les systèmes plus faibles.
-HideFloorGuide: Stop showing the floor guide when entering a new floor
-UnknownContent: Unknown Content no display available for {0}({1})
+HideFloorGuide: Arrêter d'afficher le guide des planchers lorsque vous entrez dans un nouvel étage
+UnknownContent: Contenu inconnu non affiché pour {0}({1})
