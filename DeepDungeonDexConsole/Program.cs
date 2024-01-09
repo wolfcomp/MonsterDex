@@ -13,8 +13,13 @@ namespace DeepDungeonDexConsole
 
         public void CompressDataFiles()
         {
-            var dataPath = @"D:\source\repos\DeepDungeonDexData";
-            var path = @"D:\source\repos\DeepDungeonDex\DeepDungeonDex\data.dat";
+            var runDir = AppContext.BaseDirectory;
+            while (runDir.Substring(runDir.LastIndexOf(Path.DirectorySeparatorChar) + 1) != "DeepDungeonDexConsole")
+            {
+                runDir = runDir.Substring(0, runDir.LastIndexOf(Path.DirectorySeparatorChar));
+            }
+            var dataPath = Path.Combine(runDir, "data");
+            var path = Path.Combine(runDir, "..", "DeepDungeonDex", "data.dat");
             if(File.Exists(path))
                 File.Delete(path);
             var stream = new FileStream(path, FileMode.Create);

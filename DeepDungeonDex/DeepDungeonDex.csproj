@@ -44,7 +44,7 @@
 	</ItemGroup>
 
 	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-	  <Exec Command="dotnet run --project $(ProjectDir)..\DeepDungeonDexConsole\DeepDungeonDexConsole.csproj --no-restore" />
+	  <Exec Command="dotnet run --project $(ProjectDir)..\DeepDungeonDexConsole\DeepDungeonDexConsole.csproj" />
 	</Target>
 
 </Project>
