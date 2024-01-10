@@ -1,4 +1,6 @@
 ﻿using FFXIVClientStructs.FFXIV.Client.Game.Event;
+using System.Runtime.InteropServices;
+using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 
 namespace DeepDungeonDex.Hooks;
 
@@ -9,6 +11,7 @@ public unsafe class AddonAgent : IDisposable
     private EventFramework* _structsFramework;
     public byte Floor { get; private set; }
     public bool Disabled { get; private set; }
+    public ContentType ContentType { get; private set; }
 
     public AddonAgent(IFramework framework, IPluginLog log, CommandHandler handler)
     {
@@ -17,7 +20,7 @@ public unsafe class AddonAgent : IDisposable
         _framework.Update += OnUpdate;
         handler.AddCommand(new[] { "enable_floor", "e_floor", "enable_f", "ef" }, () =>
         {
-            if(!Disabled)
+            if (!Disabled)
                 return;
             Disabled = false;
             _framework.Update += OnUpdate;
@@ -27,16 +30,26 @@ public unsafe class AddonAgent : IDisposable
     private void OnUpdate(IFramework framework)
     {
         _structsFramework = EventFramework.Instance();
-        if (!IsInstanceContentSafe())
+        if (!IsContentSafe())
             return;
         try
         {
             var activeInstance = _structsFramework->GetInstanceContentDeepDungeon();
+            var activePublic = (PublicContentDirectorResearch*)_structsFramework->GetPublicContentDirector();
 
-            if (activeInstance == null)
-                return;
-
-            Floor = activeInstance->Floor;
+            if (activeInstance != null)
+            {
+                ContentType = (ContentType)(1 << (int)activeInstance->InstanceContentDirector.InstanceContentType);
+                Floor = activeInstance->Floor;
+            }
+            else if (activePublic != null)
+            {
+                ContentType = (ContentType)(1 << (int)activePublic->PublicContentDirectorType);
+            }
+            else
+            {
+                ContentType = ContentType.None;
+            }
         }
         catch (Exception e)
         {
@@ -45,7 +58,7 @@ public unsafe class AddonAgent : IDisposable
         }
     }
 
-    private bool IsInstanceContentSafe()
+    private bool IsContentSafe()
     {
         var contentDirector = _structsFramework->GetContentDirector();
 
@@ -69,4 +82,11 @@ public unsafe class AddonAgent : IDisposable
     }
 
     public void Dispose() => Dispose(true);
+}
+
+[StructLayout(LayoutKind.Explicit)]
+public unsafe struct PublicContentDirectorResearch
+{
+    [FieldOffset(0x0)] public PublicContentDirector PublicContentDirector;
+    [FieldOffset(0xC76)] public uint PublicContentDirectorType;
 }
