@@ -92,7 +92,7 @@ internal class Debug : Window, IDisposable
                         ImGui.SameLine(0, 14);
                         ImGui.TextUnformatted($"Weakness: {mobValue.Weakness}");
                         ImGui.SameLine(0, 14);
-                        ImGui.TextUnformatted($"InstanceContentType: {mobValue.InstanceContentType}");
+                        ImGui.TextUnformatted($"ContentType: {mobValue.InstanceContentType}");
                         ImGui.Unindent();
                     }
                     break;
