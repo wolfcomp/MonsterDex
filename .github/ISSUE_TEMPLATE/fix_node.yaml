@@ -18,7 +18,7 @@ body:
   - type: checkboxes
     id: content_type
     attributes:
-      lable: Content Type
+      label: Content Type
       options:
         - label: None
         - label: Raid
