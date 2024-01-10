@@ -15,6 +15,14 @@ body:
       placeholder: ex. 5429
     validations:
       required: true
+  - type: input
+    id: content_type
+    attributes:
+      label: Content Type
+      description: The content type where the mob is located
+      placeholder: ex. DeepDungeon
+    validations:
+      required: true
   - type: dropdown
     id: threatlevel
     attributes:
@@ -50,41 +58,3 @@ body:
     attributes:
       label: Additional mob text guide
       description: Is there anything worth telling the player about this mob?
-  - type: checkboxes
-    id: content_type
-    attributes:
-      label: Content Type
-      options:
-        - label: None
-        - label: Raid
-        - label: Dungeon
-        - label: GuildOrder
-        - label: Trial
-        - label: CrystallineConflict
-        - label: Frontlines
-        - label: QuestBattle
-        - label: BeginnerTraining
-        - label: DeepDungeon
-        - label: TreasureHuntDungeon
-        - label: SeasonalDungeon
-        - label: RivalWing
-        - label: MaskedCarnivale
-        - label: Mahjong
-        - label: GoldSaucer
-        - label: OceanFishing
-        - label: UnrealTrial
-        - label: TripleTriad
-        - label: VariantDungeon
-        - label: CriterionDungeon
-        - label: BondingCeremony
-        - label: PublicTripleTriad
-        - label: Eureka
-        - label: CalamityRetold
-        - label: LeapOfFaith
-        - label: Diadem
-        - label: Bozja
-        - label: Delubrum
-        - label: IslandSanctuary
-        - label: FallGuys
-    validations:
-      required: true
