@@ -15,21 +15,20 @@ public partial class Requests
         _log.Verbose($"Changed language to {name} processing MobData descriptions");
         foreach (var (_, files) in list)
         {
-            foreach (var file in files)
+            foreach (var path in files)
             {
-                if (file == "Job.yml")
+                if (path == "Job.yml")
                     continue;
-                var path = file.Replace(".yml", ".dat");
                 _log.Verbose($"Loading {path}");
                 var mobData = Handler.GetInstance<MobData>(path);
                 if (mobData == null)
                     continue;
 
-                _log.Verbose($"Processing MobData descriptions for {file}");
+                _log.Verbose($"Processing MobData descriptions for {path}");
                 try
                 {
                     _log.Verbose("Loading language file");
-                    if (Handler.GetInstance($"{name}/{file}") is not Locale langData)
+                    if (Handler.GetInstance($"{name}/{path}") is not Locale langData)
                         continue;
                     _log.Verbose("Looping through MobData");
                     foreach (var (id, _) in mobData.MobDictionary)
@@ -87,7 +86,7 @@ public partial class Requests
             if (string.IsNullOrWhiteSpace(localization))
                 continue;
             Handler.AddStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(localization) });
-            foreach (var (_, files) in list)
+            foreach (var (fileType, files) in list)
             {
                 foreach (var file in files)
                 {
