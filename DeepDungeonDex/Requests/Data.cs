@@ -9,7 +9,7 @@ public partial class Requests : IDisposable
 {
     private readonly CancellationTokenSource _token = new();
     private readonly Thread _loadFileThread;
-    private readonly Thread _loadLangThread;
+    private Thread? _loadLangThread;
     private readonly Regex _percentRegex = new("(%%)|(%)", RegexOptions.Compiled);
     private IPluginLog _log;
     private bool _loadedOnce;
@@ -28,10 +28,8 @@ public partial class Requests : IDisposable
         _log = log;
 #pragma warning disable CS4014
         _loadFileThread = new Thread(() => RefreshFileList());
-        _loadLangThread = new Thread(() => RefreshLang());
 #pragma warning restore CS4014
         _loadFileThread.Start();
-        _loadLangThread.Start();
     }
 
     public async Task<Dictionary<string, string[]>?> GetFileList()
@@ -91,6 +89,12 @@ public partial class Requests : IDisposable
         _loadedOnce = true;
 
     RefreshEnd:
+
+        if (_loadLangThread == null)
+        {
+            _loadLangThread = new Thread(() => RefreshLang());
+            _loadLangThread.Start();
+        }
         RequestingData = false;
         if (continuous)
         {

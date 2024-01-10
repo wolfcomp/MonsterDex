@@ -76,7 +76,7 @@ public record Mob
                 }
                 else
                 {
-                    strList.Add(s[..^1]);
+                    strList.Add(s.Length > 0 ? s[..^1] : "");
                     s = t + " ";
                 }
             }
