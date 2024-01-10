@@ -41,6 +41,8 @@ body:
         - Sound
         - Proximity
         - Boss
+        - Bloodlust
+        - Magic
   - type: checkboxes
     id: vulnerabilities
     attributes:
