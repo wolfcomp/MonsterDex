@@ -15,6 +15,45 @@ body:
       placeholder: ex. 5429
     validations:
       required: true
+  - type: checkboxes
+    id: content_type
+    attributes:
+      lable: Content Type
+      description: The content type where the mob is in the game
+      options:
+        - label: None
+        - label: Raid
+        - label: Dungeon
+        - label: GuildOrder
+        - label: Trial
+        - label: CrystallineConflict
+        - label: Frontlines
+        - label: QuestBattle
+        - label: BeginnerTraining
+        - label: DeepDungeon
+        - label: TreasureHuntDungeon
+        - label: SeasonalDungeon
+        - label: RivalWing
+        - label: MaskedCarnivale
+        - label: Mahjong
+        - label: GoldSaucer
+        - label: OceanFishing
+        - label: UnrealTrial
+        - label: TripleTriad
+        - label: VariantDungeon
+        - label: CriterionDungeon
+        - label: BondingCeremony
+        - label: PublicTripleTriad
+        - label: Eureka
+        - label: CalamityRetold
+        - label: LeapOfFaith
+        - label: Diadem
+        - label: Bozja
+        - label: Delubrum
+        - label: IslandSanctuary
+        - label: FallGuys
+    valiadtions:
+      required: true
   - type: dropdown
     id: threatlevel
     attributes:
