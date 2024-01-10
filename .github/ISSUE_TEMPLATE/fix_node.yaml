@@ -19,7 +19,6 @@ body:
     id: content_type
     attributes:
       lable: Content Type
-      description: The content type where the mob is in the game
       options:
         - label: None
         - label: Raid
@@ -52,8 +51,6 @@ body:
         - label: Delubrum
         - label: IslandSanctuary
         - label: FallGuys
-    valiadtions:
-      required: true
   - type: dropdown
     id: threatlevel
     attributes:
