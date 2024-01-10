@@ -44,7 +44,7 @@ public unsafe class AddonAgent : IDisposable
             }
             else if (activePublic != null)
             {
-                ContentType = (ContentType)(1 << (int)activePublic->PublicContentDirectorType);
+                ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 19));
             }
             else
             {
