@@ -24,3 +24,4 @@ LoadAllFont: すべてのフォントを読み込む(言語変更時、読み込
 LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\n端末のスペックによっては、遅延やフリーズが発生する可能性があります"
 HideFloorGuide: 新しいフロアに入るときにフロアガイドの表示を停止する
 UnknownContent: 不明なコンテンツは、 {0}({1}) で使用できません。
+CreateDataIssue: Create a data issue
