@@ -24,3 +24,4 @@ LoadAllFont: Load all font faces (Can speed up load when changing languages)
 LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
 HideFloorGuide: Stop showing the floor guide when entering a new floor
 UnknownContent: Unknown Content no display available for {0}({1})
+CreateDataIssue: Create a data issue
