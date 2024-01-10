@@ -114,6 +114,8 @@ public class StorageHandler : IDisposable
             }
             binary.Close();
             file.Close();
+            config.PrevLocale = config.Locale;
+            config.PrevFontSize = config.FontSize;
             return config;
         }
         catch
