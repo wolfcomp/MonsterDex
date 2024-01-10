@@ -86,3 +86,5 @@ body:
         - label: Delubrum
         - label: IslandSanctuary
         - label: FallGuys
+    validations:
+      required: true
