@@ -176,7 +176,7 @@ public class StorageHandler : IDisposable
     {
         foreach (var (_, obj) in Storage)
         {
-            if(obj is IDisposable disposable)
+            if (obj is IDisposable disposable)
                 disposable.Dispose();
         }
         Storage.Clear();
@@ -213,12 +213,21 @@ internal class YamlStringEnumConverter : IYamlTypeConverter
         var items = new List<string>();
         if (type.GetCustomAttributes<FlagsAttribute>().Any())
         {
-            parser.TryConsume<SequenceStart>(out _);
-            while (parser.TryConsume<Scalar>(out var scalar))
+            parser.TryConsume<SequenceStart>(out var sequence);
+            if (sequence != null)
             {
-                items.Add(scalar.Value);
+                while (parser.TryConsume<Scalar>(out var scalar))
+                {
+                    items.Add(scalar.Value);
+                }
+
+                parser.TryConsume<SequenceEnd>(out _);
             }
-            parser.TryConsume<SequenceEnd>(out _);
+            else
+            {
+                if (parser.TryConsume<Scalar>(out var scalar))
+                    items.Add(scalar.Value);
+            }
         }
         else if (parser.TryConsume<Scalar>(out var scalar))
             items.Add(scalar.Value);
