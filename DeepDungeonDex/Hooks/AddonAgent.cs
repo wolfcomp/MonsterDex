@@ -39,7 +39,7 @@ public unsafe class AddonAgent : IDisposable
 
             if (activeInstance != null)
             {
-                ContentType = (ContentType)(1 << (int)activeInstance->InstanceContentDirector.InstanceContentType);
+                ContentType = (ContentType)(1 << ((int)activeInstance->InstanceContentDirector.InstanceContentType - 1));
                 Floor = activeInstance->Floor;
             }
             else if (activePublic != null)
