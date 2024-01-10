@@ -12,6 +12,7 @@ public partial class Requests : IDisposable
     private readonly Thread _loadLangThread;
     private readonly Regex _percentRegex = new("(%%)|(%)", RegexOptions.Compiled);
     private IPluginLog _log;
+    private bool _loadedOnce;
     public HttpClient Client = new();
     public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data";
     public TimeSpan CacheTime = TimeSpan.FromHours(6);
@@ -54,11 +55,6 @@ public partial class Requests : IDisposable
         RequestingData = true;
         var list = await GetFileList();
         if (list == null)
-        {
-            _log.Error("Failed to get file list using precompiled data");
-            list = await GetFileListFromFile();
-        }
-        if (list == null)
             goto RefreshEnd;
 
         Handler.AddStorage("index.json", list);
@@ -92,6 +88,8 @@ public partial class Requests : IDisposable
             }
         }
 
+        _loadedOnce = true;
+
     RefreshEnd:
         RequestingData = false;
         if (continuous)
@@ -121,7 +119,7 @@ public partial class Requests : IDisposable
         catch (Exception e)
         {
             _log.Error(e, "Trying to get file from precompiled data");
-            return await GetFromFile(url);
+            return !_loadedOnce ? await GetFromFile(url) : null;
         }
     }
 

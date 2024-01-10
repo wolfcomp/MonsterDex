@@ -1,11 +1,13 @@
 using System.IO;
 using System.Numerics;
+using System.Runtime.InteropServices;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Interface.Internal;
 using Dalamud.Interface.Utility.Raii;
-using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
+using Dalamud.Utility;
+using DeepDungeonDex.Hooks;
 
 namespace DeepDungeonDex.Windows;
 
@@ -27,8 +29,10 @@ public partial class Main : Window, IDisposable
     private uint _targetId;
     private bool _debug;
     private IDalamudTextureWrap? _unknown;
+    private AddonAgent _addon;
+    private const string _githubIssuePath = "https://github.com/wolfcomp/DeepDungeonDex/issues/new?template=fix_node.yaml";
 
-    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, DalamudPluginInterface pluginInterface) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, DalamudPluginInterface pluginInterface, AddonAgent addon) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -39,6 +43,7 @@ public partial class Main : Window, IDisposable
         _pluginInterface = pluginInterface;
         _clientState = state;
         _log = log;
+        _addon = addon;
         var instance = this;
         _config = _storage.GetInstance<Configuration>()!;
         SizeConstraints = new WindowSizeConstraints
@@ -168,27 +173,44 @@ public partial class Main : Window, IDisposable
         // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
         switch (_currentMob.InstanceContentType)
         {
-            case InstanceContentType.DeepDungeon:
+            case ContentType.DeepDungeon:
                 DrawDeepDungeonData();
                 break;
-            case InstanceContentType.Dungeon:
-            case InstanceContentType.GuildOrder:
-            case InstanceContentType.QuestBattle:
-            case InstanceContentType.BeginnerTraining:
-            case InstanceContentType.TreasureHuntDungeon:
-            case InstanceContentType.SeasonalDungeon:
-            case InstanceContentType.MaskedCarnivale:
-            case InstanceContentType.VariantDungeon:
-            case InstanceContentType.CriterionDungeon:
             default:
-                DrawUnknownContent();
+                // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
+                switch (_addon.ContentType)
+                {
+                    case ContentType.OceanFishing:
+                    case ContentType.BondingCeremony:
+                    case ContentType.CrystallineConflict:
+                    case ContentType.Trial:
+                    case ContentType.Raid:
+                    case ContentType.UnrealTrial:
+                    case ContentType.Mahjong:
+                    case ContentType.GoldSaucer:
+                    case ContentType.RivalWing:
+                    case ContentType.TripleTriad:
+                    case ContentType.PublicTripleTriad:
+                    case ContentType.LeapOfFaith:
+                    case ContentType.Frontlines:
+                        break;
+                    default:
+                        DrawUnknownContent();
+                        break;
+                }
                 break;
         }
     }
 
-    public void DrawUnknownContent()
+    public unsafe void DrawUnknownContent()
     {
         ImGui.TextUnformatted(string.Format(_locale.GetLocale("UnknownContent"), _currentMob.Name, _currentMob.Id));
+        // ReSharper disable once InvertIf
+        if (ImGui.Button(_locale.GetLocale("CreateDataIssue")))
+        {
+            var url = $"{_githubIssuePath}&mob_id={_currentMob.Id}%20-%20{_currentMob.Name}&content_type={_addon.ContentType:G}";
+            Util.OpenLink(url);
+        }
     }
 
     public void LoadIcons()

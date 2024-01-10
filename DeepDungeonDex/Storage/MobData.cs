@@ -1,6 +1,3 @@
-using System.Drawing;
-using System.IO;
-using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage;
@@ -63,7 +60,7 @@ public record Mob
     public Weakness Weakness { get; set; }
     public Aggro Aggro { get; set; }
     public Threat Threat { get; set; }
-    public InstanceContentType InstanceContentType { get; set; }
+    public ContentType InstanceContentType { get; set; }
 
     public void ProcessDescription(float width)
     {
@@ -129,6 +126,42 @@ public enum Threat : byte
     Caution,
     Dangerous,
     Vicious
+}
+
+[Flags]
+public enum ContentType : uint
+{
+    None = 0,
+    Raid = 1,
+    Dungeon = 1 << 1,
+    GuildOrder = 1 << 2,
+    Trial = 1 << 3,
+    CrystallineConflict = 1 << 4,
+    Frontlines = 1 << 5,
+    QuestBattle = 1 << 6,
+    BeginnerTraining = 1 << 7,
+    DeepDungeon = 1 << 8,
+    TreasureHuntDungeon = 1 << 9,
+    SeasonalDungeon = 1 << 10,
+    RivalWing = 1 << 11,
+    MaskedCarnivale = 1 << 12,
+    Mahjong = 1 << 13,
+    GoldSaucer = 1 << 14,
+    OceanFishing = 1 << 15,
+    UnrealTrial = 1 << 16,
+    TripleTriad = 1 << 17,
+    VariantDungeon = 1 << 18,
+    CriterionDungeon = 1 << 19,
+    BondingCeremony = 1 << 20,
+    PublicTripleTriad = 1 << 21,
+    Eureka = 1 << 22,
+    CalamityRetold = 1 << 23, // seems to be only for the rising event in 2018
+    LeapOfFaith = 1 << 24,
+    Diadem = 1 << 25,
+    Bozja = 1 << 26,
+    Delubrum = 1 << 27,
+    IslandSanctuary = 1 << 28,
+    FallGuys = 1 << 29,
 }
 
 public static class MobDataExtensions
