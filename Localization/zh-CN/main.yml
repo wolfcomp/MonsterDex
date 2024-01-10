@@ -24,3 +24,4 @@ LoadAllFont: 加载所有字体 (在改变语言时可以加速加载)
 LoadAllFontWarning: 这将在内存中加载30MB的字体，在较弱的系统上会导致卡顿和较高的内存使用率，请注意。
 HideFloorGuide: 进入新楼面时停止显示地板指南
 UnknownContent: 未知内容无法显示为 {0}({1})
+CreateDataIssue: 创建数据问题

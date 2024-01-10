@@ -24,3 +24,4 @@ LoadAllFont: Alle Schriftarten laden (Beschleunigt das Ändern der Sprachen)
 LoadAllFontWarning: Dies lädt 30 MB Schriftarten in den Speicher und führt zu Verzögerungen und höherer Speicherauslastung auf schwächeren Systemen.
 HideFloorGuide: Die Fußbodenleitung nicht mehr anzeigen, wenn Sie eine neue Etage betreten
 UnknownContent: Unbekannter Inhalt keine Anzeige für {0}({1})
+CreateDataIssue: Datenproblem erstellen
