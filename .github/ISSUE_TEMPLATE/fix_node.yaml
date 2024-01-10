@@ -15,6 +15,41 @@ body:
       placeholder: ex. 5429
     validations:
       required: true
+  - type: dropdown
+    id: threatlevel
+    attributes:
+      label: What threat level sould the mob have
+      options:
+        - Easy
+        - Caution
+        - Dangerous
+        - Vicious
+  - type: dropdown
+    id: agrotype
+    attributes:
+      label: What agro type does the mob have
+      options:
+        - Sight
+        - Sound
+        - Proximity
+        - Boss
+  - type: checkboxes
+    id: vulnerabilities
+    attributes:
+      label: Vulnerabilities for the enemy
+      description: What vulnerabilities does the enemy have?
+      options:
+        - label: Stun
+        - label: Heavy
+        - label: Slow
+        - label: Sleep
+        - label: Bind
+        - label: Undead
+  - type: textarea
+    id: text
+    attributes:
+      label: Additional mob text guide
+      description: Is there anything worth telling the player about this mob?
   - type: checkboxes
     id: content_type
     attributes:
@@ -51,38 +86,3 @@ body:
         - label: Delubrum
         - label: IslandSanctuary
         - label: FallGuys
-  - type: dropdown
-    id: threatlevel
-    attributes:
-      label: What threat level sould the mob have
-      options:
-        - Easy
-        - Caution
-        - Dangerous
-        - Vicious
-  - type: dropdown
-    id: agrotype
-    attributes:
-      label: What agro type does the mob have
-      options:
-        - Sight
-        - Sound
-        - Proximity
-        - Boss
-  - type: checkboxes
-    id: vulnerabilities
-    attributes:
-      label: Vulnerabilities for the enemy
-      description: What vulnerabilities does the enemy have?
-      options:
-        - label: Stun
-        - label: Heavy
-        - label: Slow
-        - label: Sleep
-        - label: Bind
-        - label: Undead
-  - type: textarea
-    id: text
-    attributes:
-      label: Additional mob text guide
-      description: Is there anything worth telling the player about this mob?
