@@ -54,6 +54,7 @@ public class Floor : Window, IDisposable
             IsOpen = true;
 
         }, show: false);
+        command.AddCommand(new[] { "enable_floor", "e_floor", "enable_f", "ef" }, _addon.Restart, "Resets the floor getter function to try again");
         var config = _storage.GetInstance<Configuration>()!;
         SizeConstraints = new WindowSizeConstraints
         {
