@@ -1,6 +1,4 @@
 ﻿using Dalamud.Game.Command;
-using Dalamud.Game.Gui;
-using YamlDotNet.Core.Tokens;
 
 namespace DeepDungeonDex;
 

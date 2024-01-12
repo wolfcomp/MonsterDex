@@ -12,48 +12,50 @@ public unsafe class AddonAgent : IDisposable
     public byte Floor { get; private set; }
     public bool Disabled { get; private set; }
     public ContentType ContentType { get; private set; }
+    public Action<ContentType> ContentTypeUpdated { get; set; }
 
-    public AddonAgent(IFramework framework, IPluginLog log, CommandHandler handler)
+    public AddonAgent(IFramework framework, IPluginLog log)
     {
         _framework = framework;
         _log = log;
         _framework.Update += OnUpdate;
-        handler.AddCommand(new[] { "enable_floor", "e_floor", "enable_f", "ef" }, () =>
-        {
-            if (!Disabled)
-                return;
-            Disabled = false;
-            _framework.Update += OnUpdate;
-        }, "Resets the floor getter function to try again");
     }
 
     private void OnUpdate(IFramework framework)
     {
         _structsFramework = EventFramework.Instance();
-        if (!IsContentSafe())
-            return;
         try
         {
-            var activeInstance = _structsFramework->GetInstanceContentDeepDungeon();
-            var activePublic = (PublicContentDirectorResearch*)_structsFramework->GetPublicContentDirector();
+            if (!IsContentSafe())
+                return;
+
+            var activeInstance = _structsFramework->GetInstanceContentDirector();
 
             if (activeInstance != null)
             {
-                ContentType = (ContentType)(1 << ((int)activeInstance->InstanceContentDirector.InstanceContentType - 1));
-                Floor = activeInstance->Floor;
-            }
-            else if (activePublic != null)
-            {
-                ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 19));
+                ContentType = (ContentType)(1 << ((int)activeInstance->InstanceContentType - 1));
+                if (ContentType.HasFlag(ContentType.DeepDungeon))
+                {
+                    Floor = ((InstanceContentDeepDungeon*)activeInstance)->Floor;
+                }
             }
             else
             {
-                ContentType = ContentType.None;
+                var activePublic = (PublicContentDirectorResearch*)_structsFramework->GetPublicContentDirector();
+                if (activePublic != null)
+                {
+                    ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 19));
+                }
+                else
+                {
+                    ContentType = ContentType.None;
+                }
             }
+            ContentTypeUpdated?.Invoke(ContentType);
         }
         catch (Exception e)
         {
-            _log.Error(e, "Error trying to fetch InstanceContentDeepDungeon disabling feature.");
+            _log.Error(e, "Error trying to fetch ContentDirector disabling feature.");
             Dispose(false);
         }
     }
@@ -68,6 +70,14 @@ public unsafe class AddonAgent : IDisposable
         var eventHandlerInfo = contentDirector->Director.EventHandlerInfo;
 
         return (IntPtr)eventHandlerInfo != IntPtr.Zero;
+    }
+
+    public void Restart()
+    {
+        if (!Disabled)
+            return;
+        Disabled = false;
+        _framework.Update += OnUpdate;
     }
 
     public void Dispose(bool disposing)

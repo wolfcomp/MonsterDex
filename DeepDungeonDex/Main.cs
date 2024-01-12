@@ -1,5 +1,4 @@
 ﻿using System.Collections.Concurrent;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.IoC;

@@ -1,6 +1,5 @@
 using System.IO;
 using System.Numerics;
-using System.Runtime.InteropServices;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.Types;
@@ -142,7 +141,7 @@ public partial class Main : Window, IDisposable
             return;
         }
 
-        if (_condition[ConditionFlag.PvPDisplayActive])
+        if (_condition[ConditionFlag.PvPDisplayActive] || BlockedContents())
         {
             IsOpen = false;
             return;
@@ -166,6 +165,21 @@ public partial class Main : Window, IDisposable
             _currentMob.Name = npc.Name.ToString();
         IsOpen = true;
     }
+
+    public bool BlockedContents() => _addon.ContentType is 
+        ContentType.OceanFishing or 
+        ContentType.BondingCeremony or 
+        ContentType.CrystallineConflict or 
+        ContentType.Trial or 
+        ContentType.Raid or 
+        ContentType.UnrealTrial or 
+        ContentType.Mahjong or 
+        ContentType.GoldSaucer or 
+        ContentType.RivalWing or 
+        ContentType.TripleTriad or 
+        ContentType.PublicTripleTriad or 
+        ContentType.LeapOfFaith or 
+        ContentType.Frontlines;
 
     public override void Draw()
     {
