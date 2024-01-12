@@ -1,8 +1,5 @@
-﻿using System.Buffers.Binary;
-using System.IO;
-using System.Net.Http;
+﻿using System.IO;
 using System.Runtime.InteropServices;
-using System.Text;
 using Configuration = DeepDungeonDex.Models.Configuration;
 
 namespace DeepDungeonDex.Font;

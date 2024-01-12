@@ -1,6 +1,5 @@
 using System.Numerics;
 using Dalamud.Interface.Utility.Raii;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex.Windows;
 
