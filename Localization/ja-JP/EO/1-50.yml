@@ -32,9 +32,9 @@
 12156: |
   "個人の子供はありません"
 12263: |
-  1) "Twister" -- Move away from twister bait
-  2) "Twisting Dive" -- Cleave down middle with twister bait
-  3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
+  1) "ツイスター" -- 詠唱完了時にプレイヤーの足元にツイスターが設置される
+  2) "ツイスターダイブ" -- 外周から直線範囲攻撃、および詠唱完了時にプレイヤーの足元にツイスターが設置される
+  3) "メラシディアンサイクロン" -- ランダムに最大2名へ4回円範囲攻撃をした後、ボスからノックバック攻撃
 12160: 切り抜きの背後に速いです
 12169: スローキャストスタッキング
 12159: キャストヘイスト
