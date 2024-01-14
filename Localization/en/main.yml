@@ -25,3 +25,9 @@ LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag 
 HideFloorGuide: Stop showing the floor guide when entering a new floor
 UnknownContent: Unknown Content no display available for {0}({1})
 CreateDataIssue: Create a data issue
+ContentTypeNone: Overworld
+ContentTypeDeepDungeon: Deep Dungeon
+ContentTypeEureka: Eureka
+ContentTypeDiadem: Diadem
+ContentTypeBozja: Bozja
+ContentTypeIslandSanctuary: Island Sanctuary
