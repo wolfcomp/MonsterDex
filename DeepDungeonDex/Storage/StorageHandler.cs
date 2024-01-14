@@ -9,10 +9,8 @@ namespace DeepDungeonDex.Storage;
 public class StorageHandler : IDisposable
 {
     private readonly string _path;
-    private IChatGui _chat;
     private static IPluginLog _log = null!;
     public static IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
-    private static ISerializer _serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
 
     internal readonly Dictionary<string, object> Storage = new();
 
@@ -21,7 +19,6 @@ public class StorageHandler : IDisposable
     public StorageHandler(DalamudPluginInterface pluginInterface, IChatGui chat, IPluginLog log)
     {
         _path = pluginInterface.GetPluginConfigDirectory();
-        _chat = chat;
         _log = log;
         AddStorage("config.dat", LoadConfig());
     }
@@ -156,10 +153,8 @@ public class StorageHandler : IDisposable
                 disposable.Dispose();
         }
         Storage.Clear();
-        _serializer = null!;
         Deserializer = null!;
         _log = null!;
-        _chat = null!;
     }
 }
 
