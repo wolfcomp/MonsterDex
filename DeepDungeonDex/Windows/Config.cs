@@ -17,6 +17,10 @@ public class Config : Window, IDisposable
     private int _loc;
     private bool _loadAll;
     private bool _hideFloor;
+    private ContentType _contentTypes = ContentType.DeepDungeon | ContentType.Eureka | ContentType.IslandSanctuary | ContentType.Diadem | ContentType.Bozja | ContentType.None;
+    private ContentType[] _allContentTypes = Array.Empty<ContentType>();
+    private ContentType[] AllContentTypes => _allContentTypes.Any() ? _allContentTypes : _allContentTypes = Enum.GetValues(typeof(ContentType)).Cast<ContentType>().ToArray();
+
 
     public Config(DalamudPluginInterface pluginInterface, StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
     {
@@ -125,6 +129,24 @@ public class Config : Window, IDisposable
             _config.Locale = _loc;
             _requests.ChangeLanguage();
         }
+        ImGui.Columns(2, null, false);
+        ImGui.TextUnformatted(_locale.GetLocale("ContentTypes"));
+        foreach (var allContentType in AllContentTypes)
+        {
+            if (!_contentTypes.HasFlag(allContentType))
+                continue;
+
+            var enabled = _config.EnabledContentTypes.HasFlag(allContentType);
+            ImGui.NextColumn();
+            if (!ImGui.Checkbox(_locale.GetLocale("ContentType" + allContentType.ToString()), ref enabled))
+                continue;
+
+            if (enabled)
+                _config.EnabledContentTypes |= allContentType;
+            else
+                _config.EnabledContentTypes &= ~allContentType;
+        }
+        ImGui.Columns(1);
         ImGui.NewLine();
         if (ImGui.Button(_locale.GetLocale("Save")))
         {

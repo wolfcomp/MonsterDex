@@ -141,7 +141,7 @@ public partial class Main : Window, IDisposable
             return;
         }
 
-        if (_condition[ConditionFlag.PvPDisplayActive] || BlockedContents())
+        if (_condition[ConditionFlag.PvPDisplayActive] || !EnabledContents())
         {
             IsOpen = false;
             return;
@@ -166,20 +166,7 @@ public partial class Main : Window, IDisposable
         IsOpen = true;
     }
 
-    public bool BlockedContents() => _addon.ContentType is 
-        ContentType.OceanFishing or 
-        ContentType.BondingCeremony or 
-        ContentType.CrystallineConflict or 
-        ContentType.Trial or 
-        ContentType.Raid or 
-        ContentType.UnrealTrial or 
-        ContentType.Mahjong or 
-        ContentType.GoldSaucer or 
-        ContentType.RivalWing or 
-        ContentType.TripleTriad or 
-        ContentType.PublicTripleTriad or 
-        ContentType.LeapOfFaith or 
-        ContentType.Frontlines;
+    public bool EnabledContents() => _addon.ContentType.HasAnyFlag(_config.EnabledContentTypes);
 
     public override void Draw()
     {
