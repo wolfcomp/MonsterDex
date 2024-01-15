@@ -91,8 +91,8 @@
 12208: |
   「轟音」-- ワイドラインAOE、損失することはできません、動かなければなりません。
 12204: |
-  Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
-  DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
+  ランダムな対象に突進したあと、”リアー”で自身の周囲に小さな範囲攻撃をする。
+  この”リアー”は、詠唱する前にスタンしているとスタンが切れた後にすぐ詠唱を始める。
 12205: |
   HPが20%以下の場合、プレイヤーを暗殺する
 12198: |
