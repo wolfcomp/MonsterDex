@@ -8,7 +8,7 @@
 12183: |
   キャストジェリッドチャージ、アイススパイクバフは物理ダメージを与えられた場合1発のヒットとなります。
 12171: |
-  前円錐骨をテレグラフ化したAOE（青江）
+  予兆のある、前方扇範囲を使用する
 12178: |
   Vuln スタックを積層します。多すぎないように注意してください。
 12176: |
@@ -77,17 +77,17 @@
   トリプルはノックバックをターゲットにし、可能な場合はコーナーへとくみを入れました。
   "イノセンス" -- ターゲット円AOE。
 12202: |
-  "The Killing Paw" -- double frontal cone second is untelegraphed
-  Be carefull with stun or slow as this enemy can store the second swipe
+  "キリングパウ" -- 2連続で前方へ扇範囲攻撃、2発目は予兆がない
+  この2発目は溜めることができ、1発目でスタンしていても切れると2発目を使用してくるのでスタンやスロウの使用には注意
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction.
-  Moving side to side will allow you to easily tell when Scythe Tail is casting.
+  "スパーク" -- 予兆のないドーナツ型AoE
+  "サイズテール" -- 無詠唱の自身周囲AoE、AAや方向転換をやめしゃがみ始めるとこれが使用されている
+  左右に動くことでサイズテールが使用されていることを簡単に判別可能。
 12201: |
   軽度のブリードデビューを与え、短い期間の後に自分自身をバフ.
 12209: |
-  "Freefall" -- randomly targetd medium circle AOE
-  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
+  "フリーフォール" -- ランダムな対象に中規模の円範囲攻撃
+  "ウィンターウィンド" -- フリーフォールを2回使用した後、超広範囲攻撃。視線切りするかスタンで回避できる。
 12208: |
   「轟音」-- ワイドラインAOE、損失することはできません、動かなければなりません。
 12204: |
@@ -99,11 +99,11 @@
   「Chirp」-- 長時間スリープ
   「Tornado」を引き起こす非電信PBAOE-- ランダムにターゲットを絞った円AE、最初にスリープを持つプレイヤーにキャスト。
 12206: |
-  "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
-  "Revelation" -- untelegraphed AOE cast on Confused players
+  "猛禽の眼" -- 視線攻撃、混乱を付与する
+  "リヴァレーション" -- 混乱が付与されているプレイヤーに対して円範囲攻撃
 12200: |
-  "Wide Blaster" -- Huge wide frontal cone targeted at random player
-  "Tail Swing" -- Huge rear cone if player is behind
+  "ワイドブラスター" -- ランダムなターゲットに対してかなり広い角度の大きな前方扇範囲
+  "テールスイング" -- 背面にプレイヤーがいると後方へ広い扇範囲攻撃
 12203: |
   「チェストスロープ」－「パイプバナナ」
   「ストールペレット」を使用した後、AOEが大規模な戦闘を行った。－ランダムにターゲットd円AOE
