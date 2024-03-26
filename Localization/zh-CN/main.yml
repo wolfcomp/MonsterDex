@@ -25,3 +25,9 @@ LoadAllFontWarning: 这将在内存中加载30MB的字体，在较弱的系统�
 HideFloorGuide: 进入新楼面时停止显示地板指南
 UnknownContent: 未知内容无法显示为 {0}({1})
 CreateDataIssue: 创建数据问题
+ContentTypeNone: Overworld
+ContentTypeDeepDungeon: Deep Dungeon
+ContentTypeEureka: Eureka
+ContentTypeDiadem: Diadem
+ContentTypeBozja: Bozja
+ContentTypeIslandSanctuary: Island Sanctuary
