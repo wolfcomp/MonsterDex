@@ -1,3 +1,4 @@
+using FFXIVClientStructs.FFXIV.Client.Game.Character;
 using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage;
@@ -61,6 +62,10 @@ public record Mob
     public Aggro Aggro { get; set; }
     public Threat Threat { get; set; }
     public ContentType InstanceContentType { get; set; }
+    public Dictionary<uint, ElementalChangeTime> ElementalChangeTimes { get; set; } = new();
+    public Character.EurekaElement MutatedElementalType { get; set; }
+    public bool IsMutation { get; set; }
+    public bool IsAaptation { get; set; }
 
     public void ProcessDescription(float width)
     {
@@ -70,7 +75,7 @@ public record Mob
             var s = "";
             foreach (var t in t1)
             {
-                if (ImGui.CalcTextSize(s + t).X < width)
+                if (ImGui.CalcTextSize(s + t + " ").X < width)
                 {
                     s += t + " ";
                 }
@@ -164,6 +169,15 @@ public enum ContentType : uint
     FallGuys = 1 << 29,
 }
 
+[Flags]
+public enum ElementalChangeTime : byte
+{
+    None,
+    Night,
+    Day,
+    Both = Night | Day
+}
+
 public static class MobDataExtensions
 {
     public static Mob? GetData(this MobData data, uint key)
@@ -184,4 +198,7 @@ public static class MobDataExtensions
         Threat.Vicious => 0xFFFF00FF,
         _ => 0xFFFFFFFF
     };
+
+    public static bool HasAnyFlag(this ContentType type, ContentType flag) => (type & flag) != 0;
 }
+
