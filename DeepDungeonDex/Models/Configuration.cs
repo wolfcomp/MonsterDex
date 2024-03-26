@@ -15,7 +15,7 @@ public class Configuration
     public int Locale { get; set; } = 0;
     public int FontSize { get; set; } = 16;
     public float Opacity { get; set; } = 1f;
-    public ContentType EnabledContentTypes { get; set; } = ContentType.DeepDungeon | ContentType.Eureka | ContentType.IslandSanctuary | ContentType.Diadem | ContentType.Bozja | ContentType.None;
+    public ContentType EnabledContentTypes { get; set; } = ContentType.DeepDungeon;
 
     [JsonIgnore] public int PrevFontSize;
     [JsonIgnore] public int PrevLocale;

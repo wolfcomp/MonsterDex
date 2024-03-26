@@ -17,7 +17,7 @@ public partial class Requests
         {
             foreach (var path in files)
             {
-                if (path == "Job.yml")
+                if (path == "Territories.yml")
                     continue;
                 _log.Verbose($"Loading {path}");
                 var mobData = Handler.GetInstance<MobData>(path);

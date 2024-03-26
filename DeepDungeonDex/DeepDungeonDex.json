@@ -1,15 +1,18 @@
 {
   "Author": "WildWolf",
-  "Name": "DeepDungeonDex",
-  "Punchline": "Live monster data for Deep Dungeons.",
-  "Description": "A live bestiary for Deep Dungeon.\nShows target mob aggro type, a subjective threat level, status vulnerabilities, and a general overview of notable mechanics.\nThreat level is meant to be taken with a grain of salt, is aimed towards solo players, and assumes a general familiarity with deep dungeon mechanics and the class being played.\nInformation is accurate to the best of my knowledge based on crowdsourced information, but I could use your help! Please open an issue on the GitHub if you'd like to correct inaccurate or untested data.\nOriginal by Strati",
+  "Name": "MonsterDex",
+  "Punchline": "Live monster data.",
+  "Description": "A live bestiary.\nShows target mob aggro type, a subjective threat level, status vulnerabilities, and a general overview of notable mechanics.\nThreat level is meant to be taken with a grain of salt, is aimed towards solo players, and assumes a general familiarity with deep dungeon mechanics and the class being played.\nInformation is accurate to the best of my knowledge based on crowdsourced information, but I could use your help! Please open an issue on the GitHub if you'd like to correct inaccurate or untested data.\nOriginally DeepDungeonDex",
   "Tags": [
     "deep dungeon",
     "achievements",
-    "battle"
+    "battle",
+    "combat",
+    "monsters",
+    "enemies"
   ],
   "Changelog": "",
-  "RepoUrl": "https://github.com/wolfcomp/DeepDungeonDex",
+  "RepoUrl": "https://github.com/wolfcomp/MonsterDex",
   "ApplicableVersion": "any",
   "LoadPriority": 0,
   "AcceptsFeedback": false

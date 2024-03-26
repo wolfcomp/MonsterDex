@@ -7,13 +7,17 @@ using Dalamud.Interface.Internal;
 using Dalamud.Interface.Utility.Raii;
 using Dalamud.Utility;
 using DeepDungeonDex.Hooks;
+using DeepDungeonDex.Weather;
+using FFXIVClientStructs.FFXIV.Client.System.Framework;
+using BattleChara = FFXIVClientStructs.FFXIV.Client.Game.Character.BattleChara;
 
 namespace DeepDungeonDex.Windows;
 
-public partial class Main : Window, IDisposable
+public unsafe partial class Main : Window, IDisposable
 {
 #pragma warning disable CS8618
     private static Mob _currentMob;
+    private static BattleChara* _currentNpc;
 #pragma warning restore CS8618
     private ICondition _condition;
     private ITargetManager _target;
@@ -24,14 +28,15 @@ public partial class Main : Window, IDisposable
     private StorageHandler _storage;
     private DalamudPluginInterface _pluginInterface;
     private Configuration _config;
+    private WeatherManager _weatherManager;
     private Locale[] _locale = Array.Empty<Locale>();
     private uint _targetId;
     private bool _debug;
     private IDalamudTextureWrap? _unknown;
     private AddonAgent _addon;
-    private const string _githubIssuePath = "https://github.com/wolfcomp/DeepDungeonDex/issues/new?template=fix_node.yaml";
+    private const string _githubIssuePath = "https://github.com/wolfcomp/MonsterDex/issues/new?template=fix_node.yaml";
 
-    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, DalamudPluginInterface pluginInterface, AddonAgent addon) : base("DeepDungeonDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, DalamudPluginInterface pluginInterface, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -43,6 +48,7 @@ public partial class Main : Window, IDisposable
         _clientState = state;
         _log = log;
         _addon = addon;
+        _weatherManager = weatehrManager;
         var instance = this;
         _config = _storage.GetInstance<Configuration>()!;
         SizeConstraints = new WindowSizeConstraints
@@ -155,6 +161,8 @@ public partial class Main : Window, IDisposable
         }
 
         SetTarget(npc.NameId);
+
+        _currentNpc = (BattleChara*)npc.Address;
         // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
         if (_currentMob is null)
         {
@@ -176,6 +184,9 @@ public partial class Main : Window, IDisposable
         {
             case ContentType.DeepDungeon:
                 DrawDeepDungeonData();
+                break;
+            case ContentType.Eureka:
+                DrawEurekaData();
                 break;
             default:
                 // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
@@ -203,7 +214,7 @@ public partial class Main : Window, IDisposable
         }
     }
 
-    public unsafe void DrawUnknownContent()
+    public void DrawUnknownContent()
     {
         ImGui.TextUnformatted(string.Format(_locale.GetLocale("UnknownContent"), _currentMob.Name, _currentMob.Id));
         // ReSharper disable once InvertIf
@@ -211,6 +222,19 @@ public partial class Main : Window, IDisposable
         {
             var url = $"{_githubIssuePath}&mob_id={_currentMob.Id}%20-%20{_currentMob.Name}&content_type={_addon.ContentType:G}";
             Util.OpenLink(url);
+        }
+
+        if (_config.Debug && _currentNpc != null)
+        {
+            ImGui.TextUnformatted("Debug information");
+            var forayInfo = _currentNpc->GetForayInfo;
+            if(forayInfo != null)
+                ImGui.TextUnformatted($"NamePlateIconId: {(uint)forayInfo->Element + 60650}");
+            ImGui.TextUnformatted($"SubKind: {_currentNpc->Character.GameObject.SubKind}");
+            ImGui.TextUnformatted($"Current Time: {((Time)Framework.GetServerTime()).GetEorzeanTime()}");
+            ImGui.TextUnformatted($"Weather: {_addon.Weather}");
+            ImGui.TextUnformatted("WeatherIds:");
+            _addon.WeatherIds.Where(t => t != 0).Select(t => $"{t}: {_weatherManager.GetWeatherName(t)}").ToList().ForEach(ImGui.TextUnformatted);
         }
     }
 
@@ -230,21 +254,21 @@ public partial class Main : Window, IDisposable
     public void DrawWeakness(Weakness weakness)
     {
         var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
-        DrawIcon(15004, size, weakness, Weakness.Stun);
+        DrawWeaknessIcon(15004, size, weakness, Weakness.Stun);
         ImGui.SameLine();
-        DrawIcon(15002, size, weakness, Weakness.Heavy);
+        DrawWeaknessIcon(15002, size, weakness, Weakness.Heavy);
         ImGui.SameLine();
-        DrawIcon(15009, size, weakness, Weakness.Slow);
+        DrawWeaknessIcon(15009, size, weakness, Weakness.Slow);
         ImGui.SameLine();
-        DrawIcon(15013, size, weakness, Weakness.Sleep);
+        DrawWeaknessIcon(15013, size, weakness, Weakness.Sleep);
         ImGui.SameLine();
-        DrawIcon(15003, size, weakness, Weakness.Bind);
+        DrawWeaknessIcon(15003, size, weakness, Weakness.Bind);
 
         // ReSharper disable once InvertIf
         if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
         {
             ImGui.SameLine();
-            DrawIcon(15461, size, weakness, Weakness.Undead);
+            DrawWeaknessIcon(15461, size, weakness, Weakness.Undead);
         }
     }
 
@@ -253,7 +277,7 @@ public partial class Main : Window, IDisposable
     private static Vector4 _color = new(1, 1, 1, 1);
     private static Vector4 _unknownColor = new(0.5f, 0.5f, 0.5f, 0.5f);
 
-    public void DrawIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
+    public void DrawWeaknessIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
@@ -264,6 +288,11 @@ public partial class Main : Window, IDisposable
             ImGui.SetCursorPos(cursor);
             ImGui.Image(_unknown!.ImGuiHandle, size);
         }
+    }
+
+    public void DrawIcon(uint iconId, Vector2 size, Vector4 color)
+    {
+        ImGui.Image(_textureProvider.GetIcon(iconId)!.ImGuiHandle, size, _uv0, _uv1, color);
     }
 
     public Vector4 GetColor(Weakness weakness, Weakness check)

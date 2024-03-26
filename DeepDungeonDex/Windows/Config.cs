@@ -22,7 +22,7 @@ public class Config : Window, IDisposable
     private ContentType[] AllContentTypes => _allContentTypes.Any() ? _allContentTypes : _allContentTypes = Enum.GetValues(typeof(ContentType)).Cast<ContentType>().ToArray();
 
 
-    public Config(DalamudPluginInterface pluginInterface, StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider) : base("DeepDungeonDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
+    public Config(DalamudPluginInterface pluginInterface, StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider) : base("MonsterDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
     {
         _handler = handler;
         _requests = requests;
@@ -131,20 +131,20 @@ public class Config : Window, IDisposable
         }
         ImGui.Columns(2, null, false);
         ImGui.TextUnformatted(_locale.GetLocale("ContentTypes"));
-        foreach (var allContentType in AllContentTypes)
+        foreach (var contentType in AllContentTypes)
         {
-            if (!_contentTypes.HasFlag(allContentType))
+            if (!_contentTypes.HasFlag(contentType))
                 continue;
 
-            var enabled = _config.EnabledContentTypes.HasFlag(allContentType);
+            var enabled = _config.EnabledContentTypes.HasFlag(contentType);
             ImGui.NextColumn();
-            if (!ImGui.Checkbox(_locale.GetLocale("ContentType" + allContentType.ToString()), ref enabled))
+            if (!ImGui.Checkbox(_locale.GetLocale($"ContentType{contentType:G}"), ref enabled))
                 continue;
 
             if (enabled)
-                _config.EnabledContentTypes |= allContentType;
+                _config.EnabledContentTypes |= contentType;
             else
-                _config.EnabledContentTypes &= ~allContentType;
+                _config.EnabledContentTypes &= ~contentType;
         }
         ImGui.Columns(1);
         ImGui.NewLine();
