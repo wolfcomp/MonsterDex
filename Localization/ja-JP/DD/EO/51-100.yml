@@ -1,0 +1,182 @@
+#EO floors 51-59
+12182: |
+  ショットラインチャージをキャストします。LoSが必要です
+12174: |
+  PBとターゲット円AOEは唖然とすることができます。
+12180: |
+  死んだ後に爆発します。殺されたときに岩石化された場合は爆発しません。
+12183: |
+  キャストジェリッドチャージ、アイススパイクバフは物理ダメージを与えられた場合1発のヒットとなります。
+12171: |
+  予兆のある、前方扇範囲を使用する
+12178: |
+  Vuln スタックを積層します。多すぎないように注意してください。
+12176: |
+  ヘビーデビュー後、テールスクリューAOEが追加されます。ヘビーはシールドで無効にできます。
+12318: |
+  PB AOEをフラッシュする
+12181: |
+  1000個のトゲを鋳造します
+12172: |
+  Suckerを使用してプルインし、PB AE、ノックバック抵抗またはプルイン直後に離れて歩いてください。
+12179: |
+  「下水」-- 半円が残りの半分を切断しました。電報が消えた直後に動かなければなりません。
+12177: |
+  役に立たない本当に役に立たない
+12173: |
+  プレイヤーにジャンプし、目標外の全員に半分の部屋ノックバックを行います。
+  "Electric Whorl" -- ドーナツ
+  "Expulsion" -- PB AOE。
+12175: |
+  カニドリブル速いキャスト後部円錐AOE背後にあることによって引き起こされます。
+#EO boss floor 60
+12267: |
+  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN.
+  "Disorienting Groan" -- Knockback, be centered in arena or use knockback resist during cast.
+  "Bullish Swipe" -- Frontal cleave.
+  "Bullish Swing" -- Large PB AOE.
+  "Thundercall" -- Summons blue orbs followed by Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
+#EO floors 61-69
+12184: |
+  毒デバフを速く積み上げることを許可します。一度にあまり多くを引っ張ることはありません。
+12191: |
+  正面円錐形とPBのAOEをテレグラフ化しました。
+12189: |
+  AOEは他の敵に回避を与え、他の敵から離れて殺そうとします。
+12187: |
+  電信狭い正面直腸AEを持っています.
+12186: |
+  背後にプレイヤーがいる場合、高速非電信円錐形の背中を切断, 短い期間のヴァルンスタックで死亡時にPB AOE.
+12185: |
+  「巨大スケール」-- 物理ダメージに当たると1発のバフ
+12194: |
+  Untelegraphed Claw/Tail swipe swipe swipe conal AIE 注意深くアニメーションを見る。
+12195: |
+  HPが20%以下の場合、暗殺されます
+12190: |
+  フロント側の視線攻撃とPBのAOE。
+12196: |
+  特定の敵と一緒に引っ張るときは注意してください。
+12188: |
+  テレグラフ・ターゲットAOEformat@@0
+12193: |
+  プレイヤーが近接距離にいない場合、"Electric Cachexia"(Donut AOE)がキャストされます。範囲を引っ張ることができます。
+12192: |
+  インスタントプルインに続いて高速キャストPB AOE"Body Press"が続きます。 音/アニメーションのプルに注意してください。
+#EO floor 70
+12246: |
+  "Steel Claw" -- tankbuster, sort of.
+  "Ferocity" -- distance tether followed by Preternatural Turn.
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
+  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
+#EO floors 71-79
+12197: |
+  スローコール（スローコール）-- 前頭円錐形の後期電信がスロー効果をもたらします
+12199: |
+  トリプルはノックバックをターゲットにし、可能な場合はコーナーへとくみを入れました。
+  "イノセンス" -- ターゲット円AOE。
+12202: |
+  "キリングパウ" -- 2連続で前方へ扇範囲攻撃、2発目は予兆がない
+  この2発目は溜めることができ、1発目でスタンしていても切れると2発目を使用してくるのでスタンやスロウの使用には注意
+12207: |
+  "スパーク" -- 予兆のないドーナツ型AoE
+  "サイズテール" -- 無詠唱の自身周囲AoE、AAや方向転換をやめしゃがみ始めるとこれが使用されている
+  左右に動くことでサイズテールが使用されていることを簡単に判別可能。
+12201: |
+  軽度のブリードデビューを与え、短い期間の後に自分自身をバフ.
+12209: |
+  "フリーフォール" -- ランダムな対象に中規模の円範囲攻撃
+  "ウィンターウィンド" -- フリーフォールを2回使用した後、超広範囲攻撃。視線切りするかスタンで回避できる。
+12208: |
+  "ブリスターロア" -- 前方へ広い直線範囲攻撃。視線切りしても回避できないので背面に移動すること
+12204: |
+  ランダムな対象に突進したあと、”リアー”で自身の周囲に小さな範囲攻撃をする。
+  この”リアー”は、詠唱する前にスタンしているとスタンが切れた後にすぐ詠唱を始める。
+12205: |
+  HPが20%以下の場合、プレイヤーを暗殺する
+12198: |
+  「Chirp」-- 長時間スリープ
+  「Tornado」を引き起こす非電信PBAOE-- ランダムにターゲットを絞った円AE、最初にスリープを持つプレイヤーにキャスト。
+12206: |
+  "猛禽の眼" -- 視線攻撃、混乱を付与する
+  "リヴァレーション" -- 混乱が付与されているプレイヤーに対して円範囲攻撃
+12200: |
+  "ワイドブラスター" -- ランダムなターゲットに対してかなり広い角度の大きな前方扇範囲
+  "テールスイング" -- 背面にプレイヤーがいると後方へ広い扇範囲攻撃
+12203: |
+  「チェストスロープ」－「パイプバナナ」
+  「ストールペレット」を使用した後、AOEが大規模な戦闘を行った。－ランダムにターゲットd円AOE
+  安全に引っ張って胸切りに捕まえられないようにする。
+#EO boss floor 80
+12247: |
+  "Resonance" -- Wide conal tankbuster.
+  "Rightward/Leftward Nerve Gas" -- Diagonal halfroom cleaves, front of boss is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave.
+  "Nerve Gas Ring" -- large donut that leaves only melee distance safe.
+  "Barofield" -- Creates insta-kill zone under the boss and outside ring with DoT.
+  "Auto Cannons" -- drones on cardinals fire a line AOE across arena.
+  "Nanospore Jet" -- Gives players a positive or negative charge and later tethers to a drone on a cardinal direction. Subsequent casts create new Barofield.
+  Nanospore Rotation: Nerve Gas 1, Nerve Gas  2 (with Auto Cannons), Nerve Gas 3 (with Auto Cannons), Tether appears, Nerve Gas 4 (with Auto Cannons), Nerve Gas Ring (with Auto Cannons)
+  Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
+#EO floors 81-89
+12212: |
+  PB視線AOEformat@@0
+12217: |
+  「グラスパンチ」-- 後期電信Conal AOE-
+12218: |
+  部屋の広い視野の両方アウトと戦闘中
+12214: |
+
+12161: |
+  重い
+  "テールねじ" -- 1馬力にセット
+12215: |
+
+12222: |
+
+12213: |
+
+12211: |
+
+12220: |
+  ルームワイドのAOEが適用されます "テロ"
+12221: |
+
+12216: |
+  "バスターリングブリンク" -- ワイドラインAOEは、視力のラインすることはできません。
+12219: |
+
+#EO boss floor 90
+12102: |
+
+#EO floors 91-98
+12223: |
+  殺された時に大きなPB AOEを設定してください
+12224: |
+
+12225: |
+  270度前頭葉切断。
+12226: |
+
+12227: |
+
+12228: |
+  Conal Gaze
+12229: |
+
+12230: |
+
+12231: |
+  4ノックバックは大きな前頭部切断にダッシュします
+12232: |
+
+12233: |
+
+12234: |
+
+12235: |
+
+#EO boss floor 99
+12100: |
+
