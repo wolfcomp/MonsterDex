@@ -1,18 +1,22 @@
 ﻿{
   "MobData": [
-    "HoH/1-50.yml",
-    "HoH/51-100.yml",
-    "PotD/1-50.yml",
-    "PotD/51-100.yml",
-    "PotD/101-150.yml",
-    "PotD/151-200.yml",
-    "EO/1-50.yml",
-    "EO/51-100.yml",
+    "DD/HoH/1-50.yml",
+    "DD/HoH/51-100.yml",
+    "DD/PotD/1-50.yml",
+    "DD/PotD/51-100.yml",
+    "DD/PotD/101-150.yml",
+    "DD/PotD/151-200.yml",
+    "DD/EO/1-50.yml",
+    "DD/EO/51-100.yml",
+    "Eureka/Hyd.yml",
     "Special.yml"
   ],
   "FloorData": [
-    "PotD/Floors.yml",
-    "HoH/Floors.yml",
-    "EO/Floors.yml"
+    "DD/PotD/Floors.yml",
+    "DD/HoH/Floors.yml",
+    "DD/EO/Floors.yml"
+  ],
+  "Territories": [
+    "Territories.yml"
   ]
 }

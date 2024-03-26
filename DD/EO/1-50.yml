@@ -215,6 +215,16 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
+12125-Orthos Keter:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # EO boss floor 20
 12261-Cloning Node:

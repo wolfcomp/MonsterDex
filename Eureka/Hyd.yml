@@ -1,0 +1,48 @@
+8008-Eurekan Deathgaze:
+  InstanceContentType: Eureka
+  ElementalChangeTimes:
+    2: Both
+    8: Both
+    17: Both
+    10: Both
+    15: Both
+8009-Val Nanka:
+  InstanceContentType: Eureka
+  ElementalChangeTimes:
+    2: Night
+    8: Night
+    17: Night
+    10: Night
+    15: Night
+8010-Sabotender Mariachi:
+  InstanceContentType: Eureka
+8011-Hydatos Slug:
+  InstanceContentType: Eureka
+8012-Hydatos Pudding:
+  InstanceContentType: Eureka
+  ElementalChangeTimes:
+    2: Both
+    8: Both
+    17: Both
+    10: Both
+    15: Both
+8013-Laboratory Coeurl:
+  InstanceContentType: Eureka
+  ElementalChangeTimes:
+    2: Night
+    8: Night
+    17: Night
+    10: Night
+    15: Night
+8014-Val Chigoe:
+  InstanceContentType: Eureka
+  ElementalChangeTimes:
+    2: Both
+8055-Soulless Researcher:
+  InstanceContentType: Eureka
+  ElementalChangeTimes:
+    2: Night
+    8: Night
+    17: Night
+    10: Night
+    15: Night
