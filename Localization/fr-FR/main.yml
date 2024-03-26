@@ -25,3 +25,9 @@ LoadAllFontWarning: Cette action chargera 30 Mo de polices en mémoire et provoq
 HideFloorGuide: Arrêter d'afficher le guide des planchers lorsque vous entrez dans un nouvel étage
 UnknownContent: Contenu inconnu non affiché pour {0}({1})
 CreateDataIssue: Créer un problème de données
+ContentTypeNone: Overworld
+ContentTypeDeepDungeon: Deep Dungeon
+ContentTypeEureka: Eureka
+ContentTypeDiadem: Diadem
+ContentTypeBozja: Bozja
+ContentTypeIslandSanctuary: Island Sanctuary
