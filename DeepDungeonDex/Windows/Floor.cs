@@ -16,7 +16,7 @@ public class Floor : Window, IDisposable
     private byte _debug;
     private string _dataPath = "";
 
-    public Floor(StorageHandler storage, CommandHandler command, IFramework framework, ICondition condition, IClientState state, IPluginLog log, AddonAgent addon) : base("DeepDungeonDex FloorGuide", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Floor(StorageHandler storage, CommandHandler command, IFramework framework, ICondition condition, IClientState state, IPluginLog log, AddonAgent addon) : base("MonsterDex FloorGuide", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _storage = storage;
         _framework = framework;
@@ -27,7 +27,7 @@ public class Floor : Window, IDisposable
         command.AddCommand("debug_floor", args =>
         {
             var argArr = args.Split(' ');
-            if (!byte.TryParse(argArr[0], out var id) || !uint.TryParse(argArr[1], out var ter) || ter is > 2 or < 0)
+            if (!byte.TryParse(argArr[0], out var id) || !ushort.TryParse(argArr[1], out var ter))
             {
                 if (argArr[0] == "print")
                 {
@@ -42,14 +42,7 @@ public class Floor : Window, IDisposable
             }
 
             _debug = id;
-#pragma warning disable CS8509
-            _dataPath = ter switch
-#pragma warning restore CS8509
-            {
-                0 => "PotD",
-                1 => "HoH",
-                2 => "EO"
-            };
+            TerritoryChanged(ter);
             _locale = _storage.GetInstance<Locale>(_dataPath + "/Floors.yml");
             IsOpen = true;
 
@@ -65,18 +58,22 @@ public class Floor : Window, IDisposable
         framework.Update += GetData;
         config.OnChange += ConfigChanged;
         state.TerritoryChanged += TerritoryChanged;
+        storage.StorageChanged += StorageChanged;
         TerritoryChanged(state.TerritoryType);
+    }
+
+    private void StorageChanged(StorageEventArgs obj)
+    {
+        if (obj.StorageType == typeof(Territories))
+            TerritoryChanged(770);
     }
 
     private void TerritoryChanged(ushort e)
     {
-        _dataPath = e switch
-        {
-            >= 561 and <= 565 or >= 593 and <= 607 => "PotD",
-            >= 770 and <= 775 or >= 782 and <= 785 => "HoH",
-            >= 1099 and <= 1108 => "EO",
-            _ => ""
-        };
+        var territories = _storage.GetInstance<Territories>();
+        if (territories == null)
+            return;
+        _dataPath = territories.GetTerritoryName(e, _log);
         _locale = _storage.GetInstance<Locale>(_dataPath + "/Floors.yml");
     }
 
@@ -85,10 +82,10 @@ public class Floor : Window, IDisposable
         if (_debug != 0)
             return;
 
-        if (_condition[ConditionFlag.InDeepDungeon])
+        if (_dataPath != "")
         {
             var config = _storage.GetInstance<Configuration>()!;
-            if(!_addon.Disabled && _dataPath != "" && !config.HideFloor && _addon.Floor % 10 != 0 && _storage.GetInstance(_dataPath + "/Floors.yml") != null)
+            if (!_addon.DirectorDisabled && !config.HideFloor && _addon.Floor % 10 != 0 && _storage.GetInstance(_dataPath + "/Floors.yml") != null)
                 IsOpen = true;
             else
                 IsOpen = false;
@@ -121,7 +118,7 @@ public class Floor : Window, IDisposable
         try
         {
             ImGui.Text("Floor Help");
-            ImGui.TextUnformatted(_locale?.GetLocale($"{_dataPath}{floor}"));
+            ImGui.TextUnformatted(_locale?.GetLocale($"{_dataPath[(_dataPath.LastIndexOf("/", StringComparison.Ordinal) + 1)..]}{floor}"));
         }
         catch
         {

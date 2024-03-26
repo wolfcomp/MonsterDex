@@ -9,7 +9,7 @@ internal class Debug : Window, IDisposable
     private Debug _instance;
     private Requests _requests;
 
-    public Debug(StorageHandler storage, CommandHandler handler, Requests requests) : base("DeepDungeonDex Debug Window", ImGuiWindowFlags.NoCollapse)
+    public Debug(StorageHandler storage, CommandHandler handler, Requests requests) : base("MonsterDex Debug Window", ImGuiWindowFlags.NoCollapse)
     {
         _storage = storage;
         _instance = this;
@@ -103,6 +103,21 @@ internal class Debug : Window, IDisposable
                     foreach (var (translationKey, translationValue) in locale.TranslationDictionary)
                     {
                         ImGui.TextUnformatted($"{translationKey}: {translationValue}");
+                    }
+
+                    break;
+                case Territories territories:
+                    foreach (var (name, ids) in territories.TerritoryDictionary)
+                    {
+                        ImGui.TextUnformatted($"{name}");
+                        ImGui.Indent();
+                        foreach (var id in ids)
+                        {
+                            ImGui.TextUnformatted($"{id[0]} - {id[1]}");
+                            ImGui.SameLine(0, 14);
+                        }
+                        ImGui.Unindent();
+                        ImGui.NewLine();
                     }
 
                     break;

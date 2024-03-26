@@ -20,7 +20,11 @@ public partial class Requests : IDisposable
     public bool RequestingData { get; private set; }
     public bool RequestingLang { get; private set; }
     public bool IsRequesting => RequestingData || RequestingLang;
-
+    #if RELEASE
+    private const bool Debug = false;
+    #else
+    private const bool Debug = true;
+    #endif
 
     public Requests(StorageHandler handler, IPluginLog log)
     {
@@ -72,6 +76,7 @@ public partial class Requests : IDisposable
                 {
                     _log.Verbose($"Loading File: {file}");
                     var content = await Get(file);
+                    _log.Verbose($"Content length from file: {content?.Length}");
                     if (string.IsNullOrWhiteSpace(content))
                         continue;
                     _log.Verbose("Creating instance");
@@ -107,6 +112,9 @@ public partial class Requests : IDisposable
 
     public async Task<string?> Get(string url)
     {
+#pragma warning disable CS0162 // Unreachable code detected
+        if (Debug)
+            return await GetFromFile(url);
         try
         {
             _log.Verbose($"Requesting {BaseUrl}/{url}");
@@ -125,6 +133,7 @@ public partial class Requests : IDisposable
             _log.Error(e, "Trying to get file from precompiled data");
             return !_loadedOnce ? await GetFromFile(url) : null;
         }
+#pragma warning restore CS0162 // Unreachable code detected
     }
 
     public void Dispose()

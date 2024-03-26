@@ -16,7 +16,7 @@ public partial class Main
         {
             ImGui.NewLine();
             ImGui.TextUnformatted(_locale.GetLocale("Notes") + ":\n");
-            var size = ImGui.GetWindowSize();
+            var size = ImGui.GetWindowContentRegionMax();
             var desc = _currentMob.ProcessedDescription;
             if (desc.Length == 0 || Math.Abs(size.X - _currentMob.LastProcessedWidth) > float.Epsilon)
                 _currentMob.ProcessDescription(size.X);

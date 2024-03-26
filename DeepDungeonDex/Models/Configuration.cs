@@ -4,7 +4,7 @@ namespace DeepDungeonDex.Models;
 
 public class Configuration
 {
-    public byte Version { get; } = 2;
+    private const byte Version = 3;
     public bool ClickThrough { get; set; }
     public bool HideRed { get; set; }
     public bool HideJob { get; set; }
@@ -15,6 +15,7 @@ public class Configuration
     public int Locale { get; set; } = 0;
     public int FontSize { get; set; } = 16;
     public float Opacity { get; set; } = 1f;
+    public ContentType EnabledContentTypes { get; set; } = ContentType.DeepDungeon;
 
     [JsonIgnore] public int PrevFontSize;
     [JsonIgnore] public int PrevLocale;
@@ -50,6 +51,7 @@ public class Configuration
         flags |= (byte)(Debug ? 1 << 4 : 0);
         flags |= (byte)(LoadAll ? 1 << 5 : 0);
         writer.Write(flags);
+        writer.Write((uint)EnabledContentTypes);
         writer.Write(Locale);
         writer.Write(FontSize);
         writer.Write(Opacity);

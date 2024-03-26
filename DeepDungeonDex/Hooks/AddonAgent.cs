@@ -1,6 +1,7 @@
 ﻿using FFXIVClientStructs.FFXIV.Client.Game.Event;
 using System.Runtime.InteropServices;
 using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
+using FFXIVClientStructs.FFXIV.Client.Graphics.Environment;
 
 namespace DeepDungeonDex.Hooks;
 
@@ -8,11 +9,13 @@ public unsafe class AddonAgent : IDisposable
 {
     private IFramework _framework;
     private IPluginLog _log;
-    private EventFramework* _structsFramework;
+    private EventFramework* _eventFramework;
+    private EnvManager* _envManager;
     public byte Floor { get; private set; }
-    public bool Disabled { get; private set; }
+    public bool DirectorDisabled { get; private set; }
     public ContentType ContentType { get; private set; }
-    public Action<ContentType> ContentTypeUpdated { get; set; }
+    public byte Weather { get; private set; }
+    public byte[] WeatherIds { get; private set; } = new byte[32];
 
     public AddonAgent(IFramework framework, IPluginLog log)
     {
@@ -23,13 +26,33 @@ public unsafe class AddonAgent : IDisposable
 
     private void OnUpdate(IFramework framework)
     {
-        _structsFramework = EventFramework.Instance();
+        _eventFramework = EventFramework.Instance();
+        _envManager = EnvManager.Instance();
+        if (!DirectorDisabled)
+            CheckDirector();
+        CheckWeather();
+    }
+
+    private void CheckWeather()
+    {
+        if (_envManager == null)
+            return;
+
+        Weather = _envManager->ActiveWeather;
+        if(_envManager->EnvScene == null)
+            return;
+
+        _envManager->EnvScene->WeatherIdsSpan.CopyTo(WeatherIds);
+    }
+
+    private void CheckDirector()
+    {
         try
         {
             if (!IsContentSafe())
                 return;
 
-            var activeInstance = _structsFramework->GetInstanceContentDirector();
+            var activeInstance = _eventFramework->GetInstanceContentDirector();
 
             if (activeInstance != null)
             {
@@ -41,7 +64,7 @@ public unsafe class AddonAgent : IDisposable
             }
             else
             {
-                var activePublic = (PublicContentDirectorResearch*)_structsFramework->GetPublicContentDirector();
+                var activePublic = (PublicContentDirectorResearch*)_eventFramework->GetPublicContentDirector();
                 if (activePublic != null)
                 {
                     ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 19));
@@ -51,7 +74,6 @@ public unsafe class AddonAgent : IDisposable
                     ContentType = ContentType.None;
                 }
             }
-            ContentTypeUpdated?.Invoke(ContentType);
         }
         catch (Exception e)
         {
@@ -62,7 +84,7 @@ public unsafe class AddonAgent : IDisposable
 
     private bool IsContentSafe()
     {
-        var contentDirector = _structsFramework->GetContentDirector();
+        var contentDirector = _eventFramework->GetContentDirector();
 
         if ((IntPtr)contentDirector == IntPtr.Zero)
             return false;
@@ -74,19 +96,18 @@ public unsafe class AddonAgent : IDisposable
 
     public void Restart()
     {
-        if (!Disabled)
+        if (!DirectorDisabled)
             return;
-        Disabled = false;
-        _framework.Update += OnUpdate;
+        DirectorDisabled = false;
     }
 
     public void Dispose(bool disposing)
     {
-        _framework.Update -= OnUpdate;
-        Disabled = true;
+        DirectorDisabled = true;
         if (!disposing)
             return;
 
+        _framework.Update -= OnUpdate;
         _framework = null!;
         _log = null!;
     }

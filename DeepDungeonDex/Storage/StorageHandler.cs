@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
@@ -10,10 +9,8 @@ namespace DeepDungeonDex.Storage;
 public class StorageHandler : IDisposable
 {
     private readonly string _path;
-    private IChatGui _chat;
     private static IPluginLog _log = null!;
     public static IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
-    private static ISerializer _serializer = new SerializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
 
     internal readonly Dictionary<string, object> Storage = new();
 
@@ -22,7 +19,6 @@ public class StorageHandler : IDisposable
     public StorageHandler(DalamudPluginInterface pluginInterface, IChatGui chat, IPluginLog log)
     {
         _path = pluginInterface.GetPluginConfigDirectory();
-        _chat = chat;
         _log = log;
         AddStorage("config.dat", LoadConfig());
     }
@@ -44,71 +40,48 @@ public class StorageHandler : IDisposable
             Stream file = new FileStream(configPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
             var binary = new BinaryReader(file);
             var config = new Configuration();
-            if (binary.ReadByte() == 0x7B)
+            file.Position = 0;
+            byte flags;
+            switch (binary.ReadByte())
             {
-                file.Position = 0;
-                TextReader text = new StreamReader(file);
-                JsonReader reader = new JsonTextReader(text);
-                var obj = (JObject)JToken.ReadFrom(reader);
-                if (obj.GetValue("Version")!.Value<int>() == 0)
-                {
-                    if (obj.TryGetValue("ClickThrough", out var clickThrough))
-                        config.ClickThrough = clickThrough.Value<bool>();
-                    if (obj.TryGetValue("HideRed", out var hideRed))
-                        config.HideRed = hideRed.Value<bool>();
-                    if (obj.TryGetValue("HideJob", out var hideJob))
-                        config.HideJob = hideJob.Value<bool>();
-                    if (obj.TryGetValue("HideFloor", out var hideFloor))
-                        config.HideFloor = hideFloor.Value<bool>();
-                    if (obj.TryGetValue("Debug", out var debug))
-                        config.Debug = debug.Value<bool>();
-                    if (obj.TryGetValue("Locale", out var locale))
-                        config.Locale = locale.Value<int>();
-                    if (obj.TryGetValue("FontSize", out var fontSize))
-                        config.FontSize = fontSize.Value<int>();
-                    if (obj.TryGetValue("Opacity", out var opacity))
-                        config.Opacity = opacity.Value<float>();
-                    if (obj.TryGetValue("LoadAll", out var loadAll))
-                        config.LoadAll = loadAll.Value<bool>();
-                }
-                reader.Close();
-                text.Close();
-                file.Close();
-                File.Delete(configPath);
-            }
-            else
-            {
-                file.Position = 0;
-                byte flags;
-                switch (binary.ReadByte())
-                {
-                    case 1:
-                        flags = binary.ReadByte();
-                        config.ClickThrough = (flags & 1) == 1;
-                        config.HideRed = (flags & 2) == 2;
-                        config.HideJob = (flags & 4) == 4;
-                        config.HideFloor = (flags & 8) == 8;
-                        config.HideSpawns = (flags & 16) == 16;
-                        config.Debug = (flags & 32) == 32;
-                        config.LoadAll = (flags & 64) == 64;
-                        config.Locale = binary.ReadInt32();
-                        config.FontSize = binary.ReadInt32();
-                        config.Opacity = binary.ReadSingle();
-                        break;
-                    case 2:
-                        flags = binary.ReadByte();
-                        config.ClickThrough = (flags & (1 << 1)) == (1 << 1);
-                        config.HideFloor = (flags & (1 << 2)) == (1 << 2);
-                        config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
-                        config.Debug = (flags & (1 << 4)) == (1 << 4);
-                        config.LoadAll = (flags & (1 << 5)) == (1 << 5);
-                        config.Locale = binary.ReadInt32();
-                        config.FontSize = binary.ReadInt32();
-                        config.Opacity = binary.ReadSingle();
-                        break;
-                    default:
-                        throw new Exception("Invalid config version");
-                }
+                case 1:
+                    flags = binary.ReadByte();
+                    config.ClickThrough = (flags & 1) == 1;
+                    config.HideRed = (flags & 2) == 2;
+                    config.HideJob = (flags & 4) == 4;
+                    config.HideFloor = (flags & 8) == 8;
+                    config.HideSpawns = (flags & 16) == 16;
+                    config.Debug = (flags & 32) == 32;
+                    config.LoadAll = (flags & 64) == 64;
+                    config.Locale = binary.ReadInt32();
+                    config.FontSize = binary.ReadInt32();
+                    config.Opacity = binary.ReadSingle();
+                    break;
+                case 2:
+                    flags = binary.ReadByte();
+                    config.ClickThrough = (flags & (1 << 1)) == (1 << 1);
+                    config.HideFloor = (flags & (1 << 2)) == (1 << 2);
+                    config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
+                    config.Debug = (flags & (1 << 4)) == (1 << 4);
+                    config.LoadAll = (flags & (1 << 5)) == (1 << 5);
+                    config.Locale = binary.ReadInt32();
+                    config.FontSize = binary.ReadInt32();
+                    config.Opacity = binary.ReadSingle();
+                    break;
+                case 3:
+                    flags = binary.ReadByte();
+                    config.ClickThrough = (flags & (1 << 1)) == (1 << 1);
+                    config.HideFloor = (flags & (1 << 2)) == (1 << 2);
+                    config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
+                    config.Debug = (flags & (1 << 4)) == (1 << 4);
+                    config.LoadAll = (flags & (1 << 5)) == (1 << 5);
+                    config.EnabledContentTypes = (ContentType)binary.ReadUInt32();
+                    config.Locale = binary.ReadInt32();
+                    config.FontSize = binary.ReadInt32();
+                    config.Opacity = binary.ReadSingle();
+                    break;
+                default:
+                    throw new Exception("Invalid config version");
             }
             binary.Close();
             file.Close();
@@ -180,10 +153,8 @@ public class StorageHandler : IDisposable
                 disposable.Dispose();
         }
         Storage.Clear();
-        _serializer = null!;
         Deserializer = null!;
         _log = null!;
-        _chat = null!;
     }
 }
 
