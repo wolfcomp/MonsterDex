@@ -1,0 +1,185 @@
+#EO floors 51-59
+12182: |
+  释放直线跟踪型秒杀级AOE，须隔墙躲避（不穿无敌）；
+  不吃晕
+12174: |
+  PB和目标圆形AOE可以发育不良。
+12180: |
+  死后爆炸，如果杀死时不会爆炸。
+12183: |
+  Casts Gelid Charge, Ice Spikes buff将被击中后会被击中一颗。
+12171: |
+  Telegraphed frontal conal AOE
+12178: |
+  给我们堆栈，小心不要拉得太多。
+12176: |
+  将提供重型调试，然后是尾指螺丝雷。重型可以通过屏蔽来取消。
+12318: |
+  刷新PB AOE
+12181: |
+  将投射1000个螺纹，PB AOE
+12172: |
+  用Sucker 拉进后PB AOE，击退后立即反抗或走去。
+12179: |
+  “下水道”——半圆圈隔开，然后紧随其他一半。必须在电报消失后立即移动。
+12177: |
+  没用。真的没用了。
+12173: |
+  Jumps to player and does half room knockback to everyone not targeted.
+  "Electric Whorl" -- Doughnut
+  "Expulsion" -- PB AOE
+12175: |
+  后面触发的 Crab Dribbble 快速投影后方形AOE。可以外围。
+#EO boss floor 60
+12267: |
+  "Octuple Swipe" -- 8 teligs, or nSEW two or NSEW then WESN
+  "Disorating Groan" -- Knockback, 中心在舞台上或在投影时使用击退抗体。
+  "Bullish Swipe" -- 前线清除.
+  "Bullish Swing" -- 大型PB AOE.
+  "Thundercall" -- Summons Blue orbs followed by Octuple Shipe Telegrape 雷管将在小的PB AOE内引爆，并进行第一次滑动清理。
+#EO floors 61-69
+12184: |
+  引发快速堆积毒物堆积，同时不会拉得太多。
+12191: |
+  有电报前台和 PB AOE。
+12189: |
+  AOE会让它所击中的其他敌人逃避，试图远离其他敌人。
+12187: |
+  有一个电报狭窄的面孔AOE。
+12186: |
+  如果玩家落后，快速无电绘制回形状的锥形回清理，PB AOE死亡时短暂地堆栈。
+12185: |
+  "涂料缩放" -- 如果被物理伤害击中将会有一发的bouff
+12194: |
+  未电报的 Claw/Tail 滑动滑动曲线。仔细监视动画。
+12195: |
+  如果暗杀剂低于20%HP
+12190: |
+  锥形眼镜头攻击和 PB AOE。
+12196: |
+  未以电传方式击退PB AOE，在与某些敌人拉电时要谨慎。
+12188: |
+  Telegramed targeted AOE
+12193: |
+  当玩家不在近战范围内时将投射“电时”（多努特AOE），可以被拉伸。
+12192: |
+  即时拉进，随后是快速投射PB AOE "Body Press." 注意声音/动画中的拉入。
+#EO floor 70
+12246: |
+  "Steel Claw" -- tankbuster, sort of.
+  "Ferocity" -- distance tether followed by Preternatural Turn.
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
+  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
+#EO floors 71-79
+12197: |
+  "慢速调用" — — 晚电报前台会产生非常不好的缓慢效果
+12199: |
+  Triple targeted knockbacks, wedge yourself into a corner if possible.
+  "Innocence" -- targeted circle AOE
+12202: |
+  释放正面可见扇形AOE，之后会复读一次不可见的AOE；
+  注意击晕或减速后，依然会释放第二次；
+  吃晕
+12207: |
+  "Spark" -- 未用电报刻录的
+  "Scythe Tail" -- 没有投影条 PB AOE, 它将滚动并停止自动攻击或改变方向。
+  移动到旁边将使您能够轻松地告诉Scythe Tail是何时投射的。
+12201: |
+  短时间后给自己一个轻微的调试和浮标。
+12209: |
+  "空闲" -- 随机瞄准中间圆形AOE
+  "冬季风" -- 两个空闲后大型AOE，必须是LoS 或 sten
+12208: |
+  "Blistering Roar" -- 宽线AOE, 不能丢失，MUST MOVE BEHIND。
+12204: |
+  Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
+  DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
+12205: |
+  如果玩家低于20%HP
+12198: |
+  "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
+  "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
+12206: |
+  “火焰之眼”-- 360度迷宫机械，引起迷惑
+  “揭露”-- 未以电报形式投射受困玩家。
+12200: |
+  "宽闪电" — — 瞄准随机播放器
+  "尾掉" — 如果玩家落在后面的巨型后圆锥。
+12203: |
+  "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
+  "Stool Pelt" -- randomly targetd circle AOE
+  Pull when safe to prevent getting caught by Chest Thump
+#EO boss floor 80
+12247: |
+  "Resonance" -- Wide conal tankbuster.
+  "Rightward/Leftward Nerve Gas" -- Diagonal halfroom cleaves, front of boss is always safe.
+  "Centralized Nerve Gas" -- Wide frontal conal cleave.
+  "Nerve Gas Ring" -- large donut that leaves only melee distance safe.
+  "Barofield" -- Creates insta-kill zone under the boss and outside ring with DoT.
+  "Auto Cannons" -- drones on cardinals fire a line AOE across arena.
+  "Nanospore Jet" -- Gives players a positive or negative charge and later tethers to a drone on a cardinal direction. Subsequent casts create new Barofield.
+  Nanospore Rotation: Nerve Gas 1, Nerve Gas  2 (with Auto Cannons), Nerve Gas 3 (with Auto Cannons), Tether appears, Nerve Gas 4 (with Auto Cannons), Nerve Gas Ring (with Auto Cannons)
+  Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
+#EO floors 81-89
+12212: |
+  PB Gaze AOE
+12217: |
+  "Glass Punch" -- 迟交的电报电报Conal AOE
+12218: |
+  全天候外出和战斗中的房间
+12214: |
+
+12161: |
+  单体平A重击，附加“加重”效果；
+  点名被加重玩家释放“螺旋尾”（可见圆形AOE），血量归1；
+  不吃晕
+12215: |
+
+12222: |
+
+12213: |
+
+12211: |
+
+12220: |
+  整个空间应用“恐怖主义”
+12221: |
+
+12216: |
+  "Busing Blink" -- 宽线AOE, 不能视为视线。
+12219: |
+
+#EO boss floor 90
+12102: |
+
+#EO floors 91-98
+12223: |
+  杀死大型PB AOE
+12224: |
+
+12225: |
+  270 度正面净化
+12226: |
+
+12227: |
+
+12228: |
+  康勒格尔
+12229: |
+
+12230: |
+
+12231: |
+  4 击退灰石进入一个大的前面净化
+12232: |
+
+12233: |
+
+12234: |
+
+12235: |
+
+#EO boss floor 99
+12100: |
+
