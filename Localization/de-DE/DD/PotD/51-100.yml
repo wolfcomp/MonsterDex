@@ -1,0 +1,18 @@
+5356: Beschwören fügt dem Ziel Aoes hinzu - zusätzlich sind Angriffe von Pomander der Auflösung verwundbar
+5345: |
+  Casts large AoEs
+  Summons "Grey Bomb" - must be killed before it does high room wide damage
+  Begins long cast "Massive Burst" and summons "Giddy Bomb" that must be knocked towards the boss to interrupt cast
+5334: Wirkt weite "Selbstzerstörung" wenn nicht rechtzeitig getötet wird
+5333: |
+  "Charybdis" -- anhaltende Tornados, die hohen Schaden verursachen, wenn in
+  Boss gesaugt wird, wird an den Rand der Arena laufen und "Trounce" wirken - breite Konale AoE
+  Bei 17%% wirkt "Ecliptic Meteor" - HOCHSCHÄDEN mit langem Wirken und verursacht 80%% des totalen Gesundheitsschadens.
+5321: |
+  "Douse" -- lingering ground AoE that inflicts Bleed if stood in and buffs boss with Haste if left in it
+  Occasionally casts targeted ground AoEs
+5309: |
+  Droppt große Puddelaoes, die Blutungen verursachen, wenn sie in
+  "Valfodr" stehen -- zielgerichtete unausweichliche Linie AoE zentriert auf Spieler, die starken Rückschlag verursacht. vermeide Aoes um äußeren Rand
+5308: Gaze fügt Blind zu und verursacht hohen Schaden
+5299: Gaze verursacht Lähmung

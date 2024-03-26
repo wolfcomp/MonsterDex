@@ -1,0 +1,182 @@
+#EO floors 51-59
+12182: |
+  Lance une ligne de chargement, doit être LoS
+12174: |
+  Les AOE PB et les cercles ciblés peuvent être étourdis.
+12180: |
+  Explose après la mort, n'explosera pas si pétrifié lorsqu'il est tué.
+12183: |
+  Lance la charge de givre, l'amélioration des pointes de glace sera un tir si touché avec des dégâts physiques
+12171: |
+  AOE du conal frontal télégraphié
+12178: |
+  Donne des piles de vuln empilées, attention à ne pas en tirer trop.
+12176: |
+  Donne un affaiblissement lourd suivi d'une AOE de vis de queue. Les lourds peuvent être annulés par le bouclier.
+12318: |
+  Purger AOE PB
+12181: |
+  Lancer 1000 épines, AOE PB
+12172: |
+  Pousse avec Sucker, puis AOE PB, résiste au recul ou s'éloigne immédiatement après l'entrée.
+12179: |
+  « Eau d'égout » -- Le demi-cercle se déplace immédiatement après la disparition du télégraphe.
+12177: |
+  Inutile. Vraiment inutile.
+12173: |
+  Saut vers le joueur et fait demi-marche arrière vers tous ceux qui ne sont pas ciblés.
+  "Tourbillon électrique" --
+  "Expulsion" -- AOE PB
+12175: |
+  Lancement rapide du conal arrière du crabe à l'arrière déclenché par le derrière. Peut être éloigné.
+#EO boss floor 60
+12267: |
+  "Octuple Swipe" -- 8 télégraphes, soit NSEW deux fois, ou NSEW puis WESN.
+  « Groan désorientant» -- Coup, être centré dans l'arène ou utiliser une résistance au recul pendant le lancement.
+  « Balayage haussier» -- Frappe frontale.
+  « Coup haussier » -- Grande AOE PB.
+  « Tonnerre » -- Invoque des orbes bleus suivis de télégraphes de balayage octuple. Les orbes exploseront dans de petites AOE PB avec le premier clignotement Swipe.
+#EO floors 61-69
+12184: |
+  Inflige un affaiblissement rapide du poison, ne tirez pas trop à la fois.
+12191: |
+  A télégraphié conal avant et AOE PB.
+12189: |
+  L'AOE donnera de l'évasion à d'autres ennemis qu'elle touche, essayez de tuer loin des autres ennemis.
+12187: |
+  Possède un télégraphe étroit face à AOE.
+12186: |
+  Décomposition rapide du dos conal détélégraphié si le joueur est derrière, AOE PB à la mort avec une pile vulne de courte durée.
+12185: |
+  « Echelles brisantes » - amélioration qui sera 1 tir si elle est touchée par des dégâts physiques
+12194: |
+  Griffe non télégraphiée/balayage par balayage conal AOE. Regardez l'animation attentivement.
+12195: |
+  Assassinat si moins de 20% PV
+12190: |
+  Attaque conale frontale et PB AOE.
+12196: |
+  Détélégraphié contre la PB AOE, prudence lorsque vous tirez avec certains ennemis.
+12188: |
+  AOE ciblée Telegraphed
+12193: |
+  Lance « Cachexie électrique » (Donut AOE) quand les joueurs ne sont pas à portée de mêlée. Peut être tiré à distance.
+12192: |
+  Pull instantané suivi de PB AOE rapide "Body Press". Faites attention pour tirer dans le son ou l'animation.
+#EO floor 70
+12246: |
+  "Steel Claw" -- tankbuster, sort of.
+  "Ferocity" -- distance tether followed by Preternatural Turn.
+  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
+  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
+  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
+#EO floors 71-79
+12197: |
+  "Slowcall" -- conal frontal du télégraphe tardif, donne un effet lent très mauvais
+12199: |
+  Triple les retours ciblés dans un coin, si possible.
+  "Innocence" -- cercle ciblé AOE
+12202: |
+  « La patte morte» -- le double cône frontal est détélégraphié
+  Faites attention avec étourdissement ou lentement car cet ennemi peut stocker le deuxième coup
+12207: |
+  "Spark" -- Saupoudrer
+  "Scythe Tail" -- aucune barre de lancement AOE PB, il va s'écraser et arrêter d'attaquer automatiquement ou de changer de direction.
+  Vous pouvez facilement déterminer quand la queue de Scythe est en train de couler.
+12201: |
+  Donne un affaiblissement légèrement saigné et une amélioration sur une courte période.
+12209: |
+  "Freefall" -- cibler aléatoirement le cercle moyen AOE
+  "Vents de l'hiver" -- grande AOE après 2 chutes libres, doit LoS ou étourdir
+12208: |
+  "Rugissement ardent" -- Ligne large AOE, ne peut pas être perdue, DOIT MOVER BEHIND.
+12204: |
+  Attaque de Charge ciblée aléatoirement suivie par une lance rapide de PB AOE "Rear"
+  NE PAS STUN COMME LA RAISON PEUT ÊTRE STANT ET INSTANT CAST APRÈS DE STUN WEARS OFF
+12205: |
+  Assassine le joueur si moins de 20% PV
+12198: |
+  « Chirp » -- AOE PB non télégraphiée qui provoque une longue durée de sommeil
+  « Tornade » -- cercle ciblé aléatoirement AOE, lancé sur le joueur avec le sommeil d'abord.
+12206: |
+  L'"Œil du Fierce" -- mécanique du regard à 360 degrés, provoque la Confusion
+  "Révélation" -- détélégraphée AOE lancée sur les joueurs confus
+12200: |
+  "Large Blaster" -- Grand cône frontal large ciblé sur un joueur aléatoire
+  "Tail Swing" -- Grand cône arrière si le joueur est derrière
+12203: |
+  "Thump" -- Énorme en dehors du combat AOE après avoir utilisé "Ripe Banana"
+  "Chevelure de selle" -- cibler aléatoirement le cercle AOE
+  Tirez en toute sécurité pour éviter d'être attrapé par le Saut de coffre
+#EO boss floor 80
+12247: |
+  "Résonance" -- Grand réservoir conal.
+  "Gaz de réserve à droite/à gauche" -- Coupes diagonales en demi-pièce, devant le patron est toujours en sécurité.
+  "Centralized Nerve Gas" -- Large frontal conal cleave.
+  "Anneau de gaz nerveux" -- grand donut qui ne laisse que des distances de mêlée sûres.
+  "Barofield" -- Crée la zone insta-kill sous le boss et l'anneau extérieur avec DoT.
+  "Auto canons" -- des drones sur des cardinaux tirent une ligne AOE sur l'arène.
+  "Nanospore Jet" -- Donne aux joueurs une charge positive ou négative et plus tard à un drone dans une direction cardinale. Les castes suivantes créent un nouveau Barofield.
+  Rotation de Nanospore : Nerve Gaz 1, Nerve Gaz 2 (avec canon automatique), Nerve Gas 3 (avec canon automatique), Tether apparaît, Nerve Gas 4 (avec canon automatique), Anneau Nerve Gas (avec canon automatique)
+  Les larmes se résolvent peu avant la fin de la fonte de l'anneau Nerve Gas, vous aurez un moment à ajuster après la résolution du tether et avant les canons Nerve Gaz / Auto
+#EO floors 81-89
+12212: |
+  Regard PB AOE
+12217: |
+  « Pointe de verre » -- AEO du conal télégraphié tardif
+12218: |
+  Regard large de la salle à la fois dehors et en combat
+12214: |
+
+12161: |
+  Inflicts heavy
+  "Tail Screw" -- sets to 1 hp
+12215: |
+
+12222: |
+
+12213: |
+
+12211: |
+
+12220: |
+  L'AOE de la chambre s'applique à "Terreur"
+12221: |
+
+12216: |
+  "Bustering Blink" -- large ligne AOE, ne peut pas être ligne de vue.
+12219: |
+
+#EO boss floor 90
+12102: |
+
+#EO floors 91-98
+12223: |
+  Gros AOE PB quand tué
+12224: |
+
+12225: |
+  cleave frontale à 270 degrés
+12226: |
+
+12227: |
+
+12228: |
+  Regard Conal
+12229: |
+
+12230: |
+
+12231: |
+  4 tirets recule vers une grande fente frontale
+12232: |
+
+12233: |
+
+12234: |
+
+12235: |
+
+#EO boss floor 99
+12100: |
+

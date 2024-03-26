@@ -1,0 +1,85 @@
+5479: Caster, break line of sight to evade auto-attacks
+4975: Casts Haste on itself
+4977: Absorbs health with each attack
+4979: AoE "Shriek" inflicts Stun
+4980: Inflicts Poison
+4981: Soft-enrage "Final Sting", break line of sight to evade
+4982: Inflicts Vulnerability Up
+4983: AoE "Slumber Breath" inflicts Sleep
+4985: Mini buster "Rhino Attack", break line of sight to evade
+4986: |
+  1) "Whipcrack" - light tankbuster
+  2) "Stormwind" - conal AoE
+  3) "Bombination" - circular AoE on boss inflicts Slow
+  4) "Lumisphere" - targeted AoE on random player
+  5) "Aeroblast" - room wide AoE inflicts Windburn (15s DoT)
+4988: Inflicts Poison
+4989: |
+  "Sticky Tongue" draw-in a player, inflicting Stun if not facing the monster
+  "Labored Leap" AoE is immediately casted after, inflicts substantial damage
+4990: |
+  Can ENRAGE with "Rupture" and wipe the whole team if not killed in time
+  Absorbs health with each attack
+4993: Casts instant Untelegraphed AoE which inflicts Slow
+4994: Inflicts Poison
+4995: |
+  "Bad Breath" AoE inflicts multiple debuffs if not evaded
+4996: |
+  Caster, break line of sight to evade auto-attacks
+  Buffs own damage with "Golden Tongue"
+4997: |
+  INSTANTLY KILLS players inflicted with Toad using "Devour"
+  Gaze attack inflicts Petrify, do not target while casted to evade
+4999: |
+  1) "Bloody Caress" - high damage cleave
+  2) Two telegraphed AoEs and a room wide AoE
+  3) Summons two Palace Hornets that must be killed before they casts "Final Sting"
+  4) "Rotten Stench" - high damage line AoE
+5001: |
+  Casts "Smoldering Scales" applying "Blaze Spikes" to self.
+  "Blaze Spikes" inflicts fire damage upon melee attacks.
+5003: Gaze attack inflicts Petrify, do not target while casted to evade
+5004: High auto-attack damage
+5005: |
+  Caster, break line of sight to evade auto-attacks
+  Casts Haste on itself
+5006: Casts Physical Damage Up on itself
+5007: Can knockback player
+5010: Untelegraphed AoE "111-Tonze Swing" does moderate damage and knockback
+5011: |
+  "Chirp" inflicts Sleep for 15s
+5012: |
+  1) Spread out Fire and Ice AoEs on arena borders
+  2) After the fourth AoE, run to the center of the arena alongside the boss
+  2) Get inside boss's hit box before "Fear Itself" is casted, or it will inflict high damage and Terror
+5014: Inflicts Paralysis if caught in AoE
+5016: Inflicts Stun if caught in AoE
+5017: Caster, break line of sight to evade auto-attacks
+5019: |
+  Draws-in near players and then casts an AoE
+  Caster, break line of sight to evade auto-attacks
+5020: Caster, break line of sight to evade auto-attacks
+5022: |
+  Casts "Dark Mist" AoE, which inflicts Terror
+  "Void Fire II" AoE is subsequently casted to inflict high damage to stunned players
+5023: Gaze attack inflicts Petrify
+5025: |
+  1) Summons four lingering AoEs followed by AoEs which inflicts Disease
+  2) Summons two Nightmare Bhoots, they must be killed before the boss next attack
+  3) Casts "Scream", and adds will use "Tornado", a high damage AoE, if still alive
+  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use damage reduction skills before this attack
+5026: Ranged auto-attack, non interruptable
+5029: Casts Physical Damage Up on itself
+5030: Inflicts Paralysis
+5032: Inflicts Paralysis
+5036: Wide AoE which inflicts Terror
+5037: |
+  High physical damage
+  "Nail in the Coffin" does a lot of damage
+5038: |
+  FOLLOW MECHANICS -- evade all AoEs and Gazes
+  Failed mechanics will increase Black Honeymoon room AoE (3+ stacks is a near wipe)
+  1) "Cold Feet" -- Gaze
+  2) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
+  3) "In Sickness" -- instantly inflicts Disease on a player
+  4) Black Honeymoon

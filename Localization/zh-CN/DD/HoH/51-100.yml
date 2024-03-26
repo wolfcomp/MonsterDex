@@ -1,0 +1,140 @@
+7610: 不要接触！一旦开怪会导致长时间眩晕或者即死
+7584: |
+  无限叠加伤害Buff
+  随机点名大范围高伤害Aoe“亚拉戈陨石”
+  视线攻击
+7493: |
+  1) Heavy room wide damage "Ancient Quaga"
+  2) Pulsing rocks appear over arena, causing moderate damage and Heavy debuff if player is hit by one
+  3) "Meteor Impact" summons proximity AoE at boss's current location
+  4) Line AoE "Aura Cannon"
+  5) Targeted circle AoE "Burning Rave"
+  6) Point-blank circle AoE "Knuckle Press"
+  7) Repeat
+7490: |
+  1) 苏蒙冰球
+  2) 那个穿越房间的冰雪松， 引爆它命中的任何冰球，
+  3) “月球击中的冰球”，引爆剩余的冰球
+  4) 如果它们击中一名玩家
+  5) 波士跳到随机玩家, 爆炸冰球会造成深冻， 当玩家被冻结时立即杀死(其他轻微伤害)
+7489: |
+  1) 未以电报方式绘制的前面的净化
+  2) 瞄准具有"内空"的随机玩家(站在坑内附有最小的伤害)
+  3) 目标随机玩家为“从希腊外附有”
+  4) 目标玩家必须站在坑道里躲避“从希腊外附着”和“破坏”(如果不是在坑内附着便会立即杀死，并且会给骨头造成伤害)
+  5) 重复使用
+7487: |
+  Summons staffs that do various AoEs
+  Staffs then do line AoEs targeting players
+  Room wide AoE
+7485: |
+  1) Untelegraphed swipe
+  2) Untelegraphed line AoE on random player
+  3) Gaze mechanic that inflicts Fear
+  4) Summons pulsating bombs over arena and does a proximity AoE
+  5) Repeats after bombs explode for the last time
+7483: |
+  Summons clouds on edge of arena
+  Does to-wall knockback that ignores knockback invuln (look for safe spot in clouds!)
+  Follows immediately with targeted line AoE
+7481: |
+  在竞技场边缘召唤蝴蝶
+  是否有使恐慌的
+  泡沫未电传图解爆炸的弹窗技机
+7480: |
+  Goes to center of arena and casts knockback to wall (cannot be knockback invulned)
+  Follows immediately with a half-room wide AoE
+7478: |
+  Summons lightning clouds that inflict stacking vuln up when they explode
+  Boss does proximity AoE under itself that knocks players into the air
+  Get knocked into a cloud to dispel it and avoid vuln
+  Half-room wide AoE
+7394: |
+  61+层: 仅限金箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒只能被'插言'打断
+7393: |
+  31-60层: 仅限银箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒可被 沉默/眩晕/插言 打断
+7392: |
+  1-30层: 仅限铜箱子
+  会释放高伤害单体攻击以及小范围即死AoE
+  诅咒可被打断
+7391: 二连顺劈，带睡眠buff的锥形Aoe
+7390: 背对恐惧\n无读条对一仇释放单体攻击\n会不断强化自身伤害\n读条释放可见范围的大范围圆形超高威力Aoe'亚拉戈陨石'
+7389: 无读条对一仇释放没有范围提示的扇形Aoe\n读条释放有范围提示的圆形Aoe'浓云密布'\n注意：会不断对自己使用无读条的“巨大化”强化自身伤害，请务必尽快击杀。
+7388: |
+  Charges
+  Untelegraphed cone AoE "Swipe"
+  Untelegraphed wide circle AoE "Swing"
+7387: 读条释放可见范围的扇形Aoe”深渊回转“\n无读条随机对一人释放单体大伤害攻击
+7386: 读条释放非常快的直线Aoe“葬送击”，必须提前躲避
+7385: 读条释放可见范围的圆形AOE“虚无陷阱”\n 无读条对一仇释放没有范围提示的扇形Aoe虚无斩
+7384: 无论是否有仇恨，读条可见范围的附带割伤DoT的圆形Aoe狂风Gust\n读条对自身附加强化防御Debuff
+7382: |
+  无读条对随机1人位置释放没有范围提示的圆形Aoe\n读条对随机1人释放可见范围的圆形Aoe'大漩涡'
+7381: |
+  离开
+  可以看到的大行AoE
+7380: |
+  WHM：双人autos
+  "石头" 可以视线显示
+7379: |
+  读条'步法'给自身附加加速buff，可打断\n读条“飘羽步”强化自身回避率6s，可被打断\n无读条对一仇附加流血Dot并释放三连攻击
+7378: |
+  WAR: Triple knockback with heavy damage
+  Buffs own attack
+  Extremely high damage cleave with knockback
+7377: 无读条对开怪者释放直线攻击“狂野冲锋”\n读条对前方释放无范围提示扇形Aoe“撕裂利爪”\n读条释放可见范围的圆形Aoe
+7376: 建立仇恨立刻释放单体伤害‘躯体冲撞'，附加15秒可驱散流血Dot\n读条释放有范围提示的扇形Aoe“缺氧吐息”\n读条点名一人释放非常疼的4连圆形Aoe“震雷”，带感电Dot
+7375: 对建立仇恨者瞬发冲锋技能\n读条可见扇形Aoe“掀地”\n读条超大范围圆形Aoe“吼叫”\n软狂暴：十连全屏大伤害Aoe“遁地
+7374: 无读条释放全屏附加易伤的AoE“鲜血之月”\n读条释放可见范围环形/扇形Aoe，建议靠近打
+7373: 每隔几秒就会读条释放一次附加可叠加流血Dot的全屏Aoe“古菩的悲伤”，Dot很疼，可驱散\n读条可见圆形AoE\n无读条随机向一人方向释放扇形吸引，并马上释放可见范围扇形Aoe
+7372: 读条释放可见范围的圆形Aoe“平地捶打”\n不断对一仇瞬发高伤害平A
+7371: 交替线和圆形AoE已取消电报刻录
+7370: 双倍自动，非常强大的后方清理，如果后端
+7369: 读条释放可见范围的圆形Aoe\n无读条对一仇释放单体伤害
+7368: 在随机玩家上取消绘制锥形AoE，玩家随机攻击游戏。
+7367: 在aggro上的费用
+7366: |
+  增殖自己造成的伤害未放大的
+  大型AoE未放大动物，会造成游泳和堆栈。
+7365: |
+  Ram's Voice - get out
+  Dragon Voice - get in
+  Telegraphed cleaves
+7364: 双倍自动和非常大的AoE
+7362: 极大的锥形AoE，迷宫会造成恐惧。
+7361: 拖放式攻击, 极大的AoE, 最终ENRAGE
+7360: 超大范围AOE
+7359: 快点，最后会狂暴
+7358: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7357: |
+  Casts room wide AoEs unaggroed
+  Large conal draw-in attack followed by heavy damage
+7356: 导致深度冻结的石种群无缘的
+7355: 双倍自动加成捆绑的
+7354: 后方未以电报方式回击效果
+7353: |
+  Casts large AoE unaggroed
+  Extremely large circular AoE
+7350: AoE 一次会造成无数调试器
+7349: 全队减伤Buff
+7348: 大圆形AoE附魔效果
+7347: 大型榴弹AoE，迷你攻击会造成恐惧。
+7346: 休眠和剧毒物
+7345: Conal AoE 附着透析度
+7344: 连铸，双倍自动显示
+7343: 造成透析的快速交替线AoEs
+7341: 引发挥发性休眠
+7340: 引发持续30秒的堆积毒剂
+7337: Conal Gaze, 非常快速的低生命值
+7336: 针对目标玩家的即时AoEs
+7335: 拖动式攻击
+7332: 完全致命的线路AoEs
+7331: 圆锥形自行车被捆绑了
+7330: 最终即时触发器
+7329: 无论是否有仇恨，对随机1人位置释放可见范围的圆形Aoe
+7328: 忙碌的人被捆绑了
+7327: 自动挥舞会使人休眠
