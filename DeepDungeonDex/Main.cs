@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.IoC;
 using DeepDungeonDex.Hooks;
+using DeepDungeonDex.Weather;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DeepDungeonDex;
@@ -88,6 +89,7 @@ public class Main : IDalamudPlugin
             .AddDalamudService<IClientState>()
             .AddDalamudService<IChatGui>()
             .AddDalamudService<ITextureProvider>()
+            .AddDalamudService<IDataManager>()
             .AddDalamudService<IPluginLog>()
             .AddSingleton(new WindowSystem("DeepDungeonDex"))
             .AddSingleton(main)
@@ -96,6 +98,7 @@ public class Main : IDalamudPlugin
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<Font.Font>(provider))
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<CommandHandler>(provider))
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<AddonAgent>(provider))
+            .AddSingleton(provider => ActivatorUtilities.CreateInstance<WeatherManager>(provider))
             .BuildServiceProvider();
     }
 }
