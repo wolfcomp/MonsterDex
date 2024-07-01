@@ -63,7 +63,7 @@ public record Mob
     public Threat Threat { get; set; }
     public ContentType InstanceContentType { get; set; }
     public Dictionary<uint, ElementalChangeTime> ElementalChangeTimes { get; set; } = new();
-    public Character.EurekaElement MutatedElementalType { get; set; }
+    public ElementalType MutatedElementalType { get; set; }
     public bool IsMutation { get; set; }
     public bool IsAaptation { get; set; }
 
@@ -176,6 +176,11 @@ public enum ElementalChangeTime : byte
     Night,
     Day,
     Both = Night | Day
+}
+
+public enum ElementalType : byte
+{
+
 }
 
 public static class MobDataExtensions

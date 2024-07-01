@@ -12,7 +12,7 @@ fi
 echo "[plugin]" >>manifest.toml
 echo "repository = \"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git\"" >>manifest.toml
 echo "owners = [ \"${GITHUB_REPOSITORY_OWNER}\" ]" >>manifest.toml
-echo "project_path = \"DeepDungeonDex\"" >>manifest.toml
+echo "project_path = \"${INTERNAL_NAME}\"" >>manifest.toml
 echo "commit = \"${GITHUB_SHA}\"" >>manifest.toml
 echo "changelog = ${CHANGELOG}" >>manifest.toml
 echo "version = \"${VERSION}\"" >>manifest.toml
@@ -21,4 +21,4 @@ cat manifest.toml
 mkdir images
 cd images
 echo "> Downloading images"
-curl -L "https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/master/DeepDungeonDex/icon.png" -o icon.png
+curl -L "https://raw.githubusercontent.com/wolfcomp/MonsterDex/master/DeepDungeonDex/icon.png" -o icon.png

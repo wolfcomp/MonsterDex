@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 using FFXIVClientStructs.FFXIV.Client.Graphics.Environment;
+using ContentType = DeepDungeonDex.Storage.ContentType;
 
 namespace DeepDungeonDex.Hooks;
 
@@ -42,7 +43,7 @@ public unsafe class AddonAgent : IDisposable
         if(_envManager->EnvScene == null)
             return;
 
-        _envManager->EnvScene->WeatherIdsSpan.CopyTo(WeatherIds);
+        WeatherIds = _envManager->EnvScene->WeatherIds.ToArray();
     }
 
     private void CheckDirector()

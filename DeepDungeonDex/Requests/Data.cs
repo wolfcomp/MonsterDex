@@ -14,12 +14,13 @@ public partial class Requests : IDisposable
     private IPluginLog _log;
     private bool _loadedOnce;
     public HttpClient Client = new();
-    public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/DeepDungeonDex/data";
+    public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/MonsterDex/data";
     public TimeSpan CacheTime = TimeSpan.FromHours(6);
     public StorageHandler Handler;
     public bool RequestingData { get; private set; }
     public bool RequestingLang { get; private set; }
     public bool IsRequesting => RequestingData || RequestingLang;
+    public Action? IsRequestDone = null;
     #if RELEASE
     private const bool Debug = false;
     #else
@@ -92,6 +93,7 @@ public partial class Requests : IDisposable
         }
 
         _loadedOnce = true;
+        IsRequestDone?.Invoke();
 
     RefreshEnd:
 

@@ -4,6 +4,7 @@ using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.Types;
 using Dalamud.Interface.Internal;
+using Dalamud.Interface.Textures.TextureWraps;
 using Dalamud.Interface.Utility.Raii;
 using Dalamud.Utility;
 using DeepDungeonDex.Hooks;
@@ -26,7 +27,7 @@ public unsafe partial class Main : Window, IDisposable
     private IClientState _clientState;
     private IPluginLog _log;
     private StorageHandler _storage;
-    private DalamudPluginInterface _pluginInterface;
+    private IDalamudPluginInterface _pluginInterface;
     private Configuration _config;
     private WeatherManager _weatherManager;
     private Locale[] _locale = Array.Empty<Locale>();
@@ -36,7 +37,7 @@ public unsafe partial class Main : Window, IDisposable
     private AddonAgent _addon;
     private const string _githubIssuePath = "https://github.com/wolfcomp/MonsterDex/issues/new?template=fix_node.yaml";
 
-    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, DalamudPluginInterface pluginInterface, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, IDalamudPluginInterface pluginInterface, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -57,7 +58,7 @@ public unsafe partial class Main : Window, IDisposable
             MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
         };
         BgAlpha = _config.Opacity;
-        LoadIcons();
+        _framework.RunOnFrameworkThread(LoadIcons);
         framework.Update += GetData;
         command.AddCommand("debug_mob", (args) =>
         {
@@ -153,10 +154,13 @@ public unsafe partial class Main : Window, IDisposable
             return;
         }
 
-        if (_target.Target is not BattleNpc { BattleNpcKind: BattleNpcSubKind.Enemy } npc)
+        if (_target.Target is not IBattleNpc { BattleNpcKind: BattleNpcSubKind.Enemy } npc)
         {
             if (!_debug)
+            {
                 IsOpen = false;
+                _currentMob = null;
+            }
             return;
         }
 
@@ -178,7 +182,7 @@ public unsafe partial class Main : Window, IDisposable
 
     public override void Draw()
     {
-        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
+        using var _ = Font.Font.RegularFont.Push();
         // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
         switch (_currentMob.InstanceContentType)
         {
@@ -220,14 +224,14 @@ public unsafe partial class Main : Window, IDisposable
         // ReSharper disable once InvertIf
         if (ImGui.Button(_locale.GetLocale("CreateDataIssue")))
         {
-            var url = $"{_githubIssuePath}&mob_id={_currentMob.Id}%20-%20{_currentMob.Name}&content_type={_addon.ContentType:G}";
+            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}";
             Util.OpenLink(url);
         }
 
         if (_config.Debug && _currentNpc != null)
         {
             ImGui.TextUnformatted("Debug information");
-            var forayInfo = _currentNpc->GetForayInfo;
+            var forayInfo = _currentNpc->GetForayInfo();
             if(forayInfo != null)
                 ImGui.TextUnformatted($"NamePlateIconId: {(uint)forayInfo->Element + 60650}");
             ImGui.TextUnformatted($"SubKind: {_currentNpc->Character.GameObject.SubKind}");
@@ -240,15 +244,7 @@ public unsafe partial class Main : Window, IDisposable
 
     public void LoadIcons()
     {
-        _unknown = _pluginInterface.UiBuilder.LoadImage(GetResource("DeepDungeonDex.UnknownDebuf.png"));
-    }
-
-    public byte[] GetResource(string path)
-    {
-        using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path)!;
-        using var memory = new MemoryStream();
-        stream.CopyTo(memory);
-        return memory.ToArray();
+        _unknown = _textureProvider.GetFromManifestResource(Assembly.GetExecutingAssembly(), "DeepDungeonDex.UnknownDebuf.png").GetWrapOrEmpty();
     }
 
     public void DrawWeakness(Weakness weakness)
@@ -281,7 +277,7 @@ public unsafe partial class Main : Window, IDisposable
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
-        ImGui.Image(_textureProvider.GetIcon(iconId)!.ImGuiHandle, size, _uv0, _uv1, color);
+        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
         var unknownBit = (Weakness)((int)check << 6);
         if (weakness.HasFlag(unknownBit))
         {
@@ -292,7 +288,7 @@ public unsafe partial class Main : Window, IDisposable
 
     public void DrawIcon(uint iconId, Vector2 size, Vector4 color)
     {
-        ImGui.Image(_textureProvider.GetIcon(iconId)!.ImGuiHandle, size, _uv0, _uv1, color);
+        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
     }
 
     public Vector4 GetColor(Weakness weakness, Weakness check)

@@ -59,13 +59,12 @@ public class Floor : Window, IDisposable
         config.OnChange += ConfigChanged;
         state.TerritoryChanged += TerritoryChanged;
         storage.StorageChanged += StorageChanged;
-        TerritoryChanged(state.TerritoryType);
     }
 
     private void StorageChanged(StorageEventArgs obj)
     {
-        if (obj.StorageType == typeof(Territories))
-            TerritoryChanged(770);
+        if (obj.StorageType == typeof(Territories) && obj.StorageType == typeof(Locale))
+            TerritoryChanged(_clientState.TerritoryType);
     }
 
     private void TerritoryChanged(ushort e)
@@ -114,14 +113,15 @@ public class Floor : Window, IDisposable
         var remap = (FloorData)_storage.GetInstance(_dataPath + "/Floors.yml")!;
         var floor = _debug == 0 ? _addon.Floor : _debug;
         floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
-        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
+        using var _ = Font.Font.RegularFont.Push();
         try
         {
             ImGui.Text("Floor Help");
             ImGui.TextUnformatted(_locale?.GetLocale($"{_dataPath[(_dataPath.LastIndexOf("/", StringComparison.Ordinal) + 1)..]}{floor}"));
         }
-        catch
+        catch (Exception e)
         {
+            _log.Error(e, "Error trying to draw floor guide.");
             // ignored
         }
     }

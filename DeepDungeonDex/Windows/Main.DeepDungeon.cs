@@ -1,9 +1,9 @@
 ﻿namespace DeepDungeonDex.Windows;
 public partial class Main
 {
-    public void DrawDeepDungeonData()
+    public unsafe void DrawDeepDungeonData()
     {
-        ImGui.TextUnformatted($"{_currentMob.Name}{(_config.Debug ? $" ({_currentMob.Id})" : "")}");
+        ImGui.TextUnformatted($"{_currentMob.Name}{(_config.Debug ? $" ({_currentNpc->NameId})" : "")}");
         ImGui.TextUnformatted($"{_locale.GetLocale(_currentMob.Aggro.ToString())}\t");
         ImGui.SameLine();
         PrintTextWithColor(_locale.GetLocale(_currentMob.Threat.ToString()), _currentMob.Threat.GetColor());
