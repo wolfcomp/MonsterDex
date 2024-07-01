@@ -169,6 +169,8 @@
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
 12193-Orthos falak:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
