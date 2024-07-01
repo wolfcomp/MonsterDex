@@ -26,7 +26,7 @@ internal class Debug : Window, IDisposable
 
     public override void Draw()
     {
-        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
+        using var _ = Font.Font.RegularFont.Push();
 
         var config = _storage.GetInstance<Configuration>()!;
         if (!config.LoadAll)

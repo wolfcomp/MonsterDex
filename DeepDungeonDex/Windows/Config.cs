@@ -7,8 +7,9 @@ public class Config : Window, IDisposable
 {
     private StorageHandler _handler;
     private Requests _requests;
-    private DalamudPluginInterface _pluginInterface;
+    private IDalamudPluginInterface _pluginInterface;
     private IServiceProvider _provider;
+    private Font.Font _font;
     private float _opacity;
     private bool _clickthrough;
     private bool _hideRed;
@@ -22,12 +23,13 @@ public class Config : Window, IDisposable
     private ContentType[] AllContentTypes => _allContentTypes.Any() ? _allContentTypes : _allContentTypes = Enum.GetValues(typeof(ContentType)).Cast<ContentType>().ToArray();
 
 
-    public Config(DalamudPluginInterface pluginInterface, StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider) : base("MonsterDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
+    public Config(IDalamudPluginInterface pluginInterface, StorageHandler handler, CommandHandler command, Requests requests, IServiceProvider provider, Font.Font font) : base("MonsterDex Config", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoCollapse)
     {
         _handler = handler;
         _requests = requests;
         _provider = provider;
         _pluginInterface = pluginInterface;
+        _font = font;
         var _config = _handler.GetInstance<Configuration>()!;
         _config.OnChange += OnChange;
         SizeConstraints = new WindowSizeConstraints
@@ -78,7 +80,7 @@ public class Config : Window, IDisposable
         var _localeKeys = _handler.GetInstance<LocaleKeys>()!;
         var lang = _localeKeys.LocaleDictionary.Keys.ToArray()[_config.PrevLocale];
         var _locale = (Locale)_handler.GetInstance($"{lang}/main.yml")!;
-        using var _ = ImRaii.PushFont(Font.Font.RegularFont);
+        using var _ = Font.Font.RegularFont.Push();
         ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - ImGui.CalcTextSize("Opacity").X);
         if (ImGui.SliderFloat(_locale.GetLocale("Opacity"), ref _opacity, 0.0f, 1.0f))
         {
@@ -107,20 +109,6 @@ public class Config : Window, IDisposable
         {
             _config.Debug = _debug;
         }
-
-        if (ImGui.Checkbox(_locale.GetLocale("LoadAllFont"), ref _loadAll))
-        {
-            _config.LoadAll = _loadAll;
-            _pluginInterface.UiBuilder.RebuildFonts();
-        }
-        if (ImGui.IsItemHovered())
-        {
-            ImGui.BeginTooltip();
-            ImGui.PushTextWrapPos(300f);
-            ImGui.TextWrapped(_locale.GetLocale("LoadAllFontWarning"));
-            ImGui.PopTextWrapPos();
-            ImGui.EndTooltip();
-        };
 
         var locales = _localeKeys.LocaleDictionary.Values.ToArray();
         ImGui.SetNextItemWidth(ImGui.GetContentRegionAvail().X - ImGui.CalcTextSize("Locale").X);
@@ -152,6 +140,7 @@ public class Config : Window, IDisposable
         {
             IsOpen = false;
             _config.Save(_handler.GetFilePath(_config.GetType()));
+            _font.RegisterNewBuild(_config.FontSize);
         }
         ImGui.SameLine();
         if (ImGui.IsItemHovered())

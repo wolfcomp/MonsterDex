@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Threading.Tasks;
 using Dalamud.Game.ClientState.Objects;
+using Dalamud.Interface.ManagedFontAtlas;
 using Dalamud.IoC;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Weather;
@@ -15,19 +16,16 @@ public class Main : IDalamudPlugin
 
     internal static ConcurrentBag<IDisposable> Services = new();
 
-    public Main(DalamudPluginInterface pluginInterface)
+    public Main(IDalamudPluginInterface pluginInterface)
     {
         _provider = BuildProvider(this, pluginInterface);
         _provider.GetRequiredService<Requests>();
-        _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange += pluginInterface.UiBuilder.RebuildFonts;
 #pragma warning disable CS4014 
         _provider.GetRequiredService<CommandHandler>().AddCommand(new[] { "refresh", "clear" }, () => { RefreshData(); }, "Refreshes the data internally stored");
 #pragma warning restore CS4014 
 
         var sys = LoadWindows();
         pluginInterface.UiBuilder.Draw += sys.Draw;
-        pluginInterface.UiBuilder.BuildFonts += BuildFont;
-        pluginInterface.UiBuilder.RebuildFonts();
     }
 
     public async Task RefreshData()
@@ -37,22 +35,15 @@ public class Main : IDalamudPlugin
         await req.RefreshLang(false);
     }
 
-    public void BuildFont()
-    {
-        _provider.GetRequiredService<Font.Font>().BuildFonts(_provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()?.FontSizeScaled ?? 1f);
-        var conf = _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>();
-        conf?.OnChange?.Invoke(conf);
-    }
-
     public void Dispose()
     {
         if (isDisposed)
             return;
         isDisposed = true;
         _provider.GetRequiredService<WindowSystem>().DisposeAndRemoveAllWindows();
-        _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.Draw -= _provider.GetRequiredService<WindowSystem>().Draw;
-        _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange -= _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts;
-        _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.BuildFonts -= BuildFont;
+        _provider.GetRequiredService<IDalamudPluginInterface>().UiBuilder.Draw -= _provider.GetRequiredService<WindowSystem>().Draw;
+        // _provider.GetRequiredService<StorageHandler>().GetInstance<Configuration>()!.OnSizeChange -= _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.RebuildFonts;
+        // _provider.GetRequiredService<DalamudPluginInterface>().UiBuilder.BuildFonts -= BuildFont;
         _provider.DisposeDI();
         _provider = null!;
         foreach (var dalamudServiceIntermediate in Services)
@@ -78,8 +69,11 @@ public class Main : IDalamudPlugin
         return sys;
     }
 
-    private static ServiceProvider BuildProvider(Main main, DalamudPluginInterface pluginInterface)
+    private static ServiceProvider BuildProvider(Main main, IDalamudPluginInterface pluginInterface)
     {
+        var fontAtlas =
+            pluginInterface.UiBuilder.CreateFontAtlas(FontAtlasAutoRebuildMode.Async, false, "DeepDungeonDexFontAtlas");
+
         return new ServiceCollection()
             .AddSingleton(pluginInterface)
             .AddDalamudService<IFramework>()
@@ -91,6 +85,7 @@ public class Main : IDalamudPlugin
             .AddDalamudService<ITextureProvider>()
             .AddDalamudService<IDataManager>()
             .AddDalamudService<IPluginLog>()
+            .AddSingleton(fontAtlas)
             .AddSingleton(new WindowSystem("DeepDungeonDex"))
             .AddSingleton(main)
             .AddSingleton(provider => ActivatorUtilities.CreateInstance<StorageHandler>(provider))
@@ -119,7 +114,7 @@ public static class Extensions
     {
         return collection.AddSingleton(provider =>
         {
-            var k = new DalamudServiceIntermediate<T>(provider.GetRequiredService<DalamudPluginInterface>());
+            var k = new DalamudServiceIntermediate<T>(provider.GetRequiredService<IDalamudPluginInterface>());
             return k.Service;
         });
     }
@@ -158,7 +153,7 @@ public class DalamudServiceIntermediate<T> : IDisposable
         Service = service;
     }
 
-    public DalamudServiceIntermediate(DalamudPluginInterface pluginInterface)
+    public DalamudServiceIntermediate(IDalamudPluginInterface pluginInterface)
     {
         pluginInterface.Inject(this);
         Main.Services.Add(this);

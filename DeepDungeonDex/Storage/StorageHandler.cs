@@ -10,16 +10,18 @@ public class StorageHandler : IDisposable
 {
     private readonly string _path;
     private static IPluginLog _log = null!;
+    private static Font.Font _font = null!;
     public static IDeserializer Deserializer = new DeserializerBuilder().WithTypeConverter(new YamlStringEnumConverter()).Build();
 
     internal readonly Dictionary<string, object> Storage = new();
 
     public event Action<StorageEventArgs>? StorageChanged;
 
-    public StorageHandler(DalamudPluginInterface pluginInterface, IChatGui chat, IPluginLog log)
+    public StorageHandler(IDalamudPluginInterface pluginInterface, IChatGui chat, IPluginLog log, Font.Font font)
     {
         _path = pluginInterface.GetPluginConfigDirectory();
         _log = log;
+        _font = font;
         AddStorage("config.dat", LoadConfig());
     }
 
@@ -86,7 +88,7 @@ public class StorageHandler : IDisposable
             binary.Close();
             file.Close();
             config.PrevLocale = config.Locale;
-            config.PrevFontSize = config.FontSize;
+            _font.RegisterNewBuild(config.FontSize);
             return config;
         }
         catch

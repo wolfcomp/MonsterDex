@@ -17,25 +17,16 @@ public class Configuration
     public float Opacity { get; set; } = 1f;
     public ContentType EnabledContentTypes { get; set; } = ContentType.DeepDungeon;
 
-    [JsonIgnore] public int PrevFontSize;
     [JsonIgnore] public int PrevLocale;
     [JsonIgnore] public float RemoveScaling => 1 / ImGui.GetIO().FontGlobalScale;
-    [JsonIgnore] public float FontSizeScaled => FontSize * RemoveScaling;
     [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f) * RemoveScaling;
     [JsonIgnore] public Action<Configuration>? OnChange { get; set; }
-    [JsonIgnore] public Action? OnSizeChange { get; set; }
 
     public void Save(string path)
     {
-        if (FontSize != PrevFontSize)
-        {
-            PrevFontSize = FontSize;
-            OnSizeChange?.Invoke();
-        }
         if (PrevLocale != Locale && !LoadAll)
         {
             PrevLocale = Locale;
-            OnSizeChange?.Invoke();
         }
         OnChange?.Invoke(this);
         var origPath = path;
