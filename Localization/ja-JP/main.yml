@@ -25,7 +25,7 @@ LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\
 HideFloorGuide: 新しいフロアに入るときにフロアガイドの表示を停止する
 UnknownContent: 不明なコンテンツは、 {0}({1}) で使用できません。
 CreateDataIssue: データの問題を作成
-ContentTypeNone: Overworld
+ContentTypeNone: オーバーワールド
 ContentTypeDeepDungeon: Deep Dungeon
 ContentTypeEureka: Eureka
 ContentTypeDiadem: Diadem
