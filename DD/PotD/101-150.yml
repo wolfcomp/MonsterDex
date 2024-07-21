@@ -38,7 +38,7 @@
 5364-deep palace hippogryph:
   InstanceContentType: DeepDungeon
   Threat: Caution
-  Aggro: Sight
+  Aggro: Proximity
   Weakness:
     - Stun
     - Sleep
