@@ -375,6 +375,12 @@
   Aggro: Proximity
   Weakness:
     - Slow
+5298-Necrose knight:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - Undead
 4475-grey bomb:
   InstanceContentType: DeepDungeon
   Threat: Caution
