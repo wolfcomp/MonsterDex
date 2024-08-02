@@ -1,59 +1,191 @@
-12109: |
-  Casts Ecliptic Meteor at 40%, can LoS
-12110: Casts untelegraphed PB AoE
-12116: Casts disease
-12132: |
-  Casts Self-detonate at 30%, can LoS
-12240: |
-  Steel recommended for solo
-12133: |
-  Late telegraphed draw-in into AoE
-  KB immunity works
-12141: Casts roomwide vuln stacking AoE unaggroed
-12242: |
- 1) "Dark Wyrmtail" -- cleaves middle
- 2) "Dark Wyrmwing" -- cleaves sides
- 3) "Whei Morn" -- multiple baited AoEs
-12149: |
-  Casts inflicts Stun
-12146: PB AoE
-12154: |
-  Buffs enemies with double damage
-12147: Casts Haste
-12150: |
-  "100 Tonze Swing" -- PB AoE
-  "11 Tonze Swipe" -- Close Conal AoE
-12148: |
-  "Forearming" -- Half Circle AoE
-  "Atmospheric Displacement" -- PB AoE
-12152: |
-  "The Dragon's Voice" - doughnut
-  "The Ram's Voice" - PB AoE
-12156: |
-  "Nothing personal kid"
-12263: |
-  1) "Twister" -- Move away from twister bait
-  2) "Twisting Dive" -- Cleave down middle with twister bait
-  3) "Meracydian Cyclone" -- Spawns tornados with 4 baits into KB.
-12160: Quick behind cleave
-12169: Casts stacking slow
-12159: Casts Haste
-12166: |
-  Casts roomwide aoe, interruptable
-12162: |
-  PB AoE after dash, can LoS
-12168: |
-  Fast untelegraphed conal after suck in
-12158: |
-  Casts Explosion at 30%, can LoS
-12164: |
-  "Abyssal Cry" - Large AoE that stuns, can LoS
-12170: Applies potent heavy
-12163: Casts roomwide vuln stacking AoE unaggroed
-12265: |
-  1) "Song of Thunder and Ice" -- doughnut then PB AoE
-  2) "Song of Ice and Thunder" -- PB AoE then doughnut
-  3) "Cold Thunder" -- proximity dash, PB AoE then doughnut
-  4) "Thunderous Cold" -- proximity dash, doughnut then PB AoE
-  5) "Leftbreathed/Rightbreathed" -- halfroom cleave
-  6) "Cacophony" -- ball tether, kite away
+# EO floors 1-10
+12106: | # Undead Orthos Dragon
+  Dragon Breath: Telegraphed line AOE. Inflicts stacking poison. Cannot LOS.
+  Toxic Vomit: Telegraphed circle AOE. Inflicts stacking poison.
+12107: | # Orthos Thanatos
+  Iron Justice: Telegraphed front conal AOE.
+12108: | # Orthos Succubus
+  Blood Sword: Instant. Absorbs portion of damage dealt.
+12109: | # Orthos Behemoth
+  Wild Horn: Inflicts knockback.
+  Ecliptic Meteor: Huge pointblank AOE enrage with long cast time. Can LOS. Used at 40% HP.
+12110: | # Orthos Grenade
+  Big Burst: Pointblank AOE with late telegraph. Get AWAY.
+12111: | # Orthos Dahak
+  The Look: Telegraphed large front conal AOE.
+12112: | # Orthos Imp
+  No mechanics.
+12113: | # Orthos Demon
+  Condemnation: Telegraphed front conal AOE.
+12114: | # Orthos Fachan
+  Dread Gaze: Conal gaze. Get BEHIND or LOOK AWAY.
+12115: | # Orthos Vassago
+  Grim Halo: Telegraphed pointblank AOE. Inflicts knockback.
+12116: | # Orthos Bhoot
+  Terror Touch: Inflicts disease. Interruptable.
+12117: | # Orthoiron Claw
+  The Hand: Telegraphed conal AOE.
+12118: | # Orthos Water Sprite
+  No mechanics.
+12240: | # Gancanagh (Boss)
+  Authoritative Shriek: Activates random mines, causing them to use Mandrashock.
+  Mandrashock: Telegraphed pointblank AOE on activated mines.
+  Mandrastorm: Proximity AOE on boss. Get AWAY.
+
+# EO floors 11-20
+12119: | # Orthohunter
+  No mechanics.
+12120: | # Orthosystem Beta (B)
+  Gravity Field: Telegraphed circle AoE. Inflicts heavy.
+12121: | # Orthos Microsystem
+  Piercing Laser: Telegraphed line AOE. Cannot LOS.
+12122: | # Orthosoldier
+  Headspin: Telegraphed pointblank AOE.
+12123: | # Orthos Wood Golem
+  Ovation: Telegraphed line AOE. Inflicts heavy.
+12124: | # Orthos Groundskeeper
+  Neck Splinter: Telegraphed pointblank AOE.
+12125: | # Orthos Keter
+  Glass Punch: Telegraphed front conal AOE. Inflicts knockback.
+12126: | # Orthos Rafflesia
+  Gold Dust: Telegraphed circle AOE. Inflicts stacking poison.
+12127: | # Orthos Sawtooth
+  Dissever: Telegraphed front conal AOE.
+  Mean Thrash: Backward conal AOE with late telegraph. Used after Dissever if anyone is behind.
+12128: | # Orthos Netzach
+  Creeping Hush: Telegraphed front conal AOE. Inflicts stacking poison.
+12129: | # Orthos Spirulina
+  No mechanics.
+12130: | # Great Orthos Morbol
+  Bad Breath: Telegraphed front conal AOE. Inflicts several debuffs.
+12131: | # Orthos Belladonna
+  Shadow Burst: Telegraphed circle AOE.
+12261: | # Cloning Node (Boss)
+  Offensive Command: Orders some adds to use Flame Breath.
+  Order Relay: Orders half of the adds to use Flame Breath, followed shortly by the other half.
+  Flame Breath: Conal AOE with late telegraph used by adds.
+  Piercing Laser: Telegraphed line AOE.
+
+# EO floors 21-30
+12132: | # Orthodemolisher
+  Assault Cannon: Telegraphed line AOE.
+  Self-detonate: Huge pointblank AOE sacrificial enrage. Can LOS. Used at 30% HP.
+12133: | # Orthoknight
+  Electromagnetism: Large pointblank AOE with late telegraph. Draws players in. Get AWAY.
+  Headspin: Untelegraphed pointblank AOE. Used immediately after Electromagnetism.
+12134: | # Orthodroid
+  Passive Infrared Guidance System: Telegraphed circle AOE. Used both in and out of combat.
+12135: | # Orthogiant
+  Exhaust: Telegraphed line AOE.
+12136: | # Orthokaliya
+  Nerve Gas: Telegraphed wide front conal AOE. Inflicts heavy.
+12137: | # Orthos Biast
+  Electrify: Telegraphed circle AOE.
+12138: | # Lesser Orthos Dragon
+  Swinge: Huge conal AOE with late telegraph. Get BEHIND.
+12139: | # Orthos Wyvern
+  Spiked Tail: Inflicts stacking poison.
+12140: | # Orthoblue Dragon
+  Chilling Aspiration: Telegraphed line AOE.
+12141: | # Orthos Vouivre
+  Bombination: Huge pointblank AOE with late telegraph. Inflicts vulnerability up. Used out of combat.
+12142: | # Orthos Brobinyak
+  Cold Gaze: Front conal gaze. Get BEHIND or LOOK AWAY. 
+  Body Slam: Telegraphed pointblank AOE. Inflicts knockback. Used immediately after Cold Gaze.
+12143: | # Orthos Vanara
+  Scythe Tail: Pointblank AOE with late telegraph. Get AWAY. Inflicts stun and knockback.
+12144: | # Orthoshelled Dragon
+  Diamondback: Grants permanent vulnerability down (40%) to self. Can be interrupted.
+  Tortoise Stomp: Telegraphed pointblank AOE.
+12242: | # Tiamat Clone (Boss)
+  Dark Wyrmtail: Wide line AoE down the center of the arena with late telegraph. Get OUT.
+  Dark Wyrmwing: Wide line AOEs down both sides of the arena with late telegraph. Get IN.
+  Whei Morn: Telegraphed circle AOE, with four additional hits chasing the targeted player. MOVE.
+  Dark Megaflare: Four sets of telegraphed circle AOEs covering the arena with adds.
+  Creature of Darkness: Spawns adds at the front of the arena that move toward the back, with two open spaces.
+
+# EO floors 31-40
+12145: | # Orthobug
+  Leech: Instant. Absorbs portion of damage dealt.
+12146: | # Orthospider
+  Particle Collision: Pointblank AOE with late telegraph. Get AWAY. Inflicts minimum.
+  Needle Spaser: INSTANT DEATH to players with minimum debuff.
+12147: | # Orthopredator
+  Haste: Grants haste to self.
+12148: | # Phantom Orthoray
+  Forearming: Huge frontal 180-degree AOE with late telegraph. Get BEHIND. Can also LOS.
+  Atmospheric Displacement: Pointblank AOE with late telegraph. Get AWAY.
+12149: | # Orthos Mirrorknight
+  Double Hex Eye: 360-degree gaze. LOOK AWAY. Inflicts stun.
+  Knowing Gleam: Telegraphed circle AOE.
+12150: | # Orthotaur
+  111-tonze Swing: Pointblank AOE with late telegraph. Get AWAY.
+  11-tonze Swipe: Front conal AOE with late telegraph. Get BEHIND.
+12151: | # Orthos Reptoid
+  Rear: Telegraphed pointblank AOE.
+  Berserk: Grants physical damage up (200%) to self. Only used out of combat.
+12152: | # Orthochimera
+  Dragons Voice: Untelegraphed donut AOE. Get IN.
+  Rams Voice: Untelegraphed pointblank AOE. Get OUT.
+12153: | # Orthos Shabti
+  Deaths Door: Telegraphed line AOE.
+  Spellsword: Telegraphed front conal AOE.
+12154: | # Orthoiksalion
+  Wind Spout: Telegraphed circle AOE.
+  Tailwind: Grants damage up (100%) to another enemy.
+12155: | # Orthonaga
+  Cursed Gaze: Telegraphed front conal gaze. Get BEHIND or LOOK AWAY. Inflicts slow.
+12156: | # Orthoempuse
+  Kneeling Snath: Inflicts knockback. If the target is close, runs behind the target to use this.
+12157: | # Orthos Lamia
+  Circle Blade: Telegraphed pointblank AOE.
+12263: | # Twintania Clone
+  Twister: Spawns a little tornado under you. INSTANT DEATH if you are standing on it. MOVE as the ability resolves.
+  Meracydian Cyclone: Many circle AOEs that spawn tornados.
+  Meracydian Squall: Four sequential telegraphed circle AOEs on all party members.
+  Turbine: Knockback from center. Used after all four Meracydian Squall AOEs drop. 
+  Twisting Dive: Large line AOE with late telegraph down the center of the arena. Also uses Twister during this so keep MOVING.
+
+# EO floors 41-50
+12158: | # Orthos Gelato
+  Amorphic Flail: Telegraphed pointblank AOE.
+  Explosion: Huge untelegraphed sacrificial AOE enrage. Can LOS. Used at 30% HP.
+12159: | # Orthos Spriggan
+  Haste: Grants haste to self.
+12160: | # Orthos Bergthurs
+  Freezeover: Telegraphed circle AOE.
+  Elbow Drop: Fast untelegraphed backward conal AOE. Get in FRONT. Only used when someone is behind.
+12161: | # Orthos Apa
+  Water III: Telegraphed pointblank AOE.
+12162: | # Orthos Kelpie
+  Gallop: Charge attack on marked player. Can stun or LOS.
+  Bloody Puddle: Untelegraphed large pointblank AOE. Get AWAY. Used after Gallop if not stunned or LOS.
+12163: | # Orthos Kukulkan
+  Aetherial Blast: Telegraphed line AOE.
+  Bombination: Huge pointblank AOE with late telegraph. Can LOS. Only used out of combat. Inflicts vulnerability up (10%).
+12164: | # Orthos Hoarhound
+  Abyssal Cry: Huge untelegraphed pointblank AOE. Can LOS. Cannot shield or Inner Strength. Inflicts stun.
+  Ecliptic Bite: Lethal attack. Used on players stunned by Abyssal Cry.
+12165: | # Orthos Huwasi
+  Boulder Toss: Telegraphed circle AOE.
+  Landslip: Telegraphed front conal AOE on random player.
+12166: | # Orthos Acheron
+  Dominion Slash: Telegraphed front conal AOE.
+  Quake: Huge pointblank AOE. Can interrupt or LOS.
+12167: | # Orthos Abaia
+  Oculus: Telegraphed circle AOE.
+12168: | # Orthos Goobbue
+  Inhale: Untelegraphed conal AOE draw-in. Knockback immunity does not work.
+  Sickly Sneeze: Untelegraphed front conal AOE. Get BEHIND. Used immediately after Inhale.
+12169: | # Orthos Hedetet
+  Sticky Web: Inflicts stacking slow+.
+  Hailfire: Telegraphed line AOE.
+12170: | # Orthos Mudman
+  Stump: Instant pointblank AOE. Inflicts heavy.
+12265: | # Servomechanical Chimera 14X (Boss)
+  Song of Thunder and Ice: Donut AOE then PB AOE. Get IN then get OUT.
+  Song of Ice and Thunder: PB AOE then donut AOE. Get OUT then get IN.
+  Cold Thunder: Proximity tether, PB AOE, then donut AOE. Get AWAY, then get OUT, then get IN.
+  Thunderous Cold: Proximity tether, donut AOE, then PB AOE. Get AWAY, then get IN, then get OUT.
+  Leftbreathed/Rightbreathed: 180-degree cleave. Get to FLANK.
+  Cacophony: Ball tether. Kite away.

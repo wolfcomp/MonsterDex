@@ -57,7 +57,7 @@
   Peculiar Light: Telegraphed pointblank AOE. Inflicts vulnerability up (200%) on players. Grants evasion up to enemies.
   WARNING: The vulnerability up from Peculiar Light overrides and disables Protomander of Steel for the duration.
 12190: | # Orthos Basilisk
-  Stone Gaze: Conal gaze. Get BEHIND or LOOK AWAY.
+  Stone Gaze: Front conal gaze. Get BEHIND or LOOK AWAY.
   Body Slam: Telegraphed pointblank AOE.
 12191: | # Orthos Matamata
   Scalding Breath: Telegraphed front conal AOE.
@@ -208,7 +208,7 @@
   Allagan Meteor: Large telegraphed pointblank(?) AOE. Possibly triggered by low HP.
   WARNING: As of patch 6.35, a bug in the game sometimes causes the Unholy cast bar and effect to be hidden when the Lethargy protomander is active.
 12228: | # Orthos Sphinx
-  Naked Soul: Conal gaze. Get BEHIND or LOOK AWAY.
+  Naked Soul: Front conal gaze. Get BEHIND or LOOK AWAY.
   Swinge: Huge conal AOE with late telegraph. Get BEHIND. Used immediately after Naked Soul. 
 12229: | # Orthosystem Alpha (a)
   Aetherochemical Laser: Huge conal AOE with late telegraph. Get BEHIND.
