@@ -271,7 +271,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - Stun
     - Slow
 12134-orthodroid:
   InstanceContentType: DeepDungeon
