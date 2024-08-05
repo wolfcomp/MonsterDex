@@ -1,245 +1,255 @@
 # EO floors 51-60
 12171: | # Orthos Banshee
-  Whisper of Our Discontent: Telegraphed front conal AOE.
+  1) Whisper of Our Discontent: Conal AOE.
 12172: | # Orthos Monk
-  Sucker: Huge untelegraphed pointblank draw-in.
-  Water III: Telegraphed pointblank AoE. Used immediately after Sucker.
+  1) Sucker: Huge PB draw-in.
+  2) Water III: PB AOE. Used after Sucker.
 12173: | # Orthos Stingray
-  Body Slam: Instant pointblank AOE. Inflicts knockback.
-  Expulsion: Telegraphed pointblank AOE.
-  Electric Whorl: Telegraphed doughnut AOE. Get IN. CANNOT be LOSed.
+  1) Body Slam: Knockback.
+  2) Expulsion: PB AOE.
+  3) Electric Whorl: Donut AOE. Get IN. Cannot LOS.
 12174: | # Orthos Oceanus
-  Scale Ripple: Telegraphed pointblank AOE.
-  Douse: Telegraphed circle AOE.
+  1) Scale Ripple: PB AOE.
+  2) Douse: Circle AOE.
 12175: | # Orthos Big Claw
-  Bubble Shower: Telegraphed large front conal AOE.
-  Crab Dribble: Small backward conal AOE with late telegraph. Get in FRONT or OUTRANGE.
+  1) Bubble Shower: Large conal AOE.
+  2) Crab Dribble: Back conal AOE. Get in FRONT or AWAY.
 12176: | # Orthos Yabby
-  Scuttling Skewer: Instant. Inflicts heavy (4s). GET AWAY IMMEDIATELY.
-  Tail Screw: Telegraphed circle AOE. Used immediately after Scuttling Skewer.
+  1) Scuttling Skewer: Inflicts heavy. Get AWAY.
+  2) Tail Screw: Circle AOE. Used after Scuttling Skewer.
 12177: | # Orthos Piranu
-  Free kill. Pull on site if passage isn't open.
+  No mechanics.
 12178: | # Orthos Leech
-  Acid Mist: Inflicts vulnerability up.
+  1) Acid Mist: Inflicts vulnerability up.
 12179: | # Orthos Zaratan
-  Sewer Water: Telegraphed large frontal 180-degree AOE immediately followed by an untelegraphed large backward AOE. Get BEHIND, then immediately get in FRONT.
+  1) Sewer Water: Front 180-degree AOE, then back 180-degree AOE. Get BEHIND, then get in FRONT.
 12180: | # Orthos Ice Sprite
-  Hypothermal Combustion: Untelegraphed pointblank AOE used AFTER DEATH.
+  1) Hypothermal Combustion: PB AOE. Used AFTER DEATH.
 12181: | # Orthos Bombfish
-  1000 Spines: Telegraphed pointblank AOE.
+  1) 1000 Spines: PB AOE.
 12182: | # Orthos Rockfin
-  Aqua Spear: Telegraphed charge attack. MUST LOS.
+  1) Aqua Spear: LETHAL charge attack. MUST LOS.
 12183: | # Orthos Ymir
-  Gelid Charge: Grants physical reflect (6s). DISENGAGE IMMEDIATELY.
+  1) Gelid Charge: LETHAL reflect. DISENGAGE.
 12318: | # Orthos Craklaw
-  Flush: Telegraphed pointblank AOE.
+  1) Flush: PB AOE.
 12267: | # Servomechanical Minotaur 16 (Boss)
-  Octuple Swipe: 8 telegraphs, either NSEW twice, or NSEW then WESN.
-  Disorienting Groan: Knockback, be centered in arena or use knockback resist during cast.
-  Bullish Swipe: Front conal AOE. Get BEHIND.
-  Bullish Swing: Large pointblank AOE. Get OUT.
-  Thundercall: Summons blue orbs during Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
+  1) Octuple Swipe: 8 telegraphs. NSEW twice or NSEW then WESN.
+  2) Disorienting Groan: Knockback from center.
+  3) Bullish Swipe: Conal AOE. Get BEHIND.
+  4) Bullish Swing: Large PB AOE. Get OUT.
+  5) Thundercall: Spawns blue orbs that detonate in small PB AOEs.
 
 # EO floors 61-70
 12184: | # Orthos Pteroc
-  Backflip: Inflicts stacking poison.
+  1) Backflip: Inflicts stacking poison.
 12185: | # Orthos Drake
-  Smoldering Scales: Grants physical reflect (6s). DISENGAGE IMMEDIATELY.
+  1) Smoldering Scales: LETHAL reflect. DISENGAGE.
 12186: | # Orthos Cobra
-  Regorge: Telegraphed circle AOE.
-  Whip Back: Untelegraphed backward conal AOE. Get in FRONT.
-  Disseminate: Inflicts vulnerability up (50%). Used on death.
+  1) Regorge: Circle AOE.
+  2) Whip Back: Back conal AOE. Get in FRONT.
+  3) Disseminate: Inflicts vulnerability up. Used AFTER DEATH.
 12187: | # Orthos Monitor
-  Fire Breath: Telegraphed front conal AOE.
+  1) Fire Breath: Conal AOE.
 12188: | # Orthos Anala
-  Ring of Fire: Telegraphed circle AOE.
+  1) Ring of Fire: Circle AOE.
 12189: | # Orthos Diplocaulus
-  Peculiar Light: Telegraphed pointblank AOE. Inflicts vulnerability up (200%) on players. Grants evasion up to enemies.
-  WARNING: The vulnerability up from Peculiar Light overrides and disables Protomander of Steel for the duration.
+  1) Peculiar Light: PB AOE. Inflicts vulnerability up. Grants evasion up to enemies.
+  NOTE: Peculiar Light debuff overrides and disables Protomander of Steel for the duration.
 12190: | # Orthos Basilisk
-  Stone Gaze: Front conal gaze. Get BEHIND or LOOK AWAY.
-  Body Slam: Telegraphed pointblank AOE.
+  1) Stone Gaze: Conal gaze. Get BEHIND or LOOK AWAY.
+  2) Body Slam: PB AOE.
 12191: | # Orthos Matamata
-  Scalding Breath: Telegraphed front conal AOE.
-  Embalming Earth: Telegraphed pointblank AOE.
+  1) Scalding Breath: Conal AOE.
+  2) Embalming Earth: PB AOE.
 12192: | # Orthos Palleon
-  Sticky Tongue: Instant draw-in.
-  Body Press: Untelegraphed pointblank AoE used immediately after Sticky Tongue.
-  WARNING: Will keep trying to Body Press if you stun it.
+  1) Sticky Tongue: Instant draw-in.
+  2) Body Press: PB AOE used after Sticky Tongue.
+  NOTE: Will keep trying to Body Press if you stun it.
 12193: | # Orthos Falak
-  Electric Cachexia: Untelegraphed donut AOE. Get IN. Only used if someone is far.
+  1) Electric Cachexia: Donut AOE. Get IN.
 12194: | # Orthos Gowrow
-  Ripper Claw: Untelegraphed conal AOE with no cast bar. Get BEHIND when it raises its non-auto attack arm.
-  Tail Smash: Untelegraphed backward conal AOE with no cast bar. Get in FRONT when it raises his tail.
+  1) Ripper Claw: Conal AOE with NO CAST. Get BEHIND.
+  2) Tail Smash: Back conal AOE with NO CAST. Get in FRONT.
+  NOTE: Watch hand and tail animations!
 12195: | # Orthoninja
-  Shukuchi: Instant gap closer.
-  Death Blossom: Telegraphed pointblank AOE.
-  Assassinate: Lethal attack. Used on players with less than 20% of max HP.
+  1) Shukuchi: Instant gap closer.
+  2) Death Blossom: PB AOE.
+  3) Assassinate: LETHAL. Used on players with less than 20% of max HP.
 12196: | # Haokah Perfected
-  Spinning Kick: Inflicts knockback.
+  1) Spinning Kick: Knockback.
 12246: | # Aeturna (Boss)
-  Steel Claw: Weak tank buster.
-  Ferocity: Charge attack with tether. Get AWAY.
-  Preternatural Turn: Glowing -- doughnut AOE, get IN. Not glowing -- pointblack AOE, get OUT.
-  Roar: Spawns crystals from circle AOEs. Preternatural Turn, if glowing safe spot is IN close to the far crystal. If not glowing, safe spot is OUT between far and adjacent crystals.
+  1) Steel Claw: Weak tank buster.
+  2) Ferocity: Charge attack with tether. Get AWAY.
+  3a) Preternatural Turn (Glowing): Donut AOE. Get IN.
+  3b) Preternatural Turn (Normal): PB AOE. Get OUT.
+  4a) Roar (Glowing): Safe spot is IN close to far crystal.
+  4b) Roar (Normal): Safe spot is OUT between far and adjacent crystals.
 
 # EO floors 71-80
 12197: | # Orthos Toco Toco
-  Slowcall: Telegraphed front conal AOE. Inflicts slow (100%).
+  1) Slowcall: Conal AOE.
 12198: | # Orthos Skatene
-  Chirp: Untelegraphed pointblank AOE. Inflicts sleep. Can LOS.
-  Tornado: Telegraphed circle AOE. Used shortly after Chirp.
+  1) Chirp: PB AOE. MUST LOS.
+  2) Tornado: Circle AOE. Used after Chirp.
 12199: | # Orthos Unicorn
-  Gallop: Instant gap closer.
-  Alicorn: Inflicts knockback. Used 3 times in a row after Gallop.
-  Innocence: Telegraphed circle AOE.
+  1) Gallop: Instant gap closer.
+  2) Alicorn: Knockback. Used 3 times after Gallop.
+  3) Innocence: Circle AOE.
 12200: | # Orthos Coeurl
-  Wide Blaster: Telegraphed huge front conal AOE.
-  Tail Swing: Long backward conal AOE with late telegraph. Used immediately after Wide Blaster if someone is behind.
+  1) Wide Blaster: Huge conal AOE.
+  2) Tail Swing: Long back conal AOE. Used after Wide Blaster.
 12201: | # Orthos Wolf
-  Neck Rip: Inflicts physical DoT.
-  Howl: Grants physical damage up (40%).
+  1) Neck Rip: Inflicts physical DoT.
+  2) Howl: Grants physical damage up (40%).
 12202: | # Orthos Gulo Gulo
-  The Killing Paw: Telegraphed front conal AOE. Get BEHIND or AWAY.
-  Savage Swipe: Untelegraphed instant front conal AOE used immediately after The Killing Paw. Stay BEHIND or AWAY.
-  WARNING: As of patch 6.35, a bug can cause Gulo Gulo to store Savage Swipe and use it after moving within melee range, making it a guaranteed wipe.
+  1) The Killing Paw: Conal AOE. Get BEHIND or AWAY.
+  2) Savage Swipe: Conal AOE after The Killing Paw. Stay BEHIND or AWAY.
+  NOTE: Gulo Gulo can sometimes store Savage Swipe and use it after moving within melee range.
 12203: | # Orthos Sasquatch
-  Ripe Banana: Grants damage up (100%) to self and heals. Only used out combat.
-  Chest Thump: Huge pointblank AOE with late telegraph. Only used after Ripe Banana out of combat. Can LOS.
-  Streak: Instant gap closer. Inflicts knockback. Used on pull.
-  Stool Pelt: Telegraphed circle AOE.
-  WARNING: There is a known room with crystals in the middle that may obscure vision of a Sasquatch. BE CAREFUL AS THEY ARE NOT LOS!
+  1) Ripe Banana: Grants damage up to self. Used out of combat.
+  2) Chest Thump: Huge PB AOE. Used after Ripe Banana. Can LOS.
+  3) Streak: Instant gap closer. Inflicts knockback. Used on pull.
+  4) Stool Pelt: Circle AOE.
+  NOTE: Beware of Sasquatch's behind by crystals in rooms.
 12204: | # Orthos Primelephas
-  Rout: Instant gap closer. Get AWAY.
-  Rear: Quick pointblank AOE with late telegraph. Used immediately after Rout.
-  WARNING: Do NOT stun Rear. It can be stored and become instant cast after the stun wears off.
+  1) Rout: Instant gap closer. Get AWAY.
+  2) Rear: PB AOE. Used after Rout.
+  NOTE: Do NOT stun Rear. It can be stored and become instant cast.
 12205: | # Orthokunoichi
-  Shukuchi: Instant gap closer.
-  Assassinate: Lethal attack. Used on players with less than 20% of max HP.
+  1) Shukuchi: Instant gap closer.
+  2) Assassinate: LETHAL. Used on players with less than 20% of max HP.
 12206: | # Bird of Orthos
-  Eye of the Fierce: 360-degree gaze. Inflicts confusion. LOOK AWAY.
-  Revelation: Untelegraphed circle AOE. Used on confused players.
+  1) Eye of the Fierce: 360-degree gaze. LOOK AWAY.
+  2) Revelation: Circle AOE. Used on confused players.
 12207: | # Orthos Thunderbeast
-  Spark: Untelegraphed huge donut AoE. Only used if someone is far.
-  Scythe Tail: Untelegraphed pointblank AOE with NO CAST BAR. Pauses in place for a moment before using this.
-  NOTE: Moving side to side or rotating the enemy will allow you to easily tell when Scythe Tail is preparing.
+  1) Spark: Huge donut AOE. Get IN.
+  2) Scythe Tail: PB AOE with NO CAST. Get AWAY.
+  NOTE: Move side to side or rotate the enemy to tell when Scythe Tail is preparing.
 12208: | # Orthos Flamebeast
-  Blistering Roar: Huge wide line AOE on random player with late telegraph. Get BEHIND. Cannot LOS.
+  1) Blistering Roar: Wide line AOE. Get BEHIND. Cannot LOS.
 12209: | # Orthos Kargas
-  Freefall: Telegraphed circle AOE. Inflicts stun.
-  Winds of Winter: Large untelegraphed pointblank AOE. Must LOS or stun.
+  1) Freefall: Circle AOE.
+  2) Winds of Winter: Large PB AOE. MUST LOS or STUN.
 12247: | # Proto-Kaliya (Boss)
-  Resonance: Wide conal tankbuster.
-  Rightward/Leftward Nerve Gas: Diagonal halfroom cleaves, front of boss is always safe.
-  Centralized Nerve Gas: Wide frontal conal cleave. Flanks are safe.
-  Nerve Gas Ring: Large donut that leaves only melee distance safe.
-  Barofield: Creates insta-kill zone under the boss and outside ring with DoT.
-  Auto Cannons: Drones on cardinals fire line AOEs across the arena.
-  Nanospore Jet: Gives players a positive or negative charge and later tethers to a drone on a cardinal direction. Subsequent casts create new Barofield.
-  Nanospore Rotation: Nerve Gas 1, Nerve Gas  2 (with Auto Cannons), Nerve Gas 3 (with Auto Cannons), Tether appears, Nerve Gas 4 (with Auto Cannons), Nerve Gas Ring (with Auto Cannons).
-  NOTE: Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
+  1) Resonance: Wide conal tankbuster.
+  2) Right/Left Nerve Gas: 180-degree cleaves. Front is safe.
+  3) Central Nerve Gas: Wide conal cleave. Flanks are safe.
+  4) Nerve Gas Ring: Large donut AOE.
+  5) Barofield: Spawns LETHAL zone under boss.
+  6) Auto Cannons: Cardinal line AOEs.
+  7) Nanospore Jet: Positive/Negative charge with tether.
+  NOTE: North add is always negative.
+  NOTE: Solo always tethers to north add.
+  NOTE: Tethers resolve shortly before Nerve Gas Ring finishes.
 
 # EO floors 81-90
 12210: | # Orthos Deepeye
-  Hypnotize: 360-degree gaze. LOOK AWAY.
-  Heirloom Scream: Inflicts vulnerability up.
+  1) Hypnotize: 360-degree gaze. LOOK AWAY.
+  2) Heirloom Scream: Inflicts vulnerability up.
 12211: | # Orthos Spartoi
-  Umbra Smash: Telegraphed large circle AOE gap closer.
-  Triple Trial: Conal AOE with late telegraph. Get BEHIND. Used immediately after Umbra Smash.
+  1) Umbra Smash: Marked gap closer.
+  2) Triple Trial: Conal AOE. Get BEHIND. Used after Umbra Smash.
 12212: | # Orthos Hecteyes
-  Hex Eye: 360-degree gaze. LOOK AWAY.
-  Catharsis: Huge pointblank AOE. There's enough time to run from melee to out of range before it goes off.
+  1) Hex Eye: 360-degree gaze. LOOK AWAY.
+  2) Catharsis: Huge PB AOE.
+  NOTE: Can run out of Catharsis from melee.
 12213: | # Orthos Pudding
-  Dark: Telegraphed circle AOE.
-  Dark II: Telegraphed huge conal AOE. Get BEHIND.
+  1) Dark: Circle AOE.
+  2) Dark II: Huge conal AOE. Get BEHIND.
 12214: | # Orthos Persona
-  Loom: Instant gap closer.
-  Dark II: Telegraphed large conal AOE. Get BEHIND.
-  Inner Demons: Telegraphed pointblank AOE. Get OUT.
+  1) Loom: Instant gap closer.
+  2) Dark II: Large conal AOE. Get BEHIND.
+  3) Inner Demons: PB AOE. Get OUT.
 12215: | # Orthos Gourmand
-  Inhale: Untelegraphed conal draw-in.
-  Modly Sneeze: Very quick conal AOE with late telegraph. Get BEHIND. Used immediately after Inhale.
-  Moldy Phlegm: Telegraphed circle AOE.
+  1) Inhale: Conal draw-in.
+  2) Modly Sneeze: Conal AOE. Get BEHIND. Used after Inhale.
+  3) Moldy Phlegm: Circle AOE.
 12216: | # Orthos Ahriman
-  Blistering Blink: Telegraphed huge line AOE. Get BEHIND.
+  1) Blistering Blink: Wide line AOE. Get BEHIND.
 12217: | # Orthoiron Corse
-  Glass Punch: Conal AOE with late telegraph. Get BEHIND.
-  Catapult: Telegraphed circle AOE.
+  1) Glass Punch: Conal AOE. Get BEHIND.
+  2) Catapult: Circle AOE.
 12218: | # Orthos Catoblepas
-  Demon Eye: Huge 360-degree gaze. LOOK AWAY. Used both in and out of combat.
-  Infusion: Instant gap closer. Used immediately on pull.
+  1) Demon Eye: Huge 360-degree gaze. LOOK AWAY. Used out of combat.
+  2) Infusion: Instant gap closer. Used on pull.
 12219: | # Orthos Pegasus
-  Gallop: Instant gap closer.
-  Nicker: Pointblank AOE with late telegraph. Get OUT.
-  Rear Hoof: Instant. Inflicts knockback.
+  1) Gallop: Instant gap closer.
+  2) Nicker: PB AOE. Get OUT.
+  3) Rear Hoof: Knockback.
 12220: | # Orthos Wraith
-  Scream: Large pointblank AOE with late telegraph. Get OUT.
-  Ancient Eruption: Telegraphed circle AOE.
+  1) Scream: Large PB AOE. Get OUT.
+  2) Ancient Eruption: Circle AOE.
 12221: | # Orthos Specter
-  Left Sweep: Huge 210-degree AOE to the left with late telegraph. Get to FLANK.
-  Right Sweep: Huge 210-degree AOE to the right with late telegraph. Get to FLANK.
-  Ringing Burst: Donut AOE with late telegraph. Get IN.
-  Surrounding Burst: Large pointblank AOE with late telegraph. Get OUT.
+  1) Left Sweep: Huge 210-degree AOE to the left.
+  2) Right Sweep: Huge 210-degree AOE to the right.
+  3) Ringing Burst: Donut AOE. Get IN.
+  4) Surrounding Burst: Large PB AOE. Get OUT.
 12222: | # Orthos Abyss
-  Dark Arrivisme: Telegraphed circle AOE.
+  1) Dark Arrivisme: Circle AOE.
 12102: | # Administrator (Boss)
-  Peripheral Lasers: Doughnut AOE. Get IN.
-  Cross Lasers: Cross AOE (cardinals).
-  Support Systems: Cube -- Line AOE. Egg -- Conal AOE. Ball -- Doughnut AOE.
-  Parallel Execution: Five telegraphed circle AOEs. Two perpindicular rows of cubes will fire sequential line AOEs.
-  Salvo Script: Look at the eggs. If both are facing the middle, safe spot is the corner between them. If facing each other, space spot is the corner perpindicular to the egg facing the middle that is on the opposite side of the other egg. 
+  1) Peripheral Lasers: Donut AOE. Get IN.
+  2) Cross Lasers: Cardinal cross AOE.
+  3a) Support System (Cube): Line AOE.
+  3b) Support System (Egg): Conal AOE.
+  3c) Support System (Ball): Donut AOE.
+  4) Parallel Execution: Five circle AOEs. Two sets of sequential line AOEs.
+  5) Salvo Script: Look at the eggs. If both face middle, safe spot is corner between. Otherwise corner across.
 
 # EO floors 91-99
 12223: | # Orthodrone
-  Auto-cannons: Telegraphed huge line AOE. Get BEHIND.
-  Self-detonate: Untelegraphed pointblank AOE used AFTER DEATH.
+  1) Auto-cannons: Huge line AOE. Get BEHIND.
+  2) Self-detonate: PB AOE. Used AFTER DEATH.
 12224: | # Orthosystem Gamma (y)
-  High Voltage: Huge pointblank AOE with late telegraph. Get OUT. Can be interrupted.
-  Repelling Cannons: Pointblank AoE with late telegraph. Get OUT.
-  Ring Cannon: Donut AOE with late telegraph. Get IN.
+  1) High Voltage: Huge PB AOE. Get OUT. Can INTERRUPT.
+  2) Repelling Cannons: PB AOE. Get OUT.
+  3) Ring Cannon: Donut AOE. Get IN.
 12225: | # Orthos Mithridates
-  Laserblade: Huge 270-degree conal AOE with late telegraph. Get BEHIND.
+  1) Laserblade: Huge 270-degree conal AOE. Get BEHIND.
 12226: | # Orthonaught
-  Rotoswipe: Conal AOE with late telegraph. Get BEHIND.
-  Steam Clean: Grants physical damage up to self.
+  1) Rotoswipe: Conal AOE. Get BEHIND.
+  2) Steam Clean: Grants physical damage up to self.
 12227: | # Orthos Fitter
-  Allagan Fear: 360-degree gaze. LOOK AWAY.
-  Unholy: Untelegraphed huge pointblank AOE. Only used out of combat.
-  Allagan Meteor: Large telegraphed pointblank(?) AOE. Possibly triggered by low HP.
-  WARNING: As of patch 6.35, a bug in the game sometimes causes the Unholy cast bar and effect to be hidden when the Lethargy protomander is active.
+  1) Allagan Fear: 360-degree gaze. LOOK AWAY.
+  2) Unholy: Huge PB AOE. Used out of combat.
+  3) Allagan Meteor: Large PB AOE. Low HP trigger.
+  NOTE: Lethargy sometimes causes the Unholy cast bar and effect to be hidden.
 12228: | # Orthos Sphinx
-  Naked Soul: Front conal gaze. Get BEHIND or LOOK AWAY.
-  Swinge: Huge conal AOE with late telegraph. Get BEHIND. Used immediately after Naked Soul. 
+  1) Naked Soul: Conal gaze. Get BEHIND or LOOK AWAY.
+  2) Swinge: Huge conal AOE. Get BEHIND. Used after Naked Soul. 
 12229: | # Orthosystem Alpha (a)
-  Aetherochemical Laser: Huge conal AOE with late telegraph. Get BEHIND.
+  1) Aetherochemical Laser: Huge conal AOE. Get BEHIND.
 12230: | # Orthos Zaghnal
-  Beastly Roar: Huge pointblank AOE with late telegraph. Only used out of combat.
-  Pounce Errant: Circle AOE gap closer on marked player.
+  1) Beastly Roar: Huge PB AOE. Used out of combat.
+  2) Pounce Errant: Marked gap closer.
 12231: | # Orthos Mining Drone
-  Run Amok: Inflicts knockback. Used 4 times in a row.
-  Aetherochemical Cannon: Huge 180-degree AOE with late telegraph. Get BEHIND.
+  1) Run Amok: Knockback. Used 4 times in a row.
+  2) Aetherochemical Cannon: Huge 180-degree AOE. Get BEHIND.
 12232: | # Orthos Motherbit
-  Allagan Gravity: Telegraphed circle AOE.
-  Citadel Buster: Line AOE with late telegraph. Get BEHIND.
+  1) Allagan Gravity: Circle AOE.
+  2) Citadel Buster: Line AOE. Get BEHIND.
 12233: | # Servomechanical Orthochimera
-  Feral Lunge: Instant gap closer.
-  The Ram's Voice: Untelegraphed pointblank AOE. Get OUT.
-  The Dragon's Voice: Untelegraphed donut AOE. Get IN.
-  The Dragon's Breath: Conal AOE to the front and left with late telegraph. Get BEHIND.
-  Engulfing Ice: Conal AOE to the front and right with late telegraph. Get BEHIND.
-  Scorpion Sting: Backward conal AOE with quick cast. Get in FRONT.
+  1) Feral Lunge: Instant gap closer.
+  2) The Ram's Voice: PB AOE. Get OUT.
+  3) The Dragon's Voice: Donut AOE. Get IN.
+  4) The Dragon's Breath: Conal AOE. Get BEHIND.
+  5) Engulfing Ice: Conal AOE. Get BEHIND.
+  6) Scorpion Sting: Back conal AOE. Get in FRONT.
 12234: | # Servomechanical Orthotaur
-  Zoom In: Instant gap closer.
-  32-tonze Swipe: Large conal AOE with late telegraph. Get BEHIND.
-  128-tonze Swing: Pointblank AOE with late telegraph. Get OUT.
+  1) Zoom In: Instant gap closer.
+  2) Swipe: Large conal AOE. Get BEHIND.
+  3) Swing: PB AOE. Get OUT.
 12235: | # Orthos Durga
-  Diffusion Ray: Telegraphed huge conal AOE. Get BEHIND.
-  Brainjack: Inflicts confusion (3s).
-  Thermobaric Charge: Telegraphed circle AOE. Used immediately after Brainjack. There's plenty of time to escape after confusion wears off.
+  1) Diffusion Ray: Hhuge conal AOE. Get BEHIND.
+  2) Brainjack: Inflicts confusion.
+  3) Thermobaric Charge: Circle AOE. Used after Brainjack.
+  NOTE: There's time to dodge after confusion.
 12100: | # Excalibur (Boss)
-  Solid Souls Caliber: Pointblank AOE with late telegraph. Get OUT.
-  Empty Souls Caliber: Donut AOE with late telegraph. Get IN.
-  Frostforge: Get the fire buff.
-  Flameforge: Get the ice buff.
-  Exglacialis: Two sets of starbust AOEs. Outside the center ring of the arena, there is a pattern with 8 points. Each of these points is a safe spot for all possible patterns.
-  Exflammeus: Spawns a series of circles that grow and explode. Run clockwise around the boss's hitbox to avoid them.
+  1) Solid Souls Caliber: PB AOE. Get OUT.
+  2) Empty Souls Caliber: Donut AOE. Get IN.
+  3) Frostforge: Get the FIRE buff.
+  4) Flameforge: Get the ICE buff.
+  5) Exglacialis: Two sets of starbust AOEs.
+  NOTE: Outside the center ring there is a pattern with 8 points. Each of these points is a safe spot.
+  6) Exflammeus: Spawns circle AOEs that grow and explode.
+  NOTE: Run clockwise around the boss's hitbox to avoid them.

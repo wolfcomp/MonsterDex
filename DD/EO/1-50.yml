@@ -180,6 +180,8 @@
   Threat: Easy
   Aggro: Proximity
   Weakness:
+    - Stun
+    - Heavy
     - Slow
 12126-Orthos Rafflesia:
   InstanceContentType: DeepDungeon
@@ -210,21 +212,13 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 12125-Orthos Keter:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Slow
 
 # EO boss floor 20
 12261-Cloning Node:
@@ -406,7 +400,10 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
+    - Stun
+    - Heavy
     - Slow
+    - Sleep
 12150-orthotaur:
   InstanceContentType: DeepDungeon
   Threat: Caution

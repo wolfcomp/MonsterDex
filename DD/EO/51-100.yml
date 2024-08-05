@@ -129,56 +129,117 @@
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12191-Orthos matamata:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12189-Orthos diplocaulus:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
+  Weakness:
+    - Slow
 12187-Orthos monitor:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 12186-Orthos cobra:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12185-Orthos drake:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12194-Orthos gowrow:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Slow
 12195-Orthoninja:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
+  Weakness:
+    - Slow
 12190-Orthos basilisk:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12196-Haokah perfected:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12188-Orthos anala:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12193-Orthos falak:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 12192-Orthos palleon:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Bind
+    - Sleep
 
 # EO floor 70
 12246-Aeturna:
@@ -253,10 +314,9 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 12205-Orthoskunoichi:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -288,6 +348,10 @@
   Aggro: Sight
   Weakness:
     - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 12203-Orthos sasquatch:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
@@ -310,9 +374,9 @@
   Threat: Easy
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Heavy
+    - Slow
+    - Bind
     - Sleep
 12212-Orthos hecteyes:
   InstanceContentType: DeepDungeon
@@ -343,16 +407,6 @@
     - Heavy
     - Slow
     - Sleep
-12161-Orthos deepeye:
-  InstanceContentType: DeepDungeon
-  Threat: Easy
-  Aggro: Sight
-  Weakness:
-    - Stun
-    - Heavy
-    - Slow
-    - Bind
-    - Sleep
 12215-Orthos gourmand:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -378,6 +432,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
+    - Stun
     - Heavy
     - Slow
 12220-Orthos wraith:
@@ -422,15 +477,12 @@
   Aggro: Proximity
   Threat: Caution
   Weakness:
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Slow
 12224-Orthosystem y:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - Heavy
     - Slow
 12225-Orthos Mithridates:
   InstanceContentType: DeepDungeon
@@ -469,7 +521,6 @@
     - Stun
     - Heavy
     - Slow
-    - Bind
 12230-Orthos Zaghnal:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -504,10 +555,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - Stun
-    - Heavy
     - Slow
-    - Bind
 12235-Orthos Durga:
   InstanceContentType: DeepDungeon
   Threat: Caution
