@@ -370,6 +370,7 @@
 
 # EO floors 81-89
 12210-Orthos deepeye:
+  InstanceContentType: DeepDungeon
   Aggro: Sight
   Threat: Easy
   Weakness:
@@ -474,11 +475,12 @@
 
 # EO floors 91-98
 12223-Orthodrone:
+  InstanceContentType: DeepDungeon
   Aggro: Proximity
   Threat: Caution
   Weakness:
     - Slow
-12224-Orthosystem y:
+12224-Orthosystem γ:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
