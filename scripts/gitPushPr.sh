@@ -5,7 +5,7 @@ git commit --all -m "Updating ${PUBLIC_NAME}"
 echo "> Pushing to origin"
 git push --force --set-upstream origin "${PUBLIC_NAME}"
 prRepo="goatcorp/DalamudPluginsD17"
-prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${INTERNAL_NAME}\") | .number")
+prNumber=$(gh api repos/${prRepo}/pulls | jq ".[] | select(.head.ref == \"${PUBLIC_NAME}\") | .number")
 if [[ ${MESSAGE} =~ .*"[TEST]".* ]]; then
     prTitle="[Testing] ${PUBLIC_NAME} ${VERSION}"
 else
@@ -17,5 +17,5 @@ if [ "${prNumber}" ]; then
     gh api "repos/${prRepo}/pulls/${prNumber}" --silent --method PATCH -f "title=${prTitle}" -f "body=${prBody}" -f "state=open"
 else
     echo "> Creating PR"
-    gh pr create --repo "${prRepo}" --head "${GITHUB_REPOSITORY_OWNER}:${INTERNAL_NAME}" --base "main" --title "${prTitle}" --body "${prBody}"
+    gh pr create --repo "${prRepo}" --head "${GITHUB_REPOSITORY_OWNER}:${PUBLIC_NAME}" --base "main" --title "${prTitle}" --body "${prBody}"
 fi

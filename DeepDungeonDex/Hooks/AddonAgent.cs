@@ -57,7 +57,7 @@ public unsafe class AddonAgent : IDisposable
 
             if (activeInstance != null)
             {
-                ContentType = (ContentType)(1 << ((int)activeInstance->InstanceContentType - 1));
+                ContentType = (ContentType)(1 << ((int)activeInstance->InstanceContentType));
                 if (ContentType.HasFlag(ContentType.DeepDungeon))
                 {
                     Floor = ((InstanceContentDeepDungeon*)activeInstance)->Floor;
@@ -68,7 +68,7 @@ public unsafe class AddonAgent : IDisposable
                 var activePublic = (PublicContentDirectorResearch*)_eventFramework->GetPublicContentDirector();
                 if (activePublic != null)
                 {
-                    ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 19));
+                    ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 20));
                 }
                 else
                 {
