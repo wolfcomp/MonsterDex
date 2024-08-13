@@ -1,4 +1,3 @@
-using FFXIVClientStructs.FFXIV.Client.Game.Character;
 using YamlDotNet.Serialization;
 
 namespace DeepDungeonDex.Storage;
