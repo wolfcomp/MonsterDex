@@ -1,111 +1,138 @@
 ﻿# PotD special NPCs and misc.
 5041-pygmaioi:
+  InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
 5046-Duskwight lancer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5047-sword-swinging adventurer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5048-staff-spinning adventurer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5049-spear-shaking adventurer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5050-Ishgardian pikeman:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5051-roughspun ruffian:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5052-frenzied freebooter:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5053-Immortal Flame:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5283-mortifying magnate:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
 5284-corrupted centurion:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5285-gangrenous gigant:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5286-half-cracked captain:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5287-sunken captain:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5288-flyblown praefectus:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5289-jaundiced tribunus:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5290-moldering merchant:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5291-blackening marketeer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 5292-bloated conjurer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5293-bloated archer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5294-bloated pugilist:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5295-emaciated engineer:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5296-putrid plutocrat:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5297-insentient inquisitor:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 5298-necrose knight:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
   Weakness:
     - Undead
 2566-mimic:
+  InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
 
 # EO special NPCs and misc.
 12324-Demi-Cochma:
+  InstanceContentType: DeepDungeon
   Threat: Undefined
   Aggro: Sight
   Weakness:
@@ -115,6 +142,7 @@
     - BindUnknown
     - SleepUnknown
 12322-Lamia Queen:
+  InstanceContentType: DeepDungeon
   Threat: Undefined
   Aggro: Sight
   Weakness:
@@ -124,6 +152,7 @@
     - BindUnknown
     - SleepUnknown
 12323-Meracydian Clone:
+  InstanceContentType: DeepDungeon
   Threat: Undefined
   Aggro: Sight
   Weakness:
