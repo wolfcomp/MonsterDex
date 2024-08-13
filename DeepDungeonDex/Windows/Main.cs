@@ -1,11 +1,8 @@
-using System.IO;
 using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.Types;
-using Dalamud.Interface.Internal;
 using Dalamud.Interface.Textures.TextureWraps;
-using Dalamud.Interface.Utility.Raii;
 using Dalamud.Utility;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Weather;
