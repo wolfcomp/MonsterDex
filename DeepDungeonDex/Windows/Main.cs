@@ -37,7 +37,7 @@ public unsafe partial class Main : Window, IDisposable
     private AddonAgent _addon;
     private const string _githubIssuePath = "https://github.com/wolfcomp/MonsterDex/issues/new?template=fix_node.yaml";
 
-    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, IDalamudPluginInterface pluginInterface, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, IDalamudPluginInterface pluginInterface, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -220,7 +220,7 @@ public unsafe partial class Main : Window, IDisposable
 
     public void DrawUnknownContent()
     {
-        ImGui.TextUnformatted(string.Format(_locale.GetLocale("UnknownContent"), _currentMob.Name, _currentMob.Id));
+        ImGui.TextUnformatted(string.Format(_locale.GetLocale("UnknownContent"), _currentNpc->NameString, _currentNpc->NameId));
         // ReSharper disable once InvertIf
         if (ImGui.Button(_locale.GetLocale("CreateDataIssue")))
         {
