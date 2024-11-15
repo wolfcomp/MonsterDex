@@ -1,5 +1,5 @@
 ﻿using FFXIVClientStructs.FFXIV.Client.System.Framework;
-using Lumina.Excel.GeneratedSheets;
+using Lumina.Excel.Sheets;
 
 namespace DeepDungeonDex.Weather;
 public class WeatherManager : IDisposable
@@ -20,7 +20,7 @@ public class WeatherManager : IDisposable
         if (_weatherNames.TryGetValue(weatherId, out var name))
             return name;
 
-        name = _data.GetExcelSheet<Lumina.Excel.GeneratedSheets.Weather>()!.FirstOrDefault(t => t.RowId == weatherId)!.Name.ToString();
+        name = _data.GetExcelSheet<Lumina.Excel.Sheets.Weather>()!.FirstOrDefault(t => t.RowId == weatherId)!.Name.ToString();
         _weatherNames[weatherId] = name;
 
         return name;
@@ -31,7 +31,7 @@ public class WeatherManager : IDisposable
         if (_weatherIcons.TryGetValue(weatherId, out var iconId))
             return iconId;
 
-        iconId = _data.GetExcelSheet<Lumina.Excel.GeneratedSheets.Weather>()!.FirstOrDefault(t => t.RowId == weatherId)!.Icon;
+        iconId = _data.GetExcelSheet<Lumina.Excel.Sheets.Weather>()!.FirstOrDefault(t => t.RowId == weatherId)!.Icon;
         _weatherIcons[weatherId] = iconId;
 
         return iconId;
@@ -40,12 +40,13 @@ public class WeatherManager : IDisposable
     public void BuildWeatherRates(uint weatherRateId)
     {
         var rates = new List<(uint id, byte rate)>();
-        foreach (var weatherRate in _data.GetExcelSheet<WeatherRate>()!.Where(t => t.RowId == weatherRateId).SelectMany(t => t.UnkData0))
+        var weatherRate = _data.GetExcelSheet<WeatherRate>().GetRow(weatherRateId);
+        for (var i = 0; i < weatherRate.Rate.Count; i++)
         {
-            if (weatherRate.Weather == 0)
+            if (weatherRate.Weather[i].RowId == 0)
                 break;
             var (_, prevRate) = rates.LastOrDefault();
-            rates.Add(((uint)weatherRate.Weather, (byte)(weatherRate.Rate + prevRate)));
+            rates.Add((weatherRate.Weather[i].RowId, (byte)(weatherRate.Rate[i] + prevRate)));
         }
         _weatherRates[weatherRateId] = rates.ToArray();
     }
