@@ -274,7 +274,7 @@ public unsafe partial class Main : Window, IDisposable
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
-        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
+        ImGui.Image(_textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
         var unknownBit = (Weakness)((int)check << 6);
         if (weakness.HasFlag(unknownBit))
         {
