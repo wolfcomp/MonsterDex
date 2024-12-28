@@ -32,5 +32,5 @@ ContentTypeDiadem: Diadem
 ContentTypeBozja: Bozja
 ContentTypeIslandSanctuary: Sanctuaire de l'île
 NoDisplay: |
-  No Display Available for content {0}.
-  To remove this change your content selections in the settings.
+  Aucun affichage disponible pour le contenu {0}.
+  Pour supprimer cela changez vos sélections de contenu dans les paramètres.
