@@ -32,5 +32,5 @@ ContentTypeDiadem: Diadem
 ContentTypeBozja: Bozja
 ContentTypeIslandSanctuary: Island Sanctuary
 NoDisplay: |
-  No Display Available for content {0}.
-  To remove this change your content selections in the settings.
+  コンテンツ {0}に利用可能な表示はありません。
+  設定でコンテンツの選択を変更します。
