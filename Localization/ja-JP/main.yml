@@ -31,3 +31,6 @@ ContentTypeEureka: Eureka
 ContentTypeDiadem: Diadem
 ContentTypeBozja: Bozja
 ContentTypeIslandSanctuary: Island Sanctuary
+NoDisplay: |
+  コンテンツ {0}に利用可能な表示はありません。
+  設定でコンテンツの選択を変更します。
