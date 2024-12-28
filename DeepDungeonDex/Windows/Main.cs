@@ -131,7 +131,8 @@ public unsafe partial class Main : Window, IDisposable
                 Aggro = Aggro.Undefined,
                 Id = id,
                 Threat = Threat.Undefined,
-                Weakness = Weakness.BindUnknown | Weakness.HeavyUnknown | Weakness.SleepUnknown | Weakness.SlowUnknown | Weakness.StunUnknown | Weakness.UndeadUnknown
+                Weakness = Weakness.BindUnknown | Weakness.HeavyUnknown | Weakness.SleepUnknown | Weakness.SlowUnknown | Weakness.StunUnknown | Weakness.UndeadUnknown,
+                InstanceContentType = _addon.ContentType
             };
         }
 
@@ -156,7 +157,7 @@ public unsafe partial class Main : Window, IDisposable
             if (!_debug)
             {
                 IsOpen = false;
-                _currentMob = null;
+                _currentMob = null!;
             }
             return;
         }
@@ -187,8 +188,10 @@ public unsafe partial class Main : Window, IDisposable
                 DrawDeepDungeonData();
                 break;
             case ContentType.Eureka:
+#if DEBUG
                 DrawEurekaData();
                 break;
+#endif
             default:
                 // ReSharper disable once SwitchStatementHandlesSomeKnownEnumValuesWithDefault
                 switch (_addon.ContentType)
@@ -207,6 +210,13 @@ public unsafe partial class Main : Window, IDisposable
                     case ContentType.LeapOfFaith:
                     case ContentType.Frontlines:
                         break;
+                    case ContentType.Eureka:
+                    case ContentType.IslandSanctuary:
+                    case ContentType.Diadem:
+                    case ContentType.Bozja:
+                    case ContentType.None:
+                        DrawNoDisplay();
+                        break;
                     default:
                         DrawUnknownContent();
                         break;
@@ -214,6 +224,8 @@ public unsafe partial class Main : Window, IDisposable
                 break;
         }
     }
+
+    public void DrawNoDisplay() => ImGui.TextUnformatted(string.Format(_locale.GetLocale("NoDisplay"), _addon.ContentType.ToString("G")));
 
     public void DrawUnknownContent()
     {
@@ -229,7 +241,7 @@ public unsafe partial class Main : Window, IDisposable
         {
             ImGui.TextUnformatted("Debug information");
             var forayInfo = _currentNpc->GetForayInfo();
-            if(forayInfo != null)
+            if (forayInfo != null)
                 ImGui.TextUnformatted($"NamePlateIconId: {(uint)forayInfo->Element + 60650}");
             ImGui.TextUnformatted($"SubKind: {_currentNpc->Character.GameObject.SubKind}");
             ImGui.TextUnformatted($"Current Time: {((Time)Framework.GetServerTime()).GetEorzeanTime()}");
@@ -274,7 +286,7 @@ public unsafe partial class Main : Window, IDisposable
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
-        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
+        ImGui.Image(_textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
         var unknownBit = (Weakness)((int)check << 6);
         if (weakness.HasFlag(unknownBit))
         {

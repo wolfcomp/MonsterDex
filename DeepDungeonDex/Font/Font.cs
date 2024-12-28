@@ -7,7 +7,7 @@ public class Font : IDisposable
 {
     private readonly IPluginLog _log;
     private readonly IFontAtlas _atlas;
-    internal static IFontHandle RegularFont;
+    internal static IFontHandle RegularFont = null!;
     internal float FontSize = 16;
 
     public Font(IPluginLog log, IFontAtlas atlas)

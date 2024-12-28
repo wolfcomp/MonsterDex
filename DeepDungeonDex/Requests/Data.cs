@@ -21,11 +21,11 @@ public partial class Requests : IDisposable
     public bool RequestingLang { get; private set; }
     public bool IsRequesting => RequestingData || RequestingLang;
     public Action? IsRequestDone = null;
-    #if RELEASE
+#if RELEASE
     private const bool Debug = false;
-    #else
+#else
     private const bool Debug = true;
-    #endif
+#endif
 
     public Requests(StorageHandler handler, IPluginLog log)
     {
@@ -99,7 +99,9 @@ public partial class Requests : IDisposable
 
         if (_loadLangThread == null)
         {
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
             _loadLangThread = new Thread(() => RefreshLang());
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
             _loadLangThread.Start();
         }
         RequestingData = false;
@@ -142,7 +144,7 @@ public partial class Requests : IDisposable
     {
         _token.Cancel();
         _loadFileThread.Join();
-        _loadLangThread.Join();
+        _loadLangThread?.Join();
         _token.Dispose();
         _fileStream?.Dispose();
         _log = null!;
