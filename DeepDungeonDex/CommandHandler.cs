@@ -6,7 +6,7 @@ public class CommandHandler : IDisposable
 {
     private ICommandManager _manager;
     private IChatGui _chat;
-    private readonly string _command = "/pddd";
+    private readonly string _command = "/pdex";
     private readonly Dictionary<string[], Tuple<object, string, bool>> _actions = new();
     private readonly string[] _help = new[] { "help", "h" };
 
@@ -22,7 +22,7 @@ public class CommandHandler : IDisposable
     {
         _manager.AddHandler(_command, new CommandInfo(ProcessCommand)
         {
-            HelpMessage = $"Deep Dungeon Dex commands\n\thelp, h → shows all commands in chat\n\t{CommandStrings}",
+            HelpMessage = $"Monster Dex commands\n\thelp, h → shows all commands in chat\n\t{CommandStrings}",
             ShowInHelp = true
         });
     }
@@ -32,13 +32,13 @@ public class CommandHandler : IDisposable
         var args = argument.Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (args.Length == 0 || _help.Any(t => args.First().ToLowerInvariant() == t))
         {
-            if(args.Length == 0)
-                _chat.PrintError("[DeepDungeonDex] Expected additional args");
-            _chat.Print($"[DeepDungeonDex] Available commands:");
+            if (args.Length == 0)
+                _chat.PrintError("[MonsterDex] Expected additional args");
+            _chat.Print($"[MonsterDex] Available commands:");
             foreach (var (key, val) in _actions)
             {
                 var (_, help, show) = val;
-                if(show)
+                if (show)
                     _chat.Print($"  {string.Join(", ", key)} → {help}");
             }
 
@@ -48,7 +48,7 @@ public class CommandHandler : IDisposable
         var action = args[0];
         if (!_actions.Keys.SelectMany(t => t).Contains(action, StringComparer.InvariantCultureIgnoreCase))
         {
-            _chat.PrintError($"[DeepDungeonDex] Unknown action {action}");
+            _chat.PrintError($"[MonsterDex] Unknown action {action}");
             return;
         }
 
@@ -62,7 +62,7 @@ public class CommandHandler : IDisposable
 
     public void AddCommand(string command, Action action, string helpText = "", bool show = true)
     {
-        AddCommand(new[] {command}, action, helpText, show);
+        AddCommand(new[] { command }, action, helpText, show);
     }
 
     public void AddCommand(string[] commands, Action action, string helpText = "", bool show = true)
@@ -85,11 +85,11 @@ public class CommandHandler : IDisposable
         _actions.Clear();
         _chat = null!;
         _manager = null!;
-    } 
+    }
 
     public void RemoveMainHandler()
     {
-        if(_manager.Commands.ContainsKey(_command))
+        if (_manager.Commands.ContainsKey(_command))
             _manager.RemoveHandler(_command);
     }
 }
