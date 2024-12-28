@@ -31,3 +31,6 @@ ContentTypeEureka: Eureka
 ContentTypeDiadem: Diadem
 ContentTypeBozja: Bozja
 ContentTypeIslandSanctuary: Inselparadies
+NoDisplay: |
+  No Display Available for content {0}.
+  To remove this change your content selections in the settings.
