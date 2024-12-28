@@ -23,6 +23,7 @@ public unsafe class AddonAgent : IDisposable
         _framework = framework;
         _log = log;
         _framework.Update += OnUpdate;
+        OnUpdate(framework);
     }
 
     private void OnUpdate(IFramework framework)
@@ -40,7 +41,7 @@ public unsafe class AddonAgent : IDisposable
             return;
 
         Weather = _envManager->ActiveWeather;
-        if(_envManager->EnvScene == null)
+        if (_envManager->EnvScene == null)
             return;
 
         WeatherIds = _envManager->EnvScene->WeatherIds.ToArray();
@@ -51,7 +52,10 @@ public unsafe class AddonAgent : IDisposable
         try
         {
             if (!IsContentSafe())
+            {
+                ContentType = ContentType.None;
                 return;
+            }
 
             var activeInstance = _eventFramework->GetInstanceContentDirector();
 
@@ -120,5 +124,5 @@ public unsafe class AddonAgent : IDisposable
 public unsafe struct PublicContentDirectorResearch
 {
     [FieldOffset(0x0)] public PublicContentDirector PublicContentDirector;
-    [FieldOffset(0xC76)] public uint PublicContentDirectorType;
+    [FieldOffset(0xDB0)] public byte PublicContentDirectorType;
 }
