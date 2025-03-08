@@ -310,9 +310,9 @@
   Threat: Easy
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Heavy
+    - Slow
+    - Bind
     - Sleep
 12212-Orthos hecteyes:
   InstanceContentType: DeepDungeon
