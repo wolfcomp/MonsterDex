@@ -1,5 +1,4 @@
 ﻿using FFXIVClientStructs.FFXIV.Client.Game.Event;
-using System.Runtime.InteropServices;
 using FFXIVClientStructs.FFXIV.Client.Game.InstanceContent;
 using FFXIVClientStructs.FFXIV.Client.Graphics.Environment;
 using ContentType = DeepDungeonDex.Storage.ContentType;
@@ -69,10 +68,10 @@ public unsafe class AddonAgent : IDisposable
             }
             else
             {
-                var activePublic = (PublicContentDirectorResearch*)_eventFramework->GetPublicContentDirector();
+                var activePublic = _eventFramework->GetPublicContentDirector();
                 if (activePublic != null)
                 {
-                    ContentType = (ContentType)(1 << (int)(activePublic->PublicContentDirectorType + 20));
+                    ContentType = (ContentType)(1 << (byte)activePublic->Type + 20);
                 }
                 else
                 {
@@ -118,11 +117,4 @@ public unsafe class AddonAgent : IDisposable
     }
 
     public void Dispose() => Dispose(true);
-}
-
-[StructLayout(LayoutKind.Explicit)]
-public unsafe struct PublicContentDirectorResearch
-{
-    [FieldOffset(0x0)] public PublicContentDirector PublicContentDirector;
-    [FieldOffset(0xDB0)] public byte PublicContentDirectorType;
 }

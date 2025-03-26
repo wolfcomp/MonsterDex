@@ -233,7 +233,7 @@ public unsafe partial class Main : Window, IDisposable
         // ReSharper disable once InvertIf
         if (ImGui.Button(_locale.GetLocale("CreateDataIssue")))
         {
-            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}";
+            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}&version={Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)}";
             Util.OpenLink(url);
         }
 
@@ -254,27 +254,6 @@ public unsafe partial class Main : Window, IDisposable
     public void LoadIcons()
     {
         _unknown = _textureProvider.GetFromManifestResource(Assembly.GetExecutingAssembly(), "DeepDungeonDex.UnknownDebuf.png").GetWrapOrEmpty();
-    }
-
-    public void DrawWeakness(Weakness weakness)
-    {
-        var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
-        DrawWeaknessIcon(15004, size, weakness, Weakness.Stun);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15002, size, weakness, Weakness.Heavy);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15009, size, weakness, Weakness.Slow);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15013, size, weakness, Weakness.Sleep);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15003, size, weakness, Weakness.Bind);
-
-        // ReSharper disable once InvertIf
-        if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
-        {
-            ImGui.SameLine();
-            DrawWeaknessIcon(15461, size, weakness, Weakness.Undead);
-        }
     }
 
     private static Vector2 _uv0 = new(0, 0);

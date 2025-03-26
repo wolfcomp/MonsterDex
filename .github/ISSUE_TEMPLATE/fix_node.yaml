@@ -8,6 +8,12 @@ body:
       value: |
         To get the id of the mob enable `Show debug information` in the config and it will display the mob id when targeting the mob.
   - type: input
+    id: version
+    attributes:
+      label: Plugin Version
+    validations:
+      required: true
+  - type: input
     id: mob_id
     attributes:
       label: Mob Id

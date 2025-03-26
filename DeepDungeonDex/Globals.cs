@@ -10,3 +10,4 @@ global using Dalamud.Interface.Windowing;
 global using Dalamud.Game.ClientState.Conditions;
 global using Dalamud.Plugin;
 global using Dalamud.Plugin.Services;
+global using InteropGenerator.Runtime;
