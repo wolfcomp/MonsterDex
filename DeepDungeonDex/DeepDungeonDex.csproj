@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Dalamud.NET.Sdk/12.0.2">
 	<PropertyGroup>
 		<Authors>WildWolf</Authors>
 		<Company></Company>
@@ -7,6 +7,7 @@
 		<Description>A live bestiary for Deep Dungeon. Shows target mob aggro type, a subjective threat level, status vulnerabilities, and a general overview of notable mechanics. Threat level is meant to be taken with a grain of salt, is aimed towards solo players, and assumes a general familiarity with deep dungeon mechanics and the class being played. Information is accurate to the best of my knowledge based on crowdsourced information, but I could use your help! Please open an issue on the GitHub if you'd like to correct inaccurate or untested data. Original by Strati</Description>
 		<Copyright>(c) WildWolf 2022-</Copyright>
 		<PackageProjectUrl>https://github.com/wolfcomp/DeepDungeonDex</PackageProjectUrl>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -15,8 +16,6 @@
 		<DalamudLibPath Condition="$([MSBuild]::IsOSPlatform('OSX'))">$(HOME)/Library/Application Support/XIV on Mac/dalamud/Hooks/dev/</DalamudLibPath>
 		<DalamudLibPath Condition="$(DALAMUD_HOME) != ''">$(DALAMUD_HOME)/</DalamudLibPath>
 	</PropertyGroup>
-
-	<Import Project="$(DalamudLibPath)/targets/Dalamud.Plugin.targets" />
 
 	<ItemGroup>
 		<None Remove="data.dat" />

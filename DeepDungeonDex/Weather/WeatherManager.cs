@@ -69,7 +69,7 @@ public class WeatherManager : IDisposable
     {
         if (!_zoneWeatherRates.TryGetValue(zoneId, out var weatherRateId))
         {
-            weatherRateId = _data.GetExcelSheet<TerritoryType>()!.FirstOrDefault(t => t.RowId == zoneId)!.WeatherRate;
+            weatherRateId = _data.GetExcelSheet<TerritoryType>()!.FirstOrDefault(t => t.RowId == zoneId)!.WeatherRate.RowId;
         }
 
         if (_weatherRates.TryGetValue(weatherRateId, out var rates))
