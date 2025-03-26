@@ -256,27 +256,6 @@ public unsafe partial class Main : Window, IDisposable
         _unknown = _textureProvider.GetFromManifestResource(Assembly.GetExecutingAssembly(), "DeepDungeonDex.UnknownDebuf.png").GetWrapOrEmpty();
     }
 
-    public void DrawWeakness(Weakness weakness)
-    {
-        var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
-        DrawWeaknessIcon(15004, size, weakness, Weakness.Stun);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15002, size, weakness, Weakness.Heavy);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15009, size, weakness, Weakness.Slow);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15013, size, weakness, Weakness.Sleep);
-        ImGui.SameLine();
-        DrawWeaknessIcon(15003, size, weakness, Weakness.Bind);
-
-        // ReSharper disable once InvertIf
-        if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
-        {
-            ImGui.SameLine();
-            DrawWeaknessIcon(15461, size, weakness, Weakness.Undead);
-        }
-    }
-
     private static Vector2 _uv0 = new(0, 0);
     private static Vector2 _uv1 = new(1, 1);
     private static Vector4 _color = new(1, 1, 1, 1);
