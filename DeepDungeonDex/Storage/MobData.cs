@@ -89,6 +89,21 @@ public record Mob
         }
         ProcessedDescription = strList.Where(t => !string.IsNullOrWhiteSpace(t)).ToArray();
     }
+
+    public override string ToString() => $"""
+                                          Name: {Name}
+                                          Id: {Id}
+                                          Weakness: {Weakness}
+                                          Aggro: {Aggro}
+                                          Threat: {Threat}
+                                          Description:
+                                             {JoinedProcessedDescription}
+                                          InstanceContentType: {InstanceContentType}
+                                          ElementalChangeTimes: {ElementalChangeTimes}
+                                          MutatedElementalType: {MutatedElementalType}
+                                          IsMutation: {IsMutation}
+                                          IsAaptation: {IsAaptation}
+                                          """;
 }
 
 [Flags]

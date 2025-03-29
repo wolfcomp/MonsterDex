@@ -134,7 +134,7 @@ public partial class Requests : IDisposable
         }
         catch (Exception e)
         {
-            _log.Error(e, "Trying to get file from precompiled data");
+            _log.Info(e, "Trying to get file from precompiled data");
             return !_loadedOnce ? await GetFromFile(url) : null;
         }
 #pragma warning restore CS0162 // Unreachable code detected
