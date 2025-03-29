@@ -136,6 +136,8 @@ public unsafe partial class Main : Window, IDisposable
             };
         }
 
+        _log.Verbose("Set target to:\n" + data);
+
         _currentMob = data;
     }
 
