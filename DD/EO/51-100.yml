@@ -306,6 +306,7 @@
 
 # EO floors 81-89
 12210-Orthos deepeye:
+  InstanceContentType: DeepDungeon
   Aggro: Sight
   Threat: Easy
   Weakness:
