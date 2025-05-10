@@ -22,15 +22,15 @@ FontSize: 글자 크기
 ShowId: 디버그 정보 보기
 LoadAllFont: 모든 글꼴 가져오기(언어 변경 시 불러오는 속도가 개선됩니다)
 LoadAllFontWarning: "약 30MB의 글꼴이 메모리에 로드됩니다.\n기기 사양에 따라 지연이나 멈춤 현상이 발생할 수 있습니다."
-HideFloorGuide: Stop showing the floor guide when entering a new floor
-UnknownContent: Unknown Content no display available for {0}({1})
-CreateDataIssue: Create a data issue
-ContentTypeNone: Overworld
-ContentTypeDeepDungeon: Deep Dungeon
-ContentTypeEureka: Eureka
-ContentTypeDiadem: Diadem
-ContentTypeBozja: Bozja
-ContentTypeIslandSanctuary: Island Sanctuary
+HideFloorGuide: 새로운 층에 들어갈 때 그 층에 대한 가이드를 표시하지 않음
+UnknownContent: '알 수 없는 콘텐츠에 대한 표시가 없습니다: {0}({1})'
+CreateDataIssue: 데이터 이슈 만들기
+ContentTypeNone: 오버월드
+ContentTypeDeepDungeon: 딥 던전
+ContentTypeEureka: 에우레카
+ContentTypeDiadem: 디아뎀
+ContentTypeBozja: 보즈야
+ContentTypeIslandSanctuary: 섬 휴양지
 NoDisplay: |
-  No Display Available for content {0}.
-  To remove this change your content selections in the settings.
+  콘텐츠에 대한 표시가 없습니다: {0}
+  설정에서 콘텐츠 선택을 변경하여 이 문제를 해결할 수 있습니다.
