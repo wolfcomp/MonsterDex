@@ -1,85 +1,84 @@
-5479: Caster, break line of sight to evade auto-attacks
+5479: 시전자, 지형으로 시선을 차단하여 공격 회피
 4975: 자신에게 헤이스트를 부여함
-4977: Absorbs health with each attack
-4979: AoE "Shriek" inflicts Stun
-4980: 독 디버프를 부여함
-4981: Soft-enrage "Final Sting", break line of sight to evade
-4982: Inflicts Vulnerability Up
-4983: AoE "Slumber Breath" inflicts Sleep
-4985: Mini buster "Rhino Attack", break line of sight to evade
+4977: 공격할 때마다 체력을 흡수
+4979: 광역 공격 "Shriek"이 기절 부여
+4980: 독 디버프 부여
+4981: 약한 강공격 "Final Sting", 지형으로 시선을 차단하여 회피
+4982: 취약성 증가 디버프 부여
+4983: 광역 공격 "Slumber Breath"가 수면 부여
+4985: 약한 버스터 "Rhino Attack", 지형으로 시선을 차단하여 회피
 4986: |
-  1) "Whipcrack" - light tankbuster
-  2) "Stormwind" - conal AoE
-  3) "Bombination" - circular AoE on boss inflicts Slow
-  4) "Lumisphere" - targeted AoE on random player
-  5) "Aeroblast" - room wide AoE inflicts Windburn (15s DoT)
-4988: 독 디버프를 부여함
+  1) "Whipcrack" 약한 탱크 버스터
+  2) "Stormwind" 부채꼴 범위 공격
+  3) "Bombination" 보스 중심 원형 범위, 슬로우 디버프 부여
+  4) "Lumisphere" 무작위 플레이어 대상 범위 공격
+  5) "Aeroblast" 필드 전체 광역 공격, 15초 동안 출혈 부여
+4988: 독 디버프 부여
 4989: |
-  "Sticky Tongue" draw-in a player, inflicting Stun if not facing the monster
-  "Labored Leap" AoE is immediately casted after, inflicts substantial damage
+  "Sticky Tongue"은 플레이어를 끌어당기며, 몬스터를 바라보지 않으면 기절 부여
+  "Labored Leap" 광역 공격을 즉시 시전하여 큰 피해를 입힘
 4990: |
-  Can ENRAGE with "Rupture" and wipe the whole team if not killed in time
-  Absorbs health with each attack
-4993: Casts instant Untelegraphed AoE which inflicts Slow
-4994: 독 디버프를 부여함
+  "Rupture"는 전멸 공격으로, 시간 내에 처치해야 함
+  공격할 때마다 체력을 흡수
+4993: 시전없이 즉시 발동하는 광역 공격으로 슬로우 부여
+4994: 독 디버프 부여
 4995: |
-  "Bad Breath" AoE inflicts multiple debuffs if not evaded
+  "Bad Breath" 부채꼴을 피하지 않으면 여러 디버프를 부여
 4996: |
-  Caster, break line of sight to evade auto-attacks
-  Buffs own damage with "Golden Tongue"
+  시전자, 지형으로 시선을 차단하여 공격 회피
+  "Golden Tongue"으로 자신의 공격력을 강화
 4997: |
-  INSTANTLY KILLS players inflicted with Toad using "Devour"
-  Gaze attack inflicts Petrify, do not target while casted to evade
+  개구리 상태인 플레이어는 즉시 처치당함
+  마안이 석화 부여, 시전 중에는 대상 지정하지 말고 회피
 4999: |
-  1) "Bloody Caress" - high damage cleave
-  2) Two telegraphed AoEs and a room wide AoE
-  3) Summons two Palace Hornets that must be killed before they casts "Final Sting"
-  4) "Rotten Stench" - high damage line AoE
+  1) "Bloody Caress" 높은 피해를 입히는 범위 공격
+  2) 시전이 있는 두개의 광역 공격과 필드 전체 공격
+  3) "Final Sting"을 시전하기 전에 "Palace Hornets" 두마리 처치
+  4) "Rotten Stench" 높은 피해를 입히는 선형 광역 공격
 5001: |
-  Casts "Smoldering Scales" applying "Blaze Spikes" to self.
-  "Blaze Spikes" inflicts fire damage upon melee attacks.
-5003: Gaze attack inflicts Petrify, do not target while casted to evade
-5004: High auto-attack damage
+  "Smoldering Scales"는 자신에게 "Blaze Spikes"를 부여
+  "Blaze Spikes"는 근접 공격 시 화염 피해를 입힘.
+5003: 마안이 석화 부여, 시전 중에는 대상 지정하지 말고 회피
+5004: 아픈 자동 공격 피해
 5005: |
-  Caster, break line of sight to evade auto-attacks
-  Casts Haste on itself
-5006: Casts Physical Damage Up on itself
-5007: Can knockback player
-5010: Untelegraphed AoE "111-Tonze Swing" does moderate damage and knockback
+  시전자, 지형으로 시선을 차단하여 공격 회피
+  자신에게 헤이스트를 부여
+5006: 자신에게 물리 피해 증가를 부여
+5007: 플레이어를 넉백시킴
+5010: 시전없는 광역 공격 "111-Tonze Swing"가 중간 피해와 넉백을 입힘
 5011: |
-  「チャープ/Chirp」 스킬은 15초 동안 수면 디버프를 부여함
+  "Chirp" 스킬이 15초 동안 수면 디버프를 부여
 5012: |
-  1) Spread out Fire and Ice AoEs on arena borders
-  2) After the fourth AoE, run to the center of the arena alongside the boss
-  2) Get inside boss's hit box before "Fear Itself" is casted, or it will inflict high damage and Terror
-5014: Inflicts Paralysis if caught in AoE
-5016: Inflicts Stun if caught in AoE
-5017: Caster, break line of sight to evade auto-attacks
+  1) 필드 가장자리에 화염과 얼음 장판을 분산시킴
+  2) 네 번의 장판 설치 후 보스와 함께 필드 한가운데로 이동
+  3) 보스의 발밑에 있어야 하며, 그렇지 않으면 높은 피해와 공포를 입음
+5014: 광역 공격에 맞으면 마비 디버프를 부여
+5016: 광역 공격에 맞으면 기절 부여
+5017: 시전자, 지형으로 시선을 차단하여 공격 회피
 5019: |
-  Draws-in near players and then casts an AoE
-  Caster, break line of sight to evade auto-attacks
-5020: Caster, break line of sight to evade auto-attacks
+  시전자, 지형으로 시선을 차단하여 공격 회피
+5020: 시전자, 지형으로 시선을 차단하여 공격 회피
 5022: |
-  Casts "Dark Mist" AoE, which inflicts Terror
-  "Void Fire II" AoE is subsequently casted to inflict high damage to stunned players
-5023: Gaze attack inflicts Petrify
+  "Dark Mist"는 광역 공격으로 공포를 유발
+  그리고 "Void Fire II"로 기절한 플레이어에게 높은 피해를 입힘
+5023: 마안이 석화 부여
 5025: |
-  1) Summons four lingering AoEs followed by AoEs which inflicts Disease
-  2) Summons two Nightmare Bhoots, they must be killed before the boss next attack
-  3) Casts "Scream", and adds will use "Tornado", a high damage AoE, if still alive
-  4) Casts "Shadow Flare" global AoE, which inflicts Terror - heal or use damage reduction skills before this attack
-5026: Ranged auto-attack, non interruptable
-5029: Casts Physical Damage Up on itself
-5030: 마비 디버프를 부여함
-5032: 마비 디버프를 부여함
-5036: Wide AoE which inflicts Terror
+  1) 네 개의 지속 광역 공격 후 질병 디버프를 부여하는 광역 공격을 시전함
+  2) 두 마리의 Nightmare Bhoots를 보스의 다음 공격 전에 처치해야 함
+  3) "Scream"은 전체 공격으로 Bhoots가 살아 있으면 높은 피해 광역 공격을 함께 사용
+  4) 필드 전체 광역 공격 "Shadow Flare"로 공포를 유발, 이 공격 전에 치유하거나 피해 감소 스킬을 사용하세요
+5026: 원거리 자동 공격, 인터럽트 불가
+5029: 자신에게 물리 피해 증가를 부여
+5030: 마비 디버프 부여
+5032: 마비 디버프 부여
+5036: 방 전체 광역 공격으로 공포 부여
 5037: |
-  High physical damage
-  "Nail in the Coffin" does a lot of damage
+  높은 물리 피해
+  "Nail in the Coffin"이 큰 피해를 입힘
 5038: |
-  FOLLOW MECHANICS -- evade all AoEs and Gazes
-  Failed mechanics will increase Black Honeymoon room AoE (3+ stacks is a near wipe)
-  1) "Cold Feet" -- Gaze
-  2) "In Health" -- can be room wide AoE with safe spot on boss or targeted AoE under boss
-  3) "In Sickness" -- instantly inflicts Disease on a player
+  지침을 따르세요! 모든 전체 공격과 마안 회피
+  지침에 실패하면 Black Honeymoon이 강화되고 3스택이면 전멸급입니다
+  1) "Cold Feet" 마안
+  2) "In Health" 보스 주변 안전 / 보스 발밑 장판 공격
+  3) "In Sickness" 즉시 플레이어에게 질병 디버프를 부여
   4) Black Honeymoon
