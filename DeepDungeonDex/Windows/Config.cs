@@ -85,7 +85,7 @@ public class Config : Window, IDisposable
         {
             _config.Opacity = _opacity;
         }
-        ImGui.Columns(4, null, false);
+        ImGui.Columns(4, border: false);
         ImGui.Text(_locale.GetLocale("FontSize"));
         foreach (var f in new int[] { 12, 14, 16, 18, 24, 32 })
         {
@@ -116,7 +116,7 @@ public class Config : Window, IDisposable
             _config.Locale = _loc;
             _requests.ChangeLanguage();
         }
-        ImGui.Columns(2, null, false);
+        ImGui.Columns(2, border: false);
         ImGui.TextUnformatted(_locale.GetLocale("ContentTypes"));
         foreach (var contentType in AllContentTypes)
         {

@@ -249,7 +249,10 @@ public unsafe partial class Main : Window, IDisposable
             ImGui.TextUnformatted($"Current Time: {((Time)Framework.GetServerTime()).GetEorzeanTime()}");
             ImGui.TextUnformatted($"Weather: {_addon.Weather}");
             ImGui.TextUnformatted("WeatherIds:");
-            _addon.WeatherIds.Where(t => t != 0).Select(t => $"{t}: {_weatherManager.GetWeatherName(t)}").ToList().ForEach(ImGui.TextUnformatted);
+            foreach (var se in _addon.WeatherIds.Where(t => t != 0).Select(t => $"{t}: {_weatherManager.GetWeatherName(t)}").ToList())
+            {
+                ImGui.Text(se);
+            }
         }
     }
 
@@ -267,18 +270,18 @@ public unsafe partial class Main : Window, IDisposable
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
-        ImGui.Image(_textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
+        ImGui.Image(_textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty().Handle, size, _uv0, _uv1, color);
         var unknownBit = (Weakness)((int)check << 6);
         if (weakness.HasFlag(unknownBit))
         {
             ImGui.SetCursorPos(cursor);
-            ImGui.Image(_unknown!.ImGuiHandle, size);
+            ImGui.Image(_unknown!.Handle, size);
         }
     }
 
     public void DrawIcon(uint iconId, Vector2 size, Vector4 color)
     {
-        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().ImGuiHandle, size, _uv0, _uv1, color);
+        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().Handle, size, _uv0, _uv1, color);
     }
 
     public Vector4 GetColor(Weakness weakness, Weakness check)
