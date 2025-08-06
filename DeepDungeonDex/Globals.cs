@@ -3,7 +3,7 @@ global using System.Collections.Generic;
 global using System.Linq;
 global using DeepDungeonDex.Models;
 global using DeepDungeonDex.Storage;
-global using ImGuiNET;
+global using Dalamud.Bindings.ImGui;
 global using Newtonsoft.Json;
 global using System.Reflection;
 global using Dalamud.Interface.Windowing;
