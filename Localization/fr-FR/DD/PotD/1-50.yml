@@ -1,4 +1,4 @@
-5479: Caster, briser la ligne de vue pour éviter les attaques automatiques
+5479: Caster, sortez de son champ de vision pour éviter ses attaques automatiques
 4975: Lance Hâte sur lui-même
 4977: Absorbe la vie à chaque attaque
 4979: La zone « Shriek» inflige des étourdissements
@@ -25,8 +25,8 @@
 4995: |
   La zone « Bad Breath» inflige de multiples affaiblissements si elle n'est pas éludée
 4996: |
-  Caster, break line of sight to evade auto-attacks
-  Buffs own damage with "Golden Tongue"
+  Caster, sortez de son champ de vision pour éviter ses attaques automatiques
+  Peut buff ses propres dégâts avec "Langue dorée"
 4997: |
   INSTANTEMENT les joueurs KILLS infligés avec Toad en utilisant "Dévoir"
   Attaque de Regard inflige Petrify, ne pas cibler lorsqu'ils sont lancés pour échapper
@@ -54,11 +54,11 @@
   2) Entrer dans la boîte de frappe du boss avant de lancer "Fear Itself" sinon il infligera des dégâts élevés et de la terreur
 5014: Inflige une paralysie si prise en zone de zone
 5016: Inflige un étourdissement si attrapé dans la zone de zone
-5017: Caster, briser la ligne de vue pour éviter les attaques automatiques
+5017: Caster, sortez de son champ de vision pour éviter ses attaques automatiques
 5019: |
   Pioche près des joueurs et lance ensuite un lanceur de sorts
   , brise la ligne de vue pour échapper aux attaques automatiques
-5020: Caster, briser la ligne de vue pour éviter les attaques automatiques
+5020: Caster, sortez de son champ de vision pour éviter ses attaques automatiques
 5022: |
   Lance la zone de « Brume noire» qui inflige la terreur
   « Feu du Néant II» AoE est ensuite lancé pour infliger des dégâts élevés aux joueurs étourdis
