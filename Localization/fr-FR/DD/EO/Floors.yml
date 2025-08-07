@@ -14,15 +14,15 @@ EO21: |
   Les poteries de décèlement, de sécurisation et d'affaiblissement ne peuvent pas être obtenues à l'étage 29.
   Les mimics peuvent spawn à partir des coffres en bronze.
 EO31: |
-  The following sets of floors assume that every telegraph/attack is a one-shot.
-  Accursed Hoard drops Silver-tinged Sacks.
-  Pomanders of affluence, flight, and alteration do not drop on floor 39.
-  Mimics spawn from silver  chests.
+  Considérez que pour chaque étage qui suit, chaque attaque ennemie (télégraphée ou non) peut tuer en un coup.
+  Les trésors cachés peuvent contenir des Trésors étrange de grade II.
+  Les poteries de décèlement, de sécurisation et d'affaiblissement ne peuvent pas être obtenues à l'étage 39.
+  Les mimics peuvent spawn à partir des coffres en argent.
 EO41: |
-  Watch out for the patrols in this set.
-  Accursed Hoard drops Silver-tinged Sacks.
-  Pomanders of affluence, flight, and alteration do not drop on floor 49.
-  Mimics spawn from silver chests.
+  Faites très attention aux patrouilleurs.
+  Les trésors cachés peuvent contenir des Trésors étrange de grade II.
+  Les poteries de décèlement, de sécurisation et d'affaiblissement ne peuvent pas être obtenues à l'étage 49.
+  Les mimics peuvent spawn à partir des coffres en argent.
 EO51: |
   Le plancher 57-59 a un taux élevé de Knockback Disabled qui aide à traiter avec Monk et Stingray.
   Un Mimique Hoard lâche des sacs teintés d'argent.
@@ -31,12 +31,12 @@ EO61: |
   Le Hoard maudit gicle les sacs teintés d'argent.
   Mimiques apparaissent dans les coffres en or.
 EO71: |
-  Floor 71-73 has a high change for Landmines.
-  Floor 76-79 be aware of the mob "Sasquatch" with a room-wide AOE.
-  Be wary of a room with a crystal in the center, as it does not count as a line of sight.
-  Last set of floors that you can get Protomander of Raising.
-  Accursed Hoard drops Gold-tinged Sacks.
-  Mimics spawn from gold chests.
+  Les chances de déclencher des Mines sont augmentées des étages 71 à 73.
+  Entre les étages 76 et 79, le Sasquatch Orthos peut cast une très large AOE.
+  Dans les pièces contenant un cristal en leur milieu, les attaques ennemies peuvent passer à travers le cristal.
+  Il s'agit du dernier lot d'étages dans lequel il est possible d'obtenir des poteries de résurrection.
+  Les trésors cachés peuvent contenir des Trésors étrange de grade III.
+  Les mimics peuvent spawn à partir des coffres en or.
 EO81: |
   N'essayez pas de vous mettre en ligne car il n'y a plus de points raisonnables à partir de ce point.
   Un Hoard juré lâche des sacs teintés d'or.
