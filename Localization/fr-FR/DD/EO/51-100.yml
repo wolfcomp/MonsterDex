@@ -65,11 +65,11 @@
   Pull instantané suivi de PB AOE rapide "Body Press". Faites attention pour tirer dans le son ou l'animation.
 #EO floor 70
 12246: |
-  "Steel Claw" -- tankbuster, sort of.
-  "Ferocity" -- distance tether followed by Preternatural Turn.
-  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
-  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
+  "Griffe d'acier" - Tankbuster.
+  "Embûche" - Tether de distance à étendre, suivi par "Griffes magismologiques".
+  "Griffes magismologiques" - Si aura verte visible, attaque en donut. Si pas d'aura verte visible, attaque AOE à bout portant.
+  "Rugissement" - Pluie d'AOEs de petites et moyennes tailles qui font apparaître des cristaux utilisés dans l'attaque qui suit.
+  "Griffes magismologiques" (2) - Attaque en donut ou AOE à bout portant à partir des cristaux, selon la présence de l'aura verte ou non. Les cristaux émettent également de larges cônes en AOE.
 #EO floors 71-79
 12197: |
   "Slowcall" -- conal frontal du télégraphe tardif, donne un effet lent très mauvais
@@ -129,8 +129,8 @@
 12214: |
 
 12161: |
-  Inflicts heavy
-  "Tail Screw" -- sets to 1 hp
+  Inflige Pesanteur
+  "Queue forante" - Fais tomber les HP à 1
 12215: |
 
 12222: |
