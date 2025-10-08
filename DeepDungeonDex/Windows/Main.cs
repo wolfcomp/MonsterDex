@@ -8,14 +8,15 @@ using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Weather;
 using FFXIVClientStructs.FFXIV.Client.System.Framework;
 using BattleChara = FFXIVClientStructs.FFXIV.Client.Game.Character.BattleChara;
+using STask = System.Threading.Tasks.Task;
 
 namespace DeepDungeonDex.Windows;
 
-public unsafe partial class Main : Window, IDisposable
+public partial class Main : Window, IDisposable
 {
 #pragma warning disable CS8618
     private static Mob _currentMob;
-    private static BattleChara* _currentNpc;
+    private static unsafe BattleChara* _currentNpc;
 #pragma warning restore CS8618
     private ICondition _condition;
     private ITargetManager _target;
@@ -55,7 +56,7 @@ public unsafe partial class Main : Window, IDisposable
             MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
         };
         BgAlpha = _config.Opacity;
-        _framework.RunOnFrameworkThread(LoadIcons);
+        _framework.RunOnTick(LoadIcons);
         framework.Update += GetData;
         command.AddCommand("debug_mob", (args) =>
         {
@@ -143,7 +144,7 @@ public unsafe partial class Main : Window, IDisposable
         _currentMob = data;
     }
 
-    private void GetData(IFramework framework)
+    private unsafe void GetData(IFramework framework)
     {
         if (_debug)
         {
@@ -229,9 +230,9 @@ public unsafe partial class Main : Window, IDisposable
         }
     }
 
-    public void DrawNoDisplay() => ImGui.TextUnformatted(string.Format(_locale.GetLocale("NoDisplay"), _addon.ContentType.ToString("G")));
+    private void DrawNoDisplay() => ImGui.TextUnformatted(string.Format(_locale.GetLocale("NoDisplay"), _addon.ContentType.ToString("G")));
 
-    public void DrawUnknownContent()
+    private unsafe void DrawUnknownContent()
     {
         ImGui.TextUnformatted(string.Format(_locale.GetLocale("UnknownContent"), _currentNpc->NameString, _currentNpc->NameId));
         // ReSharper disable once InvertIf
@@ -258,26 +259,32 @@ public unsafe partial class Main : Window, IDisposable
         }
     }
 
-    public void LoadIcons()
+    private async STask LoadIcons()
     {
-        _unknown = _textureProvider.GetFromManifestResource(Assembly.GetExecutingAssembly(), "DeepDungeonDex.UnknownDebuf.png").GetWrapOrEmpty();
+        await using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("DeepDungeonDex.UnknownDebuf.png");
+        if (stream is null)
+        {
+            _log.Error("Failed to load unknown debuf icon.");
+            return;
+        }
+        _unknown = await _textureProvider.CreateFromImageAsync(stream, debugName: "DeepDungeonDex.UnknownDebuf");
     }
 
     private static Vector2 _uv0 = new(0, 0);
     private static Vector2 _uv1 = new(1, 1);
     private static Vector4 _color = new(1, 1, 1, 1);
-    private static Vector4 _unknownColor = new(0.5f, 0.5f, 0.5f, 0.5f);
+    private static Vector4 _unknownColor = new(0.75f, 0.75f, 0.75f, 0.75f);
+    private static Vector4 _notActiveColor = new(0.5f, 0.5f, 0.5f, 0.5f);
 
     public void DrawWeaknessIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
         ImGui.Image(_textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty().Handle, size, _uv0, _uv1, color);
-        var unknownBit = (Weakness)((int)check << 6);
-        if (weakness.HasFlag(unknownBit))
+        if (weakness.HasUnknownFlag(check))
         {
             ImGui.SetCursorPos(cursor);
-            ImGui.Image(_unknown!.Handle, size);
+            ImGui.Image(_unknown!.Handle, size, _uv0, _uv1, color);
         }
     }
 
@@ -288,7 +295,7 @@ public unsafe partial class Main : Window, IDisposable
 
     public Vector4 GetColor(Weakness weakness, Weakness check)
     {
-        return weakness.HasFlag(check) ? _color : _unknownColor;
+        return weakness.HasUnknownFlag(check) ? _unknownColor : weakness.HasFlag(check) ? _color : _notActiveColor;
     }
 
     private static void PrintTextWithColor(string? text, uint color)
