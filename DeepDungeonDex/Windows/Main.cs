@@ -131,9 +131,11 @@ public unsafe partial class Main : Window, IDisposable
                 Aggro = Aggro.Undefined,
                 Id = id,
                 Threat = Threat.Undefined,
-                Weakness = Weakness.BindUnknown | Weakness.HeavyUnknown | Weakness.SleepUnknown | Weakness.SlowUnknown | Weakness.StunUnknown | Weakness.UndeadUnknown,
+                Weakness = Weakness.BindUnknown | Weakness.HeavyUnknown | Weakness.SleepUnknown | Weakness.SlowUnknown | Weakness.StunUnknown,
                 InstanceContentType = _addon.ContentType
             };
+            if (_clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607)
+                data.Weakness |= Weakness.UndeadUnknown;
         }
 
         _log.Verbose("Set target to:\n" + data);
