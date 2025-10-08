@@ -25,7 +25,6 @@ public partial class Main : Window, IDisposable
     private IClientState _clientState;
     private IPluginLog _log;
     private StorageHandler _storage;
-    private IDalamudPluginInterface _pluginInterface;
     private Configuration _config;
     private WeatherManager _weatherManager;
     private Locale[] _locale = Array.Empty<Locale>();
@@ -35,7 +34,7 @@ public partial class Main : Window, IDisposable
     private AddonAgent _addon;
     private const string _githubIssuePath = "https://github.com/wolfcomp/MonsterDex/issues/new?template=fix_node.yaml";
 
-    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, IDalamudPluginInterface pluginInterface, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
+    public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
         _condition = condition;
         _target = target;
@@ -43,7 +42,6 @@ public partial class Main : Window, IDisposable
         storage.StorageChanged += Storage_StorageChanged;
         _framework = framework;
         _textureProvider = textureProvider;
-        _pluginInterface = pluginInterface;
         _clientState = state;
         _log = log;
         _addon = addon;
@@ -106,7 +104,6 @@ public partial class Main : Window, IDisposable
         _locale = null!;
         _currentMob = null!;
         _textureProvider = null!;
-        _pluginInterface = null!;
         _clientState = null!;
         _condition = null!;
         _target = null!;
@@ -114,7 +111,7 @@ public partial class Main : Window, IDisposable
         _framework = null!;
     }
 
-    public void SetTarget(uint id)
+    private void SetTarget(uint id)
     {
         _targetId = id;
         // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
@@ -133,7 +130,8 @@ public partial class Main : Window, IDisposable
                 Id = id,
                 Threat = Threat.Undefined,
                 Weakness = Weakness.BindUnknown | Weakness.HeavyUnknown | Weakness.SleepUnknown | Weakness.SlowUnknown | Weakness.StunUnknown,
-                InstanceContentType = _addon.ContentType
+                InstanceContentType = _addon.ContentType,
+                IsGenerated = true
             };
             if (_clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607)
                 data.Weakness |= Weakness.UndeadUnknown;
@@ -181,7 +179,7 @@ public partial class Main : Window, IDisposable
         IsOpen = true;
     }
 
-    public bool EnabledContents() => _addon.ContentType.HasAnyFlag(_config.EnabledContentTypes);
+    private bool EnabledContents() => _addon.ContentType.HasAnyFlag(_config.EnabledContentTypes);
 
     public override void Draw()
     {
@@ -276,7 +274,7 @@ public partial class Main : Window, IDisposable
     private static Vector4 _unknownColor = new(0.75f, 0.75f, 0.75f, 0.75f);
     private static Vector4 _notActiveColor = new(0.5f, 0.5f, 0.5f, 0.5f);
 
-    public void DrawWeaknessIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
+    private void DrawWeaknessIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
@@ -288,12 +286,12 @@ public partial class Main : Window, IDisposable
         }
     }
 
-    public void DrawIcon(uint iconId, Vector2 size, Vector4 color)
+    private void DrawIcon(uint iconId, Vector2 size, Vector4 color)
     {
         ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().Handle, size, _uv0, _uv1, color);
     }
 
-    public Vector4 GetColor(Weakness weakness, Weakness check)
+    private Vector4 GetColor(Weakness weakness, Weakness check)
     {
         return weakness.HasUnknownFlag(check) ? _unknownColor : weakness.HasFlag(check) ? _color : _notActiveColor;
     }
