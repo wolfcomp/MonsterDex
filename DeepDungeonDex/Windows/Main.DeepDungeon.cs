@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using Dalamud.Utility;
 
 namespace DeepDungeonDex.Windows;
 public partial class Main
@@ -13,7 +14,6 @@ public partial class Main
         ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
         DrawDDWeakness(_currentMob.Weakness);
-        // ReSharper disable once InvertIf
         if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
         {
             ImGui.NewLine();
@@ -24,12 +24,20 @@ public partial class Main
                 _currentMob.ProcessDescription(size.X);
             foreach (var s in desc)
             {
+                // TODO: change this to handle SeString to handle direct lookups of values
                 ImGui.TextUnformatted(s);
             }
         }
+        
+        // ReSharper disable once InvertIf
+        if (_currentMob.IsGenerated && ImGui.Button(_locale.GetLocale("CreateDataIssue")))
+        {
+            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}&version={Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)}";
+            Util.OpenLink(url);
+        }
     }
 
-    public void DrawDDWeakness(Weakness weakness)
+    private void DrawDDWeakness(Weakness weakness)
     {
         var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
         DrawWeaknessIcon(15004, size, weakness, Weakness.Stun);
@@ -43,7 +51,7 @@ public partial class Main
         DrawWeaknessIcon(15003, size, weakness, Weakness.Bind);
 
         // ReSharper disable once InvertIf
-        if (_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607 || weakness.HasFlag(Weakness.Undead))
+        if ((_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607) || weakness.HasFlag(Weakness.Undead))
         {
             ImGui.SameLine();
             DrawWeaknessIcon(15461, size, weakness, Weakness.Undead);

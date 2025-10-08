@@ -65,6 +65,7 @@ public record Mob
     public ElementalType MutatedElementalType { get; set; }
     public bool IsMutation { get; set; }
     public bool IsAaptation { get; set; }
+    [YamlIgnore] public bool IsGenerated { get; set; } = false;
 
     public void ProcessDescription(float width)
     {
@@ -219,5 +220,8 @@ public static class MobDataExtensions
     };
 
     public static bool HasAnyFlag(this ContentType type, ContentType flag) => (type & flag) != 0;
+
+    public static bool HasUnknownFlag(this Weakness weakness, Weakness flag) =>
+        weakness.HasFlag((Weakness)((int)flag << 6));
 }
 
