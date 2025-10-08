@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using Dalamud.Utility;
 
 namespace DeepDungeonDex.Windows;
 public partial class Main
@@ -13,7 +14,6 @@ public partial class Main
         ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
         DrawDDWeakness(_currentMob.Weakness);
-        // ReSharper disable once InvertIf
         if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
         {
             ImGui.NewLine();
@@ -27,6 +27,13 @@ public partial class Main
                 // TODO: change this to handle SeString to handle direct lookups of values
                 ImGui.TextUnformatted(s);
             }
+        }
+        
+        // ReSharper disable once InvertIf
+        if (_currentMob.IsGenerated && ImGui.Button(_locale.GetLocale("CreateDataIssue")))
+        {
+            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}&version={Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)}";
+            Util.OpenLink(url);
         }
     }
 
