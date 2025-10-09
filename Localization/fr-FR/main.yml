@@ -20,13 +20,13 @@ NoDataFound: Aucune donnée trouvée pour {0} ({1})
 IsClickthrough: Activer le clique à travers
 FontSize: Taille de la police
 ShowId: Montrer les informations de débug
-ShowCorrectionButton: Show correct data button
+ShowCorrectionButton: Afficher le bouton de données correct
 LoadAllFont: Charger toutes les polices (Peut accélérer le chargement lors du changement de langue)
 LoadAllFontWarning: Cette action chargera 30 Mo de polices en mémoire et provoquera du lag et une plus grande utilisation de la mémoire sur les systèmes plus faibles.
 HideFloorGuide: Arrêter d'afficher le guide des planchers lorsque vous entrez dans un nouvel étage
 UnknownContent: Contenu inconnu non affiché pour {0}({1})
 CreateDataIssue: Créer un problème de données
-CorrectDataIssue: Correct a data issue
+CorrectDataIssue: Corriger un problème de données
 ContentTypeNone: Mondes
 ContentTypeDeepDungeon: Donjon profond
 ContentTypeEureka: Eureka
@@ -36,3 +36,4 @@ ContentTypeIslandSanctuary: Sanctuaire de l'île
 NoDisplay: |
   Aucun affichage disponible pour le contenu {0}.
   Pour supprimer cela changez vos sélections de contenu dans les paramètres.
+DataButtonsHidden: Clickthrough enabled buttons are hidden.
