@@ -26,7 +26,8 @@ jobs:
             fi
           done <<< "$lines_with_closes"
           json_array=$(printf '[%s]' "${numbers[@]}")
-          echo "json=$json_array" >> "$GITHUB_OUTPUT"
+          echo $json_array
+          echo "json_array=$json_array" >> "$GITHUB_OUTPUT"
       - name: Close all issues
         env:
           json_array: ${{ steps.issues.outputs.json_array }}
