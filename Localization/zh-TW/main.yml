@@ -20,11 +20,13 @@ NoDataFound: No data found for {0} ({1})
 IsClickthrough: Enable clickthrough
 FontSize: Font Size
 ShowId: Show debug information
+ShowCorrectionButton: Show correct data button
 LoadAllFont: Load all font faces (Can speed up load when changing languages)
 LoadAllFontWarning: This will load 30MB of fonts into memory and will cause lag and higher memory usage be warned on weaker systems.
 HideFloorGuide: Stop showing the floor guide when entering a new floor
 UnknownContent: Unknown Content no display available for {0}({1})
 CreateDataIssue: Create a data issue
+CorrectDataIssue: Correct a data issue
 ContentTypeNone: Overworld
 ContentTypeDeepDungeon: Deep Dungeon
 ContentTypeEureka: Eureka
@@ -34,3 +36,4 @@ ContentTypeIslandSanctuary: Island Sanctuary
 NoDisplay: |
   No Display Available for content {0}.
   To remove this change your content selections in the settings.
+DataButtonsHidden: Clickthrough enabled buttons are hidden.

@@ -20,11 +20,13 @@ NoDataFound: 未找到 {0} ({1} ) 的数据
 IsClickthrough: 启用鼠标穿透
 FontSize: 字体大小
 ShowId: 显示调试信息
+ShowCorrectionButton: 显示正确的数据按钮
 LoadAllFont: 加载所有字体 (在改变语言时可以加速加载)
 LoadAllFontWarning: 这将在内存中加载30MB的字体，在较弱的系统上会导致卡顿和较高的内存使用率，请注意。
 HideFloorGuide: 进入新楼面时停止显示地板指南
 UnknownContent: 未知内容无法显示为 {0}({1})
 CreateDataIssue: 创建数据问题
+CorrectDataIssue: 更正数据问题
 ContentTypeNone: 覆盖世界
 ContentTypeDeepDungeon: 深度邓吉on
 ContentTypeEureka: Eureka
@@ -34,3 +36,4 @@ ContentTypeIslandSanctuary: 岛屿保护区
 NoDisplay: |
   内容 {0}没有可用的显示。
   在设置中删除您的内容选择。
+DataButtonsHidden: Clickby 启用的按钮被隐藏。
