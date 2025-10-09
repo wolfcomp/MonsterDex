@@ -1,1 +1,19 @@
-14165: Le lancer télégraphié quitte le joueur à 1 point de vie en cas de frappe.
+14165: |
+  "Cri de queue ": Petit joueur ciblant la zone de zone. Quitte le joueur avec un seul chiffre s'il est touché.
+  Utilise occasionnellement "Impale"
+14183: |
+  "Bouton Tête" : Détélégraphe vers l'avant
+14178: |
+  Right-sided shockwave: Untelegraphed right circle
+  Left-sided shockwave: Untelegraphed left circle
+  Either is cast first then immediately followed by the other
+14188: |
+  "Eau d'égout": Détélégraphié 1/3ème pièce cleave
+14172: |
+  « Brume empoisonnée» : gros cône frontal AoE qui inflige du poison
+14177: |
+  "Garde Rhino": S'applique à soi-même pendant 30 secondes.
+  Utilise occasionnellement "Attaque Rhino"
+14173: |
+  "Ecorce épineus": Grand AoE
+  "Tourbillon de Hurt": Grand beignon
