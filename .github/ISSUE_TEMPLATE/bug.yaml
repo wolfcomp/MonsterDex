@@ -3,6 +3,12 @@ description: Bug report for not related to mob data
 title: "[Bug]: "
 labels: ["bug"]
 body:
+  - type: input
+    attributes:
+      label: Plugin Version
+      description: The current version installed for you
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
