@@ -28,12 +28,26 @@ public partial class Main
                 ImGui.TextUnformatted(s);
             }
         }
-        
-        // ReSharper disable once InvertIf
-        if (_currentMob.IsGenerated && ImGui.Button(_locale.GetLocale("CreateDataIssue")))
+
+        if (_config.ClickThrough)
         {
-            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}&version={Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)}";
-            Util.OpenLink(url);
+            ImGui.NewLine();
+            ImGui.TextUnformatted(_locale.GetLocale("DataButtonsHidden"));
+            return;
+        }
+
+        switch (_currentMob.IsGenerated)
+        {
+            // ReSharper disable once InvertIf
+            case true when ImGui.Button(_locale.GetLocale("CreateDataIssue")):
+                Util.OpenLink(IssueUrl);
+                break;
+            case false when ImGui.Button(_locale.GetLocale("CorrectDataIssue")):
+            {
+                var url = $"{IssueUrl}&text={Uri.EscapeDataString($"Current Weakness: {_currentMob.Weakness:F}")}";
+                Util.OpenLink(url);
+                break;
+            }
         }
     }
 

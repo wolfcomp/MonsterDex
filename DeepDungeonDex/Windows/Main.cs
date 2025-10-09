@@ -1,4 +1,3 @@
-using System.Numerics;
 using Dalamud.Game.ClientState.Objects;
 using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Game.ClientState.Objects.Types;
@@ -7,6 +6,8 @@ using Dalamud.Utility;
 using DeepDungeonDex.Hooks;
 using DeepDungeonDex.Weather;
 using FFXIVClientStructs.FFXIV.Client.System.Framework;
+using System;
+using System.Numerics;
 using BattleChara = FFXIVClientStructs.FFXIV.Client.Game.Character.BattleChara;
 using STask = System.Threading.Tasks.Task;
 
@@ -33,6 +34,7 @@ public partial class Main : Window, IDisposable
     private IDalamudTextureWrap? _unknown;
     private AddonAgent _addon;
     private const string _githubIssuePath = "https://github.com/wolfcomp/MonsterDex/issues/new?template=fix_node.yaml";
+    private unsafe string IssueUrl => $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}&version={Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)}";
 
     public Main(StorageHandler storage, CommandHandler command, ITargetManager target, IFramework framework, IClientState state, ICondition condition, ITextureProvider textureProvider, IPluginLog log, AddonAgent addon, WeatherManager weatehrManager) : base("MonsterDex MobView", ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar)
     {
@@ -236,8 +238,7 @@ public partial class Main : Window, IDisposable
         // ReSharper disable once InvertIf
         if (ImGui.Button(_locale.GetLocale("CreateDataIssue")))
         {
-            var url = $"{_githubIssuePath}&mob_id={_currentNpc->NameId}%20-%20{_currentNpc->NameString}&content_type={_addon.ContentType:G}&version={Assembly.GetExecutingAssembly().GetName().Version?.ToString(3)}";
-            Util.OpenLink(url);
+            Util.OpenLink(IssueUrl);
         }
 
         if (_config.Debug && _currentNpc != null)

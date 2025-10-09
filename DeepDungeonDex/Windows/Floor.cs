@@ -111,7 +111,7 @@ public class Floor : Window, IDisposable
     {
         var remap = (FloorData)_storage.GetInstance(_dataPath + "/Floors.yml")!;
         var floor = _debug == 0 ? _addon.Floor : _debug;
-        floor = remap.FloorDictionary.TryGetValue(floor, out var f) ? f : floor;
+        floor = remap.FloorDictionary.GetValueOrDefault(floor, floor);
         using var _ = Font.Font.RegularFont.Push();
         try
         {

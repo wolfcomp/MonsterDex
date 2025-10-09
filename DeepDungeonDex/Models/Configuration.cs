@@ -4,7 +4,7 @@ namespace DeepDungeonDex.Models;
 
 public class Configuration
 {
-    private const byte Version = 3;
+    private const byte Version = 4;
     public bool ClickThrough { get; set; }
     public bool HideRed { get; set; }
     public bool HideJob { get; set; }
@@ -12,6 +12,7 @@ public class Configuration
     public bool HideSpawns { get; set; }
     public bool Debug { get; set; }
     public bool LoadAll { get; set; }
+    public bool ShowCorrectionButton { get; set; }
     public int Locale { get; set; } = 0;
     public int FontSize { get; set; } = 16;
     public float Opacity { get; set; } = 1f;
@@ -41,6 +42,7 @@ public class Configuration
         flags |= (byte)(HideSpawns ? 1 << 3 : 0);
         flags |= (byte)(Debug ? 1 << 4 : 0);
         flags |= (byte)(LoadAll ? 1 << 5 : 0);
+        flags |= (byte)(ShowCorrectionButton ? 1 << 6 : 0);
         writer.Write(flags);
         writer.Write((uint)EnabledContentTypes);
         writer.Write(Locale);
