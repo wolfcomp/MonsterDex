@@ -151,12 +151,70 @@
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
-
 13978-Forgiven Adulation:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
 
 # PT floors 41-49
+14154-Traverse Anaconda:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14164-Traverse Mantis:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14161-Traverse Weapon:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14157-Traverse Termite:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14153-Traverse Troubadour:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+14160-Traverse Cliffkite:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14159-Traverse Pincerbeak:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14155-Traverse Triffid:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14158-Traverse Antilion:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14152-Traverse Petreffigy:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14163-Traverse Germinant:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
 
 # PT boss floor 50
+14263-Ogbunabali:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Boss
