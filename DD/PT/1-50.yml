@@ -1,0 +1,162 @@
+14262-Mimic:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+
+# PT floors 1-9
+
+# PT boss floor 10
+
+
+# PT floors 21-29
+14134-Traverse Morgawr:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14136-Forgiven Bribery:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+14135-Traverse Tragopan:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14131-Forgiven Insult:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14132-Forgiven Hesitance:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14137-Traverse Clionid:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14127-Forgiven Venery:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14129-Forgiven Cruelty:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14130-Forgiven Ambition:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14126-Forgiven Jealousy:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14128-Forgiven Dissonance:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14133-Traverse Statue:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+
+# PT boss floor 30
+13863-Forgiven Treachery:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
+
+# PT floors 31-39
+14151-Traverse Pegasus:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Slow
+14156-Forgiven Mockery:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14142-Forgiven Extortion:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14150-Traverse Jaculus:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14148-Bird of the Traverse:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14141-Forgiven Perversion:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14144-Forgiven Hypocrisy:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14149-Traverse Lionstone:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14139-Travrse Soldierstone:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14147-Traverse Inquisitor:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14145-Forgiven Petulance:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14143-Forgiven Prejudice:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14140-Forgiven Plague:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+
+# PT boss floor 40
+13977-Forgiven Naivety:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
+
+13978-Forgiven Adulation:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
+
+# PT floors 41-49
+
+# PT boss floor 50
