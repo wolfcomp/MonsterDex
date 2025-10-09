@@ -130,6 +130,8 @@
   Threat: Caution
   Aggro: Proximity
 
+# HoH special NPCs and misc.
+
 # EO special NPCs and misc.
 12324-Demi-Cochma:
   InstanceContentType: DeepDungeon
