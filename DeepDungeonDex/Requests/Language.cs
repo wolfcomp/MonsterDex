@@ -88,6 +88,8 @@ public partial class Requests
             Handler.AddStorage(main, new Locale { TranslationDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, string>>(localization) });
             foreach (var (fileType, files) in list)
             {
+                if (fileType == "Territories") continue;
+
                 foreach (var file in files)
                 {
                     if (file == "Job.yml")
