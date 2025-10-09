@@ -20,11 +20,13 @@ NoDataFound: '{0} のデータが見つかりません({1})'
 IsClickthrough: クリックスルーを有効にする
 FontSize: フォントサイズ
 ShowId: デバッグ情報を表示
+ShowCorrectionButton: 正しいデータボタンを表示
 LoadAllFont: すべてのフォントを読み込む(言語変更時、読み込み速度が改善します)
 LoadAllFontWarning: "約30MBのフォントがメモリに読み込まれます\n端末のスペックによっては、遅延やフリーズが発生する可能性があります"
 HideFloorGuide: 新しいフロアに入るときにフロアガイドの表示を停止する
 UnknownContent: 不明なコンテンツは、 {0}({1}) で使用できません。
 CreateDataIssue: データの問題を作成
+CorrectDataIssue: データの問題を修正
 ContentTypeNone: オーバーワールド
 ContentTypeDeepDungeon: Deep Dungeon
 ContentTypeEureka: Eureka
