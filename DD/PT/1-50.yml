@@ -5,12 +5,15 @@
   Weakness:
     - Stun
 
-# PT floors 1-9
+# Floors 1-9
 
-# PT boss floor 10
+# Floor 10 Boss
 
+# Floors 11-19
 
-# PT floors 21-29
+# Floor 20 Boss
+
+# Floors 21-29
 14134-Traverse Morgawr:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -72,13 +75,13 @@
   Aggro: Sight
   Weakness:
 
-# PT boss floor 30
+# Floor 30 Boss
 13863-Forgiven Treachery:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
 
-# PT floors 31-39
+# Floors 31-39
 14151-Traverse Pegasus:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -146,7 +149,7 @@
   Aggro: Sight
   Weakness:
 
-# PT boss floor 40
+# Floor 40 Boss
 13977-Forgiven Naivety:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -156,7 +159,7 @@
   Threat: Caution
   Aggro: Boss
 
-# PT floors 41-49
+# Floors 41-49
 14154-Traverse Anaconda:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -213,7 +216,7 @@
   Aggro: Sight
   Weakness:
 
-# PT boss floor 50
+# Floor 50 Boss
 14263-Ogbunabali:
   InstanceContentType: DeepDungeon
   Threat: Dangerous

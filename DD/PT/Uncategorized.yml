@@ -1,0 +1,6 @@
+14165-Traverse Tawnyclaw:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - Sleep
