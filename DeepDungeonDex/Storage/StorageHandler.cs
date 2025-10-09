@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using Newtonsoft.Json.Serialization;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
@@ -55,6 +55,7 @@ public class StorageHandler : IDisposable
                     config.HideSpawns = (flags & 16) == 16;
                     config.Debug = (flags & 32) == 32;
                     config.LoadAll = (flags & 64) == 64;
+                    config.ShowCorrectionButton = true;
                     config.Locale = binary.ReadInt32();
                     config.FontSize = binary.ReadInt32();
                     config.Opacity = binary.ReadSingle();
@@ -66,6 +67,7 @@ public class StorageHandler : IDisposable
                     config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
                     config.Debug = (flags & (1 << 4)) == (1 << 4);
                     config.LoadAll = (flags & (1 << 5)) == (1 << 5);
+                    config.ShowCorrectionButton = true;
                     config.Locale = binary.ReadInt32();
                     config.FontSize = binary.ReadInt32();
                     config.Opacity = binary.ReadSingle();
@@ -77,6 +79,20 @@ public class StorageHandler : IDisposable
                     config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
                     config.Debug = (flags & (1 << 4)) == (1 << 4);
                     config.LoadAll = (flags & (1 << 5)) == (1 << 5);
+                    config.ShowCorrectionButton = true;
+                    config.EnabledContentTypes = (ContentType)binary.ReadUInt32();
+                    config.Locale = binary.ReadInt32();
+                    config.FontSize = binary.ReadInt32();
+                    config.Opacity = binary.ReadSingle();
+                    break;
+                case 4:
+                    flags = binary.ReadByte();
+                    config.ClickThrough = (flags & (1 << 1)) == (1 << 1);
+                    config.HideFloor = (flags & (1 << 2)) == (1 << 2);
+                    config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
+                    config.Debug = (flags & (1 << 4)) == (1 << 4);
+                    config.LoadAll = (flags & (1 << 5)) == (1 << 5);
+                    config.ShowCorrectionButton = (flags & (1 << 6)) == (1 << 6);
                     config.EnabledContentTypes = (ContentType)binary.ReadUInt32();
                     config.Locale = binary.ReadInt32();
                     config.FontSize = binary.ReadInt32();
