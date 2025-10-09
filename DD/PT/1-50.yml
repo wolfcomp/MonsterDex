@@ -1,3 +1,10 @@
+14262-Mimic:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun
+
 # Floors 1-9
 
 # Floor 10 Boss
@@ -7,13 +14,210 @@
 # Floor 20 Boss
 
 # Floors 21-29
+14134-Traverse Morgawr:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14136-Forgiven Bribery:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+14135-Traverse Tragopan:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14131-Forgiven Insult:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14132-Forgiven Hesitance:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14137-Traverse Clionid:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14127-Forgiven Venery:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14129-Forgiven Cruelty:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14130-Forgiven Ambition:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14126-Forgiven Jealousy:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14128-Forgiven Dissonance:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14133-Traverse Statue:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
 
 # Floor 30 Boss
+13863-Forgiven Treachery:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
 
 # Floors 31-39
+14151-Traverse Pegasus:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Slow
+14156-Forgiven Mockery:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14142-Forgiven Extortion:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14150-Traverse Jaculus:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14148-Bird of the Traverse:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14141-Forgiven Perversion:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14144-Forgiven Hypocrisy:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14149-Traverse Lionstone:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14139-Travrse Soldierstone:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14147-Traverse Inquisitor:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14145-Forgiven Petulance:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14143-Forgiven Prejudice:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14140-Forgiven Plague:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
 
 # Floor 40 Boss
+13977-Forgiven Naivety:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
+13978-Forgiven Adulation:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
 
 # Floors 41-49
+14154-Traverse Anaconda:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14164-Traverse Mantis:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14161-Traverse Weapon:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14157-Traverse Termite:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14153-Traverse Troubadour:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+14160-Traverse Cliffkite:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14159-Traverse Pincerbeak:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14155-Traverse Triffid:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14158-Traverse Antilion:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14152-Traverse Petreffigy:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14163-Traverse Germinant:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
 
 # Floor 50 Boss
+14263-Ogbunabali:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Boss
