@@ -1,10 +1,211 @@
 # Floors 1-9
+14101-Traverse Echevore:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14100-Traverse Morpho:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14102-Traverse Phooka:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14104-Traverse Moss Fungus:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14103-Traverse Hawker:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14111-Traverse Lorikeet:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14105-Traverse Rowan:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14107-Traverse Ciematis:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14109-Traverse Etainmoth:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14108-Traverse Basket:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
 
 # Floor 10 Boss
+13979-Ornamental Leafman:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
+13980-Striking Shrublet:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Boss
 
 # Floors 11-19
+14122-Traverse Puck:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14114-Forgiven Ignorance:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14125-Traverse Tot Aevis:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14113-Forgiven Conformity:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14124-Traverse Peaseblossom:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14119-Forgiven Deceit:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14115-Forgiven Folly:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14118-Forgiven Disobedience:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14121-Forgiven Complacency:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14117-Forgiven Violence:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+14116-Forgiven Conceit:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
 
 # Floor 20 Boss
+13973-Forgiven Emulation:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
 
 # Floors 21-29
 14134-Traverse Morgawr:
