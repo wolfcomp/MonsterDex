@@ -1,1 +1,19 @@
-14165: Telegraphed cast leaves player at 1 hitpoint if hit.
+14165: |
+  "适合的屏幕": 针对玩家的小AoE。如果击中一个数字就离开玩家。
+  有时使用 "Impale"
+14183: |
+  “头部按钮”：未以电传方式绘制前方清晰度
+14178: |
+  右侧震撼：未以电报方式绘制右圆
+  左侧震动：未以电报方式绘制左圆
+  首先投影，然后立即投影对方。
+14188: |
+  "下水道"：未电报的1/3室净化
+14172: |
+  “毒气枪”：施加毒药的大锥形AoE
+14177: |
+  "Rhino Guard": Applies 30s evasion to self.
+  Occasionally uses "Rhino Attack"
+14173: |
+  “粉红色的小口径”: 大型大口径
+  “呼叫者大口”: 大口龙

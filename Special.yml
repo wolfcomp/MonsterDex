@@ -130,6 +130,8 @@
   Threat: Caution
   Aggro: Proximity
 
+# HoH special NPCs and misc.
+
 # EO special NPCs and misc.
 12324-Demi-Cochma:
   InstanceContentType: DeepDungeon
@@ -161,3 +163,11 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
+
+# PT special NPCs and misc.
+14262-Mimic:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+    - Stun

@@ -1,1 +1,19 @@
-14165: Telegraphed cast leaves player at 1 hitpoint if hit.
+14165: |
+  Tail Screw": Small AoE targeting player. Leaves Player with single digit-hit point if ヒット時には、
+  uses "Impale"
+14183: |
+  "Head Butt": 前方切断の電信解除
+14178: |
+  右側のショック波: 右側のサークル
+  左側のショック波: 左側のサークル
+  最初にキャストし、その後すぐに他のサークルが続く。
+14188: |
+  下水道：電報なし1/3の部屋切り取り
+14172: |
+  「毒霧」：毒を与える大きな前頭円錐青江。
+14177: |
+  "Rhino Guard": 自分に30秒回避を適用します。
+  時折「Rhino Attack」を使用します。
+14173: |
+  "Pinful Gust": 大きなAoE
+  "Whorl of Hurt": 大きなドーナツです
