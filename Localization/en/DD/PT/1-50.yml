@@ -1,8 +1,11 @@
+# Floor 10 Boss
 13979: |
   1) "Hedge Mazing" -- Three large AoEs where the pink shadows end up. Spawns three adds.
   2) "Leafmash" -- Four large AoEs where the boss telegraphs. On each jump, any alive adds will stun and deal massive damage.
 13980: |
   Deals lethal damage when boss jumps during Leafmash.
+
+# Floor 20 Boss
 13973: |
   1) "Touchdown" -- Knockback into four AoEs indicated by the glowing legs.
   2) "Rare Root Planting" -- Baits expanding star AoE. Place at the wall.
@@ -10,6 +13,8 @@
   Casts "Parasitism" enrage at 25% HP
 14127: |
   Casts baited AoE unaggroed
+
+# Floor 30 Boss
 13863: |
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
   2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
@@ -28,6 +33,8 @@
   "Moatmaker" -- baited AoE, hits again but larger
 14145: |
   "Left/Right Tentacle" -- halfroom cleave
+
+# Floor 40 Boss
 13977: |
   1) "Blown Blessing" -- either a massive AoEs (yellow/sparkles) or KBs (blue/water). The boss will always do theirs first, followed by the adds in the order they jump.
   2) "Near Tide" -- massive PB AoE
@@ -45,6 +52,8 @@
 14152: |
   "Magnetic Shock" -- Suck
   "Plaincracker" -- PB AoE
+
+# Floor 50 Boss
 14263: |
   1) "Liquefaction" -- Turns the arena into a quicksand with a few safe spots. Spending 4 seconds in the quicksand will result in death.
   2) "Sandpit" -- Boss goes untargetable and does 4 large chasing AoE baits.
