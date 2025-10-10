@@ -95,8 +95,77 @@
 # Floor 70 Boss
 
 # Floors 71-79
+14203-Traverse Scissorjaws:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14194-Traverse Stone Eater:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14200-Forgiven Unbelief:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14196-Traverse Diplomat Cream:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14195-Traverse Huldu:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14193-Forgiven Spite:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+14198-Forgiven Arrogance:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14202-Traverse Worm:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+14191-Forgiven Dissention:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14201-Traverse Amemet:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+14192-Forgiven Corruption:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+14197-Forgiven Vanity:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Proximity
+  Weakness:
+14199-Forgiven Slander:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
 
 # Floor 80 Boss
+13958-Forgiven Profanity:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Boss
 
 # Floors 81-89
 

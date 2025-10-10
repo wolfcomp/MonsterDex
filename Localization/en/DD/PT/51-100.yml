@@ -1,3 +1,4 @@
+# Floors 51-59
 14173: |
   "Pain Storm" -- Large roomwide conal
   "Painful Gust" -- Large AoE
@@ -29,4 +30,54 @@
 # Floor 60 Boss
 14097: |
   1) "Spineshot" -- Narrow cone on front and back.
-  2) "Branch Out" -- Creates four sets of cacti that explode in spawn order. Large cacti explode in a 3x3 square. Start near
+  2) "Branch Out" -- Creates four sets of cacti that explode in spawn order. Large cacti explode in a 3x3 square.
+  3) "Branch Out" >> "One/Two-stone March" -- Creates cacti pattern, then moves them CW or CWW the amount of steps based on the castbar.
+  4) "Spinning needles" -- Rotates CW or CWW and spams Spineshot very quickly.
+
+# Floors 61-69
+
+# Floor 70 Boss
+
+# Floors 71-79
+14203: |
+  "Sandblast" -- Small frontal conal
+14194: |
+  Knockbacks and inflicts poison
+14200: |
+  Double Autos
+  "Gravel Shower" -- Small line AoE
+14196: |
+  "Fire II" -- Baited AoE. Interruptable.
+14195: |
+  Does proximity explosion on death.
+  "Fracture" -- PB AoE
+14193: |
+  "Growing Circles of Absolution" -- Medium PB AoE then massive doughnut.
+  "Shrinking Circles of Absolution" -- Massive doughnut then medium PB AoE.
+14198: |
+  "Hail of Heels" -- Four consecutive frontal medium half circle AoEs.
+14202: |
+  "Earthquake" -- Medium PB AoE
+14191: |
+  "Mighty Spin" -- Medium PB AoE
+  "Trounce" -- Screenwide frontal conal
+14201: |
+  "Topple" -- PB AoE.
+14192: |
+  "Rolling Barrage" -- Roomwide AoE cast unaggroed
+  "Forward Barrage" -- Frontal conal
+14197: |
+  Large doughnut or massive cross AoE, no castbar.
+14199: |
+  "Orogenic Storm" -- Baited AoE
+  "Metamorphic Blast" -- Large conal.
+
+# Floor 80 Boss
+13958: |
+  Boss will pair either a halfroom front or back depending on where the charged whiskers point with either of the following two mechanics.
+  1) "Perilous Lair" -- PB AoE
+  2) "Roaring Ring" -- Doughnut
+  3) "Stalking Static" -- Creates a chain of lightning balls, the final ball at the wall will have a big explosion and paralyze.
+  4) "Prowling Death" -- Applies one of two debuffs, start under/near the boss.
+    a) "Shadow of Death" -- Doom debuff that requires being hit by lightning from the whiskers in the next Lair/Ring combination to remove.
+    b) "Nowhere to Run" -- Debuff that increases whenever afflicted character moves. 8 stacks results in death. Dodge the Lair/Ring combination with minimal movement.

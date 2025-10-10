@@ -4,6 +4,23 @@
   Aggro: Proximity
   Weakness:
     - Stun
+# Silver chest Mimic
+14265-Mimic:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+# Gold chest Mimic
+14266-Mimic:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Proximity
+  Weakness:
+14267-Traverse Korrigan:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
 
 14183-Traverse Cliffmole:
   InstanceContentType: DeepDungeon
