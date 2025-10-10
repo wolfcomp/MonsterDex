@@ -1,6 +1,94 @@
 # Floors 51-59
+14173-Traverse Phorusrhacos:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
+    - Bind
+14165-Traverse Tawnyclaw:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
+    - Bind
+14172-Traverse Hyssop:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
+14177-Traverse Beetle:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
+    - Bind
+14171-Traverse Pachamama:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14170-Traverse Fallen Aevis:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14169-Traverse Monitor:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14175-Traverse Caracal:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14167-Traverse Sand Serpent:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+14166-Traverse Guardian:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+14176-Traverse Gigant:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+14174-Traverse Howler:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+14168-Traverse Saichania:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
 
 # Floor 60 Boss
+14097-Ancestral Maliktender:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Boss
 
 # Floors 61-69
 
