@@ -68,17 +68,18 @@
 12193: |
   Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range. Can be ranged pulled.
 12192: |
-  Instant pull in followed by fast cast PB AOE "Body Press." Pay attention for pull in sound/animation.
+  끌어당긴 후 즉시 자신 중심 범위공격 「Body Press / ボディプレス」를 사용합니다.
+  끌어당기는 소리나 모션을 잘 관찰하세요.
 #EO floor 70
 12246: |
-  "Steel Claw" -- tankbuster, sort of.
-  "Ferocity" -- distance tether followed by Preternatural Turn.
-  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
-  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
+  「Steel Claw / 鉄爪斬」：일종의 탱크버스터 공격을 사용합니다. 
+  「Ferocity / 強襲」：거리 기반의 끈 연결 후 「Preternatural Turn / 魔科学旋爪」을 이어서 시전합니다.
+  「Preternatural Turn / 魔科学旋爪」： 몸이 빛나면 안쪽(도넛형 범위 공격)으로 이동하세요. 빛나지 않으면 바깥쪽으로 이동하세요. (자신 중심 범위 공격) 
+  「Roar / 咆哮」：작은 범위 공격 여러 개와 범위 공격 네 개를 시전하며 이후 기믹에 사용되는 크리스탈들이 생성됩니다.
+  「Preternatural Turn 2 / 魔科学旋爪2」： 크리스탈에서 광범위한 부채꼴 공격과 함께 큰 범위의 자신 중심 범위 공격을 사용하거나, 혹은 크리스탈에서 큰 범위의 자신 중심 범위 공격과 함께 도넛형 범위 공격을 사용합니다.
 #EO floors 71-79
 12197: |
-  "Slowcall" -- late telegraph front conal, gives a very bad slow effect
+  「Slowcall / スロウコール」：전방 부채꼴 공격을 발동 직전에 범위를 보여주며 사용합니다. 피격 시 둔화 효과를 부여합니다
 12199: |
   3회의 넉백 공격을 시전하므로 가능하다면 구석 쪽에 있으세요. 
   「Innocence / イノセンス」범위 공격을 사용합니다
@@ -86,34 +87,34 @@
   「 キリングバウ / The Killing Paw」 -- 전방 부채꼴 범위 공격을 시전하고 전조 없이 다시 전방 부채꼴 범위 공격
   기본적으로 후면으로 피하는걸 추천
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction.
-  Moving side to side will allow you to easily tell when Scythe Tail is casting.
+  「Spark / スパーク」：전조 없는 도넛형 공격을 시전합니다.
+  「Scythe Tail / サイズテール」：시전바가 없는 자신 중심 범위공격을 시전합니다. 보스가 웅크리며 평타나 방향 전환을 멈출 때 시전이 시작됩니다.
+  좌우로 움직여보면 시전 중인지 쉽게 구분할 수 있습니다.
 12201: |
   출혈 디버프를 부여하고 스스로에게 버프를 겁니다.
 12209: |
-  "Freefall" -- randomly targetd medium circle AOE
-  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
+  「Freefall / フリーフォール」：무작위 대상을 향해 원형 범위공격을 시전합니다. 
+  「Winds of Winter / ウィンターウィンド」：2번의「Freefall」이후 시전되는 대형 범위 공격으로 벽 뒤로 숨거나 기절시켜 막아야 합니다
 12208: |
-  "Blistering Roar" -- Wide line AOE, can not be LOSed, MUST MOVE BEHIND.
+  「Blistering Roar / ブリスターロア」：넓게 직선형 범위공격을 시전하며, 벽 뒤로 피할 수 없습니다.반드시 보스의 뒤로 이동해야 합니다.
 12204: |
-  Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
-  DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
+  무작위 대상을 향해 돌진 공격을 시전한 후 자신 중심 범위공격 「Rear / リアー」를 이어서 빠르게 시전합니다. 
+  절대 기절시키지 마세요.「Rear」는 시전이 저장되어 기절이 해제된 직후 즉시 시전될 수 있습니다. 또한, 벽 뒤에 숨어서 피하는 것은 효과가 없습니다
 12205: |
   HP가 20% 이하일 경우 즉사당합니다
 12198: |
-  "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
-  "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
+  「Chirp / チャープ」：전조 없이 자신 중심 범위공격을 시전하며 긴 지속 시간의 수면 효과를 부여합니다.
+  「Tornado / トルネド」：무작위 대상을 향해 원형 범위 공격을 시전하며, 수면 상태가 된 플레이어에게 우선적으로 시전됩니다.
 12206: |
-  "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
-  "Revelation" -- untelegraphed AOE cast on Confused players
+  「Eye of the Fierce / 猛禽の眼」：360도 전방위 시선 공격을 시전하며 피격 시 혼란 상태 이상에 걸립니다.
+  「Revelation / リヴァレーション」：혼란 상태에 걸린 플레이어를 대상으로 전조 없이 범위공격을 시전합니다
 12200: |
-  "Wide Blaster" -- Huge wide frontal cone targeted at random player
-  "Tail Swing" -- Huge rear cone if player is behind
+  「Wide Blaster / ワイドブラスター」：무작위 플레이어를 대상으로 넓은 범위의 전방 부채꼴 공격을 시전합니다.
+  「Tail Swing / テールスイング」：플레이어가 뒤에 있을 경우 거대한 범위의 후방 부채꼴 공격을 시전합니다
 12203: |
-  "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
-  "Stool Pelt" -- randomly targetd circle AOE
-  Pull when safe to prevent getting caught by Chest Thump
+  「Chest Thump / ドラミング」：전투 중이 아닐 때 「Ripe Banana / バナナ喰い」스킬을 사용하고 이어서 거대한 범위 공격을 시전합니다.
+  「Stool Pelt / 岩石投げ」：무작위 대상을 향해 원형 범위 공격을 시전합니다. 
+  「Chest Thump / ドラミング」에 휘말리지 않도록 안전할 때 보스를 풀링하세요
 #EO boss floor 80
 12247: |
   "Resonance" -- Wide conal tankbuster.
