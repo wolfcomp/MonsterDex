@@ -1,7 +1,18 @@
+# Floor 10 Boss
+13979: |
+  1) « Masse à la tête » -- Trois grandes zones où les ombres roses finissent par apparaître.
+  2) « Feuille » -- Quatre grandes zones où le télégraphe du patron est utilisé. A chaque saut, tout vivant s'ajoute étourdissant et infligeant d'énormes dégâts.
+13980: |
+  Inflige des dégâts mortels lorsque le boss saute pendant le Feuille.
+# Floor 20 Boss
+13973: |
+  1) "Touchdown" -- Knockback en quatre AoEs indiquées par les jambes lumineuses.
+  2) « Plante Rare Root Planting» -- Baits expansion étoile AoE. Place au mur.
 14137: |
   Lance le "parasitement" enrage à 25% HP
 14127: |
   Lances de la zone appâtée sans agitation
+# Floor 30 Boss
 13863: |
   1) "Liturgie de Lumière" -- gouttes tombant anneau AoEs dans 4 emplacements possibles
   2) "Poigne du salut" -- moitié du côté du bras lumineux, puis dégaine l'autre moitié + 45 degrés supplémentaires devant lui
@@ -20,6 +31,7 @@
   « Moatmaker » -- AoE appâtée, frappe de nouveau mais plus grand
 14145: |
   Tentacule gauche/droite- fente de moitié
+# Floor 40 Boss
 13977: |
   1) "Blown Blessing" -- soit un énorme AoEs (jaune/étince) ou KB (bleu/eau). Le patron fera toujours le leur en premier, suivi des ajouts dans l'ordre où ils sautent.
   2) "Près de la marée" -- massive PB AoE
@@ -37,6 +49,7 @@
 14152: |
   "Choc magnétique" -- Suck
   "Casse-Plain" -- PB AoE
+# Floor 50 Boss
 14263: |
   1) "Liquefaction" -- Transforme l'arène en un sable rapide avec quelques points de sécurité.
   2) "Sandpit" -- Boss devient imcible et fait 4 gros appâts de zone de chasse.
