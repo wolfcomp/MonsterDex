@@ -1,108 +1,108 @@
 # Floors 51-59
 14173: |
-  "Pain Storm" -- Large roomwide conal
-  "Painful Gust" -- Large AoE
-  "Whorl of Hurt" -- Large doughnut
+  「Pain Storm / ペインストーム」：방 전체를 덮는 큰 전방 부채꼴 공격을 시전
+  「Painful Gust / ペインフルガスト」：큰 범위 공격을 시전
+  「Whorl of Hurt / ペインサイクロン」：큰 도넛형 공격을 시전
 14165: |
   「Tail Screw」플레이어를 대상으로 한 범위공격으로, 피격 시 체력이 한 자릿수로 남습니다. 
   가끔 「Impale」을 시전합니다
 14172: |
-  "Poison Mist" -- Large frontal cone AoE that inflicts poison
+  「Poison Mist / 毒霧」：큰 전방 부채꼴 범위공격을 시전, 피격 시 독 디버프를 부여
 14177: |
-  "Rhino Guard" -- Applies 30s evasion to self.
-  Occasionally uses "Rhino Attack"
+  「Rhino Guard」：자신에게 30초 동안 지속되는 회피 버프 부여. 
+  가끔 「Rhino Attack」을 시전
 14169: |
-  "Smoldering Scales" -- Deals lethal damage to attackers if hit with physical damage
+  「Smoldering Scales / 炎の鱗」：물리 공격을 가한 대상에게 치명적인 대미지를 입힘
 14167: |
-  "Earthen Auger" -- Massive roomwide 270 degree conal. Behind or under is safe.
+  「Earthen Auger / アースオーガー」：방 전체를 덮는 270도 범위의 큰 전방 부채꼴 공격을 시전, 보스의 뒤쪽이나 바로 아래가 안전지대.
 14176: |
-  Occasionally sucks.
-  "Heavy Scrapline" -- PB AoE
-  "Heavy Toss" -- Frontal conal
+  가끔 끌어당기는 공격을 시전
+  「Heavy Scrapline / ヘビーラリアット」：자신 중심의 범위공격을 시전
+  「Heavy Toss / ヘビートス」：전방 부채꼴 공격을 시전
 14174: |
-  "Barreling Smash" -- Telegraphed dash. Immediately follows up with one of:
-  1) "Scythe Tail" -- PB AoE
-  2) "Master of Levin" -- Large doughnut
+  「Barreling Smash / バレリングスマッシュ」：전조가 있는 돌진 공격을 시전, 직후 아래 중 하나의 공격을 이어서 시전
+  1) 「Scythe Tail / サイズテール」：자신 중심의 범위 공격 
+  2) 「Master of Levin / 外輪雷」：큰 범위의 도넛형 공격
 14168: |
-  "Bewilderment Bulb" -- Applies misdirection for 5s, then does a medium PB AoE. Interruptable.
-  "Trounce" -- Massive frontal conal
+  「Bewilderment Bulb / 嗅覚撹乱玉」：5초 동안 방향 감각 상실 효과를 부여한 뒤, 조금 큰 자신 중심 범위공격을 시전합니다. 시전은 침묵으로 끊을 수 있습니다. 
+  「Trounce / トラウンス」：큰 범위의 전방 부채꼴 공격을 시전합니다
 # Floor 60 Boss
 14097: |
-  1) "Spineshot" -- Narrow cone on front and back.
-  2) "Branch Out" -- Creates four sets of cacti that explode in spawn order. Large cacti explode in a 3x3 square.
-  3) "Branch Out" >> "One/Two-stone March" -- Creates cacti pattern, then moves them CW or CWW the amount of steps based on the castbar.
-  4) "Spinning needles" -- Rotates CW or CWW and spams Spineshot very quickly.
+  1) 「Spineshot / ニードルシュート」：전방과 후방에 좁은 부채꼴 공격을 시전
+  2) 「Branch Out / 株分け」：필드에 선인장을 소환하며, 소환된 순서대로 폭발, 큰 선인장은 3×3 범위로 폭발
+  3) 「Branch Out / 株分け」 → 「One/Two-stone March -- マリクの勅令：一進・二進」：선인장 소환 후 스킬명에 따라 시계 방향 또는 반시계 방향으로 1칸 또는 2칸 이동
+  4) 「Spinning Needles / ニードルスピン」：시계 방향 또는 반시계 방향으로 회전하며 「Spineshot / ニードルシュート」을 매우 빠르게 연속 시전합니다.
 # Floors 61-69
 14189: |
-  "Plain Pound" -- PB AoE
+  「Plain Pound / プレインパウンド」：자신 중심의 범위공격을 시전
 14187: |
-  Invisible unless close or in combat. Spawns on floors 61-64 only.
-  "Body Press" -- PB AoE
+  가까이 접근하거나 전투 상태가 되기 전까지는 보이지 않음. 61~64층에서만 등장
+  「Body Press / ボディプレス」：자신 중심의 범위공격을 시전
 14182: |
-  "Accelerate" -- Baited AoE. Hits again but larger.
+  「Accelerate / 突貫する」：설치형 범위공격을 시전, 잠시 후 더 넓은 범위로 한 번 더 공격.
 14178: |
-  "Right/Left-sided Shockwave" -- Large halfroom cleave, followed by the other side cleave.
+  「Right/Left-sided Shockwave / ライト/レフトサイド・ショックウェーブ」: 스킬명의 방향대로 방의 절반을 덮는 공격을 시전하며 직후 반대쪽을 이어서 시전합니다.
 14183: |
-  "Head Butt" -- Small frontal conal
+  「Head Butt / ヘッドバット」：작은 전방 부채꼴 공격을 시전
 14188: |
-  "Sewer Water" -- Medium frontal half circle AoE
+  「Sewer Water / スーウェッジウォーター」：전방으로 반원모양의 범위공격을 시전
 14184: |
-  "Isle Drop" -- Baited AoE
-  "Rockslide" -- Massive cross AoE on its cardinals
+  「Isle Drop / アイルドロップ」：설치형 범위공격을 시전
+  「Rockslide / ロックスライド」：사방으로 퍼지는 거대한 십자형 범위공격을 시전
 14181: |
-  "Hailfire" -- Far straight line AoE
-  "Crystalline Stingers" -- Roomwide AoE enrage cast at 25%. Can LoS.
+  「Hailfire / ヘイルファイア」：먼 거리를 가로지르는 직선형 범위공격을 시전
+  「Crystalline Stingers / クリスタルスティンガー」：Hp가 25% 이하일 때 시전하는 방 전체 범위 전멸기, 벽 뒤에 숨어서 피할 수 있음.
 14180: |
-  "Unfinal Sting" -- Short straight line AoE
-  "Final Sting" -- Enrage cast
+  「Unfinal Sting / アンファイナルスティング」：직선형 범위공격을 시전
+  「Final Sting / ファイナルスピア」：즉사기 시전
 14179: |
-  "Several Thousand Needles" -- Large straight line AoE.
-  Grants self haste.
+  「Several Thousand Needles / 針幾千本」：넓은 직선형 범위공격을 시전
+  자신에게 헤이스트 효과를 부여.
 14190: |
-  "Landslip" -- Medium frontal conal
+  「Landslip / 土石流」： 전방 부채꼴 공격을 시전
 14186: |
-  "Stone Gaze" -- Frontal conal petrify. Not a gaze.
-  "Body Slam" -- PB AoE
+  「Stone Gaze / 石化にらみ」：전방 부채꼴 석화 공격을 시전, 시선형 공격은 아님
+  「Body Slam / ボディスラム」：자신 중심의 범위 공격을 시전
 # Floor 70 Boss
 13971: |
-  1) "Zealous Glower" -- A moving line AoE that goes down the middle and generates orbs. The orbs will explode explode as doughnuts in the order they appeared. This happens twice and the 2nd line AoE covers half of the inside of a doughnut.
-  2) "Arduous Eye" -- A moving doughnut AoE that generates orbs. The orbs will explode explode as doughnuts in the order they appeared.
-  3) "2000 Mino Swing" -- Massive PB AoE. Be near the edge.
-  4) "Disorienting Groan" -- Knockback. Stand middle.
-  5) "Octuple Swipe" -- Telegraphs 8 swipes in order. All cardinals are hit twice, once in the first four set, once in the 2nd four set.
+  1) 「Zealous Glower / ズィールグラワー」：필드 중앙에 직선형 범위공격을 시전하며 경로상에 구체를 생성, 구체는 등장한 순서대로 도넛형 폭발을 일으킴. 이 패턴은 두 번 반복되며, 두 번째 직선 공격은 첫 번째 도넛의 절반 내부를 덮음
+  2) 「Ardorous Eye / アイ・オブ・ズィール」：도넛형을 그리는 범위 공격을 시전하며 구체를 생성, 구체는 등장한 순서대로 도넛형 폭발을 일으킴
+  3) 「2000 Mino Swing / 2000ミナ・スワイプ」：큰 범위의 자신을 중심으로 한 범위 공격을 시전, 필드의 가장자리로 이동
+  4) 「Disorienting Groan / 雄叫び」：넉백을 시전하므로 중앙으로 이동
+  5) 「Octuple Swipe / オクタプルスワイプ」：8번의 공격을 순서대로 시전, 동서남북으로 각각 두 번씩 공격.
 # Floors 71-79
 14203: |
-  "Sandblast" -- Small frontal conal
+  「Sandblast / サンドブラスト」：작은 전방 부채꼴 공격을 시전
 14194: |
-  Knockbacks and inflicts poison
+  넉백공격과 독 디버프를 부여
 14200: |
-  Double Autos
-  "Gravel Shower" -- Small line AoE
+  평타를 연속으로 공격 
+  「Gravel Shower / グラベルシャワー」：작은 직선형 범위공격을 시전
 14196: |
-  "Fire II" -- Baited AoE. Interruptable.
+  「Fire II / ファイラ」：설치형 범위공격을 시전, 침묵 가능.
 14195: |
-  Does proximity explosion on death.
-  "Fracture" -- PB AoE
+  처치 시 근접 폭발을 일으킴
+  「Fracture / 炸裂」：자신 중심의 범위 공격을 시전
 14193: |
-  "Growing Circles of Absolution" -- Medium PB AoE then massive doughnut.
-  "Shrinking Circles of Absolution" -- Massive doughnut then medium PB AoE.
+  「Growing Circles of Absolution / 双水流・円輪」：자신 중심 범위 공격을 시전한 뒤, 거대한 도넛형 공격을 이어서 시전
+  「Shrinking Circles of Absolution / 双水流・輪円」：거대한 도넛형 공격을 시전한 뒤, 자신 중심 범위 공격을 이어서 시전.
 14198: |
-  "Hail of Heels" -- Four consecutive frontal medium half circle AoEs.
+  「Hail of Heels / 連蹴り」：전방에 반원 범위 공격을 네 번 연속 시전.
 14202: |
-  "Earthquake" -- Medium PB AoE
+  「Earthquake / 地震」：자신 중심의 범위 공격을 시전
 14191: |
-  "Mighty Spin" -- Medium PB AoE
-  "Trounce" -- Screenwide frontal conal
+  「Mighty Spin / マイティスピン」：자신 중심 범위 공격을 시전
+  「Trounce / トラウンス」：화면 전체를 덮는 전방 부채꼴 범위 공격을 시전
 14201: |
-  "Topple" -- PB AoE.
+  「Topple / トップル」：자신 중심 범위 공격을 시전.
 14192: |
-  "Rolling Barrage" -- Roomwide AoE cast unaggroed
-  "Forward Barrage" -- Frontal conal
+  「Rolling Barrage / ローリングバラージ」：비전투 상태에서도 방 전체 범위 공격을 시전
+  「Forward Barrage / フロントバラージ」：전방 부채꼴 범위 공격을 시전
 14197: |
-  Large doughnut or massive cross AoE on its cardinals, no castbar.
+  시전바 없이 큰 도넛형 범위 공격 또는 거대한 십자형 범위 공격을 함.
 14199: |
-  "Orogenic Storm" -- Baited AoE
-  "Metamorphic Blast" -- Large conal.
+  「Orogenic Storm / オロジェニックストーム」：설치형 범위 공격을 시전
+  「Metamorphic Blast / メタモーフィックブラスト」：큰 부채꼴 범위 공격을 시전.
 # Floor 80 Boss
 13958: |
   Boss will pair either a halfroom front or back depending on where the charged whiskers point with either of the following two mechanics.
@@ -112,37 +112,41 @@
   4) "Prowling Death" -- Applies one of two debuffs, start under/near the boss.
     a) "Shadow of Death" -- Doom debuff that requires being hit by lightning from the whiskers in the next Lair/Ring combination to remove.
     b) "Nowhere to Run" -- Debuff that increases whenever afflicted character moves. 8 stacks results in death. Dodge the Lair/Ring combination with minimal movement.
+# Floors 81-89
 14211: |
+  "Dark" -- Baited AoE. Interruptable.
+  "Dark II" -- Massive frontal conal. Interruptable.
+14206: |
+  「Valfodr / ヴァルファズル」：네 번 연속으로 넉백 공격을 시전
+  「Storm Slash / ストームスラッシュ」：전방 반원 범위 공격을 시전
+14209: |
+  「Claw / クロウ」：작은 전방 부채꼴 공격을 시전
+14210: |
+  「Nox Blast / ノックスブラスト」：전방 부채꼴 범위 공격을 시전합
+  「Maul / 噛み殺す」：HP가 낮을 때 시전하는 즉사기, 침묵 가능.
+14212: |
   "Void Blizzard" -- Baited AoE. Interruptable.
   "Blizzard Trap" -- Medium PB AoE.
-14206: |
-  "Valfodr" -- Four consecutive knockbacks
-  "Storm Slash" -- Frontal half circle
-14209: |
-  "Claw" -- Small frontal conal
-14210: |
-  "Nox Blast" -- Medium frontal conal
-  "Maul" -- Low HP enrage. Interruptable.
 14207: |
-  "Passion's Heat" -- Targetted AoE that applies Pyretic. Pyretic deals lethal damage (don't move or attack). LoSable.
+  「Passion's Heat / ハートヒート」：대상을 지정해 범위 공격을 시전, 피격 시 ‘Pyretic / ヒート’ 디버프를 부여, 이 상태에서는 움직이거나 공격하면 치명적인 대미지를 입음. 벽 뒤에 숨어서 피할 수 있음.
 14213: |
-  "Abyssal Swing" -- Medium frontal conal
+  「Abyssal Swing / アビサルスイング」： 전방 부채꼴 공격을 시전
 14204: |
-  "Claw and Tail" -- Small frontal line AoE, then behind conal
+  「Claw and Tail / キックアンドテイル」：전방 직선형 범위 공격을 시전한 뒤, 후방 부채꼴 범위 공격을 이어서 시전
 14214: |
-  "Double Hex Eye" -- Roomwide gaze
+  「Double Hex Eye / 大凶眼」：방 전체 범위의 시선형 공격을 시전
 14215: |
-  "Thunder" -- Medium frontal circle AoE
-  "Hellclaw" -- Small frontal conal
-  "Tail Swipe" -- Large back conal
+  「Thunder / サンダー」：전방 원형 범위 공격을 시전
+  「Hellclaw / ヘルクロー」：전방 부채꼴 범위 공격을 시전
+  「Tail Swipe / テールスワイプ」：넓은 범위의 후방 부채꼴 공격을 시전
 14205: |
-  Will cast roomwide AoEs unaggroed.
-  "Abyssal Ray" -- Massive frontal line AoE. NOT LoSable.
+  비전투 상태에서도 방 전체 범위 공격을 시전
+  「Abyssal Ray / アビサルレイ」：거대한 전방 직선형 범위 공격을 시전, 벽 뒤에 숨어도 피할 수 없음.
 14208: |
-  "Triple/Quadruple Blow" -- Deals 3 or 4 instances of damage, then an immediate frontal conal
+  「Triple/Quadruple Blow -- トリプル/クアドラブロー」：3회 또는 4회의 연속 공격 후, 즉시 전방 부채꼴 범위 공격을 시전
 14216: |
-  "Dark II" -- Fast large frontal conal. Interruptable.
-  "Inner Demons" -- PB AoE
+  「Dark II / ダーラ」：빠른 시전의 넓은 전방 부채꼴 범위 공격을 시전, 침묵 가능
+  「Inner Demons / イナーデーモン」：자신 중심 범위 공격을 시전, 침묵 가능
 # Floor 90 Boss
 14090: |
   1) "Backhand" -- Charges a glowing fist and does a 270 degree cleave. The glowing fist side and behind him is always safe.
