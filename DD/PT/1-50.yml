@@ -263,7 +263,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
