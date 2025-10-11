@@ -9,6 +9,8 @@ public class MobData : ILoad<MobData>
     public MobData Load(string str)
     {
         var mobs = StorageHandler.Deserializer.Deserialize<Dictionary<string, Mob>>(str);
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+        if (mobs is null) return this;
         foreach (var (key, value) in mobs)
         {
             var splitInd = key.IndexOf('-');
