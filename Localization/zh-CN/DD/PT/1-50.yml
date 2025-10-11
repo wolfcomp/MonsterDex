@@ -1,7 +1,18 @@
+# Floor 10 Boss
+13979: |
+  1) "Hedge Mazing" -- 3个大型AoEs where the pink shows completows。生成3个附加值。
+  2) "叶绿素" -- 四个大型AoEs 在那里老板电报。每次跳跃时，任何生动添加都会击晕并造成大量伤害。
+13980: |
+  在叶子跳跃时造成致命伤害。
+# Floor 20 Boss
+13973: |
+  1) "Touchdown" -- 用闪光腿返回四个AoE。
+  2) "稀有根树木种植" - 在墙上放置一颗正在扩充的恒星。
 14137: |
   寄生虫在25% HP
 14127: |
   保释AoE的种子已取消收割。
+# Floor 30 Boss
 13863: |
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
   2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
@@ -20,6 +31,7 @@
   "Moatmaker" -- baited AoE, hits again but larger
 14145: |
   "左/右端" -- 半房间净化
+# Floor 40 Boss
 13977: |
   1) "Blown Blessing" -- either a massive AoEs (yellow/sparkles) or KBs (blue/water). The boss will always do theirs first, followed by the adds in the order they jump.
   2) "Near Tide" -- massive PB AoE
@@ -37,6 +49,7 @@
 14152: |
   "磁性冲击" -- Suck
   "原始acker" -- PB AoE
+# Floor 50 Boss
 14263: |
   1) "液化" — — 将舞台转化成一个带有几个安全地点的快捷方式。花费4秒的速度将导致死亡。
   2) "Sandpit" -- Boss 不可瞄准，并且做了4个大型追赶AOE袋。
