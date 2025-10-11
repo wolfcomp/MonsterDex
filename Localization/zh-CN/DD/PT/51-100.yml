@@ -112,9 +112,10 @@
   4) "延长死亡"-- 适用于两次减缓中的一个，开始于/靠近上风。
     a) "死亡阴影" - Doom debuff, which requires be attributed by lighting from whiskers in the next Lair/Ring combody to remove.
     (b) "无处运行" - 每当受折磨的人移动时会增加的调试量。 8个堆栈导致死亡。减小Lair/Ring组合和最小移动。
+# Floors 81-89
 14211: |
-  "虚空暴利zard" -- Baid AoE. 中断.
-  "Blizzard Trap" -- medium PB AoE.
+  "Dark" -- Baid AoE. Interruptable.
+  "Dark II" -- Massive frontal conal. Interruptable
 14206: |
   "Valfodr" — — 四次连续的背包
   "风暴冲锋" — 前半圆
@@ -123,6 +124,9 @@
 14210: |
   "Nox Blast" -- 中等正面锥形
   "Maul" -- 低HP 编码. 中断.
+14212: |
+  "虚空暴利zard" -- Baid AoE. 中断.
+  "Blizzard Trap" -- medium PB AoE.
 14207: |
   “激情加热”-- 使用Pyretic的目标AOE。Pyretic 会造成致命伤害(不移动或攻击)。
 14213: |
