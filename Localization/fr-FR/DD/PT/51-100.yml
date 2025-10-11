@@ -112,9 +112,10 @@
   4) "Prowling Death" -- Applique l'un des deux affaiblis, commencez sous/près du patron.
     a) "Ombre de la mort" -- L'affaiblissement fatal qui nécessite d'être touché par la foudre des foudres dans la prochaine combinaison de repère/anneau à retirer.
     b) "Nulle part à courir" -- Affaiblissement qui augmente à chaque fois que le personnage touché se déplace. 8 piles entraînent la mort. Esquivez la combinaison Anair/Anneau avec un mouvement minimal.
+# Floors 81-89
 14211: |
-  « Blizzard du Néant» -- AoE abîmée. Interruptable
-  « Piège Blizzard» -- AoE PB moyenne.
+  "Dark" -- AoE à l'appât. Interruptable.
+  "Sombre II" -- Conal frontal massif. Interruptable.
 14206: |
   « Valfodr» -- Quatre retours consécutifs
   « Taillade de tempête» -- demi-cercle frontal
@@ -123,6 +124,9 @@
 14210: |
   « Nox Blast» -- Conal frontal moyen
   « Maul» -- Enrage HP faible. Interruptable.
+14212: |
+  « Blizzard du Néant» -- AoE abîmée. Interruptable
+  « Piège Blizzard» -- AoE PB moyenne.
 14207: |
   « Chaleur de la passion » -- Zone ciblée qui applique Pyrétique. La pyrétique inflige des dégâts mortels (ne pas se déplacer ou attaquer). LoSable.
 14213: |
