@@ -1,0 +1,168 @@
+# Floors 51-59
+14173: |
+  "Schmerzsturm" -- Großer Raumkonal
+  "Schmerzhafter Gust" -- Großer AoE
+  "Hurt" -- Großer Doughnut
+14165: |
+  "Schwanzschraube": Kleiner AoE-Ziel-Spieler. Verlässt den Spieler mit einstelligen Trefferpunkten, wenn er getroffen wird.
+  Verwendet gelegentlich "Impale"
+14172: |
+  "Giftnebel" -- Großer Frontkegel AoE, der Gift zufügt
+14177: |
+  "Rhino Wächter" -- Bewegt die Umgehung der 30er Jahre auf sich selbst.
+  verwendet gelegentlich "Rhino Attack"
+14169: |
+  "Smoldering Scales" -- Fügt Angreifern tödlichen Schaden zu, wenn sie mit körperlichem Schaden getroffen werden
+14167: |
+  "Earthen Auger" -- Großflächige 270 Grad Konal, hinter oder unter ist sicher.
+14176: |
+  Gelegentlich saugt.
+  "Heavy Scrapline" -- PB AoE
+  "Heavy Toss" -- Frontalkegel
+14174: |
+  "Barreling Smash" -- Telegraphed Bindestrich. Sofort folgt einem von:
+  1) "Scythe Maß" -- PB AoE
+  2) "Master of Levin" -- Große Doughnut
+14168: |
+  "Bewilderment Bulb" -- Wendet eine Fehlrichtung für 5 Sekunden an, dann macht eine mittlere PB AoE. Interrupable.
+  "Trounce" -- Massiver Frontkegel
+# Floor 60 Boss
+14097: |
+  1) "Spineshot" -- Schmaler Kegel auf Vorder- und Rückseite.
+  2) "Verzweigung" -- Erstellt vier Kakteensätze, die in Spawn-Reihenfolge explodieren. Große Kakteen explodieren in einem 3x3-Quadrat.
+  3) "Branch Out" >> "Ein/Zwei-Stein-März" -- Erzeugt Kakteen Muster, dann bewegt sie CW oder CWW die Anzahl der Schritte, die auf der Castbar basieren.
+  4) "Spinning needles" -- Dreht CW oder CWW und spammt Spineshot sehr schnell.
+# Floors 61-69
+14189: |
+  "Plain Pfund" -- PB AoE
+14187: |
+  Unsichtbar außer schließen oder im Kampf. Spawnt nur auf Etagen 61-64.
+  "Body Press" -- PB AoE
+14182: |
+  "Accelerate" -- Baited AoE.
+14178: |
+  "Rechts/linksseitige Schockwelle" -- Große Halbraumspalte und anschließend die andere Seitenspaltung.
+14183: |
+  "Kopf Butt" -- Kleiner Frontkegel
+14188: |
+  "Kanalisationswasser" -- Mittleres frontal Halbkreis AoE
+14184: |
+  "Isle Drop" -- Köder AoE
+  "Rockslide" -- Massives Kreuz AoE auf seinen Kardinalen
+14181: |
+  "Hailfire" -- Ferne gerade Linie AoE
+  "Kristallstalline" -- Raumweite AoE-Wut bei 25%. Kann LoS.
+14180: |
+  "Unendlicher Stachel" -- Kurze gerade Linie AoE
+  "Finale Stachel" -- Wahnsinn gewirkt
+14179: |
+  "Mehrere Tausend Nadeln" -- Große gerade Linie AoE.
+  Erlaubt Eile für sich.
+14190: |
+  "Landslip" -- Mittelgroßer Frontkegel
+14186: |
+  "Steinblick" -- Frontalkegelpetrify. Kein Blick.
+  "Body Slam" -- PB AoE
+# Floor 70 Boss
+13971: |
+  1) "Seeland Glower" -- Eine bewegliche Linie AoE, die die Mitte hinuntergeht und Orben erzeugt. Die Kugeln explodieren in der Reihenfolge wie sie auftauchen. Dies geschieht zweimal und die zweite Linie AoE deckt die Hälfte der Innenseite einer Doughnut.
+  2) "Schweres Auge" -- Ein bewegter Doughnut AoE, der Orben erzeugt. Die Kugeln explodieren in der Reihenfolge wie sie auftauchen.
+  3) "2000 Mino Swing" -- Massive PB AoE. Sei nahe der Kante.
+  4) "Disorienting Groan" -- Rückstoß. Standmitte.
+  5) "Octuple Swipe" -- Telegrafen 8 wischt in der Reihenfolge. Alle Kardinäle werden zweimal getroffen, einmal in den ersten vier Sätzen, einmal in den zweiten vier Sätzen.
+# Floors 71-79
+14203: |
+  "Sandblast" -- Kleiner Frontkegel
+14194: |
+  Rückschläge und Giftstoffe
+14200: |
+  Doppelte Autos
+  "Kieseldusche" -- Kleine Linie AoE
+14196: |
+  "Fire II" -- Köder AoE.
+14195: |
+  Verursacht die Nähe beim Tod.
+  "Fraktur" -- PB AoE
+14193: |
+  "Wachskreise der Absolution" - Mittlere PB AoE dann massive Doughnut.
+  "Shrinking Circles of Absolution" -- Massiver Doughnut dann mittlerer PB AoE.
+14198: |
+  "Hail of Heels" - Vier aufeinanderfolgende Frontlinie Mitte Halbkreis AoEs.
+14202: |
+  "Erdbeben" -- Mittlere PB AoE
+14191: |
+  "Mächtige Spin" -- Mittlere PB-AoE
+  "Trounce" -- Screenwide Frontkegel
+14201: |
+  "Topple" -- PB AoE.
+14192: |
+  "Rollende Barrage" -- Raumweiter AoE-Effekt unaufgewertet
+  "Vorwärtsbarriere" -- Frontkegel
+14197: |
+  Großer Doughnut oder massiver Kreuz AoE auf seinen Kardinalen, keine Castbar.
+14199: |
+  "Orogenischer Sturm" -- Köder AoE
+  "Metamorpher Explosion" -- Große Konal.
+# Floor 80 Boss
+13958: |
+  Boss paßt entweder eine Vorder- oder Rückseite, je nachdem, wo die geladenen Whisker mit einer der folgenden zwei Mechaniker.
+  1) "Perilous Lair" -- PB AoE
+  2) "Roaring Ring" -- Doughnut
+  3) "Stalking Static" -- Erzeugt eine Kette Blitzbälle, die letzte Kugel an der Wand wird eine große Explosion und lähmen.
+  4) "Schleichender Tod" -- Anwendet einen von zwei Schwächungszaubern, starte unter/in den Boss.
+    a) "Shadow of Death" – Schwächung des Schattens, der durch Blitze von den Whiskern in der nächsten Lair/Ring Kombination getroffen werden muss, um ihn zu entfernen.
+    b) "Nowhere to Run" -- Debuff, der zunimmt, wenn sich ein betroffener Charakter bewegt. 8 Kumulierungen führen zum Tod. Ausweichen der Lair/Ring Kombination mit minimaler Bewegung.
+14211: |
+  "Void Blizzard" -- Köder AoE.
+  "Blizzard Fall" -- Mittlere PB AoE.
+14206: |
+  "Valfodr" -- Vier aufeinander folgende Rückschläge
+  "Sturm Slash" -- Frontaler Halbkreis.
+14209: |
+  "Claw" -- Kleiner Frontkonal
+14210: |
+  "Nox Blast" -- Mittelgroßer Frontkegel
+  "Maul" -- Niedriger HP-Wut. Interrupable.
+14207: |
+  "Passion's Heat" -- Zielgezielter AoE, der Pyretik zufügt. Pyretische fügt tödlichen Schaden (ohne sich zu bewegen oder anzugreifen). LoSable.
+14213: |
+  "Abyssal Swing" -- Mittelgroßer Frontkegel
+14204: |
+  "Claw and Schwanz" - Kleine Frontlinie AoE, dann hinter Konal
+14214: |
+  "Double Hex Eye" -- Raumweiter Blick
+14215: |
+  "Thunder" -- Mittelgroßer Frontkreis AoE
+  "Höllenklapp" -- Kleiner Frontkegel
+  "Tail Swipe" -- Große Rückenkegel
+14205: |
+  Wird Raumweite AoEs ungepflegt lassen.
+  "Abyssal Ray" -- Massive Frontlinie AoE. NICHT LoSable.
+14208: |
+  "Triple/Quadruple Blow" -- Verursacht 3 oder 4 Schadensfälle, dann eine unmittelbare Frontkegel
+14216: |
+  "Dark II" -- Schnell große Frontkonal. Interrupable.
+  "Innere Dämonen" -- PB AoE
+# Floor 90 Boss
+14090: |
+  1) "Backhand" -- Lädt eine glühende Faust auf und löst eine 270 Grad tiefe Spaltung aus.
+  2) "Hinter dem Folly" -- Cleaviert die vier Quadrate direkt vor und hinter ihm. Die Flankenquadranten sind sicher.
+  3) "Twin-winged Treachery" -- Cleaviert die vier Quadrate zu beiden Seiten von ihm. Die Vorder- oder Rückseite von vier Quadranten sind sicher.
+  4) "Heißeisen" -- Platziert mehrere AoEs.
+  5) "Skin Flayer" -- Springt zur Wand und stößt von seiner neuen Position zurück. Platziert danach drei Wandlaser.
+# Floors 91-98
+# Floor 99 Boss
+14037: |
+  Die Arena hat Licht- und Dunkelflecken, die entweder die "leichte Rache" oder "Dunkle Rache" anwenden.
+    a) "Leichter Rache" -- Erlaubt dir, Schaden für den bevorstehenden Grief (dunkel)
+    b) "Dunkle Rache" zu verursachen. Erlaubt dir, den Verliebten Eater (hell)
+
+  Feindliche Grief und ausgetauschter Eifer werden diese beiden Mechaniker in Verbindung bringen. Beachten Sie, dass das Timing nicht immer übereinstimmt, also beobachten Sie die Zeitpunkte der Castbar.
+  1) "Klingen des ersten Lichts" -- Der Verliebte Eater wird entweder die Mitte oder die Seiten abtrennen, je nachdem, wie sie die Schwerter hält.
+  2) "Kugel des Feuers" -- Der bevorstehende Grief hält entweder vier oder zwei Feuerbälle.
+    a) Vier Feuerbälle -- AoEs werden am Ende dieser Zauberleiste unter Spielern ködieren.
+    b) Zwei Feuerbälle (Ketten) -- Alle Spieler werden am Ende der Zauberleiste pyretisch empfangen. Greifen Sie nicht an oder bewegen Sie sich.
+  3) "Grenzen der Sinne" -- Spieler werden an die Mitte der Arena gekoppelt und Kreise von AoEs erscheinen um die Mitte. Ausweichen durch den letzten Kreis AoE.
+  4) "Spinelash" -- Angenommene Linie AoE, die ein Hinzufügen erzeugt, wenn es ein Fenster trifft. Platziere zwischen den Fenstern, um nie einen Zusatz zu generieren. Ausweichen nach Beutemarkierung verschwindet.
+  5) "Drain Aether" -- Sowohl der Ehemann Grief als auch der Verliebte Eater werden dies mit unterschiedlichen Zeitpunkten bewerten. Haben Sie den gegenteiligen entsprechenden Schwächungszauber um zu überleben (Dunkel für ausgetauschten Eater, Light for Eminent Grief)
+  6) "Abyssal Blaze" -- Öffnet zwei Portale entweder vertikal oder horizontal und beschwört zweimal Kristalle. Wenn die Kristalle leuchten, explodieren sie dementsprechend als Exaflaren. Eine Ecke ist sicher.
