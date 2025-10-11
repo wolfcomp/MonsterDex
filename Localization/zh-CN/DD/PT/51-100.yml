@@ -1,0 +1,168 @@
+# Floors 51-59
+14173: |
+  "Pain Storm" -- Large roomwide conal
+  "Painful Gust" -- Large AoE
+  "Whorl of Hurt" -- Large doughnut
+14165: |
+  "适合的屏幕": 针对玩家的小AoE。如果击中一个数字就离开玩家。
+  有时使用 "Impale"
+14172: |
+  “剧毒手势”——大型前锥体AoE施加毒药剂
+14177: |
+  "Rhino Guard" -- Applies 30s evasion to self.
+  Occasionally uses "Rhino Attack"
+14169: |
+  “腐烂比例” - 如果击中时对攻击者造成致命伤害
+14167: |
+  "Earththen Auger" — — 庞大的房间270度锥形。背后或下面是安全的。
+14176: |
+  Occasionally sucks.
+  "Heavy Scrapline" -- PB AoE
+  "Heavy Toss" -- Frontal conal
+14174: |
+  "Barreling Smash" -- Telegraphed dash. Immediately follows up with one of:
+  1) "Scythe Tail" -- PB AoE
+  2) "Master of Levin" -- Large doughnut
+14168: |
+  "Bewilderment Bulb" -- Applies misdirection for 5s, then does a medium PB AoE. Interruptable.
+  "Trounce" -- Massive frontal conal
+# Floor 60 Boss
+14097: |
+  1) "Spineshot" - 前面和后面的窄锥体。
+  2) "分支Out" -- 创建四组以生成顺序爆炸的 cacti。大型cacti 在 3x3 正方形中爆炸。
+  3) "Branch Out" >> "On/Two-stone March" -- 创建cacti 模式，然后移动他们CW 或 CWW 基于种姓的步骤数量。
+  4) "紧缩针头" — — 非常快地旋转化学武器或化学武器以及垃圾邮件闪烁。
+# Floors 61-69
+14189: |
+  "纯磅" -- PB AoE
+14187: |
+  Invisible unless close or in combat. Spawns on floors 61-64 only.
+  "Body Press" -- PB AoE
+14182: |
+  "加速度" — — 贝宝石再一次点击，但更多。
+14178: |
+  “右侧/左侧的Shockwave”——大型半厅净化，然后是对方干净。
+14183: |
+  "头部按钮" -- 小型前面连线
+14188: |
+  "下水" - 中前半圈AoE
+14184: |
+  "岛上Drop" — — 繁忙的AoE
+  "罗克斯利德" — — 在其卡片上的大型十字AoE
+14181: |
+  “发火”——远直线AoE
+  "晶体刺刀"——全房极大AoE 投射率为25%。Can LoS.
+14180: |
+  "取消决点" -- 短直直线AoE
+  "最终点数" -- 投射器
+14179: |
+  "几个Thousand Needles" -- 大直线AoE.
+  让自己急忙。
+14190: |
+  "滑坡" - 中等正面连线
+14186: |
+  "石质加沙" -- Frontal conal petrife. 不是一种游戏.
+  "Body Slam" -- PB AoE
+# Floor 70 Boss
+13971: |
+  1) "受欢迎的发光器" - 一条沿中间线并生成轨道的移动行AoE。 这些猎物会爆炸，按它们出现的顺序爆炸。 这种情况发生了两次，第二行AoE覆盖了一件坚果内部的一半。
+  2) "Arduous Eye" — — 一种生成轨道的移动制服AoE。 这些猎物会爆炸，按它们出现的顺序爆炸。
+  3) "2000 Mino Swing" -- Massive PB AoE。
+  4) "Disraining Groan" -- Knockback. 石头中间。
+  5) "Octuple Swipe" -- Telegraphs 8 shipes order. 所有卡片都会被击中两次，一次在前四个集中，一次在第二个集中。
+# Floors 71-79
+14203: |
+  “沙滩”——小型前面锥形
+14194: |
+  击退和附着毒剂
+14200: |
+  双倍
+  "砂砾展示器" -- 小行 AoE
+14196: |
+  "火焰二" — — 悬浮式AoE. 可中断.
+14195: |
+  Does proximity explosion on death.
+  "Fracture" -- PB AoE
+14193: |
+  "正在成长的绝对圆圈" -- 中型PB AoE 然后是大型坚固。
+  "正在缩小的绝对性圆圈" -- 大规模坚固，然后是中型PB AOE。
+14198: |
+  “喷嘴”——连续四次前半圆酸。
+14202: |
+  "Earthquake" -- 中型PB AoE
+14191: |
+  "强力旋转" -- 中型PB AoE
+  "奖杯" -- 全屏前面锥形
+14201: |
+  "主页" -- PB AoE。
+14192: |
+  "滚滚弹战术" -- 全屋宇投射未放牧的
+  "前置战场" -- 前置战术连线
+14197: |
+  卡片上的大型穿刺或大规模穿过AoE的卡片，没有种姓。
+14199: |
+  "激素风暴" -- 繁殖的AoE
+  "Metamorphic Blast"-- 大型锥虫。
+# Floor 80 Boss
+13958: |
+  老板要么配对半个房间前面，要么背对背，取决于充电的鲸鱼与以下两种机械师中的任何一种。
+  1) "危险的纬度" -- PB AoE
+  2) "漫游环" -- Doughnut
+  3) "Stalking Static" -- 创建一个闪电球链, 墙上的最终球将发生巨大爆炸和瘫痪。
+  4) "延长死亡"-- 适用于两次减缓中的一个，开始于/靠近上风。
+    a) "死亡阴影" - Doom debuff, which requires be attributed by lighting from whiskers in the next Lair/Ring combody to remove.
+    (b) "无处运行" - 每当受折磨的人移动时会增加的调试量。 8个堆栈导致死亡。减小Lair/Ring组合和最小移动。
+14211: |
+  "虚空暴利zard" -- Baid AoE. 中断.
+  "Blizzard Trap" -- medium PB AoE.
+14206: |
+  "Valfodr" — — 四次连续的背包
+  "风暴冲锋" — 前半圆
+14209: |
+  "Claw" -- 小型前面连线
+14210: |
+  "Nox Blast" -- 中等正面锥形
+  "Maul" -- 低HP 编码. 中断.
+14207: |
+  “激情加热”-- 使用Pyretic的目标AOE。Pyretic 会造成致命伤害(不移动或攻击)。
+14213: |
+  “深色旋转”-- 中等前面锥形
+14204: |
+  "Claws and Tail" -- Small frontal line AoE, then backer of conal
+14214: |
+  "双十六进制眼睛" -- 全屏界面
+14215: |
+  "薄" -- 中等前面圆形
+  "Hellclaw" -- 小型前面锥形
+  "Tail Swipe" -- 大后面锥形
+14205: |
+  将会投射整个房间的AoEs。
+  "深海雷"——大规模的前线AoE。不可靠。
+14208: |
+  "三重/四重爆破" -- 造成3或4个伤害，然后直接前面的连线
+14216: |
+  "Dark II" -- Fast large frontal conal. Interruptable.
+  "Inner Demons" -- PB AoE
+# Floor 90 Boss
+14090: |
+  1) "背手" -- 充能闪亮的拳头并清理270度。闪光的拳头和后面总是安全的。
+  2) "背后的闪电" — — 绕开四个正方形，直接在他的前面和后面。 侧面的四重量是安全的，其中一个不会被围墙激光所覆盖。
+  3) "双派Treacher" — — 将四个方块留给他的两边。 前面或后面的四个四个四胞胎是安全的，其中一个不会被围墙激光所掩盖。
+  4) "热铁龙" — — 放置多个地面AoEs.
+  5) "皮肤Flayer" — — 跳到墙上，并从他的新位置击退。此后放置三个墙激光。
+# Floors 91-98
+# Floor 99 Boss
+14037: |
+  这个舞台上有着光明和黑暗的片段，它们既适用于“亮的场地”，也适用于“暗的场地”。
+    a) "亮点" -- 允许您伤害知名度(干)
+    b) "暗影" -- 允许您伤害戴衣服(光线)
+
+  名人悲伤和 Devoued Eator 将同时执行这两项机械师。 请注意，时间不总是匹配的，所以请观看城堡时间。
+  1) "第一灯泡" — — Deved Eater 将根据她持有剑的方式在中心或两侧扫荡。
+  2) “火球”——知名人士悲伤将会有四个或两个火球。
+    a) 四个火球 — AoEs 将在这个城堡末端在玩家下面打开。
+    (b) 两只火球(首选)——所有玩家都会在城堡末收到火焰。 不攻击或移动。
+  3) "中国的界限" — — 玩家将被链锁在舞台的中间环形，中间环形。 通过最后一个圆形AOE排出。
+  4) "Spinelash" -- 悬浮行AoE 如果击中窗口则生成一个添加。 放置在窗口之间不会生成一个添加。在捕获标记消失后的减排。
+  5) "消耗大厅" — — 知名人士悲痛和 Devyed Eater 都会用不同的时间投射。 有相反的相应调试来生存(Devouered Eater的黑暗) 知名人士的光明)
+  6) "深空烈焰" - 垂直或水平打开两个门户，召唤晶体两次。 当晶体发光时，它们会以发泄物的形式爆炸。一个角落是安全的。
