@@ -17,6 +17,8 @@
   Casts baited AoE unaggroed
 
 # Floor 30 Boss
+
+# Floor 30 Boss
 13863: |
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
   2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
@@ -39,6 +41,8 @@
   "Left/Right Tentacle" -- halfroom cleave
 
 # Floor 40 Boss
+
+# Floor 40 Boss
 13977: |
   1) "Blown Blessing" -- either a massive AoEs (yellow/sparkles) or KBs (blue/water). The boss will always do theirs first, followed by the adds in the order they jump.
   2) "Near Tide" -- massive PB AoE
@@ -56,6 +60,8 @@
 14152: |
   "Magnetic Shock" -- Suck
   "Plaincracker" -- PB AoE
+
+# Floor 50 Boss
 
 # Floor 50 Boss
 14263: |
