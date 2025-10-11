@@ -271,9 +271,9 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14194-Traverse Stone Eater:
@@ -281,9 +281,9 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
+    - Stun
+    - Heavy
+    - Slow
     - BindUnknown
     - SleepUnknown
 14200-Forgiven Unbelief:
@@ -291,9 +291,9 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14196-Traverse Diplomat Cream:
@@ -301,7 +301,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -311,7 +311,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -321,9 +320,8 @@
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14198-Forgiven Arrogance:
@@ -331,7 +329,6 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -341,9 +338,9 @@
   Threat: Caution
   Aggro: Sound
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14191-Forgiven Dissention:
@@ -351,7 +348,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -361,7 +358,7 @@
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -371,9 +368,9 @@
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14197-Forgiven Vanity:
@@ -381,7 +378,6 @@
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
-    - StunUnknown
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -391,7 +387,7 @@
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -464,7 +460,7 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
-14213-Invoked Arch Demon:
+14212-Invoked Arch Demon:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
