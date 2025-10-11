@@ -21,21 +21,3 @@
   Threat: Easy
   Aggro: Proximity
   Weakness:
-
-14183-Traverse Cliffmole:
-  InstanceContentType: DeepDungeon
-  Threat: Caution
-  Aggro: Sight
-  Weakness:
-    - Sleep
-14178-Forgiven Riot:
-  InstanceContentType: DeepDungeon
-  Threat: Dangerous
-  Aggro: Sight
-14188-Forgiven Attachment:
-  InstanceContentType: DeepDungeon
-  Threat: Easy
-  Aggro: Sound
-  Weakness:
-    - Stun
-    - Sleep
