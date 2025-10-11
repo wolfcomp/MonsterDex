@@ -2,17 +2,19 @@
 12182: |
   직선 범위 공격, 멀리 도망가거나 벽 뒤로 숨으세요
 12174: |
-  PB and Targeted circle AOEs can be stunned.
+  보스 주변 범위 공격과 범위 공격은 기절시켜 끊을 수 있습니다.
 12180: |
-  Explodes after dying, will not explode if petrified when killed.
+  처치 후 폭발합니다. 
+  석화된 상태에서 처치하면 폭발하지 않습니다.
 12183: |
-  Casts Gelid Charge, Ice Spikes buff will one shot if hit with physical damage
+  「Gelid Charge / ジェリッドチャージ」를 시전합니다.
+  아이스 스파이크가 부여된 상태에서 물리 공격 시 반사되어 즉사합니다
 12171: |
-  Telegraphed front conal AOE
+  전방 부채꼴 범위 공격
 12178: |
-  Gives stacking vuln stacks, be careful not to pull too many.
+  받피증 스택을 부여합니다. 너무 쌓이지 않게 주의하세요.
 12176: |
-  Will give a Heavy debuff followed by Tail Screw AOE. Heavy can be negated through shielding.
+  과중력 디버프 부여 후 「Tail Screw / テールスクリュー」를 시전합니다. 과중력은 실드를 통해 무효화할 수 있습니다.
 12318: |
   Flush PB AOE
 12181: |
