@@ -112,9 +112,10 @@
   4) "Prowling Death" -- Applies one of two debuffs, start under/near the boss.
     a) "Shadow of Death" -- Doom debuff that requires being hit by lightning from the whiskers in the next Lair/Ring combination to remove.
     b) "Nowhere to Run" -- Debuff that increases whenever afflicted character moves. 8 stacks results in death. Dodge the Lair/Ring combination with minimal movement.
+# Floors 81-89
 14211: |
-  「Void Blizzard」-- AoEを入れた。中断可能。
-  "Blizzard Trap" -- 中程度のPB AoE。
+  "暗い" -- AoEを入れた. 割り込み.
+  "ダークII" -- 巨大な正面円錐.
 14206: |
   "Valfodr" -- 4回連続ノックバック
   "Storm Slash" -- 正面ハーフサークル
@@ -123,6 +124,9 @@
 14210: |
   "Nox Blast" -- 中正面円錐形
   "Maul" -- 低HPの激怒。
+14212: |
+  「Void Blizzard」-- AoEを入れた。中断可能。
+  "Blizzard Trap" -- 中程度のPB AoE。
 14207: |
   「情熱の熱」--火薬を適用する標的のAoE。火薬は致命的なダメージを与える（動かない、攻撃しない）。LoSable。
 14213: |
