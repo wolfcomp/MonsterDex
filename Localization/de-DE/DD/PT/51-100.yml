@@ -112,9 +112,10 @@
   4) "Schleichender Tod" -- Anwendet einen von zwei Schwächungszaubern, starte unter/in den Boss.
     a) "Shadow of Death" – Schwächung des Schattens, der durch Blitze von den Whiskern in der nächsten Lair/Ring Kombination getroffen werden muss, um ihn zu entfernen.
     b) "Nowhere to Run" -- Debuff, der zunimmt, wenn sich ein betroffener Charakter bewegt. 8 Kumulierungen führen zum Tod. Ausweichen der Lair/Ring Kombination mit minimaler Bewegung.
+# Floors 81-89
 14211: |
-  "Void Blizzard" -- Köder AoE.
-  "Blizzard Fall" -- Mittlere PB AoE.
+  "Dunkel" -- Gebotete AoE. Interruptable.
+  "Dark II" -- Massive Frontkonal. Interrupable.
 14206: |
   "Valfodr" -- Vier aufeinander folgende Rückschläge
   "Sturm Slash" -- Frontaler Halbkreis.
@@ -123,6 +124,9 @@
 14210: |
   "Nox Blast" -- Mittelgroßer Frontkegel
   "Maul" -- Niedriger HP-Wut. Interrupable.
+14212: |
+  "Void Blizzard" -- Köder AoE.
+  "Blizzard Fall" -- Mittlere PB AoE.
 14207: |
   "Passion's Heat" -- Zielgezielter AoE, der Pyretik zufügt. Pyretische fügt tödlichen Schaden (ohne sich zu bewegen oder anzugreifen). LoSable.
 14213: |
