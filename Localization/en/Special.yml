@@ -38,3 +38,11 @@
 2566: |
   High damage autos and instant kill AoE
   "Infatuation" can only be interrupted with interject
+14262: |
+  "Malice" -- Applies Accursed Pox for 10 minutes, removing OOC and dealing small DoT damage. Interruptable/Stunnable.
+14265: |
+  "Malice" -- Applies Accursed Pox for 10 minutes, removing OOC and dealing small DoT damage. Interruptable.
+14266: |
+  "Malice" -- Applies Accursed Pox for 10 minutes, removing OOC and dealing small DoT damage. Interruptable.
+14267: |
+  Dies instantly upon entering combat.
