@@ -112,9 +112,10 @@
   4) "Prowling Death" -- Applies one of two debuffs, start under/near the boss.
     a) "Shadow of Death" -- Doom debuff that requires being hit by lightning from the whiskers in the next Lair/Ring combination to remove.
     b) "Nowhere to Run" -- Debuff that increases whenever afflicted character moves. 8 stacks results in death. Dodge the Lair/Ring combination with minimal movement.
+# Floors 81-89
 14211: |
-  "Void Blizzard" -- Baited AoE. Interruptable.
-  "Blizzard Trap" -- Medium PB AoE.
+  "Dark" -- Baited AoE. Interruptable.
+  "Dark II" -- Massive frontal conal. Interruptable.
 14206: |
   "Valfodr" -- Four consecutive knockbacks
   "Storm Slash" -- Frontal half circle
@@ -123,6 +124,9 @@
 14210: |
   "Nox Blast" -- Medium frontal conal
   "Maul" -- Low HP enrage. Interruptable.
+14212: |
+  "Void Blizzard" -- Baited AoE. Interruptable.
+  "Blizzard Trap" -- Medium PB AoE.
 14207: |
   "Passion's Heat" -- Targetted AoE that applies Pyretic. Pyretic deals lethal damage (don't move or attack). LoSable.
 14213: |
