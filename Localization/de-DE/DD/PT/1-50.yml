@@ -1,7 +1,18 @@
+# Floor 10 Boss
+13979: |
+  1) "Hedge Mazing" -- Drei große Aoes, in denen die rosa Schatten enden.
+  2) "Leafmash" - Vier große Aoes, in denen die Boss-Telegraphen liegen. Bei jedem Sprung betäuben alle Lebendigen und verursachen enormen Schaden.
+13980: |
+  Verursacht tödlichen Schaden, wenn der Boss während der Leafmash springt.
+# Floor 20 Boss
+13973: |
+  1) "Touchdown" -- Knockback in vier Aoes, die durch die leuchtenden Beine angezeigt werden.
+  2) "Seltene Wurzelpflanzung" -- Köder expandierender Stern AoE. Platziere an der Wand.
 14137: |
   Wirkt "Parasitismus" wütend auf 25% HP
 14127: |
   Casts Köder AoE unaggroed
+# Floor 30 Boss
 13863: |
   1) "Liturgie des Lichts" -- fällt rings Aoes an 4 möglichen Orten
   2) "Griff der Erlösung" -- halfroom an der Seite des leuchtenden Arms gespalten dann trennt die andere Hälfte + weitere 45 Grad vor ihm
@@ -20,6 +31,7 @@
   "Moatmaker" -- geköpft AoE, Treffer erneut, aber größer
 14145: |
   "Links-/rechter Tentacle" -- Halfroom-Spaltung
+# Floor 40 Boss
 13977: |
   1) "Blown Segen -- entweder ein massives AoEs (gelben/funkeln) oder KBs (blau/Wasser). Der Chef wird immer ihren zuerst tun, gefolgt von den Zusätzen in der Reihenfolge, in der sie springen.
   2) "Near Tide" -- massive PB AoE
@@ -37,6 +49,7 @@
 14152: |
   "Magnetischer Schock" -- Suck
   "Plaincracker" -- PB AoE
+# Floor 50 Boss
 14263: |
   1) "Flüssigkeit" -- Verwandelt die Arena in einen schnellen Sand mit ein paar sicheren Stellen und 4 Sekunden im Schnellsand führt zum Tod.
   2) "Sandpit" -- Boss ist unzielbar und macht 4 große AoE-Köder.
