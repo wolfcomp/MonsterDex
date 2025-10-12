@@ -183,6 +183,12 @@ public partial class Main : Window, IDisposable
 
     private bool EnabledContents() => _addon.ContentType.HasAnyFlag(_config.EnabledContentTypes);
 
+    public override bool DrawConditions()
+    {
+        // Block if in "The Final Verse (Quantum)"
+        return _clientState.TerritoryType != 1311;
+    }
+
     public override void Draw()
     {
         using var _ = Font.Font.RegularFont.Push();
