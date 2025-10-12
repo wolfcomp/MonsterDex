@@ -71,7 +71,7 @@ public unsafe class AddonAgent : IDisposable
                 var activePublic = _eventFramework->GetPublicContentDirector();
                 if (activePublic != null)
                 {
-                    ContentType = (ContentType)(1 << (byte)activePublic->Type + 20);
+                    ContentType = (ContentType)(1 << ((byte)activePublic->Type + 20));
                 }
                 else
                 {
