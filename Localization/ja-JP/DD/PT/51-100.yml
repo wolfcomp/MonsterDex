@@ -1,0 +1,172 @@
+# Floors 51-59
+14173: |
+  "Pain Storm" -- 大きい部屋幅の円錐
+  "痛い突風" -- 大きいAoE
+  "Whorl of Hurt" -- 大きいドーナツ。
+14165: |
+  Tail Screw": Small AoE targeting player. Leaves Player with single digit-hit point if ヒット時には、
+  uses "Impale"
+14172: |
+  「毒の霧」-- 毒を与える大きな前頭円錐青江--
+14177: |
+  「Rhino Guard」-- 30秒の回避を自分自身に適用する。
+  時折「Rhino Attack」を使用する。
+14169: |
+  「射撃スケール」---物理ダメージで攻撃者に致死ダメージを与える
+14167: |
+  「土曜日オージェ」部屋の広さは270度の円錐形で後ろかそれ以下は安全です
+14176: |
+
+  "ヘビースクラップリン" -- PB AoE
+  "ヘビートス" -- 正面側錐形
+14174: |
+  「バレリングスマッシュ」テレグラフ・ダッシュです 直ちに次のいずれかに続く:
+  1) "サイコロの尾" -- PB AoE
+  2) "Levinのマスター" -- ドーナツ大
+14168: |
+  "Bewilderment Bulb" -- 5秒の方向を変えて、中程度のPB AoEを行います。中断可能。
+  "Trounce" -- 大規模な正面円錐形
+# Floor 60 Boss
+14097: |
+  1) "Spineshot" -- Narrow cone on front and back.
+  2) "Branch Out" -- Creates four sets of cacti that explode in spawn order. Large cacti explode in a 3x3 square.
+  3) "Branch Out" >> "One/Two-stone March" -- Creates cacti pattern, then moves them CW or CWW the amount of steps based on the castbar.
+  4) "Spinning needles" -- Rotates CW or CWW and spams Spineshot very quickly.
+# Floors 61-69
+14189: |
+  「プレインポンド」-- PB AoE
+14187: |
+  Invisible unless close or in combat. Spawns on floors 61-64 only.
+  "Body Press" -- PB AoE
+14182: |
+  「加速」-- AoEを入れましたもう一度ヒットしますがもっと大きいです
+14178: |
+  「右/左」ショックウェーブ（右/左）-- 大きなハーフルームの切り裂き、次に反対側の切り裂き。
+14183: |
+  「頭の尻」-- 小さい前頭円錐形
+14188: |
+  下水の水」--中正面半円AoE
+14184: |
+  "Isle Drop" -- AoE
+  "Rockslide" -- 巨大な十字の AoE
+14181: |
+  "Hailfire" -- Far straight line AoE
+  "Crystalline Stingers" -- Roomwide AoE enrage cast at 25%. Can LoS.
+14180: |
+  "Unfinal Sting" -- 短い直線AoE
+  "Final Sting" -- 激怒キャスト
+14179: |
+  「数千本の針」-- 大直線AoE.
+  急いで授与する。
+14190: |
+  「ランドスリップ」-- 中正面円錐形
+14186: |
+  「石の視線」-- 正面の円錐形のペトリフィア。
+  「ボディスラム」 -- PB AoE
+# Floor 70 Boss
+13971: |
+  1) "Zealous Glower" -- A moving line AoE that goes down the middle and generates orbs. The orbs will explode explode as doughnuts in the order they appeared. This happens twice and the 2nd line AoE covers half of the inside of a doughnut.
+  2) "Arduous Eye" -- A moving doughnut AoE that generates orbs. The orbs will explode explode as doughnuts in the order they appeared.
+  3) "2000 Mino Swing" -- Massive PB AoE. Be near the edge.
+  4) "Disorienting Groan" -- Knockback. Stand middle.
+  5) "Octuple Swipe" -- Telegraphs 8 swipes in order. All cardinals are hit twice, once in the first four set, once in the 2nd four set.
+# Floors 71-79
+14203: |
+  「サンドブラスト」-- 小さな前頭骨
+14194: |
+  ノックバックして毒を与える。
+14200: |
+  Double Autos
+  "Gravel Shower" -- Small line AoE
+14196: |
+  「火災II」-- AoEを受け取りました 中断可能です
+14195: |
+  死の近接爆発。
+  "破片" -- PB AoE
+14193: |
+  「Absolutionの円を育てる」 -- 中規模のPB AoE、そして巨大なドーナツ。
+  「Absolutionの円を縮める」 -- 大規模なドーナツ、そして中規模のPB AoE。
+14198: |
+  「ヒールの雹」-- 4連続前頭半円AoE。
+14202: |
+  「地震」-- 中程度のPB AoE
+14191: |
+  "Mighty Spin" -- Medium PB AoE
+  "Trounce" -- 画面全体正面円錐形
+14201: |
+  「Topple」-- PB AoE.
+14192: |
+  "Rolling Barrage" -- Roomwide AoEキャスト unaggroed
+  "Forward Barrage" -- 正面<unk>
+14197: |
+  大規模なドーナツや巨大なクロスAoEは、そのカーディナルに、ないキャストバー。
+14199: |
+  "Orogenic Storm" -- Baited AoE
+  "Metamorphic Blast" -- Large conal.
+# Floor 80 Boss
+13958: |
+  Boss will pair either a halfroom front or back depending on where the charged whiskers point with either of the following two mechanics.
+  1) "Perilous Lair" -- PB AoE
+  2) "Roaring Ring" -- Doughnut
+  3) "Stalking Static" -- Creates a chain of lightning balls, the final ball at the wall will have a big explosion and paralyze.
+  4) "Prowling Death" -- Applies one of two debuffs, start under/near the boss.
+    a) "Shadow of Death" -- Doom debuff that requires being hit by lightning from the whiskers in the next Lair/Ring combination to remove.
+    b) "Nowhere to Run" -- Debuff that increases whenever afflicted character moves. 8 stacks results in death. Dodge the Lair/Ring combination with minimal movement.
+# Floors 81-89
+14211: |
+  "暗い" -- AoEを入れた. 割り込み.
+  "ダークII" -- 巨大な正面円錐.
+14206: |
+  "Valfodr" -- 4回連続ノックバック
+  "Storm Slash" -- 正面ハーフサークル
+14209: |
+  「かぎつめ」-- 小さな前頭円錐形
+14210: |
+  "Nox Blast" -- 中正面円錐形
+  "Maul" -- 低HPの激怒。
+14212: |
+  「Void Blizzard」-- AoEを入れた。中断可能。
+  "Blizzard Trap" -- 中程度のPB AoE。
+14207: |
+  「情熱の熱」--火薬を適用する標的のAoE。火薬は致命的なダメージを与える（動かない、攻撃しない）。LoSable。
+14213: |
+  「アビサルスウィング」-- 中正面円錐形
+14204: |
+  「爪と尾」 -- 小さな前頭線青江、そして陰嚢の後ろに
+14214: |
+  「ダブルヘックスアイ」-- 広い視線で
+14215: |
+  "Thunder" -- Medium frontal circle AoE
+  "Hellclaw" -- Small frontal conal
+  "Tail Swipe" -- Large back conal
+14205: |
+
+  "Abyssal Ray" -- 大規模な正面線AoE. Not Losable.
+14208: |
+  「トリプル/クワドラプルブロー」 -- 損傷の3、4例、その後直前円錐形
+14216: |
+  「ダークII」-- 高速大型正面円錐。中断可能。
+  「インナー・デモ」 -- PB AoE
+# Floor 90 Boss
+14090: |
+  1) "Backhand" -- Charges a glowing fist and does a 270 degree cleave. The glowing fist side and behind him is always safe.
+  2) "Fore-hind Folly" -- Cleaves the four squares directly in front and behind of him. The flank quadrants are safe. One of these four will not be covered by the wall lasers.
+  3) "Twin-winged Treachery" -- Cleaves the four squares to both sides of him. The front or behind four quadrants are safe. One of these four will not be covered by the wall lasers.
+  4) "Hot Iron" -- Places multiple ground AoEs.
+  5) "Skin Flayer" -- Jumps to wall and knockbacks from his new position. Places three wall lasers afterwards.
+# Floors 91-98
+# Floor 99 Boss
+14037: |
+  The arena has patches of light and dark, which apply either "Light Vengeance" or "Dark Vengeance".
+    a) "Light Vengeance" -- Allows you to damage Eminent Grief (dark)
+    b) "Dark Vengeance" -- Allows you to damage Devoured Eater (light)
+
+  Eminent Grief and Devouered Eater will perform these two mechanics in conjunction. NOTE that the timing does not always match, so watch the castbar timings.
+  1) "Blades of First Light" -- Devoured Eater will cleave either down the center or the sides, depending on how she holds the swords.
+  2) "Ball of Fire" -- Eminent Grief will either hold four or two fire balls.
+    a) Four Fireballs -- AoEs will bait under players at the end of this castbar.
+    b) Two Fireballs (chains) -- All players will receive pyretic at the end of the castbar. Do not attack or move.
+  3) "Bounds of Sin" -- Players will be chained to the middle of the arena, and circle AoEs will appear around the middle. Dodge out through the last circle AoE.
+  4) "Spinelash" -- Baited line AoE that spawns an add if it hits a window. Place in between windows to never spawn an add. Dodge after prey marker disappears.
+  5) "Drain Aether" -- Both Eminent Grief and Devoured Eater will cast this with different timings. Have the opposite corresponding debuff to survive (Dark for Devouered Eater, Light for Eminent Grief)
+  6) "Abyssal Blaze" -- Opens two portals either vertically or horizontally and summons crystals twice. When the crystals glow, they will explode as exaflares accordingly. One of the corners will be safe.

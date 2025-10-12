@@ -1,0 +1,172 @@
+# Floors 51-59
+14173: |
+  "Tempête de douleur" -- Grand conal de pièce
+  "Garde douloureuse" -- Grande zone
+  "Tourbillon de blessure" -- Grand écrous
+14165: |
+  "Cri de queue ": Petit joueur ciblant la zone de zone. Quitte le joueur avec un seul chiffre s'il est touché.
+  Utilise occasionnellement "Impale"
+14172: |
+  « Brume empoisonnée» -- Grand cône frontal de zone de zone qui inflige du poison
+14177: |
+  "Garde de Rhino" -- Applique 30 secondes d'évasion à soi.
+  Utilise occasionnellement "Attaque Rhino"
+14169: |
+  « Echelles fumantes » - Inflige des dégâts mortels aux attaquants s'ils sont touchés avec des dégâts physiques
+14167: |
+  "Earthen Auger" - Conal de 270 degrés dans une pièce massive. Derrière ou sous est sûr.
+14176: |
+  Occasionnellement suck.
+  « Crabe lourde » -- PB AoE
+  « Lancer lourd » -- Conal frontal
+14174: |
+  "Barreling Smash" -- Tableau de bord télégraphié. Suivi immédiat avec l'un des suivants :
+  1) "Scythe Tail" -- PB AoE
+  2) "Maître du Levin" -- Grand écrous
+14168: |
+  « Bulbe de désenchantement » -- Applique une mauvaise direction pendant 5 secondes, puis fait une AoE PB moyenne. Interruptable.
+  « Trounce» -- Conal frontal massif
+# Floor 60 Boss
+14097: |
+  1) « Spineshot » -- cône étroit à l'avant et à l'arrière.
+  2) « Branche » -- Crée quatre ensembles de cactus qui explosent dans l'ordre d'apparition. Les grands cactus explosent dans un carré de 3x3.
+  3) "Branche Sortie" >> "One/Two-stone March" -- Crée un motif de cacti, puis les déplace CW ou CWW le nombre de pas basés sur le château.
+  4) "Pivoter les aiguilles" -- Tourne CW ou CWW et spams Spams Spineshot très rapidement.
+# Floors 61-69
+14189: |
+  PB AoE
+14187: |
+  Invisible à moins d'être proche ou en combat. Apparait uniquement sur les étages 61-64.
+  « Presse corporelle» -- PB AoE
+14182: |
+  "Accélérerate" -- AoE Baited AoE. Vit, mais plus grand.
+14178: |
+  « Onde foudroyante droite / gauche » -- Grande fente de demi-pièce, suivie de la fente de l'autre côté.
+14183: |
+  "Bouton de tête" -- Petit conal frontal
+14188: |
+  "Eau d'égout" -- Moyenne demi-cercle frontal AoE
+14184: |
+  "Ile Drop" -- AoE
+  "Glissement de Rock" -- Croix massive sur ses cardinaux
+14181: |
+  « Feu de grêle » -- Ligne droite de zone AoE
+  « Piqueurs cristallisés » -- Enrage de zone de zone à 25%. Can LoS.
+14180: |
+  Dard "Unfinal" -- Courte ligne droite AoE
+  "Rage finale" -- Diffusion de rage
+14179: |
+  "Plusieurs Mille Needles" -- Grande ligne droite AoE.
+  se laisse empresser.
+14190: |
+  "Landslip" -- Conal frontal moyen
+14186: |
+  « Regard de pierre » -- Petrify conal frontal. Pas un regard.
+  « Chelem du corps » -- PB AoE
+# Floor 70 Boss
+13971: |
+  1) "Zelous Glower" -- Une ligne en mouvement AoE qui descend au milieu et génère des orbes. Les orbes exploseront sous forme de pâtes dans l'ordre où elles sont apparues. Cela se produit deux fois et la 2ème ligne AoE couvre la moitié de l'intérieur d'une noix.
+  2) "Œil ardu" -- Un AoE à la noix qui génère des orbes. Les orbes exploseront sous forme de pâtes dans l'ordre où elles sont apparues.
+  3) "2000 Mino Swing" -- Massive PB AoE. Soyez près du bord.
+  4) "Désenchantement du Groan" -- Knockback. Stand middle.
+  5) "Balayage d'octuple" -- Télégraphes 8 balayages dans l'ordre. Tous les cardinaux sont frappés deux fois, une fois dans les quatre premières séries, une fois dans le 2ème set de quatre.
+# Floors 71-79
+14203: |
+  « Sable blast » -- Petit conal frontal
+14194: |
+  Coup assommé et inflige du poison
+14200: |
+  Double Autos
+  "Gravel Shower" -- Petite ligne AoE
+14196: |
+  "Fire II" -- AoE appâtée. Interruptable.
+14195: |
+  Est-ce que la proximité explose à la mort.
+  "Fracture" -- PB AoE
+14193: |
+  "Growing Circles of Absolution" -- Moyen PB AoE puis énorme noix
+  "Shrinking Circles of Absolution" -- PB AoE massif, puis moyen PB AoE.
+14198: |
+  « Grêle des talons » -- Quatre demi-cercles intermédiaires intermédiaires consécutifs consécutifs.
+14202: |
+  format@@0 "Earthquake" -- Medium PB AoE
+14191: |
+  "Puissant tour" -- Moyen PB AoE
+  "Trounce" -- Conal frontal large écran
+14201: |
+  "Topple" -- PB AoE.
+14192: |
+  "Rouler le Barrage" -- Pièce de zone de zone lancée à
+  "Barrage avant" -- Conal frontal
+14197: |
+  De grandes pâtes ou de grandes croix en AoE sur ses cardinaux, pas de château.
+14199: |
+  « Orage orogénique » -- Août
+  « Explosion métamorphique » -- Grand conal.
+# Floor 80 Boss
+13958: |
+  Le patron jumelera soit une moitié avant ou une partie arrière en fonction de l'endroit où les whiskers chargés pointent avec l'un des deux mécaniques suivants.
+  1) "Anneau périlleux" -- PB AoE
+  2) "Anneau rugissant" -- Noyer
+  3) "Stalking Static" -- Crée une chaîne de boules foudroyantes, la boule finale au mur aura une grande explosion et paralysante.
+  4) "Prowling Death" -- Applique l'un des deux affaiblis, commencez sous/près du patron.
+    a) "Ombre de la mort" -- L'affaiblissement fatal qui nécessite d'être touché par la foudre des foudres dans la prochaine combinaison de repère/anneau à retirer.
+    b) "Nulle part à courir" -- Affaiblissement qui augmente à chaque fois que le personnage touché se déplace. 8 piles entraînent la mort. Esquivez la combinaison Anair/Anneau avec un mouvement minimal.
+# Floors 81-89
+14211: |
+  "Dark" -- AoE à l'appât. Interruptable.
+  "Sombre II" -- Conal frontal massif. Interruptable.
+14206: |
+  « Valfodr» -- Quatre retours consécutifs
+  « Taillade de tempête» -- demi-cercle frontal
+14209: |
+  « Griffe » -- Petit conal frontal
+14210: |
+  « Nox Blast» -- Conal frontal moyen
+  « Maul» -- Enrage HP faible. Interruptable.
+14212: |
+  « Blizzard du Néant» -- AoE abîmée. Interruptable
+  « Piège Blizzard» -- AoE PB moyenne.
+14207: |
+  « Chaleur de la passion » -- Zone ciblée qui applique Pyrétique. La pyrétique inflige des dégâts mortels (ne pas se déplacer ou attaquer). LoSable.
+14213: |
+  "Abyssal Swing" -- Conal frontal moyen
+14204: |
+  « Griffe et queue » -- Petite ligne frontale AoE, puis derrière conal
+14214: |
+  "Double Hex Eye" -- Regard large
+14215: |
+  "Thunder" -- Moyen cercle frontal AoE
+  "Griffe infernale" -- Petit conal frontal
+  "Balayage de queue" -- Grand cône arrière
+14205: |
+  Lancez des AoEs dans toute la pièce.
+  « Rayon Abyssal » -- Ligne frontale massive AoE. PAS Losable.
+14208: |
+  "Coup triple/quadruple" -- Inflige 3 ou 4 instances de dégâts, puis un conal frontal immédiat
+14216: |
+  "Sombre II" -- Grande face frontale rapide. Interruptable.
+  "Démons Intérieurs" -- PB AoE
+# Floor 90 Boss
+14090: |
+  1) "Main arrière" -- Charge un poing brillant et fait une fente de 270 degrés. Le côté du poing brillant et derrière lui est toujours sûr.
+  2) "Fore-hind Folly" -- Tresse les quatre carrés directement devant et derrière de lui. Les quadrants du flanc sont sûrs et ne sont pas couverts par les lasers muraux.
+  3) "Trahison à ailes doubles" -- Trappe les quatre carrés aux deux côtés de lui. Le devant ou derrière les quatre quadrants sont sûrs, l'un de ces quatre ne sera pas couvert par les lasers muraux.
+  4) "Fer chaud" -- Place plusieurs zones de terre.
+  5) "Écorcheur de peau" -- Saute au mur et recule de sa nouvelle position. Place trois lasers muraux par la suite.
+# Floors 91-98
+# Floor 99 Boss
+14037: |
+  The arena has patches of light and dark, which apply either "Light Vengeance" or "Dark Vengeance".
+    a) "Light Vengeance" -- Allows you to damage Eminent Grief (dark)
+    b) "Dark Vengeance" -- Allows you to damage Devoured Eater (light)
+
+  Eminent Grief and Devouered Eater will perform these two mechanics in conjunction. NOTE that the timing does not always match, so watch the castbar timings.
+  1) "Blades of First Light" -- Devoured Eater will cleave either down the center or the sides, depending on how she holds the swords.
+  2) "Ball of Fire" -- Eminent Grief will either hold four or two fire balls.
+    a) Four Fireballs -- AoEs will bait under players at the end of this castbar.
+    b) Two Fireballs (chains) -- All players will receive pyretic at the end of the castbar. Do not attack or move.
+  3) "Bounds of Sin" -- Players will be chained to the middle of the arena, and circle AoEs will appear around the middle. Dodge out through the last circle AoE.
+  4) "Spinelash" -- Baited line AoE that spawns an add if it hits a window. Place in between windows to never spawn an add. Dodge after prey marker disappears.
+  5) "Drain Aether" -- Both Eminent Grief and Devoured Eater will cast this with different timings. Have the opposite corresponding debuff to survive (Dark for Devouered Eater, Light for Eminent Grief)
+  6) "Abyssal Blaze" -- Opens two portals either vertically or horizontally and summons crystals twice. When the crystals glow, they will explode as exaflares accordingly. One of the corners will be safe.
