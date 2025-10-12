@@ -272,10 +272,10 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - Slow
-    - BindUnknown
-    - SleepUnknown
+    - Bind
+    - Sleep
 14194-Traverse Stone Eater:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -284,7 +284,7 @@
     - Stun
     - Heavy
     - Slow
-    - BindUnknown
+    - Bind
     - SleepUnknown
 14200-Forgiven Unbelief:
   InstanceContentType: DeepDungeon
@@ -292,28 +292,28 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - Slow
-    - BindUnknown
-    - SleepUnknown
+    - Bind
+    - Sleep
 14196-Traverse Diplomat Cream:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
+    - Bind
     - SleepUnknown
 14195-Traverse Huldu:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
+    - Bind
     - SleepUnknown
 14193-Forgiven Spite:
   InstanceContentType: DeepDungeon
@@ -323,16 +323,14 @@
     - HeavyUnknown
     - Slow
     - BindUnknown
-    - SleepUnknown
 14198-Forgiven Arrogance:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Bind
 14202-Traverse Worm:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -342,21 +340,21 @@
     - HeavyUnknown
     - Slow
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14191-Forgiven Dissention:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
+    - Bind
     - SleepUnknown
 14201-Traverse Amemet:
   InstanceContentType: DeepDungeon
   Threat: Caution
-  Aggro: Proximity
+  Aggro: Sight
   Weakness:
     - Stun
     - HeavyUnknown
@@ -378,9 +376,9 @@
   Threat: Dangerous
   Aggro: Proximity
   Weakness:
-    - HeavyUnknown
+    - Heavy
     - SlowUnknown
-    - BindUnknown
+    - Bind
     - SleepUnknown
 14199-Forgiven Slander:
   InstanceContentType: DeepDungeon
@@ -394,7 +392,7 @@
     - SleepUnknown
 
 # Floor 80 Boss
-13958-Forgiven Profanity:
+13968-Forgiven Profanity:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Boss
@@ -419,7 +417,6 @@
     - Heavy
     - Slow
     - Bind
-    - SleepUnknown
 14209-Invoked Gremlin:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -427,9 +424,9 @@
   Weakness:
     - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14210-Traverse Gnoll:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -437,9 +434,9 @@
   Weakness:
     - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14212-Invoked Satana:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -449,7 +446,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14207-Invoked Succubus:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -465,7 +462,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -475,9 +472,9 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14214-Invoked Caym:
@@ -485,7 +482,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -495,7 +492,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -505,7 +502,7 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -516,7 +513,7 @@
   Aggro: Sight
   Weakness:
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14216-Invoked Troubadour:
@@ -524,7 +521,7 @@
   Threat: Caution
   Aggro: Proximity
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -534,9 +531,127 @@
 14090-Malacoda:
   InstanceContentType: DeepDungeon
   Threat: Caution
-  Aggro: Boss
+  Aggro: Boss 
 
 # Floors 91-98
+14219-Invoked Dreamer:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+14227-Invoked Poppet:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14224-Traverse Ya-te-veo:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sound
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14223-Traverse Triffid:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sound
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14220-Invoked Bachelor:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14225-Invoked Dahak:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14228-Traverse Malevolence:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14217-Traverse Warg:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14229-Invoked Archaeodemon:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14218-Invoked Gusion:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14226-Invoked Acheron:
+  InstanceContentType: DeepDungeon
+  Threat: Dangerous
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14221-Invoked Destrudo:
+  InstanceContentType: DeepDungeon
+  Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # Floor 99 Boss
 14037-Eminent Grief:
