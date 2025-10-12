@@ -8,6 +8,7 @@
 13973: |
   1) "Touchdown" -- Knockback into four AoEs indicated by the glowing legs.
   2) "Rare Root Planting" -- Baits expanding star AoE. Place at the wall.
+# Floors 21-29
 14137: |
   Casts "Parasitism" enrage at 25% HP
 14127: |
@@ -17,6 +18,7 @@
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
   2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
   3) "Divine Favor" -- 8 baited chasing AoEs
+# Floors 31-39
 14151: |
   "Gallop" -- Far KB, can LoS
   "Nicker" -- PB AoE
@@ -28,7 +30,7 @@
   "Wooden Horse" -- large roomwide conal
 14139: |
   "Hand of Judgment" -- knockback at melee range
-  "Moatmaker" -- baited AoE, hits again but larger
+  "Moatmaker" -- Baited AoE. Hits again but larger.
 14145: |
   "Left/Right Tentacle" -- halfroom cleave
 # Floor 40 Boss
@@ -39,6 +41,7 @@
   4) Forgiven Adulations (adds) will eventually cast "Self Destruct" enrage
 13978: |
   "Self Destruct" -- enrage cast
+# Floors 41-49
 14153: |
   Incredibly dangerous autoattack damage
   "Tortoise Stomp" -- PB AoE

@@ -8,6 +8,7 @@
 13973: |
   1) "Touchdown" -- Knockback in vier Aoes, die durch die leuchtenden Beine angezeigt werden.
   2) "Seltene Wurzelpflanzung" -- Köder expandierender Stern AoE. Platziere an der Wand.
+# Floors 21-29
 14137: |
   Wirkt "Parasitismus" wütend auf 25% HP
 14127: |
@@ -17,6 +18,7 @@
   1) "Liturgie des Lichts" -- fällt rings Aoes an 4 möglichen Orten
   2) "Griff der Erlösung" -- halfroom an der Seite des leuchtenden Arms gespalten dann trennt die andere Hälfte + weitere 45 Grad vor ihm
   3) "Göttlicher Favorit" -- 8 Köder Jagd nach Aoes
+# Floors 31-39
 14151: |
   "Gallop" -- Ferner KB, kann LoS
   "Nicker" -- PB AoE
@@ -28,7 +30,7 @@
   "Holzpferde" -- große raumweite Konale
 14139: |
   "Hand of Judgment" -- Rückschlag im Nahkampfbereich
-  "Moatmaker" -- geköpft AoE, Treffer erneut, aber größer
+  "Moatmaker" -- Köder AoE. Treffer wieder, aber größer.
 14145: |
   "Links-/rechter Tentacle" -- Halfroom-Spaltung
 # Floor 40 Boss
@@ -39,6 +41,7 @@
   4) Vergebliche Erwachsene (Hinzufügen) werden eventuell den Wut "Selbstzerstörung" wirken
 13978: |
   "Selbstzerstörung" -- Wut gewirkt
+# Floors 41-49
 14153: |
   Unglaublich gefährlicher Autoangriff Schaden
   "Tortoise Stomp" -- PB AoE

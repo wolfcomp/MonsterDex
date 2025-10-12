@@ -8,6 +8,7 @@
 13973: |
   1) "Touchdown" -- 用闪光腿返回四个AoE。
   2) "稀有根树木种植" - 在墙上放置一颗正在扩充的恒星。
+# Floors 21-29
 14137: |
   寄生虫在25% HP
 14127: |
@@ -17,6 +18,7 @@
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
   2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
   3) "Divine Favor" -- 8 baited chasing AoEs
+# Floors 31-39
 14151: |
   "Gallop" -- 远端KB, can LoS
   "昵称" -- PB AoE
@@ -27,8 +29,8 @@
 14144: |
   "木马" -- 大型房间锥形
 14139: |
-  "Hand of Judgment" -- knockback at melee range
-  "Moatmaker" -- baited AoE, hits again but larger
+  “判决之手”-- 回击近战范围
+  “摩托车手”-- 再次命中但更多。
 14145: |
   "左/右端" -- 半房间净化
 # Floor 40 Boss
@@ -39,6 +41,7 @@
   4) Forgiven Adulations (adds) will eventually cast "Self Destruct" enrage
 13978: |
   "自毁" -- 投射声
+# Floors 41-49
 14153: |
   不可信的自动攻击伤害
   "眩晕" -- PB AoE

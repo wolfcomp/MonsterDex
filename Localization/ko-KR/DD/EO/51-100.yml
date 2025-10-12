@@ -2,130 +2,137 @@
 12182: |
   직선 범위 공격, 멀리 도망가거나 벽 뒤로 숨으세요
 12174: |
-  PB and Targeted circle AOEs can be stunned.
+  보스 주변 범위 공격과 범위 공격은 기절시켜 끊을 수 있습니다.
 12180: |
-  Explodes after dying, will not explode if petrified when killed.
+  처치 후 폭발합니다. 
+  석화된 상태에서 처치하면 폭발하지 않습니다.
 12183: |
-  Casts Gelid Charge, Ice Spikes buff will one shot if hit with physical damage
+  「Gelid Charge / ジェリッドチャージ」를 시전합니다.
+  아이스 스파이크가 부여된 상태에서 물리 공격 시 반사되어 즉사합니다
 12171: |
-  Telegraphed front conal AOE
+  전방 부채꼴 범위 공격
 12178: |
-  Gives stacking vuln stacks, be careful not to pull too many.
+  받피증 스택을 부여합니다. 너무 쌓이지 않게 주의하세요.
 12176: |
-  Will give a Heavy debuff followed by Tail Screw AOE. Heavy can be negated through shielding.
+  과중력 디버프 부여 후 「Tail Screw / テールスクリュー」를 시전합니다. 과중력은 실드를 통해 무효화할 수 있습니다.
 12318: |
-  Flush PB AOE
+  「Flush / 大渦潮」: 자신 중심의 범위 공격을 사용
 12181: |
-  Will cast 1000 Spines, PB AOE
+  보스 주변 범위 공격을 시전
 12172: |
-  Pulls in with Sucker then PB AOE, knockback resist or walk away immediately after pull in.
+  끌어당긴 후 몬스터를 중심으로 한 범위 공격을 시전합니다. 
+  끌려간 직후에는 넉백 저항 스킬을 사용하거나 바로 멀리 이동하세요.
 12179: |
-  "Sewer Water" -- Half circle cleave followed immediately by other half. Must move immediately after telegraph disappears.
+  「Sewer Water / スーウェッジウォーター」：반원 형태의 베기 공격을 시전한 뒤 반대쪽도 공격합니다. 범위 표시가 사라지자마자 바로 이동해야 합니다.
 12177: |
-  Useless. Really useless.
+  쓸모없습니다.
 12173: |
-  Jumps to player and does half room knockback to everyone not targeted.
-  "Electric Whorl" -- Doughnut
-  "Expulsion" -- PB AOE
+  플레이어에게 점프한 뒤, 대상이 아닌 모든 플레이어를 방 절반 거리만큼 넉백시킵니다. 
+  「Electric Whorl / エレクトリックワーラル」：도넛형 범위 공격을 시전합니다. 
+  「Expulsion / エクスパルション」：자신 중심의 범위 공격을 시전합니다
 12175: |
-  Crab Dribble fast cast rear conal AOE triggered by being behind. Can be outranged.
+  「Crab Dribble」후방에 있을 때 발동하는 빠른 시전의 후방 부채꼴 범위 공격을 사용합니다. 
+  사거리 밖으로 벗어나 피할 수 있습니다.
 #EO boss floor 60
 12267: |
-  "Octuple Swipe" -- 8 telegraphs, either NSEW twice, or NSEW then WESN.
-  "Disorienting Groan" -- Knockback, be centered in arena or use knockback resist during cast.
-  "Bullish Swipe" -- Frontal cleave.
-  "Bullish Swing" -- Large PB AOE.
-  "Thundercall" -- Summons blue orbs followed by Octuple Swipe telegraphs. Orbs will detonate in small PB AOEs with first Swipe cleave.
+  「Octuple Swipe / オクタプルスワイプ」：8회에 걸친 공격을 시전하며, 패턴은 북-남-동-서 2회 반복 또는 북-남-동-서 후 서-동-남-북중 하나입니다.
+  「Disorienting Groan / 雄叫び」：넉백 공격을 시전하므로 시전 중에는 중앙에 서있거나 넉백 저항을 사용하세요.
+  「Bullish Swipe / ブルスワイプ」：전방 베기 공격을 시전합니다.
+  「Bullish Swing / ブルスイング」：큰 범위의 자신 중심 범위 공격을 시전합니다.
+  「Thundercall / 招雷」：푸른 구체를 소환한 뒤 8회 범위 공격을 이어서 시전합니다. 구체는 첫 번째 「Swipe / スワイプ」공격 시, 작은 자신 중심 범위공격으로 폭발합니다.
 #EO floors 61-69
 12184: |
-  Inflicts fast stacking poison debuff, do not pull too many at once.
+  중첩되는 독 디버프를 빠르게 부여하므로 너무 많이 데려오진 마세요.
 12191: |
-  Has telegraphed front conal and PB AOE.
+  전방 부채꼴 범위 공격과 자신 중심 범위 공격을 시전합니다.
 12189: |
-  AOE will give evasion to other enemies it hits, try to kill away from other enemies.
+  범위 공격에 다른 적이 맞았을 때 그들에게 회피 버프를 부여하므로 다른 적들과 떨어진 곳에서 처치하세요.
 12187: |
-  Has a telegraphed narrow front conal AOE.
+  전방 부채꼴 범위 공격을 시전합니다.
 12186: |
-  Fast untelegraphed conal back cleave if player is behind, PB AOE on death with a short duration vuln stack.
+  플레이어가 후방에 있을 경우 후방 부채꼴 범위 공격을 빠르게 시전합니다 
+  처치 시 짧은 시간 동안 받피증 디버프를 부여하는 자신 중심 광역 공격을 사용합니다.
 12185: |
-  "Smouldering Scales" -- buff that will 1 shot if hit by physical damage
+  「Smouldering Scales / 炎の鱗」：물리 공격을 받을 경우 즉사시키는 버프를 자신에게 겁니다
 12194: |
-  Untelegraphed Claw/Tail swipe swipe conal AOE. Watch animation carefully.
+  「Claw/Tail swipe -- クロー/テールスワイプ 」: 시전바 없이 스킬을 부채꼴 범위공격을 시전합니다. 모션을 주의 깊게 관찰하세요.
 12195: |
-  Assassinates if below 20% HP
+  HP가 20% 이하일 경우 즉사당합니다
 12190: |
-  Front conal gaze attack and PB AOE.
+  전방으로 시선형 공격과 자신 중심 범위 공격을 시전합니다.
 12196: |
-  Untelegraphed knockback PB AOE, caution when pulling with certain enemies.
+  범위를 보여주지 않는 넉백형 자신 중심 범위 공격을 시전합니다 
+  다른 적과 함께 끌려올 수 있으니 주의하세요.
 12188: |
-  Telegraphed targeted AOE
+  지정 대상에게 범위 공격을 시전합니다
 12193: |
-  Will cast "Electric Cachexia" (Donut AOE) when players aren't in melee range. Can be ranged pulled.
+  플레이어가 근접 범위에 없을 경우「Electric Cachexia / 雷放射」도넛형 범위 공격을 시전합니다. 원거리에서 풀링할 수 있습니다.
 12192: |
-  Instant pull in followed by fast cast PB AOE "Body Press." Pay attention for pull in sound/animation.
+  끌어당긴 후 즉시 자신 중심 범위공격 「Body Press / ボディプレス」를 사용합니다.
+  끌어당기는 소리나 모션을 잘 관찰하세요.
 #EO floor 70
 12246: |
-  "Steel Claw" -- tankbuster, sort of.
-  "Ferocity" -- distance tether followed by Preternatural Turn.
-  "Preternatural Turn" -- Glowing move in (Donut) -- No glow move out (PB AOE)
-  "Roar" -- Multiple small targeted AOEs and 4 medium AOEs- spawns crystals used in following mechanic
-  "Preternatural Turn 2" -- will use crystals in either wide outward cones from crystals with large PB AOE or large PB AOEs from crystals with donut AOE.
+  「Steel Claw / 鉄爪斬」：일종의 탱크버스터 공격을 사용합니다. 
+  「Ferocity / 強襲」：거리 기반의 끈 연결 후 「Preternatural Turn / 魔科学旋爪」을 이어서 시전합니다.
+  「Preternatural Turn / 魔科学旋爪」： 몸이 빛나면 안쪽(도넛형 범위 공격)으로 이동하세요. 빛나지 않으면 바깥쪽으로 이동하세요. (자신 중심 범위 공격) 
+  「Roar / 咆哮」：작은 범위 공격 여러 개와 범위 공격 네 개를 시전하며 이후 기믹에 사용되는 크리스탈들이 생성됩니다.
+  「Preternatural Turn 2 / 魔科学旋爪2」： 크리스탈에서 광범위한 부채꼴 공격과 함께 큰 범위의 자신 중심 범위 공격을 사용하거나, 혹은 크리스탈에서 큰 범위의 자신 중심 범위 공격과 함께 도넛형 범위 공격을 사용합니다.
 #EO floors 71-79
 12197: |
-  "Slowcall" -- late telegraph front conal, gives a very bad slow effect
+  「Slowcall / スロウコール」：전방 부채꼴 공격을 발동 직전에 범위를 보여주며 사용합니다. 피격 시 둔화 효과를 부여합니다
 12199: |
-  Triple targeted knockbacks, wedge yourself into a corner if possible.
-  "Innocence" -- targeted circle AOE
+  3회의 넉백 공격을 시전하므로 가능하다면 구석 쪽에 있으세요. 
+  「Innocence / イノセンス」범위 공격을 사용합니다
 12202: |
   「 キリングバウ / The Killing Paw」 -- 전방 부채꼴 범위 공격을 시전하고 전조 없이 다시 전방 부채꼴 범위 공격
   기본적으로 후면으로 피하는걸 추천
 12207: |
-  "Spark" -- untelegraphed doughnut
-  "Scythe Tail" -- no cast bar PB AOE, it will crouch and stop auto attacking or changing direction.
-  Moving side to side will allow you to easily tell when Scythe Tail is casting.
+  「Spark / スパーク」：전조 없는 도넛형 공격을 시전합니다.
+  「Scythe Tail / サイズテール」：시전바가 없는 자신 중심 범위공격을 시전합니다. 보스가 웅크리며 평타나 방향 전환을 멈출 때 시전이 시작됩니다.
+  좌우로 움직여보면 시전 중인지 쉽게 구분할 수 있습니다.
 12201: |
-  Gives a mild bleed debuff and buffs itself after a short period.
+  출혈 디버프를 부여하고 스스로에게 버프를 겁니다.
 12209: |
-  "Freefall" -- randomly targetd medium circle AOE
-  "Winds of Winter" -- large AOE after 2 freefalls, must LoS or stun
+  「Freefall / フリーフォール」：무작위 대상을 향해 원형 범위공격을 시전합니다. 
+  「Winds of Winter / ウィンターウィンド」：2번의「Freefall」이후 시전되는 대형 범위 공격으로 벽 뒤로 숨거나 기절시켜 막아야 합니다
 12208: |
-  "Blistering Roar" -- Wide line AOE, can not be LOSed, MUST MOVE BEHIND.
+  「Blistering Roar / ブリスターロア」：넓게 직선형 범위공격을 시전하며, 벽 뒤로 피할 수 없습니다.반드시 보스의 뒤로 이동해야 합니다.
 12204: |
-  Randomly targeted Charge attack followed by fast cast PB AOE "Rear"
-  DO NOT STUN AS REAR CAN BE STORED AND INSTANT CAST AFTER STUN WEARS OFF
+  무작위 대상을 향해 돌진 공격을 시전한 후 자신 중심 범위공격 「Rear / リアー」를 이어서 빠르게 시전합니다. 
+  절대 기절시키지 마세요.「Rear」는 시전이 저장되어 기절이 해제된 직후 즉시 시전될 수 있습니다. 또한, 벽 뒤에 숨어서 피하는 것은 효과가 없습니다
 12205: |
-  Assassinates player if below 20% HP
+  HP가 20% 이하일 경우 즉사당합니다
 12198: |
-  "Chirp" -- untelegraphed PB AOE that causes a long duration Sleep
-  "Tornado" -- randomly targeted circle AOE, cast on player with Sleep first.
+  「Chirp / チャープ」：전조 없이 자신 중심 범위공격을 시전하며 긴 지속 시간의 수면 효과를 부여합니다.
+  「Tornado / トルネド」：무작위 대상을 향해 원형 범위 공격을 시전하며, 수면 상태가 된 플레이어에게 우선적으로 시전됩니다.
 12206: |
-  "Eye of the Fierce" -- 360 degree gaze mechanic, causes Confusion
-  "Revelation" -- untelegraphed AOE cast on Confused players
+  「Eye of the Fierce / 猛禽の眼」：360도 전방위 시선 공격을 시전하며 피격 시 혼란 상태 이상에 걸립니다.
+  「Revelation / リヴァレーション」：혼란 상태에 걸린 플레이어를 대상으로 전조 없이 범위공격을 시전합니다
 12200: |
-  "Wide Blaster" -- Huge wide frontal cone targeted at random player
-  "Tail Swing" -- Huge rear cone if player is behind
+  「Wide Blaster / ワイドブラスター」：무작위 플레이어를 대상으로 넓은 범위의 전방 부채꼴 공격을 시전합니다.
+  「Tail Swing / テールスイング」：플레이어가 뒤에 있을 경우 거대한 범위의 후방 부채꼴 공격을 시전합니다
 12203: |
-  "Chest Thump" -- Huge out of combat AOE after using "Ripe Banana"
-  "Stool Pelt" -- randomly targetd circle AOE
-  Pull when safe to prevent getting caught by Chest Thump
+  「Chest Thump / ドラミング」：전투 중이 아닐 때 「Ripe Banana / バナナ喰い」스킬을 사용하고 이어서 거대한 범위 공격을 시전합니다.
+  「Stool Pelt / 岩石投げ」：무작위 대상을 향해 원형 범위 공격을 시전합니다. 
+  「Chest Thump / ドラミング」에 휘말리지 않도록 안전할 때 보스를 풀링하세요
 #EO boss floor 80
 12247: |
-  "Resonance" -- Wide conal tankbuster.
-  "Rightward/Leftward Nerve Gas" -- Diagonal halfroom cleaves, front of boss is always safe.
-  "Centralized Nerve Gas" -- Wide frontal conal cleave.
-  "Nerve Gas Ring" -- large donut that leaves only melee distance safe.
-  "Barofield" -- Creates insta-kill zone under the boss and outside ring with DoT.
-  "Auto Cannons" -- drones on cardinals fire a line AOE across arena.
-  "Nanospore Jet" -- Gives players a positive or negative charge and later tethers to a drone on a cardinal direction. Subsequent casts create new Barofield.
-  Nanospore Rotation: Nerve Gas 1, Nerve Gas  2 (with Auto Cannons), Nerve Gas 3 (with Auto Cannons), Tether appears, Nerve Gas 4 (with Auto Cannons), Nerve Gas Ring (with Auto Cannons)
-  Tethers resolve shortly before Nerve Gas Ring cast finishes, you will have a moment to adjust after tether resolves and before Nerve Gas Ring/Auto Cannons
+  「Resonance / レゾナンス」：넓은 부채꼴 형태의 강공격을 시전합니다.  
+  「Rightward/Leftward Nerve Gas ---ナーブガス・ライト/レフト」：대각선 방향으로 방의 절반을 베는 공격을 시전하며, 보스 정면은 항상 안전합니다.  
+  「Centralized Nerve Gas / ナーブガス・フロント」：넓은 전방 부채꼴 공격을 시전합니다.  
+  「Nerve Gas Ring / ナーブガス・サークル」：근접 거리만 안전한 큰 도넛형 범위 공격을 시전합니다.  
+  「Barofield / バロフィールド」：보스 아래와 외곽에 즉사 구역을 생성하며 외곽에는 도트 대미지가 있습니다.  
+  「Auto Cannons / オートマチックカノン」：사방의 드론이 방을 가로지르는 직선 범위 공격을 시전합니다.  
+  「Nanospore Jet / 魔科学粒子散布」：플레이어에게 양전하 또는 음전하를 부여한 뒤, 일정 시간 후 방위 드론과 플레이어를 선으로 연결합니다. 이후의 시전에서는 새로운 즉사구역이 추가로 생성됩니다.  
+  패턴 순서:「Nerve Gas / ナーブガス」1,「Nerve Gas / ナーブガス」2(+드론공격),「Nerve Gas / ナーブガス」3(+드론공격), 선 연결,「Nerve Gas / ナーブガス」4(+드론공격),「Nerve Gas Ring / ナーブガス・サークル」
+  선은「Nerve Gas Ring / ナーブガス・サークル」시전 완료 직전에 해제되며 연결 해제 후 링 및 캐논 공격까지 약간의 시간이 주어집니다
 #EO floors 81-89
 12212: |
-  PB Gaze AOE
+  자신을 중심으로 시선형 범위 공격을 사용합니다
 12217: |
-  "Glass Punch" -- Late telegraphed Conal AOE
+  「Glass Punch / グラスパンチ」부채꼴 범위 공격을 시전합니다
 12218: |
-  Room wide Gaze both out and in combat
+  전투여부에 상관없이 방 전체 범위의 시선형 공격을 시전합니다
 12214: |
 
 12161: |
@@ -140,11 +147,11 @@
 12211: |
 
 12220: |
-  Room wide AOE applies "Terror"
+  방 전체 범위 공격으로 「Terror / テロ」을 시전하여 공포 디버프를 부여합니다
 12221: |
 
 12216: |
-  "Bustering Blink" -- Wide line AOE, can not be line of sighted.
+  「Bustering Blink / バスターリングブリンク」넓은 직선형 범위 공격을 사용하며 벽 뒤로 피할 수 없습니다.
 12219: |
 
 #EO boss floor 90
@@ -152,23 +159,23 @@
 
 #EO floors 91-98
 12223: |
-  Large PB AOE when killed
+  처치 시 자신 중심의 큰 범위 공격을 시전합니다
 12224: |
 
 12225: |
-  270 degree frontal cleave
+  270도 범위의 전방 베기 공격을 사용합니다
 12226: |
 
 12227: |
 
 12228: |
-  Conal Gaze
+  부채꼴 범위 공격
 12229: |
 
 12230: |
 
 12231: |
-  4 knockback dashes into a large frontal cleave
+  4회의 넉백 돌진 후 넓은 전방 베기 공격을 시전합니다
 12232: |
 
 12233: |

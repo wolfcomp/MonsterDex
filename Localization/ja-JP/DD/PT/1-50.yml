@@ -8,6 +8,7 @@
 13973: |
   1) "タッチダウン" -- 輝く足で示された4つのAoEにノックバック。
   2) 「根の植栽」-- 膨張する星AoE. 壁に配置します。
+# Floors 21-29
 14137: |
   HP25%に対する「パラシティズム」の怒りのキャスト。
 14127: |
@@ -17,6 +18,7 @@
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
   2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
   3) "Divine Favor" -- 8 baited chasing AoEs
+# Floors 31-39
 14151: |
   「ギャロップ」-- ファー・KB, LoS
   「ニッカー」-- PB AoE
@@ -27,8 +29,8 @@
 14144: |
   「木の馬」-- 広い広い円錐形
 14139: |
-  "Hand of Judgment" -- 近接距離
-  "Moatmaker" -- AoEを餌に、再びヒットした。
+  "審判のHand of Judgment" -- 近接距離
+  "Moatmaker" -- AoEを受け取ったが、もっと大きい。
 14145: |
   「左/右のテンタクル」-- ハーフルームの切り取り
 # Floor 40 Boss
@@ -39,6 +41,7 @@
   4) Forgiven Adulations (adds) will eventually cast "Self Destruct" enrage
 13978: |
   「自己破壊」激怒キャストです
+# Floors 41-49
 14153: |
   信じられないほど危険な自動攻撃ダメージ
   「亀の石」-- PB AoE
