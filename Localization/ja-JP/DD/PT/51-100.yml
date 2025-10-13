@@ -4,8 +4,8 @@
   "痛い突風" -- 大きいAoE
   "Whorl of Hurt" -- 大きいドーナツ。
 14165: |
-  Tail Screw": Small AoE targeting player. Leaves Player with single digit-hit point if ヒット時には、
-  uses "Impale"
+  「テールねじ」-- 小さなAoEターゲティングプレイヤー。ヒット時に1桁のヒットポイントを持つプレイヤーを残す。
+  時折「インパレ」が使用される。
 14172: |
   「毒の霧」-- 毒を与える大きな前頭円錐青江--
 14177: |
@@ -104,7 +104,7 @@
   "Orogenic Storm" -- Baited AoE
   "Metamorphic Blast" -- Large conal.
 # Floor 80 Boss
-13958: |
+13968: |
   Boss will pair either a halfroom front or back depending on where the charged whiskers point with either of the following two mechanics.
   1) "Perilous Lair" -- PB AoE
   2) "Roaring Ring" -- Doughnut
@@ -131,14 +131,15 @@
   「情熱の熱」--火薬を適用する標的のAoE。火薬は致命的なダメージを与える（動かない、攻撃しない）。LoSable。
 14213: |
   「アビサルスウィング」-- 中正面円錐形
+  「アビサルトランスフィシション」 -- 麻痺を適用します。
 14204: |
   「爪と尾」 -- 小さな前頭線青江、そして陰嚢の後ろに
 14214: |
   「ダブルヘックスアイ」-- 広い視線で
 14215: |
-  "Thunder" -- Medium frontal circle AoE
-  "Hellclaw" -- Small frontal conal
-  "Tail Swipe" -- Large back conal
+  「ライトニングボルト」-- 中程度の餌付き円形AoE
+  「ヘルクロー」-- 小さな正面円錐
+  「テールスワイプ」-- 大きな裏<unk>
 14205: |
 
   "Abyssal Ray" -- 大規模な正面線AoE. Not Losable.
@@ -155,6 +156,39 @@
   4) "Hot Iron" -- Places multiple ground AoEs.
   5) "Skin Flayer" -- Jumps to wall and knockbacks from his new position. Places three wall lasers afterwards.
 # Floors 91-98
+14219: |
+  死後に大きなPB AoEで爆発。
+  "ダークビジョン" -- 遠い距離のラインAoE。
+14227: |
+  「Whinge」-- 小さなPB AoE
+14224: |
+  "Rotten Stench" -- 大規模な遠方のラインAoE. Não pode los.
+14223: |
+  「忍び寄るアイビー」-- 小さな正面円錐形
+14220: |
+  "Arachne Web" -- Heavyを適用する対象AoE. Does minimum damage/can LoS.
+  "Shadow Burst" -- Aachne Web直後に中程度の餌付けAoE.
+14225: |
+  "Lithic Breath" -- 前頭円錐形
+  "テイルドライブ" -- 部屋全体の背中のコンアル、キャストバーはありません。
+14222: |
+  「ハネード・左/右」－後ろにもカバーする大規模なハーフルームの切り裂き。前には安全。
+  「ハネード・フロント」 --
+14228: |
+  「スマッシュ・ブロー」-- 中正面円錐形
+14217: |
+  「トリプル/クワドルダッシャー」 -- 損傷の3、4例、その後すぐにPB AoEを取り扱います。
+14229: |
+  "Karma" -- 大きな前頭円錐
+  "不聖な暗闇" -- 中円AoE
+14218: |
+  "Right Smite" -- 大規模な右のハーフルーム AoE、そして左の半円
+  "左のスマイト" -- 大規模な左のハーフルーム AoE、そして右半円
+14226: |
+  「権威の端」―大規模な半部屋の青江は側面に刀を持っています
+14221: |
+  "Mortal Gaze" -- 全室視線
+  "凝視" -- 大規模な遠大に達する線AoE.
 # Floor 99 Boss
 14037: |
   The arena has patches of light and dark, which apply either "Light Vengeance" or "Dark Vengeance".
