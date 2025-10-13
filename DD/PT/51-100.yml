@@ -43,11 +43,11 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14170-Traverse Fallen Aevis:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -651,6 +651,16 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
+    - SleepUnknown
+14222-Invoked Sawtooth:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sound
+  Weakness:
+    - Stun
+    - Heavy
+    - SlowUnknown
+    - Bind
     - SleepUnknown
 
 # Floor 99 Boss
