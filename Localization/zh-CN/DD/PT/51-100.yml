@@ -4,8 +4,8 @@
   "Painful Gust" -- Large AoE
   "Whorl of Hurt" -- Large doughnut
 14165: |
-  "适合的屏幕": 针对玩家的小AoE。如果击中一个数字就离开玩家。
-  有时使用 "Impale"
+  "小屏幕" -- 针对玩家的小AoE。如果被击中则带有单个数字命中点的玩家。
+  偶尔使用 "Impale"
 14172: |
   “剧毒手势”——大型前锥体AoE施加毒药剂
 14177: |
@@ -104,7 +104,7 @@
   "激素风暴" -- 繁殖的AoE
   "Metamorphic Blast"-- 大型锥虫。
 # Floor 80 Boss
-13958: |
+13968: |
   老板要么配对半个房间前面，要么背对背，取决于充电的鲸鱼与以下两种机械师中的任何一种。
   1) "危险的纬度" -- PB AoE
   2) "漫游环" -- Doughnut
@@ -130,15 +130,16 @@
 14207: |
   “激情加热”-- 使用Pyretic的目标AOE。Pyretic 会造成致命伤害(不移动或攻击)。
 14213: |
-  “深色旋转”-- 中等前面锥形
+  "深海游泳" -- 中等前线锥形
+  "深海转化" -- 应用瘫痪. 中断.
 14204: |
   "Claws and Tail" -- Small frontal line AoE, then backer of conal
 14214: |
   "双十六进制眼睛" -- 全屏界面
 14215: |
-  "薄" -- 中等前面圆形
-  "Hellclaw" -- 小型前面锥形
-  "Tail Swipe" -- 大后面锥形
+  "闪电螺钉" — — 中型保释圆圈
+  "Hellclaw" — 小型前面锥形
+  "Tail Swipe" — 大型背面锥形
 14205: |
   将会投射整个房间的AoEs。
   "深海雷"——大规模的前线AoE。不可靠。
@@ -155,6 +156,39 @@
   4) "热铁龙" — — 放置多个地面AoEs.
   5) "皮肤Flayer" — — 跳到墙上，并从他的新位置击退。此后放置三个墙激光。
 # Floors 91-98
+14219: |
+  Explodes in large PB AoE after dying.
+  "Dark Vision" -- Far reaching line AoE. Cannot LoS.
+14227: |
+  "Whinge" -- Small PB AoE
+14224: |
+  "Rotten Stench" -- 距离远的大行AoE。无法LoS.
+14223: |
+  "爬行伊维" -- 小型正面连线
+14220: |
+  "Arachne Web" -- Targeted AoE that applies Heavy. Does minimal damage/can LoS.
+  "Shadow Burst" -- Medium baited AoE immediately following Arachne Web.
+14225: |
+  “液态呼吸”-- 大型前面锥形
+  “尾酒驾车”-- 房间后面锥形，没有城堡。
+14222: |
+  "Honeyed Left/Right" -- Massive halfroom cleave that also covers behind it. In front is safe.
+  "Honeyed Front" -- Massive frontal conal
+14228: |
+  "Smashing Blow" -- 中等前面锥形
+14217: |
+  "Triple/Quadruple Skull Dasher" -- 造成3或4个伤害，然后立即处理PB AOE。
+14229: |
+  "Karma" — — 大型前面锥形
+  "神圣暗色" — — 悬浮中圈AO
+14218: |
+  "Right Smite" -- Massive right halfroom AoE, then left half circle
+  "Left Smite" -- Massive left halfroom AoE, then right half circle
+14226: |
+  “Authority Edge”——大型半房间AoE，他持剑一边。
+14221: |
+  "Mortal Gaze" -- Roomwide gaze
+  "Stare" -- Large far reaching line AoE. Cannot LoS.
 # Floor 99 Boss
 14037: |
   这个舞台上有着光明和黑暗的片段，它们既适用于“亮的场地”，也适用于“暗的场地”。
