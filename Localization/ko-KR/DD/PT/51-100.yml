@@ -4,8 +4,8 @@
   「Painful Gust / ペインフルガスト」：큰 범위 공격을 시전
   「Whorl of Hurt / ペインサイクロン」：큰 도넛형 공격을 시전
 14165: |
-  「Tail Screw」플레이어를 대상으로 한 범위공격으로, 피격 시 체력이 한 자릿수로 남습니다. 
-  가끔 「Impale」을 시전합니다
+  "Tail Screw" -- Small AoE targeting player. Leaves player with single digit hit point if hit.
+  Occasionally uses "Impale"
 14172: |
   「Poison Mist / 毒霧」：큰 전방 부채꼴 범위공격을 시전, 피격 시 독 디버프를 부여
 14177: |
@@ -104,15 +104,14 @@
   「Orogenic Storm / オロジェニックストーム」：설치형 범위 공격을 시전
   「Metamorphic Blast / メタモーフィックブラスト」：큰 부채꼴 범위 공격을 시전.
 # Floor 80 Boss
-13958: |
-  보스는 전기 충전된 수염이 가리키는 방향(앞 또는 뒤)에 따라 방의 전·후 절반을 공격, 아래의 두 가지 기믹 중 하나와 조합
-
-  1) 「Perilous Lair / 痛傷の円戒」：자신 중심 범위 공격
-  2) 「Roaring Ring / 紫雷の輪戒」：도넛형 범위 공격
-  3) 「Stalking Static / 雷気循環」：번개 구슬을 소환, 마지막 구슬은 넓은 범위의 폭발과 함께 마비를 부여 
-  4) 「Prowling Death / 死出の道行き」：a 또는 b 디버프 중 하나를 부여하며, 시작 시 보스 아래 혹은 근처에 위치할 것 
-    a) 「Shadow of Death / 死出の道行き」：죽음의 선고 디버프를 부여 후 1 또는 2의 스킬을 조합하면 수염이 가리키는 방향의 번개 범위 공격에 맞아야 디버프 해제가 됨
-    b) 「Nowhere to Run / 死出の重荷」：이동할 때마다 중첩되는 디버프를 부여 후 8중첩 시 즉사, 다음 1 또는 2의 스킬을 조합하면 최소한의 이동으로 피해야 함.
+13968: |
+  Boss will pair either a halfroom front or back depending on where the charged whiskers point with either of the following two mechanics.
+  1) "Perilous Lair" -- PB AoE
+  2) "Roaring Ring" -- Doughnut
+  3) "Stalking Static" -- Creates a chain of lightning balls, the final ball at the wall will have a big explosion and paralyze.
+  4) "Prowling Death" -- Applies one of two debuffs, start under/near the boss.
+    a) "Shadow of Death" -- Doom debuff that requires being hit by lightning from the whiskers in the next Lair/Ring combination to remove.
+    b) "Nowhere to Run" -- Debuff that increases whenever afflicted character moves. 8 stacks results in death. Dodge the Lair/Ring combination with minimal movement.
 # Floors 81-89
 14211: |
   「Dark / ダーク」：설치형 범위 공격을 시전, 침묵 가능
@@ -131,15 +130,16 @@
 14207: |
   「Passion's Heat / ハートヒート」：대상을 지정해 범위 공격을 시전, 피격 시 ‘Pyretic / ヒート’ 디버프를 부여, 이 상태에서는 움직이거나 공격하면 치명적인 대미지를 입음. 벽 뒤에 숨어서 피할 수 있음.
 14213: |
-  「Abyssal Swing / アビサルスイング」： 전방 부채꼴 공격을 시전
+  "Abyssal Swing" -- Medium frontal conal
+  "Abyssal Transfixion" -- Applies paralysis. Interruptable.
 14204: |
   「Claw and Tail / キックアンドテイル」：전방 직선형 범위 공격을 시전한 뒤, 후방 부채꼴 범위 공격을 이어서 시전
 14214: |
   「Double Hex Eye / 大凶眼」：방 전체 범위의 시선형 공격을 시전
 14215: |
-  「Thunder / サンダー」：전방 원형 범위 공격을 시전
-  「Hellclaw / ヘルクロー」：전방 부채꼴 범위 공격을 시전
-  「Tail Swipe / テールスワイプ」：넓은 범위의 후방 부채꼴 공격을 시전
+  "Lightning Bolt" -- Medium baited circle AoE
+  "Hellclaw" -- Small frontal conal
+  "Tail Swipe" -- Large back conal
 14205: |
   비전투 상태에서도 방 전체 범위 공격을 시전
   「Abyssal Ray / アビサルレイ」：거대한 전방 직선형 범위 공격을 시전, 벽 뒤에 숨어도 피할 수 없음.
@@ -156,6 +156,39 @@
   4) 「Hot Iron / 隕石」：바닥에 다수의 범위 공격
   5) 「Skin Flayer / 尽滅」：벽 쪽으로 도약한 후 그 위치를 기준으로 넉백 공격을 시전. 이어서 벽에 세 개의 레이저를 설치하므로 레이저가 없는 곳으로 이동.
 # Floors 91-98
+14219: |
+  Explodes in large PB AoE after dying.
+  "Dark Vision" -- Far reaching line AoE. Cannot LoS.
+14227: |
+  "Whinge" -- Small PB AoE
+14224: |
+  "Rotten Stench" -- Large far reaching line AoE. Cannot LoS.
+14223: |
+  "Creeping Ivy" -- Small frontal conal
+14220: |
+  "Arachne Web" -- Targeted AoE that applies Heavy. Does minimal damage/can LoS.
+  "Shadow Burst" -- Medium baited AoE immediately following Arachne Web.
+14225: |
+  "Lithic Breath" -- Large frontal conal
+  "Tail Drive" -- Roomwide back conal, no castbar.
+14222: |
+  "Honeyed Left/Right" -- Massive halfroom cleave that also covers behind it. In front is safe.
+  "Honeyed Front" -- Massive frontal conal
+14228: |
+  "Smashing Blow" -- Medium frontal conal
+14217: |
+  "Triple/Quadruple Skull Dasher" -- Deals 3 or 4 instances of damage, then an immediate PB AoE.
+14229: |
+  "Karma" -- Large frontal conal
+  "Unholy Darkness" -- Baited medium circle AoE
+14218: |
+  "Right Smite" -- Massive right halfroom AoE, then left half circle
+  "Left Smite" -- Massive left halfroom AoE, then right half circle
+14226: |
+  "Authority's Edge" -- Massive halfroom AoE, on the side he holds up the sword.
+14221: |
+  "Mortal Gaze" -- Roomwide gaze
+  "Stare" -- Large far reaching line AoE. Cannot LoS.
 # Floor 99 Boss
 14037: |
   바닥에 빛의 구역과 어둠의 구역이 설치되어 있으며 밟은 위치에 따라 다음 중 하나의 효과를 받습니다.  
