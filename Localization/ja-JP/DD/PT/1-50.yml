@@ -35,10 +35,10 @@
   「左/右のテンタクル」-- ハーフルームの切り取り
 # Floor 40 Boss
 13977: |
-  1) "Blown Blessing" -- either a massive AoEs (yellow/sparkles) or KBs (blue/water). The boss will always do theirs first, followed by the adds in the order they jump.
-  2) "Near Tide" -- massive PB AoE
-  3) "Far Tide" -- doughnut, be directly under the boss
-  4) Forgiven Adulations (adds) will eventually cast "Self Destruct" enrage
+  1) "ブレッシングブロウ" -- 巨大なAoE（黄／光）またはノックバック（青／水）のいずれか。ボスが必ず最初に行動し、その後、飛び込んだ順番で雑魚敵が続く。
+  2) "ラウンドタイド" -- 少し大きな円形AoE、ボスから離れて回避する。
+  3) "リングタイド" -- ドーナツ型AoE、ボスの真下に行き回避する。
+  4) フォーギヴン・アデュレーション（雑魚敵）は時間が経過すると「自爆」による時間切れ全体攻撃を発動する。
 13978: |
   「自己破壊」激怒キャストです
 # Floors 41-49
@@ -57,6 +57,6 @@
   「範囲の渦」 -- 空白のAoE
 # Floor 50 Boss
 14263: |
-  1) "Liquefaction" -- Turns the arena into a quicksand with a few safe spots. Spending 4 seconds in the quicksand will result in death.
-  2) "Sandpit" -- Boss goes untargetable and does 4 large chasing AoE baits.
-  3) "Windraiser" -- Places a wind tornado in the middle, will KB if not in the quicksand when it resolves.
+  1) "リクェファクション" -- フィールドを一部の安全地帯を残して流砂（りゅうさ）に変える。流砂の中で4秒留まると即死する。
+  2) "サンドピット" -- ボスがターゲット出来なくなり、追尾型の広範囲AoEを4回誘発する。
+  3) "コールウィンド" -- 中央につむじ風を設置する。カウントが0になった時に流砂の中にいないとノックバックを受ける。
