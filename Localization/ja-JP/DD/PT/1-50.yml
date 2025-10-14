@@ -15,9 +15,9 @@
   キャストはAoEをunaggroedを餌にした
 # Floor 30 Boss
 13863: |
-  1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
-  2) "Grip of Salvation" -- halfroom cleave on side of glowing arm, then cleaves other half + an additional 45 degrees in front of him
-  3) "Divine Favor" -- 8 baited chasing AoEs
+  1) "光耀讃詞" -- 落下するリング型AoEを4箇所の候補地に発生させる。
+  2) "救済の拳" -- 光っている腕側への半面焼きを行い、その後、反対側の半面とそれに加えて正面45度を追加で攻撃する。
+  3) "落光" -- 追尾型AoEを8回着弾させる。
 # Floors 31-39
 14151: |
   「ギャロップ」-- ファー・KB, LoS
@@ -52,6 +52,9 @@
 14152: |
   「磁気ショック」-- Suck
   「プレインクラッカー」 -- PB AoE
+14161: |
+  「距離の山」 -- 最前線AoE
+  「範囲の渦」 -- 空白のAoE
 # Floor 50 Boss
 14263: |
   1) "Liquefaction" -- Turns the arena into a quicksand with a few safe spots. Spending 4 seconds in the quicksand will result in death.

@@ -4,8 +4,8 @@
   "Garde douloureuse" -- Grande zone
   "Tourbillon de blessure" -- Grand écrous
 14165: |
-  "Cri de queue ": Petit joueur ciblant la zone de zone. Quitte le joueur avec un seul chiffre s'il est touché.
-  Utilise occasionnellement "Impale"
+  "Cri de queue" -- Petit joueur ciblant des zones ciblées. Quitte le joueur avec un seul chiffre si frappé.
+  utilise occasionnellement "Impale"
 14172: |
   « Brume empoisonnée» -- Grand cône frontal de zone de zone qui inflige du poison
 14177: |
@@ -104,7 +104,7 @@
   « Orage orogénique » -- Août
   « Explosion métamorphique » -- Grand conal.
 # Floor 80 Boss
-13958: |
+13968: |
   Le patron jumelera soit une moitié avant ou une partie arrière en fonction de l'endroit où les whiskers chargés pointent avec l'un des deux mécaniques suivants.
   1) "Anneau périlleux" -- PB AoE
   2) "Anneau rugissant" -- Noyer
@@ -130,15 +130,16 @@
 14207: |
   « Chaleur de la passion » -- Zone ciblée qui applique Pyrétique. La pyrétique inflige des dégâts mortels (ne pas se déplacer ou attaquer). LoSable.
 14213: |
-  "Abyssal Swing" -- Conal frontal moyen
+  « Abyssal Swing » -- Conal frontal moyen
+  « Transfixion Abyssal » -- Applique la paralysie. Interruptable.
 14204: |
   « Griffe et queue » -- Petite ligne frontale AoE, puis derrière conal
 14214: |
   "Double Hex Eye" -- Regard large
 14215: |
-  "Thunder" -- Moyen cercle frontal AoE
-  "Griffe infernale" -- Petit conal frontal
-  "Balayage de queue" -- Grand cône arrière
+  « Foudre » -- Cercle appâté moyen AoE
+  « Griffe infernale » -- Petit cône frontal
+  « Balayage de queue » -- Grand cône arrière
 14205: |
   Lancez des AoEs dans toute la pièce.
   « Rayon Abyssal » -- Ligne frontale massive AoE. PAS Losable.
@@ -155,6 +156,39 @@
   4) "Fer chaud" -- Place plusieurs zones de terre.
   5) "Écorcheur de peau" -- Saute au mur et recule de sa nouvelle position. Place trois lasers muraux par la suite.
 # Floors 91-98
+14219: |
+  Explose dans une grosse zone de PB après sa mort.
+  "Vision Sombre" -- Ligne AoE à grande portée. Impossible de perdre.
+14227: |
+  "Whinge" -- Petite zone de PB
+14224: |
+  "Rotten Stench" -- Grande ligne très large atteignant AoE. Impossible de perdre.
+14223: |
+  "Creeping Ivy" -- Petit conal frontal
+14220: |
+  « Web Arachne » -- AoE ciblée qui applique lourd. Fait des dégâts minimum/peut perdre.
+  « Rafale des ombres » -- AoE moyenne appâtée immédiatement après Arachne Web.
+14225: |
+  "Souffle Lithique" -- Grand conal frontal
+  "Voie de la queue" -- Conal arrière de la pièce, pas de château.
+14222: |
+  « Gauche/Droite du miel» -- Flèche massive de demi-froom qui se couvre également derrière elle. À l'avant est sûr.
+  « Devant miel» -- Conal frontal massif
+14228: |
+  "Coup de frappe" -- Conal frontal moyen
+14217: |
+  "Triple/Quadruple Skull Dasher" -- Inflige 3 ou 4 instances de dégâts, puis un AoE PB immédiat.
+14229: |
+  « Karma» -- Grand conal frontal
+  « Ténèbres impies» -- Cercle moyen à AoE
+14218: |
+  "Right Smite" -- Massive right halfroom AoE, then left half circle
+  "Left Smite" -- Massive left halfroom AoE, then right half circle
+14226: |
+  "Authority's Edge" -- Massive halfroom AoE, du côté il tient l'épée.
+14221: |
+  "Mortal Gaze" -- Roomwide gaze
+  "Stare" -- Large far reaching line AoE. Cannot LoS.
 # Floor 99 Boss
 14037: |
   The arena has patches of light and dark, which apply either "Light Vengeance" or "Dark Vengeance".

@@ -4,8 +4,8 @@
   "Schmerzhafter Gust" -- Großer AoE
   "Hurt" -- Großer Doughnut
 14165: |
-  "Schwanzschraube": Kleiner AoE-Ziel-Spieler. Verlässt den Spieler mit einstelligen Trefferpunkten, wenn er getroffen wird.
-  Verwendet gelegentlich "Impale"
+  "Schwanzschraube" -- Kleiner AoE-Ziel-Spieler. Verlässt den Spieler mit einstelligen Trefferpunkten, wenn er getroffen wird.
+  verwendet gelegentlich "Impale"
 14172: |
   "Giftnebel" -- Großer Frontkegel AoE, der Gift zufügt
 14177: |
@@ -104,7 +104,7 @@
   "Orogenischer Sturm" -- Köder AoE
   "Metamorpher Explosion" -- Große Konal.
 # Floor 80 Boss
-13958: |
+13968: |
   Boss paßt entweder eine Vorder- oder Rückseite, je nachdem, wo die geladenen Whisker mit einer der folgenden zwei Mechaniker.
   1) "Perilous Lair" -- PB AoE
   2) "Roaring Ring" -- Doughnut
@@ -130,15 +130,16 @@
 14207: |
   "Passion's Heat" -- Zielgezielter AoE, der Pyretik zufügt. Pyretische fügt tödlichen Schaden (ohne sich zu bewegen oder anzugreifen). LoSable.
 14213: |
-  "Abyssal Swing" -- Mittelgroßer Frontkegel
+  "Abyssal Swing" -- Mittlerer Frontkegel
+  "Abyssal Transfixion" -- Lähmt lähmend. Interrupable.
 14204: |
   "Claw and Schwanz" - Kleine Frontlinie AoE, dann hinter Konal
 14214: |
   "Double Hex Eye" -- Raumweiter Blick
 14215: |
-  "Thunder" -- Mittelgroßer Frontkreis AoE
+  "Blitzschlag" -- Mittlerer Köder Kreis AoE
   "Höllenklapp" -- Kleiner Frontkegel
-  "Tail Swipe" -- Große Rückenkegel
+  "Schwanzschwenkegel" -- Große Rückenkegel
 14205: |
   Wird Raumweite AoEs ungepflegt lassen.
   "Abyssal Ray" -- Massive Frontlinie AoE. NICHT LoSable.
@@ -155,6 +156,39 @@
   4) "Heißeisen" -- Platziert mehrere AoEs.
   5) "Skin Flayer" -- Springt zur Wand und stößt von seiner neuen Position zurück. Platziert danach drei Wandlaser.
 # Floors 91-98
+14219: |
+  Explodiert in großer PB AoE nach dem Sterben.
+  "Dark Vision" -- weit reichende Linie AoE. Kann nicht losgehen.
+14227: |
+  "Whinge" -- Kleines PB-AoE
+14224: |
+  "Rotten Stench" -- Große weit reichende Linie AoE.
+14223: |
+  "schleichender Ivy" -- Kleiner Frontkegel
+14220: |
+  "Arachne Web" -- Gezielte AoE, die schwer zutrifft. Hat minimalen Schaden/kann LoS.
+  "Schattenbrust" -- Mittlere Köder AoE unmittelbar nach Arachne Web.
+14225: |
+  "Lithischer Atem" -- Großer Frontkegel
+  "Schwanzantrieb" -- Raumweite Rückenkegel, keine Castbar.
+14222: |
+  "Honig links/rechts" - Massive Halbraumklemme, die sich auch hinter ihr abdeckt. Vor ist sicher.
+  "Honigte Front" -- Massiver Frontkegel
+14228: |
+  "Smashing Blow" -- Mittelgroßer Frontkegel
+14217: |
+  "Triple/Quadruple Skull Dasher" -- Verursacht 3 oder 4 Schadensfälle und dann eine unmittelbare PB AoE.
+14229: |
+  "Karma" -- Große Frontkegel
+  "Unheilige Dunkelheit" -- Köder mittlerer Kreis AoE
+14218: |
+  "Rechte Smite" -- Massiver rechter Halbraum AoE, dann links im Kreis
+  "Linke Smite" -- Massiver linker Halbraum AoE, dann rechter Halbkreis
+14226: |
+  "Authority's Edge" - Massive Halbraum AoE, an der Seite hält er das Schwert.
+14221: |
+  "Sterblicher Gaze" -- Raumweite Sicht
+  "Stare" -- Große weit reichende Linie AoE. Kann nicht LoS.
 # Floor 99 Boss
 14037: |
   Die Arena hat Licht- und Dunkelflecken, die entweder die "leichte Rache" oder "Dunkle Rache" anwenden.
