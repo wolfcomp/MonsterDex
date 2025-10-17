@@ -39,13 +39,13 @@
   Invisible à moins d'être proche ou en combat. Apparait uniquement sur les étages 61-64.
   « Presse corporelle» -- PB AoE
 14182: |
-  "Accélérerate" -- AoE Baited AoE. Vit, mais plus grand.
+  "Accelerate" -- Aiguille médiane sur un joueur aléatoire. Suit avec un écrin moyen.
 14178: |
   « Onde foudroyante droite / gauche » -- Grande fente de demi-pièce, suivie de la fente de l'autre côté.
 14183: |
   "Bouton de tête" -- Petit conal frontal
 14188: |
-  "Eau d'égout" -- Moyenne demi-cercle frontal AoE
+  "Eau d'égout" -- Moyenne avant ou arrière demi-cercle AoE. Suivi par d'autres moitiés.
 14184: |
   "Ile Drop" -- AoE
   "Glissement de Rock" -- Croix massive sur ses cardinaux
@@ -137,7 +137,7 @@
 14214: |
   "Double Hex Eye" -- Regard large
 14215: |
-  « Foudre » -- Cercle appâté moyen AoE
+  Boule de foudre -- Cercle appâté moyen sur un joueur aléatoire.
   « Griffe infernale » -- Petit cône frontal
   « Balayage de queue » -- Grand cône arrière
 14205: |
