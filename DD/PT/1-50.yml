@@ -29,7 +29,7 @@
 14104-Traverse Moss Fungus:
   InstanceContentType: DeepDungeon
   Threat: Easy
-  Aggro: Sight
+  Aggro: Sound
   Weakness:
     - Heavy
     - Slow
@@ -62,10 +62,10 @@
     - Slow
     - Bind
     - Stun
-14107-Traverse Ciematis:
+14107-Traverse Clematis:
   InstanceContentType: DeepDungeon
   Threat: Easy
-  Aggro: Sight
+  Aggro: Sound
   Weakness:
     - Heavy
     - Slow
@@ -83,7 +83,7 @@
 14108-Traverse Basket:
   InstanceContentType: DeepDungeon
   Threat: Easy
-  Aggro: Sight
+  Aggro: Sound
   Weakness:
     - Heavy
     - Slow
