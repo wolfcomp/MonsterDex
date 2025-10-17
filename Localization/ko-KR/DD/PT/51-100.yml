@@ -39,13 +39,13 @@
   가까이 접근하거나 전투 상태가 되기 전까지는 보이지 않음. 61~64층에서만 등장
   「Body Press / ボディプレス」：자신 중심의 범위공격을 시전
 14182: |
-  「Accelerate / 突貫する」：설치형 범위공격을 시전, 잠시 후 더 넓은 범위로 한 번 더 공격.
+  "Accelerate" -- Baited Medium AoE on one random player. Follows up with a medium doughnut.
 14178: |
   「Right/Left-sided Shockwave / ライト/レフトサイド・ショックウェーブ」: 스킬명의 방향대로 방의 절반을 덮는 공격을 시전하며 직후 반대쪽을 이어서 시전합니다.
 14183: |
   「Head Butt / ヘッドバット」：작은 전방 부채꼴 공격을 시전
 14188: |
-  「Sewer Water / スーウェッジウォーター」：전방으로 반원모양의 범위공격을 시전
+  "Sewer Water" -- Medium front or back half circle AoE. Followed by doing other half.
 14184: |
   「Isle Drop / アイルドロップ」：설치형 범위공격을 시전
   「Rockslide / ロックスライド」：사방으로 퍼지는 거대한 십자형 범위공격을 시전
@@ -138,9 +138,9 @@
 14214: |
   「Double Hex Eye / 大凶眼」：방 전체 범위의 시선형 공격을 시전
 14215: |
-  「Lightning Bolt / いなずま」：전방 원형 범위 공격을 시전
-  「Hellclaw / ヘルクロー」：전방 부채꼴 범위 공격을 시전
-  「Tail Swipe / テールスワイプ」：넓은 범위의 후방 부채꼴 공격을 시전
+  "Lightning Bolt" -- Medium baited circle AoE on random player.
+  "Hellclaw" -- Small frontal conal
+  "Tail Swipe" -- Large back conal
 14205: |
   비전투 상태에서도 방 전체 범위 공격을 시전
   「Abyssal Ray / アビサルレイ」：거대한 전방 직선형 범위 공격을 시전, 벽 뒤에 숨어도 피할 수 없음.
