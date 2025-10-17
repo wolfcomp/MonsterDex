@@ -13,6 +13,8 @@
   Casts "Parasitism" enrage at 25% HP
 14127: |
   Casts baited AoE unaggroed
+14138: |
+  "Swinge" -- Large point-blank AOE late telegraph
 # Floor 30 Boss
 13863: |
   1) "Liturgy of Light" -- drops falling ring AoEs in 4 possible locations
