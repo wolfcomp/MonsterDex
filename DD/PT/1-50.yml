@@ -328,6 +328,16 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
+14138-Forgiven Intolerance:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # Floor 30 Boss
 13863-Forgiven Treachery:

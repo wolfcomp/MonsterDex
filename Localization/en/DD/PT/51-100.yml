@@ -41,13 +41,13 @@
   Invisible unless close or in combat. Spawns on floors 61-64 only.
   "Body Press" -- PB AoE
 14182: |
-  "Accelerate" -- Baited AoE. Hits again but larger.
+  "Accelerate" -- Baited Medium AoE on one random player. Follows up with a medium doughnut.
 14178: |
   "Right/Left-sided Shockwave" -- Large halfroom cleave, followed by the other side cleave.
 14183: |
   "Head Butt" -- Small frontal conal 
 14188: |
-  "Sewer Water" -- Medium frontal half circle AoE
+  "Sewer Water" -- Medium front or back half circle AoE. Followed by doing other half.
 14184: |
   "Isle Drop" -- Baited AoE
   "Rockslide" -- Massive cross AoE on its cardinals
@@ -143,7 +143,7 @@
 14214: |
   "Double Hex Eye" -- Roomwide gaze
 14215: |
-  "Lightning Bolt" -- Medium baited circle AoE
+  "Lightning Bolt" -- Medium baited circle AoE on random player.
   "Hellclaw" -- Small frontal conal
   "Tail Swipe" -- Large back conal
 14205: |

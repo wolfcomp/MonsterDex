@@ -65,7 +65,7 @@
   Weakness:
     - StunUnknown
     - HeavyUnknown
-    - SlowUnknown
+    - Slow
     - BindUnknown
     - SleepUnknown
 14175-Traverse Caracal:
@@ -123,11 +123,11 @@
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 
 # Floor 60 Boss
 14097-Ancestral Maliktender:
@@ -496,7 +496,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14205-Invoked Baal:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -557,11 +557,11 @@
   Threat: Dangerous
   Aggro: Sound
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14223-Traverse Triffid:
   InstanceContentType: DeepDungeon
   Threat: Caution
