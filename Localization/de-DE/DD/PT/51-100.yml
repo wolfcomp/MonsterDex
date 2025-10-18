@@ -39,13 +39,13 @@
   Unsichtbar außer schließen oder im Kampf. Spawnt nur auf Etagen 61-64.
   "Body Press" -- PB AoE
 14182: |
-  "Accelerate" -- Baited AoE.
+  "Beschleunigen" -- Mittelgroße AoE auf einem zufälligen Spieler. Folgt mit einer mittleren Doughnut.
 14178: |
   "Rechts/linksseitige Schockwelle" -- Große Halbraumspalte und anschließend die andere Seitenspaltung.
 14183: |
   "Kopf Butt" -- Kleiner Frontkegel
 14188: |
-  "Kanalisationswasser" -- Mittleres frontal Halbkreis AoE
+  "Kanalisation" -- Mittelgroße Vorder- oder Rückseite von AoE, gefolgt von einer anderen Hälfte.
 14184: |
   "Isle Drop" -- Köder AoE
   "Rockslide" -- Massives Kreuz AoE auf seinen Kardinalen
@@ -137,9 +137,9 @@
 14214: |
   "Double Hex Eye" -- Raumweiter Blick
 14215: |
-  "Blitzschlag" -- Mittlerer Köder Kreis AoE
+  "Blitz" -- Mittlerer Köder Kreis AoE auf zufälligem Spieler.
   "Höllenklapp" -- Kleiner Frontkegel
-  "Schwanzschwenkegel" -- Große Rückenkegel
+  "Schwanzschnall" -- Große Rückenkegel
 14205: |
   Wird Raumweite AoEs ungepflegt lassen.
   "Abyssal Ray" -- Massive Frontlinie AoE. NICHT LoSable.

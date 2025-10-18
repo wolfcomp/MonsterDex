@@ -39,13 +39,13 @@
   Invisible unless close or in combat. Spawns on floors 61-64 only.
   "Body Press" -- PB AoE
 14182: |
-  "加速度" — — 贝宝石再一次点击，但更多。
+  "加速" — — 在随机玩家上传中型AoE。用中型防弹进行后续跟踪。
 14178: |
   “右侧/左侧的Shockwave”——大型半厅净化，然后是对方干净。
 14183: |
   "头部按钮" -- 小型前面连线
 14188: |
-  "下水" - 中前半圈AoE
+  “下水”——中前半圆或后半圆，随后做另外半边。
 14184: |
   "岛上Drop" — — 繁忙的AoE
   "罗克斯利德" — — 在其卡片上的大型十字AoE
@@ -137,9 +137,9 @@
 14214: |
   "双十六进制眼睛" -- 全屏界面
 14215: |
-  "闪电螺钉" — — 中型保释圆圈
-  "Hellclaw" — 小型前面锥形
-  "Tail Swipe" — 大型背面锥形
+  "Lightning Bolt" -- Medium baited circle AoE on random player.
+  "Hellclaw" -- Small frontal conal
+  "Tail Swipe" -- Large back conal
 14205: |
   将会投射整个房间的AoEs。
   "深海雷"——大规模的前线AoE。不可靠。
