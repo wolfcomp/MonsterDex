@@ -165,7 +165,7 @@
     - SleepUnknown
 
 # PT special NPCs and misc.
-14262-Mimic:
+14264-Mimic:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Proximity
