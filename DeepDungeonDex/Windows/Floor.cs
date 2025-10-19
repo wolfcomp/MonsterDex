@@ -62,7 +62,7 @@ public class Floor : Window, IDisposable
 
     private void StorageChanged(StorageEventArgs obj)
     {
-        if (obj.StorageType == typeof(Territories) && obj.StorageType == typeof(Locale))
+        if (obj.StorageType == typeof(Territories) || obj.StorageType == typeof(Locale))
             TerritoryChanged(_clientState.TerritoryType);
     }
 
