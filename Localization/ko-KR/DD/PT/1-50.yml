@@ -14,7 +14,9 @@
 14127: |
   비전투 상태에서도 범위 공격을 시전합니다
 14138: |
-  「Swinge / スイング」: 자신 중심 범위 공격을 큰 범위로 시전합니다
+  "Swinge" -- Large point-blank AoE late telegraph
+14130: |
+  "Ripper Claw" -- Untelegraphed front conal AoE
 # Floor 30 Boss
 13863: |
   1) 「Liturgy of Light / 光耀讃詞」：4곳 중 하나의 위치에 떨어지는 링 형태의 범위 공격을 시전합니다. 
