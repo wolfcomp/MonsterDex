@@ -77,7 +77,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14167-Traverse Sand Serpent:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
@@ -97,7 +97,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14176-Traverse Gigant:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -202,7 +202,7 @@
 14184-Forgiven Imparity:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
-  Aggro: Proximity
+  Aggro: Sound
   Weakness:
     - StunUnknown
     - Heavy
@@ -285,7 +285,7 @@
     - Heavy
     - Slow
     - Bind
-    - SleepUnknown
+    - Sleep
 14200-Forgiven Unbelief:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -350,7 +350,7 @@
     - Heavy
     - SlowUnknown
     - Bind
-    - SleepUnknown
+    - Sleep
 14201-Traverse Amemet:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -360,7 +360,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14192-Forgiven Corruption:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
@@ -370,7 +370,7 @@
     - HeavyUnknown
     - Slow
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 14197-Forgiven Vanity:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
@@ -389,7 +389,7 @@
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
-    - SleepUnknown
+    - Sleep
 
 # Floor 80 Boss
 13968-Forgiven Profanity:
@@ -567,11 +567,11 @@
   Threat: Caution
   Aggro: Sound
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Bind
+    - Sleep
 14220-Invoked Bachelor:
   InstanceContentType: DeepDungeon
   Threat: Caution

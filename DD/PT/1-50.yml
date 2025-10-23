@@ -89,6 +89,16 @@
     - Slow
     - Bind
     - Stun
+14110-Traverse Shrub:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Proximity
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
 
 # Floor 10 Boss
 13979-Ornamental Leafman:
@@ -205,6 +215,26 @@
     - Slow
     - Bind
     - Stun
+14120-Forgiven Contempt:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - Sleep
+14123-Traverse Topiary:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - Sleep
 
 # Floor 20 Boss
 13973-Forgiven Emulation:
@@ -278,7 +308,7 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
+    - Stun
     - HeavyUnknown
     - SlowUnknown
     - BindUnknown
@@ -590,6 +620,16 @@
     - BindUnknown
     - SleepUnknown
 14163-Traverse Germinant:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14162-Traverse Agave:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
