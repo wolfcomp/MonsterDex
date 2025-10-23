@@ -14,7 +14,9 @@
 14127: |
   Casts Köder AoE unaggroed
 14138: |
-  "Swinge" -- Großer Punkt-leerer AOE verspäteter Telegraph
+  "Swinge" -- Großer Punkt-leerer AoE-Spättelegraph
+14130: |
+  "Ripper Claw" -- Nicht telegrafierter Frontkonal AoE
 # Floor 30 Boss
 13863: |
   1) "Liturgie des Lichts" -- fällt rings Aoes an 4 möglichen Orten

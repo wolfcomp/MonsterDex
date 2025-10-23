@@ -14,7 +14,9 @@
 14127: |
   Lances de la zone appâtée sans agitation
 14138: |
-  "Swinge" -- Grand point vide AOE télégraphe tardif
+  "Swinge" -- Grand télégraphe tardif AoE pointant
+14130: |
+  format@@0 "Ripper Claw" -- Untelegraphed front conal AoE
 # Floor 30 Boss
 13863: |
   1) "Liturgie de Lumière" -- gouttes tombant anneau AoEs dans 4 emplacements possibles
