@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.Net;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,8 +14,11 @@ public partial class Requests : IDisposable
     private readonly Regex _percentRegex = new("(%%)|(%)", RegexOptions.Compiled);
     private IPluginLog _log;
     private bool _loadedOnce;
-    public HttpClient Client = new();
-    public const string BaseUrl = "https://raw.githubusercontent.com/wolfcomp/MonsterDex/data";
+    public HttpClient Client = new()
+    {
+        DefaultRequestVersion = HttpVersion.Version20
+    };
+    public const string BaseUrl = "https://monsterdex.wildwolf.dev";
     public TimeSpan CacheTime = TimeSpan.FromHours(6);
     public StorageHandler Handler;
     public bool RequestingData { get; private set; }
