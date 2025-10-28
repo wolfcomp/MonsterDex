@@ -3,7 +3,7 @@
   1) « Masse à la tête » -- Trois grandes zones où les ombres roses finissent par apparaître.
   2) « Feuille » -- Quatre grandes zones où le télégraphe du patron est utilisé. A chaque saut, tout vivant s'ajoute étourdissant et infligeant d'énormes dégâts.
 13980: |
-  Inflige des dégâts mortels lorsque le boss saute pendant le Feuille.
+  Inflige de lourds dégâts lorsque le patron saute pendant le Feuille.
 # Floor 20 Boss
 13973: |
   1) "Touchdown" -- Knockback en quatre AoEs indiquées par les jambes lumineuses.
@@ -26,7 +26,7 @@
 14151: |
   "Gallop" -- Far KB, peut LoS
   "Nicker" -- PB AoE
-14156: |
+14146: |
   Lances de la zone appâtée sans agitation
 14141: |
   Lance la rage "Unto Dust" à 25% PV
