@@ -471,10 +471,10 @@
     - SlowUnknown
     - BindUnknown
     - SleepUnknown
-14146-Forgiven Bribery:
+14146-Forgiven Mockery:
   InstanceContentType: DeepDungeon
-  Threat: Unknown
-  Aggro: Unknown
+  Threat: Easy
+  Aggro: Proximity
   Weakness:
     - StunUnknown
     - HeavyUnknown
@@ -527,16 +527,6 @@
   Aggro: Sight
   Weakness:
     - Slow
-14156-Forgiven Mockery:
-  InstanceContentType: DeepDungeon
-  Threat: Easy
-  Aggro: Sight
-  Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
 
 # Floor 40 Boss
 13977-Forgiven Naivety:
@@ -582,6 +572,16 @@
 14155-Traverse Triffid:
   InstanceContentType: DeepDungeon
   Threat: Caution
+  Aggro: Sight
+  Weakness:
+    - StunUnknown
+    - HeavyUnknown
+    - SlowUnknown
+    - BindUnknown
+    - SleepUnknown
+14156-Traverse Lizard:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
   Aggro: Sight
   Weakness:
     - StunUnknown
