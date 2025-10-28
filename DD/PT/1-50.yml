@@ -6,7 +6,7 @@
   Weakness:
     - Heavy
     - Slow
-    - Bind
+    - Sleep
     - Stun
 14101-Traverse Echevore:
   InstanceContentType: DeepDungeon
@@ -17,6 +17,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14102-Traverse Phooka:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -26,6 +27,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14103-Traverse Hawker:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -33,7 +35,7 @@
   Weakness:
     - Heavy
     - Slow
-    - Bind
+    - Sleep
     - Stun
 14104-Traverse Moss Fungus:
   InstanceContentType: DeepDungeon
@@ -44,6 +46,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14105-Traverse Rowan:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -53,16 +56,16 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14106-Traverse Killer Bee:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Stun
+    - Sleep
 14107-Traverse Clematis:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -70,8 +73,8 @@
   Weakness:
     - Heavy
     - Slow
-    - Bind
     - Stun
+    - Sleep
 14108-Traverse Basket:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -81,6 +84,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14109-Traverse Etainmoth:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -88,19 +92,28 @@
   Weakness:
     - Heavy
     - Slow
-    - Bind
+    - Sleep
     - Stun
 14110-Traverse Shrub:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
+    - Sleep
 14111-Traverse Lorikeet:
+  InstanceContentType: DeepDungeon
+  Threat: Easy
+  Aggro: Sight
+  Weakness:
+    - Heavy
+    - Slow
+    - Sleep
+    - Stun
+14112-Traverse Rosebear:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
@@ -109,16 +122,7 @@
     - Slow
     - Bind
     - Stun
-14112-Traverse Rosebear:
-  InstanceContentType: DeepDungeon
-  Threat: Easy
-  Aggro: Sight
-  Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Sleep
 
 # Floor 10 Boss
 13979-Ornamental Leafman:
@@ -140,6 +144,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14114-Forgiven Ignorance:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -149,6 +154,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14115-Forgiven Folly:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -158,6 +164,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14116-Forgiven Conceit:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -167,6 +174,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14117-Forgiven Violence:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -176,6 +184,7 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14118-Forgiven Disobedience:
   InstanceContentType: DeepDungeon
   Threat: Easy
@@ -193,7 +202,6 @@
   Weakness:
     - Heavy
     - Slow
-    - Bind
     - Stun
     - Sleep
 14120-Forgiven Contempt:
@@ -201,10 +209,9 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Heavy
+    - Slow
+    - Stun
     - Sleep
 14121-Forgiven Complacency:
   InstanceContentType: DeepDungeon
@@ -225,15 +232,16 @@
     - Slow
     - Bind
     - Stun
+    - Sleep
 14123-Traverse Topiary:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Stun
     - Sleep
 14124-Traverse Peaseblossom:
   InstanceContentType: DeepDungeon
@@ -252,7 +260,6 @@
   Weakness:
     - Heavy
     - Slow
-    - Bind
     - Stun
     - Sleep
 
@@ -268,131 +275,123 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14127-Forgiven Venery:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 14128-Forgiven Dissonance:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14129-Forgiven Cruelty:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14130-Forgiven Ambition:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14131-Forgiven Insult:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14132-Forgiven Hesitance:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14133-Traverse Statue:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
     - Sleep
 14134-Traverse Morgawr:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14135-Traverse Tragopan:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14136-Forgiven Bribery:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Bind
+    - Sleep
 14137-Traverse Clionid:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 14138-Forgiven Intolerance:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 
 # Floor 30 Boss
 13863-Forgiven Treachery:
@@ -406,121 +405,113 @@
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
 14140-Forgiven Plague:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
 14141-Forgiven Perversion:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14142-Forgiven Extortion:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14143-Forgiven Prejudice:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14144-Forgiven Hypocrisy:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Sleep
 14145-Forgiven Petulance:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14146-Forgiven Mockery:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14147-Traverse Inquisitor:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14148-Bird of the Traverse:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14149-Traverse Lionstone:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14150-Traverse Jaculus:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14151-Traverse Pegasus:
   InstanceContentType: DeepDungeon
   Threat: Caution
@@ -545,130 +536,124 @@
   Aggro: Sight
   Weakness:
     - Stun
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14153-Traverse Troubadour:
   InstanceContentType: DeepDungeon
   Threat: Dangerous
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14154-Traverse Anaconda:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14155-Traverse Triffid:
   InstanceContentType: DeepDungeon
   Threat: Caution
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
+    - Bind
 14156-Traverse Lizard:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14157-Traverse Termite:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14158-Traverse Antilion:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Heavy
+    - Slow
 14159-Traverse Pincerbeak:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14160-Traverse Cliffkite:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Sleep
 14161-Traverse Weapon:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14162-Traverse Agave:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14163-Traverse Germinant:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 14164-Traverse Mantis:
   InstanceContentType: DeepDungeon
   Threat: Easy
   Aggro: Sight
   Weakness:
-    - StunUnknown
-    - HeavyUnknown
-    - SlowUnknown
-    - BindUnknown
-    - SleepUnknown
+    - Stun
+    - Heavy
+    - Slow
+    - Bind
+    - Sleep
 
 # Floor 50 Boss
 14263-Ogbunabali:
