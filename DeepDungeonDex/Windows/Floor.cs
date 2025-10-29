@@ -109,7 +109,8 @@ public class Floor : Window, IDisposable
 
     public override void Draw()
     {
-        var remap = (FloorData)_storage.GetInstance(_dataPath + "/Floors.yml")!;
+        var remap = (FloorData?)_storage.GetInstance(_dataPath + "/Floors.yml");
+        if (remap == null) return;
         var floor = _debug == 0 ? _addon.Floor : _debug;
         floor = remap.FloorDictionary.GetValueOrDefault(floor, floor);
         using var _ = Font.Font.RegularFont.Push();
