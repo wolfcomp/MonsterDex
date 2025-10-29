@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -33,6 +34,7 @@ public partial class Requests : IDisposable
 
     public Requests(StorageHandler handler, IPluginLog log)
     {
+        Client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("MonsterDex", Assembly.GetExecutingAssembly().GetName().Version!.ToString()));
         Handler = handler;
         _log = log;
 #pragma warning disable CS4014
