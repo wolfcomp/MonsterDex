@@ -37,8 +37,8 @@
 14189: |
   "纯磅" -- PB AoE
 14187: |
-  Invisible unless close or in combat. Spawns on floors 61-64 only.
-  "Body Press" -- PB AoE
+  隐身，接近后可见，开怪后不再隐身。只在61-64 层生成。
+  "躯体震击" -- 钢铁
 14182: |
   "加速" — — 在随机玩家上传中型AoE。用中型防弹进行后续跟踪。
 14178: |
@@ -82,8 +82,8 @@
 14196: |
   "火焰二" — — 悬浮式AoE. 可中断.
 14195: |
-  Does proximity explosion on death.
-  "Fracture" -- PB AoE
+  "炸裂" -- 钢铁
+  "自爆" -- 生命值为0后进入不可选中状态，发动大爆炸，10m以外为小量伤害
 14193: |
   "正在成长的绝对圆圈" -- 中型PB AoE 然后是大型坚固。
   "正在缩小的绝对性圆圈" -- 大规模坚固，然后是中型PB AOE。
@@ -139,17 +139,17 @@
   "双Hex Eye" -- Roomwide gaze
   "已知的手势" -- 已经传送的 AoE
 14215: |
-  "Lightning Bolt" -- Medium baited circle AoE on random player.
-  "Hellclaw" -- Small frontal conal
-  "Tail Swipe" -- Large back conal
+  "闪电" -- 前方（以目标圈的前方为中心）圆形AOE，范围提示在读条即将结束时出现
+  "地狱爪袭" -- 前方扇形AOE
+  "摆尾" -- 后方无读条大扇形AOE
 14205: |
   将会投射整个房间的AoEs。
   "深海雷"——大规模的前线AoE。不可靠。
 14208: |
   "三重/四重爆破" -- 造成3或4个伤害，然后直接前面的连线
 14216: |
-  "Dark II" -- Fast large frontal conal. Interruptable.
-  "Inner Demons" -- PB AoE
+  "昏暗" -- 读条较快的前方扇形AOE，无法穿透墙壁，可被打断。
+  "心魔" -- 钢铁
 # Floor 90 Boss
 14090: |
   1) "背手" -- 充能闪亮的拳头并清理270度。闪光的拳头和后面总是安全的。
