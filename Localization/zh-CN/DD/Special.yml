@@ -16,23 +16,23 @@
 5283: 对“魔陶器：形态变化”免疫
 5053: 对“魔陶器：形态变化”免疫
 5052: |
-  Immune to Pomander of Witching
-  High auto-attack damage
+  对“魔陶器：形态变化”免疫
+  高额自动攻击伤害
 5051: |
-  Immune to Pomander of Witching
-  High auto-attack damage
+  对“魔陶器：形态变化”免疫
+  高额自动攻击伤害
 5050: |
-  Immune to Pomander of Witching
-  High auto-attack damage
+  对“魔陶器：形态变化”免疫
+  高额自动攻击伤害
 5049: |
-  Immune to Pomander of Witching
-  High auto-attack damage
+  对“魔陶器：形态变化”免疫
+  高额自动攻击伤害
 5048: |
-  Immune to Pomander of Witching
-  High auto-attack damage
+  对“魔陶器：形态变化”免疫
+  高额自动攻击伤害
 5047: |
-  Immune to Pomander of Witching
-  High auto-attack damage
+  对“魔陶器：形态变化”免疫
+  高额自动攻击伤害
 5046: 对“魔陶器：形态变化”免疫
 5041: 不要接触！一旦开怪会导致长时间眩晕或者即死
 2566: |
@@ -41,8 +41,8 @@
 14262: |
   “Malice” - 应用精准的Pox10分钟，移除OOC并处理小DoT伤害。中断/不可避免。
 14265: |
-  “Malice” - 应用精准的Pox10分钟，移除OOC并处理小DoT伤害。中断.
+  “怨念” -- 附加10分钟诅咒debuff，降低攻击伤害，体力无法自然恢复并且会逐渐减少。可被"插言"，"伤头"打断。
 14266: |
-  “Malice” - 应用精准的Pox10分钟，移除OOC并处理小DoT伤害。中断.
+  “怨念” -- 附加10分钟诅咒debuff，降低攻击伤害，体力无法自然恢复并且会逐渐减少。可被"插言"，"伤头"打断。
 14267: |
-  进入战场时即刻死亡。
+  进入战斗时即刻死亡。
