@@ -1,31 +1,32 @@
 # Floors 51-59
 14173: |
-  "Pain Storm" -- Large roomwide conal
-  "Painful Gust" -- Large AoE
-  "Whorl of Hurt" -- Large doughnut
+  "痛苦风暴" -- 前方大扇形
+  "极痛突风" -- 大钢铁
+  "痛苦旋风" -- 大月环
 14165: |
   "小屏幕" -- 针对玩家的小AoE。如果被击中则带有单个数字命中点的玩家。
   偶尔使用 "Impale"
 14172: |
   “剧毒手势”——大型前锥体AoE施加毒药剂
 14177: |
-  "Rhino Guard" -- Applies 30s evasion to self.
-  Occasionally uses "Rhino Attack"
+  "犀牛防御" -- 赋予自身30s回避率提升
+  偶尔使用 "犀牛攻击"
 14169: |
   “腐烂比例” - 如果击中时对攻击者造成致命伤害
 14167: |
   "Earththen Auger" — — 庞大的房间270度锥形。背后或下面是安全的。
 14176: |
-  Occasionally sucks.
-  "Heavy Scrapline" -- PB AoE
-  "Heavy Toss" -- Frontal conal
+  "吸气" -- 无读条吸引前方大范围扇形范围内的玩家，防击退有效
+  "蛮力金刚臂" -- 钢铁，附加击退
+  "蛮力上投" -- 前方扇形AOE
 14174: |
-  "Barreling Smash" -- Telegraphed dash. Immediately follows up with one of:
-  1) "Scythe Tail" -- PB AoE
-  2) "Master of Levin" -- Large doughnut
+  "高速撞击" -- 前方范围可见冲锋直线AOE。然后根据玩家距离立即发动
+  1) "尾镰" -- 钢铁
+  2) "外环雷" -- 大月环
 14168: |
-  "Bewilderment Bulb" -- Applies misdirection for 5s, then does a medium PB AoE. Interruptable.
-  "Trounce" -- Massive frontal conal
+  "飞散性惑乱花粉块" -- 长读条大范围不可见钢铁，赋予范围内的玩家6s精神失常debuff，可插言
+  "迅猛回旋" -- 钢铁
+  "呵斥" -- 前方长距离扇形AOE
 # Floor 60 Boss
 14097: |
   1) "Spineshot" - 前面和后面的窄锥体。
