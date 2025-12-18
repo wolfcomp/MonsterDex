@@ -197,7 +197,7 @@ internal class YamlStringEnumConverter : IYamlTypeConverter
 {
     public bool Accepts(Type type) => type.IsEnum;
 
-    public object ReadYaml(IParser parser, Type type)
+    public object ReadYaml(IParser parser, Type type, ObjectDeserializer rootObject)
     {
         var items = new List<string>();
         if (type.GetCustomAttributes<FlagsAttribute>().Any())
@@ -223,7 +223,7 @@ internal class YamlStringEnumConverter : IYamlTypeConverter
         return Enum.Parse(type, string.Join(", ", items));
     }
 
-    public void WriteYaml(IEmitter emitter, object? value, Type type)
+    public void WriteYaml(IEmitter emitter, object? value, Type type, ObjectSerializer rootObject)
     {
         if (value == null) return;
         if (type.GetCustomAttributes<FlagsAttribute>().Any())
