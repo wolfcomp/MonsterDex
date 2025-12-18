@@ -7,16 +7,16 @@ Dangerous: 危险
 Caution: 注意
 AggroType: 仇恨类型
 Boss: Boss
-Sound: 声音
+Sound: 声音感知
 Sight: 视野感知
 Proximity: 范围感知
-Bloodlust: 鲜血粉剂
-Magic: 魔法
+Bloodlust: 血量感知
+Magic: 魔法感知
 Thanks: 感谢Deep Dungeons Discord服务器提供大量社区资源。 感谢每个人花费时间报告错误或丢失的数据！ 特别鸣谢Maygi，写出最好的深层迷宫指南！
 Save: 保存
 Opacity: 不透明度
 Notes: 说明
-NoDataFound: 未找到 {0} ({1} ) 的数据
+NoDataFound: 未找到 {0} ({1}) 的数据
 IsClickthrough: 启用鼠标穿透
 FontSize: 字体大小
 ShowId: 显示调试信息
@@ -27,13 +27,13 @@ HideFloorGuide: 进入新楼面时停止显示地板指南
 UnknownContent: 未知内容无法显示为 {0}({1})
 CreateDataIssue: 创建数据问题
 CorrectDataIssue: 更正数据问题
-ContentTypeNone: 覆盖世界
-ContentTypeDeepDungeon: 深度邓吉on
-ContentTypeEureka: Eureka
-ContentTypeDiadem: Diadem
-ContentTypeBozja: Bozja
-ContentTypeIslandSanctuary: 岛屿保护区
+ContentTypeNone: 主世界
+ContentTypeDeepDungeon: 深层迷宫
+ContentTypeEureka: 优雷卡
+ContentTypeDiadem: 云冠群岛
+ContentTypeBozja: 博兹雅
+ContentTypeIslandSanctuary: 无人岛
 NoDisplay: |
   内容 {0}没有可用的显示。
   在设置中删除您的内容选择。
-DataButtonsHidden: Clickby 启用的按钮被隐藏。
+DataButtonsHidden: 已启用鼠标穿透，按钮被隐藏了。
