@@ -76,15 +76,15 @@ public class Main : IDalamudPlugin
 
         return new ServiceCollection()
             .AddSingleton(pluginInterface)
-            .AddDalamudService<IFramework>()
-            .AddDalamudService<ICommandManager>()
-            .AddDalamudService<ITargetManager>()
-            .AddDalamudService<ICondition>()
-            .AddDalamudService<IClientState>()
-            .AddDalamudService<IChatGui>()
-            .AddDalamudService<ITextureProvider>()
-            .AddDalamudService<IDataManager>()
-            .AddDalamudService<IPluginLog>()
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<IFramework>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<ICommandManager>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<ITargetManager>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<ICondition>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<IClientState>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<IChatGui>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<ITextureProvider>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<IDataManager>())
+            .AddSingleton(provider => provider.GetRequiredService<IDalamudPluginInterface>().GetRequiredService<IPluginLog>())
             .AddSingleton(fontAtlas)
             .AddSingleton(new WindowSystem("DeepDungeonDex"))
             .AddSingleton(main)
@@ -110,15 +110,6 @@ public static class Extensions
         windowSystem.RemoveAllWindows();
     }
 
-    public static IServiceCollection AddDalamudService<T>(this IServiceCollection collection) where T : class
-    {
-        return collection.AddSingleton(provider =>
-        {
-            var k = new DalamudServiceIntermediate<T>(provider.GetRequiredService<IDalamudPluginInterface>());
-            return k.Service;
-        });
-    }
-
     // Only used to circumvent the fact that Framework would be disposed through Microsoft.Extensions.DependencyInjection.ServiceProvider
     public static void DisposeDI(this ServiceProvider provider)
     {
@@ -140,27 +131,5 @@ public static class Extensions
         if (prop != null)
             return (T)prop.GetValue(obj)!;
         return default!;
-    }
-}
-
-public class DalamudServiceIntermediate<T> : IDisposable
-    where T : class
-{
-    [PluginService] public T Service { get; private set; } = null!;
-
-    public DalamudServiceIntermediate(T service)
-    {
-        Service = service;
-    }
-
-    public DalamudServiceIntermediate(IDalamudPluginInterface pluginInterface)
-    {
-        pluginInterface.Inject(this);
-        Main.Services.Add(this);
-    }
-
-    public void Dispose()
-    {
-        Service = null!;
     }
 }
