@@ -6,25 +6,30 @@ public class CommandHandler : IDisposable
 {
     private ICommandManager _manager;
     private IChatGui _chat;
-    private readonly string _command = "/pdex";
+    private IDalamudPluginInterface _pluginInterface;
+    private readonly string[] _commands = ["/pdex"];
     private readonly Dictionary<string[], Tuple<object, string, bool>> _actions = new();
     private readonly string[] _help = new[] { "help", "h" };
 
-    public CommandHandler(ICommandManager manager, IChatGui chat)
+    public CommandHandler(ICommandManager manager, IChatGui chat, IDalamudPluginInterface pluginInterface)
     {
         _manager = manager;
         _chat = chat;
+        _pluginInterface = pluginInterface;
     }
 
     private string CommandStrings => string.Join("\n\t", _actions.Where(t => t.Value.Item3).Select(t => $"{string.Join(", ", t.Key)} → {t.Value.Item2}"));
 
     private void AddMainHandler()
     {
-        _manager.AddHandler(_command, new CommandInfo(ProcessCommand)
+        foreach (var _command in _commands)
         {
-            HelpMessage = $"Monster Dex commands\n\thelp, h → shows all commands in chat\n\t{CommandStrings}",
-            ShowInHelp = true
-        });
+            _manager.AddHandler(_command, new CommandInfo(ProcessCommand)
+            {
+                HelpMessage = _commands.IndexOf(_command) == 0 ? $"{_pluginInterface.Manifest.Name} commands\n\thelp, h → shows all commands in chat\n\t{CommandStrings}" : $"Alias of {_commands[0]}",
+                ShowInHelp = true
+            });
+        }
     }
 
     public void ProcessCommand(string command, string argument)
@@ -33,8 +38,8 @@ public class CommandHandler : IDisposable
         if (args.Length == 0 || _help.Any(t => args.First().ToLowerInvariant() == t))
         {
             if (args.Length == 0)
-                _chat.PrintError("[MonsterDex] Expected additional args");
-            _chat.Print($"[MonsterDex] Available commands:");
+                _chat.PrintError($"[{_pluginInterface.InternalName}] Expected additional args");
+            _chat.Print($"[{_pluginInterface.InternalName}] Available commands:");
             foreach (var (key, val) in _actions)
             {
                 var (_, help, show) = val;
@@ -48,7 +53,7 @@ public class CommandHandler : IDisposable
         var action = args[0];
         if (!_actions.Keys.SelectMany(t => t).Contains(action, StringComparer.InvariantCultureIgnoreCase))
         {
-            _chat.PrintError($"[MonsterDex] Unknown action {action}");
+            _chat.PrintError($"[{_pluginInterface.InternalName}] Unknown action {action}");
             return;
         }
 
@@ -89,7 +94,8 @@ public class CommandHandler : IDisposable
 
     public void RemoveMainHandler()
     {
-        if (_manager.Commands.ContainsKey(_command))
-            _manager.RemoveHandler(_command);
+        foreach (var _command in _commands)
+            if (_manager.Commands.ContainsKey(_command))
+                _manager.RemoveHandler(_command);
     }
 }
