@@ -27,14 +27,6 @@ internal class Debug : Window, IDisposable
     {
         using var _ = Font.Font.RegularFont.Push();
 
-        var config = _storage.GetInstance<Configuration>()!;
-        if (!config.LoadAll)
-        {
-            ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1, 0, 0, 1));
-            ImGui.TextUnformatted("All font load is not enabled. Some glyphs will not be available.");
-            ImGui.PopStyleColor();
-        }
-
         if (_requests.IsRequesting)
         {
             ImGui.TextUnformatted("Requesting data from Github...");

@@ -157,7 +157,7 @@ public partial class Main : Window, IDisposable
             return;
         }
 
-        if (_target.Target is not IBattleNpc { BattleNpcKind: BattleNpcSubKind.Enemy } npc)
+        if (_target.Target is not IBattleNpc { BattleNpcKind: BattleNpcSubKind.Combatant } npc)
         {
             if (!_debug)
             {
@@ -275,32 +275,31 @@ public partial class Main : Window, IDisposable
         _unknown = await _textureProvider.CreateFromImageAsync(stream, debugName: "DeepDungeonDex.UnknownDebuf");
     }
 
-    private static Vector2 _uv0 = new(0, 0);
-    private static Vector2 _uv1 = new(1, 1);
-    private static Vector4 _color = new(1, 1, 1, 1);
-    private static Vector4 _unknownColor = new(0.75f, 0.75f, 0.75f, 0.75f);
-    private static Vector4 _notActiveColor = new(0.5f, 0.5f, 0.5f, 0.5f);
+    private static readonly Vector2 _uv0 = new(0, 0);
+    private static readonly Vector2 _uv1 = new(1, 1);
 
-    private void DrawWeaknessIcon(uint iconId, Vector2 size, Weakness weakness, Weakness check)
+    private void DrawWeaknessIcon(uint iconId, float scale, Weakness weakness, Weakness check)
     {
         var cursor = ImGui.GetCursorPos();
         var color = GetColor(weakness, check);
-        ImGui.Image(_textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty().Handle, size, _uv0, _uv1, color);
+        var gameImage = _textureProvider.GetFromGameIcon(iconId + 200000).GetWrapOrEmpty();
+        ImGui.Image(gameImage.Handle, gameImage.Size * scale, _uv0, _uv1, color);
         if (weakness.HasUnknownFlag(check))
         {
             ImGui.SetCursorPos(cursor);
-            ImGui.Image(_unknown!.Handle, size, _uv0, _uv1, color);
+            ImGui.Image(_unknown!.Handle, _unknown!.Size * scale, _uv0, _uv1, color);
         }
     }
 
-    private void DrawIcon(uint iconId, Vector2 size, Vector4 color)
+    private void DrawIcon(uint iconId, float scale, Vector4 color)
     {
-        ImGui.Image(_textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty().Handle, size, _uv0, _uv1, color);
+        var gameImage = _textureProvider.GetFromGameIcon(iconId).GetWrapOrEmpty();
+        ImGui.Image(gameImage.Handle, gameImage.Size * scale, _uv0, _uv1, color);
     }
 
     private Vector4 GetColor(Weakness weakness, Weakness check)
     {
-        return weakness.HasUnknownFlag(check) ? _unknownColor : weakness.HasFlag(check) ? _color : _notActiveColor;
+        return weakness.HasUnknownFlag(check) ? _config.UnknownColor : weakness.HasFlag(check) ? _config.VulnerableColor : _config.ResistantColor;
     }
 
     private static void PrintTextWithColor(string? text, uint color)

@@ -1,4 +1,5 @@
 using System.IO;
+using Dalamud.Interface;
 using Newtonsoft.Json.Serialization;
 using YamlDotNet.Core;
 using YamlDotNet.Core.Events;
@@ -97,6 +98,22 @@ public class StorageHandler : IDisposable
                     config.Locale = binary.ReadInt32();
                     config.FontSize = binary.ReadInt32();
                     config.Opacity = binary.ReadSingle();
+                    break;
+                case 5:
+                    flags = binary.ReadByte();
+                    config.ClickThrough = (flags & (1 << 1)) == (1 << 1);
+                    config.HideFloor = (flags & (1 << 2)) == (1 << 2);
+                    config.HideSpawns = (flags & (1 << 3)) == (1 << 3);
+                    config.Debug = (flags & (1 << 4)) == (1 << 4);
+                    config.LoadAll = (flags & (1 << 5)) == (1 << 5);
+                    config.ShowCorrectionButton = (flags & (1 << 6)) == (1 << 6);
+                    config.EnabledContentTypes = (ContentType)binary.ReadUInt32();
+                    config.Locale = binary.ReadInt32();
+                    config.FontSize = binary.ReadInt32();
+                    config.Opacity = binary.ReadSingle();
+                    config.VulnerableColor = ColorHelpers.RgbaUintToVector4(binary.ReadUInt32());
+                    config.UnknownColor = ColorHelpers.RgbaUintToVector4(binary.ReadUInt32());
+                    config.ResistantColor = ColorHelpers.RgbaUintToVector4(binary.ReadUInt32());
                     break;
                 default:
                     throw new Exception("Invalid config version");

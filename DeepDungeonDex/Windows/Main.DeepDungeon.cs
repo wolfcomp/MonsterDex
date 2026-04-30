@@ -13,6 +13,7 @@ public partial class Main
         ImGui.NewLine();
         ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
+        // TODO: Redo notes and Vulns to have access to SeString rendering and attack/floor specific resistances
         DrawDDWeakness(_currentMob.Weakness);
         if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
         {
@@ -53,22 +54,21 @@ public partial class Main
 
     private void DrawDDWeakness(Weakness weakness)
     {
-        var size = new Vector2(24 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
-        DrawWeaknessIcon(15004, size, weakness, Weakness.Stun);
+        DrawWeaknessIcon(15004, _config.FontSizeScaled * 0.5f, weakness, Weakness.Stun);
         ImGui.SameLine();
-        DrawWeaknessIcon(15002, size, weakness, Weakness.Heavy);
+        DrawWeaknessIcon(15002, _config.FontSizeScaled * 0.5f, weakness, Weakness.Heavy);
         ImGui.SameLine();
-        DrawWeaknessIcon(15009, size, weakness, Weakness.Slow);
+        DrawWeaknessIcon(15009, _config.FontSizeScaled * 0.5f, weakness, Weakness.Slow);
         ImGui.SameLine();
-        DrawWeaknessIcon(15013, size, weakness, Weakness.Sleep);
+        DrawWeaknessIcon(15013, _config.FontSizeScaled * 0.5f, weakness, Weakness.Sleep);
         ImGui.SameLine();
-        DrawWeaknessIcon(15003, size, weakness, Weakness.Bind);
+        DrawWeaknessIcon(15003, _config.FontSizeScaled * 0.5f, weakness, Weakness.Bind);
 
         // ReSharper disable once InvertIf
         if ((_currentMob.Id is not (>= 7262 and <= 7610) && _clientState.TerritoryType is >= 561 and <= 565 or >= 593 and <= 607) || weakness.HasFlag(Weakness.Undead))
         {
             ImGui.SameLine();
-            DrawWeaknessIcon(15461, size, weakness, Weakness.Undead);
+            DrawWeaknessIcon(15461, _config.FontSizeScaled * 0.5f, weakness, Weakness.Undead);
         }
     }
 }

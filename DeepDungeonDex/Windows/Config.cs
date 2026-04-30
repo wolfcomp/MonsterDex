@@ -11,11 +11,8 @@ public class Config : Window, IDisposable
     private Font.Font _font;
     private float _opacity;
     private bool _clickthrough;
-    private bool _hideRed;
-    private bool _hideJob;
     private bool _debug;
     private int _loc;
-    private bool _loadAll;
     private bool _hideFloor;
     private ContentType _contentTypes = ContentType.DeepDungeon | ContentType.Eureka | ContentType.IslandSanctuary | ContentType.Diadem | ContentType.Bozja | ContentType.None;
     private ContentType[] _allContentTypes = Array.Empty<ContentType>();
@@ -33,16 +30,13 @@ public class Config : Window, IDisposable
         _config.OnChange += OnChange;
         SizeConstraints = new WindowSizeConstraints
         {
-            MaximumSize = new Vector2(400 * _config.WindowSizeScaled, 600),
+            MaximumSize = new Vector2(450 * _config.WindowSizeScaled, 600),
             MinimumSize = new Vector2(250 * _config.WindowSizeScaled, 100)
         };
         BgAlpha = _opacity = _config.Opacity;
         _clickthrough = _config.ClickThrough;
-        _hideRed = _config.HideRed;
-        _hideJob = _config.HideJob;
         _debug = _config.Debug;
         _loc = _config.Locale;
-        _loadAll = _config.LoadAll;
         _hideFloor = _config.HideFloor;
         _pluginInterface.UiBuilder.OpenConfigUi += Open;
         command.AddCommand(new[] { "config", "cfg" }, Open, "Opens the config window.");
@@ -134,6 +128,23 @@ public class Config : Window, IDisposable
                 _config.EnabledContentTypes &= ~contentType;
         }
         ImGui.Columns(1);
+        var vulnColor = _config.VulnerableColor;
+        if (DrawColorWithReset("VulnerableColor", ref vulnColor, Configuration.VulnerableColorDefault, ref _locale, ref _config))
+        {
+            _config.VulnerableColor = vulnColor;
+        }
+        DrawTooltip(_locale, "ColorMaskHelp");
+        var unkColor = _config.UnknownColor;
+        if (DrawColorWithReset("UnknownColor", ref unkColor, Configuration.UnknownColorDefault, ref _locale, ref _config))
+        {
+            _config.UnknownColor = unkColor;
+        }
+        DrawTooltip(_locale, "ColorMaskHelp");
+        var resistColor = _config.ResistantColor;
+        if (DrawColorWithReset("ResistantColor", ref resistColor, Configuration.ResistantColorDefault, ref _locale, ref _config))
+        {
+            _config.ResistantColor = resistColor;
+        }
         ImGui.NewLine();
         if (ImGui.Button(_locale.GetLocale("Save")))
         {
@@ -142,18 +153,41 @@ public class Config : Window, IDisposable
             _font.RegisterNewBuild(_config.FontSize);
         }
         ImGui.SameLine();
-        if (ImGui.IsItemHovered())
-        {
-            ImGui.BeginTooltip();
-            ImGui.PushTextWrapPos(400f);
-            ImGui.TextWrapped(_locale.GetLocale("Thanks"));
-            ImGui.PopTextWrapPos();
-            ImGui.EndTooltip();
-        };
+        DrawTooltip(_locale, "Thanks");
         ImGui.SameLine();
         ImGui.PushStyleColor(ImGuiCol.Button, 0xFF5E5BFF);
         ImGui.PushStyleColor(ImGuiCol.ButtonActive, 0xFF5E5BAA);
         ImGui.PushStyleColor(ImGuiCol.ButtonHovered, 0xFF5E5BDD);
         ImGui.PopStyleColor(3);
+    }
+
+    private bool DrawColorWithReset(string loc, ref Vector4 color, Vector4 defaultColor, ref Locale locale, ref Configuration config)
+    {
+        var edited = false;
+        if (ImGui.ColorEdit4(locale.GetLocale(loc), ref color, ImGuiColorEditFlags.AlphaBar | ImGuiColorEditFlags.AlphaPreviewHalf))
+        {
+            edited = true;
+        }
+        DrawTooltip(locale, "ColorMaskHelp");
+        ImGui.Dummy(new(10));
+        ImGui.SameLine();
+        if (ImGui.Button(locale.GetLocale("ResetDefault") + $"##{loc}Button"))
+        {
+            edited = true;
+            color = defaultColor;
+        }
+        return edited;
+    }
+
+    private void DrawTooltip(Locale _locale, string localeLookup)
+    {
+        if (ImGui.IsItemHovered())
+        {
+            ImGui.BeginTooltip();
+            ImGui.PushTextWrapPos(400f);
+            ImGui.TextWrapped(_locale.GetLocale(localeLookup));
+            ImGui.PopTextWrapPos();
+            ImGui.EndTooltip();
+        }
     }
 }

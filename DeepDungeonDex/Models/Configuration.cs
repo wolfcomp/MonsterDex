@@ -1,10 +1,12 @@
 using System.IO;
+using System.Numerics;
+using Dalamud.Interface;
 
 namespace DeepDungeonDex.Models;
 
 public class Configuration
 {
-    private const byte Version = 4;
+    private const byte Version = 5;
     public bool ClickThrough { get; set; }
     public bool HideRed { get; set; }
     public bool HideJob { get; set; }
@@ -17,11 +19,21 @@ public class Configuration
     public int FontSize { get; set; } = 16;
     public float Opacity { get; set; } = 1f;
     public ContentType EnabledContentTypes { get; set; } = ContentType.DeepDungeon;
+    public Vector4 VulnerableColor { get; set; } = VulnerableColorDefault;
+    public Vector4 UnknownColor { get; set; } = UnknownColorDefault;
+    public Vector4 ResistantColor { get; set; } = ResistantColorDefault;
 
-    [JsonIgnore] public int PrevLocale;
-    [JsonIgnore] public float RemoveScaling => 1 / ImGui.GetIO().FontGlobalScale;
-    [JsonIgnore] public float WindowSizeScaled => Math.Max(FontSize / 16f, 1f) * RemoveScaling;
-    [JsonIgnore] public Action<Configuration>? OnChange { get; set; }
+#region Not Saved Variables
+    public int PrevLocale;
+    public float RemoveScaling => 1 / ImGui.GetIO().FontGlobalScale;
+    public float WindowSizeScaled => Math.Max(FontSizeScaled, 1f) * RemoveScaling;
+    public float FontSizeScaled => FontSize / 16f;
+    public Action<Configuration>? OnChange { get; set; }
+
+    public static Vector4 VulnerableColorDefault = new(1, 1, 1, 1);
+    public static Vector4 UnknownColorDefault = new(0.75f, 0.75f, 0.75f, 0.75f);
+    public static Vector4 ResistantColorDefault = new(0.5f, 0.5f, 0.5f, 0.5f);
+#endregion
 
     public void Save(string path)
     {
@@ -31,7 +43,7 @@ public class Configuration
         }
         OnChange?.Invoke(this);
         var origPath = path;
-        if(!path.EndsWith(".tmp"))
+        if (!path.EndsWith(".tmp"))
             path += ".tmp";
         Stream stream = File.Open(path, FileMode.CreateNew, FileAccess.ReadWrite, FileShare.ReadWrite);
         BinaryWriter writer = new(stream);
@@ -48,6 +60,9 @@ public class Configuration
         writer.Write(Locale);
         writer.Write(FontSize);
         writer.Write(Opacity);
+        writer.Write(ColorHelpers.RgbaVector4ToUint(VulnerableColor));
+        writer.Write(ColorHelpers.RgbaVector4ToUint(UnknownColor));
+        writer.Write(ColorHelpers.RgbaVector4ToUint(ResistantColor));
         writer.Close();
         stream.Close();
         if (File.Exists(origPath))
