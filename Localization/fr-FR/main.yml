@@ -37,8 +37,8 @@ NoDisplay: |
   Aucun affichage disponible pour le contenu {0}.
   Pour supprimer cela changez vos sélections de contenu dans les paramètres.
 DataButtonsHidden: Les boutons activés par clic sont masqués.
-VulnerableColor: Vulnerable Icon Color Mask
-UnknownColor: Unknown Icon Color Mask
-ResistantColor: Resistant Icon Color Mask
-ColorMaskHelp: The tint that will be applied when rendering.
-ResetDefault: Reset value to default
+VulnerableColor: Masque de couleur d'icône vulnérable
+UnknownColor: Masque de couleur d'icône inconnu
+ResistantColor: Masque de couleur d'icône résistant
+ColorMaskHelp: La teinte qui sera appliquée lors du rendu.
+ResetDefault: Réinitialiser la valeur par défaut
