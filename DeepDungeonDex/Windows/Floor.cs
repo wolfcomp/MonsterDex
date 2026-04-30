@@ -66,7 +66,7 @@ public class Floor : Window, IDisposable
             TerritoryChanged(_clientState.TerritoryType);
     }
 
-    private void TerritoryChanged(ushort e)
+    private void TerritoryChanged(uint e)
     {
         var territories = _storage.GetInstance<Territories>();
         if (territories == null)

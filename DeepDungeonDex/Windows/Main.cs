@@ -157,7 +157,7 @@ public partial class Main : Window, IDisposable
             return;
         }
 
-        if (_target.Target is not IBattleNpc { BattleNpcKind: BattleNpcSubKind.Enemy } npc)
+        if (_target.Target is not IBattleNpc { BattleNpcKind: BattleNpcSubKind.Combatant } npc)
         {
             if (!_debug)
             {

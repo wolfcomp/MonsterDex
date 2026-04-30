@@ -2,13 +2,13 @@
 
 public class Territories : ILoad<Territories>
 {
-    public Dictionary<string, ushort[][]> TerritoryDictionary { get; set; } = new();
+    public Dictionary<string, uint[][]> TerritoryDictionary { get; set; } = new();
 
-    public Dictionary<ushort, string> TerritoryNameDictionary { get; set; } = new();
+    public Dictionary<uint, string> TerritoryNameDictionary { get; set; } = new();
 
     public Territories Load(string path)
     {
-        TerritoryDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, ushort[][]>>(path);
+        TerritoryDictionary = StorageHandler.Deserializer.Deserialize<Dictionary<string, uint[][]>>(path);
         return this;
     }
 
@@ -17,7 +17,7 @@ public class Territories : ILoad<Territories>
         TerritoryDictionary.Clear();
     }
 
-    public string GetTerritoryName(ushort id, IPluginLog log)
+    public string GetTerritoryName(uint id, IPluginLog log)
     {
         log.Verbose($"Getting territory name for {id}");
         if (TerritoryNameDictionary.TryGetValue(id, out var nameCached))
