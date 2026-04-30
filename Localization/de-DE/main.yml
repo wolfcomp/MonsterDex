@@ -37,3 +37,8 @@ NoDisplay: |
   Keine Anzeige verfügbar für Inhalt {0}.
   Um dies zu entfernen, ändern Sie Ihre Inhaltsauswahl in den Einstellungen.
 DataButtonsHidden: Klickthrough aktivierte Buttons werden ausgeblendet.
+VulnerableColor: Vulnerable Icon Color Mask
+UnknownColor: Unknown Icon Color Mask
+ResistantColor: Resistant Icon Color Mask
+ColorMaskHelp: The tint that will be applied when rendering.
+ResetDefault: Reset value to default
