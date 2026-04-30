@@ -37,3 +37,8 @@ NoDisplay: |
   No Display Available for content {0}.
   To remove this change your content selections in the settings.
 DataButtonsHidden: Clickthrough enabled buttons are hidden.
+VulnerableColor: Vulnerable Icon Color Mask
+UnknownColor: Unknown Icon Color Mask
+ResistantColor: Resistant Icon Color Mask
+ColorMaskHelp: The tint that will be applied when rendering.
+ResetDefault: Reset value to default
