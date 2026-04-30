@@ -1,4 +1,4 @@
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace DeepDungeonDex.Windows;
 public partial class Main

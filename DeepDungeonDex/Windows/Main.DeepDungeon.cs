@@ -1,4 +1,4 @@
-using System.Numerics;
+﻿using System.Numerics;
 using Dalamud.Utility;
 
 namespace DeepDungeonDex.Windows;
@@ -13,6 +13,7 @@ public partial class Main
         ImGui.NewLine();
         ImGui.TextUnformatted(_locale.GetLocale("Vulns"));
         ImGui.SameLine();
+        // TODO: Redo notes and Vulns to have access to SeString rendering and attack/floor specific resistances
         DrawDDWeakness(_currentMob.Weakness);
         if (!string.IsNullOrWhiteSpace(_currentMob.JoinedProcessedDescription))
         {
