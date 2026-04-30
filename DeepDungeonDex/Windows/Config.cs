@@ -171,7 +171,7 @@ public class Config : Window, IDisposable
         DrawTooltip(locale, "ColorMaskHelp");
         ImGui.Dummy(new(10));
         ImGui.SameLine();
-        if (ImGui.Button(locale.GetLocale("ResetDefault")))
+        if (ImGui.Button(locale.GetLocale("ResetDefault") + $"##{loc}Button"))
         {
             edited = true;
             color = defaultColor;
