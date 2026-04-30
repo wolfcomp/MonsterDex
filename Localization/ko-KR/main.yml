@@ -37,3 +37,8 @@ NoDisplay: |
   콘텐츠에 대한 표시가 없습니다: {0}
   설정에서 콘텐츠 선택을 변경하여 이 문제를 해결할 수 있습니다.
 DataButtonsHidden: 눌림 무시 기능이 켜진 버튼은 숨겨집니다.
+VulnerableColor: Vulnerable Icon Color Mask
+UnknownColor: Unknown Icon Color Mask
+ResistantColor: Resistant Icon Color Mask
+ColorMaskHelp: The tint that will be applied when rendering.
+ResetDefault: Reset value to default
