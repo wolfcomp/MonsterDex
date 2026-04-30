@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 
 namespace DeepDungeonDex.Windows;
 public partial class Main
@@ -37,8 +37,7 @@ public partial class Main
                     id = weatherId;
                 }
             }
-            var size = new Vector2(32 * _config.FontSize / 16f, 32 * _config.FontSize / 16f);
-            DrawIcon((uint)_weatherManager.GetWeatherIconId(id), size, _color);
+            DrawIcon((uint)_weatherManager.GetWeatherIconId(id), _config.FontSizeScaled, _config.VulnerableColor);
             ImGui.SameLine();
             ImGui.TextUnformatted(_weatherManager.GetWeatherName(id));
             ImGui.SameLine();
