@@ -87,7 +87,7 @@
     - Bind
 5440-deep palace archaeosaur:
   InstanceContentType: DeepDungeon
-  Threat: Easy
+  Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun

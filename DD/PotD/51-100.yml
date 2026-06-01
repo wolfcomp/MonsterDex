@@ -356,9 +356,9 @@
   Threat: Easy
   Aggro: Proximity
   Weakness:
-    - SleepUnknown
+    - Sleep
     - Slow
-    - HeavyUnknown
+    - Heavy
     - Bind
 5343-palace wamoura:
   InstanceContentType: DeepDungeon
