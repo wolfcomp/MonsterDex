@@ -183,8 +183,8 @@
   « Karma» -- Grand conal frontal
   « Ténèbres impies» -- Cercle moyen à AoE
 14218: |
-  "Right Smite" -- Massive right halfroom AoE, then left half circle
-  "Left Smite" -- Massive left halfroom AoE, then right half circle
+  « Right Smite » -- AoE massive sur la moitié droite de l'arène, puis demi-cercle gauche
+  « Left Smite » -- AoE massive sur la moitié gauche de l'arène, puis demi-cercle droit
 14226: |
   "Authority's Edge" -- Massive halfroom AoE, du côté il tient l'épée.
 14221: |
@@ -192,16 +192,4 @@
   "Stare" -- Large far reaching line AoE. Cannot LoS.
 # Floor 99 Boss
 14037: |
-  The arena has patches of light and dark, which apply either "Light Vengeance" or "Dark Vengeance".
-    a) "Light Vengeance" -- Allows you to damage Eminent Grief (dark)
-    b) "Dark Vengeance" -- Allows you to damage Devoured Eater (light)
 
-  Eminent Grief and Devouered Eater will perform these two mechanics in conjunction. NOTE that the timing does not always match, so watch the castbar timings.
-  1) "Blades of First Light" -- Devoured Eater will cleave either down the center or the sides, depending on how she holds the swords.
-  2) "Ball of Fire" -- Eminent Grief will either hold four or two fire balls.
-    a) Four Fireballs -- AoEs will bait under players at the end of this castbar.
-    b) Two Fireballs (chains) -- All players will receive pyretic at the end of the castbar. Do not attack or move.
-  3) "Bounds of Sin" -- Players will be chained to the middle of the arena, and circle AoEs will appear around the middle. Dodge out through the last circle AoE.
-  4) "Spinelash" -- Baited line AoE that spawns an add if it hits a window. Place in between windows to never spawn an add. Dodge after prey marker disappears.
-  5) "Drain Aether" -- Both Eminent Grief and Devoured Eater will cast this with different timings. Have the opposite corresponding debuff to survive (Dark for Devouered Eater, Light for Eminent Grief)
-  6) "Abyssal Blaze" -- Opens two portals either vertically or horizontally and summons crystals twice. When the crystals glow, they will explode as exaflares accordingly. One of the corners will be safe.
