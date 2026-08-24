@@ -532,7 +532,7 @@
 # Floors 41-49
 14152-Traverse Petreffigy:
   InstanceContentType: DeepDungeon
-  Threat: Easy
+  Threat: Caution
   Aggro: Sight
   Weakness:
     - Stun
