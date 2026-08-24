@@ -37,8 +37,8 @@ NoDisplay: |
   コンテンツ {0}に利用可能な表示はありません。
   設定でコンテンツの選択を変更します。
 DataButtonsHidden: 有効なボタンは非表示になります。
-VulnerableColor: Vulnerable Icon Color Mask
-UnknownColor: Unknown Icon Color Mask
-ResistantColor: Resistant Icon Color Mask
-ColorMaskHelp: The tint that will be applied when rendering.
-ResetDefault: Reset value to default
+VulnerableColor: 脆弱なアイコンのカラーマスク
+UnknownColor: 不明なアイコンカラーマスク
+ResistantColor: 耐性アイコンカラーマスク
+ColorMaskHelp: レンダリング時に適用される色合い。
+ResetDefault: 値を既定にリセット

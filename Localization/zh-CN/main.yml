@@ -37,8 +37,8 @@ NoDisplay: |
   内容 {0}没有可用的显示。
   在设置中删除您的内容选择。
 DataButtonsHidden: 已启用鼠标穿透，按钮被隐藏了。
-VulnerableColor: Vulnerable Icon Color Mask
-UnknownColor: Unknown Icon Color Mask
-ResistantColor: Resistant Icon Color Mask
-ColorMaskHelp: The tint that will be applied when rendering.
-ResetDefault: Reset value to default
+VulnerableColor: 易受伤害的图标颜色蒙版
+UnknownColor: 未知图标颜色蒙版
+ResistantColor: 抗拒图标颜色蒙版
+ColorMaskHelp: 渲染时将应用的色调.
+ResetDefault: 重置值为默认值
